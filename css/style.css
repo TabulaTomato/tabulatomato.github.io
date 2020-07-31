@@ -193,17 +193,17 @@ html::-webkit-scrollbar {
 }
 	
 .hero-title {
-	top: calc(100vh - 150px);
- 	max-width: calc(100vw - 30px);
+	top: calc(100% - 150px);
+ 	max-width: calc(100% - 30px);
 }
 
 .hero-subtitle {
-	top: calc(100vh - 150px);
-	max-width: calc(100vw - 30px);
+	top: calc(100% - 150px);
+	max-width: calc(100% - 30px);
 }
 
 h1 {
-	font-size: 400%;
+	font-size: 180%;
 }
 
 h2 {
