@@ -206,12 +206,12 @@ html::-webkit-scrollbar {
 }
 	
 .hero-title {
-	top: calc(100% - 150px);
+	top: calc(100% - 170px);
  	max-width: calc(100% - 40px);
 }
 
 .hero-subtitle {
-	top: calc(100% - 150px);
+	top: calc(100% - 170px);
 	max-width: calc(100% - 40px);
 }
 
