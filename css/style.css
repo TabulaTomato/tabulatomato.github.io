@@ -21,7 +21,7 @@ body {
 
 .hero {
 	position: relative;
- 	width: 100%;
+ 	width: 100vw;
 	height: 100vh;
 	background-image: url("../images/ziggy.jpg");
 	background-size: cover;
@@ -30,7 +30,7 @@ body {
 
 .hero-title {
   	position: relative;
-	top: calc(100% - 230px);
+	top: calc(100vh - 230px);
 	margin-left: auto;
 	margin-right: auto;
 	width: 900px;
@@ -39,7 +39,7 @@ body {
 
 .hero-subtitle {
 	position: relative;
-	top: calc(100% - 230px);
+	top: calc(100vh - 230px);
 	margin-left: auto;
 	margin-right: auto;
 	width: 900px;
