@@ -207,11 +207,13 @@ html::-webkit-scrollbar {
 }
 
 h1 {
-	font-size: 180%;
+	font-size: 200%;
+	line-height: 2.0;
 }
 
 h2 {
 	font-size: 80%;
+	padding: 0px 10px 10px 10px;
 }
 	
 .main-box {
@@ -219,7 +221,7 @@ h2 {
 }
 
 h3 {
-	font-size: 80%;
+	font-size: 100%;
 }
 
 .main-text {
@@ -227,13 +229,18 @@ h3 {
 }
 	
 p {
-	font-size: 70%;
+	font-size: 100%;
 }
 
 li {
-	font-size: 80%;
+	font-size: 120%;
 }
 
 h4 {
-	font-size: 80%;
+	font-size: 100%;
 }
+	
+input[type=text] {
+	width: 200px;
+}
+
