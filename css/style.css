@@ -198,17 +198,17 @@ html::-webkit-scrollbar {
 	
 .hero-title {
 	top: calc(100% - 150px);
- 	max-width: calc(100% - 30px);
+ 	max-width: calc(100% - 40px);
 }
 
 .hero-subtitle {
 	top: calc(100% - 150px);
-	max-width: calc(100% - 30px);
+	max-width: calc(100% - 40px);
 }
 
 h1 {
 	font-size: 200%;
-	line-height: 2.0;
+	line-height: 1.2;
 }
 
 h2 {
@@ -242,5 +242,9 @@ h4 {
 	
 input[type=text] {
 	width: 200px;
+	font-size: 150%;
 }
-
+	
+button {
+	font-size: 150%;
+}
