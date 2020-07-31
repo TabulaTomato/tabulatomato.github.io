@@ -30,7 +30,7 @@ body {
 
 .hero-title {
   	position: relative;
-	top: calc(100vh - 230px);
+	top: calc(100% - 230px);
 	margin-left: auto;
 	margin-right: auto;
 	width: 900px;
@@ -39,7 +39,7 @@ body {
 
 .hero-subtitle {
 	position: relative;
-	top: calc(100vh - 230px);
+	top: calc(100% - 230px);
 	margin-left: auto;
 	margin-right: auto;
 	width: 900px;
@@ -47,13 +47,13 @@ body {
 }
 
 h1 {
-text-align: center;
-color: #dfdfdf;
-padding: 10px;
-letter-spacing: 2px;
-text-transform: uppercase;
-font-family: 'Cabin Sketch', cursive;
-font-size: 520%;
+	text-align: center;
+	color: #dfdfdf;
+	padding: 10px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	font-family: 'Cabin Sketch', cursive;
+	font-size: 520%;
 }
 
 h2 {
@@ -207,5 +207,29 @@ h1 {
 }
 
 h2 {
+	font-size: 80%;
+}
+	
+.main-box {
+ 	max-width: calc(100% - 30px);
+}
+
+h3 {
+	font-size: 80%;
+}
+
+.main-text {
+ 	max-width: calc(100% - 30px);
+}
+	
+p {
+	font-size: 70%;
+}
+
+li {
+	font-size: 80%;
+}
+
+h4 {
 	font-size: 80%;
 }
