@@ -191,6 +191,10 @@ html::-webkit-scrollbar {
 	-ms-overflow-style: none;  /* IE and Edge */
 	scrollbar-width: none;  /* Firefox */
 }
+
+.hero {
+	height: calc(var(--vh, 1vh) * 100);
+}
 	
 .hero-title {
 	top: calc(100% - 150px);
