@@ -599,101 +599,101 @@ function myFunction() {
 			answer = "Wow, how beautiful. I would like to know more about stars.";
 	} else if (x == "10,75") {
 			answer = "A good idea to use Gavin’s generator to power up the projector.";
-	} else if (x == "12,01") {
+	} else if (x == "11,01") {
 			answer = "Hello, nice to meet you. Your mother used to work at the library? I’m so sorry for your loss.";
-	} else if (x == "12,02") {
+	} else if (x == "11,02") {
 			answer = "Thanks, I’ll take one. They say it’s good for your voice.";
-	} else if (x == "12,03" || x == "12,32") {
+	} else if (x == "11,03" || x == "11,32") {
 			answer = "What a cute dog!";
-	} else if (x == "12,05") {
+	} else if (x == "11,05") {
 			answer = "Fiction is not my cup of tea.";
-	} else if (x == "12,06" || x == "12,16" || x == "12,18" || x == "12,19" || x == "12,20" || x == "12,24" || x == "12,34" || x == "12,35" || x == "12,36" || x == "12,38" || x == "12,40" || x == "12,41" || x == "12,45" || x == "12,48" || x == "12,50" || x == "12,54" || x == "12,58" || x == "12,68" || x == "12,71") {
+	} else if (x == "11,06" || x == "11,16" || x == "11,18" || x == "11,19" || x == "11,20" || x == "11,24" || x == "11,34" || x == "11,35" || x == "11,36" || x == "11,38" || x == "11,40" || x == "11,41" || x == "11,45" || x == "11,48" || x == "11,50" || x == "11,54" || x == "11,58" || x == "11,68" || x == "11,71") {
 			answer = "I’m really sorry, but I don’t have time for meaningless questions. I have to work on my lecture.";
-	} else if (x == "12,07") {
+	} else if (x == "11,07") {
 			answer = "Yes, I’m giving the lecture. Does it show that I’m freaking out about it? I get all stressed out when I’m supposed to talk in front of people. My mind becomes empty and I lose my words...It’s a nightmare!";
-	} else if (x == "12,08") {
+	} else if (x == "11,08") {
 			answer = "That’s amazing work. Where did your mother get such a credible copy?";
-	} else if (x == "12,09") {
+	} else if (x == "11,09") {
 			answer = "She tried to calm me down, but it’s useless. I can’t wait to get it over with.";
-	} else if (x == "12,10") {
+	} else if (x == "11,10") {
 			answer = "I don’t know this woman.";
-	} else if (x == "12,11") {
+	} else if (x == "11,11") {
 			answer = "I’m a passionate traveler, and a historian by education. I wrote a couple of books, combining historic facts to the experiences I had during my journeys. I love writing, the problem arrives when I’m supposed to speak in front on people.";
-	} else if (x == "12,12") {
+	} else if (x == "11,12") {
 			answer = "That’s a telescope lens? I don’t know a lot about stargazing.";
-	} else if (x == "12,13") {
+	} else if (x == "11,13") {
 			answer = "It seems to be a code for a 4 digit number. I love puzzle, but I really don’t have time for it now.";
-	} else if (x == "12,14") {
+	} else if (x == "11,14") {
 			answer = "I’m sorry, but I’ve never met your mother. So I wouldn’t know anything about her friends.";
-	} else if (x == "12,15") {
+	} else if (x == "11,15") {
 			answer = "I think we don’t know each other well enough to exchange phone numbers.";
-	} else if (x == "12,17") {
+	} else if (x == "11,17") {
 			answer = "This seems interesting, for someone who is into stars at least. But I really don’t have time for it now.";
-	} else if (x == "12,21") {
+	} else if (x == "11,21") {
 			answer = "I’m not familiar with the mural in the photo. ";
-	} else if (x == "12,23") {
+	} else if (x == "11,23") {
 			answer = "I’m really sorry to hear about your mother. I’ve never met her unfortunately.";
-	} else if (x == "12,25") {
+	} else if (x == "11,25") {
 			answer = "I’m sorry, but I have no experience in telescopes.";
-	} else if (x == "12,26") {
+	} else if (x == "11,26") {
 			answer = "Thank you so much, that’s really nice of you. Sluuuurp! <br><i>Take card <b>44</b> from the rejected pile. Return card <b>26</b> to the deck.</i>";
-	} else if (x == "12,27") {
+	} else if (x == "11,27") {
 			answer = "This could be Swahili. I’ve visited Africa a couple of times. But I coudn’t translate it unfortunately.";
-	} else if (x == "12,28") {
+	} else if (x == "11,28") {
 			answer = "That’s absolutely stunning! I’ve never seen anything like it. Where did you get it from?";
-	} else if (x == "12,29") {
+	} else if (x == "11,29") {
 			answer = "I’m not an expert in mineralogy, but I know a little. Unfortunately I really don’t have time for it right now.";
-	} else if (x == "12,30") {
+	} else if (x == "11,30") {
 			answer = "I can’t help you with this.";
-	} else if (x == "12,31") {
+	} else if (x == "11,31") {
 			answer = "I’ve never seen him.";
-	} else if (x == "12,33") {
+	} else if (x == "11,33") {
 			answer = "I’m not a computer person, I really only use it as a tool but don’t understand anything about it.";
-	} else if (x == "12,37") {
+	} else if (x == "11,37") {
 			answer = "I went to Manchester University. It was a beautiful time of my life.";
-	} else if (x == "12,39") {
+	} else if (x == "11,39") {
 			answer = "This is a logo of the library I’m giving the lecture at this evening. And this number...I don’t know what it could be.";
-	} else if (x == "12,42") {
+	} else if (x == "11,42") {
 			answer = "I’ve seen a mural of Loomey in Munich. She is pretty good, isn’t she?";
-	} else if (x == "12,43") {
+	} else if (x == "11,43") {
 			answer = "I have my lecture on it. So at the moment, it’s my most precious possession.";
-	} else if (x == "12,44") {
+	} else if (x == "11,44") {
 			answer = "I would love another cup of tea, thank you so much.";
-	} else if (x == "12,46" || x == "12,47") {
+	} else if (x == "11,46" || x == "12,47") {
 			answer = "I’ve never cheated on tests. And I’m absolutely against it.";
-	} else if (x == "12,49") {
+	} else if (x == "11,49") {
 			answer = "Why are you showing me these scissors? Can’t you see that I don’t have time for this?";
-	} else if (x == "12,51") {
+	} else if (x == "11,51") {
 			answer = "He’s nice. He had the patience to listen to my fears about tonight. He was very supportive.";
-	} else if (x == "12,52") {
+	} else if (x == "11,52") {
 			answer = "I’ve never seen him. Where is this shop?";
-	} else if (x == "12,55") {
+	} else if (x == "11,55") {
 			answer = "Money will not help me in this situation, but thank you for trying.";
-	} else if (x == "12,56") {
+	} else if (x == "11,56") {
 			answer = "I take my tea without milk, thank you.";
-	} else if (x == "12,57") {
+	} else if (x == "11,57") {
 			answer = "I wasn’t a student of professor Martin, I studied history in the university. But I hear that he is a great professor.";
-	} else if (x == "12,59") {
+	} else if (x == "11,59") {
 			answer = "I’ve heard of him, he is the head of Earthlings, right? I appreciate their efforts, we must take better care of the planet.";
-	} else if (x == "12,60") {
+	} else if (x == "11,60") {
 			answer = "No, thank you. The last thing I need now is to be running to the toilet every ten minutes.";
-	} else if (x == "12,61") {
+	} else if (x == "11,61") {
 			answer = "Are you talking about a form of biophilia? I find the theory very interesting.";
-	} else if (x == "12,62") {
+	} else if (x == "11,62") {
 			answer = "Thank you, that’s really nice of you. Sluuuurp! <br><i>Jocelyn drinks her tea and a few minutes after she excuses her, asks you to look after her computer and runs to the toilet. <br>Take card <b>22</b>. Remove cards <b>43</b> and <b>62</b>.</i>";
-	} else if (x == "12,63") {
+	} else if (x == "11,63") {
 			answer = "To would think that a historian likes vintage things, but I prefer to listen to music in a digital form.";
-	} else if (x == "12,64" || x == "12,65" || x == "12,69" || x == "12,70") {
+	} else if (x == "11,64" || x == "11,65" || x == "11,69" || x == "11,70") {
 			answer = "This looks like a puzzle. I’m a big fan of puzzles, but I really don’t have time for this right now.";
-	} else if (x == "12,66") {
+	} else if (x == "11,66") {
 			answer = "I’ve never seen him.";
-	} else if (x == "12,67") {
+	} else if (x == "11,67") {
 			answer = "I remember I saw this in the newspapers. Well, let’s hope that that’s not just a PR trick.";
-	} else if (x == "12,72") {
+	} else if (x == "11,72") {
 			answer = "I will be using the projector tonight. I’m sorry, but borrowing it is out of the question. My lecture would be terrible without images.";
-	} else if (x == "12,73") {
+	} else if (x == "11,73") {
 			answer = "I visited Baghdad maybe ten years ago. I can’t imagine why would your mother write this on her cabin door.";
-	} else if (x == "12,74") {
+	} else if (x == "11,74") {
 			answer = "It’s amazing, the universe I mean. Isn’t it?";
 	} else if (x == "14,01" || x == "14,14" || x == "14,23") {
 			answer = "I can’t believe I’m speaking to you, Ziggy. The last time I saw you, you were a baby, and now you’re all grown up...Lena died? How terrible. I never got a chance to say goodbye...<br><i> Mary’s voice breaks, as she struggles not to burst into tears.</i> <br>I’m sorry, it’s just very hard to hear this. I can’t even imagine how you must feel. So, you realised that your mother had some secrets...Well, I think I owe you the truth, even though I’m not sure that Lena would have approved it. But I can’t really speak about all of this on the phone. Could you visit me? I’ll pay for your plane ticket, don’t worry about it. Yes, I know that you would like some answers immidiately. I’ll tell you everything when you come, but let’s just say that you were not really born in this world you call home...Come soon! <br><i>Chapter One of the game is now finished. To unravel the mystery of Ziggy’s origin and continue her adventure, start Chapter Two. Thank you for playing!</i>";
