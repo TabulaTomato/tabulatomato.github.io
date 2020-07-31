@@ -1,0 +1,85 @@
+<!doctype html>
+
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Madventures: Ziggy</title>
+  <link rel="shortcut icon" type="image/png" href="favicon.png"/>
+  <script type="text/javascript" src="javascript/script.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/reset.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,700;1,300;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Palanquin+Dark:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="hero">
+    <div class="hero-title">
+      <h1>Madventures: Ziggy</h1>
+    </div>
+    <div class="hero-subtitle">
+      <h2>an immersive experience of fulfilling your own destiny</h2>
+    </div>
+  </div>
+  <div class="main">
+    <div class="main-box">
+      <h3>prologue</h3>
+    </div>
+    <div class="main-text">
+      <p>It's been five days since my mother died. I'm still trying to comprehend what happened. Everything was fine up until six months ago. I was at the university, living my student life of lectures, tests, making friendships and flirting with cute fellow students. Who could have known that a simple phone call would change me forever. <br>"Ziggy, I don't want you to worry, but you have to know what's happening. I'm sick.", she said. She was positive, started treatment immediatelly. Even the doctors said that everything will be ok. But her condition worsened despite their predictions. I came home from the university to spend thess last few days with her. Finally, her body just couldn't fight the sickness anymore. <br>The last thing she told me was: "Ziggy, you mustn't be alone. I was wrong, you have to find them..." I don't know what was she talking about. Do we have family she never told me about? What about my father? Maybe her story of a sperm donor was just a cover up for the truth she didn't want me to know about? She left me with all this questions in my head, together with pain of losing her. <br>After the funeral, I just couldn't bare to return into the house where everything reminds me of her. But I have to return today, I can't expect our neighbours to take care of our dog Laika forever.</p>
+    </div>
+    <div class="main-box">
+      <h3>how to play</h3>
+    </div>
+    <div class="main-text">
+      <p>In this game you take the character of Ziggy Wonder, whose mother Lena dies a few days ago and left her with mysterious last words. The goal of the game is to discover what did her mother mean, and what is Ziggy's true destiny. <br>The game is cooperative, so you should make all the decisions together. <br>During the game you will take cards from the deck when instructed. <br>There are three types of cards:</p>
+      <ul class="list">
+  			<li>Locations, marked with capital letters</li>
+  			<li>Characters, marked with numbers</li>
+  			<li>Objects, marked with numbers</li>
+  		</ul>
+      <p>Actions you can take during the game are:</p>
+      <ul class="list">
+  			<li>Examine locations, characters and objects</li>
+  			<li>See your own opinion on a character or an object</li>
+  			<li>Question characters about other characters and objects</li>
+        <li>Give an object to a character</li>
+        <li>Use an object on another object</li>
+  			<li>Search the internet to find informaton that will help you to proceed in the game</li>
+        <li>Enter a four digit code to open an object or make progress in the game</li>
+  		</ul>
+      <p>To do these actions, you will use the interactive game book bellow as described.<br>The game will automatically finish when you've discovered what you were supposed to.</p>
+    </div>
+    <div class="main-box">
+      <h3>setup</h3>
+    </div>
+    <div class="main-text">
+      <p>Take cards <b>01</b>, <b>15</b>, <b>23</b> and <b>A</b> from the deck, without looking at the other cards. Put them on the table facing up, so that everybody can see. <br>Put the rest of the location deck on the table, facing down. Put the rest od character and objects deck next to it, also facing down.<br>Start the game by exploring the cards you are given in the beginning.</p>
+    </div>
+    <div class="main-box">
+      <h3>interactive game book</h3>
+    </div>
+    <div class="main-text">
+      <h4>To explore the location, to get information about a character, or to examine an object, write the corresponding number/letter in the input field. Doing this will be very useful in a lot of situations, so it's advised to always do it when you get a new card.</h3>
+      <p>For example, if you want to know more about Ziggy <b>01</b>, enter '01' in the input field and click 'OK'.</p>
+      <h4>To ask a character about another character or an object, or to give an object to a character, write their according numbers in the input field separated with a comma, without spaces. Write the number of the character you want to speak to first, and the character/object you want to speak about second. If you want to give an object to a character, write the character's number first, and the object's second. If you ask Ziggy about something, you will hear her thoughts about it.</h3>
+      <p>For example, if you want to hear Ziggy's <b>01</b> thoughts about her mother <b>23</b>, enter '01,23' in the input field and click 'OK'.</p>
+      <h4>You can also ask a character about themselves by writing their corresponding number two times in the input field separated with a comma, without spaces.</h3>
+      <p>For example, if you want to hear Ziggy's <b>01</b> thoughts about herself, enter '01,01' in the input field and click 'OK'.</p>
+      <h4>To use an object on another object, write their corresponding numbers in the input field separated with a comma, without spaces. The order of the numbers isn't relevant.</h3>
+      <p>For example, if you want to cut the recipe <b>27</b> with the scissors <b>49</b>, enter '27,49' or '49,27' in the input field and click 'OK'.</p>
+      <h4>To enter a code in an object, write the object's corresponding number in the input field followed by a four digit code, separated with a comma, without spaces.</h3>
+      <p>For example, if you want to open the door <b>74</b> with a code <b>1234</b>, enter '74,1234' in the input field and click 'OK'.</p>
+    </div>
+    <div class="main-input">
+      <input type="text" id="myText" placeholder="input here">
+      <button onclick="myFunction()">OK</button>
+    </div>
+    <div class="main-text">
+      <p id="demo"></p>
+    </div>
+  </div>
+</html>
