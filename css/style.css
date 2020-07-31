@@ -237,17 +237,13 @@ h3 {
 .main-text {
  	max-width: calc(100% - 30px);
 }
-	
-p {
-	font-size: 100%;
-}
 
 li {
 	font-size: 120%;
 }
 
 h4 {
-	font-size: 100%;
+	font-size: 120%;
 }
 	
 input[type=text] {
