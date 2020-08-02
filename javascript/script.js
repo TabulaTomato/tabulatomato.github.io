@@ -2,6 +2,18 @@ let vh = window.innerHeight * 0.01
 
 document.documentElement.style.setProperty('--vh', `${vh}px`);
 
+function searchKeyPress(e)
+{
+    // look for window.event in case event isn't passed in
+    e = e || window.event;
+    if (e.keyCode == 13)
+    {
+        document.getElementById('myButton').click();
+        return false;
+    }
+    return true;
+}
+
 function myFunction() {
 	var x = document.getElementById("myText").value;
   	var answer;
@@ -12,11 +24,11 @@ function myFunction() {
   } else if (x == "03") {
   		answer = "Laika is our dog. She is unusualy quiet, probably because she misses my mother. There is a gem hanging on her collar, the one my mother used to wear on her necklace.";
   } else if (x == "04") {
-  		answer = "The projector I borrowed form the library.";
+  		answer = "The projector I borrowed from the library.";
 	} else if (x == "05") {
-  		answer = "A hardcover edition of Sinbad the Sailor, the book my mother used to read to me when I was little. But there is a completely different book in the cover. There is also a paper with something written on it. And it’s all in my mother’s handwriting! <br><i>Take cards <b>17</b>, <b>65</b> and <b>66</b>. Remove card <b>05</b>.</i>";
+  		answer = "My mother’s cabin in the woods that Laika brought me to. There is the word “Baghdad” written on the door. It’s locked by a 4 digit combination padlock. <br><i>To open the cabin door, enter card number <b>05</b> followed by a 4 digit number lock combination in the input field, separated by a comma.</i>";
 	} else if (x == "06") {
-  		answer = "A bowl with flour. The first step of the recipe is done.";
+  		answer = "Gavin Korn is a member of Earthlings association.";
 	} else if (x == "07") {
   		answer = "A poster announcing a lecture on Bavaria by Jocelyn Hill in the library tonight.";
 	} else if (x == "08") {
@@ -24,7 +36,7 @@ function myFunction() {
 	} else if (x == "09") {
   		answer = "Sandy is my mother’s colleague. They worked together for about 10 years and they became friends in the meantime.";
 	} else if (x == "10") {
-  		answer = "Emma Korn is Gavin’s wife and they are both my mother’s friends. Gavin told me that she has something that my mother gave them for safekeeping.";
+  		answer = "Emma Korn is Gavin’s wife and they were both my mother’s friends. Gavin told me that she has something that my mother gave them for safekeeping.";
 	} else if (x == "11") {
   		answer = "Jocelyn Hill is holding the lecture at the library tonight. She is sitting alone, looking at her computer and looks quite nervous.";
 	} else if (x == "12") {
@@ -34,27 +46,27 @@ function myFunction() {
 	} else if (x == "14") {
   		answer = "Mary Davis is my mother’s old friend whose letter I found in the safe.";
 	} else if (x == "15") {
-  		answer = "That’s my phone. Charged and working.";
+  		answer = "That’s my phone. Charged and working. <br><i>To call a number, enter card number <b>15</b> followed by a 4 digit phone number in the input field, separated by a comma.</i>";
 	} else if (x == "16") {
-  		answer = "An empty bowl. Perfect for putting something inside.";
+  		answer = "The night sky seen with the telescope. It’s breathtaking. If only there was something to help me in identifying all these stars.";
 	} else if (x == "17") {
-  		answer = "An astronomy book hidden in covers of Sinbad the Sailor. It contains a huge list of stars, all with 4 digit numbers written next to them. And it’s written in my mothers handwriting.";
+  		answer = "An astronomy book that contains a huge list of stars, all with 4 digit numbers written next to them. There is also a message inside written in my mother's handwriting. I wonder if I could use this book to explore the night sky. <br><i>Take card <b>64</b>.</i>";
 	} else if (x == "18") {
-  		answer = "A ginger root. A spice used a lot in my mother’s cuisine.";
+  		answer = "The projector I borrowed from the library plugged in the portable solar generator.";
 	} else if (x == "19") {
   		answer = "Dog cookies dough in which I added some peanut butter. Ready for the next step of the recipe.";
 	} else if (x == "20") {
-  		answer = "Some simple everyday NaCl.";
+  		answer = "The library projector is mounted on the ceiling.";
 	} else if (x == "21") {
   		answer = "It’s a photo of a street. There is a big mural on a wall of a building in the street. I can’t recognize where the photo was taken.";
 	} else if (x == "22") {
   		answer = "Jocelyn’s computer left all alone. It’s password protected. <br><i>To open the computer, enter card number <b>22</b> followed by a 4 digit number password in the input field, separated by a comma.</i>";
 	} else if (x == "23") {
   		answer = "My mother, who passed away a few days.";
-	} else if (x == "24") {
-  		answer = "A baking pan in the oven.";
+  } else if (x == "24") {
+  		answer = "Some flour in my mother’s kitchen.";
 	} else if (x == "25") {
-  		answer = "My mother’s telescope, placed pointing in the sky. Unfortunately, the lens is broken. There is a sticker on the telescope with a logo and an address, reading ‘Outer World Telescopes’. <br><i>Take the card <b>D</b>.</i>";
+  		answer = "My mother’s telescope, placed pointing in the sky. Unfortunately, the lens is broken. There is a sticker on the telescope with a logo and an address, reading ‘Outer World Telescopes’. <br><i>Take card <b>B</b>.</i>";
 	} else if (x == "26") {
   		answer = "A cup of tea I ordered from Mark, the barista.";
 	} else if (x == "27") {
@@ -74,7 +86,7 @@ function myFunction() {
 	} else if (x == "34") {
   		answer = "My mother’s oven.";
 	} else if (x == "35") {
-  		answer = "The second step of the dog cookies recipe. A bit of salt added to a bowl of flour.";
+  		answer = "The spray paint that I took from Loomey.";
 	} else if (x == "36") {
   		answer = "A pumpkin sprout planted in the Korns’ garden. It should take about three months for a ripe fruit to grow.";
 	} else if (x == "37") {
@@ -82,7 +94,7 @@ function myFunction() {
 	} else if (x == "38") {
   		answer = "A portable solar generator that Gavin Korn borrowed me. It’s useful for bringing power to devices in outdoor spaces.";
 	} else if (x == "39") {
-  		answer = "A note with some numbers written with your mother’s handwriting next to a logo of the library she used to work in. If was found hidden behind the broken lens in my mother’s telescope.";
+  		answer = "A note with some numbers written in my mother’s handwriting next to a logo of the library she used to work in. It was found hidden behind the broken lens in my mother’s telescope. <br><i>Take card <b>D</b>.</i>";
 	} else if (x == "40") {
   		answer = "The third step of the dog cookies recipe is successfully done. ";
 	} else if (x == "41") {
@@ -94,7 +106,7 @@ function myFunction() {
 	} else if (x == "44") {
   		answer = "An empty cup on Jocelyn Hill’s table. She finished her tea.";
 	} else if (x == "45") {
-  		answer = "Some apples from our garden tree in a bowl.";
+  		answer = "The front of the letter kept in my mother’s safe. It’s written by a woman named Mary.";
 	} else if (x == "46") {
   		answer = "The mineralogy tests are now unsurveilled.";
 	} else if (x == "47") {
@@ -112,11 +124,11 @@ function myFunction() {
 	} else if (x == "53") {
   		answer = "Jocelyn’s computer is now open. So, if I want to mess with her files, now is the moment.";
 	} else if (x == "54") {
-  		answer = "All the steps of the recipe are done. There is one last step to do.";
+  		answer = "The back of the letter kept in my mother’s safe. It’s written by a woman named Mary.";
 	} else if (x == "55") {
   		answer = "The money that Jamie gave me. There is around 700 pounds here.";
 	} else if (x == "56") {
-  		answer = "A bottle of milk.";
+  		answer = "A newspaper article about an oil company IBOR that was in my mother’s safe.";
 	} else if (x == "57") {
   		answer = "Professor Martin is my mineralogy professor in the university. He is an expert in his field.";
 	} else if (x == "58") {
@@ -126,65 +138,43 @@ function myFunction() {
 	} else if (x == "60") {
   		answer = "There is a senna plant in Korns’ garden. It’s a plant known for treatment of constipation.";
 	} else if (x == "61") {
-  		answer = "My new ability of connecting with animals and plants around me is hard to define. It’s still unclear why did I get this ability and what exactly can I do with it. Does it only give me a way to sense their feeling, or does it go beyond that to the point of actaully effecting them?";
+  		answer = "My new ability of connecting with animals and plants around me is hard to define. It’s still unclear why did I get this ability and what exactly can I do with it. Does it only give me a way to sense their feelings, or does it go beyond that to the point of actually effecting them?";
 	} else if (x == "62") {
   		answer = "A cup of tea in which I put some senna leaves. Actually, enough of senna leaves to deal with any constipation problem.";
 	} else if (x == "63") {
   		answer = "My mother’s record player.";
 	} else if (x == "64") {
-  		answer = "It’s the front of the message that I found in Sinbad the Sailor’s cover, written in my mother’s handwriting.";
-	} else if (x == "65") {
-  		answer = "It’s the back of the message that I found in Sinbad the Sailor’s cover, written in my mother’s handwriting.";
-	} else if (x == "66") {
-  		answer = "Gavin Korn is a member of Earthlings association.";
-	} else if (x == "67") {
-  		answer = "A newspaper article about an oil company IBOR that was in my mother’s safe.";
-	} else if (x == "68") {
-  		answer = "Some flour in my mother’s kitchen.";
-	} else if (x == "69") {
-  		answer = "The front of the letter kept in my mother’s safe. It’s written by a woman named Mary.";
-	} else if (x == "70") {
-  		answer = "The back of the letter kept in my mother’s safe. It’s written by a woman named Mary.";
-	} else if (x == "71") {
-  		answer = "The spray paint that I took from Loomey.";
-	} else if (x == "72") {
-  		answer = "The library projector is mounted on the ceiling.";
-	} else if (x == "73") {
-  		answer = "My mother’s cabin in the woods that Laika brought me to. There is the word “Baghdad” written on the door. It’s locked by a 4 digit combination padlock. <br><i>To open the cabin door, enter card number <b>73</b> followed by a 4 digit number lock combination in the input field, separated by a comma.</i>";
-	} else if (x == "74") {
-  		answer = "The night sky seen with the telescope. It’s breathtaking.";
-	} else if (x == "75") {
-  		answer = "The projector I borrowed from the library plugged in the portable solar generator.";
+  		answer = "It’s the message that I found in the astronomy book, written in my mother’s handwriting.";
 	} else if (x == "A" || x == "a") {
-  		answer = "My mother’s kitchen looks as if somebody still lives here. There is a lot of food around still, like ginger <b>18</b>, salt <b>20</b>, flour <b>06</b>, apples <b>45</b>, eggs <b>02</b>, peanut butter <b>50</b> and milk <b>56</b>. My mother’s favourite bowl <b>16</b> is on the kitchen counter. The scissors <b>49</b> are left on the bar, as well as a framed photo <b>21</b> I’ve never seen before. There is a baknig pan <b>24</b> in the oven <b>34</b>. There is nothing interesting in cupboards, except something that looks like a recipe <b>27</b>. My mother’s telescope <b>25</b> is placed by the window. Our dog, Laika <b>03</b> is here, not as cheerful as usual.";
+  		answer = "My mother’s kitchen looks as if somebody still lives here. There is a lot of food around still, like flour <b>24</b>, eggs <b>02</b> and peanut butter <b>50</b>. The scissors <b>49</b> are left on the bar, as well as a framed photo <b>21</b> that I’ve never seen before. The oven <b>34</b> won't be used a lot anymore, since baking is not something I'm good at. There is nothing interesting in the cupboards, except something that looks like a recipe <b>27</b>. My mother’s telescope <b>25</b> is placed by the window. Our dog, Laika <b>03</b> is here, not as cheerful as usual.";
 	} else if (x == "B" || x == "b") {
-  		answer = "Outer Space Telescopes shop is open, and a salesman <b>52</b> greets me when I walk in. On the other side of the street there is a street artist <b>42</b> working on a mural, with some spray paint <b>71</b> sitting next to her on the floor.";
+  		answer = "Outer Space Telescopes shop is open, and a salesman <b>52</b> greets me when I walk in. On the other side of the street there is a street artist <b>42</b> working on a mural, with some spray paint <b>35</b> sitting next to her on the floor.";
 	} else if (x == "C" || x == "c") {
-  		answer = "Professor Martin <b>57</b> is sitting at his desk in the university working space. He has the tests <b>29</b> for tomorrow next to him. A bit further, a fellow student Jamie <b>31</b> is studying. I can see the university flag <b>37</b> pole through the window.";
+  		answer = "Professor Martin <b>57</b> is sitting at his desk in the common working space. He has the tests <b>29</b> for tomorrow next to him. A bit further, a fellow student Jamie <b>31</b> is studying. I can see the university flag <b>37</b> pole through the window.";
 	} else if (x == "D" || x == "d") {
-  		answer = "Another World Library is calm, with only a few people browsing the books. There is a poster about a lecture <b>07</b> on the library wall. A projector <b>72</b> that is used in library events is mounted on the ceiling. The librarian <b>09</b> my mother used to work with is not very occupied at the moment.";
+  		answer = "Another World Library is calm, with only a few people browsing the books. There is a poster about a lecture <b>07</b> on the library wall. A projector <b>20</b> that is used in library events is mounted on the ceiling. The librarian <b>09</b> my mother used to work with is not very occupied at the moment.";
 	} else if (x == "E" || x == "e") {
   		answer = "The tea shop is almost empty. I can see a woman <b>11</b> sitting in front of her computer <b>43</b> on one of the tables. Her cup <b>44</b> is empty. The barista <b>51</b> is cleaning the cups at the bar.";
 	} else if (x == "F" || x == "f") {
-  		answer = "There are a lot of people on the street, holding signs and chanting. One of them seems to be the leader <b>59</b>. There is also a protest camp just next to the road. It seems that the protesters plan to stay here overnight. A man <b>66</b> is sitting next to the tent. I can also see a portable solar generator <b>38</b> in the camp.";
+  		answer = "There are a lot of people on the street, holding signs and chanting. One of them seems to be the leader <b>59</b>. There is also a protest camp just next to the road. It seems that the protesters plan to stay here overnight. A man <b>06</b> is sitting next to the tent. I can also see a portable solar generator <b>38</b> in the camp.";
 	} else if (x == "G" || x == "g") {
-  		answer = "Korn family farm is small, but cozy. The garden is beautiful and well kept, with plenty of herbs and vegetables. A senna plant <b>60</b> catches my eye, as well as pumpkin sprouts <b>36</b>. Mrs Korn <b>73</b> is standing by the house doors.";
+  		answer = "Korn family farm is small, but cozy. The garden is beautiful and well kept, with plenty of herbs and vegetables. A senna plant <b>60</b> catches my eye, as well as pumpkin sprouts <b>36</b>. Mrs Korn <b>10</b> is standing by the house doors.";
 	} else if (x == "H" || x == "h") {
-  		answer = "My mother’s cabin looks like a little getaway for relaxing after a long day. The majority of the space is took by her vinyl collection and a record player <b>51</b>. While browsing through the records, I notice one that I’ve never seen before. The name of the record is “Sounds of Earth” <b>08</b>.";
+  		answer = "My mother’s cabin looks like a little getaway for relaxing after a long day. The majority of the space is took by her vinyl collection and a record player <b>63</b>. While browsing through the records, I notice one that I’ve never seen before. The name of the record is 'Sounds of Earth' <b>08</b>.";
 	} else if (x == "I" || x == "i") {
-  		answer = "It’s a drawing of the constellations I saw with the telescope in their accurate position. I added the numbers from my mother’s astronomy books next to their according stars.";
+  		answer = "It’s a drawing of the constellations I saw with the telescope in their accurate positions. I added the numbers from my mother’s astronomy book next to their according stars.";
 	} else if (x == "01,01") {
   		answer = "I miss my mother a lot. With her gone, I have no family left. I’ve never felt so alone before. ";
 	} else if (x == "01,02") {
   		answer = "Best eggs you can find. My mother always bought eggs from local farmers.";
 	} else if (x == "01,03") {
-  		answer = "Laika is a great dog. But she seems to be really depressed with my mother gone. Wait...What’s that on her collar? Is that my mother’s gem?";
+  		answer = "I remember my mother mentioning that she was interested in buying a cabin not far from home. But she never told me she actually did it. Now, how do I open this lock?";
 	} else if (x == "01,04") {
   		answer = "This could be useful, maybe not to me but to somebody else.";
 	} else if (x == "01,05") {
   		answer = "My mother used to read it to me when I was a child. She would change the scary parts, so I never really heard the whole story.";
 	} else if (x == "01,06") {
-  		answer = "Ok, that’s a start. What’s the next step?";
+  		answer = "Any friend of my mother is my friend too.";
 	} else if (x == "01,07") {
   		answer = "It could be interesting, but I’m not in a mood for a lecture today.";
 	} else if (x == "01,08") {
@@ -204,15 +194,15 @@ function myFunction() {
 	} else if (x == "01,15") {
   		answer = "What can I say about my phone...it’s a useful tool.";
 	} else if (x == "01,16") {
-  		answer = "I’m not sure, but I think my mother got it on a flea market.";
+  		answer = "It’s magical as always…I can recognize some of the constellations.";
 	} else if (x == "01,17") {
   		answer = "What a strange book! It’s just a bunch of stars with 4 digit numbers written next to it. And all in my mother’s handwriting. Why would she hide this in Sinbad the Sailor cover?";
 	} else if (x == "01,18") {
-  		answer = "My mother used to put ginger in everything.";
+  		answer = "That’s great, now the projector is working!";
 	} else if (x == "01,19") {
   		answer = "I have a feeling these cookies will be amazing.";
 	} else if (x == "01,20") {
-  		answer = "Salt. So simple, yet so important.";
+  		answer = "This projector could be useful. I wonder if I could borrow it.";
 	} else if (x == "01,21") {
   		answer = "I never noticed this photo before. My mother must have framed it after I moved out. Where was the photo taken? That’s a really nice piece of street art, but I’m not an expert on the subject.";
 	} else if (x == "01,22") {
@@ -220,7 +210,7 @@ function myFunction() {
 	} else if (x == "01,23") {
   		answer = "My mother was in a way also my best friend. She had this magic power to make you feel better just by looking at you. But I always felt as if she was keeping secrets from me.";
 	} else if (x == "01,24") {
-  		answer = "An object I don’t use very often.";
+  		answer = "I’m a complete amateur when it comes to baking, but my mother was pretty good in it.";
 	} else if (x == "01,25") {
   		answer = "Oh no! I was excited to look at the sky tonight. It was a little ritual my mother and I did together.";
 	} else if (x == "01,26") {
@@ -242,7 +232,7 @@ function myFunction() {
 	} else if (x == "01,34") {
   		answer = "A device I’m not very familiar with.";
 	} else if (x == "01,35") {
-  		answer = "Ok, going well for now.";
+  		answer = "Where could I leave my little mark?";
 	} else if (x == "01,36") {
   		answer = "I can’t wait till autumn to get some pumpkin! Maybe if I could somehow speak to the sprout I could make it grow faster.";
 	} else if (x == "01,37") {
@@ -261,8 +251,8 @@ function myFunction() {
   		answer = "If I could get Jocelyn to leave the table I could look into her computer.";
 	} else if (x == "01,44") {
   		answer = "Jocelyn’s tea cup is empty. Maybe she would like another one?";
-	} else if (x == "01,45") {
-  		answer = "Great apples from the apple tree in the garden. My mother used them to make fantastic apple pies.";
+	} else if (x == "01,45" || x == "01,54") {
+  		answer = "So the photo must have come with the letter. Maybe I could figure out Mary’s address from her story.";
 	} else if (x == "01,46") {
   		answer = "Ok, I have a moment to look at the tests before professor Martin comes back.";
 	} else if (x == "01,47") {
@@ -279,12 +269,10 @@ function myFunction() {
   		answer = "He seems to be very passionate about his job.";
 	} else if (x == "01,53") {
   		answer = "I should find a way to destroy the lecture without anybody suspecting me.";
-	} else if (x == "01,54") {
-  		answer = "Considering my lack of experience, I’m quite satisified with it.";
 	} else if (x == "01,55") {
   		answer = "Alright! Now I can buy the lens!";
 	} else if (x == "01,56") {
-  		answer = "My mother gets her milk from the same farm as the eggs. I should take all this food with me, it will go to waste otherwise.";
+  		answer = "Why would my mother keep this article in the safe? Was she leaving me some kind of a message?";
 	} else if (x == "01,57") {
   		answer = "My mineralogy professor is an expert in his field and has some of the most interesting lectures in the university. His tests are not easy to pass, though.";
 	} else if (x == "01,58") {
@@ -301,28 +289,120 @@ function myFunction() {
   		answer = "So this is where her record player and all the records are. I was wondering why I didn’t see them in the house.";
 	} else if (x == "01,64") {
   		answer = "This looks like some kind of a riddle. Look at the sky...is it connected to the telescope?";
-	} else if (x == "01,65") {
-  		answer = "This looks like some kind of a riddle. Am I supposed to find Baghdad?";
-	} else if (x == "01,66") {
-  		answer = "Any friend of my mother is my friend too.";
-	} else if (x == "01,67") {
-  		answer = "Why would my mother keep this article in the safe? Was she leaving me some kind of a message?";
-	} else if (x == "01,68") {
-  		answer = "I’m a complete amateur when it comes to baking, but my mother was pretty good in it.";
-	} else if (x == "01,69") {
-  		answer = "So the photo must have come with the letter. Maybe I could figure out Mary’s address from her story.";
-	} else if (x == "01,70") {
-  		answer = "So the photo must have come with the letter. Maybe I could figure out Mary’s address from her story.";
-	} else if (x == "01,71") {
-  		answer = "Where could I leave my little mark?";
-	} else if (x == "01,72") {
-  		answer = "This projector could be useful. I wonder if I could borrow it.";
-	} else if (x == "01,73") {
-  		answer = "I remember my mother mentioning that she was interested in buying a cabin not far from home. But she never told me she actually did it. Now, how do I open this lock?";
-	} else if (x == "01,74") {
-  		answer = "It’s magical as always…I can recognize some of the constellations.";
-	} else if (x == "01,75") {
-  		answer = "That’s great, now the projector is working!";
+	} else if (x == "06,01") {
+			answer = "Hello! It’s really a pleasure to meet you. I was friends with Lena, she told me so much about you. I’m so sorry that she’s gone. I don’t know what to say. Actually, there is something I should tell you...Lena gave us a safe to keep it for her. But now that she’s gone, I think it’s best you have it. Could you stop by my house and get it? My wife is home, she’ll get it for you. <br><i>Take card <b>G</b>.</i>";
+	} else if (x == "06,01") {
+			answer = "I don’t know him, sorry.";
+	} else if (x == "06,02" || x == "06,24") {
+			answer = "Thank you, we brought enough food for the protest camp.";
+	} else if (x == "06,03" || x == "06,32") {
+			answer = "I love this dog.";
+	} else if (x == "06,04") {
+			answer = "Thanks, I have no use of it at the moment.";
+	} else if (x == "06,05") {
+			answer = "Lena had a cabin? She never took us there.";
+	} else if (x == "06,06") {
+			answer = "I’ve been in the Earthlings association for a long time now, and Lena and I were great friends. Even though we didn’t see eye to eye on everything, our friendship didn’t suffer from it. Actually, Lena gave something for safekeeping to me and my wife. I believe it’s better that you have it, now that she’s no longer with us. Can you go to our farm outside the city to get it? My wife is at home, she’ll be happy to meet you. <br><i>Take card <b>G</b>.</i>";
+	} else if (x == "06,07") {
+			answer = "Well as you can see, I’ll be spending my evening here. Next time, maybe.";
+	} else if (x == "06,08") {
+			answer = "That’s wonderful! Lena never told me she had it. It must have been an expensive edition, look how authentic it seems!";
+	} else if (x == "06,09") {
+			answer = "Of course I knew that Lena worked in the library. I went to the tea shop next door with her a few times. But I never met her colleague.";
+	} else if (x == "06,10") {
+			answer = "That’s my wife. She was friends with Lena too. We used to spend evenings at our farm, having dinner, talking, listening to music...I’m sorry, it’s difficult to believe that Lena is gone.";
+	} else if (x == "06,11") {
+			answer = "Sorry, I’ve never heard of her.";
+	} else if (x == "06,12") {
+			answer = "That’s great, but we don’t own a telescope. Stargazing was Lena’s hobby, we didn’t really participate in it.";
+	} else if (x == "06,13") {
+			answer = "This must mean something. I wish I could help you but my puzzle solving skills are limited.";
+	} else if (x == "06,14") {
+			answer = "Lena did speak of her friend Mary a few times. It was clear that they grew apart a long time ago and that she misses her a lot.";
+	} else if (x == "06,15") {
+			answer = "Here’s my phone number. Call me anytime.";
+	} else if (x == "06,16") {
+			answer = "Beautiful! I know that Lena was obssesed with stars, it seems that you’ve inherited the passion from her.";
+	} else if (x == "06,17") {
+			answer = "Well, it looks like a lot of work to write all of this. Why is there a number next to each star? I don’t know, maybe Lena had her system of star denotation.";
+	} else if (x == "06,18") {
+			answer = "Thank you, but I don’t think we can find a use for it here.";
+	} else if (x == "06,19" || x == "06,40" || x == "06,48") {
+			answer = "I remember that Lena used to make some special cookies for Laika. I don’t know the recipe unfortunatelly.";
+	} else if (x == "06,21") {
+			answer = "Sorry, but the mural doesn’t seem familiar.";
+	} else if (x == "06,22") {
+			answer = "I don’t know how to help you with this. Actually, I don’t really want to get involved with messing up somebody’s property.";
+	} else if (x == "06,23") {
+			answer = "Lena was a great friend. I miss her a lot. She left Earthlings some time ago, because of a quarrel she had with Nathan. The two of us tried not to let it influence our friendship, even if I didn’t agree with the way she quit. It’s not that I judge her, only that I didn’t like that she intentionally hacked her computer in the association to make all the information on it unreachable. She told me this in confidence, and explained that she wasn’t sure about the information in the association were safe. She believed that we were observed by somebody from the outside. It was a little parranoid, if you ask me. I never told this to anybody, not even Nathan. I didn’t want to raise even more tension between them. She did it with an SD card that holds a virus, and gave it to me afterwards, in case that I might want to use it too. You just have to insert it and it takes care of everything, leaving a false trace that the attack was made from outside, like an online connection. Could I give the SD card to you actually? I feel bad for holding it all this time. Oh, and one more thing. Lena left something to me and my wife for safekeeping. We have it at our farm outside the city. I think you should have it now that she’s gone. Could you go there and take it? My wife will be home all day. <br><i>Take cards <b>33</b> and <b>G</b>";
+	} else if (x == "06,34") {
+			answer = "Lena was a great cook. And baked goods were her specialty.";
+	} else if (x == "06,25") {
+			answer = "Oh, I’d really like to help you, but I’m short on money at the moment. And I probably will be for years to come. I bought a house with my wife just outside the city, and it wasn’t a bargain.";
+	} else if (x == "06,26") {
+			answer = "Thank you, we brought enough drinks for the protest camp.";
+	} else if (x == "06,27") {
+			answer = "I remember that Lena used to make some special cookies for Laika. I can’t read this recipe unfortunatelly.";
+	} else if (x == "06,28") {
+			answer = "Of course I remember this gem Lena used to wear. Nathan was always criticising any of us wearing expensive jewelry, he said it send a wrong kind of message. But Lena didn’t care about this, she said it connects her to her origins.";
+	} else if (x == "06,29" || x == "06,46") {
+			answer = "Mineralogy is not really my specialty, sorry.";
+	} else if (x == "06,30") {
+			answer = "Ah, you got it from Emma. Great! Sorry, but I don’t have an idea what the combination could be, Lena said nothing about it.";
+	} else if (x == "06,31") {
+			answer = "I can’t say that I’ve met him.";
+	} else if (x == "06,33") {
+			answer = "That’s the card with the virus Lena gave me. Do what you want with it, I’m not confortable with having it on me.";
+	} else if (x == "06,35") {
+			answer = "I don’t think I’ll be needing it, thanks.";
+	} else if (x == "06,36") {
+			answer = "Yes, we grow pumpkins in our garden. It’s not the season yet, though, so I can’t offer you any.";
+	} else if (x == "06,37") {
+			answer = "I wasn’t a student of your university, so I can’t tell you anything about the flag.";
+	} else if (x == "06,38") {
+			answer = "Yes, it’s mine. You can borrow it, sure. We have another one, I think it will suffice till tomorrow.";
+	} else if (x == "06,39") {
+			answer = "This is Lena’s library logo. As for the numbers below, I don’t know what could they mean.";
+	} else if (x == "06,41") {
+			answer = "You’re telling me that this pumpkin is from our garden? How is it possible?";
+	} else if (x == "06,42") {
+			answer = "Sorry, but I don’t really follow street art scene.";
+	} else if (x == "06,20" || x == "06,43") {
+			answer = "I’m not sure what to say about this.";
+	} else if (x == "06,44" || x == "06,50") {
+			answer = "Thank you, we brought enough tableware for the protest camp.";
+	} else if (x == "06,45" || x == "06,54") {
+			answer = "I don’t know what this letter could mean. The way it’s written is a bit unusual, right?";
+	} else if (x == "06,47") {
+			answer = "Ziggy, I don’t plan to lecture you, but cheating on tests is not the best decision to make.";
+	} else if (x == "06,49") {
+			answer = "Thanks, I don’t think I’ll be needing them.";
+	} else if (x == "06,51") {
+			answer = "I think he works in the tea shop next to the library, doesn’t he?";
+	} else if (x == "06,52") {
+			answer = "No, I can’t say that I’ve met him.";
+	} else if (x == "06,53") {
+			answer = "I don’t know how to help you with this. Actually, I don’t really want to get involved with messing up somebody’s property.";
+	} else if (x == "06,55") {
+			answer = "That’s really kind of you, but taking your money is out of the question.";
+	} else if (x == "06,56") {
+			answer = "I guess that Lena kept this because of her doubt in IBOR’s sincerity. She had a dispute with Nathan about them sponsoring our association as a part of their ‘going green’ policy. That’s why she left Earthlings actually. She was not even giving them a change to prove her wrong, if you ask me. Probably she was conducting a research of her own, you know how stubborn she could be when she put her finger on something.";
+	} else if (x == "06,57") {
+			answer = "I wasn’t a student of your university, so I can’t say that I’ve met your professor.";
+	} else if (x == "06,58") {
+			answer = "You made Laika her favourite cookies? That must cheer her up.";
+	} else if (x == "06,59") {
+			answer = "Nathan is the leader of Earthlings. He dedicated his life to it. It’s true that he had a dispute with Lena, after which she quit the association. Actually, the reason was that Earthlings have recently been funded by IBOR, the oil company. It seems strange, I know, but they have a new green policy which includes funding environmental organisations amongst other things. Nathan accepted the offer, saying that we should welcome these offers and reassuring us that he’s carefully read the document of their plan, and that it’s a real switch to a green economy. Lena was not convinced, and she basically said that Nathan sold us to a dangerous polluter who now has all the means to control us. She even faked a hacking of her own computer before leaving Earthlings, to make sure that nobody could get any data out of it once she’s gone. She put a virus with an SD card that corrupted all the files and left a false trace of an outside attack, to make it seem like it was hacked by somebody online. Nathan didn’t figure this out, I think. She told me about it because she thought I’d be on her side on this, but I must say that I find her actions too paranoid. She gave me the card to do the same with my computer, but I never used it. Actually, take it. I’m not happy with the fact that I’m holding it all this time. As well as lying to Nathan. <br><i>Take card <b>33</b>.</i> ";
+	} else if (x == "06,60") {
+			answer = "Yes, we have a senna plant in the garden. Feel free to pick a few leaves.";
+	} else if (x == "06,61") {
+			answer = "Now when you speak of it, I remember that Lena had this ‘special power’ too. She could easily diagnose all the problems in the garden and helped us make it better. We are still amateurs in cultivating our own food, but she seemed to know everything just by looking at it. When I asked her was she raised on a farm, she just said: “Something like that.”";
+	} else if (x == "06,62") {
+			answer = "Senna leaves are excellent for digestion, but be careful with the dosage. If you put too much, It can make you run to the toilet pretty fast.";
+	} else if (x == "06,63") {
+			answer = "I know that Lena had a record player and a nice collection of records. She used to say that music is human’s most beautiful creation.";
+	} else if (x == "06,64") {
+			answer = "This is all very enigmatic. I can’t make sense of it, sorry.";
 	} else if (x == "09,01") {
   		answer = "Hello my dear. It’s really nice to see you! I’m so sorry about Lena, how are you holding up? If there’s anything I can do for you, please let me know.";
 	} else if (x == "09,02") {
@@ -332,11 +412,11 @@ function myFunction() {
 	} else if (x == "09,04") {
   		answer = "Take it, just return it tomorrow.";
 	} else if (x == "09,05") {
-  		answer = "It’s an old edition that we keep in the basement. We don’t rent it out, you know how people can be careless with books. This one has value.";
+			answer = "Hm, I didn’t know that Lena had a cabin. I’m afraid I can’t help you with the lock combination.";
 	} else if (x == "09,06") {
-  		answer = "I’m glad you’re learning to cook, even if it’s for your dog.";
+			answer = "I’m sorry, but I don’t know this man.";
 	} else if (x == "09,07") {
-  		answer = "Yes, Jocelyn Hill will be giving a lecture here tonight. She came an hour ago and she is very nervous about the lecture. She went to calm down in the tea shop next door. The lecture should be interesting. Did you know that there is a town in Bavaria that was built on a meteor impact crater? The fact was discovered in 20th century, they thought it was a volcanic crater before. <i>Search the internet</i> <br><i>Take cards <b>11</b> and <b>E</b>.</i>";
+  		answer = "Yes, Jocelyn Hill will be giving a lecture here tonight. She came an hour ago and she is very nervous about the lecture. She went to calm down in the tea shop next door. The lecture should be interesting. Did you know that there is a town in Bavaria that was built on a meteor impact crater? The fact was discovered in 20th century, they thought it was a volcanic crater before. <i>Search the internet</i> <br><i>Take card <b>E</b>.</i>";
 	} else if (x == "09,08") {
   		answer = "Oh, it’s a copy of the Golden Record? How peculiar. Well, Lena always did have a peculiar taste.";
 	} else if (x == "09,09") {
@@ -354,15 +434,15 @@ function myFunction() {
 	} else if (x == "09,15") {
   		answer = "I can give you my number. Call me anytime.";
 	} else if (x == "09,16") {
-  		answer = "It’s a nice bowl, dear.";
+			answer = "That’s really beautiful. I’m sure you’re better with these things than I am, though. The only constellation I can recognize in the sky is the Great Bear.";
 	} else if (x == "09,17") {
   		answer = "Hm, this is not from our library. Actually, it seems that it was handwritten by Lena. It’s her handwriting, isn’t it? And where is the original book, I’m shocked that Lena took it!";
 	} else if (x == "09,18") {
-  		answer = "I have enough of ginger at home, thank you.";
-	} else if (x == "09,19" || x == "09,35" || x == "09,40" || x == "09,48") {
+			answer = "Well, you managed to get power to use the projector outside. Great! Just take good care of it please.";
+	} else if (x == "09,19" || x == "09,40" || x == "09,48") {
   		answer = "Thank you, but I don’t have a dog. Also, the cookies are not yet finished, right?";
 	} else if (x == "09,20") {
-  		answer = "Thank you dear, I don’t need salt at the moment.";
+			answer = "You would like to borrow the projector? Of course I would like to help you, but unfortunatelly there is a lecture here tonight and we will be using it. I could probably let you have it tomorrow if that’s alright.";
 	} else if (x == "09,21") {
   		answer = "I can’t help you with identifying the mural. We have a book on street art, but it’s not very up to date.";
 	} else if (x == "09,22") {
@@ -370,7 +450,7 @@ function myFunction() {
 	} else if (x == "09,23") {
   		answer = "I miss Lena so much! She was a beautiful soul. She did everything with so much passion. That is until her illness slowed her down. Remember how engaged she was in this activist association, Earthlings? Why did she quit anyway, she never told me. I heard they were protesting in Deansgate on the radio this morning. <br><i>Take card <b>F</b>.</i>";
 	} else if (x == "09,24") {
-  		answer = "I don’t need a baking pan, thank you, I have one already. Would you like me to cook something for you tonight, dear?";
+			answer = "Thank you dear, I don’t need any flour right now.";
 	} else if (x == "09,25") {
   		answer = "Yes, I know that Lena was a passionate amateur astronomer. The lens is broken? I wish I could help you with that, but my paycheck is not until the beginning of next month and I’m kind of broke at the moment.";
 	} else if (x == "09,26") {
@@ -389,6 +469,8 @@ function myFunction() {
 			answer = "I’m completely lost with technology. Lena was dealing with all the computers in the library, I’m very old fashioned I’m afraid.";
 	} else if (x == "09,34") {
 			answer = "I can show you how to use the oven, dear.";
+	} else if (x == "09,35") {
+			answer = "I’m not a big fan of street art, if I’m being honest.";
 	} else if (x == "09,36") {
 			answer = "I’m aware that it’s a bit early for pumpkin. You’ll have to wait a bit longer I’m afraid.";
 	} else if (x == "09,37") {
@@ -396,7 +478,7 @@ function myFunction() {
 	} else if (x == "09,38") {
 			answer = "Oh, a very useful thing if for an outdoors person.";
 	} else if (x == "09,39") {
-			answer = "Let me see this...This is a code for a book from our library. Let me just check in our database...It’s in the basement, where we keep only rare editions. Let me get it for you. <br><i>Take card <b>05</b>. Remove card <b>39</b>.</i>";
+			answer = "Let me see this...This is a code for a book from our library. Let me just check in our database...It’s in the basement, where we keep only rare editions. Let me get it for you. <br><i>Take card <b>17</b>. Remove card <b>39</b>.</i>";
 	} else if (x == "09,41") {
 			answer = "What a beautiful pumpkin! Where did you get it, it’s not pumpkin season yet?";
 	} else if (x == "09,42") {
@@ -405,8 +487,8 @@ function myFunction() {
 			answer = "She has the lecture on the computer. I think she spent all afternoon reading and memorising it.";
 	} else if (x == "09,44") {
 			answer = "She drinks tea all afternoon. She says it’s good for relaxing.";
-	} else if (x == "09,45") {
-			answer = "Lena always brought me the apples from your apple tree! Sure, I’ll take some.";
+	} else if (x == "09,45" || x == "09,54") {
+			answer = "What a curious letter. I would like to help you find her address, but it’s a bit hard without knowing what city she lives in. Your mother did mention a long lost friend a few times, that she misses a lot. Maybe it was this Mary she was talking about.";
 	} else if (x == "09,46" || x == "09,47") {
 			answer = "Ziggy, don’t tell me you’re cheating on your tests? Lena would be very dissapointed!";
 	} else if (x == "09,49") {
@@ -419,12 +501,10 @@ function myFunction() {
 			answer = "I’ve never met him, but I’m aware of your mother’s fascination with space.";
 	} else if (x == "09,53") {
 			answer = "She left her computer open? That’s strange, she’s very protective of it. She has her lecture on it, you know.";
-	} else if (x == "09,54") {
-			answer = "Beautifully made. But I would bake them before giving them to Laika if I were you.";
 	} else if (x == "09,55") {
 			answer = "Where did you get all this money? Use it wisely my dear.";
 	} else if (x == "09,56") {
-			answer = "Thank you, I take my tea without milk.";
+			answer = "I don’t know why would your mother keep this article.";
 	} else if (x == "09,57") {
 			answer = "I’ve seen professor Martin a few times in the library. A very charming and interesting man.";
 	} else if (x == "09,58") {
@@ -439,26 +519,8 @@ function myFunction() {
 			answer = "Thank you dear, I already had my tea.";
 	} else if (x == "09,63") {
 			answer = "It’s a very nice record player. Your mother liked these vintage things. She said that it was the first way she experienced music.";
-	} else if (x == "09,64" || x == "09,65") {
+	} else if (x == "09,64") {
 			answer = "Why, I’m really not sure what this could be about. It seems to mention some parts of Sinbad’s journeys.";
-	} else if (x == "09,66") {
-			answer = "I’m sorry, but I don’t know this man.";
-	} else if (x == "09,67") {
-			answer = "I don’t know why would your mother keep this article.";
-	} else if (x == "09,68") {
-			answer = "Thank you dear, I don’t need any flour right now.";
-	} else if (x == "09,69" || x == "09,70") {
-			answer = "What a curious letter. I would like to help you find her address, but it’s a bit hard without knowing what city she lives in. Your mother did mention a long lost friend a few times, that she misses a lot. Maybe it was this Mary she was talking about.";
-	} else if (x == "09,71") {
-			answer = "I’m not a big fan of street art, if I’m being honest.";
-	} else if (x == "09,72") {
-			answer = "You would like to borrow the projector? Of course I would like to help you, but unfortunatelly there is a lecture here tonight and we will be using it. I could probably let you have it tomorrow if that’s alright.";
-	} else if (x == "09,73") {
-			answer = "Hm, I didn’t know that Lena had a cabin. I’m afraid I can’t help you with the lock combination.";
-	} else if (x == "09,74") {
-			answer = "That’s really beautiful. I’m sure you’re better with these things than I am, though. The only constellation I can recognize in the sky is the Great Bear.";
-	} else if (x == "09,75") {
-			answer = "Well, you managed to get power to use the projector outside. Great! Just take good care of it please.";
 	} else if (x == "10,01") {
 			answer = "What a pleasure to finally meet you, Ziggy. Lena told us so much about you. She was very proud of you!";
 	} else if (x == "10,02") {
@@ -468,9 +530,9 @@ function myFunction() {
 	} else if (x == "10,04") {
 			answer = "It’s a good projector. We don’t watch a lot of films here, we usualy play board games.";
 	} else if (x == "10,05") {
-			answer = "I’ve never read it, so I can’t tell you a lot about it.";
+				answer = "Lena never spoke of this cabin. I guess it was her little sanctuary.";
 	} else if (x == "10,06") {
-			answer = "It looks like a good start of a cookie.";
+			answer = "My husband is very active in Earthlings still. He’s at a protest right now. We was a bit upset when Lena left the association, but he didn’t tell me the details about it.";
 	} else if (x == "10,07") {
 			answer = "There’s a lecture in the library tonight?";
 	} else if (x == "10,08") {
@@ -490,15 +552,15 @@ function myFunction() {
 	} else if (x == "10,15") {
 			answer = "Take my phone number.";
 	} else if (x == "10,16") {
-			answer = "What a pretty bowl!";
+			answer = "Wow, how beautiful. I would like to know more about stars.";
 	} else if (x == "10,17") {
 			answer = "Wow, I knew that Lena was an astronomy fan, but this looks more complex than an amateur effort.";
 	} else if (x == "10,18") {
-			answer = "Thanks, I have enough ginger.";
+			answer = "A good idea to use Gavin’s generator to power up the projector.";
 	} else if (x == "10,19") {
 			answer = "This shoud be yummy.";
 	} else if (x == "10,20") {
-			answer = "Thanks, I have enough salt.";
+			answer = "You want to borrow the projector, but there is a lecture tonight? I don’t know what to say, to bad that the lecture is not happening some other day.";
 	} else if (x == "10,21") {
 			answer = "Oh, I really like the mural in the photo, but I have no idea who could the artist be. Or where the photo could have been taken.";
 	} else if (x == "10,22") {
@@ -506,7 +568,7 @@ function myFunction() {
 	} else if (x == "10,23") {
 			answer = "Lena was our dear friend. We grew close a few years ago, as she became friends with Gavin in the association. And we continued to see each other after she left. I don’t exactly know what was the reason she quit, Gavin probably knows more. Anyway, she left me a safe with a digital lock for safekeeping. All of this happened around 6 months ago. She said it’s wiser to leave it here than in the house. I don’t know what was she afraid of. She said to give it to you if something happens to her. She found out about her illness just a couple of weeks after, poor thing. Here, take the safe. <br><i>Take card <b>30</b>.</i>";
 	} else if (x == "10,24") {
-			answer = "Thanks, I already have one in my kitchen.";
+			answer = "Thanks, I have enough flour.";
 	} else if (x == "10,25") {
 			answer = "Sorry, I really can’t help you with this. We’re still paying off the house, so we’re saving every cent.";
 	} else if (x == "10,26") {
@@ -526,7 +588,7 @@ function myFunction() {
 	} else if (x == "10,34") {
 			answer = "Thanks, I have an oven in my kitchen.";
 	} else if (x == "10,35") {
-			answer = "Seems like you know what you’re doing.";
+			answer = "I don’t need it for the moment, but if I decide to do some art on my house I’ll let you know.";
 	} else if (x == "10,36") {
 			answer = "Yes, we grow pumpkins. It will take about 3 months for a ripe fruit to develop.";
 	} else if (x == "10,37") {
@@ -545,8 +607,8 @@ function myFunction() {
 			answer = "I don’t know much about computers.";
 	} else if (x == "10,44") {
 			answer = "I have enough cups already. Besides, I’m not very keen on stealing from bars.";
-	} else if (x == "10,45") {
-			answer = "I’ve had many of these apples, Lena always used to bring them.";
+	} else if (x == "10,45" || x == "10,54") {
+			answer = "Hm, this letter sounds almost like a riddle. You could probably figure out where she lives if you follow her path. And if you knew where to start, of course. Nad yes, Lena did mention a friend named Mary. They used to be very close but they grew apart because of a different point of view on something.";
 	} else if (x == "10,46" || x == "10,47") {
 			answer = "Cheating on your test is not something you should be proud about.";
 	} else if (x == "10,48") {
@@ -559,12 +621,10 @@ function myFunction() {
 			answer = "I’ve never been it that tea shop, so I’ve never seen the man.";
 	} else if (x == "10,52") {
 			answer = "I don’t think we’ll be getting a telescope anytime soon, but if we do, it’s good to know who to ask.";
-	} else if (x == "10,54") {
-			answer = "Well done! They should be baked though.";
 	} else if (x == "10,55") {
 			answer = "Thanks Ziggy, but I won’t take your money. Keep it, I’m sure it will be useful.";
 	} else if (x == "10,56") {
-			answer = "No thanks, I have enough.";
+			answer = "I’m not completely sure, but I think that Gavin said that this oil company is changing it’s policy and plans to shift most of their production to reneweble energy sources. I think they even fund some of the activist organisations now, Earthlings included.";
 	} else if (x == "10,57") {
 			answer = "I’ve never heard of your professor.";
 	} else if (x == "10,58") {
@@ -572,33 +632,15 @@ function myFunction() {
 	} else if (x == "10,59") {
 			answer = "That’s the leader of Eatrhlings. Lena and him got into a fight, which ended with Lena quitting the association. I don’t know exactly what the fight was about.";
 	} else if (x == "10,60") {
-			answer = "Sure, you can take some. It’s great for digestion, works great like a natural laxative. A couple of leaves in your tea will do the trick.";
+			answer = "Sure, you can take some. It’s great for digestion, works like a natural laxative. A couple of leaves in your tea will do the trick.";
 	} else if (x == "10,61") {
 			answer = "I know what you mean. I feel like this since I moved to the countryside.";
 	} else if (x == "10,62") {
 			answer = "I’m not really in a mood for tea, thank you.";
 	} else if (x == "10,63") {
 			answer = "It’s a nice record player.";
-	} else if (x == "10,64" || x == "10,65") {
+	} else if (x == "10,64") {
 			answer = "Sorry Ziggy, but this looks like gibberish to me.";
-	} else if (x == "10,66") {
-			answer = "My husband is very active in Earthlings still. He’s at a protest right now. We was a bit upset when Lena left the association, but he didn’t tell me the details about it.";
-	} else if (x == "10,67") {
-			answer = "I’m not completely sure, but I think that Gavin said that this oil company is changing it’s policy and plans to shift most of their production to reneweble energy sources. I think they even fund some of the activist organisations now, Earthlings included.";
-	} else if (x == "10,68") {
-			answer = "Thanks, I have enough flour.";
-	} else if (x == "10,69" || x == "10,70") {
-			answer = "Hm, this letter sounds almost like a riddle. You could probably figure out where she lives if you follow her path. And if you knew where to start, of course. Nad yes, Lena did mention a friend named Mary. They used to be very close but they grew apart because of a different point of view on something.";
-	} else if (x == "10,71") {
-			answer = "I don’t need it for the moment, but if I decide to do some art on my house I’ll let you know.";
-	} else if (x == "10,72") {
-			answer = "You want to borrow the projector, but there is a lecture tonight? I don’t know what to say, to bad that the lecture is not happening some other day.";
-	} else if (x == "10,73") {
-			answer = "Lena never spoke of this cabin. I guess it was her little sanctuary.";
-	} else if (x == "10,74") {
-			answer = "Wow, how beautiful. I would like to know more about stars.";
-	} else if (x == "10,75") {
-			answer = "A good idea to use Gavin’s generator to power up the projector.";
 	} else if (x == "11,01") {
 			answer = "Hello, nice to meet you. Your mother used to work at the library? I’m so sorry for your loss.";
 	} else if (x == "11,02") {
@@ -606,9 +648,9 @@ function myFunction() {
 	} else if (x == "11,03" || x == "11,32") {
 			answer = "What a cute dog!";
 	} else if (x == "11,05") {
-			answer = "Fiction is not my cup of tea.";
-	} else if (x == "11,06" || x == "11,16" || x == "11,18" || x == "11,19" || x == "11,20" || x == "11,24" || x == "11,34" || x == "11,35" || x == "11,36" || x == "11,38" || x == "11,40" || x == "11,41" || x == "11,45" || x == "11,48" || x == "11,50" || x == "11,54" || x == "11,58" || x == "11,68" || x == "11,71") {
-			answer = "I’m really sorry, but I don’t have time for meaningless questions. I have to work on my lecture.";
+			answer = "I don't know what does Shedar mean. I can’t imagine why would your mother write this on her cabin door.";
+	} else if (x == "11,06") {
+			answer = "I’ve never seen him.";
 	} else if (x == "11,07") {
 			answer = "Yes, I’m giving the lecture. Does it show that I’m freaking out about it? I get all stressed out when I’m supposed to talk in front of people. My mind becomes empty and I lose my words...It’s a nightmare!";
 	} else if (x == "11,08") {
@@ -627,8 +669,14 @@ function myFunction() {
 			answer = "I’m sorry, but I’ve never met your mother. So I wouldn’t know anything about her friends.";
 	} else if (x == "11,15") {
 			answer = "I think we don’t know each other well enough to exchange phone numbers.";
+	} else if (x == "11,16") {
+			answer = "It’s amazing, the universe I mean. Isn’t it?";
 	} else if (x == "11,17") {
 			answer = "This seems interesting, for someone who is into stars at least. But I really don’t have time for it now.";
+	} else if (x == "11,19" || x == "11,24" || x == "11,34" || x == "11,35" || x == "11,36" || x == "11,38" || x == "11,40" || x == "11,41" || x == "11,48" || x == "11,50" || x == "11,58") {
+			answer = "I’m really sorry, but I don’t have time for meaningless questions. I have to work on my lecture.";
+	} else if (x == "11,20") {
+			answer = "I will be using the projector tonight. I’m sorry, but borrowing it is out of the question. My lecture would be terrible without images.";
 	} else if (x == "11,21") {
 			answer = "I’m not familiar with the mural in the photo. ";
 	} else if (x == "11,23") {
@@ -659,6 +707,8 @@ function myFunction() {
 			answer = "I have my lecture on it. So at the moment, it’s my most precious possession.";
 	} else if (x == "11,44") {
 			answer = "I would love another cup of tea, thank you so much.";
+	} else if (x == "11,45" || x == "11,54" || x == "11,64") {
+			answer = "This looks like a puzzle. I’m a big fan of puzzles, but I really don’t have time for this right now.";
 	} else if (x == "11,46" || x == "12,47") {
 			answer = "I’ve never cheated on tests. And I’m absolutely against it.";
 	} else if (x == "11,49") {
@@ -670,7 +720,7 @@ function myFunction() {
 	} else if (x == "11,55") {
 			answer = "Money will not help me in this situation, but thank you for trying.";
 	} else if (x == "11,56") {
-			answer = "I take my tea without milk, thank you.";
+			answer = "I remember I saw this in the newspapers. Well, let’s hope that that’s not just a PR trick.";
 	} else if (x == "11,57") {
 			answer = "I wasn’t a student of professor Martin, I studied history in the university. But I hear that he is a great professor.";
 	} else if (x == "11,59") {
@@ -683,20 +733,10 @@ function myFunction() {
 			answer = "Thank you, that’s really nice of you. Sluuuurp! <br><i>Jocelyn drinks her tea and a few minutes after she excuses her, asks you to look after her computer and runs to the toilet. <br>Take card <b>22</b>. Remove cards <b>43</b> and <b>62</b>.</i>";
 	} else if (x == "11,63") {
 			answer = "To would think that a historian likes vintage things, but I prefer to listen to music in a digital form.";
-	} else if (x == "11,64" || x == "11,65" || x == "11,69" || x == "11,70") {
-			answer = "This looks like a puzzle. I’m a big fan of puzzles, but I really don’t have time for this right now.";
-	} else if (x == "11,66") {
-			answer = "I’ve never seen him.";
-	} else if (x == "11,67") {
-			answer = "I remember I saw this in the newspapers. Well, let’s hope that that’s not just a PR trick.";
-	} else if (x == "11,72") {
-			answer = "I will be using the projector tonight. I’m sorry, but borrowing it is out of the question. My lecture would be terrible without images.";
-	} else if (x == "11,73") {
-			answer = "I visited Baghdad maybe ten years ago. I can’t imagine why would your mother write this on her cabin door.";
-	} else if (x == "11,74") {
-			answer = "It’s amazing, the universe I mean. Isn’t it?";
 	} else if (x == "14,01" || x == "14,14" || x == "14,23") {
-			answer = "I can’t believe I’m speaking to you, Ziggy. The last time I saw you, you were a baby, and now you’re all grown up...Lena died? How terrible. I never got a chance to say goodbye...<br><i> Mary’s voice breaks, as she struggles not to burst into tears.</i> <br>I’m sorry, it’s just very hard to hear this. I can’t even imagine how you must feel. So, you realised that your mother had some secrets...Well, I think I owe you the truth, even though I’m not sure that Lena would have approved it. But I can’t really speak about all of this on the phone. Could you visit me? I’ll pay for your plane ticket, don’t worry about it. Yes, I know that you would like some answers immidiately. I’ll tell you everything when you come, but let’s just say that you were not really born in this world you call home...Come soon! <br><i>Chapter One of the game is now finished. To unravel the mystery of Ziggy’s origin and continue her adventure, start Chapter Two. Thank you for playing!</i>";
+			answer = "I can’t believe I’m speaking to you, Ziggy. The last time I saw you, you were a baby, and now you’re all grown up...Lena died? How terrible. I never got a chance to say goodbye...<br><i> Mary’s voice breaks, as she struggles not to burst into tears.</i> <br>I’m sorry, it’s just very hard to hear this. I can’t even imagine how you must feel. So, you realised that your mother had some secrets...Well, I think I owe you the truth, even though I’m not sure that Lena would have approved it. But I can’t really speak about all of this on the phone. Could you visit me? I’ll pay for your plane ticket, don’t worry about it. Yes, I know that you would like some answers immediately. I’ll tell you everything when you come, but let’s just say that you were not really born in this world you call home...Come soon! <br><i>Chapter One of the game is now finished. To unravel the mystery of Ziggy’s origin and continue her adventure, start Chapter Two. Thank you for playing!</i>";
+	} else if (x == "14,06" || x == "14,59") {
+			answer = "I’ve never heard of him. Lena and I weren’t in contact for years. But I’m not surprised she was in a enviornmental activist group.";
 	} else if (x == "14,08") {
 			answer = "So, you found the record. Sure, I know that your mother has it. But to explain how she got it, there is a bigger story to tell.";
 	} else if (x == "14,09") {
@@ -711,14 +751,12 @@ function myFunction() {
 			answer = "Right, the gem. Well, if you’re wearing it now, you probably realise some changes in you. Are you feeling more connected to living creatures? Even being capable of influencing them in one way or another? That’s the effect of the gem. But I can’t really explain all this in a few words. There’s a bigger story behind it.";
 	} else if (x == "14,32") {
 			answer = "You have a dog? Lena really wanted to give you a “normal” life, didn’t she?";
+	} else if (x == "14,56") {
+			answer = "Well, Lena’s interest in oil companies doesn’t surprise me. But I’m not sure why would she keep the article. I’d say it’s something to investigate further.";
 	} else if (x == "14,57") {
 			answer = "I’m not familiar with his work.";
-	} else if (x == "14,59" || x == "14,66") {
-			answer = "I’ve never heard of him. Lena and I weren’t in contact for years. But I’m not surprised she was in a enviornmental activist group.";
 	} else if (x == "14,61") {
 			answer = "Yes, I know exactly what you’re talking about. And it’s just the beginning. All I can tell you for the moment is that it’s connected to the gem you’ve been wearing. Take very good care of it.";
-	} else if (x == "14,67") {
-			answer = "Well, Lena’s interest in oil companies doesn’t surprise me. But I’m not sure why would she keep the article. I’d say it’s something to investigate further.";
 	} else if (x == "31,01") {
 			answer = "Hi, Ziggy! I thought you weren’t coming to the university this week. I’m really sorry about your mother.";
 	} else if (x == "31,02") {
@@ -726,9 +764,9 @@ function myFunction() {
 	} else if (x == "31,04") {
 			answer = "That’s a good projector. I don’t know how to solve your power problem, though.";
 	} else if (x == "31,05") {
-			answer = "I don’t really remember the story, even though I did read it as a child.";
-	} else if (x == "31,06" || x == "31,16" || x == "31,18" || x == "31,19" || x == "31,20" || x == "31,24" || x == "31,34" || x == "31,35" || x == "31,36" || x == "31,40" || x == "31,41" || x == "31,44" || x == "31,45" || x == "31,48" || x == "31,49" || x == "31,50" || x == "31,54" || x == "31,56" || x == "31,58" || x == "31,60" || x == "31,68") {
-			answer = "I’m not sure why you’re asking me about this.";
+			answer = "Breaking locks is not something I know how to do.";
+	} else if (x == "31,06") {
+			answer = "No, I can’t say I’ve heard of him.";
 	} else if (x == "31,07") {
 			answer = "Unless the lecture will magically teach me everything about mineralogy for the test tomorrow, I’m not interested in coming.";
 	} else if (x == "31,09") {
@@ -743,6 +781,12 @@ function myFunction() {
 			answer = "I already have your phone number, remember?";
 	} else if (x == "31,17") {
 			answer = "Don’t show me another book, please. My head is already full of mineralogy books, I don’t think I can handle another one.";
+	} else if (x == "31,18") {
+			answer = "Nicely done, but it doesn’t help me with my problem.";
+	} else if (x == "31,19" || x == "31,24" || x == "31,34" || x == "31,36" || x == "31,40" || x == "31,41" || x == "31,44" || x == "31,48" || x == "31,49" || x == "31,50" || x == "31,58" || x == "31,60") {
+			answer = "I’m not sure why you’re asking me about this.";
+	} else if (x == "31,20") {
+			answer = "I’m not surprised that the library has a projector. It’s usual equipment.";
 	} else if (x == "31,21") {
 			answer = "Nice work! But I know nothing about street art.";
 	} else if (x == "31,22") {
@@ -758,7 +802,7 @@ function myFunction() {
 	} else if (x == "31,28") {
 			answer = "Wow, that’s amazing! With my limited knowledge in mineralogy I can’t pretend to know what it could be. Did you show it to the professor?";
 	} else if (x == "31,29") {
-			answer = "Ziggy, I’m not going to pass the test tomorrow. The more I learn, the more it seems that I don’t know. And my scholarship depends on it. Listen, I know it not something that you usually do, but I know that you are on much better terms with the professor than I am. Do you think you could take a peek at the test? Get me copy somehow? He keeps the tests on his desk, if you could distract him for a moment maybe it could be done. I would pay you well for this. Please don’t judge me, my future is in question!";
+			answer = "Ziggy, I’m not going to pass the test tomorrow. The more I learn, the more it seems that I don’t know anything. And my scholarship depends on it. Listen, I know it's not something that you usually do, but you are on much better terms with the professor than I am. Do you think you could take a peek at the test? Get me copy somehow? He keeps the tests on his desk, if you could distract him for a moment maybe it could be done. I would pay you well for this. Please don’t judge me, my future is in question!";
 	} else if (x == "31,30") {
 			answer = "This looks way to complicated to break in. If you don’t have the combination, I’m afraid I can’t help you.";
 	} else if (x == "31,31") {
@@ -767,6 +811,8 @@ function myFunction() {
 			answer = "You have a really cute dog!";
 	} else if (x == "31,33") {
 			answer = "This would be perfect if professor Martin had the tests on his computer, that way we could just delete them with the virus. But he has them all printed out already.";
+	} else if (x == "31,35") {
+			answer = "What are you planning to do with it? Make graffiti on the university building?";
 	} else if (x == "31,37") {
 			answer = "Remember this one time when some students changed it for their sports team flag? When the flag went up, the same time like every other day, it was complete chaos! Everybody on the university left everything and just looked at it in shock. What’s the deal with that, it’s just a flag!";
 	} else if (x == "31,38") {
@@ -777,6 +823,8 @@ function myFunction() {
 			answer = "I don’t know her, but she is dank!";
 	} else if (x == "31,43") {
 			answer = "I don’t know how I could help you with this.";
+	} else if (x == "31,45" || x == "31,54") {
+			answer = "It looks like a puzzle, and I don't like puzzles.";
 	} else if (x == "31,46") {
 			answer = "Great, only we can’t just take the test. Can you make a photo of it or something, while I keep an eye on the professor?";
 	} else if (x == "31,47") {
@@ -793,18 +841,8 @@ function myFunction() {
 			answer = "No, I can’t say I’ve heard of him.";
 	} else if (x == "31,61") {
 			answer = "What? Are you into new age all of a sudden?";
-	} else if (x == "31,64" || x == "31,65") {
+	} else if (x == "31,64") {
 			answer = "I don’t understand a bit of this.";
-	} else if (x == "31,66") {
-			answer = "No, I can’t say I’ve heard of him.";
-	} else if (x == "31,71") {
-			answer = "What are you planning to do with it? Make graffiti on the university building?";
-	} else if (x == "31,72") {
-			answer = "I’m not surprised that the library has a projector. It’s usual equipment.";
-	} else if (x == "31,73") {
-			answer = "Breaking locks is not something I know how to do.";
-	} else if (x == "31,75") {
-			answer = "Nicely done, but it doesn’t help me with my problem.";
 	} else if (x == "42,01") {
 			answer = "It’s nice to meet you. I’d love to chat, but I’m in a middle of a commissioned job, so I don’t have a lot of time.";
 	} else if (x == "42,02") {
@@ -814,9 +852,9 @@ function myFunction() {
 	} else if (x == "42,04") {
 			answer = "You can borrow it to me? That’s amazing! It will make the process of  transferring my sketch on the wall 50 times faster! But wait...How do I turn it on? I don’t have any power source here on the street.";
 	} else if (x == "42,05") {
-			answer = "Girl, you seem nice, but I’m in a serious lack of time. I can’t chat about fairy tales right now.";
-	} else if (x == "42,06" || x == "42,16" || x == "42,18" || x == "42,19" || x == "42,20" || x == "42,22" || x == "42,24" || x == "42,27" || x == "42,34" || x == "42,35" || x == "42,36" || x == "42,40" || x == "42,41" || x == "42,43" || x == "42,44" || x == "42,46" || x == "42,47" || x == "42,48" || x == "42,49" || x == "42,50" || x == "42,53" || x == "42,54" || x == "42,56" || x == "42,58" || x == "42,60" || x == "42,68") {
-			answer = "Look, I don’t have time for this.";
+			answer = "I’m an artist, not a lock breaker.";
+	} else if (x == "42,06") {
+			answer = "I’ve never heard of him.";
 	} else if (x == "42,07") {
 			answer = "I’m definitely not going to a lecture tonight. This wall is huge, and I’m running really late. With this tempo, I’ll be working all night, and I still don’t know if I’ll manage to finish. And tomorrow I’m leaving for Brazil.";
 	} else if (x == "42,08") {
@@ -829,14 +867,22 @@ function myFunction() {
 			answer = "Never heard of her.";
 	} else if (x == "42,12") {
 			answer = "I’m glad you got it, but I don’t have time to celebrate right now.";
-	} else if (x == "42,13" || x == "42,39" || x == "42,64" || x == "42,65") {
+	} else if (x == "42,13" || x == "42,39" || x == "42,64") {
 			answer = "I can’t solve puzzles right now, I’ve got work to do!";
 	} else if (x == "42,14") {
 			answer = "Sorry, don’t know her.";
 	} else if (x == "42,15") {
 			answer = "I don’t usually give my phone number to fans.";
+	} else if (x == "42,16") {
+			answer = "Starry sky...There aren’t many things as beautiful as that. But I’m completely lost in space, for me stars are just a bunch of sparkling dots in the sky.";
 	} else if (x == "42,17") {
 			answer = "You expect me to read all this now? You’ve got to be kidding.";
+	} else if (x == "42,18") {
+			answer = "You’re kidding me...This is awesome! It will speed me up enormously. Thank you soooo much! Ok, let’s try to help you with finding your mural now. <br><i>Loomey takes a photo of the mural and sends it to a couple people. After about 20 minutes of texting and calling, finally one of her friends recognizes it.</i> <br>The mural is made by an anonymous author, that’s why I couldn’t remember it. But I did see it. I did a little work in New Orleans a few years ago, and the friend who called me took me on a little street art tour there. The address is 1039 Henriette Delille Street.<i>Search the internet</i> He says it’s been removed since, though.";
+	} else if (x == "42,19" || x == "42,22" || x == "42,24" || x == "42,27" || x == "42,34" || x == "42,36" || x == "42,40" || x == "42,41" || x == "42,43" || x == "42,44" || x == "42,46" || x == "42,47" || x == "42,48" || x == "42,49" || x == "42,50" || x == "42,53" || x == "42,58" || x == "42,60") {
+			answer = "Look, I don’t have time for this.";
+	} else if (x == "42,20") {
+			answer = "A projector would actually save me! I could preject the sketch on the wall and transfer it really quickly. Is there a possibility you could get it for me?";
 	} else if (x == "42,21") {
 			answer = "Let me take a look, I can usually recognize other artists’ work. Hmmm, it seems familiar, but I can’t put my finger on it. I could make a few calls to my friends who know the scene better than me and try to identify it. But the problem is that I’m seriously late with my work. The mural I’m making is a commissioned gig and the company that ordered it gave me wrong dimensions of the wall. It’s huge! So now it will take me at least 6 hours just to transfer the sketch on the wall, and tomorrow I’m flying to Brazil. I’ll be working all night probably, and I’m still not sure I’ll make it. So unless you magically find some equipment that would speed up the process, I really can’t lose time on searching for the origin of the mural on your photo. Sorry, kid.";
 	} else if (x == "42,23") {
@@ -855,20 +901,24 @@ function myFunction() {
 			answer = "Doesn’t seem familiar.";
 	} else if (x == "42,33") {
 			answer = "My knowledge in technology is just big enough to post pictures of my work on the internet.";
+	} else if (x == "42,35") {
+			answer = "Ok, I’ll give you one. Take the red, I won’t be needing it.";
 	} else if (x == "42,37") {
 			answer = "The design isn’t very innovative.";
 	} else if (x == "42,38") {
 			answer = "If I had a machine that needed power, it could be very useful in the street.";
 	} else if (x == "42,42") {
 			answer = "I’ve been doing street art for seven years now, and finally my career is starting to go somewhere. Actually, I’m flying to Brazil tomorrow to participate in a street art festival with some of the greatest artists in the world! I’m also doing commissioned work, like this one right now. It’s not very rewarding, but it put the food on the table. The problem with this particular gig is that the company that ordered it gave me wrong dimensions of the wall, and now I’m super late. I’ve just started, and I’m supposed to transfer the sketch on the wall. But since it’s huge, it will take me at least six hours instead of one, as I planned. If I knew it would be like this, I would have thought of a different technique to do it, but now it’s too late. So I’ll be working all night.";
-	} else if (x == "42,45") {
-			answer = "Thanks, I’ll have one. I don’t have time for a real lunch.";
+	} else if (x == "42,45" || x == "42,54") {
+			answer = "Is she talking about the mural you showed me in the photo?";
 	} else if (x == "42,51") {
 			answer = "He’s cute, but I don’t know him.";
 	} else if (x == "42,52") {
 			answer = "It’s the guy that works in the shop across the street, right? I saw him come out of the shop a few times.";
 	} else if (x == "42,55") {
 			answer = "I don’t want your money, what I need is more time!";
+	} else if (x == "42,56") {
+			answer = "I’m suspicious of everything an oil company has to say.";
 	} else if (x == "42,57") {
 			answer = "I was never very fond of serious university professors.";
 	} else if (x == "42,59") {
@@ -877,22 +927,6 @@ function myFunction() {
 			answer = "Sure, and I have an invisibility cloak.";
 	} else if (x == "42,63") {
 			answer = "I have all my music on my phone. It’s much more practical since I’m always in the street.";
-	} else if (x == "42,66") {
-			answer = "I’ve never heard of him.";
-	} else if (x == "42,67") {
-			answer = "I’m suspicious of everything an oil company has to say.";
-	} else if (x == "42,69" || x == "42,70") {
-			answer = "Is she talking about the mural you showed me in the photo?";
-	} else if (x == "42,71") {
-			answer = "Ok, I’ll give you one. Take the red, I won’t be needing it.";
-	} else if (x == "42,72") {
-			answer = "A projector would actually save me! I could preject the sketch on the wall and transfer it really quickly. Is there a possibility you could get it for me?";
-	} else if (x == "42,73") {
-			answer = "I’m an artist, not a lock breaker.";
-	} else if (x == "42,74") {
-			answer = "Starry sky...There aren’t many things as beautiful as that. But I’m completely lost in space, for me stars are just a bunch of sparkling dots in the sky.";
-	} else if (x == "42,75") {
-			answer = "You’re kidding me...This is awesome! It will speed me up enormously. Thank you soooo much! Ok, let’s try to help you with finding your mural now. <br><i>Loomey takes a photo of the mural and sends it to a couple people. After about 20 minutes of texting and calling, finally one of her friends recognizes it.</i> <br>The mural is made by an anonymous author, that’s why I couldn’t remember it. But I did see it. I did a little work in New Orleans a few years ago, and the friend who called me took me on a little street art tour there. The address is 870 Constance Street.<i>Search the internet</i> He says it’s been removed since, though. <br><i>Remove the card <b>21</b>.</i>";
 	} else if (x == "51,01") {
 			answer = "Hi, what can I get you?";
 	} else if (x == "51,02") {
@@ -902,9 +936,9 @@ function myFunction() {
 	} else if (x == "51,04") {
 			answer = "Nice projector. It’s yours?";
 	} else if (x == "51,05") {
-			answer = "I read Sinbad when I was a child. ";
-	} else if (x == "51,06" || x == "51,19" || x == "51,35" || x == "51,40" || x == "51,48" || x == "51,54" || x == "51,58") {
-			answer = "Making dog cookies? Nice.";
+			answer = "Shedar…Isn't it a name of a star? But I can’t really remember in which constellation is it.";
+	} else if (x == "51,06") {
+			answer = "He came a few times with Lena. They were good friends, I think.";
 	} else if (x == "51,07") {
 			answer = "Sure, I’ve seen the poster in the library. That’s Jocelyn Hill right there. She’s freaking out about the lecture a bit. She even said...No, it’s not nice to gossip about customers.";
 	} else if (x == "51,08") {
@@ -924,13 +958,15 @@ function myFunction() {
 	} else if (x == "51,15") {
 			answer = "Sure, I’ll give you my phone number. We can grab a drink sometimes.";
 	} else if (x == "51,16") {
-			answer = "Nice bowl.";
+			answer = "Who knows what the universe is hiding from us…";
 	} else if (x == "51,17") {
 			answer = "This looks like hard core astronomy. What do you think that all this numbers signify?";
 	} else if (x == "51,18") {
-			answer = "I love ginger.";
+			answer = "Great! What will you use it for?";
+	} else if (x == "51,19" || x == "51,40" || x == "51,48" || x == "51,58") {
+			answer = "Making dog cookies? Nice.";
 	} else if (x == "51,20") {
-			answer = "Personaly, I have more of a sweet tooth.";
+			answer = "Nice projector. The library is well equiped.";
 	} else if (x == "51,21") {
 			answer = "That’s nice! I follow street art a bit, but I’ve never seen this. Oh, did you know that Loomey is in town? I love her work.";
 	} else if (x == "51,22") {
@@ -938,7 +974,7 @@ function myFunction() {
 	} else if (x == "51,23") {
 			answer = "Lena was your mother? Oh, I’m really sorry. Lena was my favourite customer. She came every morning before work. She drank mint tea, super sweet. She hassn’t been coming for the last few months, of course. I could see that something was wrong, some times before that, though. She was worried and distant. It was clear that she was afraid of something.";
 	} else if (x == "51,24") {
-			answer = "Nice baking pan.";
+			answer = "Nice flour.";
 	} else if (x == "51,25") {
 			answer = "Your lens is broken? There is this shop, Outer Space Telescopes where you can find all the parts. I went with my sister once, she’s an amateur astronomer.";
 	} else if (x == "51,26" || x == "51,62") {
@@ -957,6 +993,8 @@ function myFunction() {
 			answer = "I studied antropology for three years, computers are an enigma to me.";
 	} else if (x == "51,34") {
 			answer = "Nice oven.";
+	} else if (x == "51,35") {
+			answer = "You’re thinking of making street art? Nice.";
 	} else if (x == "51,36") {
 			answer = "When this sprout becomes a pumpkin, promise to make me a pumpkin pie?";
 	} else if (x == "51,37") {
@@ -973,8 +1011,8 @@ function myFunction() {
 			answer = "That’s the computer of Jocelyn Hill. She said that she changed the password to a year from her Bavaria lecture. Something about a discovery of a crater in the 20th century. Or, it was a crater already, but they discovered it was another kind of crater? <i>Search the internet</i> Anyway, she said it was because that way she’d be sure to memorise the year for the lecture. But I forgot it quickly.";
 	} else if (x == "51,44") {
 			answer = "Another cup of tea? Coming right up! <br><i>Take card <b>26</b>. Remove card <b>44</b>.</i>";
-	} else if (x == "51,45") {
-			answer = "Sure, I’ll have one.";
+	} else if (x == "51,45" || x == "51,54") {
+			answer = "This sounds like she’s giving directions. I think it would be possible to track her path if we knew the address of the mural.";
 	} else if (x == "51,46") {
 			answer = "I’d make a photo of the test if I were you.";
 	} else if (x == "51,47") {
@@ -992,7 +1030,7 @@ function myFunction() {
 	} else if (x == "51,55") {
 			answer = "That’s way too much money for a cup of tea. Besides, it’s on the house.";
 	} else if (x == "51,56") {
-			answer = "Nice milk.";
+			answer = "I’ ve heard about this. I even saw a guy from the company speaking to Nathan Bright once, here at the tea shop. Nathan is the Earthlings leader, tha association Lena was a part too. Anyway, the IBOR guy was offering him funding of the association, as a part of their going green strategy.";
 	} else if (x == "51,57") {
 			answer = "No, I don’t know him.";
 	} else if (x == "51,59") {
@@ -1003,44 +1041,28 @@ function myFunction() {
 			answer = "Really? How do you do it?";
 	} else if (x == "51,63") {
 			answer = "You could maybe show me your record collection one time.";
-	} else if (x == "51,64" || x == "51,65") {
+	} else if (x == "51,64") {
 			answer = "There are elements of Sinbad’s journeys in this message. But I don’t know what the rest of it could mean.";
-	} else if (x == "51,66") {
-			answer = "He came a few times with Lena. They were good friends, I think.";
-	} else if (x == "51,67") {
-			answer = "I’ ve heard about this. I even saw a guy from the company speaking to Nathan Bright once, here at the tea shop. Nathan is the Earthlings leader, tha association Lena was a part too. Anyway, the IBOR guy was offering him funding of the association, as a part of their going green strategy.";
-	} else if (x == "51,68") {
-			answer = "Nice flour.";
-	} else if (x == "51,69" || x == "51,70") {
-			answer = "This sounds like she’s giving directions. I think it would be possible to track her path if we knew the address of the mural.";
-	} else if (x == "51,71") {
-			answer = "You’re thinking of making street art? Nice.";
-	} else if (x == "51,72") {
-			answer = "Nice projector. The library is well equiped.";
-	} else if (x == "51,73") {
-			answer = "Baghdad…That reminds me of a  story I read whan I was a child…But I can’t really remember which one.";
-	} else if (x == "51,74") {
-			answer = "Who knows what the universe is hiding from us…";
-	} else if (x == "51,75") {
-			answer = "Great! What will you use it for?";
 	} else if (x == "52,01") {
 			answer = "Hello, how can I help you?";
-	} else if (x == "52,02" || x == "52,18" || x == "52,19" || x == "52,20" || x == "52,35" || x == "52,40" || x == "52,41" || x == "52,45" || x == "52,48" || x == "52,50" || x == "52,56" || x == "52,68") {
+	} else if (x == "52,02" || x == "52,19" || x == "52,24" || x == "52,40" || x == "52,41" || x == "52,48" || x == "52,50") {
 			answer = "We don’t have any groceries, we are specialised in astronomy equipment.";
 	} else if (x == "52,03" || x == "52,32" || x == "52,58") {
 			answer = "We don’t have any pet food, we are specialised in astronomy equipment.";
-	} else if (x == "52,04" || x == "52,72" || x == "52,75") {
+	} else if (x == "52,04" || x == "52,18" || x == "52,20") {
 			answer = "We don’t have any video equipment, we are specialised in telescopes.";
 	} else if (x == "52,05") {
-			answer = "We don’t have any fiction literature, but maybe I can interest you in our astronomy books offer?";
-	} else if (x == "52,06" || x == "52,16" || x == "52,24" || x == "52,34" || x == "52,44" || x == "52,54") {
-			answer = "We don’t have any kitchen supplies, we are specialised in astronomy equipment.";
+			answer = "Shedar is a star in Cassiopeia constellation.";
+	} else if (x == "52,06" || x == "52,31" || x == "52,57") {
+			answer = "I’m sorry, I don’t know him.";
 	} else if (x == "52,07") {
 			answer = "I’m going to a stargazing event tonight, so I can’t come to the lecture. It will be a cloudless night and we plan to focus on Cassiopeia.";
 	} else if (x == "52,09" || x == "52,10" || x == "52,11") {
 			answer = "I’m sorry, but I don’t know her.";
 	} else if (x == "52,15") {
 			answer = "You can find our number on the internet. Our working hours are from 8am to 8pm. Call if you need anything!";
+	} else if (x == "52,34" || x == "52,44") {
+			answer = "We don’t have any kitchen supplies, we are specialised in astronomy equipment.";
 	} else if (x == "52,17") {
 			answer = "Interesting, all these pages handwritten. It looks like a system of star denotaion, but it’s not one I’ve seen before.";
 	} else if (x == "52,21") {
@@ -1061,8 +1083,8 @@ function myFunction() {
 			answer = "We have a book on meteorites, but I don’t think it will be sufficient for passing a mineralogy test.";
 	} else if (x == "52,30") {
 			answer = "I’m afraid we don’t have anything in the shop that could help you open it.";
-	} else if (x == "52,31" || x == "52,57" || x == "52,66") {
-			answer = "I’m sorry, I don’t know him.";
+	} else if (x == "52,35") {
+			answer = "We don’t hold any art supplies, we are specialised in astronomy equipment.";
 	} else if (x == "52,36" || x == "52,60") {
 			answer = "We don’t have any gardening equipment, we are specialised in telescopes.";
 	} else if (x == "52,37") {
@@ -1089,12 +1111,8 @@ function myFunction() {
 			answer = "I don’t know what to say about this. Are you maybe interested in some of our products?";
 	} else if (x == "52,63") {
 			answer = "We don’t have any audio equipment, we are specialised in telescopes.";
-	} else if (x == "52,64" || x == "52,65") {
+	} else if (x == "52,64") {
 			answer = "There are some stars and constellations mentioned in this message. I don’t get the other parts, though.";
-	} else if (x == "52,71") {
-			answer = "We don’t hold any art supplies, we are specialised in astronomy equipment.";
-	} else if (x == "52,73") {
-			answer = "I must say that I don’t fully understand your question. May I interest you in some og our products?";
 	} else if (x == "57,01") {
 			answer = "Hi, Miss Wonder. I heard about your mother, I am very sorry about your loss. It’s a good idea to take a couple of days off, take some time for yourself. You can do tomorrow’s test some other time. Is there anything you wanted to ask me?";
 	} else if (x == "57,02") {
@@ -1102,9 +1120,9 @@ function myFunction() {
 	} else if (x == "57,04") {
 			answer = "If there is a problem with your projector, you can ask somebody from the tech department. I’m sure that they would be helpful.";
 	} else if (x == "57,05") {
-			answer = "Maybe you’d like to speak to somebody from the literature department about this?";
-	} else if (x == "57,06" || x == "57,16" || x == "57,18" || x == "57,19" || x == "57,20" || x == "57,24" || x == "57,27" || x == "57,34" || x == "57,35" || x == "57,36" || x == "57,40" || x == "57,41" || x == "57,44" || x == "57,48" || x == "57,49" || x == "57,50" || x == "57,54" || x == "57,56" || x == "57,58" || x == "57,60" || x == "57,68") {
-			answer = "That’s quite an unusual question.";
+			answer = "I can hardly help you with this.";
+	} else if (x == "57,06" || x == "57,52") {
+			answer = "Was he one of my students?";
 	} else if (x == "57,07") {
 			answer = "I can’t go to a lecture tonight. I made plans with my wife.";
 	} else if (x == "57,08") {
@@ -1118,9 +1136,17 @@ function myFunction() {
 	} else if (x == "57,13") {
 			answer = "All this sounds like it’s connected to the content of the recording.";
 	} else if (x == "57,15") {
-			answer = "Unfortunatelly I can’t give my private phone number to students. But feel free to contact me anytime by email.";
+			answer = "Unfortunatelly I can’t give my private phone number to students. But feel free to contact me by email anytime.";
+	} else if (x == "57,16") {
+			answer = "Ah! The universe. So many mysteries yet to unravel.";
 	} else if (x == "57,17") {
 			answer = "You could ask the astronomy department about this, but I think that they are on a field trip to the Lovell telescope today.";
+	} else if (x == "57,18" || x == "57,33" || x == "57,38" || x == "57,43" || x == "57,53") {
+			answer = "You can ask somebody from the tech department about this. I’m sure that they would be helpful.";
+	} else if (x == "57,19" || x == "57,24" || x == "57,27" || x == "57,34" || x == "57,36" || x == "57,40" || x == "57,41" || x == "57,44" || x == "57,48" || x == "57,49" || x == "57,50" || x == "57,58" || x == "57,60") {
+			answer = "That’s quite an unusual question.";
+	} else if (x == "57,20") {
+			answer = "Yes, I know that the library has a projector. I was on a couple of lectures there myself.";
 	} else if (x == "57,21") {
 			answer = "Oh, you caught me in a field I konw absolutely nothing about. Sorry.";
 	} else if (x == "57,22") {
@@ -1141,22 +1167,22 @@ function myFunction() {
 			answer = "Oh, Jamie. He’s the worst student I have. He’s great on the field, but the minute he gets to the lab, he’s lost. He’s not doing any better in theory either. If he doesn’t pass the test tomorrow, he’s failing the class.";
 	} else if (x == "57,32") {
 			answer = "What a nice dog!";
-	} else if (x == "57,33" || x == "57,38" || x == "57,43" || x == "57,53" || x == "57,75") {
-			answer = "You can ask somebody from the tech department about this. I’m sure that they would be helpful.";
+	} else if (x == "57,35") {
+			answer = "I don’t care much for street art, but that’s just me.";
 	} else if (x == "57,37") {
 			answer = "The pride of our university. Of course I think it’s important. Young people don’t understand the significance of tradition. I still remember when it was switched with a sports team flag by a couple of students. To raise a sports team flag on our university. Outraiges!";
 	} else if (x == "57,39") {
 			answer = "That’s the library logo. I can’t say that the nubmer that’s written under it means something to me.";
 	} else if (x == "57,42") {
 			answer = "No, I don’t know any street artist.";
-	} else if (x == "57,45") {
-			answer = "Thank you Miss Wonder, I’ll take one.";
+	} else if (x == "57,45" || x == "57,54" || x == "57,64") {
+			answer = "I can’t say that this makes a lot of sense to me.";
 	} else if (x == "57,51") {
 			answer = "No, I can’t say I’ve seen him.";
-	} else if (x == "57,52" || x == "57,66") {
-			answer = "Was he one of my students?";
 	} else if (x == "57,55") {
 			answer = "You’re not thinking of bribing me I hope?";
+	} else if (x == "57,56") {
+			answer = "I would take articles like this one with caution. I’m afraid that I don’t see the oil companies changing so fast.";
 	} else if (x == "57,57") {
 			answer = "I’m here for all your questions on mineralogy. I like it when students are interested in the subject.";
 	} else if (x == "57,59") {
@@ -1167,28 +1193,18 @@ function myFunction() {
 			answer = "No, thank you.";
 	} else if (x == "57,63") {
 			answer = "I have one too. Nothing beats vinyl in my opinion.";
-	} else if (x == "57,64" || x == "57,65" || x == "57,69" || x == "57,70") {
-			answer = "I can’t say that this makes a lot of sense to me.";
-	} else if (x == "57,67") {
-			answer = "I would take articles like this one with caution. I’m afraid that I don’t see the oil companies changing so fast.";
-	} else if (x == "57,71") {
-			answer = "I don’t care much for street art, but that’s just me.";
-	} else if (x == "57,72") {
-			answer = "Yes, I know that the library has a projector. I was on a couple of lectures there myself.";
-	} else if (x == "57,73") {
-			answer = "I can hardly help you with this.";
-	} else if (x == "57,74") {
-			answer = "Ah! The universe. So many mysteries yet to unravel.";
 	} else if (x == "59,01") {
 			answer = "Hi, Ziggy, you’re Lena’s daughter? I’m so sorry, I heard the news. I’m in the middle of a protest, but tell me if there’s something I can do for you.";
 	} else if (x == "59,02" || x == "59,32") {
 			answer = "I don’t eat eggs, thank you.";
 	} else if (x == "59,03") {
 			answer = "How is Laika?";
-	} else if (x == "59,04" || x == "59,75") {
+	} else if (x == "59,04" || x == "59,18" || x == "59,20") {
 			answer = "We don’t need a projector for the protest, good old megaphones and signs will be enough.";
-	} else if (x == "59,05" || x == "59,06" || x == "59,12" || x == "59,16" || x == "59,18" || x == "59,19" || x == "59,20" || x == "59,22" || x == "59,24" || x == "59,25" || x == "59,26" || x == "59,27" || x == "59,29" || x == "59,34" || x == "59,35" || x == "59,36" || x == "59,40" || x == "59,41" || x == "59,43" || x == "59,44" || x == "59,46" || x == "59,47" || x == "59,48" || x == "59,49" || x == "59,50" || x == "59,53" || x == "59,54" || x == "59,56" || x == "59,58" || x == "59,60" || x == "59,62" || x == "59,68" || x == "59,72") {
-			answer = "If you don’t have anything important to ask, maybe we can finish this conversation another time?";
+	} else if (x == "59,05") {
+			answer = "I’m not surprised that Lena had a cabin in the forest. Many of us have an urge to spend more time in nature. It’s only human.";
+	} else if (x == "59,06") {
+			answer = "Gavin is a member of the association. He was close to Lena, actually. He and his wife have a little house and a garden outside of the city. He is very dedicated to our mission. When Lena decided to quit, he tried to change her mind, but with no success. I  believe their friendship didn’t suffer from it, however.";
 	} else if (x == "59,07") {
 			answer = "Lectures are great, but we will be camping here tonight.";
 	} else if (x == "59,08") {
@@ -1199,12 +1215,16 @@ function myFunction() {
 			answer = "She’s Gavin’s wife. Of course I met her, we hold social events in the association sometimes. They’re a nice couple, they own a small farm outside of the city. They try to produce the majority of their vegetables needs in their garden.";
 	} else if (x == "59,11") {
 			answer = "She’s holding a lecture tonight? We’ll be camping here all night.";
+	} else if (x == "59,12" || x == "59,19" || x == "59,22" || x == "59,24" || x == "59,25" || x == "59,26" || x == "59,27" || x == "59,29" || x == "59,34" || x == "59,36" || x == "59,40" || x == "59,41" || x == "59,43" || x == "59,44" || x == "59,46" || x == "59,47" || x == "59,48" || x == "59,49" || x == "59,50" || x == "59,53" || x == "59,58" || x == "59,60" || x == "59,62") {
+			answer = "If you don’t have anything important to ask, maybe we can finish this conversation another time?";
 	} else if (x == "59,13") {
 			answer = "I don’t know what this note is supposed to mean.";
 	} else if (x == "59,14") {
 			answer = "The name doesn’t ring a bell.";
 	} else if (x == "59,15") {
 			answer = "Sure, I can give you my number.";
+	} else if (x == "59,16") {
+			answer = "Fascinating! I don’t know a lot on exploration of the universe personally, my focus is on the planet we live on.";
 	} else if (x == "59,17") {
 			answer = "Lena was full of mistery. This seems like another little secret of hers.";
 	} else if (x == "59,21") {
@@ -1219,6 +1239,8 @@ function myFunction() {
 			answer = "I don’t know him, sorry.";
 	} else if (x == "59,33") {
 			answer = "What is this? What are you, some kind of hacker?";
+	} else if (x == "59,35") {
+			answer = "We have enough spray paint for our signs, thank you.";
 	} else if (x == "59,37") {
 			answer = "I have more important things to attend to than talking about your university’s flag.";
 	} else if (x == "59,38") {
@@ -1227,14 +1249,16 @@ function myFunction() {
 			answer = "This is the logo of Lena’s library. The numbers tell me nothing.";
 	} else if (x == "59,42") {
 			answer = "I saw some of her work. She has a bright future in my opinion.";
-	} else if (x == "59,45") {
-			answer = "Thank you! Could I take two, please?";
+	} else if (x == "59,45" || x == "59,54") {
+			answer = "I don’t have time to go deep in the text, but at first glance, it’s a rather boring letter, wouldn’t you agree?";
 	} else if (x == "59,51") {
 			answer = "Hm, I was in the tea shop a few times, but I don’t remember his face.";
 	} else if (x == "59,52") {
 			answer = "I’ve never seen him.";
 	} else if (x == "59,55") {
 			answer = "It’s nice of you, Earthlings accept donations for continuing our work. But given that we’ve recently been funded by a large corporation, and that you’re only a student, I will kindly refuse your offer.";
+	} else if (x == "59,56") {
+			answer = "Yes, I’m well informed in the company’s new green policies. They plan to switch to reneweble energy sources in the next few years. An amazing initiative, if you ask me!";
 	} else if (x == "59,57") {
 			answer = "Sorry, I don’t know him.";
 	} else if (x == "59,59") {
@@ -1243,214 +1267,60 @@ function myFunction() {
 			answer = "I understand, Ziggy. Many of us in Earthlings have similar sensations. Whenever I manage to escape into the nature for a few days, I feel like one with it.";
 	} else if (x == "59,63") {
 			answer = "Music is great, I know. But I don’t have as much time to listen it as I’d like to.";
-	} else if (x == "59,64" || x == "59,65") {
+	} else if (x == "59,64") {
 			answer = "I don’t really see any sense in this.";
-	} else if (x == "59,66") {
-			answer = "Gavin is a member of the association. He was close to Lena, actually. He and his wife have a little house and a garden outside of the city. He is very dedicated to our mission. When Lena decided to quit, he tried to change her mind, but with no success. I  believe their friendship didn’t suffer from it, however.";
-	} else if (x == "59,67") {
-			answer = "Yes, I’m well informed in the company’s new green policies. They plan to switch to reneweble energy sources in the next few years. An amazing initiative, if you ask me!";
-	} else if (x == "59,69" || x == "59,70") {
-			answer = "I don’t have time to go deep in the text, but at first glance, it’s a rather boring letter, wouldn’t you agree?";
-	} else if (x == "59,71") {
-			answer = "We have enough spray paint for our signs, thank you.";
-	} else if (x == "59,73") {
-			answer = "I’m not surprised that Lena had a cabin in the forest. Many of us have an urge to spend more time in nature. It’s only human.";
-	} else if (x == "59,74") {
-			answer = "Fascinating! I don’t know a lot on exploration of the universe personally, my focus is on the planet we live on.";
-	} else if (x == "66,01") {
-			answer = "Hello! It’s really a pleasure to meet you. I was friends with Lena, she told me so much about you. I’m so sorry that she’s gone. I don’t know what to say. Actually, there is something I should tell you...Lena gave us a safe to keep it for her. But now that she’s gone, I think it’s best you have it. Could you stop by my house and get it? My wife is home, she’ll get it for you. <br><i>Take card <b>G</b>.</i>";
-	} else if (x == "66,01") {
-			answer = "I don’t know him, sorry.";
-	} else if (x == "66,02" || x == "66,18" || x == "66,20" || x == "66,68") {
-			answer = "Thank you, we brought enough food for the protest camp.";
-	} else if (x == "66,03" || x == "66,32") {
-			answer = "I love this dog.";
-	} else if (x == "66,04") {
-			answer = "Thanks, I have no use of it at the moment.";
-	} else if (x == "66,05") {
-			answer = "I’ve read it as I child, I can’t say that I remember a lot of it.";
-	} else if (x == "66,06" || x == "66,19" || x == "66,35" || x == "66,40" || x == "66,48" || x == "66,54") {
-			answer = "I remember that Lena used to make some special cookies for Laika. I don’t know the recipe unfortunatelly.";
-	} else if (x == "66,07") {
-			answer = "Well as you can see, I’ll be spending my evening here. Next time, maybe.";
-	} else if (x == "66,08") {
-			answer = "That’s wonderful! Lena never told me she had it. It must have been an expensive edition, look how authentic it seems!";
-	} else if (x == "66,09") {
-			answer = "Of course I knew that Lena worked in the library. I went to the tea shop next door with her a few times. But I never met her colleague.";
-	} else if (x == "66,10") {
-			answer = "That’s my wife. She was friends with Lena too. We used to spend evenings at our farm, having dinner, talking, listening to music...I’m sorry, it’s difficult to believe that Lena is gone.";
-	} else if (x == "66,11") {
-			answer = "Sorry, I’ve never heard of her.";
-	} else if (x == "66,12") {
-			answer = "That’s great, but we don’t own a telescope. Stargazing was Lena’s hobby, we didn’t really participate in it.";
-	} else if (x == "66,13") {
-			answer = "This must mean something. I wish I could help you but my puzzle solving skills are limited.";
-	} else if (x == "66,14") {
-			answer = "Lena did speak of her friend Mary a few times. It was clear that they grew apart a long time ago and that she misses her a lot.";
-	} else if (x == "66,15") {
-			answer = "Here’s my phone number. Call me anytime.";
-	} else if (x == "66,16") {
-			answer = "I was with Lena when she bought it on a flea market. You know how she liked to reuse old things.";
-	} else if (x == "66,17") {
-			answer = "Well, it looks like a lot of work to write all of this. Why is there a number next to each star? I don’t know, maybe Lena had her system of star denotation.";
-	} else if (x == "66,21") {
-			answer = "Sorry, but the mural doesn’t seem familiar.";
-	} else if (x == "66,22") {
-			answer = "I don’t know how to help you with this. Actually, I don’t really want to get involved with messing up somebody’s property.";
-	} else if (x == "66,23") {
-			answer = "Lena was a great friend. I miss her a lot. She left Earthlings some time ago, because of a quarrel she had with Nathan. The two of us tried not to let it influence our friendship, even if I didn’t agree with the way she quit. It’s not that I judge her, only I didn’t like when I found out that she intentionally hacked her computer in the association to make all the information on it unreachable to everybody. She told me this in confidence, and explained it as if she wasn’t sure that the information there was safe because she believed that we were observed by somebody from the outside. It was a little parranoid, if you ask me. I never told this to anybody, not even Nathan. I didn’t wan’t to raise even more tension between them. She did it with a SD card that holds a virus, and gave it to me afterwards, in case that I might find I should use it too. You just have to insert it and it takes care of everything, leaving a false track that the attack was made from outside, like from an online connection. Could I give the SD card to you actually? I feel bad for holding it all this time. Oh, and one more thing. Lena left something tome and my wife for safekeeping. We have it at our farm outside the city. I think you should have it now that she’s gone. Could you go there and take it? My wife will be home all day. <br><i>Take cards <b>33</b> and <b>G</b>";
-	} else if (x == "66,24" || x == "66,34") {
-			answer = "Lena was a great cook. And baked goods were her specialty.";
-	} else if (x == "66,25") {
-			answer = "Oh, I’d really like to help you, but I’m short on money at the moment. And I probably will be for years to come. I bought a house with my wife just outside the city, and it wasn’t a bargain.";
-	} else if (x == "66,26" || x == "66,56") {
-			answer = "Thank you, we brought enough drinks for the protest camp.";
-	} else if (x == "66,27") {
-			answer = "I remember that Lena used to make some special cookies for Laika. I can’t read this recipe unfortunatelly.";
-	} else if (x == "66,28") {
-			answer = "Of course I remember this gem Lena used to wear. Nathan was always criticising any of us wearing expensive jewelry, he said it send a wrong kind of message. But Lena didn’t care about this, she said it connects her to her origins.";
-	} else if (x == "66,29" || x == "66,46") {
-			answer = "Mineralogy is not really my specialty, sorry.";
-	} else if (x == "66,30") {
-			answer = "Ah, you got it from Emma. Great! Sorry, but I don’t have an idea what the combination could be, Lena said nothing about it.";
-	} else if (x == "66,31") {
-			answer = "I can’t say that I’ve met him.";
-	} else if (x == "66,33") {
-			answer = "That’s the card with the virus Lena gave me. Do what you want with it, I’m not confortable with having it on me.";
-	} else if (x == "66,36") {
-			answer = "Yes, we grow pumpkins in our garden. It’s not the season yet, though, so I can’t offer you any.";
-	} else if (x == "66,37") {
-			answer = "I wasn’t a student of your university, so I can’t tell you anything about the flag.";
-	} else if (x == "66,38") {
-			answer = "Yes, it’s mine. You can borrow it, sure. We have another one, I think it will suffice till tomorrow.";
-	} else if (x == "66,39") {
-			answer = "This is Lena’s library logo. As for the numbers below, I don’t know what could they mean.";
-	} else if (x == "66,41") {
-			answer = "You’re telling me that this pumpkin is from our garden? How is it possible?";
-	} else if (x == "66,42") {
-			answer = "Sorry, but I don’t really follow street art scene.";
-	} else if (x == "66,43" || x == "66,72") {
-			answer = "I’m not sure what to say about this.";
-	} else if (x == "66,44" || x == "66,50") {
-			answer = "Thank you, we brought enough tableware for the protest camp.";
-	} else if (x == "66,45") {
-			answer = "Well, I can’t say no to one of Lena’s famous apples.";
-	} else if (x == "66,47") {
-			answer = "Ziggy, I don’t plan to lecture you, but cheating on tests is not the best decision to make.";
-	} else if (x == "66,49") {
-			answer = "Thanks, I don’t think I’ll be needing them.";
-	} else if (x == "66,51") {
-			answer = "I think he works in the tea shop next to the library, doesn’t he?";
-	} else if (x == "66,52") {
-			answer = "No, I can’t say that I’ve met him.";
-	} else if (x == "66,53") {
-			answer = "I don’t know how to help you with this. Actually, I don’t really want to get involved with messing up somebody’s property.";
-	} else if (x == "66,55") {
-			answer = "That’s really kind of you, but taking your money is out of the question.";
-	} else if (x == "66,57") {
-			answer = "I wasn’t a student of your university, so I can’t say that I’ve met your professor.";
-	} else if (x == "66,58") {
-			answer = "You made Laika her favourite cookies? That must cheer her up.";
-	} else if (x == "66,59") {
-			answer = "Nathan is the leader of Earthlings. He dedicated his life to it. It’s true that he had a dispute with Lena, after which she quit the association. Actually, the reason was that Earthlings have recently been funded by IBOR, the oil company. It seems strange, I know, but they have a new green policy which includes funding environmental organisations amongst other things. Nathan accepted the offer, saying that we should welcome these offers and reassuring us that he’s carefully read the document of their plan, and that it’s a real switch to a green economy. Lena was not convinced, and she basically said that Nathan sold us to a dangerous polluter who now has all the means to control us. She even faked a hacking of her own computer before leaving Earthlings, to make sure that nobody could get any data out of it once she’s gone. The put a virus with a SD card that corrupted all the files and left a false track of an outside attack, to make it seem that it was hacked by somebody online. Nathan didn’t figure this out, I think. She told me about it because she thought I’d be on her side on this, but I must say that I also think that she was too paranoiac. She gave me the card to do the same with my computer, but I never used it. Actually, take it. I’m not happy with the fact that I’m holding it all this time. As well as lying to Nathan. <br><i>Take card <b>33</b>.</i> ";
-	} else if (x == "66,60") {
-			answer = "Yes, we have a senna plant in the garden. Feel free to pick a few leaves.";
-	} else if (x == "66,61") {
-			answer = "Now when you speak of it, I remember that Lena had this ‘special power’ too. She could easily diagnose all the problems in the garden and helped us make it better. We are still amateurs in cultivating our own food, but she seemed to know everything just by looking at it. When I asked her was she raised on a farm, she just said: “Something like that.”";
-	} else if (x == "66,62") {
-			answer = "Senna leaves are excellent for digestion, but be careful with the dosage. If you put too much, It can make you run to the toilet pretty fast.";
-	} else if (x == "66,63") {
-			answer = "I know that Lena had a record player and a nice collection of records. She used to say that music is human’s most beautiful creation.";
-	} else if (x == "66,64" || x == "66,65") {
-			answer = "This is all very enigmatic. I can’t make sense of it, sorry.";
-	} else if (x == "66,66") {
-			answer = "I’ve been in the Earthlings association for a long time now, and Lena and I were great friends. Even though we didn’t see eye to eye on everything, our friendship didn’t suffer from it. Actually, Lena gave something for safekeeping to me and my wife. I believe it’s better that you have it, now that she’s no longer with us. Can you go to our farm outside the city to get it? My wife is at home, she’ll be happy to meet you. <br><i>Take card <b>G</b>.</i>";
-	} else if (x == "66,67") {
-			answer = "I guess that Lena kept this because of her doubt in IBOR’s sincerity. She had a dispute with Nathan about them sponsoring our association as a part of their ‘going green’ policy. That’s why she left Earthlings actually. She was not even giving them a change to prove her wrong, if you ask me. Probably she was conducting a research of her own, you know how stubborn she could be when she put her finger on something.";
-	} else if (x == "66,69" || x == "66,70") {
-			answer = "I don’t know what this letter could mean. The way it’s written is a bit unusual, right?";
-	} else if (x == "66,71") {
-			answer = "I don’t think I’ll be needing it, thanks.";
-	} else if (x == "66,73") {
-			answer = "Lena had a cabin? She never took us there.";
-	} else if (x == "66,74") {
-			answer = "Beautiful! I know that Lena was obssesed with stars, it seems that you’ve inherited the passion from her.";
-	} else if (x == "66,75") {
-			answer = "Thank you, but I don’t think we can find a use for it here.";
-	} else if (x == "02,06" || x == "02,16" || x == "02,24" || x == "02,34" || x == "02,41" || x == "02,50" || x == "02,68" || x == "06,02" || x == "06,24" || x == "06,34" || x == "06,41" || x == "06,45" || x == "06,50" || x == "16,02" || x == "16,20" || x == "16,24" || x == "16,34" || x == "16,41" || x == "16,50" || x == "18,35" || x == "18,40" || x == "18,41" || x == "18,48" || x == "18,50" || x == "18,68" || x == "19,24" || x == "19,34" || x == "19,45" || x == "19,56" || x == "20,16" || x == "20,24" || x == "20,34" || x == "20,41" || x == "20,45" || x == "20,50" || x == "20,68" || x == "24,02" || x == "24,06" || x == "24,16" || x == "24,19" || x == "24,20" || x == "24,35" || x == "24,40" || x == "24,41" || x == "24,56" || x == "24,68" || x == "34,02" || x == "34,06" || x == "34,16" || x == "34,19" || x == "34,20" || x == "34,35" || x == "34,40" || x == "34,41" || x == "34,48" || x == "34,50" || x == "34,68" || x == "35,18" || x == "35,34" || x == "35,41" || x == "35,45" || x == "35,50" || x == "35,56" || x == "40,18" || x == "40,24" || x == "40,34" || x == "40,41" || x == "40,45" || x == "40,56" || x == "41,02" || x == "41,06" || x == "41,16" || x == "41,18" || x == "41,20" || x == "41,24" || x == "41,34" || x == "41,35" || x == "41,40" || x == "41,45" || x == "41,50" || x == "41,56" || x == "41,68" || x == "45,06" || x == "45,19" || x == "45,20" || x == "45,35" || x == "45,40" || x == "45,41" || x == "45,48" || x == "45,50" || x == "45,68" || x == "48,18" || x == "48,34" || x == "48,45" || x == "50,02" || x == "50,06" || x == "50,16" || x == "50,18" || x == "50,20" || x == "50,34" || x == "50,35" || x == "50,41" || x == "50,45" || x == "50,56" || x == "50,68" || x == "56,19" || x == "56,24" || x == "56,35" || x == "56,40" || x == "56,41" || x == "56,50" || x == "56,68" || x == "68,02" || x == "68,18" || x == "68,20" || x == "68,24" || x == "68,34" || x == "68,41" || x == "68,45" || x == "68,50" || x == "68,56") {
+	} else if (x == "02,24" || x == "24,02") {
+      answer = "Aha! According to my translation, this is the first step of the dog cookies baking process. <br><i>Take card <b>40</b>. Remove cards <b>02</b> and <b>24</b>.</i>";
+	} else if (x == "02,34" || x == "02,41" || x == "02,50" || x == "19,34" || x == "24,34" || x == "24,41" || x == "24,50" || x == "34,02" || x == "34,19" || x == "34,24" || x == "34,40" || x == "34,41" || x == "34,50" || x == "40,34" || x == "40,41" || x == "41,02" || x == "41,24" || x == "41,34" || x == "41,40" || x == "41,50" || x == "50,24" || x == "50,34" || x == "50,41" ||) {
 			answer = "I should follow the recipe, I’m not skilled enough to improvise.";
 	} else if (x == "02,03" || x == "02,32" || x == "03,02" || x == "32,02") {
 			answer = "Laika doesn’t like eggs.";
-	} else if (x == "02,18" || x == "18,02") {
-			answer = "Ginger goes well with eggs, but I’m not really hungry.";
-	} else if (x == "02,20" || x == "20,02") {
-			answer = "Sure, I always season my eggs. But I’m not really in a mood for eating right now.";
 	} else if (x == "02,26" || x == "02,44" || x == "02,62" || x == "26,02" || x == "44,02" || x == "62,02") {
 			answer = "Raw eggs can be good for your voice, but I want to sabotage the lecture, not help it be better!";
 	} else if (x == "02,27" || x == "27,02") {
 			answer = "Yes, I should try to make the cookies, but not by mixing the eggs with the recipe paper.";
 	} else if (x == "02,29" || x == "02,46" || x == "29,02" || x == "46,02") {
 			answer = "Destroying the tests with eggs won’t get me anywhere.";
-	} else if (x == "02,35" || x == "35,02") {
-			answer = "Excellent, that’s the next step. I mix the eggs in the flour with salt and a nice dough starts to form. <br><i>Take card <b>40</b>. Remove cards <b>02</b> and <b>35</b>.</i>";
 	} else if (x == "02,37" || x == "37,02") {
 			answer = "Sure, I could mess the flag with eggs, but would it be noticeable enough?";
-	} else if (x == "02,45" || x == "45,02") {
-			answer = "Eggs with apples? I don’t think so.";
 	} else if (x == "02,49" || x == "49,02") {
 			answer = "I can break the eggs very easily without using the scissors.";
-	} else if (x == "02,56" || x == "56,02") {
-			answer = "Eggs and milk, why not? But maybe not right now.";
 	} else if (x == "02,61" || x == "61,02") {
 			answer = "Unfortunately, this ability doesn’t work with eggs. Not that I really knew what I wanted to accomplish with it.";
 	} else if (x == "03,03" || x == "03,23" || x == "32,23" || x == "32,32") {
 			answer = "Woof woof!";
-	} else if (x == "03,06" || x == "03,19" || x == "03,35" || x == "03,40" || x == "03,40" || x == "06,03" || x == "06,32" || x == "19,03" || x == "19,32" || x == "32,06" || x == "32,19" || x == "32,35" || x == "32,40" || x == "32,48" || x == "32,54" || x == "35,03" || x == "35,32" || x == "40,03" || x == "40,32" || x == "48,32" || x == "54,32") {
+	} else if (x == "03,19" || x == "03,40" || x == "03,40" || x == "19,03" || x == "19,32" || x == "32,19" || x == "32,40" || x == "32,48" || x == "40,03" || x == "40,32" || x == "48,32") {
 			answer = "Cookies are not finished yet!";
 	} else if (x == "03,15" || x == "15,03" || x == "15,32" || x == "32,15") {
 			answer = "I’ll take a photo of Laika. I have a bunch of them already, but why not another one.";
-	} else if (x == "03,16" || x == "16,03" || x == "16,32" || x == "32,16") {
-			answer = "This is not Laika’s bowl.";
-	} else if (x == "03,18" || x == "18,03" || x == "18,32" || x == "32,18") {
-			answer = "Laika doesn’t like ginger.";
-	} else if (x == "03,20" || x == "20,03" || x == "20,32" || x == "32,20") {
-			answer = "I can’t give pure salt to Laika.";
-	} else if (x == "03,24" || x == "03,34" || x == "24,03" || x == "24,32" || x == "32,24" || x == "32,34" || x == "34,03" || x == "34,32") {
+	} else if (x == "03,34" || x == "32,34" || x == "34,03" || x == "34,32") {
 			answer = "I’m not goint to bake Laika.";
 	} else if (x == "03,26" || x == "26,03" || x == "26,32" || x == "32,26") {
 			answer = "The tea is not for Laika.";
 	} else if (x == "03,27" || x == "27,03" || x == "27,32" || x == "32,27") {
 			answer = "I should try to make the cookies, Laika can’t make them herself.";
-	} else if (x == "03,45" || x == "32,45" || x == "45,03" || x == "45,32") {
-			answer = "Laika is not a fan of apples.";
 	} else if (x == "03,49" || x == "49,03") {
 			answer = "I cut Laika’s collar to get the gem. <br><i>Take cards <b>28</b> and <b>32</b>. Remove cards <b>03</b> and <b>49</b>.</i>";
 	} else if (x == "03,50" || x == "32,50" || x == "50,03" || x == "50,32") {
 			answer = "Laika loves peanut butter, but I should make cookies with it.";
-	} else if (x == "03,56" || x == "32,56" || x == "56,03" || x == "56,32") {
-			answer = "Laika is not a fan of milk.";
 	} else if (x == "03,60" || x == "03,62" || x == "32,60" || x == "32,62" || x == "60,03" || x == "60,32" || x == "62,03" || x == "60,32") {
 			answer = "Laika’s digestion works just fine.";
-	} else if (x == "04,21" || x == "21,04" || x == "21,75" || x == "75,21") {
+	} else if (x == "04,21" || x == "18,21" || x == "21,04" || x == "21,18") {
 			answer = "Where and why should I make a projection of this photo?";
-	} else if (x == "04,33" || x == "33,04" || x == "33,75" || x == "75,33") {
+	} else if (x == "04,33" || x == "18,33" || x == "33,04" || x == "33,18") {
 			answer = "I don’t want to hack the projector!";
 	} else if (x == "04,33" || x == "38,04") {
-			answer = "That’s it! Now the projector has power. <br><i>Take card <b>75</b>. Remove cards  <b>04</b> and <b>38</b>.</i>";
-	} else if (x == "06,18" || x == "18,06") {
-			answer = "I’m not sure it’s the right way to go.";
-	} else if (x == "06,20" || x == "20,06") {
-			answer = "A bit of salt…Cooking isn’t as complicated as I thought it was. <br><i>Take card <b>35</b>. Remove cards <b>06</b> and <b>20</b>.</i>";
+			answer = "That’s it! Now the projector has power. <br><i>Take card <b>18</b>. Remove cards  <b>04</b> and <b>38</b>.</i>";
+	} else if (x == "07,35" || x == "35,07") {
+			answer = "It wouldn’t do any good if I paint over the lecture poster. The lecture would have still been held.";
 	} else if (x == "07,49" || x == "49,07") {
 			answer = "There si no point in cutting the poster.";
-	} else if (x == "07,71" || x == "71,07") {
-			answer = "It wouldn’t do any good if I paint over the lecture poster. The lecture would have still been held.";
 	} else if (x == "08,63" || x == "63,08") {
 			answer = "As I take the record out, a small piece of paper falls out from the cover. <br><i>Take card <b>13</b>. Remove card <b>63</b>.</i>";
 	} else if (x == "12,49" || x == "17,12") {
 			answer = "Well sure, a book on astronomy can be useful while looking into space, but I can’t directly use it with the telescope lens.";
 	} else if (x == "12,25" || x == "25,12") {
-			answer = "All right! This should work now. Let’s take a look at the sky tonight… <br><i>Take card <b>74</b>. Remove cards <b>12</b> and <b>25</b>.</i>";
+			answer = "All right! This should work now. Let’s take a look at the sky tonight… <br><i>Take card <b>16</b>. Remove cards <b>12</b> and <b>25</b>.</i>";
 	} else if (x == "13,30" || x == "30,13") {
 			answer = "The note seems to be connected to the inscription on the safe. But I should find the combination to open it.";
 	} else if (x == "15,21" || x == "21,15") {
@@ -1469,88 +1339,48 @@ function myFunction() {
 			answer = "There we go, a photo of the test should be good enough. <br><i>A few moments after I take the photo of the test, professor Martin returns to the desk. <br>Take card <b>47</b>. Remove card <b>46</b>.</i>";
 	} else if (x == "15,47" || x == "47,15") {
 			answer = "I already took a photo of the test, now I should give it to Jamie.";
-	} else if (x == "16,18" || x == "18,16") {
-			answer = "I could put ginger in the bowl, but should I?";
-	} else if (x == "16,27" || x == "27,16") {
-			answer = "I should try to make the cookies, but putting the recipe in the bowl won’t be enough.";
-	} else if (x == "16,45" || x == "45,16") {
-			answer = "Why would I move the apples from one bowl to another?";
-	} else if (x == "16,56" || x == "56,16") {
-			answer = "I can drink milk directly from the bottle if I want to, but I don’t.";
-	} else if (x == "16,68" || x == "68,16") {
-			answer = "Aha! According to my translation, this is the first step of the dog cookies baking process. <br><i>Take card <b>06</b>. Remove cards <b>16</b> and <b>68</b>.</i>";
+	} else if (x == "16,17" || x == "17,16") {
+			answer = "Ok, I’ll draw the constellations I see and write the according numbers next to every star. Let’s see if that gets me anywhere. <i>Take card <b>I</b>. Remove cards <b>16</b> and <b>17</b>.</i>";
 	} else if (x == "17,25" || x == "25,17") {
 			answer = "The book can be useful while looking into space, but it won’t fix the telescope.";
-	} else if (x == "17,64" || x == "17,65" || x == "64,17" || x == "65,17") {
+	} else if (x == "17,64" || x == "64,17") {
 			answer = "This has to be connected. But I should probably get a look into the stars first to figure everything out.";
-	} else if (x == "17,74" || x == "74,17") {
-			answer = "Ok, I’ll draw the constellations I see and write the according numbers next to every star. Let’s see if that gets me anywhere. <i>Take card <b>I</b>. Remove cards <b>17</b> and <b>74</b>.</i>";
-	} else if (x == "18,19" || x == "19,18" || x == "34,56" || x == "56,34") {
-			answer = "Hmmm, no.";
-	} else if (x == "18,20" || x == "20,18") {
-			answer = "Sure, ginger goes well with savory dishes as much as it does with sweet ones. But it’s not the time to experiment with recipes.";
-	} else if (x == "18,24" || x == "18,34" || x == "24,18" || x == "34,18") {
-			answer = "I could bake some ginger. But why should I do it?";
-	} else if (x == "18,26" || x == "18,44"  || x == "18,62" || x == "26,18" || x == "44,18" || x == "62,18") {
-			answer = "Ginger tea is amazing, but it’s not the direction I was going for.";
-	} else if (x == "18,45" || x == "45,18") {
-			answer = "Ginger with apples? It could work, but I don’t think it’s something I should try right now.";
-	} else if (x == "18,56" || x == "56,18") {
-			answer = "Ginger with milk? Why would I do that now?";
-	} else if (x == "18,61" || x == "41,61" || x == "45,61" || x == "61,18" || x == "61,41" || x == "61,45") {
+	} else if (x == "41,61" || x == "61,41") {
 			answer = "I think this works only when the plant is still planted.";
 	} else if (x == "19,36" || x == "36,19") {
 			answer = "I should put some pumpkin, but it should be a ripe fruit, not just a sprout.";
 	} else if (x == "19,41" || x == "41,19") {
 			answer = "Ok, this seems to be the last ingredient. <br><i>Take card <b>48</b>. Remove cards <b>19</b> and <b>41</b>.</i>";
-	} else if (x == "20,26" || x == "20,62" || x == "26,20" || x == "62,20") {
-			answer = "I don’t think that anybody would drink this tea if I added some salt in it.";
-	} else if (x == "20,27" || x == "27,20") {
-			answer = "Yes, the cookies should probably be salty, but I not going to manage that if I put some salt on the recipe paper.";
-	} else if (x == "20,44" || x == "44,20") {
-			answer = "Putting some salt into the cup doesn’t seem very useful.";
-	} else if (x == "20,56" || x == "56,20") {
-			answer = "Salt in milk? I don’t think so.";
+	} else if (x == "21,35" || x == "35,21") {
+			answer = "I don’t want to spray the paint all over the photo. My mother liked it so much that she had it framed. Why would I destroy it?";
 	} else if (x == "21,49" || x == "49,21") {
 			answer = "I don’t want to cut the photo. My mother liked it so much that she had it framed. Why would I destroy it?";
-	} else if (x == "21,71" || x == "71,21") {
-			answer = "I don’t want to spray the paint all over the photo. My mother liked it so much that she had it framed. Why would I destroy it?";
 	} else if (x == "22,33" || x == "33,22") {
 			answer = "I have to find the password first, the SD card doesn’t seem to do anything this way.";
 	} else if (x == "22,38" || x == "38,22" || x == "38,43" || x == "38,53" || x == "43,38" || x == "53,38") {
 			answer = "The computer is already plugged in the power socket.";
 	} else if (x == "24,27" || x == "27,24") {
-			answer = "I’d like to cheer up Laika with her favourite cookies, but it will be a bit more complicated than just putting the recipe in the oven.";
-	} else if (x == "24,34" || x == "34,24") {
-			answer = "These two go together, but there should be something in the baking pan before putting it into the oven.";
-	} else if (x == "24,45" || x == "34,45" || x == "45,24" || x == "45,34") {
-			answer = "Baking some apples could be nice, but it’s not my priority for the moment.";
-	} else if (x == "24,48" || x == "48,24") {
-			answer = "Ok, I’ve never done this before, but how hard can it be? Actually, my cookies seem nice enough. <br><i>Take card <b>54</b>. Remove cards <b>24</b> and <b>48</b>.</i>";
-	} else if (x == "26,56" || x == "56,26") {
-			answer = "I could put some milk in the tea, but what good would that do?";
+			answer = "I would like to make the cookies for Laika, but spreading some flour on the recipe won’t do it.";
 	} else if (x == "26,58" || x == "58,26") {
 			answer = "Cookies and tea are a great combination, but dog cookies and tea maybe less so.";
 	} else if (x == "26,60" || x == "60,26") {
 			answer = "This is really wicked of me, and I’m definitely not proud of myself for doing it, but I don’t see that I have any other choice. <br><i>Take card <b>62</b>. Remove cards <b>26</b> and <b>60</b>.</i>";
 	} else if (x == "27,34" || x == "34,27") {
 			answer = "I should try to make the cookies to cheer up Laika, but putting the recipe in the oven won’t do it.";
-	} else if (x == "27,68" || x == "68,27") {
-			answer = "I would like to make the cookies for Laika, but spreading some flour on the recipe won’t do it.";
 	} else if (x == "28,32" || x == "32,28") {
 			answer = "I just took it of Laika’s collar, I’m not going to put it back.";
+	} else if (x == "29,35" || x == "35,29") {
+			answer = "I can’t just spray paint all over the tests! And in front of the professor too.";
 	} else if (x == "29,37" || x == "37,29") {
 			answer = "I don’t know how to use these two together, but I have a feeling that the flag could be useful in my diabolic plan to get the mineralogy test.";
 	} else if (x == "29,49" || x == "49,29") {
 			answer = "I can’t cut the tests in front of the professor Martin. And even if I could, should I really?";
-	} else if (x == "29,71" || x == "71,29") {
-			answer = "I can’t just spray paint all over the tests! And in front of the professor too.";
 	} else if (x == "32,41" || x == "41,32") {
 			answer = "Laika likes pumpkin only in cookies.";
 	} else if (x == "32,49" || x == "49,32") {
 			answer = "I don’t want to hurt Laika!";
 	} else if (x == "32,58" || x == "58,32") {
-			answer = "There you go, Laika! <br><i>Laika barks and eats the cookies with pleasure. She seems to feel much better. After she finishes, she goes outside and barks to get my attention. I realise that she wants to show me something, so I follow her. After about 15 minutes of wondering in the forest behind the house, she stops in front of a cabin. I somehow understand that Laika’s telling me it belonged to my mother. As I look at the lock at the cabin door, Laika barks and runs away in the direction of the house. <br>Take card <b>73</b>. Remove cards <b>18</b>, <b>32</b>, <b>45</b>, <b>56</b> and <b>58</b>.</i>";
+			answer = "There you go, Laika! <br><i>Laika barks and eats the cookies with pleasure. She seems to feel much better. After she finishes, she goes outside and barks to get my attention. I realise that she wants to show me something, so I follow her. After about 15 minutes of wondering in the forest behind the house, she stops in front of a cabin. I somehow understand that Laika’s telling me it belonged to my mother. As I look at the lock at the cabin door, Laika barks and runs away in the direction of the house. <br>Take card <b>05</b>. Remove cards <b>27</b>, <b>32</b> and <b>58</b>.</i>";
 	} else if (x == "32,61" || x == "61,32") {
 			answer = "As I focus on Laika, I sense that she’s really sad and that she would love to eat some of her favourite cookies that would remind her of my mother. I also feel that she wants to show me something, but she’s way to depressed to do it.";
 	} else if (x == "32,49" || x == "49,32") {
@@ -1558,53 +1388,40 @@ function myFunction() {
 	} else if (x == "33,43" || x == "43,33") {
 			answer = "I can’t just hack Jocelyn’s computer right in front of her.";
 	} else if (x == "33,53" || x == "53,33") {
-			answer = "Well, this is an absolutely terrible thing to do, but I’m doing it anyway. However, to not be a total villain, I’ll copy all of her files on a cloud first and send her a link to download them tomorrow. Anonymously, obviously. I’m really sorry, Jocelyn! But then again, I might be doing you a favor. It’s not healthy to be under this amount of stress for giving a lecture. I know, I know, I’m only trying to make myself feel better. <br><i>As I insert the SD card, the virus rapidly makes all of the files on Jocelyn’s computer unreadable. She returns from the toilet and stays speechless as she looks at the computer screen. there is a message written by the ‘hacker’ that reads: “I hope you have backup. Love, WebParasite”. Jocelyn, after a few minutes of disbelief, leaves the tea shop and goes to the library to say her material for  the lecture is gone. You follow her, and wait for her to finish her conversation with Sandy. As she leaves, you kindly ask Sandy to borrow the projector, now that the lecture is canceled. Sandy, although a bit suspicious about this unexpected turn of events, lets you have it. <br>Take card <b>04</b>. Remove cards <b>07</b>, <b>11</b>, <b>22</b>, <b>33</b> and <b>E</b>.";
-	} else if (x == "34,54" || x == "54,34") {
-			answer = "And now, for the final step.  Wow, my first dog cookies seem to be a complete success! <br><i>Take card <b>58</b>. Remove cards <b>34</b> and <b>54</b>.</i>";
+			answer = "Well, this is an absolutely terrible thing to do, but I’m doing it anyway. However, to not be a total villain, I’ll copy all of her files on a cloud first and send her a link to download them tomorrow. Anonymously, obviously. I’m really sorry, Jocelyn! <br><i>As I insert the SD card, the virus rapidly makes all of the files on Jocelyn’s computer unreadable. She returns from the toilet and stays speechless as she looks at the computer screen. there is a message written by the ‘hacker’ that reads: “I hope you have backup. Love, WebParasite”. Jocelyn, after a few minutes of disbelief, leaves the tea shop and goes to the library to say her material for  the lecture is gone. You follow her, and wait for her to finish her conversation with Sandy. As she leaves, you kindly ask Sandy to borrow the projector, now that the lecture is canceled. Sandy, although a bit suspicious about this unexpected turn of events, lets you have it. <br>Take card <b>04</b>. Remove cards <b>07</b>, <b>11</b>, <b>33</b> and <b>53</b>";
+			answer = "Well, this is an absolutely terrible thing to do, but I’m doing it anyway. However, to not be a total villain, I’ll copy all of her files on a cloud first and send her a link to download them tomorrow. Anonymously, obviously. I’m really sorry, Jocelyn! <br><i>As I insert the SD card, the virus rapidly makes all of the files on Jocelyn’s computer unreadable. She returns from the toilet and stays speechless as she looks at the computer screen. there is a message written by the ‘hacker’ that reads: “I hope you have backup. Love, WebParasite”. Jocelyn, after a few minutes of disbelief, leaves the tea shop and goes to the library to say her material for  the lecture is gone. You follow her, and wait for her to finish her conversation with Sandy. As she leaves, you kindly ask Sandy to borrow the projector, now that the lecture is canceled. Sandy, although a bit suspicious about this unexpected turn of events, lets you have it. <br>Take card <b>04</b>. Remove cards <b>07</b>, <b>11</b>, <b>20</b>, <b>33</b> and <b>53</b>.</i>";
+} else if (x == "34,48" || x == "48,34") {
+    answer = "All that is left to do is to bake these cookies. <br><i>Take card <b>58</b>. Remove cards <b>34</b> and <b>48</b>.</i>";
+	} else if (x == "35,37" || x == "37,35") {
+			answer = "Ok, let’s see do I have some talent in arts. I’ll admit it’s not a masterpiece, but it will do the trick. <br><i>I draw some pretty provocative signs on the flag, just in time before it’s supposed to be raised up on the pole. I go back up to professor Martin’s desk and wait for the big flag reveal. I hear the hymn starting on the speakers, and the people around me start to stir. 30 seconds after, everybody is already by the window, commenting on the flag vandalization. Professor Martin also gets up and goes to the window to see what all the fuss is about. The mineralogy tests stay on the desk, unsupervised. <br>Take card <b>46</b>. Remove cards <b>29</b>, <b>35</b> and <b>37</b>.</i>";
+	} else if (x == "35,46" || x == "46,35") {
+			answer = "If I spray all over the tests, professor Martin will simply make new copies. It’s not a great solution.";
 	} else if (x == "36,61" || x == "61,36") {
 			answer = "I focus hard on the sprout, trying to give all the energy I have into it. Even though I’m not really sure what I’m doing, the plant starts to rapidly grow in front of me. In about a minute of my hard work, a flower appears, and it two minutes, there is already a small green fruit. In three minutes, I’ve created a fully grown, completely ripe pumpkin. <br><i>Take card <b>41</b>. Remove card <b>36</b>.</i>";
 	} else if (x == "37,49" || x == "49,37") {
 			answer = "Cutting the flag could work, but will it draw just enough attention? Maybe I should try something just a bit more provocative.";
-	} else if (x == "37,71" || x == "71,37") {
-			answer = "Ok, let’s see do I have some talent in arts. I’ll admit it’s not a masterpiece, but it will do the trick. <br><i>I draw some pretty provocative signs on the flag, just in time before it’s supposed to be raised up on the pole. I go back up to professor Martin’s desk and wait for the big flag reveal. I hear the hymn starting on the speakers, and the people around me start to stir. 30 seconds after, everybody is already by the window, commenting on the flag vandalization. Professor Martin also gets up and goes to the window to see what all the fuss is about. The mineralogy tests stay on the desk, unsupervised. <br>Take card <b>46</b>. Remove cards <b>29</b>, <b>37</b> and <b>71</b>.</i>";
-	} else if (x == "38,72" || x == "72,38") {
-			answer = "The projector is already plugged in.";
 	} else if (x == "40,50" || x == "50,40") {
 			answer = "I put the peanut butter in the dough, as instructed in the recipe. <br><i>Take card <b>19</b>. Remove cards <b>40</b> and <b>50</b>.</i>";
-	} else if (x == "44,56" || x == "56,44") {
-			answer = "I could offer some milk to Jocelyn, but it seems that she drinks tea.";
 	} else if (x == "44,60" || x == "60,44") {
 			answer = "It’s hard to imagine that someone would drink senna leaves without any tea in the cup.";
-	} else if (x == "44,68" || x == "68,44") {
-			answer = "The cup is too small to make the dough in it.";
-	} else if (x == "45,56" || x == "56,45") {
-			answer = "Apples and milk? Not the best possible combination, and not useful at the moment.";
 	} else if (x == "46,49" || x == "49,46") {
 			answer = "Destroying the tests with scissors won’t get me anywhere.";
-	} else if (x == "46,56" || x == "56,46") {
-			answer = "Destroying the tests with milk won’t get me anywhere.";
-	} else if (x == "46,71" || x == "71,46") {
-			answer = "If I spray all over the tests, professor Martin will simply make new copies. It’s not a great solution.";
 	} else if (x == "49,55" || x == "55,49") {
 			answer = "Cut the money? Absolutely not.";
-	} else if (x == "56,60" || x == "60,56") {
-			answer = "I can put some senna leaves in the milk, but who would drink it?";
-	} else if (x == "56,62" || x == "62,56") {
-			answer = "I don’t see the point in putting milk into it.";
 	} else if (x == "60,61" || x == "61,60") {
 			answer = "I focus on the senna plant and I feel the sun on her leaves and the water passing through the xylem. It’s a fascinating feeling.";
-	} else if (x == "61,09" || x == "61,10" || x == "61,11" || x == "61,14" || x == "61,10" || x == "61,31" || x == "61,42" || x == "61,51" || x == "61,52" || x == "61,57" || x == "61,59" || x == "61,66") {
+	} else if (x == "61,06" || x == "61,09" || x == "61,10" || x == "61,11" || x == "61,14" || x == "61,10" || x == "61,31" || x == "61,42" || x == "61,51" || x == "61,52" || x == "61,57" || x == "61,59") {
 			answer = "Unfortunatelly, it seems  to work only on plants and animals. It would be amazing and in same time terryifing to be able to feel other person’s feelings.";
 	} else if (x == "15,1522") {
-			answer = "As I’m pretty sure that Mary’s address should be 1522 Governor Nicholls Street, New Orleans, I enter the New Orleans dialing code followed by number 1522 in the phone. I’m not very optimistic about it, the phone number is obviously too short. To my surprise, a woman answers the phone. Is it Mary? <br><i>Take card <b>14</b>.</i>";
+			answer = "As I’m pretty sure that Mary’s address should be 1522 Governor Nicholls Street, New Orleans, I enter the New Orleans dialing code followed by number 1522 in the phone. A woman answers the phone. Is it Mary? <br><i>Take card <b>14</b>.</i>";
 	} else if (x == "22,1960") {
 			answer = "1960 – After a bit of research, I enter the code 1960 that matches the year in which Eugene Shoemaker and Edward Chao proved that Nördlingen was built on top of a meteorite impact crater. The password is correct! I’m not proud of myself for breaking into Jocelyn’s computer, but I still think that it’s not very smart of her to share her computer password with other people. <br><i>Take card <b>53</b>. Remove card <b>22</b>.</i>";
-	} else if (x == "30,8296") {
-			answer = "8296 – I enter the 4 digit code in the safe lock and it works! I’m super excited about what treasures I will find in there. And a bit disappointed to see that there are actually only two pieces of paper in it! A letter signed by Mary and a newspaper article. Why is this so important to keep it in a safe? <br><i>Take cards <b>67</b>, <b>69</b> and <b>70</b>. Remove cards <b>22</b> and <b>30</b>.</i>";
-	} else if (x == "73,6224") {
-			answer = "After using all my deduction powers on solving the Sinbad the Sailor puzzle, I believe that Sinbad’s Baghdad should be equivalent to Shedar star in Cassiopeia constellation. I search the according number on my drawing – it’s 6224. I put the numbers in the padlock and it works like a charm! <br><i>Take card <b>H</b>. Remove cards <b>I</b>, <b>64</b> and <b>65</b>.</i>";
+	} else if (x == "30,6296") {
+			answer = "6296 – I enter the 4 digit code in the safe lock and it works! I’m super excited about what treasures I will find in there. And a bit disappointed to see that there are actually only two pieces of paper in it! A letter signed by Mary and a newspaper article. Why is this so important to keep it in a safe? <br><i>Take cards <b>45</b>, <b>54</b> and <b>56</b>. Remove cards <b>13</b> and <b>30</b>.</i>";
+	} else if (x == "05,6224") {
+			answer = "After using all my deduction powers on solving the Sinbad the Sailor puzzle, I believe that Sinbad’s Baghdad should be equivalent to Shedar star in Cassiopeia constellation. I search the according number on my drawing – it’s 6224. I put the numbers in the padlock and it works like a charm! <br><i>Take card <b>H</b>. Remove cards <b>I</b>, <b>05</b> and <b>64</b>.</i>";
 	} else {
   		answer = "That's not working. Try something else.";
   	}
   	document.getElementById("demo").innerHTML = answer;
-}
+};
