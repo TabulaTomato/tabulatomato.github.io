@@ -12,7 +12,7 @@ function searchKeyPress(e)
         return false;
     }
     return true;
-}
+};
 
 function myFunction() {
 	var x = document.getElementById("myText").value;
@@ -26,7 +26,7 @@ function myFunction() {
   } else if (x == "04") {
   		answer = "The projector I borrowed from the library.";
 	} else if (x == "05") {
-  		answer = "My mother’s cabin in the woods that Laika brought me to. There is the word “Baghdad” written on the door. It’s locked by a 4 digit combination padlock. <br><i>To open the cabin door, enter card number <b>05</b> followed by a 4 digit number lock combination in the input field, separated by a comma.</i>";
+  		answer = "My mother’s cabin in the woods that Laika brought me to. There are words 'First star' written on the door. It’s locked by a 4 digit combination padlock. <br><i>To open the cabin door, enter card number <b>05</b> followed by a 4 digit number lock combination in the input field, separated by a comma.</i>";
 	} else if (x == "06") {
   		answer = "Gavin Korn is a member of Earthlings association.";
 	} else if (x == "07") {
@@ -196,7 +196,7 @@ function myFunction() {
 	} else if (x == "01,16") {
   		answer = "It’s magical as always…I can recognize some of the constellations.";
 	} else if (x == "01,17") {
-  		answer = "What a strange book! It’s just a bunch of stars with 4 digit numbers written next to it. And all in my mother’s handwriting. Why would she hide this in Sinbad the Sailor cover?";
+  		answer = "What a strange book! It’s just a bunch of stars with 4 digit numbers written next to it.";
 	} else if (x == "01,18") {
   		answer = "That’s great, now the projector is working!";
 	} else if (x == "01,19") {
@@ -520,7 +520,7 @@ function myFunction() {
 	} else if (x == "09,63") {
 			answer = "It’s a very nice record player. Your mother liked these vintage things. She said that it was the first way she experienced music.";
 	} else if (x == "09,64") {
-			answer = "Why, I’m really not sure what this could be about. It seems to mention some parts of Sinbad’s journeys.";
+			answer = "Why, I’m really not sure what this could be about.";
 	} else if (x == "10,01") {
 			answer = "What a pleasure to finally meet you, Ziggy. Lena told us so much about you. She was very proud of you!";
 	} else if (x == "10,02") {
@@ -648,7 +648,7 @@ function myFunction() {
 	} else if (x == "11,03" || x == "11,32") {
 			answer = "What a cute dog!";
 	} else if (x == "11,05") {
-			answer = "I don't know what does Shedar mean. I can’t imagine why would your mother write this on her cabin door.";
+			answer = "I don't know what does it mean. I can’t imagine why would your mother write this on her cabin door.";
 	} else if (x == "11,06") {
 			answer = "I’ve never seen him.";
 	} else if (x == "11,07") {
@@ -936,7 +936,7 @@ function myFunction() {
 	} else if (x == "51,04") {
 			answer = "Nice projector. It’s yours?";
 	} else if (x == "51,05") {
-			answer = "Shedar…Isn't it a name of a star? But I can’t really remember in which constellation is it.";
+			answer = "I don't know what this could mean.";
 	} else if (x == "51,06") {
 			answer = "He came a few times with Lena. They were good friends, I think.";
 	} else if (x == "51,07") {
@@ -1042,7 +1042,7 @@ function myFunction() {
 	} else if (x == "51,63") {
 			answer = "You could maybe show me your record collection one time.";
 	} else if (x == "51,64") {
-			answer = "There are elements of Sinbad’s journeys in this message. But I don’t know what the rest of it could mean.";
+			answer = "I don’t know what is the meaning of this message.";
 	} else if (x == "52,01") {
 			answer = "Hello, how can I help you?";
 	} else if (x == "52,02" || x == "52,19" || x == "52,24" || x == "52,40" || x == "52,41" || x == "52,48" || x == "52,50") {
@@ -1052,7 +1052,7 @@ function myFunction() {
 	} else if (x == "52,04" || x == "52,18" || x == "52,20") {
 			answer = "We don’t have any video equipment, we are specialised in telescopes.";
 	} else if (x == "52,05") {
-			answer = "Shedar is a star in Cassiopeia constellation.";
+			answer = "We don’t have any padlock systems, we are specialised in astronomy equipment.";
 	} else if (x == "52,06" || x == "52,31" || x == "52,57") {
 			answer = "I’m sorry, I don’t know him.";
 	} else if (x == "52,07") {
@@ -1271,7 +1271,7 @@ function myFunction() {
 			answer = "I don’t really see any sense in this.";
 	} else if (x == "02,24" || x == "24,02") {
       answer = "Aha! According to my translation, this is the first step of the dog cookies baking process. <br><i>Take card <b>40</b>. Remove cards <b>02</b> and <b>24</b>.</i>";
-	} else if (x == "02,34" || x == "02,41" || x == "02,50" || x == "19,34" || x == "24,34" || x == "24,41" || x == "24,50" || x == "34,02" || x == "34,19" || x == "34,24" || x == "34,40" || x == "34,41" || x == "34,50" || x == "40,34" || x == "40,41" || x == "41,02" || x == "41,24" || x == "41,34" || x == "41,40" || x == "41,50" || x == "50,24" || x == "50,34" || x == "50,41" ||) {
+	} else if (x == "02,34" || x == "02,41" || x == "02,50" || x == "19,34" || x == "24,34" || x == "24,41" || x == "24,50" || x == "34,02" || x == "34,19" || x == "34,24" || x == "34,40" || x == "34,41" || x == "34,50" || x == "40,34" || x == "40,41" || x == "41,02" || x == "41,24" || x == "41,34" || x == "41,40" || x == "41,50" || x == "50,24" || x == "50,34" || x == "50,41") {
 			answer = "I should follow the recipe, I’m not skilled enough to improvise.";
 	} else if (x == "02,03" || x == "02,32" || x == "03,02" || x == "32,02") {
 			answer = "Laika doesn’t like eggs.";
@@ -1388,8 +1388,7 @@ function myFunction() {
 	} else if (x == "33,43" || x == "43,33") {
 			answer = "I can’t just hack Jocelyn’s computer right in front of her.";
 	} else if (x == "33,53" || x == "53,33") {
-			answer = "Well, this is an absolutely terrible thing to do, but I’m doing it anyway. However, to not be a total villain, I’ll copy all of her files on a cloud first and send her a link to download them tomorrow. Anonymously, obviously. I’m really sorry, Jocelyn! <br><i>As I insert the SD card, the virus rapidly makes all of the files on Jocelyn’s computer unreadable. She returns from the toilet and stays speechless as she looks at the computer screen. there is a message written by the ‘hacker’ that reads: “I hope you have backup. Love, WebParasite”. Jocelyn, after a few minutes of disbelief, leaves the tea shop and goes to the library to say her material for  the lecture is gone. You follow her, and wait for her to finish her conversation with Sandy. As she leaves, you kindly ask Sandy to borrow the projector, now that the lecture is canceled. Sandy, although a bit suspicious about this unexpected turn of events, lets you have it. <br>Take card <b>04</b>. Remove cards <b>07</b>, <b>11</b>, <b>33</b> and <b>53</b>";
-			answer = "Well, this is an absolutely terrible thing to do, but I’m doing it anyway. However, to not be a total villain, I’ll copy all of her files on a cloud first and send her a link to download them tomorrow. Anonymously, obviously. I’m really sorry, Jocelyn! <br><i>As I insert the SD card, the virus rapidly makes all of the files on Jocelyn’s computer unreadable. She returns from the toilet and stays speechless as she looks at the computer screen. there is a message written by the ‘hacker’ that reads: “I hope you have backup. Love, WebParasite”. Jocelyn, after a few minutes of disbelief, leaves the tea shop and goes to the library to say her material for  the lecture is gone. You follow her, and wait for her to finish her conversation with Sandy. As she leaves, you kindly ask Sandy to borrow the projector, now that the lecture is canceled. Sandy, although a bit suspicious about this unexpected turn of events, lets you have it. <br>Take card <b>04</b>. Remove cards <b>07</b>, <b>11</b>, <b>20</b>, <b>33</b> and <b>53</b>.</i>";
+			answer = "Well, this is an absolutely terrible thing to do, but I’m doing it anyway. However, to not be a total villain, I’ll copy all of her files on a cloud first and send her a link to download them tomorrow. Anonymously, obviously. I’m really sorry, Jocelyn! <br><i>As I insert the SD card, the virus rapidly makes all of the files on Jocelyn’s computer unreadable. She returns from the toilet and stays speechless as she looks at the computer screen. there is a message written by the ‘hacker’ that reads: “I hope you have backup. Love, WebParasite”. Jocelyn, after a few minutes of disbelief, leaves the tea shop and goes to the library to say her material for  the lecture is gone. I follow her, and wait for her to finish her conversation with Sandy. As she leaves, I kindly ask Sandy to borrow the projector, now that the lecture is canceled. Sandy, although a bit suspicious about this unexpected turn of events, lets me have it. <br>Take card <b>04</b>. Remove cards <b>07</b>, <b>11</b>, <b>33</b> and <b>53</b>";
 } else if (x == "34,48" || x == "48,34") {
     answer = "All that is left to do is to bake these cookies. <br><i>Take card <b>58</b>. Remove cards <b>34</b> and <b>48</b>.</i>";
 	} else if (x == "35,37" || x == "37,35") {
@@ -1419,7 +1418,7 @@ function myFunction() {
 	} else if (x == "30,6296") {
 			answer = "6296 – I enter the 4 digit code in the safe lock and it works! I’m super excited about what treasures I will find in there. And a bit disappointed to see that there are actually only two pieces of paper in it! A letter signed by Mary and a newspaper article. Why is this so important to keep it in a safe? <br><i>Take cards <b>45</b>, <b>54</b> and <b>56</b>. Remove cards <b>13</b> and <b>30</b>.</i>";
 	} else if (x == "05,6224") {
-			answer = "After using all my deduction powers on solving the Sinbad the Sailor puzzle, I believe that Sinbad’s Baghdad should be equivalent to Shedar star in Cassiopeia constellation. I search the according number on my drawing – it’s 6224. I put the numbers in the padlock and it works like a charm! <br><i>Take card <b>H</b>. Remove cards <b>I</b>, <b>05</b> and <b>64</b>.</i>";
+			answer = "After using all my deduction powers on solving the stars puzzle, I believe that the ship left from star Shedar in Cassiopeia constellation. I search the according number on my drawing – it’s 6224. I put the numbers in the padlock and it works like a charm! <br><i>Take card <b>H</b>. Remove cards <b>I</b>, <b>05</b> and <b>64</b>.</i>";
 	} else {
   		answer = "That's not working. Try something else.";
   	}
