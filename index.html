@@ -35,7 +35,7 @@
       <h3>how to play</h3>
     </div>
     <div class="main-text">
-      <p>In this game you take the character of Ziggy Wonder, whose mother Lena died a few days ago and left her with mysterious last words. The goal of the game is to discover what did her mother mean, and what is Ziggy's true destiny. <br>The game is cooperative, so you should make all the decisions together. <br>During the game you will take cards from the deck when instructed. <br>There are three types of cards:</p>
+      <p>In this game you take the character of Ziggy Wonder, whose mother Lena died a few days ago and left her with mysterious last words. The goal of the game is to discover what did her mother mean, and what is Ziggy's true destiny. <br>The game is cooperative, so you should make all the decisions together. <br>During the game you will take cards from the deck when instructed. Also, whenever you get a new location, you can take all the cards with numbers written on the location. <br>There are three types of cards:</p>
       <ul class="list">
   			<li>&#10148; Locations, marked with capital letters</li>
   			<li>&#10148; Characters, marked with numbers</li>
@@ -43,13 +43,13 @@
   		</ul>
       <p>Actions you can take during the game are:</p>
       <ul class="list">
-  			<li>&#10148; Examine locations, characters and objects</li>
+  			<li>&#10148; Examine locations, characters and objects. You can examine any card you want, but you have to examine the cards with the magnifying glass symbol</li>
   			<li>&#10148; See your own opinion on a character or an object</li>
   			<li>&#10148; Question characters about other characters and objects</li>
         <li>&#10148; Give an object to a character</li>
         <li>&#10148; Use an object on another object</li>
   			<li>&#10148; Search the internet to find informaton that will help you to proceed in the game. Either the game will tell you when to use the internet, or you will get a card with a wi-fi symbol. When one of these two situations happen, it means that some information used in a puzzle can be found on the internet.</li>
-        <li>&#10148; Enter a four digit code to open an object or make progress in the game</li>
+        <li>&#10148; Enter a four digit code to open an object or make progress in the game. The game will instruct you on which cards can be affected by a four digit code</li>
   		</ul>
       <p>To do these actions, you will use the interactive game book bellow as described.<br>The game will automatically finish when you've discovered what you were supposed to.</p>
     </div>
@@ -63,20 +63,20 @@
       <h3>interactive game book</h3>
     </div>
     <div class="main-text">
-      <h4>To explore the location, to get information about a character, or to examine an object, write the corresponding number/letter in the input field. Doing this will be very useful in a lot of situations, so it's advised to always do it when you get a new card.</h4>
-      <p>For example, if you want to know more about Ziggy <b>01</b>, enter '01' in the input field and click 'OK'.</p>
+      <h4>To explore a location, to get information about a character, or to examine an object, write the corresponding number/letter in the input field. Doing this will be very useful in a lot of situations, so it's advised to always do it when you get a new card.</h4>
+      <p>For example, if you want to know more about <b>Ziggy 01</b>, enter '01' in the input field and click 'OK' or press Enter. If you want to explore location <b>Mother's house A</b>, enter 'a' or 'A' in the input field and click 'OK' or press Enter.</p>
       <h4>To ask a character about another character or an object, or to give an object to a character, write their according numbers in the input field separated with a comma, without spaces. Write the number of the character you want to speak to first, and the character/object you want to speak about second. If you want to give an object to a character, write the character's number first, and the object's second. If you ask Ziggy about something, you will hear her thoughts about it.</h4>
-      <p>For example, if you want to hear Ziggy's <b>01</b> thoughts about her mother <b>23</b>, enter '01,23' in the input field and click 'OK'.</p>
+      <p>For example, if you want to hear <b>Ziggy's 01</b> thoughts about her <b>mother 23</b>, enter '01,23' in the input field and click 'OK' or press Enter.</p>
       <h4>You can also ask a character about themselves by writing their corresponding number two times in the input field separated with a comma, without spaces.</h4>
-      <p>For example, if you want to hear Ziggy's <b>01</b> thoughts about herself, enter '01,01' in the input field and click 'OK'.</p>
+      <p>For example, if you want to hear <b>Ziggy's 01</b> thoughts about herself, enter '01,01' in the input field and click 'OK' or press Enter.</p>
       <h4>To use an object on another object, write their corresponding numbers in the input field separated with a comma, without spaces. The order of the numbers isn't relevant.</h4>
-      <p>For example, if you want to cut the recipe <b>27</b> with the scissors <b>49</b>, enter '27,49' or '49,27' in the input field and click 'OK'.</p>
+      <p>For example, if you want to cut the <b>recipe 27</b> with the <b>scissors 49</b>, enter '27,49' or '49,27' in the input field and click 'OK' or press Enter.</p>
       <h4>To enter a code in an object, write the object's corresponding number in the input field followed by a four digit code, separated with a comma, without spaces.</h4>
-      <p>For example, if you want to open the door <b>74</b> with the code <b>1234</b>, enter '74,1234' in the input field and click 'OK'.</p>
+      <p>For example, if you want to open the <b>door 74</b> with the <b>code 1234</b>, enter '74,1234' in the input field and click 'OK' or press Enter.</p>
     </div>
     <div class="main-input">
-      <input type="text" id="myText" placeholder="input here">
-      <button onclick="myFunction()">OK</button>
+      <input type="text" id="myText" onkeypress="return searchKeyPress(event);" placeholder="input here">
+      <button id="myButton" onclick="myFunction()">OK</button>
     </div>
     <div class="main-text">
       <p id="demo"></p>
