@@ -26,7 +26,7 @@ function myFunction() {
   } else if (x == "04") {
   		answer = "The projector I borrowed from the library.";
 	} else if (x == "05") {
-  		answer = "My mother’s cabin in the woods that Laika brought me to. There are words 'First star' written on the door. It’s locked by a 4 digit combination padlock. <br><i>To open the cabin door, enter card number <b>05</b> followed by a 4 digit number lock combination in the input field, separated by a comma.</i>";
+  		answer = "My mother’s cabin in the woods that Laika brought me to. There are words 'Original star' written on the door. It’s locked by a 4 digit combination padlock. <br><i>To open the cabin door, enter card number <b>05</b> followed by a 4 digit number lock combination in the input field, separated by a comma.</i>";
 	} else if (x == "06") {
   		answer = "Gavin Korn is a member of Earthlings association.";
 	} else if (x == "07") {
@@ -172,7 +172,7 @@ function myFunction() {
 	} else if (x == "01,04") {
   		answer = "This could be useful, maybe not to me but to somebody else.";
 	} else if (x == "01,05") {
-  		answer = "My mother used to read it to me when I was a child. She would change the scary parts, so I never really heard the whole story.";
+  		answer = "I didn't know that my mother had a cabin. It seems I didn't know a lot of things about her.";
 	} else if (x == "01,06") {
   		answer = "Any friend of my mother is my friend too.";
 	} else if (x == "01,07") {
