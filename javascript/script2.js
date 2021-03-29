@@ -121,7 +121,6 @@ function bookPtwoFunction() {
   		answertwo = "Dr Rose Tobin was the physician of the original crew that found the planet Earth. A fellow Nakuhatlian, as are Mary and Ron. She is working at the hospital and is a very respected member of the community. But even though she likes it here on Earth, she misses our people immensely.";
       unknownmanContainer.style.display = "none";
       deliveryguyContainer.style.display = "none";
-      mayorguyContainer.style.display = "none";
       turnerContainer.style.display = "none";
       bundyContainer.style.display = "none";
   } else if (y == "12") {
