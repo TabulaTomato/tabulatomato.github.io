@@ -319,6 +319,7 @@ input[type=text] {
 	color: #2394B2;
 }
 
+
 input[type=text]:focus {
 	border: 3px solid #2394B2;
 }
@@ -352,7 +353,7 @@ input[type=text]:focus {
 	padding: 0px 20px;
 	margin: 8px 0;
 	display: inline-block;
-	border: none;
+	border: 3px solid #262626;
 	border-radius: 4px;
 	box-sizing: border-box;
 	line-height: 1.5;
@@ -365,6 +366,7 @@ input[type=text]:focus {
 
 .ok-button:hover {
 	background-color: #2394B2;
+	border: 3px solid #2394B2;
 }
 
 .hint-window {
@@ -522,7 +524,7 @@ input[type=text] {
 	font-size: 150%;
 }
 
-button {
+.ok-button {
 	font-size: 150%;
 }
 
@@ -554,7 +556,6 @@ tr {
 
 td {
   padding-left: 10px;
-
 }
 
 .hint-window {
