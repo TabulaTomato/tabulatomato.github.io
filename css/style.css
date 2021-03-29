@@ -273,7 +273,7 @@ h4 {
 h5 {
 	text-align: center;
 	color: #2394B2;
-	line-height: 1.5;
+	line-height: 2;
 	font-family: 'Palanquin Dark', sans-serif;
 	font-size: 200%;
 }
@@ -516,6 +516,11 @@ li {
 }
 
 h4 {
+	font-size: 120%;
+}
+
+h5 {
+	line-height: 1.2;
 	font-size: 120%;
 }
 
