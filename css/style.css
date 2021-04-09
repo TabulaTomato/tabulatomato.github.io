@@ -263,8 +263,9 @@ li {
 }
 
 h4 {
+  margin-top: 10px;
 	text-align: left;
-	color: #6D6E70;
+	color: #2394B2;
 	line-height: 1.5;
 	font-family: 'Palanquin Dark', sans-serif;
 	font-size: 130%;
@@ -276,6 +277,16 @@ h5 {
 	line-height: 2;
 	font-family: 'Palanquin Dark', sans-serif;
 	font-size: 200%;
+}
+
+h6 {
+  margin-top: 5px;
+	text-align: left;
+	color: #6D6E70;
+	line-height: 1.4;
+	letter-spacing: 0.8px;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 100%;
 }
 
 .setup {
@@ -295,6 +306,11 @@ td {
 .main-input {
 	text-align: center;
 	margin-top: 40px;
+}
+
+.second-input {
+	text-align: center;
+	margin-top: 5px;
 }
 
 .ability-input {
@@ -324,10 +340,50 @@ input[type=text]:focus {
 	border: 3px solid #2394B2;
 }
 
+.input-type {
+	width: 300px;
+	height: 100px;
+	padding: 0px 70px 0px 0px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 3px solid #262626;
+	border-radius: 4px;
+	box-sizing: border-box;
+	line-height: 1.5;
+	letter-spacing: 2px;
+	font-family: 'Fredoka One', cursive;
+	font-size: 200%;
+	color: #8A8A8A;
+  background-color: white;
+}
+
+#howtoplay {
+	width: 900px;
+	height: 100px;
+	padding: 30px 20px;
+	margin: 8px 0;
+	display: block;
+	border: 3px solid #2394B2;
+	border-radius: 4px;
+	box-sizing: border-box;
+	text-transform: uppercase;
+	font-family: 'Fredoka One', cursive;
+  text-decoration: none;
+	font-size: 200%;
+	background-color: #2394B2;
+	color: #dfdfdf;
+	text-align: center;
+}
+
+#howtoplay:hover {
+	background-color: white;
+	color: #2394B2;
+}
+
 .main-text a {
 	width: 297px;
 	height: 100px;
-	padding: 10px 20px;
+	padding: 30px 20px;
 	margin: 8px 0;
 	display: inline-block;
 	border: 3px solid #2394B2;
@@ -336,7 +392,7 @@ input[type=text]:focus {
 	text-transform: uppercase;
 	font-family: 'Fredoka One', cursive;
   text-decoration: none;
-	font-size: 250%;
+	font-size: 200%;
 	background-color: #2394B2;
 	color: #dfdfdf;
 	text-align: center;
@@ -367,6 +423,23 @@ input[type=text]:focus {
 .ok-button:hover {
 	background-color: #2394B2;
 	border: 3px solid #2394B2;
+}
+
+.input-ok-button {
+	width: 100px;
+	height: 100px;
+	padding: 0px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 3px solid #262626;
+	border-radius: 4px;
+	box-sizing: border-box;
+	line-height: 1.5;
+	letter-spacing: 2px;
+	font-family: 'Fredoka One', cursive;
+	font-size: 200%;
+	background-color: #262626;
+	color: #dfdfdf;
 }
 
 .hint-window {
@@ -510,11 +583,6 @@ h3 {
  	max-width: calc(100% - 30px);
 }
 
-li {
-	font-size: 120%;
-	padding-left: 40px;
-}
-
 h4 {
 	font-size: 120%;
 }
@@ -529,15 +597,31 @@ input[type=text] {
 	font-size: 150%;
 }
 
+.input-type {
+	width: 200px;
+	font-size: 150%;
+	padding: 0px 20px 0px 0px;
+}
+
 .ok-button {
+	font-size: 150%;
+}
+
+.input-ok-button {
 	font-size: 150%;
 }
 
 .main-text a {
 	width: 100%;
-	padding: 30px 20px;
-	font-size: 180%;
+	padding: 35px 20px;
+	font-size: 150%;
 	display: block;
+}
+
+#howtoplay {
+	width: 100%;
+	padding: 35px 20px;
+	font-size: 150%;
 }
 
 .images {
