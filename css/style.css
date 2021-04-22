@@ -265,7 +265,7 @@ li {
 h4 {
   margin-top: 10px;
 	text-align: left;
-	color: #2394B2;
+	color: #262626;
 	line-height: 1.5;
 	font-family: 'Palanquin Dark', sans-serif;
 	font-size: 130%;
@@ -355,6 +355,18 @@ input[type=text]:focus {
 	font-size: 200%;
 	color: #8A8A8A;
   background-color: white;
+}
+
+.locations {
+  width: 900px;
+  margin: auto;
+  display: none;
+}
+
+.videoEnd {
+  width: 900px;
+  margin: auto;
+  display: none;
 }
 
 #howtoplay {
@@ -469,7 +481,7 @@ input[type=text]:focus {
 
 .snd-hint-button {
 	width: 400px;
-	height: 100px;
+	height: 60px;
 	padding: 0px 20px;
 	margin: 8px 0;
 	display: inline-block;
@@ -479,7 +491,7 @@ input[type=text]:focus {
 	line-height: 1.2;
 	letter-spacing: 2px;
 	font-family: 'Fredoka One', cursive;
-	font-size: 120%;
+	font-size: 170%;
 	background-color: white;
 	color: #262626;
 }
@@ -498,7 +510,7 @@ input[type=text]:focus {
 
 .trd-hint-button {
 	width: 400px;
-	height: 100px;
+	height: 80px;
 	padding: 0px 20px;
 	margin: 8px 0;
 	display: inline-block;
@@ -616,6 +628,14 @@ input[type=text] {
 	padding: 35px 20px;
 	font-size: 150%;
 	display: block;
+}
+
+.locations {
+  width: 100%;
+}
+
+.videoEnd {
+  width: 100%;
 }
 
 #howtoplay {
