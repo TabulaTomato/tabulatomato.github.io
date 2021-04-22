@@ -679,6 +679,7 @@ td {
 .snd-hint-button {
 	width: 100%;
 	height: 120px;
+	font-size: 140%;
 }
 
 .trd-hint-button {
