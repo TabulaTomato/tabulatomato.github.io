@@ -1304,7 +1304,7 @@ function bookPoneFunction() {
 			answerone = "Cute dog.";
       hidePoneElements();
 	} else if (x == "42,04") {
-			answerone = "You’re kidding me...This is awesome! It will speed me up enormously. Thank you soooo much! Ok, let’s try to help you with finding your mural now. <br><i>Loomey takes a photo of the mural and sends it to a couple of people. After about 20 minutes of texting and calling, finally one of her friends recognizes it.</i><br>The mural is made by an anonymous author, that’s why I couldn’t remember it. But I did see it. It was not far from here actually, but it was removed 7 or 8 years ago. The address is C84. Hope that this helps you, because you helped me a lot.<br><i>Loomey returns to her work politely asking me to leave so that she could focus.<br>Write down or memorize the address and remove cards <b>04</b>, <b>21</b>, <b>42</b> and location card <b>LOC02</b>.</i>";
+			answerone = "You’re kidding me...This is awesome! It will speed me up enormously. Thank you soooo much! Ok, let’s try to help you with finding your mural now. <br><i>Loomey takes a photo of the mural and sends it to a couple of people. After about 20 minutes of texting and calling, finally one of her friends recognizes it.</i><br>The mural is made by an anonymous author, that’s why I couldn’t remember it. But I did see it. It was not far from here actually, but it was removed 7 or 8 years ago. The address is C84. Hope that this helps you, because you helped me a lot.<br><i>Loomey returns to her work politely asking me to leave so that she could focus.<br>Write down or memorize the address and remove cards <b>04</b>, <b>21</b> and <b>42</b>.</i>";
       hidePoneElements();
 	} else if (x == "42,05") {
 			answerone = "I’m an artist, not a dog food cook.";
