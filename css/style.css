@@ -168,6 +168,7 @@ body {
 	top: calc(100vh - 230px);
 	margin-left: auto;
 	margin-right: auto;
+  right: 7px;
 	width: 900px;
 	background-color: #262626;
 }
@@ -177,6 +178,7 @@ body {
 	top: calc(100vh - 230px);
 	margin-left: auto;
 	margin-right: auto;
+  right: 7px;
 	width: 900px;
 	background-color: #262626;
 }
@@ -236,7 +238,7 @@ p {
 	padding-top: 10px;
 	padding-bottom: 10px;
 	line-height: 1.5;
-	letter-spacing: 0.8px;
+	letter-spacing: 0.4px;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 100%;
 }
@@ -284,7 +286,7 @@ h6 {
 	text-align: left;
 	color: #262626;
   line-height: 1.5;
-  letter-spacing: 0.9px;
+  letter-spacing: 0.7px;
   font-family: 'Open Sans', sans-serif;
 	font-size: 100%;
 }
@@ -565,12 +567,14 @@ html::-webkit-scrollbar {
 
 .hero-title {
 	top: calc(100% - 150px);
- 	max-width: calc(100% - 40px);
+ 	max-width: calc(100% - 30px);
+  right: 0px;
 }
 
 .hero-subtitle {
 	top: calc(100% - 150px);
-	max-width: calc(100% - 40px);
+	max-width: calc(100% - 30px);
+  right: 0px;
 }
 
 h1 {
