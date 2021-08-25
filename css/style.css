@@ -1,14 +1,6 @@
 @charset "utf-8";
 /* CSS Document */4
 
-/* fredoka-one-regular - latin */
-@font-face {
-  font-family: 'Fredoka One';
-  font-style: normal;
-  font-weight: 400;
-  src: url('../fonts/fredoka-one/fredoka-one-regular.ttf') format('truetype'); /* Safari, Android, iOS */
-}
-
 /* cabin-sketch-regular - latin */
 @font-face {
   font-family: 'Cabin Sketch';
