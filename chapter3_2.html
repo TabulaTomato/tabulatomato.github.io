@@ -1,0 +1,462 @@
+<!doctype html>
+
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ziggy Wonder: Chapter 3</title>
+  <link rel="shortcut icon" type="image/png" href="favicon.png"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <script type="text/javascript" src="javascript/script.js"></script>
+  <script type="text/javascript" src="javascript/script3_2.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/reset.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+  <div class="navbar" id="topnav">
+    <a href="index.html">Home</a>
+    <a href="howtoplay.html">How to play</a>
+    <a href="chapter1.html">Chapter 1</a>
+    <a href="chapter2.html">Chapter 2</a>
+    <a href="chapter3_1.html">Chapter 3</a>
+    <a href="javascript:void(0);" class="icon" onclick="topNavToggle()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+  <div class="main">
+    <div class="main-box">
+      <h3>chapter 3, part 2</h3>
+    </div>
+    <div class="main-text">
+      <p><i>In this part of the chapter, you take the role of Lena, Ziggy's mother. This means that you don't have any abilities anymore.<br>Remove special object <b>SPO04</b>.<br>Put the cards you have from the first part of the chapter on the side of the table, except for the map parts. You cannot use these cards in this part of the chapter, but you will use them later. Leave the map parts on their places and continue reading.</i><br><br>I don't know how long have the Lakis kept me here. It's probably only been a few days, but without a window I don't see the days and nights changing and it seems as if it's been forever. Marina, the security guard that is in charge of keeping an eye on me, likes to chat so at least I have somebody to talk to. She is standing in front of my door most of the time, turning her Rubik's cube that she seems to enjoy more than anything.<br>I don't know if Ziggy understood any of the clues I let her, and without my powers, I'm hopeless.<br>What's that sound? It seems to be coming from the air vent. Is there something there?<br><br><i>Take cards <b>33</b> and <b>LOC04</b>.</i></p>
+    </div>
+    <div class="main-box">
+      <h3>digital game book</h3>
+    </div>
+    <div class="main-input">
+      <input type="text" id="bookPthreeText" onkeypress="return bookPthreeKeyPress(event);" placeholder="input here">
+      <button class="ok-button" id="bookPthreeButton" onclick="bookPthreeFunction()">OK</button>
+    </div>
+    <div class="main-text">
+      <p id="bookPthreeAnswer"></p>
+      <button class="continue-button" id="clickToBridge" onclick="document.location='chapter3_3.html'">Click to continue</button>
+    </div>
+    <div class="main-box">
+      <h3>hints</h3>
+    </div>
+    <div class="main-text">
+      <h4>Click on the location that you want a hint for:</h4>
+    </div>
+    <div class="main-input">
+      <input class="fst-hint-button" type="button" value="Location LOC01" id="locPoneLOC01" onclick="togglePoneLOC01()"><br>
+      <div class="hint-window" id="hintPoneLOC01_0">
+        <p id="hintPoneLOC01_0Answer"></p>
+        <button class="snd-hint-button" onclick="showhintPoneLOC01_1()">HINT LOC01_1 <br>Yes, I don't know what to do next</button>
+        <div class="hint-window" id="hintPoneLOC01_1">
+          <p id="hintPoneLOC01_1Answer"></p>
+          <button class="snd-hint-button" onclick="showhintPoneLOC01_2()">HINT LOC01_2 <br>Give me a hint for the first new location</button><br>
+          <div class="hint-window" id="hintPoneLOC01_2">
+            <p id="hintPoneLOC01_2Answer"></p>
+            <button class="trd-hint-button" onclick="showhintPoneLOC01_2_1()">HINT LOC01_2.1 <br>Give me the solution for the first location</button>
+            <div class="hint-window" id="hintPoneLOC01_2_1">
+              <p id="hintPoneLOC01_2_1Answer"></p>
+            </div>
+          </div>
+          <button class="snd-hint-button" onclick="showhintPoneLOC01_3()">HINT LOC01_3 <br>Give me a hint for the second new location</button><br>
+          <div class="hint-window" id="hintPoneLOC01_3">
+            <p id="hintPoneLOC01_3Answer"></p>
+            <button class="trd-hint-button" onclick="showhintPoneLOC01_3_1()">HINT LOC01_3.1 <br>Give me the solution for the second location</button>
+            <div class="hint-window" id="hintPoneLOC01_3_1">
+              <p id="hintPoneLOC01_3_1Answer"></p>
+            </div>
+          </div>
+          <button class="snd-hint-button" onclick="showhintPoneLOC01_4()">HINT LOC01_4 <br>What do I do with the telescope?</button><br>
+          <div class="hint-window" id="hintPoneLOC01_4">
+            <p id="hintPoneLOC01_4Answer"></p>
+            <button class="trd-hint-button" onclick="showhintPoneLOC01_4_1()">HINT LOC01_4.1 <br>Peter is gone. What to do with the object I got from him?</button>
+            <div class="hint-window" id="hintPoneLOC01_4_1">
+              <p id="hintPoneLOC01_4_1Answer"></p>
+              <button class="trd-hint-button" onclick="showhintPoneLOC01_4_2()">HINT LOC01_4.2 <br>OK, but what to do with this?</button>
+              <div class="hint-window" id="hintPoneLOC01_4_2">
+                <p id="hintPoneLOC01_4_2Answer"></p>
+                <button class="trd-hint-button" onclick="showhintPoneLOC01_4_3()">HINT LOC01_4.3 <br>A bit more help please!</button>
+                <div class="hint-window" id="hintPoneLOC01_4_3">
+                  <p id="hintPoneLOC01_4_3Answer"></p>
+                  <button class="trd-hint-button" onclick="showhintPoneLOC01_4_4()">HINT LOC01_4.4 <br>Still don't get it</button>
+                  <div class="hint-window" id="hintPoneLOC01_4_4">
+                    <p id="hintPoneLOC01_4_4Answer"></p>
+                    <button class="trd-hint-button" onclick="showhintPoneLOC01_4_5()">HINT LOC01_4.4 <br>Give me the solution to this puzzle</button>
+                    <div class="hint-window" id="hintPoneLOC01_4_5">
+                      <p id="hintPoneLOC01_4_5Answer"></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="snd-hint-button" onclick="showhintPoneLOC01_5()">HINT LOC01_5 <br>How do I make the cookies for Laika?</button><br>
+          <div class="hint-window" id="hintPoneLOC01_5">
+            <p id="hintPoneLOC01_5Answer"></p>
+            <button class="trd-hint-button" onclick="showhintPoneLOC01_5_1()">HINT LOC01_5.1 <br>I've found the object that I could use, but I don't know what to do with it</button>
+            <div class="hint-window" id="hintPoneLOC01_5_1">
+              <p id="hintPoneLOC01_5_1Answer"></p>
+              <button class="trd-hint-button" onclick="showhintPoneLOC01_5_2()">HINT LOC01_5.2 <br>Give me the solution to this puzzle</button>
+              <div class="hint-window" id="hintPoneLOC01_5_2">
+                <p id="hintPoneLOC01_5_2Answer"></p>
+              </div>
+            </div>
+          </div>
+          <button class="snd-hint-button" onclick="showhintPoneLOC01_6()">HINT LOC01_6 <br>Laika is gone. What to do with the object I got from her?</button><br>
+          <div class="hint-window" id="hintPoneLOC01_6">
+            <p id="hintPoneLOC01_6Answer"></p>
+            <button class="trd-hint-button" onclick="showhintPoneLOC01_6_1()">HINT LOC01_6.1 <br>I'm not sure where to search for this information?</button>
+            <div class="hint-window" id="hintPoneLOC01_6_1">
+              <p id="hintPoneLOC01_6_1Answer"></p>
+              <button class="trd-hint-button" onclick="showhintPoneLOC01_6_2()">HINT LOC01_6.2 <br>I don't know what to do with this information?</button>
+              <div class="hint-window" id="hintPoneLOC01_6_2">
+                <p id="hintPoneLOC01_6_2Answer"></p>
+                <button class="trd-hint-button" onclick="showhintPoneLOC01_6_3()">HINT LOC01_6.3 <br>A bit more help please!</button>
+                <div class="hint-window" id="hintPoneLOC01_6_3">
+                  <p id="hintPoneLOC01_6_3Answer"></p>
+                  <button class="trd-hint-button" onclick="showhintPoneLOC01_6_4()">HINT LOC01_6.4 <br>Still don't get it</button>
+                  <div class="hint-window" id="hintPoneLOC01_6_4">
+                    <p id="hintPoneLOC01_6_4Answer"></p>
+                    <button class="trd-hint-button" onclick="showhintPoneLOC01_6_5()">HINT LOC01_6.5 <br>Give me the solution to this puzzle</button>
+                    <div class="hint-window" id="hintPoneLOC01_6_5">
+                      <p id="hintPoneLOC01_6_5Answer"></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="snd-hint-button" onclick="showhintPoneLOC01_7()">HINT LOC01_7 <br>I've opened the object I got form Laika. But I don't know what to do next</button><br>
+          <div class="hint-window" id="hintPoneLOC01_7">
+            <p id="hintPoneLOC01_7Answer"></p>
+            <button class="trd-hint-button" onclick="showhintPoneLOC01_7_1()">HINT LOC01_7.1 <br>OK, I have the information from this character, but what to do next?</button>
+            <div class="hint-window" id="hintPoneLOC01_7_1">
+              <p id="hintPoneLOC01_7_1Answer"></p>
+              <button class="trd-hint-button" onclick="showhintPoneLOC01_7_2()">HINT LOC01_7.2 <br>A bit more help please!</button>
+              <div class="hint-window" id="hintPoneLOC01_7_2">
+                <p id="hintPoneLOC01_7_2Answer"></p>
+                <button class="trd-hint-button" onclick="showhintPoneLOC01_7_3()">HINT LOC01_7.3 <br>Give me the solution to this puzzle</button>
+                <div class="hint-window" id="hintPoneLOC01_7_3">
+                  <p id="hintPoneLOC01_7_3Answer"></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <input class="fst-hint-button" type="button" value="Location LOC02" id="locPoneLOC02" onclick="togglePoneLOC02()"><br>
+      <div class="hint-window" id="hintPoneLOC02_0">
+        <p id="hintPoneLOC02_0Answer"></p>
+        <button class="snd-hint-button" onclick="showhintPoneLOC02_1()">HINT LOC02_1 <br>Yes, I don't know what to do next</button>
+        <div class="hint-window" id="hintPoneLOC02_1">
+          <p id="hintPoneLOC02_1Answer"></p>
+          <button class="snd-hint-button" onclick="showhintPoneLOC02_2()">HINT LOC02_2 <br>I'm not sure what to talk about with Peter</button><br>
+          <div class="hint-window" id="hintPoneLOC02_2">
+            <p id="hintPoneLOC02_2Answer"></p>
+            <button class="trd-hint-button" onclick="showhintPoneLOC02_2_1()">HINT LOC02_2.1 <br>I'm still not sure what I should ask Peter. Help me, please!</button>
+            <div class="hint-window" id="hintPoneLOC02_2_1">
+              <p id="hintPoneLOC02_2_1Answer"></p>
+              <button class="trd-hint-button" onclick="showhintPoneLOC02_2_2()">HINT LOC02_2.2 <br>OK, but how do I get to this new location?</button>
+              <div class="hint-window" id="hintPoneLOC02_2_2">
+                <p id="hintPoneLOC02_2_2Answer"></p>
+                <button class="trd-hint-button" onclick="showhintPoneLOC02_2_3()">HINT LOC02_2.3 <br>Give me the solution for the new location</button>
+                <div class="hint-window" id="hintPoneLOC02_2_3">
+                  <p id="hintPoneLOC02_2_3Answer"></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="snd-hint-button" onclick="showhintPoneLOC02_3()">HINT LOC02_3 <br>I'm not sure what to talk about with Loomey</button><br>
+          <div class="hint-window" id="hintPoneLOC02_3">
+            <p id="hintPoneLOC02_3Answer"></p>
+            <button class="trd-hint-button" onclick="showhintPoneLOC02_3_1()">HINT LOC02_3.1 <br>I'm still not sure what I should ask Loomey. Help me, please!</button>
+            <div class="hint-window" id="hintPoneLOC02_3_1">
+              <p id="hintPoneLOC02_3_1Answer"></p>
+              <button class="trd-hint-button" onclick="showhintPoneLOC02_3_2()">HINT LOC02_3.2 <br>OK, I know what she needs, but I don't see how I can help her</button>
+              <div class="hint-window" id="hintPoneLOC02_3_2">
+                <p id="hintPoneLOC02_3_2Answer"></p>
+              </div>
+            </div>
+          </div>
+          <button class="snd-hint-button" onclick="showhintPoneLOC02_4()">HINT LOC02_4 <br>Peter is gone. What to do with the object I got from him?</button><br>
+          <div class="hint-window" id="hintPoneLOC02_4">
+            <p id="hintPoneLOC02_4Answer"></p>
+            <button class="trd-hint-button" onclick="showhintPoneLOC02_4_1()">HINT LOC02_4.1 <br>OK, but what to do with this?</button>
+            <div class="hint-window" id="hintPoneLOC02_4_1">
+              <p id="hintPoneLOC02_4_1Answer"></p>
+              <button class="trd-hint-button" onclick="showhintPoneLOC02_4_2()">HINT LOC02_4.2 <br>A bit more help please!</button>
+              <div class="hint-window" id="hintPoneLOC02_4_2">
+                <p id="hintPoneLOC02_4_2Answer"></p>
+                <button class="trd-hint-button" onclick="showhintPoneLOC02_4_3()">HINT LOC02_4.3 <br>Still don't get it</button>
+                <div class="hint-window" id="hintPoneLOC02_4_3">
+                  <p id="hintPoneLOC02_4_3Answer"></p>
+                  <button class="trd-hint-button" onclick="showhintPoneLOC02_4_4()">HINT LOC02_4.4 <br>Give me the solution to this puzzle</button>
+                  <div class="hint-window" id="hintPoneLOC02_4_4">
+                    <p id="hintPoneLOC02_4_4Answer"></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="snd-hint-button" onclick="showhintPoneLOC02_5()">HINT LOC02_5 <br>Loomey is gone. What to do with the information I got from her?</button><br>
+          <div class="hint-window" id="hintPoneLOC02_5">
+            <p id="hintPoneLOC02_5Answer"></p>
+            <button class="trd-hint-button" onclick="showhintPoneLOC02_5_1()">HINT LOC02_5.1 <br>OK, I have the other object, but what to do with it?</button>
+            <div class="hint-window" id="hintPoneLOC02_5_1">
+              <p id="hintPoneLOC02_5_1Answer"></p>
+              <button class="trd-hint-button" onclick="showhintPoneLOC02_5_2()">HINT LOC02_5.2 <br>A bit more help please!</button>
+              <div class="hint-window" id="hintPoneLOC02_5_2">
+                <p id="hintPoneLOC02_5_2Answer"></p>
+                <button class="trd-hint-button" onclick="showhintPoneLOC02_5_3()">HINT LOC02_5.3 <br>Give me the solution to this puzzle</button>
+                <div class="hint-window" id="hintPoneLOC02_5_3">
+                  <p id="hintPoneLOC02_5_3Answer"></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <input class="fst-hint-button" type="button" value="Location LOC03" id="locPoneLOC03" onclick="togglePoneLOC03()"><br>
+      <div class="hint-window" id="hintPoneLOC03_0">
+        <p id="hintPoneLOC03_0Answer"></p>
+        <button class="snd-hint-button" onclick="showhintPoneLOC03_1()">HINT LOC03_1 <br>Yes, I don't know what to do next</button>
+        <div class="hint-window" id="hintPoneLOC03_1">
+          <p id="hintPoneLOC03_1Answer"></p>
+          <button class="snd-hint-button" onclick="showhintPoneLOC03_2()">HINT LOC03_2 <br>I'm not sure what to talk about with Professor Martin</button><br>
+          <div class="hint-window" id="hintPoneLOC03_2">
+            <p id="hintPoneLOC03_2Answer"></p>
+            <button class="trd-hint-button" onclick="showhintPoneLOC03_2_1()">HINT LOC03_2.1 <br>I'm still not sure what I should ask Professor Martin</button>
+            <div class="hint-window" id="hintPoneLOC03_2_1">
+              <p id="hintPoneLOC03_2_1Answer"></p>
+            </div>
+          </div>
+          <button class="snd-hint-button" onclick="showhintPoneLOC03_3()">HINT LOC03_3 <br>I'm not sure what to talk about with Jamie</button>
+          <div class="hint-window" id="hintPoneLOC03_3">
+            <p id="hintPoneLOC03_3Answer"></p>
+            <button class="trd-hint-button" onclick="showhintPoneLOC03_3_1()">HINT LOC03_3.1 <br>I'm still not sure what I should ask Jamie. Help me, please!</button>
+            <div class="hint-window" id="hintPoneLOC03_3_1">
+              <p id="hintPoneLOC03_3_1Answer"></p>
+              <button class="trd-hint-button" onclick="showhintPoneLOC03_3_2()">HINT LOC03_3.2 <br>OK, but how do I help Jamie?</button>
+              <div class="hint-window" id="hintPoneLOC03_3_2">
+                <p id="hintPoneLOC03_3_2Answer"></p>
+                <button class="trd-hint-button" onclick="showhintPoneLOC03_3_3()">HINT LOC03_3.3 <br>I'm still not sure how to help Jamie</button>
+                <div class="hint-window" id="hintPoneLOC03_3_3">
+                  <p id="hintPoneLOC03_3_3Answer"></p>
+                  <button class="trd-hint-button" onclick="showhintPoneLOC03_3_4()">HINT LOC03_3.4 <br>Give me the solution on how to help Jamie</button>
+                  <div class="hint-window" id="hintPoneLOC03_3_4">
+                    <p id="hintPoneLOC03_3_4Answer"></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <input class="fst-hint-button" type="button" value="Location LOC04" id="locPoneLOC04" onclick="togglePoneLOC04()"><br>
+      <div class="hint-window" id="hintPoneLOC04_0">
+        <p id="hintPoneLOC04_0Answer"></p>
+        <button class="snd-hint-button" onclick="showhintPoneLOC04_1()">HINT LOC04_1 <br>Yes, I don't know what to do next</button>
+        <div class="hint-window" id="hintPoneLOC04_1">
+          <p id="hintPoneLOC04_1Answer"></p>
+          <button class="snd-hint-button" onclick="showhintPoneLOC04_2()">HINT LOC04_2 <br>I'm not sure what to talk about with Sandy</button><br>
+          <div class="hint-window" id="hintPoneLOC04_2">
+            <p id="hintPoneLOC04_2Answer"></p>
+            <button class="trd-hint-button" onclick="showhintPoneLOC04_2_1()">HINT LOC04_2.1 <br>I'm still not sure what I should ask Sandy. Help me, please!</button><br>
+            <div class="hint-window" id="hintPoneLOC04_2_1">
+              <p id="hintPoneLOC04_2_1Answer"></p>
+              <button class="trd-hint-button" onclick="showhintPoneLOC04_2_2()">HINT LOC04_2.2 <br>OK, but how do I find this new location?</button><br>
+              <div class="hint-window" id="hintPoneLOC04_2_2">
+                <p id="hintPoneLOC04_2_2Answer"></p>
+                <button class="trd-hint-button" onclick="showhintPoneLOC04_2_3()">HINT LOC04_2.3 <br>Give me the solution for the new location</button><br>
+                <div class="hint-window" id="hintPoneLOC04_2_3">
+                  <p id="hintPoneLOC04_2_3Answer"></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="snd-hint-button" onclick="showhintPoneLOC04_3()">HINT LOC04_3 <br>I have the object from Sandy, but I don't know what to do with it</button><br>
+          <div class="hint-window" id="hintPoneLOC04_3">
+            <p id="hintPoneLOC04_3Answer"></p>
+            <button class="trd-hint-button" onclick="showhintPoneLOC04_3_1()">HINT LOC04_3.1 <br>Peter is gone. What to do with the object I got from him?</button>
+            <div class="hint-window" id="hintPoneLOC04_3_1">
+              <p id="hintPoneLOC04_3_1Answer"></p>
+              <button class="trd-hint-button" onclick="showhintPoneLOC04_3_2()">HINT LOC04_3.2 <br>OK, but what to do with this?</button>
+              <div class="hint-window" id="hintPoneLOC04_3_2">
+                <p id="hintPoneLOC04_3_2Answer"></p>
+                <button class="trd-hint-button" onclick="showhintPoneLOC04_3_3()">HINT LOC04_3.3 <br>A bit more help please!</button>
+                <div class="hint-window" id="hintPoneLOC04_3_3">
+                  <p id="hintPoneLOC04_3_3Answer"></p>
+                  <button class="trd-hint-button" onclick="showhintPoneLOC04_3_4()">HINT LOC04_3.4 <br>Give me the solution to this puzzle</button>
+                  <div class="hint-window" id="hintPoneLOC04_3_4">
+                    <p id="hintPoneLOC04_3_4Answer"></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="snd-hint-button" onclick="showhintPoneLOC04_4()">HINT LOC04_4 <br>What to do with the house fly?</button><br>
+          <div class="hint-window" id="hintPoneLOC04_4">
+            <p id="hintPoneLOC04_4Answer"></p>
+            <button class="trd-hint-button" onclick="showhintPoneLOC04_4_1()">HINT LOC04_4.1 <br>A bit more help please!</button>
+            <div class="hint-window" id="hintPoneLOC04_4_1">
+              <p id="hintPoneLOC04_4_1Answer"></p>
+              <button class="trd-hint-button" onclick="showhintPoneLOC04_4_2()">HINT LOC04_4.2 <br>OK, but what now?</button>
+              <div class="hint-window" id="hintPoneLOC04_4_2">
+                <p id="hintPoneLOC04_4_2Answer"></p>
+              </div>
+            </div>
+          </div>
+          <button class="snd-hint-button" onclick="showhintPoneLOC04_5()">HINT LOC04_5 <br>What to do about the projector?</button><br>
+          <div class="hint-window" id="hintPoneLOC04_5">
+            <p id="hintPoneLOC04_5Answer"></p>
+            <button class="trd-hint-button" onclick="showhintPoneLOC04_5_1()">HINT LOC04_5.1 <br>I still don't see what to do with the projector</button>
+            <div class="hint-window" id="hintPoneLOC04_5_1">
+              <p id="hintPoneLOC04_5_1Answer"></p>
+              <button class="trd-hint-button" onclick="showhintPoneLOC04_5_2()">HINT LOC04_5.2 <br>OK, I have the projector. What now?</button>
+              <div class="hint-window" id="hintPoneLOC04_5_2">
+                <p id="hintPoneLOC04_5_2Answer"></p>
+                <button class="trd-hint-button" onclick="showhintPoneLOC04_5_3()">HINT LOC04_5.3 <br>Give me the solution to this puzzle</button>
+                <div class="hint-window" id="hintPoneLOC04_5_3">
+                  <p id="hintPoneLOC04_5_3Answer"></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <input class="fst-hint-button" type="button" value="Location LOC05" id="locPoneLOC05" onclick="togglePoneLOC05()"><br>
+      <div class="hint-window" id="hintPoneLOC05_0">
+        <p id="hintPoneLOC05_0Answer"></p>
+        <button class="snd-hint-button" onclick="showhintPoneLOC05_1()">HINT LOC05_1 <br>Yes, I don't know what to do next</button>
+        <div class="hint-window" id="hintPoneLOC05_1">
+          <p id="hintPoneLOC05_1Answer"></p>
+          <button class="snd-hint-button" onclick="showhintPoneLOC05_2()">HINT LOC05_2 <br>I'm not sure what to talk about with Jocelyn</button><br>
+          <div class="hint-window" id="hintPoneLOC05_2">
+            <p id="hintPoneLOC05_2Answer"></p>
+            <button class="trd-hint-button" onclick="showhintPoneLOC05_2_1()">HINT LOC05_2.1 <br>I'm still not sure what do I need from Jocelyn</button><br>
+            <div class="hint-window" id="hintPoneLOC05_2_1">
+              <p id="hintPoneLOC05_2_1Answer"></p>
+              <button class="trd-hint-button" onclick="showhintPoneLOC05_2_2()">HINT LOC05_2.2 <br>OK, but I don't know how to do it</button><br>
+              <div class="hint-window" id="hintPoneLOC05_2_2">
+                <p id="hintPoneLOC05_2_2Answer"></p>
+                <button class="trd-hint-button" onclick="showhintPoneLOC05_2_3()">HINT LOC05_2.3 <br>How do I get the password?</button><br>
+                <div class="hint-window" id="hintPoneLOC05_2_3">
+                  <p id="hintPoneLOC05_2_3Answer"></p>
+                  <button class="trd-hint-button" onclick="showhintPoneLOC05_2_3_1()">HINT LOC05_2.3.1 <br>A bit more help please!</button><br>
+                  <div class="hint-window" id="hintPoneLOC05_2_3_1">
+                    <p id="hintPoneLOC05_2_3_1Answer"></p>
+                    <button class="trd-hint-button" onclick="showhintPoneLOC05_2_3_2()">HINT LOC05_2.3.2 <br>Still don't get it</button><br>
+                    <div class="hint-window" id="hintPoneLOC05_2_3_2">
+                      <p id="hintPoneLOC05_2_3_2Answer"></p>
+                      <button class="trd-hint-button" onclick="showhintPoneLOC05_2_3_3()">HINT LOC05_2.3.3 <br>Give me the solution to this puzzle</button><br>
+                      <div class="hint-window" id="hintPoneLOC05_2_3_3">
+                        <p id="hintPoneLOC05_2_3_3Answer"></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <button class="trd-hint-button" onclick="showhintPoneLOC05_2_4()">HINT LOC05_2.4 <br>How do I make Jocelyn leave the table?</button><br>
+                <div class="hint-window" id="hintPoneLOC05_2_4">
+                  <p id="hintPoneLOC05_2_4Answer"></p>
+                  <button class="trd-hint-button" onclick="showhintPoneLOC05_2_4_1()">HINT LOC05_2.4.1 <br>A bit more help please!</button><br>
+                  <div class="hint-window" id="hintPoneLOC05_2_4_1">
+                    <p id="hintPoneLOC05_2_4_1Answer"></p>
+                    <button class="trd-hint-button" onclick="showhintPoneLOC05_2_4_2()">HINT LOC05_2.4.2 <br>Give me the solution to this puzzle</button><br>
+                    <div class="hint-window" id="hintPoneLOC05_2_4_2">
+                      <p id="hintPoneLOC05_2_4_2Answer"></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="snd-hint-button" onclick="showhintPoneLOC05_3()">HINT LOC05_3 <br>I'm not sure what to talk about with Mark</button><br>
+          <div class="hint-window" id="hintPoneLOC05_3">
+            <p id="hintPoneLOC05_3Answer"></p>
+          </div>
+        </div>
+      </div>
+      <input class="fst-hint-button" type="button" value="Location LOC06" id="locPoneLOC06" onclick="togglePoneLOC06()"><br>
+      <div class="hint-window" id="hintPoneLOC06_0">
+        <p id="hintPoneLOC06_0Answer"></p>
+        <button class="snd-hint-button" onclick="showhintPoneLOC06_1()">HINT LOC06_1 <br>Yes, I don't know what to do next</button>
+        <div class="hint-window" id="hintPoneLOC06_1">
+          <p id="hintPoneLOC06_1Answer"></p>
+          <button class="snd-hint-button" onclick="showhintPoneLOC06_2()">HINT LOC06_2 <br>I'm not sure what to talk about with Emma</button><br>
+          <div class="hint-window" id="hintPoneLOC06_2">
+            <p id="hintPoneLOC06_2Answer"></p>
+            <button class="trd-hint-button" onclick="showhintPoneLOC06_2_1()">HINT LOC06_2.1 <br>OK, I got the message. But I don't know what it means</button><br>
+            <div class="hint-window" id="hintPoneLOC06_2_1">
+              <p id="hintPoneLOC06_2_1Answer"></p>
+              <button class="trd-hint-button" onclick="showhintPoneLOC06_2_2()">HINT LOC06_2.2 <br>I'm not sure that I know what other object do I need</button><br>
+              <div class="hint-window" id="hintPoneLOC06_2_2">
+                <p id="hintPoneLOC06_2_2Answer"></p>
+                <button class="trd-hint-button" onclick="showhintPoneLOC06_2_3()">HINT LOC06_2.3 <br>Laika is gone. What to do with the object I got from her?</button><br>
+                <div class="hint-window" id="hintPoneLOC06_2_3">
+                  <p id="hintPoneLOC06_2_3Answer"></p>
+                  <button class="trd-hint-button" onclick="showhintPoneLOC06_2_4()">HINT LOC06_2.4 <br>A bit more help please!</button><br>
+                  <div class="hint-window" id="hintPoneLOC06_2_4">
+                    <p id="hintPoneLOC06_2_4Answer"></p>
+                    <button class="trd-hint-button" onclick="showhintPoneLOC06_2_5()">HINT LOC06_2.5 <br>Still don't get it</button><br>
+                    <div class="hint-window" id="hintPoneLOC06_2_5">
+                      <p id="hintPoneLOC06_2_5Answer"></p>
+                      <button class="trd-hint-button" onclick="showhintPoneLOC06_2_6()">HINT LOC06_2.6 <br>Give me the solution to this puzzle</button><br>
+                      <div class="hint-window" id="hintPoneLOC06_2_6">
+                        <p id="hintPoneLOC06_2_6Answer"></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="snd-hint-button" onclick="showhintPoneLOC06_3()">HINT LOC06_3 <br>What do I do about the parrot?</button><br>
+          <div class="hint-window" id="hintPoneLOC06_3">
+            <p id="hintPoneLOC06_3Answer"></p>
+            <button class="trd-hint-button" onclick="showhintPoneLOC06_3_1()">HINT LOC06_3.1 <br>Still not sure what to do about the parrot</button><br>
+            <div class="hint-window" id="hintPoneLOC06_3_1">
+              <p id="hintPoneLOC06_3_1Answer"></p>
+              <button class="trd-hint-button" onclick="showhintPoneLOC06_3_2()">HINT LOC06_3.2 <br>OK, but what now?</button><br>
+              <div class="hint-window" id="hintPoneLOC06_3_2">
+                <p id="hintPoneLOC06_3_2Answer"></p>
+                <button class="trd-hint-button" onclick="showhintPoneLOC06_3_3()">HINT LOC06_3.3 <br>I'm not sure that I know what other object do I need</button><br>
+                <div class="hint-window" id="hintPoneLOC06_3_3">
+                  <p id="hintPoneLOC06_3_3Answer"></p>
+                  <button class="trd-hint-button" onclick="showhintPoneLOC06_3_4()">HINT LOC06_3.4 <br>Laika is gone. What to do with the object I got from her?</button><br>
+                  <div class="hint-window" id="hintPoneLOC06_3_4">
+                    <p id="hintPoneLOC06_3_4Answer"></p>
+                    <button class="trd-hint-button" onclick="showhintPoneLOC06_3_5()">HINT LOC06_3.5 <br>A bit more help please!</button><br>
+                    <div class="hint-window" id="hintPoneLOC06_3_5">
+                      <p id="hintPoneLOC06_3_5Answer"></p>
+                      <button class="trd-hint-button" onclick="showhintPoneLOC06_3_6()">HINT LOC06_3.6 <br>Give me the solution to this puzzle</button><br>
+                      <div class="hint-window" id="hintPoneLOC06_3_6">
+                        <p id="hintPoneLOC06_3_6Answer"></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="snd-hint-button" onclick="showhintPoneLOC06_4()">HINT LOC06_4 <br>What do I do about the pumpkin sprout?</button><br>
+          <div class="hint-window" id="hintPoneLOC06_4">
+            <p id="hintPoneLOC06_4Answer"></p>
+            <button class="trd-hint-button" onclick="showhintPoneLOC06_4_1()">HINT LOC06_4.1 <br>OK, but I don't know how to use it</button><br>
+            <div class="hint-window" id="hintPoneLOC06_4_1">
+              <p id="hintPoneLOC06_4_1Answer"></p>
+              <button class="trd-hint-button" onclick="showhintPoneLOC06_4_2()">HINT LOC06_4.2 <br>A bit more help please!</button><br>
+              <div class="hint-window" id="hintPoneLOC06_4_2">
+                <p id="hintPoneLOC06_4_2Answer"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</html>

@@ -1,0 +1,422 @@
+<!doctype html>
+
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ziggy Wonder: Chapter 3</title>
+  <link rel="shortcut icon" type="image/png" href="favicon.png"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <script type="text/javascript" src="javascript/script.js"></script>
+  <script type="text/javascript" src="javascript/script3_vent.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/reset.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+  <div class="navbar" id="topnav">
+    <a href="index.html">Home</a>
+    <a href="howtoplay.html">How to play</a>
+    <a href="chapter1.html">Chapter 1</a>
+    <a href="chapter2.html">Chapter 2</a>
+    <a href="chapter3_1.html">Chapter 3</a>
+    <a href="javascript:void(0);" class="icon" onclick="topNavToggle()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+    <div class="main-text">
+      <br>
+      <br>
+      <p>Guide the rat through the ducts by clicking the arrows in the direction you want him to go. The openings on the floor lead to air vents in the rooms.</p>
+      <div class="ventilation" id="vent_00">
+        <img class="vent" src="images/v00.png">
+        <button class="arrow-left" onclick="vent00_02()"><img class="arrow-image" src="images/arrow left.png"></button>
+        <button class="arrow-right" onclick="vent00_01()"><img class="arrow-image" src="images/arrow right.png"></button>
+        <button class="arrow-straight" onclick="vent00_03()"><img class="arrow-image" src="images/arrow straight.png"></button>
+      </div>
+      <div class="ventilation-videos" id="vent_01">
+        <video class="vent" autoplay muted><source src="videos/v01.mp4" type="video/mp4"></video>
+          <div class="ventilation-arrows" id="vent_01_arrows">
+            <button class="arrow-down-right" onclick="vent01_down()"><img class="arrow-image" src="images/arrow down.png"></button>
+            <button class="arrow-back" onclick="vent01_00()"><img class="arrow-image-back" src="images/arrow backright.png"></button>
+            <p class="vent-text" id="vent_01_down">This leads to the entrance hall. I should try another way.</p>
+          </div>
+      </div>
+      <div class="ventilation-videos" id="vent_01r">
+        <video class="vent" autoplay muted><source src="videos/v01r.mp4" type="video/mp4"></video>
+          <div class="ventilation-arrows" id="vent_01r_arrows">
+          <button class="arrow-left" onclick="vent00_02()"><img class="arrow-image" src="images/arrow left.png"></button>
+          <button class="arrow-right" onclick="vent00_01()"><img class="arrow-image" src="images/arrow right.png"></button>
+          <button class="arrow-straight" onclick="vent00_03()"><img class="arrow-image" src="images/arrow straight.png"></button>
+          </div>
+      </div>
+      <div class="ventilation-videos" id="vent_02">
+        <video class="vent" autoplay muted><source src="videos/v02.mp4" type="video/mp4"></video>
+          <div class="ventilation-arrows" id="vent_02_arrows">
+            <button class="arrow-straight" onclick="vent02_07()"><img class="arrow-image" src="images/arrow straight.png"></button>
+            <button class="arrow-back" onclick="vent02_00()"><img class="arrow-image-back" src="images/arrow backleft.png"></button>
+          </div>
+      </div>
+      <div class="ventilation-videos" id="vent_02r">
+        <video class="vent" autoplay muted><source src="videos/v02r.mp4" type="video/mp4"></video>
+          <div class="ventilation-arrows" id="vent_02r_arrows">
+          <button class="arrow-left" onclick="vent00_02()"><img class="arrow-image" src="images/arrow left.png"></button>
+          <button class="arrow-right" onclick="vent00_01()"><img class="arrow-image" src="images/arrow right.png"></button>
+          <button class="arrow-straight" onclick="vent00_03()"><img class="arrow-image" src="images/arrow straight.png"></button>
+          </div>
+      </div>
+      <div class="ventilation-videos" id="vent_03">
+        <video class="vent" autoplay muted><source src="videos/v03.mp4" type="video/mp4"></video>
+          <div class="ventilation-arrows" id="vent_03_arrows">
+            <button class="arrow-left" onclick="vent03_04()"><img class="arrow-image" src="images/arrow left.png"></button>
+            <button class="arrow-straight" onclick="vent03_05()"><img class="arrow-image" src="images/arrow straight.png"></button>
+            <button class="arrow-back" onclick="vent03_00()"><img class="arrow-image-back" src="images/arrow back.png"></button>
+          </div>
+      </div>
+      <div class="ventilation-videos" id="vent_03r">
+        <video class="vent" autoplay muted><source src="videos/v03r.mp4" type="video/mp4"></video>
+          <div class="ventilation-arrows" id="vent_03r_arrows">
+          <button class="arrow-left" onclick="vent00_02()"><img class="arrow-image" src="images/arrow left.png"></button>
+          <button class="arrow-right" onclick="vent00_01()"><img class="arrow-image" src="images/arrow right.png"></button>
+          <button class="arrow-straight" onclick="vent00_03()"><img class="arrow-image" src="images/arrow straight.png"></button>
+          </div>
+      </div>
+      <div class="ventilation-videos" id="vent_04">
+        <video class="vent" autoplay muted><source src="videos/v04.mp4" type="video/mp4"></video>
+          <div class="ventilation-arrows" id="vent_04_arrows">
+            <button class="arrow-down-middle" onclick="vent04_down()"><img class="arrow-image" src="images/arrow down.png"></button>
+            <button class="arrow-back" onclick="vent04_03()"><img class="arrow-image-back" src="images/arrow backleft.png"></button>
+            <p class="vent-text" id="vent_04_down">This leads to the common area. I should try another way.</p>
+          </div>
+      </div>
+      <div class="ventilation-videos" id="vent_04r">
+        <video class="vent" autoplay muted><source src="videos/v04r.mp4" type="video/mp4"></video>
+          <div class="ventilation-arrows" id="vent_04r_arrows">
+            <button class="arrow-left" onclick="vent03_04()"><img class="arrow-image" src="images/arrow left.png"></button>
+            <button class="arrow-straight" onclick="vent03_05()"><img class="arrow-image" src="images/arrow straight.png"></button>
+            <button class="arrow-back" onclick="vent03_00()"><img class="arrow-image-back" src="images/arrow back.png"></button>
+          </div>
+      </div>
+      <div class="ventilation-videos" id="vent_05">
+        <video class="vent" autoplay muted><source src="videos/v05.mp4" type="video/mp4"></video>
+          <div class="ventilation-arrows" id="vent_05_arrows">
+            <button class="arrow-left" onclick="vent05_06()"><img class="arrow-image" src="images/arrow left.png"></button>
+            <button class="arrow-down-middle-close" onclick="vent05_down()"><img class="arrow-image" src="images/arrow down.png"></button>
+            <button class="arrow-back" onclick="vent05_03()"><img class="arrow-image-back" src="images/arrow back.png"></button>
+            <p class="vent-text" id="vent_05_down">This leads to the laboratory. I should try another way.</p>
+          </div>
+      </div>
+      <div class="ventilation-videos" id="vent_05r">
+        <video class="vent" autoplay muted><source src="videos/v05r.mp4" type="video/mp4"></video>
+          <div class="ventilation-arrows" id="vent_05r_arrows">
+            <button class="arrow-left" onclick="vent03_04()"><img class="arrow-image" src="images/arrow left.png"></button>
+            <button class="arrow-straight" onclick="vent03_05()"><img class="arrow-image" src="images/arrow straight.png"></button>
+            <button class="arrow-back" onclick="vent03_00()"><img class="arrow-image-back" src="images/arrow back.png"></button>
+          </div>
+      </div>
+      <div class="ventilation-videos" id="vent_06">
+        <video class="vent" autoplay muted><source src="videos/v06.mp4" type="video/mp4"></video>
+          <div class="ventilation-arrows" id="vent_06_arrows">
+            <button class="arrow-straight" onclick="vent06_18()"><img class="arrow-image" src="images/arrow straight.png"></button>
+            <button class="arrow-back" onclick="vent06_05()"><img class="arrow-image-back" src="images/arrow backleft.png"></button>
+          </div>
+      </div>
+      <div class="ventilation-videos" id="vent_06r">
+        <video class="vent" autoplay muted><source src="videos/v06r.mp4" type="video/mp4"></video>
+          <div class="ventilation-arrows" id="vent_06r_arrows">
+            <button class="arrow-left" onclick="vent05_06()"><img class="arrow-image" src="images/arrow left.png"></button>
+            <button class="arrow-down-middle-close" onclick="vent05_down()"><img class="arrow-image" src="images/arrow down.png"></button>
+            <button class="arrow-back" onclick="vent05_03()"><img class="arrow-image-back" src="images/arrow back.png"></button>
+            <p class="vent-text" id="vent_05_down">This leads to the laboratory. I should try another way.</p>
+          </div>
+      </div>
+      <div class="ventilation-videos" id="vent_07">
+        <video class="vent" autoplay muted><source src="videos/v07.mp4" type="video/mp4"></video>
+          <div class="ventilation-arrows" id="vent_07_arrows">
+            <button class="arrow-left" onclick="vent07_08()"><img class="arrow-image" src="images/arrow left.png"></button>
+            <button class="arrow-straight" onclick="vent07_15()"><img class="arrow-image" src="images/arrow straight.png"></button>
+            <button class="arrow-down-right-right" onclick="vent07_down()"><img class="arrow-image" src="images/arrow down.png"></button>
+            <button class="arrow-back" onclick="vent07_02()"><img class="arrow-image-back" src="images/arrow back.png"></button>
+            <p class="vent-text" id="vent_07_down">This leads to the security control room. I should try another way.</p>
+          </div>
+      </div>
+      <div class="ventilation-videos" id="vent_07r">
+        <video class="vent" autoplay muted><source src="videos/v07r.mp4" type="video/mp4"></video>
+          <div class="ventilation-arrows" id="vent_07r_arrows">
+            <button class="arrow-straight" onclick="vent02_07()"><img class="arrow-image" src="images/arrow straight.png"></button>
+            <button class="arrow-back" onclick="vent02_00()"><img class="arrow-image-back" src="images/arrow backleft.png"></button>
+          </div>
+      </div>
+      <div class="ventilation-videos" id="vent_08">
+        <video class="vent" autoplay muted><source src="videos/v08.mp4" type="video/mp4"></video>
+          <div class="ventilation-arrows" id="vent_08_arrows">
+            <button class="arrow-straight" onclick="vent08_09()"><img class="arrow-image" src="images/arrow straight.png"></button>
+            <button class="arrow-down-left" onclick="vent08_down()"><img class="arrow-image" src="images/arrow down.png"></button>
+            <button class="arrow-back" onclick="vent08_07()"><img class="arrow-image-back" src="images/arrow backleft.png"></button>
+            <p class="vent-text" id="vent_08_down">This leads to a wrong room in the staff quarters. I should try another way.</p>
+          </div>
+      </div>
+      <div class="ventilation-videos" id="vent_08r">
+        <video class="vent" autoplay muted><source src="videos/v08r.mp4" type="video/mp4"></video>
+          <div class="ventilation-arrows" id="vent_08r_arrows">
+            <button class="arrow-left" onclick="vent07_08()"><img class="arrow-image" src="images/arrow left.png"></button>
+            <button class="arrow-straight" onclick="vent07_15()"><img class="arrow-image" src="images/arrow straight.png"></button>
+            <button class="arrow-down-right-right" onclick="vent07_down()"><img class="arrow-image" src="images/arrow down.png"></button>
+            <button class="arrow-back" onclick="vent07_02()"><img class="arrow-image-back" src="images/arrow back.png"></button>
+            <p class="vent-text" id="vent_07_down">This leads to the security control room. I should try another way.</p>
+          </div>
+      </div>
+      <div class="ventilation-videos" id="vent_09">
+        <video class="vent" autoplay muted><source src="videos/v09.mp4" type="video/mp4"></video>
+          <div class="ventilation-arrows" id="vent_09_arrows">
+            <button class="arrow-right" onclick="vent09_10()"><img class="arrow-image" src="images/arrow right.png"></button>
+            <button class="arrow-down-middle-close" onclick="vent09_down()"><img class="arrow-image" src="images/arrow down.png"></button>
+            <button class="arrow-back" onclick="vent09_08()"><img class="arrow-image-back" src="images/arrow back.png"></button>
+            <p class="vent-text" id="vent_09_down">This leads to a wrong room in the staff quarters. I should try another way.</p>
+          </div>
+      </div>
+      <div class="ventilation-videos" id="vent_09r">
+        <video class="vent" autoplay muted><source src="videos/v09r.mp4" type="video/mp4"></video>
+          <div class="ventilation-arrows" id="vent_09r_arrows">
+            <button class="arrow-straight" onclick="vent08_09()"><img class="arrow-image" src="images/arrow straight.png"></button>
+            <button class="arrow-down-left" onclick="vent08_down()"><img class="arrow-image" src="images/arrow down.png"></button>
+            <button class="arrow-back" onclick="vent08_07()"><img class="arrow-image-back" src="images/arrow backleft.png"></button>
+            <p class="vent-text" id="vent_08_down">This leads to a wrong room in the staff quarters. I should try another way.</p>
+          </div>
+      </div>
+      <div class="ventilation-videos" id="vent_10">
+        <video class="vent" autoplay muted><source src="videos/v10.mp4" type="video/mp4"></video>
+          <div class="ventilation-arrows" id="vent_10_arrows">
+            <button class="arrow-straight" onclick="vent10_11()"><img class="arrow-image" src="images/arrow straight.png"></button>
+            <button class="arrow-down-left" onclick="vent10_down()"><img class="arrow-image" src="images/arrow down.png"></button>
+            <button class="arrow-back" onclick="vent10_09()"><img class="arrow-image-back" src="images/arrow backright.png"></button>
+            <p class="vent-text" id="vent_10_down">This leads to a bathroom in the staff quarters. I should try another way.</p>
+          </div>
+      </div>
+      <div class="ventilation-videos" id="vent_10r">
+        <video class="vent" autoplay muted><source src="videos/v10r.mp4" type="video/mp4"></video>
+          <div class="ventilation-arrows" id="vent_10r_arrows">
+            <button class="arrow-right" onclick="vent09_10()"><img class="arrow-image" src="images/arrow right.png"></button>
+            <button class="arrow-down-middle-close" onclick="vent09_down()"><img class="arrow-image" src="images/arrow down.png"></button>
+            <button class="arrow-back" onclick="vent09_08()"><img class="arrow-image-back" src="images/arrow back.png"></button>
+            <p class="vent-text" id="vent_09_down">This leads to a wrong room in the staff quarters. I should try another way.</p>
+          </div>
+      </div>
+      <div class="ventilation-videos" id="vent_11">
+        <video class="vent" autoplay muted><source src="videos/v11.mp4" type="video/mp4"></video>
+          <div class="ventilation-arrows" id="vent_11_arrows">
+            <button class="arrow-right" onclick="vent11_12()"><img class="arrow-image" src="images/arrow right.png"></button>
+            <button class="arrow-back" onclick="vent11_10()"><img class="arrow-image-back" src="images/arrow back.png"></button>
+          </div>
+      </div>
+      <div class="ventilation-videos" id="vent_11r">
+        <video class="vent" autoplay muted><source src="videos/v11r.mp4" type="video/mp4"></video>
+          <div class="ventilation-arrows" id="vent_11r_arrows">
+            <button class="arrow-straight" onclick="vent10_11()"><img class="arrow-image" src="images/arrow straight.png"></button>
+            <button class="arrow-down-left" onclick="vent10_down()"><img class="arrow-image" src="images/arrow down.png"></button>
+            <button class="arrow-back" onclick="vent10_09()"><img class="arrow-image-back" src="images/arrow backright.png"></button>
+            <p class="vent-text" id="vent_10_down">This leads to a bathroom in the staff quarters. I should try another way.</p>
+          </div>
+      </div>
+      <div class="ventilation-videos" id="vent_12">
+        <video class="vent" autoplay muted><source src="videos/v12.mp4" type="video/mp4"></video>
+          <div class="ventilation-arrows" id="vent_12_arrows">
+            <button class="arrow-straight" onclick="vent12_13()"><img class="arrow-image" src="images/arrow straight.png"></button>
+            <button class="arrow-back" onclick="vent12_11()"><img class="arrow-image-back" src="images/arrow backright.png"></button>
+          </div>
+      </div>
+      <div class="ventilation-videos" id="vent_12r">
+        <video class="vent" autoplay muted><source src="videos/v12r.mp4" type="video/mp4"></video>
+          <div class="ventilation-arrows" id="vent_12r_arrows">
+            <button class="arrow-right" onclick="vent11_12()"><img class="arrow-image" src="images/arrow right.png"></button>
+            <button class="arrow-back" onclick="vent11_10()"><img class="arrow-image-back" src="images/arrow back.png"></button>
+          </div>
+      </div>
+      <div class="ventilation-videos" id="vent_13">
+        <video class="vent" autoplay muted><source src="videos/v13.mp4" type="video/mp4"></video>
+          <div class="ventilation-arrows" id="vent_13_arrows">
+            <button class="arrow-left" onclick="vent13_14()"><img class="arrow-image" src="images/arrow left.png"></button>
+            <button class="arrow-back" onclick="vent13_12()"><img class="arrow-image-back" src="images/arrow back.png"></button>
+          </div>
+      </div>
+      <div class="ventilation-videos" id="vent_13r">
+        <video class="vent" autoplay muted><source src="videos/v13r.mp4" type="video/mp4"></video>
+          <div class="ventilation-arrows" id="vent_13r_arrows">
+            <button class="arrow-straight" onclick="vent12_13()"><img class="arrow-image" src="images/arrow straight.png"></button>
+            <button class="arrow-back" onclick="vent12_11()"><img class="arrow-image-back" src="images/arrow backright.png"></button>
+          </div>
+      </div>
+      <div class="ventilation-videos" id="vent_14">
+        <video class="vent" autoplay muted><source src="videos/v14.mp4" type="video/mp4"></video>
+          <div class="ventilation-arrows" id="vent_14_arrows">
+            <button class="arrow-down-right" onclick="vent14_down()"><img class="arrow-image" src="images/arrow down.png"></button>
+            <button class="arrow-back" onclick="vent14_13()"><img class="arrow-image-back" src="images/arrow backleft.png"></button>
+            <p class="vent-text" id="vent_14_down">This leads to a wrong room in the staff quarters. I should try another way.</p>
+          </div>
+      </div>
+      <div class="ventilation-videos" id="vent_14r">
+        <video class="vent" autoplay muted><source src="videos/v14r.mp4" type="video/mp4"></video>
+          <div class="ventilation-arrows" id="vent_14r_arrows">
+            <button class="arrow-left" onclick="vent13_14()"><img class="arrow-image" src="images/arrow left.png"></button>
+            <button class="arrow-back" onclick="vent13_12()"><img class="arrow-image-back" src="images/arrow back.png"></button>
+          </div>
+      </div>
+      <div class="ventilation-videos" id="vent_15">
+        <video class="vent" autoplay muted><source src="videos/v15.mp4" type="video/mp4"></video>
+          <div class="ventilation-arrows" id="vent_15_arrows">
+            <button class="arrow-right" onclick="vent15_16()"><img class="arrow-image" src="images/arrow right.png"></button>
+            <button class="arrow-down-left-left" onclick="vent15_1_down()"><img class="arrow-image" src="images/arrow down.png"></button>
+            <button class="arrow-down-2right-right" onclick="vent15_2_down()"><img class="arrow-image" src="images/arrow down.png"></button>
+            <button class="arrow-back" onclick="vent15_07()"><img class="arrow-image-back" src="images/arrow back.png"></button>
+            <p class="vent-text" id="vent_15_1_down">This leads to a wrong room in the staff quarters. I should try another way.</p>
+            <p class="vent-text" id="vent_15_2_down">This leads to the hallway left to the security control room. I should try another way.</p>
+          </div>
+      </div>
+      <div class="ventilation-videos" id="vent_15r">
+        <video class="vent" autoplay muted><source src="videos/v15r.mp4" type="video/mp4"></video>
+          <div class="ventilation-arrows" id="vent_15r_arrows">
+            <button class="arrow-left" onclick="vent07_08()"><img class="arrow-image" src="images/arrow left.png"></button>
+            <button class="arrow-straight" onclick="vent07_15()"><img class="arrow-image" src="images/arrow straight.png"></button>
+            <button class="arrow-down-right-right" onclick="vent07_down()"><img class="arrow-image" src="images/arrow down.png"></button>
+            <button class="arrow-back" onclick="vent07_02()"><img class="arrow-image-back" src="images/arrow back.png"></button>
+            <p class="vent-text" id="vent_07_down">This leads to the security control room. I should try another way.</p>
+          </div>
+      </div>
+      <div class="ventilation-videos" id="vent_16">
+        <video class="vent" autoplay muted><source src="videos/v16.mp4" type="video/mp4"></video>
+          <div class="ventilation-arrows" id="vent_16_arrows">
+            <button class="arrow-straight" onclick="vent16_17()"><img class="arrow-image" src="images/arrow straight.png"></button>
+            <button class="arrow-back" onclick="vent16_15()"><img class="arrow-image-back" src="images/arrow backright.png"></button>
+          </div>
+      </div>
+      <div class="ventilation-videos" id="vent_16r">
+        <video class="vent" autoplay muted><source src="videos/v16r.mp4" type="video/mp4"></video>
+          <div class="ventilation-arrows" id="vent_16r_arrows">
+            <button class="arrow-right" onclick="vent15_16()"><img class="arrow-image" src="images/arrow right.png"></button>
+            <button class="arrow-down-left-left" onclick="vent15_1_down()"><img class="arrow-image" src="images/arrow down.png"></button>
+            <button class="arrow-down-2right-right" onclick="vent15_2_down()"><img class="arrow-image" src="images/arrow down.png"></button>
+            <button class="arrow-back" onclick="vent15_07()"><img class="arrow-image-back" src="images/arrow back.png"></button>
+            <p class="vent-text" id="vent_15_1_down">This leads to a wrong room in the staff quarters. I should try another way.</p>
+            <p class="vent-text" id="vent_15_2_down">This leads to the hallway left to the security control room. I should try another way.</p>
+          </div>
+      </div>
+      <div class="ventilation-videos" id="vent_17">
+        <video class="vent" autoplay muted><source src="videos/v17.mp4" type="video/mp4"></video>
+          <div class="ventilation-arrows" id="vent_17_arrows">
+            <button class="arrow-down-middle-close" onclick="vent17_down()"><img class="arrow-image" src="images/arrow down.png"></button>
+            <button class="arrow-back" onclick="vent17_16()"><img class="arrow-image-back" src="images/arrow back.png"></button>
+            <p class="vent-text" id="vent_17_down">This leads to the hallway right to the security control room. I should try another way.</p>
+          </div>
+      </div>
+      <div class="ventilation-videos" id="vent_17r">
+        <video class="vent" autoplay muted><source src="videos/v17r.mp4" type="video/mp4"></video>
+          <div class="ventilation-arrows" id="vent_17r_arrows">
+            <button class="arrow-straight" onclick="vent16_17()"><img class="arrow-image" src="images/arrow straight.png"></button>
+            <button class="arrow-back" onclick="vent16_15()"><img class="arrow-image-back" src="images/arrow backright.png"></button>
+          </div>
+      </div>
+      <div class="ventilation-videos" id="vent_18">
+        <video class="vent" autoplay muted><source src="videos/v18.mp4" type="video/mp4"></video>
+          <div class="ventilation-arrows" id="vent_18_arrows">
+            <button class="arrow-right" onclick="vent18_20()"><img class="arrow-image" src="images/arrow right.png"></button>
+            <button class="arrow-straight" onclick="vent18_19()"><img class="arrow-image" src="images/arrow straight.png"></button>
+            <button class="arrow-down-left" onclick="vent18_down()"><img class="arrow-image" src="images/arrow down.png"></button>
+            <button class="arrow-back" onclick="vent18_06()"><img class="arrow-image-back" src="images/arrow back.png"></button>
+            <p class="vent-text" id="vent_18_down">This leads to a wrong room in the staff quarters. I should try another way.</p>
+          </div>
+      </div>
+      <div class="ventilation-videos" id="vent_18r">
+        <video class="vent" autoplay muted><source src="videos/v18r.mp4" type="video/mp4"></video>
+          <div class="ventilation-arrows" id="vent_18r_arrows">
+            <button class="arrow-straight" onclick="vent06_18()"><img class="arrow-image" src="images/arrow straight.png"></button>
+            <button class="arrow-back" onclick="vent06_05()"><img class="arrow-image-back" src="images/arrow backleft.png"></button>
+          </div>
+      </div>
+      <div class="ventilation-videos" id="vent_19">
+        <video class="vent" autoplay muted><source src="videos/v19.mp4" type="video/mp4"></video>
+          <div class="ventilation-arrows" id="vent_19_arrows">
+            <button class="arrow-down-middle-close" onclick="vent19_down()"><img class="arrow-image" src="images/arrow down.png"></button>
+            <button class="arrow-back" onclick="vent19_18()"><img class="arrow-image-back" src="images/arrow back.png"></button>
+            <p class="vent-text" id="vent_19_down">This leads to a wrong room in the staff quarters. I should try another way.</p>
+          </div>
+      </div>
+      <div class="ventilation-videos" id="vent_19r">
+        <video class="vent" autoplay muted><source src="videos/v19r.mp4" type="video/mp4"></video>
+          <div class="ventilation-arrows" id="vent_19r_arrows">
+            <button class="arrow-right" onclick="vent18_20()"><img class="arrow-image" src="images/arrow right.png"></button>
+            <button class="arrow-straight" onclick="vent18_19()"><img class="arrow-image" src="images/arrow straight.png"></button>
+            <button class="arrow-down-left" onclick="vent18_down()"><img class="arrow-image" src="images/arrow down.png"></button>
+            <button class="arrow-back" onclick="vent18_06()"><img class="arrow-image-back" src="images/arrow back.png"></button>
+            <p class="vent-text" id="vent_18_down">This leads to a wrong room in the staff quarters. I should try another way.</p>
+          </div>
+      </div>
+      <div class="ventilation-videos" id="vent_20">
+        <video class="vent" autoplay muted><source src="videos/v20.mp4" type="video/mp4"></video>
+          <div class="ventilation-arrows" id="vent_20_arrows">
+            <button class="arrow-straight" onclick="vent20_21()"><img class="arrow-image" src="images/arrow straight.png"></button>
+            <button class="arrow-back" onclick="vent20_18()"><img class="arrow-image-back" src="images/arrow backright.png"></button>
+          </div>
+      </div>
+      <div class="ventilation-videos" id="vent_20r">
+        <video class="vent" autoplay muted><source src="videos/v20r.mp4" type="video/mp4"></video>
+          <div class="ventilation-arrows" id="vent_20r_arrows">
+            <button class="arrow-right" onclick="vent18_20()"><img class="arrow-image" src="images/arrow right.png"></button>
+            <button class="arrow-straight" onclick="vent18_19()"><img class="arrow-image" src="images/arrow straight.png"></button>
+            <button class="arrow-down-left" onclick="vent18_down()"><img class="arrow-image" src="images/arrow down.png"></button>
+            <button class="arrow-back" onclick="vent18_06()"><img class="arrow-image-back" src="images/arrow back.png"></button>
+            <p class="vent-text" id="vent_18_down">This leads to a wrong room in the staff quarters. I should try another way.</p>
+          </div>
+      </div>
+      <div class="ventilation-videos" id="vent_21">
+        <video class="vent" autoplay muted><source src="videos/v21.mp4" type="video/mp4"></video>
+          <div class="ventilation-arrows" id="vent_21_arrows">
+            <button class="arrow-left-left" onclick="vent21_22()"><img class="arrow-image" src="images/arrow left.png"></button>
+            <button class="arrow-down-left" onclick="vent21_down()"><img class="arrow-image" src="images/arrow down.png"></button>
+            <button class="arrow-back" onclick="vent21_20()"><img class="arrow-image-back" src="images/arrow back.png"></button>
+            <p class="vent-text" id="vent_21_down">This leads to a wrong room in the staff quarters. I should try another way.</p>
+          </div>
+      </div>
+      <div class="ventilation-videos" id="vent_21r">
+        <video class="vent" autoplay muted><source src="videos/v21r.mp4" type="video/mp4"></video>
+          <div class="ventilation-arrows" id="vent_21r_arrows">
+            <button class="arrow-straight" onclick="vent20_21()"><img class="arrow-image" src="images/arrow straight.png"></button>
+            <button class="arrow-back" onclick="vent20_18()"><img class="arrow-image-back" src="images/arrow backright.png"></button>
+          </div>
+      </div>
+      <div class="ventilation-videos" id="vent_22">
+        <video class="vent" autoplay muted><source src="videos/v22.mp4" type="video/mp4"></video>
+          <div class="ventilation-arrows" id="vent_22_arrows">
+            <button class="arrow-straight" onclick="vent22_23()"><img class="arrow-image" src="images/arrow straight.png"></button>
+            <button class="arrow-down-right" onclick="vent22_down()"><img class="arrow-image" src="images/arrow down.png"></button>
+            <button class="arrow-back" onclick="vent22_21()"><img class="arrow-image-back" src="images/arrow backleft.png"></button>
+            <p class="vent-text" id="vent_22_down">This leads to a bathroom in the staff quarters. I should try another way.</p>
+          </div>
+      </div>
+      <div class="ventilation-videos" id="vent_22r">
+        <video class="vent" autoplay muted><source src="videos/v22r.mp4" type="video/mp4"></video>
+          <div class="ventilation-arrows" id="vent_22r_arrows">
+            <button class="arrow-left-left" onclick="vent21_22()"><img class="arrow-image" src="images/arrow left.png"></button>
+            <button class="arrow-down-left" onclick="vent21_down()"><img class="arrow-image" src="images/arrow down.png"></button>
+            <button class="arrow-back" onclick="vent21_20()"><img class="arrow-image-back" src="images/arrow back.png"></button>
+            <p class="vent-text" id="vent_21_down">This leads to a wrong room in the staff quarters. I should try another way.</p>
+          </div>
+      </div>
+      <div class="ventilation-videos" id="vent_23">
+        <video class="vent" autoplay muted><source src="videos/v23.mp4" type="video/mp4"></video>
+          <div class="ventilation-arrows" id="vent_23_arrows">
+            <button class="arrow-down-right" onclick="document.location='chapter3_2.html'"><img class="arrow-image" src="images/arrow down.png"></button>
+            <button class="arrow-back" onclick="vent23_22()"><img class="arrow-image-back" src="images/arrow back.png"></button>
+          </div>
+      </div>
+      <div class="ventilation-videos" id="vent_23r">
+        <video class="vent" autoplay muted><source src="videos/v23r.mp4" type="video/mp4"></video>
+          <div class="ventilation-arrows" id="vent_23r_arrows">
+            <button class="arrow-straight" onclick="vent22_23()"><img class="arrow-image" src="images/arrow straight.png"></button>
+            <button class="arrow-down-right" onclick="vent22_down()"><img class="arrow-image" src="images/arrow down.png"></button>
+            <button class="arrow-back" onclick="vent22_21()"><img class="arrow-image-back" src="images/arrow backleft.png"></button>
+            <p class="vent-text" id="vent_22_down">This leads to a bathroom in the staff quarters. I should try another way.</p>
+          </div>
+      </div>
+      <button class="continue-button-vent" onclick="document.location='chapter3_vent.html'">Click to reset the puzzle</button>
+      <button class="continue-button-vent" onclick="document.location='chapter3_2.html'">Click to skip the puzzle</button>
+    </div>
