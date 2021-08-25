@@ -795,13 +795,13 @@ html::-webkit-scrollbar {
 }
 
 .hero-title {
-	top: calc(100% - 150px);
+	top: calc(100% - 180px);
  	max-width: calc(100% - 30px);
   right: 0px;
 }
 
 .hero-subtitle {
-	top: calc(100% - 150px);
+	top: calc(100% - 180px);
 	max-width: calc(100% - 30px);
   right: 0px;
 }
