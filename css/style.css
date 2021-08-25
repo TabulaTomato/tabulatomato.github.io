@@ -1,65 +1,23 @@
 @charset "utf-8";
 /* CSS Document */4
 
-/* cabin-sketch-regular - latin */
-@font-face {
-  font-family: 'Cabin Sketch';
-  font-style: normal;
-  font-weight: 400;
-  src: url('../fonts/cabin-sketch-v14-latin/cabin-sketch-v14-latin-regular.eot'); /* IE9 Compat Modes */
-  src: local(''),
-       url('../fonts/cabin-sketch-v14-latin/cabin-sketch-v14-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../fonts/cabin-sketch-v14-latin/cabin-sketch-v14-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
-       url('../fonts/cabin-sketch-v14-latin/cabin-sketch-v14-latin-regular.woff') format('woff'), /* Modern Browsers */
-       url('../fonts/cabin-sketch-v14-latin/cabin-sketch-v14-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
-       url('../fonts/cabin-sketch-v14-latin/cabin-sketch-v14-latin-regular.svg#CabinSketch') format('svg'); /* Legacy iOS */
-}
-
-/* open-sans-regular - latin */
-@font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 400;
-  src: url('../fonts/open-sans-v18-latin/open-sans-v18-latin-regular.eot'); /* IE9 Compat Modes */
-  src: local(''),
-       url('../fonts/open-sans-v18-latin/open-sans-v18-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../fonts/open-sans-v18-latin/open-sans-v18-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
-       url('../fonts/open-sans-v18-latin/open-sans-v18-latin-regular.woff') format('woff'), /* Modern Browsers */
-       url('../fonts/open-sans-v18-latin/open-sans-v18-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
-       url('../fonts/open-sans-v18-latin/open-sans-v18-latin-regular.svg#OpenSans') format('svg'); /* Legacy iOS */
-}
-
-/* palanquin-dark-regular - latin */
-@font-face {
-  font-family: 'Palanquin Dark';
-  font-style: normal;
-  font-weight: 400;
-  src: url('../fonts/palanquin-dark-v7-latin/palanquin-dark-v7-latin-regular.eot'); /* IE9 Compat Modes */
-  src: local(''),
-       url('../fonts/palanquin-dark-v7-latin/palanquin-dark-v7-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../fonts/palanquin-dark-v7-latin/palanquin-dark-v7-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
-       url('../fonts/palanquin-dark-v7-latin/palanquin-dark-v7-latin-regular.woff') format('woff'), /* Modern Browsers */
-       url('../fonts/palanquin-dark-v7-latin/palanquin-dark-v7-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
-       url('../fonts/palanquin-dark-v7-latin/palanquin-dark-v7-latin-regular.svg#PalanquinDark') format('svg'); /* Legacy iOS */
-}
-
 html {
 	background: transparent;
 	width: 100%;
 	height: 100%;
 	font-size: 16px;
-  	overflow-x: hidden;
+  overflow-x: hidden;
 }
 
 body {
 	position: relative;
 	width: 100%;
-	height: calc(100vh-50px);
+	height: 100%;
 }
 
 .main {
 	padding-top: 50px;
-  	padding-bottom: 180px;
+  padding-bottom: 180px;
 }
 
 .images {
@@ -905,6 +863,18 @@ td {
 }
 
 .hint-button {
+	width: calc(100vw - 30px);
+	height: 80px;
+	font-size: 130%;
+}
+
+.continue-button {
+	width: calc(100vw - 30px);
+	height: 80px;
+	font-size: 130%;
+}
+
+.continue-button-vent {
 	width: calc(100vw - 30px);
 	height: 80px;
 	font-size: 130%;
