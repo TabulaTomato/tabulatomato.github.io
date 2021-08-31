@@ -12,6 +12,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch&family=Fredoka+One&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Palanquin+Dark:wght@400;500&display=swap" rel="stylesheet">
   <script type="text/javascript" src="javascript/script.js"></script>
   <script type="text/javascript" src="javascript/script1.js"></script>
+  <script type="text/javascript" src="javascript/script1_hint.js"></script>
   <link rel="stylesheet" type="text/css" href="css/reset.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
@@ -63,452 +64,598 @@
       <h3>hints</h3>
     </div>
     <div class="main-text">
-      <h4>Click on the location that you want a hint for. If a card isn't in a specific location, you can find it under Other cards.</h4>
+      <h4>Enter the character/object card number you want a hint for.</h4>
+      <p><i>For example, if you want a hint for character card <b>01</b>, enter <b>01</b> in the input field and click OK or press enter.</i></p>
     </div>
     <div class="main-input">
-      <input class="fst-hint-button" type="button" value="Location LOC01" id="locPoneLOC01" onclick="togglePoneLOC01()"><br>
-      <div class="hint-window" id="hintPoneLOC01">
-        <input class="snd-hint-button" type="button" value="Card 05" id="hintPone05" onclick="togglePone05()"><br>
-          <div class="hint-window" id="hintPone05_1">
-          <p id="hintPone05_1Answer"></p>
-          </div>
-        <input class="snd-hint-button" type="button" value="Card 21" id="hintPone21" onclick="togglePone21()"><br>
-          <div class="hint-window" id="hintPone21_1">
-          <p id="hintPone21_1Answer"></p>
-          <button class="trd-hint-button" onclick="showhintPone21_2()">Where do I find the information on the mural?</button><br>
-            <div class="hint-window" id="hintPone21_2">
-            <p id="hintPone21_2Answer"></p>
-            <button class="trd-hint-button" onclick="showhintPone21_3()">I have the information about the mural, what know?</button><br>
-              <div class="hint-window" id="hintPone21_3">
-              <p id="hintPone21_3Answer"></p>
-              <button class="trd-hint-button" onclick="showhintPone21_4()">I have card 24, but I can't figure it out!</button><br>
-                <div class="hint-window" id="hintPone21_4">
-                <p id="hintPone21_4Answer"></p>
-                <button class="trd-hint-button" onclick="showhintPone21_5()">Please help me! I still don't get it.</button><br>
-                  <div class="hint-window" id="hintPone21_5">
-                  <p id="hintPone21_5Answer"></p>
-                  <button class="trd-hint-button" onclick="showhintPone21_6()">Give me the solution to this puzzle.</button><br>
-                    <div class="hint-window" id="hintPone21_6">
-                    <p id="hintPone21_6Answer"></p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        <input class="snd-hint-button" type="button" value="Card 25" id="hintPone25" onclick="togglePone25()"><br>
-          <div class="hint-window" id="hintPone25_1">
-          <p id="hintPone25_1Answer"></p>
-          <button class="trd-hint-button" onclick="showhintPone25_2()">I don't understand how to get to this new location.</button><br>
-            <div class="hint-window" id="hintPone25_2">
-            <p id="hintPone25_2Answer"></p>
-            <button class="trd-hint-button" onclick="showhintPone25_3()">Give me the solution to the address of the new location.</button><br>
-              <div class="hint-window" id="hintPone25_3">
-              <p id="hintPone25_3Answer"></p>
-              <button class="trd-hint-button" onclick="showhintPone25_4()">How do I fix the telescope?</button><br>
-                <div class="hint-window" id="hintPone25_4">
-                <p id="hintPone25_4Answer"></p>
-                </div>
-              </div>
-            </div>
-          </div>
-        <input class="snd-hint-button" type="button" value="Card 40" id="hintPone40" onclick="togglePone40()"><br>
-          <div class="hint-window" id="hintPone40_1">
-          <p id="hintPone40_1Answer"></p>
-          </div>
+      <input type="text" id="hintPoneText" onkeypress="return hintPoneKeyPress(event);" placeholder="input here">
+      <button class="ok-button" id="hintPoneButton" onclick="hintPoneFunction()">OK</button>
+    </div>
+    <div class="main-text">
+      <p class="hint-text" id="hintPoneAnswer"></p>
+      <div class="hint-container" id="hint02_container">
+        <button class="hint-button" id="hintPone02_1" onclick="hintPone02_1show()">Give me the solution to this puzzle</button>
+        <div id="hint02_1_1_container">
+          <p class="hint-text" id="hintPone02_1Answer"></p>
+        </div>
       </div>
-      <input class="fst-hint-button" type="button" value="Location LOC02" id="locPoneLOC02" onclick="togglePoneLOC02()"><br>
-      <div class="hint-window" id="hintPoneLOC02">
-        <input class="snd-hint-button" type="button" value="Card 30" id="hintPone30" onclick="togglePone30()"><br>
-          <div class="hint-window" id="hintPone30_1">
-          <p id="hintPone30_1Answer"></p>
-          <button class="trd-hint-button" onclick="showhintPone30_2()">What was it that brought me here again?</button><br>
-            <div class="hint-window" id="hintPone30_2">
-            <p id="hintPone30_2Answer"></p>
-            <button class="trd-hint-button" onclick="showhintPone30_3()">But how do I fix the telescope?</button><br>
-              <div class="hint-window" id="hintPone30_3">
-              <p id="hintPone30_3Answer"></p>
-              </div>
-            </div>
-          </div>
-        <input class="snd-hint-button" type="button" value="Card 42" id="hintPone42" onclick="togglePone42()"><br>
-          <div class="hint-window" id="hintPone42_1">
-          <p id="hintPone42_1Answer"></p>
-          <button class="trd-hint-button" onclick="showhintPone42_2()">I don't know what to talk to Loomey about.</button><br>
-            <div class="hint-window" id="hintPone42_2">
-            <p id="hintPone42_2Answer"></p>
-            <button class="trd-hint-button" onclick="showhintPone42_3()">I can't figure out how to help Loomey.</button><br>
-              <div class="hint-window" id="hintPone42_3">
-              <p id="hintPone42_3Answer"></p>
-              </div>
-            </div>
-          </div>
-        <input class="snd-hint-button" type="button" value="Card 35" id="hintPone35" onclick="togglePone35()"><br>
-          <div class="hint-window" id="hintPone35_1">
-          <p id="hintPone35_1Answer"></p>
-          <button class="trd-hint-button" onclick="showhintPone35_2()">I don't know where to use the spray paint.</button><br>
-            <div class="hint-window" id="hintPone35_2">
-            <p id="hintPone35_2Answer"></p>
-            <button class="trd-hint-button" onclick="showhintPone35_3()">Still don't know where to use the spray paint.</button><br>
-              <div class="hint-window" id="hintPone35_3">
-              <p id="hintPone35_3Answer"></p>
-              <button class="trd-hint-button" onclick="showhintPone35_4()">Give me the solution to where should I use the spray paint.</button><br>
-                <div class="hint-window" id="hintPone35_4">
-                <p id="hintPone35_4Answer"></p>
-                </div>
-              </div>
-            </div>
-          </div>
+      <div class="hint-container" id="hint03_container">
+        <button class="hint-button" id="hintPone03_1" onclick="hintPone03_1show()">Yes, I've opened LOC06</button>
+        <div class="hint-container" id="hint03_1_1_container">
+          <p class="hint-text" id="hintPone03_1Answer"></p>
+          <button class="hint-button" id="hintPone03_1_1" onclick="hintPone03_1_1show()">I don't know what I should do with Laika</button>
+        </div>
+        <div class="hint-container" id="hint03_1_2_container">
+          <p class="hint-text" id="hintPone03_1_1Answer"></p>
+          <button class="hint-button" id="hintPone03_1_2" onclick="hintPone03_1_2show()">Give me the solution to this puzzle</button>
+        </div>
+        <div id="hint03_1_3_container">
+          <p class="hint-text" id="hintPone03_1_2Answer"></p>
+        </div>
+        <button class="hint-button" id="hintPone03_2" onclick="hintPone03_2show()">No, I haven't opened LOC06</button>
+        <div id="hint03_2_1_container">
+          <p class="hint-text" id="hintPone03_2Answer"></p>
+        </div>
       </div>
-      <input class="fst-hint-button" type="button" value="Location LOC03" id="locPoneLOC03" onclick="togglePoneLOC03()"><br>
-      <div class="hint-window" id="hintPoneLOC03">
-        <input class="snd-hint-button" type="button" value="Card 18" id="hintPone18" onclick="togglePone18()"><br>
-          <div class="hint-window" id="hintPone18_1">
-          <p id="hintPone18_1Answer"></p>
-          <button class="trd-hint-button" onclick="showhintPone18_2()">What should I ask professor Martin?</button><br>
-            <div class="hint-window" id="hintPone18_2">
-            <p id="hintPone18_2Answer"></p>
-            </div>
-          </div>
-        <input class="snd-hint-button" type="button" value="Card 31" id="hintPone31" onclick="togglePone31()"><br>
-          <div class="hint-window" id="hintPone31_1">
-          <p id="hintPone31_1Answer"></p>
-          <button class="trd-hint-button" onclick="showhintPone31_2()">I don't know how to help Jamie.</button><br>
-            <div class="hint-window" id="hintPone31_2">
-            <p id="hintPone31_2Answer"></p>
-            <button class="trd-hint-button" onclick="showhintPone31_3()">Give me the solution on how to help Jamie.</button><br>
-              <div class="hint-window" id="hintPone31_3">
-              <p id="hintPone31_3Answer"></p>
-              </div>
-            </div>
-          </div>
-        <input class="snd-hint-button" type="button" value="Card 29" id="hintPone29" onclick="togglePone29()"><br>
-          <div class="hint-window" id="hintPone29_1">
-          <p id="hintPone29_1Answer"></p>
-          <button class="trd-hint-button" onclick="showhintPone29_2()">I don't know how to help Jamie.</button><br>
-            <div class="hint-window" id="hintPone29_2">
-            <p id="hintPone29_2Answer"></p>
-            <button class="trd-hint-button" onclick="showhintPone29_3()">Give me the solution on how to get the test for Jamie.</button><br>
-              <div class="hint-window" id="hintPone29_3">
-              <p id="hintPone29_3Answer"></p>
-              </div>
-            </div>
-          </div>
-        <input class="snd-hint-button" type="button" value="Card 37" id="hintPone37" onclick="togglePone37()"><br>
-          <div class="hint-window" id="hintPone37_1">
-          <p id="hintPone37_1Answer"></p>
-          <button class="trd-hint-button" onclick="showhintPone37_2()">I don't know how to help Jamie.</button><br>
-            <div class="hint-window" id="hintPone37_2">
-            <p id="hintPone37_2Answer"></p>
-            <button class="trd-hint-button" onclick="showhintPone37_3()">Give me the solution on how to get the test for Jamie.</button><br>
-              <div class="hint-window" id="hintPone37_3">
-              <p id="hintPone37_3Answer"></p>
-              </div>
-            </div>
-          </div>
+      <div class="hint-container" id="hint04_container">
+        <button class="hint-button" id="hintPone04_1" onclick="hintPone04_1show()">Give me the solution to this puzzle</button>
+        <div id="hint04_1_1_container">
+          <p class="hint-text" id="hintPone04_1Answer"></p>
+        </div>
       </div>
-      <input class="fst-hint-button" type="button" value="Location LOC04" id="locPoneLOC04" onclick="togglePoneLOC04()"><br>
-      <div class="hint-window" id="hintPoneLOC04">
-        <input class="snd-hint-button" type="button" value="Card 09" id="hintPone09" onclick="togglePone09()"><br>
-          <div class="hint-window" id="hintPone09_1">
-          <p id="hintPone09_1Answer"></p>
-            <button class="trd-hint-button" onclick="showhintPone09_2()">I still don't know what should I ask Sandy.</button><br>
-              <div class="hint-window" id="hintPone09_2">
-              <p id="hintPone09_2Answer"></p>
-              </div>
-          </div>
-        <input class="snd-hint-button" type="button" value="Card 02" id="hintPone02" onclick="togglePone02()"><br>
-          <div class="hint-window" id="hintPone02_1">
-          <p id="hintPone02_1Answer"></p>
-            <button class="trd-hint-button" onclick="showhintPone02_2()">Give me the solution on what to do with the fly.</button><br>
-              <div class="hint-window" id="hintPone02_2">
-              <p id="hintPone02_2Answer"></p>
-              </div>
-          </div>
-        <input class="snd-hint-button" type="button" value="Card 07" id="hintPone07" onclick="togglePone07()"><br>
-          <div class="hint-window" id="hintPone07_1">
-          <p id="hintPone07_1Answer"></p>
-            <button class="trd-hint-button" onclick="showhintPone07_2()">OK, I asked about it. But I don't know what do to with this information.</button><br>
-              <div class="hint-window" id="hintPone07_2">
-              <p id="hintPone07_2Answer"></p>
-              <button class="trd-hint-button" onclick="showhintPone07_3()">Give me the solution on how to find the tea shop.</button><br>
-                <div class="hint-window" id="hintPone07_3">
-                <p id="hintPone07_3Answer"></p>
-                </div>
-              </div>
-          </div>
-        <input class="snd-hint-button" type="button" value="Card 20" id="hintPone20" onclick="togglePone20()"><br>
-          <div class="hint-window" id="hintPone20_1">
-          <p id="hintPone20_1Answer"></p>
-            <button class="trd-hint-button" onclick="showhintPone20_2()">OK, I asked about the projector. But what now?</button><br>
-              <div class="hint-window" id="hintPone20_2">
-              <p id="hintPone20_2Answer"></p>
-              <button class="trd-hint-button" onclick="showhintPone20_3()">OK, I asked about it. But I don't know what do to with this information.</button><br>
-                <div class="hint-window" id="hintPone20_3">
-                <p id="hintPone20_3Answer"></p>
-                <button class="trd-hint-button" onclick="showhintPone20_4()">Give me the solution on how to find the tea shop.</button><br>
-                  <div class="hint-window" id="hintPone20_4">
-                  <p id="hintPone20_4Answer"></p>
-                  <button class="trd-hint-button" onclick="showhintPone20_5()">I went to the tea shop, but I don't know what to do next.</button><br>
-                    <div class="hint-window" id="hintPone20_5">
-                    <p id="hintPone20_5Answer"></p>
-                    <button class="trd-hint-button" onclick="showhintPone20_6()">OK, but how should I do that?</button><br>
-                      <div class="hint-window" id="hintPone20_6">
-                      <p id="hintPone20_6Answer"></p>
-                      <button class="trd-hint-button" onclick="showhintPone20_7()">I asked about Jocelyn, but I still don't know how to sabotage the lecture.</button><br>
-                        <div class="hint-window" id="hintPone20_7">
-                        <p id="hintPone20_7Answer"></p>
-                        <button class="trd-hint-button" onclick="showhintPone20_8()">Give me the solution on how to sabotage the lecture.</button><br>
-                          <div class="hint-window" id="hintPone20_8">
-                          <p id="hintPone20_8Answer"></p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-          </div>
+      <div class="hint-container" id="hint05_container">
+        <button class="hint-button" id="hintPone05_1" onclick="hintPone05_1show()">Yes, I've opened LOC06</button>
+        <div class="hint-container" id="hint05_1_1_container">
+          <p class="hint-text" id="hintPone05_1Answer"></p>
+          <button class="hint-button" id="hintPone05_1_1" onclick="hintPone05_1_1show()">I don't know what I should do with the cookie mix</button>
+        </div>
+        <div class="hint-container" id="hint05_1_2_container">
+          <p class="hint-text" id="hintPone05_1_1Answer"></p>
+          <button class="hint-button" id="hintPone05_1_2" onclick="hintPone05_1_2show()">Give me the solution to this puzzle</button>
+        </div>
+        <div id="hint05_1_3_container">
+          <p class="hint-text" id="hintPone05_1_2Answer"></p>
+        </div>
+        <button class="hint-button" id="hintPone05_2" onclick="hintPone05_2show()">No, I haven't opened LOC06</button>
+        <div id="hint05_2_1_container">
+          <p class="hint-text" id="hintPone05_2Answer"></p>
+        </div>
       </div>
-      <input class="fst-hint-button" type="button" value="Location LOC05" id="locPoneLOC05" onclick="togglePoneLOC05()"><br>
-      <div class="hint-window" id="hintPoneLOC05">
-        <input class="snd-hint-button" type="button" value="Card 11" id="hintPone11" onclick="togglePone11()"><br>
-          <div class="hint-window" id="hintPone11_1">
-          <p id="hintPone11_1Answer"></p>
-            <button class="trd-hint-button" onclick="showhintPone11_2()">I don't know what you're talking about.</button><br>
-              <div class="hint-window" id="hintPone11_2">
-              <p id="hintPone11_2Answer"></p>
-              </div>
-          </div>
-        <input class="snd-hint-button" type="button" value="Card 32" id="hintPone32" onclick="togglePone32()"><br>
-          <div class="hint-window" id="hintPone32_1">
-          <p id="hintPone32_1Answer"></p>
-            <button class="trd-hint-button" onclick="showhintPone32_2()">I still don't know what to talk about with Mark.</button><br>
-              <div class="hint-window" id="hintPone32_2">
-              <p id="hintPone32_2Answer"></p>
-              </div>
-          </div>
-        <input class="snd-hint-button" type="button" value="Card 34" id="hintPone34" onclick="togglePone34()"><br>
-          <div class="hint-window" id="hintPone34_1">
-          <p id="hintPone34_1Answer"></p>
-            <button class="trd-hint-button" onclick="showhintPone34_2()">I still don't know what to do with an empty cup.</button><br>
-              <div class="hint-window" id="hintPone34_2">
-              <p id="hintPone34_2Answer"></p>
-              </div>
-          </div>
-        <input class="snd-hint-button" type="button" value="Card 43" id="hintPone43" onclick="togglePone43()"><br>
-          <div class="hint-window" id="hintPone43_1">
-          <p id="hintPone43_1Answer"></p>
-            <button class="trd-hint-button" onclick="showhintPone43_2()">OK, I asked about Jocelyn. I still don't know what to do with the computer.</button><br>
-              <div class="hint-window" id="hintPone43_2">
-              <p id="hintPone43_2Answer"></p>
-              <button class="trd-hint-button" onclick="showhintPone43_3()">I don't know how to find the password for the computer.</button><br>
-                <div class="hint-window" id="hintPone43_3">
-                <p id="hintPone43_3Answer"></p>
-                <button class="trd-hint-button" onclick="showhintPone43_4()">Give me the solution on how to find the password.</button><br>
-                  <div class="hint-window" id="hintPone43_4">
-                  <p id="hintPone43_4Answer"></p>
-                  </div>
-                </div>
-              </div>
-          </div>
+      <div class="hint-container" id="hint06_container">
+        <button class="hint-button" id="hintPone06_1" onclick="hintPone06_1show()">I don't know where to find the clues</button>
+        <div class="hint-container" id="hint06_1_1_container">
+          <p class="hint-text" id="hintPone06_1Answer"></p>
+          <button class="hint-button" id="hintPone06_1_1" onclick="hintPone06_1_1show()">I don't know what to do there</button>
+        </div>
+        <div class="hint-container" id="hint06_1_2_container">
+          <p class="hint-text" id="hintPone06_1_1Answer"></p>
+          <button class="hint-button" id="hintPone06_1_2" onclick="hintPone06_1_2show()">I still don't know what to do</button>
+        </div>
+        <div class="hint-container" id="hint06_1_3_container">
+          <p class="hint-text" id="hintPone06_1_2Answer"></p>
+          <button class="hint-button" id="hintPone06_1_3" onclick="hintPone06_1_3show()">Give me the solution to this puzzle</button>
+        </div>
+        <div id="hint06_1_4_container">
+          <p class="hint-text" id="hintPone06_1_3Answer"></p>
+        </div>
       </div>
-      <input class="fst-hint-button" type="button" value="Location LOC06" id="locPoneLOC06" onclick="togglePoneLOC06()"><br>
-      <div class="hint-window" id="hintPoneLOC06">
-        <input class="snd-hint-button" type="button" value="Card 10" id="hintPone10" onclick="togglePone10()"><br>
-          <div class="hint-window" id="hintPone10_1">
-          <p id="hintPone10_1Answer"></p>
-            <button class="trd-hint-button" onclick="showhintPone10_2()">I still don't know what to ask Emma.</button><br>
-              <div class="hint-window" id="hintPone10_2">
-              <p id="hintPone10_2Answer"></p>
-              </div>
-          </div>
-        <input class="snd-hint-button" type="button" value="Card 13" id="hintPone13" onclick="togglePone13()"><br>
-          <div class="hint-window" id="hintPone13_1">
-          <p id="hintPone13_1Answer"></p>
-            <button class="trd-hint-button" onclick="showhintPone13_2()">I still don't know what to do with the parrot.</button><br>
-              <div class="hint-window" id="hintPone13_2">
-              <p id="hintPone13_2Answer"></p>
-              </div>
-          </div>
-        <input class="snd-hint-button" type="button" value="Card 36" id="hintPone36" onclick="togglePone36()"><br>
-          <div class="hint-window" id="hintPone36_1">
-          <p id="hintPone36_1Answer"></p>
-            <button class="trd-hint-button" onclick="showhintPone36_2()">I still don't know what to do with the sprout.</button><br>
-              <div class="hint-window" id="hintPone36_2">
-              <p id="hintPone36_2Answer"></p>
-              </div>
-          </div>
+      <div class="hint-container" id="hint07_container">
+        <button class="hint-button" id="hintPone07_1" onclick="hintPone07_1show()">I still don't know what to do</button>
+        <div class="hint-container" id="hint07_1_1_container">
+          <p class="hint-text" id="hintPone07_1Answer"></p>
+          <button class="hint-button" id="hintPone07_1_1" onclick="hintPone07_1_1show()">OK, but what about it?</button>
+        </div>
+        <div class="hint-container" id="hint07_1_2_container">
+          <p class="hint-text" id="hintPone07_1_1Answer"></p>
+          <button class="hint-button" id="hintPone07_1_2" onclick="hintPone07_1_2show()">Give me the solution to this puzzle</button>
+        </div>
+        <div id="hint07_1_3_container">
+          <p class="hint-text" id="hintPone07_1_2Answer"></p>
+        </div>
       </div>
-      <input class="fst-hint-button" type="button" value="Location LOC07" id="locPoneLOC07" onclick="togglePoneLOC07()"><br>
-      <div class="hint-window" id="hintPoneLOC07">
-        <input class="snd-hint-button" type="button" value="Card 14" id="hintPone14" onclick="togglePone14()"><br>
-          <div class="hint-window" id="hintPone14_1">
-          <p id="hintPone14_1Answer"></p>
-            <button class="trd-hint-button" onclick="showhintPone14_2()">I still don't know what should I do with Mary.</button><br>
-              <div class="hint-window" id="hintPone14_2">
-              <p id="hintPone14_2Answer"></p>
-              </div>
-          </div>
+      <div class="hint-container" id="hint09_container">
+        <button class="hint-button" id="hintPone09_1" onclick="hintPone09_1show()">Give me the solution to this puzzle</button>
+        <div id="hint09_1_1_container">
+          <p class="hint-text" id="hintPone09_1Answer"></p>
+        </div>
       </div>
-      <input class="fst-hint-button" type="button" value="Other cards" id="locPoneOther" onclick="togglePoneOther()"><br>
-      <div class="hint-window" id="hintPoneOther">
-        <input class="snd-hint-button" type="button" value="Card 01" id="hintPone01" onclick="togglePone01()"><br>
-          <div class="hint-window" id="hintPone01_1">
-          <p id="hintPone01_1Answer"></p>
-          </div>
-        <input class="snd-hint-button" type="button" value="Card 03" id="hintPone03" onclick="togglePone03()"><br>
-          <div class="hint-window" id="hintPone03_1">
-          <p id="hintPone03_1Answer"></p>
-          </div>
-        <input class="snd-hint-button" type="button" value="Card 04" id="hintPone04" onclick="togglePone04()"><br>
-          <div class="hint-window" id="hintPone04_1">
-          <p id="hintPone04_1Answer"></p>
-            <button class="trd-hint-button" onclick="showhintPone04_2()">I still don't what should I do with the projector.</button><br>
-              <div class="hint-window" id="hintPone04_2">
-              <p id="hintPone04_2Answer"></p>
-              </div>
-          </div>
-        <input class="snd-hint-button" type="button" value="Card 06" id="hintPone06" onclick="togglePone06()"><br>
-          <div class="hint-window" id="hintPone06_1">
-          <p id="hintPone06_1Answer"></p>
-            <button class="trd-hint-button" onclick="showhintPone06_2()">I don't know where to find the clues to open the cryptex.</button><br>
-              <div class="hint-window" id="hintPone06_2">
-              <p id="hintPone06_2Answer"></p>
-              <button class="trd-hint-button" onclick="showhintPone06_3()">I don't know what to do on the Korns' farm.</button><br>
-                <div class="hint-window" id="hintPone06_3">
-                <p id="hintPone06_3Answer"></p>
-                <button class="trd-hint-button" onclick="showhintPone06_4()">I talked to both Emma and the parrot, but I still don't know what to do.</button><br>
-                  <div class="hint-window" id="hintPone06_4">
-                  <p id="hintPone06_4Answer"></p>
-                  <button class="trd-hint-button" onclick="showhintPone06_5()">Give me the solution to this puzzle.</button><br>
-                    <div class="hint-window" id="hintPone06_5">
-                    <p id="hintPone06_5Answer"></p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-          </div>
-        <input class="snd-hint-button" type="button" value="Card 08" id="hintPone08" onclick="togglePone08()"><br>
-          <div class="hint-window" id="hintPone08_1">
-          <p id="hintPone08_1Answer"></p>
-          </div>
-        <input class="snd-hint-button" type="button" value="Card 12" id="hintPone12" onclick="togglePone12()"><br>
-          <div class="hint-window" id="hintPone12_1">
-          <p id="hintPone12_1Answer"></p>
-          </div>
-        <input class="snd-hint-button" type="button" value="Card 15" id="hintPone15" onclick="togglePone15()"><br>
-          <div class="hint-window" id="hintPone15_1">
-          <p id="hintPone15_1Answer"></p>
-          </div>
-        <input class="snd-hint-button" type="button" value="Card 16" id="hintPone16" onclick="togglePone16()"><br>
-          <div class="hint-window" id="hintPone16_1">
-          <p id="hintPone16_1Answer"></p>
-          <button class="trd-hint-button" onclick="showhintPone16_2()">I don't know what object is connected to the night sky.</button><br>
-            <div class="hint-window" id="hintPone16_2">
-            <p id="hintPone16_2Answer"></p>
-            <button class="trd-hint-button" onclick="showhintPone16_3()">I don't know understand how to use this with the night sky.</button><br>
-              <div class="hint-window" id="hintPone16_3">
-              <p id="hintPone16_3Answer"></p>
-              <button class="trd-hint-button" onclick="showhintPone16_4()">I can't find anything interesting on the map.</button><br>
-                <div class="hint-window" id="hintPone16_4">
-                <p id="hintPone16_4Answer"></p>
-                <button class="trd-hint-button" onclick="showhintPone16_5()">Give me the solution to this puzzle.</button><br>
-                  <div class="hint-window" id="hintPone16_5">
-                  <p id="hintPone16_5Answer"></p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        <input class="snd-hint-button" type="button" value="Card 17" id="hintPone17" onclick="togglePone17()"><br>
-          <div class="hint-window" id="hintPone17_1">
-          <p id="hintPone17_1Answer"></p>
-          <button class="trd-hint-button" onclick="showhintPone17_2()">I have card 16 but I don't see the connection.</button><br>
-            <div class="hint-window" id="hintPone17_2">
-            <p id="hintPone17_2Answer"></p>
-            <button class="trd-hint-button" onclick="showhintPone17_3()">I can't find anything interesting on the map.</button><br>
-              <div class="hint-window" id="hintPone17_3">
-              <p id="hintPone17_3Answer"></p>
-              <button class="trd-hint-button" onclick="showhintPone17_4()">Give me the solution to this puzzle.</button><br>
-                <div class="hint-window" id="hintPone17_4">
-                <p id="hintPone17_4Answer"></p>
-                </div>
-              </div>
-            </div>
-          </div>
-        <input class="snd-hint-button" type="button" value="Card 19" id="hintPone19" onclick="togglePone19()"><br>
-          <div class="hint-window" id="hintPone19_1">
-          <p id="hintPone19_1Answer"></p>
-          </div>
-        <input class="snd-hint-button" type="button" value="Card 22" id="hintPone22" onclick="togglePone22()"><br>
-          <div class="hint-window" id="hintPone22_1">
-          <p id="hintPone22_1Answer"></p>
-          </div>
-        <input class="snd-hint-button" type="button" value="Card 23" id="hintPone23" onclick="togglePone23()"><br>
-          <div class="hint-window" id="hintPone23_1">
-          <p id="hintPone23_1Answer"></p>
-          </div>
-        <input class="snd-hint-button" type="button" value="Card 24" id="hintPone24" onclick="togglePone24()"><br>
-          <div class="hint-window" id="hintPone24_1">
-          <p id="hintPone24_1Answer"></p>
-          <button class="trd-hint-button" onclick="showhintPone24_2()">I have the address but I don't know what to do with it.</button><br>
-            <div class="hint-window" id="hintPone24_2">
-            <p id="hintPone24_2Answer"></p>
-            <button class="trd-hint-button" onclick="showhintPone24_3()">Give me the solution to this puzzle.</button><br>
-              <div class="hint-window" id="hintPone24_3">
-              <p id="hintPone24_3Answer"></p>
-              </div>
-            </div>
-          </div>
-        <input class="snd-hint-button" type="button" value="Card 26" id="hintPone26" onclick="togglePone26()"><br>
-          <div class="hint-window" id="hintPone26_1">
-          <p id="hintPone26_1Answer"></p>
-          </div>
-        <input class="snd-hint-button" type="button" value="Card 27" id="hintPone27" onclick="togglePone27()"><br>
-          <div class="hint-window" id="hintPone27_1">
-          <p id="hintPone27_1Answer"></p>
-          <button class="trd-hint-button" onclick="showhintPone27_2()">I'm not sure which location you're talking about.</button><br>
-            <div class="hint-window" id="hintPone27_2">
-            <p id="hintPone27_2Answer"></p>
-            <button class="trd-hint-button" onclick="showhintPone27_3()">Give me the solution to what to do with the fly.</button><br>
-              <div class="hint-window" id="hintPone27_3">
-              <p id="hintPone27_3Answer"></p>
-              </div>
-            </div>
-          </div>
-        <input class="snd-hint-button" type="button" value="Card 28" id="hintPone28" onclick="togglePone28()"><br>
-          <div class="hint-window" id="hintPone28_1">
-          <p id="hintPone28_1Answer"></p>
-          </div>
-        <input class="snd-hint-button" type="button" value="Card 33" id="hintPone33" onclick="togglePone33()"><br>
-          <div class="hint-window" id="hintPone33_1">
-          <p id="hintPone33_1Answer"></p>
-          </div>
-        <input class="snd-hint-button" type="button" value="Card 38" id="hintPone38" onclick="togglePone38()"><br>
-          <div class="hint-window" id="hintPone38_1">
-          <p id="hintPone38_1Answer"></p>
-          <button class="trd-hint-button" onclick="showhintPone38_2()">I'm not sure what to talk about with the parrot.</button><br>
-            <div class="hint-window" id="hintPone38_2">
-            <p id="hintPone38_2Answer"></p>
-            </div>
-          </div>
-        <input class="snd-hint-button" type="button" value="Card 39" id="hintPone39" onclick="togglePone39()"><br>
-          <div class="hint-window" id="hintPone39_1">
-          <p id="hintPone39_1Answer"></p>
-          <button class="trd-hint-button" onclick="showhintPone39_2()">I don't know which location I should go to.</button><br>
-            <div class="hint-window" id="hintPone39_2">
-            <p id="hintPone39_2Answer"></p>
-            <button class="trd-hint-button" onclick="showhintPone39_3()">OK, but what to do with the paper now?</button><br>
-              <div class="hint-window" id="hintPone39_3">
-              <p id="hintPone39_3Answer"></p>
-              </div>
-            </div>
-          </div>
-        <input class="snd-hint-button" type="button" value="Card 41" id="hintPone41" onclick="togglePone41()"><br>
-          <div class="hint-window" id="hintPone41_1">
-          <p id="hintPone41_1Answer"></p>
-          </div>
+      <div class="hint-container" id="hint10_container">
+        <button class="hint-button" id="hintPone10_1" onclick="hintPone10_1show()">Give me the solution to this puzzle</button>
+        <div id="hint10_1_1_container">
+          <p class="hint-text" id="hintPone10_1Answer"></p>
+        </div>
+      </div>
+      <div class="hint-container" id="hint11_container">
+        <button class="hint-button" id="hintPone11_1" onclick="hintPone11_1show()">I don't know what you're talking about</button>
+        <div class="hint-container" id="hint11_1_1_container">
+          <p class="hint-text" id="hintPone11_1Answer"></p>
+          <button class="hint-button" id="hintPone11_1_1" onclick="hintPone11_1_1show()">How do I do that?</button>
+        </div>
+        <div class="hint-container" id="hint11_1_2_container">
+          <p class="hint-text" id="hintPone11_1_1Answer"></p>
+          <button class="hint-button" id="hintPone11_1_2" onclick="hintPone11_1_2show()">I still don't know what to do</button>
+        </div>
+        <div class="hint-container" id="hint11_1_3_container">
+          <p class="hint-text" id="hintPone11_1_2Answer"></p>
+          <button class="hint-button" id="hintPone11_1_3" onclick="hintPone11_1_3show()">I still don't get it</button>
+        </div>
+        <div class="hint-container" id="hint11_1_4_container">
+          <p class="hint-text" id="hintPone11_1_3Answer"></p>
+          <button class="hint-button" id="hintPone11_1_4" onclick="hintPone11_1_4show()">I need some more help</button>
+        </div>
+        <div class="hint-container" id="hint11_1_5_container">
+          <p class="hint-text" id="hintPone11_1_4Answer"></p>
+          <button class="hint-button" id="hintPone11_1_5" onclick="hintPone11_1_5show()">I've got the password, but what now?</button>
+        </div>
+        <div class="hint-container" id="hint11_1_6_container">
+          <p class="hint-text" id="hintPone11_1_5Answer"></p>
+          <button class="hint-button" id="hintPone11_1_6" onclick="hintPone11_1_6show()">Give me the solution to this puzzle</button>
+        </div>
+        <div id="hint11_1_7_container">
+          <p class="hint-text" id="hintPone11_1_6Answer"></p>
+        </div>
+      </div>
+      <div class="hint-container" id="hint12_container">
+        <button class="hint-button" id="hintPone12_1" onclick="hintPone12_1show()">Give me the solution to this puzzle</button>
+        <div id="hint12_1_1_container">
+          <p class="hint-text" id="hintPone12_1Answer"></p>
+        </div>
+      </div>
+      <div class="hint-container" id="hint13_container">
+        <button class="hint-button" id="hintPone13_1" onclick="hintPone13_1show()">Give me the solution to this puzzle</button>
+        <div id="hint13_1_1_container">
+          <p class="hint-text" id="hintPone13_1Answer"></p>
+        </div>
+      </div>
+      <div class="hint-container" id="hint14_container">
+        <button class="hint-button" id="hintPone14_1" onclick="hintPone14_1show()">Give me the solution to this puzzle</button>
+        <div id="hint14_1_1_container">
+          <p class="hint-text" id="hintPone14_1Answer"></p>
+        </div>
+      </div>
+      <div class="hint-container" id="hint15_container">
+        <button class="hint-button" id="hintPone15_1" onclick="hintPone15_1show()">Give me the solution to this puzzle</button>
+        <div id="hint15_1_1_container">
+          <p class="hint-text" id="hintPone15_1Answer"></p>
+        </div>
+      </div>
+      <div class="hint-container" id="hint16_container">
+        <button class="hint-button" id="hintPone16_1" onclick="hintPone16_1show()">Yes, I've opened LOC04</button>
+        <div class="hint-container" id="hint16_1_1_container">
+          <p class="hint-text" id="hintPone16_1Answer"></p>
+          <button class="hint-button" id="hintPone16_1_1" onclick="hintPone16_1_1show()">I still don't know what to do</button>
+        </div>
+        <div class="hint-container" id="hint16_1_2_container">
+          <p class="hint-text" id="hintPone16_1_1Answer"></p>
+          <button class="hint-button" id="hintPone16_1_2" onclick="hintPone16_1_2show()">OK, but what about it?</button>
+        </div>
+        <div class="hint-container" id="hint16_1_3_container">
+          <p class="hint-text" id="hintPone16_1_2Answer"></p>
+          <button class="hint-button" id="hintPone16_1_3" onclick="hintPone16_1_3show()">I don't understand the clue</button>
+        </div>
+        <div class="hint-container" id="hint16_1_4_container">
+          <p class="hint-text" id="hintPone16_1_3Answer"></p>
+          <button class="hint-button" id="hintPone16_1_4" onclick="hintPone16_1_4show()">I still don't get it</button>
+        </div>
+        <div class="hint-container" id="hint16_1_5_container">
+          <p class="hint-text" id="hintPone16_1_4Answer"></p>
+          <button class="hint-button" id="hintPone16_1_5" onclick="hintPone16_1_5show()">Give me the solution to this puzzle</button>
+        </div>
+        <div id="hint16_1_6_container">
+          <p class="hint-text" id="hintPone16_1_5Answer"></p>
+        </div>
+        <button class="hint-button" id="hintPone16_2" onclick="hintPone16_2show()">No, I haven't opened LOC04</button>
+        <div id="hint16_2_1_container">
+          <p class="hint-text" id="hintPone16_2Answer"></p>
+        </div>
+      </div>
+      <div class="hint-container" id="hint17_container">
+        <button class="hint-button" id="hintPone17_1" onclick="hintPone17_1show()">Yes, I have card 16</button>
+        <div class="hint-container" id="hint17_1_1_container">
+          <p class="hint-text" id="hintPone17_1Answer"></p>
+          <button class="hint-button" id="hintPone17_1_1" onclick="hintPone17_1_1show()">I don't understand the clue</button>
+        </div>
+        <div class="hint-container" id="hint17_1_2_container">
+          <p class="hint-text" id="hintPone17_1_1Answer"></p>
+          <button class="hint-button" id="hintPone17_1_2" onclick="hintPone17_1_2show()">I still don't get it</button>
+        </div>
+        <div class="hint-container" id="hint17_1_3_container">
+          <p class="hint-text" id="hintPone17_1_2Answer"></p>
+          <button class="hint-button" id="hintPone17_1_3" onclick="hintPone17_1_3show()">Give me the solution to this puzzle</button>
+        </div>
+        <div id="hint17_1_4_container">
+          <p class="hint-text" id="hintPone17_1_3Answer"></p>
+        </div>
+        <button class="hint-button" id="hintPone17_2" onclick="hintPone17_2show()">No, I don't have card 16</button>
+        <div id="hint17_2_1_container">
+          <p class="hint-text" id="hintPone17_2Answer"></p>
+        </div>
+      </div>
+      <div class="hint-container" id="hint18_container">
+        <button class="hint-button" id="hintPone18_1" onclick="hintPone18_1show()">Give me the solution to this puzzle</button>
+        <div id="hint18_1_1_container">
+          <p class="hint-text" id="hintPone18_1Answer"></p>
+        </div>
+      </div>
+      <div class="hint-container" id="hint19_container">
+        <button class="hint-button" id="hintPone19_1" onclick="hintPone19_1show()">Give me the solution to this puzzle</button>
+        <div id="hint19_1_1_container">
+          <p class="hint-text" id="hintPone19_1Answer"></p>
+        </div>
+      </div>
+      <div class="hint-container" id="hint20_container">
+        <button class="hint-button" id="hintPone20_1" onclick="hintPone20_1show()">Yes, I've opened LOC05</button>
+        <div class="hint-container" id="hint20_1_1_container">
+          <p class="hint-text" id="hintPone20_1Answer"></p>
+          <button class="hint-button" id="hintPone20_1_1" onclick="hintPone20_1_1show()">OK, but what about it?</button>
+        </div>
+        <div class="hint-container" id="hint20_1_2_container">
+          <p class="hint-text" id="hintPone20_1_1Answer"></p>
+          <button class="hint-button" id="hintPone20_1_2" onclick="hintPone20_1_2show()">How do I do that?</button>
+        </div>
+        <div class="hint-container" id="hint20_1_3_container">
+          <p class="hint-text" id="hintPone20_1_2Answer"></p>
+          <button class="hint-button" id="hintPone20_1_3" onclick="hintPone20_1_3show()">I still don't know what to do</button>
+        </div>
+        <div class="hint-container" id="hint20_1_4_container">
+          <p class="hint-text" id="hintPone20_1_3Answer"></p>
+          <button class="hint-button" id="hintPone20_1_4" onclick="hintPone20_1_4show()">I still don't get it</button>
+        </div>
+        <div class="hint-container" id="hint20_1_5_container">
+          <p class="hint-text" id="hintPone20_1_4Answer"></p>
+          <button class="hint-button" id="hintPone20_1_5" onclick="hintPone20_1_5show()">I need some more help</button>
+        </div>
+        <div class="hint-container" id="hint20_1_6_container">
+          <p class="hint-text" id="hintPone20_1_5Answer"></p>
+          <button class="hint-button" id="hintPone20_1_6" onclick="hintPone20_1_6show()">I've got the password, but what now?</button>
+        </div>
+        <div class="hint-container" id="hint20_1_7_container">
+          <p class="hint-text" id="hintPone20_1_6Answer"></p>
+          <button class="hint-button" id="hintPone20_1_7" onclick="hintPone20_1_7show()">Give me the solution to this puzzle</button>
+        </div>
+        <div id="hint20_1_8_container">
+          <p class="hint-text" id="hintPone20_1_7Answer"></p>
+        </div>
+        <button class="hint-button" id="hintPone20_2" onclick="hintPone20_2show()">No, I haven't opened LOC05</button>
+        <div id="hint20_2_1_container">
+          <p class="hint-text" id="hintPone20_2Answer"></p>
+        </div>
+      </div>
+      <div class="hint-container" id="hint21_container">
+        <button class="hint-button" id="hintPone21_1" onclick="hintPone21_1show()">I have only LOC01</button>
+        <div id="hint21_1_1_container">
+          <p class="hint-text" id="hintPone21_1Answer"></p>
+        </div>
+        <button class="hint-button" id="hintPone21_2" onclick="hintPone21_2show()">I also have LOC02</button>
+        <div class="hint-container" id="hint21_2_1_container">
+          <p class="hint-text" id="hintPone21_2Answer"></p>
+          <button class="hint-button" id="hintPone21_2_1" onclick="hintPone21_2_1show()">Give me the solution to this puzzle</button>
+        </div>
+        <div id="hint21_2_2_container">
+          <p class="hint-text" id="hintPone21_2_1Answer"></p>
+        </div>
+        <button class="hint-button" id="hintPone21_3" onclick="hintPone21_3show()">I also have card 04</button>
+        <div class="hint-container" id="hint21_3_1_container">
+          <p class="hint-text" id="hintPone21_3Answer"></p>
+          <button class="hint-button" id="hintPone21_3_1" onclick="hintPone21_3_1show()">Give me the solution to this puzzle</button>
+        </div>
+        <div id="hint21_3_2_container">
+          <p class="hint-text" id="hintPone21_3_1Answer"></p>
+        </div>
+        <button class="hint-button" id="hintPone21_4" onclick="hintPone21_4show()">I also have card 24</button>
+        <div class="hint-container" id="hint21_4_1_container">
+          <p class="hint-text" id="hintPone21_4Answer"></p>
+          <button class="hint-button" id="hintPone21_4_1" onclick="hintPone21_4_1show()">I still don't get it</button>
+        </div>
+        <div class="hint-container" id="hint21_4_2_container">
+          <p class="hint-text" id="hintPone21_4_1Answer"></p>
+          <button class="hint-button" id="hintPone21_4_2" onclick="hintPone21_4_2show()">Give me the solution to this puzzle</button>
+        </div>
+        <div id="hint21_4_3_container">
+          <p class="hint-text" id="hintPone21_4_2Answer"></p>
+        </div>
+      </div>
+      <div class="hint-container" id="hint22_container">
+        <button class="hint-button" id="hintPone22_1" onclick="hintPone22_1show()">Yes, I have the password</button>
+        <div class="hint-container" id="hint22_1_1_container">
+          <p class="hint-text" id="hintPone22_1Answer"></p>
+        </div>
+        <button class="hint-button" id="hintPone22_2" onclick="hintPone22_2show()">No, how do I get the password?</button>
+        <div class="hint-container" id="hint22_2_1_container">
+          <p class="hint-text" id="hintPone22_2Answer"></p>
+          <button class="hint-button" id="hintPone22_2_1" onclick="hintPone22_2_1show()">I still don't know what to do</button>
+        </div>
+        <div class="hint-container" id="hint22_2_2_container">
+          <p class="hint-text" id="hintPone22_2_1Answer"></p>
+          <button class="hint-button" id="hintPone22_2_2" onclick="hintPone22_2_2show()">Give me the solution to this puzzle</button>
+        </div>
+        <div id="hint22_2_3_container">
+          <p class="hint-text" id="hintPone22_2_2Answer"></p>
+        </div>
+      </div>
+      <div class="hint-container" id="hint23_container">
+        <button class="hint-button" id="hintPone23_1" onclick="hintPone23_1show()">I don't have LOC06 or LOC07</button>
+        <div id="hint23_1_1_container">
+          <p class="hint-text" id="hintPone23_1Answer"></p>
+        </div>
+        <button class="hint-button" id="hintPone23_2" onclick="hintPone23_2show()">I have LOC06</button>
+        <div class="hint-container" id="hint23_2_1_container">
+          <p class="hint-text" id="hintPone23_2Answer"></p>
+          <button class="hint-button" id="hintPone23_2_1" onclick="hintPone23_2_1show()">Give me the solution to this puzzle</button>
+        </div>
+        <div id="hint23_2_2_container">
+          <p class="hint-text" id="hintPone23_2_1Answer"></p>
+        </div>
+        <button class="hint-button" id="hintPone23_3" onclick="hintPone23_3show()">I also have LOC07</button>
+        <div class="hint-container" id="hint23_3_1_container">
+          <p class="hint-text" id="hintPone23_3Answer"></p>
+          <button class="hint-button" id="hintPone23_3_1" onclick="hintPone23_3_1show()">Give me the solution to this puzzle</button>
+        </div>
+        <div id="hint23_3_2_container">
+          <p class="hint-text" id="hintPone23_3_1Answer"></p>
+        </div>
+      </div>
+      <div class="hint-container" id="hint24_container">
+        <button class="hint-button" id="hintPone24_1" onclick="hintPone24_1show()">Yes, I have the address of the mural</button>
+        <div class="hint-container" id="hint24_1_1_container">
+          <p class="hint-text" id="hintPone24_1Answer"></p>
+          <button class="hint-button" id="hintPone24_1_1" onclick="hintPone24_1_1show()">I still don't know what to do</button>
+        </div>
+        <div class="hint-container" id="hint24_1_2_container">
+          <p class="hint-text" id="hintPone24_1_1Answer"></p>
+          <button class="hint-button" id="hintPone24_1_2" onclick="hintPone24_1_2show()">Give me the solution to this puzzle</button>
+        </div>
+        <div id="hint24_1_3_container">
+          <p class="hint-text" id="hintPone24_1_2Answer"></p>
+        </div>
+        <button class="hint-button" id="hintPone24_2" onclick="hintPone24_2show()">No, I don't have the address of the mural</button>
+        <div id="hint24_2_1_container">
+          <p class="hint-text" id="hintPone24_2Answer"></p>
+        </div>
+      </div>
+      <div class="hint-container" id="hint25_container">
+        <button class="hint-button" id="hintPone25_1" onclick="hintPone25_1show()">I only have LOC01</button>
+        <div class="hint-container" id="hint25_1_1_container">
+          <p class="hint-text" id="hintPone25_1Answer"></p>
+          <button class="hint-button" id="hintPone25_1_1" onclick="hintPone25_1_1show()">I still don't know what to do</button>
+        </div>
+        <div class="hint-container" id="hint25_1_2_container">
+          <p class="hint-text" id="hintPone25_1_1Answer"></p>
+          <button class="hint-button" id="hintPone25_1_2" onclick="hintPone25_1_2show()">Give me the solution to this puzzle</button>
+        </div>
+        <div id="hint25_1_3_container">
+          <p class="hint-text" id="hintPone25_1_2Answer"></p>
+        </div>
+        <button class="hint-button" id="hintPone25_2" onclick="hintPone25_2show()">I also have LOC02</button>
+        <div id="hint25_2_1_container">
+          <p class="hint-text" id="hintPone25_2Answer"></p>
+        </div>
+        <button class="hint-button" id="hintPone25_3" onclick="hintPone25_3show()">I also have LOC03</button>
+        <div class="hint-container" id="hint25_3_1_container">
+          <p class="hint-text" id="hintPone25_3Answer"></p>
+          <button class="hint-button" id="hintPone25_3_1" onclick="hintPone25_3_1show()">I still don't know what to do</button>
+        </div>
+        <div class="hint-container" id="hint25_3_2_container">
+          <p class="hint-text" id="hintPone25_3_1Answer"></p>
+          <button class="hint-button" id="hintPone25_3_2" onclick="hintPone25_3_2show()">Give me the solution to this puzzle</button>
+        </div>
+        <div id="hint25_3_3_container">
+          <p class="hint-text" id="hintPone25_3_2Answer"></p>
+        </div>
+      </div>
+      <div class="hint-container" id="hint26_container">
+        <button class="hint-button" id="hintPone26_1" onclick="hintPone26_1show()">Give me the solution to this puzzle</button>
+        <div id="hint26_1_1_container">
+          <p class="hint-text" id="hintPone26_1Answer"></p>
+        </div>
+      </div>
+      <div class="hint-container" id="hint27_container">
+        <button class="hint-button" id="hintPone27_1" onclick="hintPone27_1show()">Yes, I've opened LOC05</button>
+        <div class="hint-container" id="hint27_1_1_container">
+          <p class="hint-text" id="hintPone27_1Answer"></p>
+          <button class="hint-button" id="hintPone27_1_1" onclick="hintPone27_1_1show()">I still don't know what to do</button>
+        </div>
+        <div class="hint-container" id="hint27_1_2_container">
+          <p class="hint-text" id="hintPone27_1_1Answer"></p>
+          <button class="hint-button" id="hintPone27_1_2" onclick="hintPone27_1_2show()">Give me the solution to this puzzle</button>
+        </div>
+        <div id="hint27_1_3_container">
+          <p class="hint-text" id="hintPone27_1_2Answer"></p>
+        </div>
+        <button class="hint-button" id="hintPone27_2" onclick="hintPone27_2show()">No, I haven't opened LOC05</button>
+        <div id="hint27_2_1_container">
+          <p class="hint-text" id="hintPone27_2Answer"></p>
+        </div>
+      </div>
+      <div class="hint-container" id="hint28_container">
+        <button class="hint-button" id="hintPone28_1" onclick="hintPone28_1show()">I still don't know what to do</button>
+        <div class="hint-container" id="hint28_1_1_container">
+          <p class="hint-text" id="hintPone28_1Answer"></p>
+          <button class="hint-button" id="hintPone28_1_1" onclick="hintPone28_1_1show()">Give me the solution to this puzzle</button>
+        </div>
+        <div id="hint28_1_2_container">
+          <p class="hint-text" id="hintPone28_1_1Answer"></p>
+        </div>
+      </div>
+      <div class="hint-container" id="hint29_container">
+        <button class="hint-button" id="hintPone29_1" onclick="hintPone29_1show()">Yes, I've opened LOC02</button>
+        <div class="hint-container" id="hint29_1_1_container">
+          <p class="hint-text" id="hintPone29_1Answer"></p>
+          <button class="hint-button" id="hintPone29_1_1" onclick="hintPone29_1_1show()">I still don't know what to do</button>
+        </div>
+        <div class="hint-container" id="hint29_1_2_container">
+          <p class="hint-text" id="hintPone29_1_1Answer"></p>
+          <button class="hint-button" id="hintPone29_1_2" onclick="hintPone29_1_2show()">Give me the solution to this puzzle</button>
+        </div>
+        <div id="hint29_1_3_container">
+          <p class="hint-text" id="hintPone29_1_2Answer"></p>
+        </div>
+        <button class="hint-button" id="hintPone29_2" onclick="hintPone29_2show()">No, I haven't opened LOC02</button>
+        <div id="hint29_2_1_container">
+          <p class="hint-text" id="hintPone29_2Answer"></p>
+        </div>
+      </div>
+      <div class="hint-container" id="hint30_container">
+        <button class="hint-button" id="hintPone30_1" onclick="hintPone30_1show()">I don't know what to ask Peter</button>
+        <div class="hint-container" id="hint30_1_1_container">
+          <p class="hint-text" id="hintPone30_1Answer"></p>
+          <button class="hint-button" id="hintPone30_1_1" onclick="hintPone30_1_1show()">I still don't know what to do</button>
+        </div>
+        <div class="hint-container" id="hint30_1_2_container">
+          <p class="hint-text" id="hintPone30_1_1Answer"></p>
+          <button class="hint-button" id="hintPone30_1_2" onclick="hintPone30_1_2show()">Give me the solution to this puzzle</button>
+        </div>
+        <div id="hint30_1_3_container">
+          <p class="hint-text" id="hintPone30_1_2Answer"></p>
+        </div>
+      </div>
+      <div class="hint-container" id="hint31_container">
+        <button class="hint-button" id="hintPone31_1" onclick="hintPone31_1show()">I still don't know what to do</button>
+        <div class="hint-container" id="hint31_1_1_container">
+          <p class="hint-text" id="hintPone31_1Answer"></p>
+          <button class="hint-button" id="hintPone31_1_1" onclick="hintPone31_1_1show()">Give me the solution to this puzzle</button>
+        </div>
+        <div id="hint31_1_2_container">
+          <p class="hint-text" id="hintPone31_1_1Answer"></p>
+        </div>
+      </div>
+      <div class="hint-container" id="hint32_container">
+        <button class="hint-button" id="hintPone32_1" onclick="hintPone32_1show()">Give me the solution to this puzzle</button>
+        <div id="hint32_1_1_container">
+          <p class="hint-text" id="hintPone32_1Answer"></p>
+        </div>
+      </div>
+      <div class="hint-container" id="hint33_container">
+        <button class="hint-button" id="hintPone33_1" onclick="hintPone33_1show()">Give me the solution to this puzzle</button>
+        <div id="hint33_1_1_container">
+          <p class="hint-text" id="hintPone33_1Answer"></p>
+        </div>
+      </div>
+      <div class="hint-container" id="hint34_container">
+        <button class="hint-button" id="hintPone34_1" onclick="hintPone34_1show()">Give me the solution to this puzzle</button>
+        <div id="hint34_1_1_container">
+          <p class="hint-text" id="hintPone34_1Answer"></p>
+        </div>
+      </div>
+      <div class="hint-container" id="hint35_container">
+        <button class="hint-button" id="hintPone35_1" onclick="hintPone35_1show()">Yes, I've opened LOC03</button>
+        <div class="hint-container" id="hint35_1_1_container">
+          <p class="hint-text" id="hintPone35_1Answer"></p>
+          <button class="hint-button" id="hintPone35_1_1" onclick="hintPone35_1_1show()">I still don't know what to do</button>
+        </div>
+        <div class="hint-container" id="hint35_1_2_container">
+          <p class="hint-text" id="hintPone35_1_1Answer"></p>
+          <button class="hint-button" id="hintPone35_1_2" onclick="hintPone35_1_2show()">Give me the solution to this puzzle</button>
+        </div>
+        <div id="hint35_1_3_container">
+          <p class="hint-text" id="hintPone35_1_2Answer"></p>
+        </div>
+        <button class="hint-button" id="hintPone35_2" onclick="hintPone35_2show()">No, I haven't opened LOC03</button>
+        <div id="hint35_2_1_container">
+          <p class="hint-text" id="hintPone35_2Answer"></p>
+        </div>
+      </div>
+      <div class="hint-container" id="hint36_container">
+        <button class="hint-button" id="hintPone36_1" onclick="hintPone36_1show()">Give me the solution to this puzzle</button>
+        <div id="hint36_1_1_container">
+          <p class="hint-text" id="hintPone36_1Answer"></p>
+        </div>
+      </div>
+      <div class="hint-container" id="hint37_container">
+        <button class="hint-button" id="hintPone37_1" onclick="hintPone37_1show()">Yes, I've opened LOC03</button>
+        <div class="hint-container" id="hint37_1_1_container">
+          <p class="hint-text" id="hintPone37_1Answer"></p>
+          <button class="hint-button" id="hintPone37_1_1" onclick="hintPone37_1_1show()">I still don't know what to do</button>
+        </div>
+        <div class="hint-container" id="hint37_1_2_container">
+          <p class="hint-text" id="hintPone37_1_1Answer"></p>
+          <button class="hint-button" id="hintPone37_1_2" onclick="hintPone37_1_2show()">Give me the solution to this puzzle</button>
+        </div>
+        <div id="hint37_1_3_container">
+          <p class="hint-text" id="hintPone37_1_2Answer"></p>
+        </div>
+        <button class="hint-button" id="hintPone37_2" onclick="hintPone37_2show()">No, I haven't opened LOC03</button>
+        <div id="hint37_2_1_container">
+          <p class="hint-text" id="hintPone37_2Answer"></p>
+        </div>
+      </div>
+      <div class="hint-container" id="hint38_container">
+        <button class="hint-button" id="hintPone38_1" onclick="hintPone38_1show()">Give me the solution to this puzzle</button>
+        <div id="hint38_1_1_container">
+          <p class="hint-text" id="hintPone38_1Answer"></p>
+        </div>
+      </div>
+      <div class="hint-container" id="hint39_container">
+        <button class="hint-button" id="hintPone39_1" onclick="hintPone39_1show()">Yes, I've opened LOC04</button>
+        <div class="hint-container" id="hint39_1_1_container">
+          <p class="hint-text" id="hintPone39_1Answer"></p>
+          <button class="hint-button" id="hintPone39_1_1" onclick="hintPone39_1_1show()">Give me the solution to this puzzle</button>
+        </div>
+        <div id="hint39_1_2_container">
+          <p class="hint-text" id="hintPone39_1_1Answer"></p>
+        </div>
+        <button class="hint-button" id="hintPone39_2" onclick="hintPone39_2show()">No, how do I open LOC04?</button>
+        <div class="hint-container" id="hint39_2_1_container">
+          <p class="hint-text" id="hintPone39_2Answer"></p>
+          <button class="hint-button" id="hintPone39_2_1" onclick="hintPone39_2_1show()">Give me the solution to this puzzle</button>
+        </div>
+        <div id="hint39_2_2_container">
+          <p class="hint-text" id="hintPone39_2_1Answer"></p>
+        </div>
+      </div>
+      <div class="hint-container" id="hint41_container">
+        <button class="hint-button" id="hintPone41_1" onclick="hintPone41_1show()">Give me the solution to this puzzle</button>
+        <div id="hint41_1_1_container">
+          <p class="hint-text" id="hintPone41_1Answer"></p>
+        </div>
+      </div>
+      <div class="hint-container" id="hint42_container">
+        <button class="hint-button" id="hintPone42_1" onclick="hintPone42_1show()">No, I haven't opened LOC04</button>
+        <div class="hint-container" id="hint42_1_1_container">
+          <p class="hint-text" id="hintPone42_1Answer"></p>
+          <button class="hint-button" id="hintPone42_1_1" onclick="hintPone42_1_1show()">Give me the solution to this puzzle</button>
+        </div>
+        <div class="hint-container" id="hint42_1_2_container">
+          <p class="hint-text" id="hintPone42_1_1Answer"></p>
+        </div>
+        <button class="hint-button" id="hintPone42_2" onclick="hintPone42_2show()">Yes, I have opened LOC04</button>
+        <div class="hint-container" id="hint42_2_1_container">
+          <p class="hint-text" id="hintPone42_2Answer"></p>
+          <button class="hint-button" id="hintPone42_2_1" onclick="hintPone42_2_1show()">Give me the solution to this puzzle</button>
+        </div>
+        <div id="hint42_2_2_container">
+          <p class="hint-text" id="hintPone42_2_1Answer"></p>
+        </div>
+      </div>
+      <div class="hint-container" id="hint43_container">
+        <button class="hint-button" id="hintPone43_1" onclick="hintPone43_1show()">I don't know what you're talking about</button>
+        <div class="hint-container" id="hint43_1_1_container">
+          <p class="hint-text" id="hintPone43_1Answer"></p>
+          <button class="hint-button" id="hintPone43_1_1" onclick="hintPone43_1_1show()">How do I do that?</button>
+        </div>
+        <div class="hint-container" id="hint43_1_2_container">
+          <p class="hint-text" id="hintPone43_1_1Answer"></p>
+          <button class="hint-button" id="hintPone43_1_2" onclick="hintPone43_1_2show()">I still don't know what to do</button>
+        </div>
+        <div class="hint-container" id="hint43_1_3_container">
+          <p class="hint-text" id="hintPone43_1_2Answer"></p>
+          <button class="hint-button" id="hintPone43_1_3" onclick="hintPone43_1_3show()">I still don't get it</button>
+        </div>
+        <div class="hint-container" id="hint43_1_4_container">
+          <p class="hint-text" id="hintPone43_1_3Answer"></p>
+          <button class="hint-button" id="hintPone43_1_4" onclick="hintPone43_1_4show()">I need some more help</button>
+        </div>
+        <div class="hint-container" id="hint43_1_5_container">
+          <p class="hint-text" id="hintPone43_1_4Answer"></p>
+          <button class="hint-button" id="hintPone43_1_5" onclick="hintPone43_1_5show()">I've got the password, but what now?</button>
+        </div>
+        <div class="hint-container" id="hint43_1_6_container">
+          <p class="hint-text" id="hintPone43_1_5Answer"></p>
+          <button class="hint-button" id="hintPone43_1_6" onclick="hintPone43_1_6show()">Give me the solution to this puzzle</button>
+        </div>
+        <div id="hint43_1_7_container">
+          <p class="hint-text" id="hintPone43_1_6Answer"></p>
+        </div>
       </div>
     </div>
   </div>
