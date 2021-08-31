@@ -22,11 +22,11 @@ function bookPthreeFunction() {
   "Hmmm...no, I don't think that's it."
 ];
   var answerthree;
-  } else if (z == "03") {
+  if (z == "03") {
   		answerthree = "The vent is to high for me to reach it.";
       hidePthreeElements();
   } else if (z == "06") {
-  		answerthree = "The replacement chair that I asked for. <br><i>Take cards <b>17</b> and <b>19</b>. Remove card <b>06</b>.</i>";
+  		answerthree = "The replacement chair Marina ordered for me. <br><i>Take cards <b>17</b> and <b>19</b>. Remove card <b>06</b>.</i>";
       hidePthreeElements();
   } else if (z == "07") {
   		answerthree = "The keycard that opens the doors in the staff quarters.<br><i>To use the card, enter the keycard card's number, followed by the number of the door you want to open in the Digital Game Book input field, separated by a comma. For example, if you want to open door D01, enter '07,D01' in the Digital Game Book input field and press enter.</i>";
@@ -37,8 +37,11 @@ function bookPthreeFunction() {
   } else if (z == "11") {
   		answerthree = "A classic pocket knife I found hidden under the chair seat cushion.";
       hidePthreeElements();
+  } else if (z == "12") {
+  		answerthree = "Marina, the security guard that's in charge of guarding the door of the room they keep me in. She likes to speak about herself. And she loves her Rubik's cube, she's very proud of how quickly she can solve it. I guess she's bored with standing here as much as I am.";
+      hidePthreeElements();
   } else if (z == "14") {
-  		answerthree = "<i>I sit on the chair and...AAAAA! It breaks! As I fall on the floor and fortunately don't hurt myself a lot, I notice a pocket knife that was hidden under the chair seat cushion. <br>Marina notices what happened and, after asking am I OK, immediately calls somebody to ask for a new chair to be delivered.</i> 'We may be holding you here against your will, but you should at least have a decent chair. They will deliver it shortly.'<i>, she says. <br>Take card <b>11</b>. Remove card <b>14</b>.</i>";
+  		answerthree = "<i>I sit on the chair and...AAAAA! It breaks! As I fall on the floor and fortunately don't hurt myself a lot, I find a pocket knife that was hidden under the chair seat cushion. <br>Marina notices what happened and, after asking am I OK, immediately calls somebody to ask for a new chair to be delivered.</i> 'We may be holding you here against your will, but you should at least have a decent chair. They will deliver it shortly.'<i>, she says. <br>Take card <b>11</b>. Remove card <b>14</b>.</i>";
       hidePthreeElements();
   } else if (z == "16") {
   		answerthree = "The vent is closed shut. Two screws are holding the cover.";
@@ -52,8 +55,8 @@ function bookPthreeFunction() {
   } else if (z == "24") {
   		answerthree = "The platform trolley they used to deliver the box with the chair is still here in the hallway.";
       hidePthreeElements();
-  } else if (z == "12") {
-  		answerthree = "Marina, the security guard that's in charge of guarding the door of the room they keep me in. She likes to speak about herself. An she loves her Rubik's cube, she's very proud of how quickly she can solve it. I guess she's bored with standing here as much as I am.";
+  } else if (z == "28") {
+  		answerthree = "This must look ridiculous, but now I can both see and move around.";
       hidePthreeElements();
   } else if (z == "31") {
   		answerthree = "Marina, a security guard who works for the PEI.";
@@ -70,20 +73,14 @@ function bookPthreeFunction() {
   } else if (z == "39") {
   		answerthree = "The box is just big enough for me to fit in it.";
       hidePthreeElements();
-  } else if (z == "41") {
-  		answerthree = "Cut out words are now stuck to the empty box. It looks authentic enough.";
-      hidePthreeElements();
-  } else if (z == "42") {
-  		answerthree = "This must look ridiculous, but now I can both see and move around.";
-      hidePthreeElements();
   } else if (z == "LOC04") {
-  		answerthree = "The Lakis have kept me in this room since they kidnapped me. There's almost nothing here. An old chair <b>14</b>, an even older table, a bed, an emply closet and an air vent <b>03</b> that brings oxygen into this windowless prison. The woman that guards my door, Marina <b>12</b>, is turning her Rubik's cube, which seems to be the thing she enjoys the most.";
+  		answerthree = "The Lakis have kept me in this room since they kidnapped me. There's almost nothing here. An old chair <b>(14)</b>, an even older table, a bed, an emply closet and an air vent <b>(03)</b> that brings oxygen into this windowless prison. The woman that guards my door, Marina <b>(12)</b>, is turning her Rubik's cube, which seems to be the thing she enjoys the most.";
       hidePthreeElements();
   } else if (z == "LOC05") {
-      answerthree = "The hallway is empty, fortunately. The platform trolley <b>24</b> my chair was brought on is still there.";
+      answerthree = "The hallway is empty, fortunately. The platform trolley <b>(24)</b> my chair was brought on is still there.";
       hidePthreeElements();
   } else if (z == "LOC06") {
-      answerthree = "Marina <b>31</b> is here, still occupied with her Rubik's cube. The system remote controller <b>SPO05</b>, <b>SPO06</b> is lying on the desk behind her.";
+      answerthree = "Marina <b>(31)</b> is here, still occupied with her Rubik's cube. The system remote controller <b>(SPO05)</b>, <b>(SPO06)</b> is lying on the desk behind her.";
       hidePthreeElements();
   } else if (z == "SPO05") {
       answerthree = "This is the remote controller for the security system of the floor. The front side of the remote controller has buttons for some of the standard functions. However, I don't see a button for opening the doors on the floor.";
@@ -139,6 +136,9 @@ function bookPthreeFunction() {
   } else if (z == "33,24") {
       answerthree = "The person who delivered the chair left the platform trolley in the hallway.";
       hidePthreeElements();
+  } else if (z == "33,28") {
+      answerthree = "I wish that my escape was a bit more elegant, but what can we do.";
+      hidePthreeElements();
   } else if (z == "33,31") {
       answerthree = "Marina is still occupied with the cube. I wonder how long will it take for her to figure out what I did.";
       hidePthreeElements();
@@ -149,16 +149,10 @@ function bookPthreeFunction() {
       answerthree = "I have to figure out how to escape from here, but also what to do about the Lakis secret attack on Earth.";
       hidePthreeElements();
   } else if (z == "33,36" || z == "36,33") {
-      answerthree = "Here we go.<br><i>I enter the box, and I fit perfectly. All those years of yoga have done miracles on my flexibility. I wait there for around 5 minutes, when I hear somebody walking in the hallway. They take the trolley and bring it to another room.<br></i> There is something for you, Marina! Don't let me bother you, I'll just leave it here, by the other desk. And please call somebody from the delivery to take the trolley. What's with this department, leaving packages in the middle of the hallway like that?<i>I hear them say. So, I guess I'm in the security control room. The problem is I don't see anything!<br>Take card <b>39</b>. Remove card <b>36</b>.</i>";
+      answerthree = "Hopefully this will take me somewhere where I could have a better chance of escape. It's a risk, but I don't have any other choice, really.<br><i>I enter the box, and I fit perfectly. All those years of yoga have done miracles on my flexibility. I wait there for around 5 minutes, when I hear somebody walking in the hallway. They take the trolley and bring it to another room.<br></i> There is something for you, Marina! Don't let me bother you, I'll just leave it here, by the other desk. And please call somebody from the delivery to take the trolley. What's with this department, leaving packages in the middle of the hallway like that?<i>I hear them say. The problem is I don't see anything!<br>Take card <b>39</b>. Remove card <b>36</b>.</i>";
       hidePthreeElements();
   } else if (z == "33,39") {
       answerthree = "This is super uncomfortable, but I hope it won't last long.";
-      hidePthreeElements();
-  } else if (z == "33,41") {
-      answerthree = "There we go! A package for security control room.";
-      hidePthreeElements();
-  } else if (z == "33,42") {
-      answerthree = "I wish that my escape was more elegant, but what can we do.";
       hidePthreeElements();
   } else if (z == "33,LOC04") {
       answerthree = "Will I ever get out of here? Marina says they held the guy that was here before me for 4 months. And then he...dissapeared.";
@@ -215,19 +209,16 @@ function bookPthreeFunction() {
       answerthree = "I should be able to unscrew the vent cover with the pocket knife.<br><i>As I remove the screws and open the air vent, I see a pretty little rat carrying a keycard.</i><br>Ziggy, this must be your doing. Which means that you're definitely here!<br><i>I use the keycard on the door and step into the hallway.<br>Take cards <b>07</b> and <b>LOC05</b>. Remove cards <b>16</b> and <b>LOC04</b> (but keep the other cards from the location on the table).</i>";
       hidePthreeElements();
   } else if (z == "11,39" || z == "39,11") {
-      answerthree = "If I cut out a few holes in the box, I could orientate myself a bit better.<br><i>I quietly cut out a tiny hole in front of me. I see Marina sitting with her back facing me. She's still completely into solving her Rubik's cube. I cut out a couple more holes in the box.<br>Take cards <b>42</b> and <b>LOC06</b>. Remove cards <b>11</b>, <b>39</b> and <b>LOC05</b>.</i>";
+      answerthree = "If I cut out a few holes in the box, I could orientate myself a bit better.<br><i>I quietly cut out a tiny hole in front of me. I see Marina sitting with her back facing me. She's still completely into solving her Rubik's cube. I cut out a couple more holes in the box.<br>Take cards <b>28</b> and <b>LOC06</b>. Remove cards <b>11</b>, <b>39</b> and <b>LOC05</b>.</i>";
       hidePthreeElements();
   } else if (z == "17,19" || z == "19,17" || z == "19,41" || z == "19,36" || z == "41,19" || z == "36,19") {
       answerthree = "I just took the chair out of the box. Why would I want to put it back?";
       hidePthreeElements();
   } else if (z == "17,24" || z == "24,17") {
-      answerthree = "It's a good idea, but I have to decorate the box a little bit before this.";
-      hidePthreeElements();
-  } else if (z == "24,41" || z == "41,24") {
-      answerthree = "Hopefully this will make somebody bring the box to the security control room.<br><i>Take card <b>36</b>. Remove cards <b>24</b> and <b>41</b>.</i>";
+      answerthree = "There we go! Ready for delivery.<br><i>Take card <b>36</b>. Remove cards <b>17</b> and <b>24</b>.</i>";
       hidePthreeElements();
   } else if (z == "SPO06,14,26,16,20" || z == "SPO06,14261620") {
-      answerthree = "This should open the doors on the floor, and allow both me and Ziggy to escape.<br>I press the buttons on the controller, and it works. I move the trolley to the doors oposite from the one that I entered from, still with myself in the box, as quietly as possible. I try to slide the door, and it opens easily. Alright! Ziggy, I hope you're watching where I'm going now. Come meet me!<br><i>Return cards <b>31</b> and <b>33</b> to the character/object deck.<br>Take map parts <b>MAP07</b>, <b>MAP08</b> and <b>MAP09</b>, and place them above the map parts you already have, on their right places. <br>Remove cards <b>07</b>, <b>42</b>, <b>SPO05</b>, <b>SPO06</b> and <b>LOC06</b>.</i>";
+      answerthree = "This should open the doors on the floor, and allow both me and Ziggy to escape.<br>I press the buttons on the controller, and it works. I move the trolley to the doors oposite from the one that I entered from, still with myself in the box, as quietly as possible. I try to slide the door, and it opens easily. Alright! Ziggy, I hope you're watching where I'm going now. Come meet me!<br><i>Return cards <b>31</b> and <b>33</b> to the character/object deck.<br>Take map parts <b>MAP07</b>, <b>MAP08</b> and <b>MAP09</b>, and place them above the map parts you already have, on their right places. <br>Remove cards <b>07</b>, <b>28</b>, <b>SPO05</b>, <b>SPO06</b> and <b>LOC06</b>.</i>";
       document.getElementById("clickToBridge").style.display = "block";
   } else if (z == "D05" || z == "D07" || z == "D09" || z == "D11" || z == "D17" || z == "D18" || z == "D19" || z == "D20" || z == "D21") {
       answerthree = "I can't pass the door without the keycard.<br><i>If you have the keycard use it to open the door. To do that, enter the keycard card's number, followed by the number of the door you want to open in the Digital Game Book input field, separated by a comma. For example, if you want to open door D01, enter '07,D01' in the Digital Game Book input field and press enter.</i>";

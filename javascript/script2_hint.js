@@ -341,7 +341,7 @@ function hintPtwoFunction() {
       document.getElementById("hintPtwo19_1").style.display = "block";
       document.getElementById("hintPtwo19_2").style.display = "block";
   } else if (yhint == "20") {
-  		hintanswertwo = "Did you open LOC06?";
+  		hintanswertwo = "Have you opened LOC06?";
       hidePtwoHints();
       document.getElementById("hint20_container").style.display = "block";
       document.getElementById("hintPtwo20_1").style.display = "block";
@@ -349,7 +349,7 @@ function hintPtwoFunction() {
   } else if (yhint == "21") {
   		hintanswertwo = "The newspaper has indentations on the second page. Can you do something to make them more visible?";
       hidePtwoHints();
-      document.getElementById("hint18_container").style.display = "block";
+      document.getElementById("hint21_container").style.display = "block";
   } else if (yhint == "22") {
   		hintanswertwo = "Have you opened LOC10?";
       hidePtwoHints();

@@ -36,7 +36,7 @@ function bookPthreeFunction() {
   if (z == "01") {
   		answerthree = "I'm not sure I'm completely prepared for all of this, but I guess that there's no turning back now.";
       hidePthreeElements();
-  } else if (z == "05" || z == "40") {
+  } else if (z == "05" || z == "34") {
   		answerthree = "A scientist working in the lab.";
       hidePthreeElements();
   } else if (z == "07") {
@@ -47,9 +47,6 @@ function bookPthreeFunction() {
       hidePthreeElements();
   } else if (z == "10") {
   		answerthree = "A very cute white lab rat.";
-      hidePthreeElements();
-  } else if (z == "21" || z == "25" || z == "29") {
-  		answerthree = "One of the scientists on the lab team photo.";
       hidePthreeElements();
   } else if (z == "13") {
   		answerthree = "Agent 27 who works for the PEI. I'm currently wearing his face.";
@@ -62,6 +59,9 @@ function bookPthreeFunction() {
       hidePthreeElements();
   } else if (z == "20" || z == "38") {
   		answerthree = "A scientist eating his lunch in the common area.";
+      hidePthreeElements();
+  } else if (z == "21" || z == "25" || z == "29") {
+  		answerthree = "One of the scientists on the lab team photo.";
       hidePthreeElements();
   } else if (z == "22") {
   		answerthree = "There is a drawing of the PEI floor plan on the wall. But, before I get to take a good look, the CEO makes me sit across from him and turn my back to the plan.";
@@ -82,16 +82,16 @@ function bookPthreeFunction() {
   		answerthree = "I guess this is my new ability. I have to only think of somebody and I immediately see what this person is seeing. I promise to only use it in emergencies like this one.<br><i>To use this ability, enter ability card number <b>37</b> followed by the card number of the person whose eyes you want to see through in the Digital Game Book input field, separated by a comma.</i>";
       hidePthreeElements();
   } else if (z == "LOC01") {
-  		answerthree = "There is nobody in the entrance hall. The only interesting thing I spot in there is a group photo <b>SPO01</b> on the wall. I move along to the common area, and I see a scientist <b>20</b> sitting at one of the tables, eating his lunch.";
+  		answerthree = "There is nobody in the entrance hall. The only interesting thing I spot in there is a group photo <b>(SPO01)</b> on the wall. I move along to the common area, and I see a scientist <b>(20)</b> sitting at one of the tables, eating his lunch.";
       hidePthreeElements();
   } else if (z == "LOC02") {
-      answerthree = "The laboratory door is open, fortunately. There is a scientist <b>05</b> working there. A white lab rat <b>10</b> seems bored sitting in it's cage. A big poster of periodic table of elements <b>SPO02</b> is on the wall. A locker <b>SPO03</b> with 5 compartments is in the corner of the room.";
+      answerthree = "The laboratory door is open, fortunately. There is a scientist <b>(05)</b> working there. A white lab rat <b>(10)</b> seems bored sitting in it's cage. A big poster of periodic table of elements <b>(SPO02)</b> is on the wall. A locker <b>(SPO03)</b> with 5 compartments is in the corner of the room.";
       hidePthreeElements();
   } else if (z == "LOC03") {
-      answerthree = "CEO's office isn't as fancy as I would have imagined. The CEO <b>18</b> doesn't look very happy. There is a floor plan <b>22<b> on the wall that I noticed when I entered the office, but it's behind my back now.";
+      answerthree = "CEO's office isn't as fancy as I would have imagined. The CEO <b>(18)</b> doesn't look very happy. There is a floor plan <b>22<b> on the wall that I noticed when I entered the office, but it's behind my back now.";
       hidePthreeElements();
   } else if (z == "SPO01") {
-      answerthree = "What a happy collective! The lab team photo shows five people. <br><i>Take cards <b>21</b>, <b>25<b> and <b>29</b>. The other two scientists you see on the photo are somewhere in the building.";
+      answerthree = "What a happy collective! The lab team photo shows five people. <br><i>Take cards <b>21</b>, <b>25</b> and <b>29</b>. The other two scientists you see on the photo are somewhere in the building.";
       hidePthreeElements();
   } else if (z == "SPO02") {
       answerthree = "A periodic table of elements, showing elements symbols with their according atomic numbers above.";
@@ -105,7 +105,7 @@ function bookPthreeFunction() {
   } else if (z == "01,01") {
       answerthree = "This is by far the most dangerous part of my quest of saving my mother. But I have to go through with it!";
       hidePthreeElements();
-  } else if (z == "01,05" || z == "01,40") {
+  } else if (z == "01,05" || z == "01,34") {
       answerthree = "The scientist seems very busy, but keeps an open eye on my every movement nonetheless.";
       hidePthreeElements();
   } else if (z == "01,07") {
@@ -254,7 +254,7 @@ function bookPthreeFunction() {
       answerthree = "She's very dark, that one. She even painted her locker compartment dark, did you notice?";
       hidePthreeElements();
   } else if (z == "20,29") {
-      answerthree = "Just a type of person you can rely on, really careful. The only one of us who leaves their keycard in their locker compartment when they go out on a break, like we're supposed to. Oh...please don't say this to the boss! He's not happy with the lab team already, I don't want him to think that we're not following the security orders as well.";
+      answerthree = "Just a type of person you can rely on, really careful. The only one of us who leaves their keycard in their locker compartment when he goes out on a break, like we're supposed to. Oh...please don't say this to the boss! He's not happy with the lab team already, I don't want him to think that we're not following the security orders as well.";
       hidePthreeElements();
   } else if (z == "20,LOC01") {
       answerthree = "I prefer to take my break here. I believe that most of the others went out for lunch.";
@@ -290,10 +290,10 @@ function bookPthreeFunction() {
       answerthree = "Even if I could manage to throw the keycard right into the air vent, I don't think that that would do any good.";
       hidePthreeElements();
   } else if (z == "07,30" || z == "30,07") {
-      answerthree = "Take it, my secret partner!<br><i>I carefully give the keycard to the rat, taking care that the CEO doesn't notice anything. Luckily, he is so into his speech of criticizing me that he doesn't see anything.<br>Take card <b>15</b>. Return card <b>07</b> in the characters/objects deck, you will need it later. Remove card <b>30</b>.";
+      answerthree = "Take it, my secret partner!<br><i>I carefully give the keycard to the rat, taking care that the CEO doesn't notice anything. Luckily, he is so into his speech of criticizing me that he doesn't pay much attention to what I'm doing.<br>Take card <b>15</b>. Return card <b>07</b> in the characters/objects deck, you will need it later. Remove card <b>30</b>.";
       hidePthreeElements();
   } else if (z == "08,10" || z == "10,08") {
-      answerthree = "I hope you don't mind helping me for a bit, my little friend!<br><i>The rat is actually happy to communicate with somebody else than the lab team that's been doing experiments on him for weeks.<br>Take card <b>30</b>. Remove card <b>10</b>.";
+      answerthree = "I hope you don't mind helping me for a bit, my little friend!<br><i>The rat is actually happy to communicate with somebody else other than the lab team that's been doing experiments on him for weeks.<br>Take card <b>30</b>. Remove card <b>10</b>.";
       hidePthreeElements();
   } else if (z == "08,30" || z == "30,08") {
       answerthree = "The rat is alredy helping me. I don't have to use my power again on him.";
@@ -333,7 +333,7 @@ function bookPthreeFunction() {
       answerthree = "It's a good idea, but I won't send him into the air vent empty handed.";
       hidePthreeElements();
   } else if (z == "37,18") {
-      answerthree = "I see myself as the CEO sees me. A strange feeling, really. But I also get to get a good look on the map right behind my back. And there is something else that catches my eye, in CEO's peripheral vision. A half opened air vent.<br><i>Take card <b>27</b> and map parts <b>MAP04</b>, <b>MAP05</b> and <b>MAP06</b> and put them on the right places next to tha map parts already on the table. Remove card <b>22</b>.</b>";
+      answerthree = "I see myself as the CEO sees me. A strange feeling, really. But I also get to take a good look on the map right behind my back. And there is something else that catches my eye, in CEO's peripheral vision. A half opened air vent.<br><i>Take card <b>27</b> and map parts <b>MAP04</b>, <b>MAP05</b> and <b>MAP06</b> and put them on the right places next to tha map parts already on the table. Remove card <b>22</b>.</b>";
       hidePthreeElements();
   } else if (z == "37,05") {
       answerthree = "She's still working. As much as I would like to observe what are they doing in the laboratory, I don't have time for it now.";
@@ -385,18 +385,18 @@ function braun() {
 	var braunlowercase = document.getElementById("braun").value;
   var brauninput = braunlowercase.toUpperCase();
   var braunrandom = [
-    "That's probably not the best thing to do while wearing Donald Braun costume.",
+    "No, that's not right.",
     "I don't think that this will help.",
-    "Doing this while being Donald Braun might not be the best idea.",
-    "Shouldn't I be using this Donald Braun disguise for something else?",
-    "There has to be a better way to use my Donald Braun mask than this one."
+    "This might not be the best idea.",
+    "Shouldn't I be using this disguise for something else?",
+    "There has to be a better thing to do than this."
   ];
   var braunanswer;
   var ceoaudio = document.getElementById("ceo");
   if (brauninput == "01") {
     	braunanswer = "I'm not sure I'm completely prepared for all of this, but I guess that there's no turning back now.";
       hideBraunElements();
-  } else if (brauninput == "05" || brauninput == "40") {
+  } else if (brauninput == "05" || brauninput == "34") {
   		braunanswer = "A scientist working in the lab.";
       hideBraunElements();
   } else if (brauninput == "07") {
@@ -445,13 +445,13 @@ function braun() {
   		braunanswer = "I guess this is my new ability. I have to only think of somebody and I immediately see what this person is seeing. I promise to only use it in emergencies like this one.<br><i>To use this ability, enter ability card number <b>37</b> followed by the card number of the person whose eyes you want to see through in the Digital Game Book input field, separated by a comma.</i>";
       hideBraunElements();
   } else if (brauninput == "LOC01") {
-  		braunanswer = "There is nobody in the entrance hall. The only interesting thing I spot in there is a group photo <b>SPO01</b> on the wall. I move along to the common area, and I see a scientist <b>20</b> sitting at one of the tables, eating his lunch.";
+  		braunanswer = "There is nobody in the entrance hall. The only interesting thing I spot in there is a group photo <b>(SPO01)</b> on the wall. I move along to the common area, and I see a scientist <b>(20)</b> sitting at one of the tables, eating his lunch.";
       hideBraunElements();
   } else if (brauninput == "LOC02") {
-      braunanswer = "The laboratory door is open, fortunately. There is a scientist <b>05</b> working there. A white lab rat <b>10</b> seems bored sitting in it's cage. A big poster of periodic table of elements <b>SPO02</b> is on the wall. A locker <b>SPO03</b> with 5 compartments is in the corner of the room.";
+      braunanswer = "The laboratory door is open, fortunately. There is a scientist <b>(05)</b> working there. A white lab rat <b>(10)</b> seems bored sitting in it's cage. A big poster of periodic table of elements <b>(SPO02)</b> is on the wall. A locker <b>(SPO03)</b> with 5 compartments is in the corner of the room.";
       hideBraunElements();
   } else if (brauninput == "LOC03") {
-      braunanswer = "CEO's office isn't as fancy as I would have imagined. The CEO <b>18</b> doesn't look very happy. There is a floor plan <b>22</b> on the wall that I noticed when I entered the office, but it's behind my back now.";
+      braunanswer = "CEO's office isn't as fancy as I would have imagined. The CEO <b>(18)</b> doesn't look very happy. There is a floor plan <b>(22)</b> on the wall that I noticed when I entered the office, but it's behind my back now.";
       hideBraunElements();
   } else if (brauninput == "SPO01") {
       braunanswer = "What a happy collective! The lab team photo shows five people. <br><i>Take cards <b>21</b>, <b>25<b> and <b>29</b>. You will find the other two scientists in the photo somewhere in the building.";
@@ -468,7 +468,7 @@ function braun() {
   } else if (brauninput == "01,01") {
       braunanswer = "This is by far the most dangerous part of my quest of saving my mother. But I have to go through with it!";
       hideBraunElements();
-  } else if (brauninput == "01,05" || brauninput == "01,40") {
+  } else if (brauninput == "01,05" || brauninput == "01,34") {
       braunanswer = "The scientist seems very busy, but keeps an open eye on my every movement nonetheless.";
       hideBraunElements();
   } else if (brauninput == "01,07") {
@@ -582,7 +582,7 @@ function braun() {
       braunanswer = "<i>Agent 27 isn't here. You can't talk with him, only about him.</i>";
       hideBraunElements();
   } else if (brauninput == "18,01" || brauninput == "18,05" || brauninput == "18,07" || brauninput == "18,08" || brauninput == "18,10" || brauninput == "18,13" || brauninput == "18,18" || brauninput == "18,20" || brauninput == "18,21" || brauninput == "18,22" || brauninput == "18,23" || brauninput == "18,25" || brauninput == "18,26" || brauninput == "18,27" || brauninput == "18,29" || brauninput == "18,30" || brauninput == "18,37" || brauninput == "18,LOC01" || brauninput == "18,LOC02" || brauninput == "18,LOC03" || brauninput == "18,SPO01" || brauninput == "18,SPO02" || brauninput == "18,SPO03") {
-      braunanswer = "<i>I try to stop his monologue, but he seems to completely ignore all my efforts. Fortunately, I can turn my sound off.</i>";
+      braunanswer = "<i>I try to stop his monologue, but he seems to completely ignore all my efforts. He just goes on and on, without saying anything relevant. Fortunately, I can turn my sound off.</i>";
       ceoaudio.play();
       hideBraunElements();
   } else if (brauninput == "20,01") {
@@ -646,13 +646,13 @@ function braun() {
       braunanswer = "I try to give the card to the rat but he doesn't react to my efforts.";
       hideBraunElements();
   } else if (brauninput == "07,30" || brauninput == "30,07") {
-      braunanswer = "Take it, my secret partner!<br><i>I carefully give the keycard to the rat, taking care that the CEO doesn't notice anything. Luckily, he is so into his speech of criticizing me that he doesn't see anything.<br>Take card <b>15</b>. Return card <b>07</b> in the characters/objects deck. Remove card </b>30</b>.";
+      braunanswer = "Take it, my secret partner!<br><i>I carefully give the keycard to the rat, taking care that the CEO doesn't notice anything. Luckily, he is so into his speech of criticizing me that he doesn't pay much attention to what I'm doing.<br>Take card <b>15</b>. Return card <b>07</b> in the characters/objects deck. Remove card </b>30</b>.";
       hideBraunElements();
   } else if (brauninput == "07,27" || brauninput == "27,07") {
       braunanswer = "Even if I could manage to throw the keycard right into the air vent, I don't think that that would do any good.";
       hideBraunElements();
   } else if (brauninput == "08,10" || brauninput == "10,08") {
-      braunanswer = "I hope you don't mind helping me for a bit, my little friend!<br><i>The rat is actually happy to communicate with somebody else than the lab team that's been doing experiments on him for weeks.<br>Take card <b>30</b>. Remove card <b>10</b>.";
+      braunanswer = "I hope you don't mind helping me for a bit, my little friend!<br><i>The rat is actually happy to communicate with somebody else other than the lab team that's been doing experiments on him for weeks.<br>Take card <b>30</b>. Remove card <b>10</b>.";
       hideBraunElements();
   } else if (brauninput == "08,15" || brauninput == "08,30" || brauninput == "15,08" || brauninput == "30,08") {
       braunanswer = "The rat is alredy helping me. I don't have to use my power again on him.";
@@ -685,9 +685,9 @@ function braun() {
       braunanswer = "My mother is still in the same room, obviously. If only I could get to her somehow.";
       hideBraunElements();
   } else if (brauninput == "37,18") {
-      braunanswer = "I see myself as the CEO sees me. A strange feeling, really. But I also get to get a good look on the map right behind my back. And there is something else that catches my eye, in CEO's peripheral vision. A half opened air vent.<br><i>Take card <b>27</b> and map parts <b>MAP04</b>, <b>MAP05</b> and <b>MAP06</b> and put them on the right places next to tha map parts already on the table. Remove card <b>22</b>.</b>";
+      braunanswer = "I see myself as the CEO sees me. A strange feeling, really. But I also get to take a good look on the map right behind my back. And there is something else that catches my eye, in CEO's peripheral vision. A half opened air vent.<br><i>Take card <b>27</b> and map parts <b>MAP04</b>, <b>MAP05</b> and <b>MAP06</b> and place them above the map parts already on the table, with part <b>MAP04</b> on the left, part <b>MAP05</b> in the middle, and part <b>MAP06</b> on the right. Remove card <b>22</b>.</b>";
       hideBraunElements();
-  } else if (brauninput == "37,05" || brauninput == "37,40") {
+  } else if (brauninput == "37,05" || brauninput == "37,34") {
       braunanswer = "She's still working. As much as I would like to observe what are they doing in the laboratory, I don't have time for it now.";
       hideBraunElements();
   } else if (brauninput == "37,13") {
@@ -707,7 +707,7 @@ function braun() {
       hideBraunElements();
   } else if (brauninput == "COM05,35797" || brauninput == "COM05,3,5,7,9,7") {
       donald = 2;
-      braunanswer = "Aha!<br><i>The combination lock opens and I take the keycard. Now I can finally pass the door in the common area.<br>But just as I'm about to leave, a man enters the lab and starts yelling at me. It seems to be the boss. He orders me to follow him into his office, locks the office door, tells me to sit and starts to lecture me. I get pretty bored soon enough and I start to think about my mother. Suddenly, an image appears in front of my face. An image of a room.</i> <br>Could it be that I'm seeing what she is seeing?<br><i>Take cards <b>07</b>, <b>37</b>, <b>38</b>, <b>40</b>, <b>LOC03</b>, <b>SPO04</b>, and map part <b>MAP03</b>. Place the map part left of the entrance hall.<br>Remove cards <b>05</b> and <b>20</b>. <br>Remove cards <b>SPO01</b>, <b>SPO02</b> and <b>SPO03</b>. <br>Remove cards <b>LOC01</b> and <b>LOC02</b> (but keep the other cards from the location on the table).<br>You can't use your ability to take someone's appearance now, while the CEO is watching you. Turn the card <b>26</b> upside down for the time being. Continue to play in Donald Braun appearance, using this input field.</i>";
+      braunanswer = "Aha!<br><i>The combination lock opens and I take the keycard. Now I can finally pass the door in the common area.<br>But just as I'm about to leave, a man enters the lab and starts yelling at me. It seems to be the boss. He orders me to follow him into his office, locks the office door, tells me to sit and starts to lecture me. I get pretty bored soon enough and I start to think about my mother. Suddenly, an image appears in front of my face. An image of a room.</i> <br>Could it be that I'm seeing what she is seeing?<br><i>Take cards <b>07</b>, <b>34</b>, <b>37</b>, <b>38</b>, <b>LOC03</b>, <b>SPO04</b>, and map part <b>MAP03</b>. Place the map part left of the entrance hall.<br>Remove cards <b>05</b> and <b>20</b>. <br>Remove cards <b>SPO01</b>, <b>SPO02</b> and <b>SPO03</b>. <br>Remove cards <b>LOC01</b> and <b>LOC02</b> (but keep the other cards from the location on the table).<br>You can't use your ability to take someone's appearance now, while the CEO is watching you. Turn the card <b>26</b> upside down for the time being. Continue to play in Donald Braun appearance, using this input field.</i>";
       hideBraunElements();
   } else if (brauninput == "D01" && donald == 1) {
       braunanswer = "I just got here, I don't want to go out.";
@@ -730,7 +730,10 @@ function braun() {
   } else if (brauninput == "D04" && donald == 1 || brauninput == "D05" && donald == 1) {
       braunanswer = "This door is locked. There is a card lock on it, but where do I get a keycard?";
       hideBraunElements();
-  } else if (brauninput == "D04" && donald == 2 || brauninput == "D05" && donald == 2) {
+  } else if (brauninput == "D04" && donald == 2 || brauninput == "D05" && donald == 2 || brauninput == "D06" && donald == 2 || brauninput == "D07" && donald == 2 || brauninput == "D08" && donald == 2 || brauninput == "D09" && donald == 2 || brauninput == "D10" && donald == 2 || brauninput == "D11" && donald == 2 || brauninput == "D12" && donald == 2 || brauninput == "D13" && donald == 2 || brauninput == "D14" && donald == 2 || brauninput == "D15" && donald == 2 || brauninput == "D16" && donald == 2 || brauninput == "D17" && donald == 2 || brauninput == "D18" && donald == 2 || brauninput == "D19" && donald == 2 || brauninput == "D20" && donald == 2 || brauninput == "D21" && donald == 2) {
+      braunanswer = "I can't get out of CEO's office. He locked me in it and he seems to want to lecture me for a long time.";
+      hideBraunElements();
+  } else if (brauninput == "D06" && donald == 2 || brauninput == "D07" && donald == 2) {
       braunanswer = "I can't get out of CEO's office. He locked me in it and he seems to want to lecture me for a long time.";
       hideBraunElements();
 	} else {
