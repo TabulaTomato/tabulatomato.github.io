@@ -359,31 +359,31 @@ input[type=text]:focus {
 
 .arrow-left {
   position: absolute;
-  top: 260px;
-  left: 270px;
+  top: 50%;
+  left: 30%;
   border: none;
 	background-color: transparent;
 }
 
 .arrow-left-left {
   position: absolute;
-  top: 260px;
-  left: 180px;
+  top: 50%;
+  left: 20%;
   border: none;
 	background-color: transparent;
 }
 
 .arrow-right {
   position: absolute;
-  top: 260px;
-  right: 270px;
+  top: 50%;
+  right: 30%;
   border: none;
 	background-color: transparent;
 }
 
 .arrow-straight {
   position: absolute;
-  top: 350px;
+  top: 70%;
   left: 50%;
   right: 50%;
   transform: translate(-50%, 0);
@@ -393,47 +393,47 @@ input[type=text]:focus {
 
 .arrow-down-right {
   position: absolute;
-  top: 260px;
-  right: 310px;
+  top: 50%;
+  right: 35%;
   border: none;
 	background-color: transparent;
 }
 
 .arrow-down-left {
   position: absolute;
-  top: 260px;
-  left: 310px;
+  top: 50%;
+  left: 36%;
   border: none;
 	background-color: transparent;
 }
 
 .arrow-down-right-right {
   position: absolute;
-  top: 260px;
-  right: 200px;
+  top: 50%;
+  right: 22%;
   border: none;
 	background-color: transparent;
 }
 
 .arrow-down-2right-right {
   position: absolute;
-  top: 260px;
-  right: 150px;
+  top: 50%;
+  right: 15%;
   border: none;
 	background-color: transparent;
 }
 
 .arrow-down-left-left {
   position: absolute;
-  top: 260px;
-  left: 150px;
+  top: 50%;
+  left: 15%;
   border: none;
 	background-color: transparent;
 }
 
 .arrow-down-middle {
   position: absolute;
-  top: 210px;
+  top: 50%;
   left: 50%;
   right: 50%;
   transform: translate(-50%, 0);
@@ -443,7 +443,7 @@ input[type=text]:focus {
 
 .arrow-down-middle-close {
   position: absolute;
-  top: 300px;
+  top: 60%;
   left: 50%;
   right: 50%;
   transform: translate(-50%, 0);
@@ -453,7 +453,7 @@ input[type=text]:focus {
 
 .arrow-back {
   position: absolute;
-  top: 440px;
+  top: 83%;
   left: 50%;
   right: 50%;
   transform: translate(-50%, 0);
@@ -462,11 +462,11 @@ input[type=text]:focus {
 }
 
 .arrow-image {
-  width: 70px;
+  width: 60px;
 }
 
 .arrow-image-back {
-  width: 90px;
+  width: 80px;
 }
 
 .vent-text {
@@ -720,7 +720,7 @@ input[type=text]:focus {
 	border: 3px solid #2394B2;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 930px) {
 
 html::-webkit-scrollbar {
 	display: none;
@@ -880,63 +880,20 @@ td {
 	font-size: 130%;
 }
 
-/* ventilation */
-
-.arrow-left {
-  top: 130px;
-  left: 150px;
+.vent-text {
+	top: 20px;
+  left: 30px;
 }
 
-.arrow-left-left {
-  top: 130px;
-  left: 80px;
+.arrow-image {
+  width: 50px;
 }
 
-.arrow-right {
-  top: 130px;
-  right: 150px;
+.arrow-image-back {
+  width: 70px;
 }
 
-.arrow-straight {
-  top: 180px;
-}
-
-.arrow-down-right {
-  top: 130px;
-  right: 160px;
-}
-
-.arrow-down-left {
-  top: 130px;
-  left: 160px;
-}
-
-.arrow-down-right-right {
-  top: 130px;
-  right: 110px;
-}
-
-.arrow-down-2right-right {
-  top: 130px;
-  right: 90px;
-}
-
-.arrow-down-left-left {
-  top: 130px;
-  left: 80px;
-}
-
-.arrow-down-middle {
-  top: 130px;
-}
-
-.arrow-down-middle-close {
-  top: 130px;
-}
-
-.arrow-back {
-  top: 220px;
-}
+@media only screen and (max-width: 700px) {
 
 .arrow-image {
   width: 40px;
@@ -946,7 +903,12 @@ td {
   width: 60px;
 }
 
-.vent-text {
-	top: 20px;
-  left: 30px;
+@media only screen and (max-width: 400px) {
+
+.arrow-image {
+  width: 30px;
+}
+
+.arrow-image-back {
+  width: 50px;
 }
