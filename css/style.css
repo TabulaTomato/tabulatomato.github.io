@@ -619,14 +619,6 @@ input[type=text]:focus {
 	border: none;
 }
 
-.hint-window {
-	display: none;
-	position: relative;
-	margin-left: auto;
-	margin-right: auto;
-	width: 900px;
-}
-
 .hint-container {
 	display: none;
   text-align: center;
@@ -649,75 +641,9 @@ input[type=text]:focus {
 	color: #dfdfdf;
 }
 
-.fst-hint-button {
-	width: 400px;
-	height: 100px;
-	padding: 0px 20px;
-	margin: 8px 0;
-	border: 3px solid #262626;
-	border-radius: 4px;
-	box-sizing: border-box;
-	line-height: 1.5;
-	letter-spacing: 2px;
-	font-family: 'Fredoka One', cursive;
-	font-size: 150%;
-	background-color: #262626;
-	color: #dfdfdf;
-}
-
-.snd-hint-button {
-	width: 400px;
-	height: 60px;
-	padding: 0px 20px;
-	margin: 8px 0;
-	border: 3px solid #262626;
-	border-radius: 4px;
-	box-sizing: border-box;
-	line-height: 1.2;
-	letter-spacing: 2px;
-	font-family: 'Fredoka One', cursive;
-	font-size: 150%;
-	background-color: white;
-	color: #262626;
-}
-
 .hint-button:hover {
 	background-color: #2394B2;
 	color: #dfdfdf;
-}
-
-.fst-hint-button:hover {
-	background-color: #2394B2;
-	color: #dfdfdf;
-	border: none;
-}
-
-.snd-hint-button:hover {
-	background-color: #2394B2;
-	color: #dfdfdf;
-	border: 3px solid #2394B2;
-}
-
-.trd-hint-button {
-	width: 400px;
-	height: 80px;
-	padding: 0px 20px;
-	margin: 8px 0;
-	border: 3px solid #262626;
-	border-radius: 4px;
-	box-sizing: border-box;
-	line-height: 1.2;
-	letter-spacing: 2px;
-	font-family: 'Fredoka One', cursive;
-	font-size: 120%;
-	background-color: white;
-	color: #2394B2;
-}
-
-.trd-hint-button:hover {
-	background-color: #2394B2;
-	color: #dfdfdf;
-	border: 3px solid #2394B2;
 }
 
 @media only screen and (max-width: 930px) {
