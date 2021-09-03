@@ -20,7 +20,10 @@ function braunKeyPress(e) {
 
 function hidePthreeElements() {
   document.getElementById("braunField").style.display = "none";
+  document.getElementById("clickToVent1").style.display = "none";
 }
+
+var donald = 1;
 
 function bookPthreeFunction() {
 	var zlowercase = document.getElementById("bookPthreeText").value;
@@ -103,7 +106,7 @@ function bookPthreeFunction() {
       answerthree = "I believe that this is what my mother sees at the moment. Maybe I could recognize the room?";
       hidePthreeElements();
   } else if (z == "01,01") {
-      answerthree = "This is by far the most dangerous part of my quest of saving my mother. But I have to go through with it!";
+      answerthree = "This is by far the most dangerous part of my adventure. But I have to go through with it!";
       hidePthreeElements();
   } else if (z == "01,05" || z == "01,34") {
       answerthree = "The scientist seems very busy, but keeps an open eye on my every movement nonetheless.";
@@ -129,8 +132,8 @@ function bookPthreeFunction() {
   } else if (z == "01,20" || z == "01,38") {
       answerthree = "He is occupied with his lunch. But I'm sure that my intimidating Agent 27 disguise will make him chatty.";
       hidePthreeElements();
-  } else if (z == "01,21" || z == "01,25" || z == "01,29") {
-      answerthree = "I wonder if these scientists know who do they work for. Or are they also Lakis themselves?";
+  } else if (z == "01,21") {
+      answerthree = "What a nice lady. Who would have guesses she was a Laki?";
       hidePthreeElements();
   } else if (z == "01,22") {
       answerthree = "It's so frustrating that I can't get a good look of the plan!";
@@ -138,8 +141,14 @@ function bookPthreeFunction() {
   } else if (z == "01,23") {
       answerthree = "I simply know that my mother is here somewhere. I kind of sense it in my body. Must be the efect of my gem.";
       hidePthreeElements();
+  } else if (z == "01,25") {
+      answerthree = "Lakis doing lab research...doesn't sound great.";
+      hidePthreeElements();
   } else if (z == "01,26") {
       answerthree = "If I didn't have this power, things would be much more complicated right now.";
+      hidePthreeElements();
+  } else if (z == "01,29") {
+      answerthree = "I wonder what is it these scientists are working on.";
       hidePthreeElements();
   } else if (z == "01,30") {
       answerthree = "Don't worry my dear rat! I will not do any experiments on you, I will give you a much better assignment.";
@@ -177,8 +186,8 @@ function bookPthreeFunction() {
   } else if (z == "05,07") {
       answerthree = "I have my card with me, of course.";
       hidePthreeElements();
-  } else if (z == "05,08" || z == "05,26" || z == "05,37") {
-      answerthree = "Yes Agent, I know that the boss wants us to find a way to obtain the powers ourselves. Sincerely, if our predecessors haven't been able to do it in all thos years they held Nahukat in occupation, I don't know how to do it here, on Earth. At least we've created the drug that suppresses them, that's already a great accomplishment.";
+  } else if (z == "05,08") {
+      answerthree = "Yes Agent, I know that the boss wants us to find a way to obtain the powers ourselves. Sincerely, if our predecessors haven't been able to do it in all those years they held Nahukat in occupation, I don't know how to do it here, on Earth. At least we've created the drug that suppresses them, that's already a great accomplishment.";
       hidePthreeElements();
   } else if (z == "05,10" || z == "05,30") {
       answerthree = "I have to admit that I've developed a certain attachment to it, just like humans do with their pets. Strange, isn't it?";
@@ -198,6 +207,9 @@ function bookPthreeFunction() {
   } else if (z == "05,25") {
       answerthree = "She seems cheerful, but she's a typical Laki. Did you know that everything in her room is colored dark?";
       hidePthreeElements();
+  } else if (z == "05,26") {
+      answerthree = "We're working on getting the powers, but the boss has to give us some more time.";
+      hidePthreeElements();
   } else if (z == "05,29") {
       answerthree = "His has a very strange sense of humour. The joke of calling me 208668 got really old really fast.";
       hidePthreeElements();
@@ -211,7 +223,7 @@ function bookPthreeFunction() {
       answerthree = "It's not the best photo of me. We took it on the Nahukat occupation holiday this year.";
       hidePthreeElements();
   } else if (z == "05,SPO02") {
-      answerthree = "We thought that the human depiction of the table of elements was more decorative than Lakis', so we put this one in the lab.";
+      answerthree = "We thought that the human depiction of the table of elements was more decorative than ours, so we put this one in the lab.";
       hidePthreeElements();
   } else if (z == "05,SPO03") {
       answerthree = "We only keep our work clothes and that sort of things here.";
@@ -232,8 +244,8 @@ function bookPthreeFunction() {
   } else if (z == "20,07") {
       answerthree = "It's right here, always in my pocket.";
       hidePthreeElements();
-  } else if (z == "20,08" || z == "20,26" || z == "20,37") {
-      answerthree = "As you know, the drug we created to block the powers in people of Nahukat works perfectly. But how could we get these powers...well I'm afraid that we haven't had a lot of progress there. Tell the boss that he should be just a bit more patient with us. We'll find a way eventually now that we have Lena.";
+  } else if (z == "20,08") {
+      answerthree = "As you know, the drug we created to block the powers in people of Nahukat works perfectly. But how to get these powers...well I'm afraid that we haven't had a lot of progress there.";
       hidePthreeElements();
   } else if (z == "20,10" || z == "20,30") {
       answerthree = "It's a very resistant rat. It survived all the tests we already did with it.";
@@ -253,8 +265,11 @@ function bookPthreeFunction() {
   } else if (z == "20,25") {
       answerthree = "She's very dark, that one. She even painted her locker compartment dark, did you notice?";
       hidePthreeElements();
+  } else if (z == "20,26") {
+      answerthree = "I'd like to have this power more than any other. Imagine all the trouble we could cause in the world with it!";
+      hidePthreeElements();
   } else if (z == "20,29") {
-      answerthree = "Just a type of person you can rely on, really careful. The only one of us who leaves their keycard in their locker compartment when he goes out on a break, like we're supposed to. Oh...please don't say this to the boss! He's not happy with the lab team already, I don't want him to think that we're not following the security orders as well.";
+      answerthree = "Just a type of person you can rely on, really careful. The only one of us who leaves their keycard in his locker compartment when he goes out on a break, like we're supposed to. Oh...please don't say this to the boss! He's not happy with the lab team already, I don't want him to think that we're not following the security orders as well.";
       hidePthreeElements();
   } else if (z == "20,LOC01") {
       answerthree = "I prefer to take my break here. I believe that most of the others went out for lunch.";
@@ -269,7 +284,7 @@ function bookPthreeFunction() {
       answerthree = "Braun makes the most use of it. He is the chemist of the team, as you know.";
       hidePthreeElements();
   } else if (z == "20,SPO03") {
-      answerthree = "We all changed our lock combinations into something that was easier to remember than the random ones that we were given in the beginning.";
+      answerthree = "We've all changed our lock combinations into something that was easier to remember than the random ones that we were given in the beginning.";
       hidePthreeElements();
   } else if (z == "21,01" || z == "21,05" || z == "21,07" || z == "21,08" || z == "21,10" || z == "21,13" || z == "21,18" || z == "21,20" || z == "21,21" || z == "21,22" || z == "21,21" || z == "21,25" || z == "21,26" || z == "21,27" || z == "21,29" || z == "21,30" || z == "21,37" || z == "21,LOC01" || z == "21,LOC02" || z == "21,LOC03" || z == "21,SPO01" || z == "21,SPO02" || z == "21,SPO03") {
       answerthree = "<i>Laurie Haage isn't here. You can't talk with her, only about her.</i>";
@@ -290,7 +305,7 @@ function bookPthreeFunction() {
       answerthree = "Even if I could manage to throw the keycard right into the air vent, I don't think that that would do any good.";
       hidePthreeElements();
   } else if (z == "07,30" || z == "30,07") {
-      answerthree = "Take it, my secret partner!<br><i>I carefully give the keycard to the rat, taking care that the CEO doesn't notice anything. Luckily, he is so into his speech of criticizing me that he doesn't pay much attention to what I'm doing.<br>Take card <b>15</b>. Return card <b>07</b> in the characters/objects deck, you will need it later. Remove card <b>30</b>.";
+      answerthree = "Take it, my secret partner!<br><i>I carefully give the keycard to the rat, taking care that the CEO doesn't notice anything. Luckily, he is so into his criticizing mode that he doesn't pay much attention to what I'm doing.<br>Take card <b>15</b>. Return card <b>07</b> in the characters/objects deck, you will need it later. Remove card <b>30</b>.";
       hidePthreeElements();
   } else if (z == "08,10" || z == "10,08") {
       answerthree = "I hope you don't mind helping me for a bit, my little friend!<br><i>The rat is actually happy to communicate with somebody else other than the lab team that's been doing experiments on him for weeks.<br>Take card <b>30</b>. Remove card <b>10</b>.";
@@ -307,33 +322,57 @@ function bookPthreeFunction() {
   } else if (z == "15,22" || z == "22,15") {
       answerthree = "It seems like a good idea to make the rat take the keycard somwhere, but in the actual building, not on it's plan drawing.";
       hidePthreeElements();
+  } else if (z == "15,27" || z == "27,15") {
+      answerthree = "Come on rat, it's adventure time!<br><i>While the CEO is still talking to no end, the rat discretely goes to the air vent, carrying the keycard.<br><i>Remove cards <b>15</b> and <b>27</b>.<br>You can now guide the rat through the ventilation ducts.</i>";
+      hidePthreeElements();
+      document.getElementById("clickToVent1").style.display = "block";
   } else if (z == "22,27" || z == "27,22") {
       answerthree = "Taking the plan from the wall and throwing it into the air vent with CEO in front of me, seems not only very difficult but also pointless.";
       hidePthreeElements();
   } else if (z == "22,30" || z == "30,22") {
       answerthree = "I think that I can read the plan much better than the rat. I am a student of the University, after all.";
       hidePthreeElements();
-  } else if (z == "26,05" || z == "26,20" || z == "26,21" || z == "26,25") {
-      answerthree = "Is this really the right person I should turn into?";
+  } else if (z == "26,01" && donald == 1) {
+      answerthree = "Taking my own appearance would be a super dangerous decision to make.";
       hidePthreeElements();
-  } else if (z == "26,13") {
+  } else if (z == "26,05" && donald == 1) {
+      answerthree = "I don't think I should do that.";
+      hidePthreeElements();
+  } else if (z == "26,13" && donald == 1) {
       answerthree = "I'm already in Agent 27's costume.";
       hidePthreeElements();
-  } else if (z == "26,18") {
+  } else if (z == "26,18" && donald == 1) {
       answerthree = "Turning myself into the PEI CEO in front of him will only make him realise that I have powers and get me locked up.";
       hidePthreeElements();
-  } else if (z == "26,23") {
+  } else if (z == "26,20" && donald == 1) {
+      answerthree = "Is this really the right person I should turn into?";
+      hidePthreeElements();
+  } else if (z == "26,21" && donald == 1) {
+      answerthree = "I'm not sure that it's Laurie I should go with.";
+      hidePthreeElements();
+  } else if (z == "26,23" && donald == 1) {
       answerthree = "Pretending that I'm my mother won't help me save her. They know she's locked up so seeing her suddenly appear here could only blow my cover.";
       hidePthreeElements();
-  } else if (z == "26,29") {
+  } else if (z == "26,25" && donald == 1) {
+      answerthree = "Hmmm, maybe I should try turning into somebody else.";
+      hidePthreeElements();
+  } else if (z == "26,29" && donald == 1) {
       answerthree = "Let's give it a go.<br><i>Use the input field below to act while having the appearance of Donald Braun. You can always return to your usual form by using the usual input field above.</i>";
+      hidePthreeElements();
       document.getElementById("braunField").style.display = "block";
-      document.getElementById("clickToVent").style.display = "none";
+  } else if (z == "26,01" && donald == 2 || z == "26,05" && donald == 2 || z == "26,13" && donald == 2 || z == "26,18" && donald == 2 || z == "26,20" && donald == 2 || z == "26,21" && donald == 2 || z == "26,23" && donald == 2 || z == "26,25" && donald == 2) {
+      answerthree = "<i>You can't change your appearance in front of the CEO. Continue with the Donald Braun input field below, still in his appearance.";
+      hidePthreeElements();
+      document.getElementById("braunField").style.display = "block";
+  } else if (z == "26,29" && donald == 2) {
+      answerthree = "<i>You are already using Donald Braun's appearance. Continue with the Donald Braun input field below.</i>";
+      hidePthreeElements();
+      document.getElementById("braunField").style.display = "block";
   } else if (z == "27,30" || z == "30,27") {
       answerthree = "It's a good idea, but I won't send him into the air vent empty handed.";
       hidePthreeElements();
-  } else if (z == "37,18") {
-      answerthree = "I see myself as the CEO sees me. A strange feeling, really. But I also get to take a good look on the map right behind my back. And there is something else that catches my eye, in CEO's peripheral vision. A half opened air vent.<br><i>Take card <b>27</b> and map parts <b>MAP04</b>, <b>MAP05</b> and <b>MAP06</b> and put them on the right places next to tha map parts already on the table. Remove card <b>22</b>.</b>";
+  } else if (z == "37,01") {
+      answerthree = "I see what I see.";
       hidePthreeElements();
   } else if (z == "37,05") {
       answerthree = "She's still working. As much as I would like to observe what are they doing in the laboratory, I don't have time for it now.";
@@ -341,17 +380,23 @@ function bookPthreeFunction() {
   } else if (z == "37,13") {
       answerthree = "I see the road in front of Agent 27's eyes, and his hands on the wheel. He is driving.";
       hidePthreeElements();
+  } else if (z == "37,18") {
+      answerthree = "I see myself as the CEO sees me. A strange feeling, really. But I also get to take a good look on the map right behind my back. And there is something else that catches my eye, in CEO's peripheral vision. A half opened air vent.<br><i>Take card <b>27</b> and map parts <b>MAP04</b>, <b>MAP05</b> and <b>MAP06</b> and put them on the right places next to tha map parts already on the table. Remove card <b>22</b>.</b>";
+      hidePthreeElements();
   } else if (z == "37,20") {
       answerthree = "He is still in the common area, eating his lunch. Looking through his eyes while he's eating isn't an especially enjoyable feeling.";
       hidePthreeElements();
-  } else if (z == "37,21" || z == "37,25") {
-      answerthree = "She is in a restaurant somewhere. I see two of her lab team members sitting at the table.";
+  } else if (z == "37,21") {
+      answerthree = "She is in a restaurant, having Tibetan momo dumplings.";
       hidePthreeElements();
   } else if (z == "37,23") {
       answerthree = "My mother is in a room.<br><i>You can see what does Lena see through her eyes depicted on card <b>SPO04</b>.</i>";
       hidePthreeElements();
+  } else if (z == "37,25") {
+      answerthree = "She is eating with two of her team members. She's having boeuf bourguignon.";
+      hidePthreeElements();
   } else if (z == "37,29") {
-      answerthree = "He is in a restaurant somewhere. I see two of his lab team members sitting at the table.";
+      answerthree = "He is having lunch with Celia and Laurie in a restaurant somewhere. He is enjoying in a sushi/sashimi plate.";
       hidePthreeElements();
   } else if (z == "D01") {
       answerthree = "I just got here, I don't want to go out.";
@@ -360,7 +405,7 @@ function bookPthreeFunction() {
       answerthree = "This door is locked. I can't get in.";
       hidePthreeElements();
   } else if (z == "D03") {
-      answerthree = "The door is open. The room seems to be a laboratory.<br><i>Take card <b>LOC02</b> and map part <b>MAP02</b>. Place the map part right of the entrance hall.</i>";
+      answerthree = "The door is open. The room seems to be a laboratory.<br><i>Take card <b>LOC02</b> and map part <b>MAP02</b>. Place the map part to the right of the entrance hall.</i>";
       hidePthreeElements();
   } else if (z == "D04" || z == "D05") {
       answerthree = "This door is locked. There is a card lock on it, but where do I get a keycard?";
@@ -376,10 +421,8 @@ function bookPthreeFunction() {
 };
 
 function hideBraunElements() {
-  document.getElementById("clickToVent").style.display = "none";
+  document.getElementById("clickToVent2").style.display = "none";
 }
-
-var donald = 1;
 
 function braun() {
 	var braunlowercase = document.getElementById("braun").value;
@@ -466,7 +509,7 @@ function braun() {
       braunanswer = "I believe that this is what my mother sees at the moment. Maybe I could recognize the room?";
       hideBraunElements();
   } else if (brauninput == "01,01") {
-      braunanswer = "This is by far the most dangerous part of my quest of saving my mother. But I have to go through with it!";
+      braunanswer = "This is by far the most dangerous part of my adventure. But I have to go through with it!";
       hideBraunElements();
   } else if (brauninput == "01,05" || brauninput == "01,34") {
       braunanswer = "The scientist seems very busy, but keeps an open eye on my every movement nonetheless.";
@@ -492,14 +535,17 @@ function braun() {
   } else if (brauninput == "01,20" || brauninput == "01,38") {
       braunanswer = "He is occupied with his lunch. But I'm sure that my intimidating Agent 27 disguise will make him chatty.";
       hideBraunElements();
-  } else if (brauninput == "01,21" || brauninput == "01,25") {
-      braunanswer = "I wonder if these scientists know who do they work for. Or are they also Lakis themselves?";
+  } else if (brauninput == "01,21") {
+      braunanswer = "What a nice lady. Who would have guesses she was a Laki?";
       hideBraunElements();
   } else if (brauninput == "01,22") {
       braunanswer = "It's so frustrating that I can't get a good look of the plan!";
       hideBraunElements();
   } else if (brauninput == "01,23") {
       braunanswer = "I simply know that my mother is here somewhere. I kind of sense it in my body. Must be the efect of my gem.";
+      hideBraunElements();
+  } else if (brauninput == "01,25") {
+      braunanswer = "Lakis doing lab research...doesn't sound great.";
       hideBraunElements();
   } else if (brauninput == "01,26") {
       braunanswer = "If I didn't have this power, things would be much more complicated right now.";
@@ -542,7 +588,7 @@ function braun() {
   } else if (brauninput == "05,07") {
       braunanswer = "I have my card with me, of course.";
       hideBraunElements();
-  } else if (brauninput == "05,08" || brauninput == "05,26" || brauninput == "05,37") {
+  } else if (brauninput == "05,08" || brauninput == "05,26") {
       braunanswer = "The results of the tests on the rat still show no progress on understanding these powers. But I'm starting taking a new approach with Dr Haage, we will be starting with the test tomorrow.";
       hideBraunElements();
   } else if (brauninput == "05,10" || brauninput == "05,30") {
@@ -591,7 +637,7 @@ function braun() {
   } else if (brauninput == "20,07") {
       braunanswer = "It's right here, always in my pocket.";
       hideBraunElements();
-  } else if (brauninput == "20,08" || brauninput == "20,26" || brauninput == "20,37") {
+  } else if (brauninput == "20,08") {
       braunanswer = "Sometimes I dream about us finally having their powers. Imagine all that we could do. We would be the most powerful civilization in the universe!";
       hideBraunElements();
   } else if (brauninput == "20,10" || brauninput == "20,30") {
@@ -611,6 +657,9 @@ function braun() {
       hideBraunElements();
   } else if (brauninput == "20,25") {
       braunanswer = "She scares me a little.";
+      hideBraunElements();
+  } else if (brauninput == "20,26") {
+      braunanswer = "If I had this power, I would take an image of a man that Kate would fall for.";
       hideBraunElements();
   } else if (brauninput == "20,29") {
       braunanswer = "I love how you call Kate 208668! How clever!";
@@ -646,7 +695,7 @@ function braun() {
       braunanswer = "I try to give the card to the rat but he doesn't react to my efforts.";
       hideBraunElements();
   } else if (brauninput == "07,30" || brauninput == "30,07") {
-      braunanswer = "Take it, my secret partner!<br><i>I carefully give the keycard to the rat, taking care that the CEO doesn't notice anything. Luckily, he is so into his speech of criticizing me that he doesn't pay much attention to what I'm doing.<br>Take card <b>15</b>. Return card <b>07</b> in the characters/objects deck. Remove card </b>30</b>.";
+      braunanswer = "Take it, my secret partner!<br><i>I carefully give the keycard to the rat, taking care that the CEO doesn't notice anything. Luckily, he is so into his criticizing mode that he doesn't pay much attention to what I'm doing.<br>Take card <b>15</b>. Return card <b>07</b> in the characters/objects deck. Remove card <b>30</b>.";
       hideBraunElements();
   } else if (brauninput == "07,27" || brauninput == "27,07") {
       braunanswer = "Even if I could manage to throw the keycard right into the air vent, I don't think that that would do any good.";
@@ -667,25 +716,25 @@ function braun() {
       braunanswer = "It seems like a good idea to make the rat take the keycard somwhere, but in the actual building, not on it's plan drawing.";
       hideBraunElements();
   } else if (brauninput == "15,27" || brauninput == "27,15") {
-      braunanswer = "Come on rat, it's adventure time!<br><i>While the CEO is still talking with no end, the rat discretely goes to the air vent, carrying the keycard.<br><i>Remove cards <b>15</b> and <b>27</b>.<br>You can now guide the rat through the ventilation ducts.</i>";
-      document.getElementById("clickToVent").style.display = "block";
+      braunanswer = "Come on rat, it's adventure time!<br><i>While the CEO is still talking to no end, the rat discretely goes to the air vent, carrying the keycard.<br><i>Remove cards <b>15</b> and <b>27</b>.<br>You can now guide the rat through the ventilation ducts.</i>";
+      document.getElementById("clickToVent2").style.display = "block";
   } else if (brauninput == "22,30" || brauninput == "30,22") {
       braunanswer = "I think that I can read the plan much better than the rat. I am a student of the University, after all.";
       hideBraunElements();
   } else if (brauninput == "22,27" || brauninput == "27,22") {
       braunanswer = "Taking the plan from the wall and throwing it into the air vent with CEO in front of me, seems not only very difficult but also pointless.";
       hideBraunElements();
-  } else if (brauninput == "26,05" || brauninput == "26,13" || brauninput == "26,18" || brauninput == "26,20" || brauninput == "26,21" || brauninput == "26,23" || brauninput == "26,25") {
-      braunanswer = "I have to get back to my Ziggy appearance to be able to change it into someone else.";
+  } else if (brauninput == "26,01" && donald == 1 || brauninput == "26,05" && donald == 1 || brauninput == "26,13" && donald == 1 || brauninput == "26,18" && donald == 1 || brauninput == "26,20" && donald == 1 || brauninput == "26,21" && donald == 1 || brauninput == "26,23" && donald == 1 || brauninput == "26,25" && donald == 1) {
+      braunanswer = "I have to get back to my Ziggy appearance to be able to change it into someone else's.";
+      hideBraunElements();
+  } else if (brauninput == "26,01" && donald == 2 || brauninput == "26,05" && donald == 2 || brauninput == "26,13" && donald == 2 || brauninput == "26,18" && donald == 2 || brauninput == "26,20" && donald == 2 || brauninput == "26,21" && donald == 2 || brauninput == "26,23" && donald == 2 || brauninput == "26,25" && donald == 2) {
+      braunanswer = "<i>You can't change your appearance in front of the CEO.</i>";
       hideBraunElements();
   } else if (brauninput == "27,30" || brauninput == "30,27") {
       braunanswer = "It's a good idea, but I won't send him into the air vent empty handed.";
       hideBraunElements();
-  } else if (brauninput == "37,23") {
-      braunanswer = "My mother is still in the same room, obviously. If only I could get to her somehow.";
-      hideBraunElements();
-  } else if (brauninput == "37,18") {
-      braunanswer = "I see myself as the CEO sees me. A strange feeling, really. But I also get to take a good look on the map right behind my back. And there is something else that catches my eye, in CEO's peripheral vision. A half opened air vent.<br><i>Take card <b>27</b> and map parts <b>MAP04</b>, <b>MAP05</b> and <b>MAP06</b> and place them above the map parts already on the table, with part <b>MAP04</b> on the left, part <b>MAP05</b> in the middle, and part <b>MAP06</b> on the right. Remove card <b>22</b>.</b>";
+  } else if (brauninput == "37,01") {
+      braunanswer = "I see what I see.";
       hideBraunElements();
   } else if (brauninput == "37,05" || brauninput == "37,34") {
       braunanswer = "She's still working. As much as I would like to observe what are they doing in the laboratory, I don't have time for it now.";
@@ -693,21 +742,27 @@ function braun() {
   } else if (brauninput == "37,13") {
       braunanswer = "I see the road in front of Agent 27's eyes, and his hands on the wheel. He is driving.";
       hideBraunElements();
-  } else if (brauninput == "37,23") {
-      braunanswer = "My mother is in a room.<br><i>You can see what does Lena see through her eyes depicted on card <b>SPO04</b>.</i>";
+  } else if (brauninput == "37,18") {
+      braunanswer = "I see myself as the CEO sees me. A strange feeling, really. But I also get to take a good look on the map right behind my back. And there is something else that catches my eye, in CEO's peripheral vision. A half opened air vent.<br><i>Take card <b>27</b> and map parts <b>MAP04</b>, <b>MAP05</b> and <b>MAP06</b> and place them above the map parts already on the table, with part <b>MAP04</b> on the left, part <b>MAP05</b> in the middle, and part <b>MAP06</b> on the right. Remove card <b>22</b>.</b>";
       hideBraunElements();
   } else if (brauninput == "37,20" || brauninput == "37,38") {
       braunanswer = "He is still in the common area, eating his lunch. Looking through his eyes while he's eating isn't an especially enjoyable feeling.";
       hideBraunElements();
-  } else if (brauninput == "37,21" || brauninput == "37,25") {
-      braunanswer = "She is in a restaurant somewhere. I see two of her lab team members sitting at the table.";
+  } else if (brauninput == "37,21") {
+      braunanswer = "She is in a restaurant, having Tibetan momo dumplings.";
+      hideBraunElements();
+  } else if (brauninput == "37,23") {
+      braunanswer = "My mother is in a room.<br><i>You can see what does Lena see through her eyes depicted on card <b>SPO04</b>.</i>";
+      hideBraunElements();
+  } else if (brauninput == "37,25") {
+      braunanswer = "She is eating with two of her team members. She's having boeuf bourguignon.";
       hideBraunElements();
   } else if (brauninput == "37,29") {
-      braunanswer = "He is in a restaurant somewhere. I see two of his lab team members sitting at the table.";
+      braunanswer = "He is having lunch with Celia and Laurie in a restaurant somewhere. He is enjoying in a sushi/sashimi plate.";
       hideBraunElements();
   } else if (brauninput == "COM05,35797" || brauninput == "COM05,3,5,7,9,7") {
       donald = 2;
-      braunanswer = "Aha!<br><i>The combination lock opens and I take the keycard. Now I can finally pass the door in the common area.<br>But just as I'm about to leave, a man enters the lab and starts yelling at me. It seems to be the boss. He orders me to follow him into his office, locks the office door, tells me to sit and starts to lecture me. I get pretty bored soon enough and I start to think about my mother. Suddenly, an image appears in front of my face. An image of a room.</i> <br>Could it be that I'm seeing what she is seeing?<br><i>Take cards <b>07</b>, <b>34</b>, <b>37</b>, <b>38</b>, <b>LOC03</b>, <b>SPO04</b>, and map part <b>MAP03</b>. Place the map part left of the entrance hall.<br>Remove cards <b>05</b> and <b>20</b>. <br>Remove cards <b>SPO01</b>, <b>SPO02</b> and <b>SPO03</b>. <br>Remove cards <b>LOC01</b> and <b>LOC02</b> (but keep the other cards from the location on the table).<br>You can't use your ability to take someone's appearance now, while the CEO is watching you. Turn the card <b>26</b> upside down for the time being. Continue to play in Donald Braun appearance, using this input field.</i>";
+      braunanswer = "Aha!<br><i>The combination lock opens and I take the keycard. Now I can finally pass the door in the common area.<br>But just as I'm about to leave, a man enters the lab and starts yelling at me. It seems to be the boss. He orders me to follow him into his office, locks the office door, tells me to sit and starts to lecture me. I get pretty bored soon enough, and I start to think about my mother. Suddenly, an image appears in front of my face. An image of a room.</i> <br>Could it be that I'm seeing what she is seeing?<br><i>Take cards <b>07</b>, <b>34</b>, <b>37</b>, <b>38</b>, <b>LOC03</b>, <b>SPO04</b>, and map part <b>MAP03</b>. Place the map part to the left of the entrance hall.<br>Remove cards <b>05</b> and <b>20</b>. <br>Remove cards <b>SPO01</b>, <b>SPO02</b> and <b>SPO03</b>. <br>Remove cards <b>LOC01</b> and <b>LOC02</b> (but keep the other cards from the location on the table).<br>You can't use your ability to take someone's appearance now, while the CEO is watching you. Turn the card <b>26</b> upside down for the time being. Continue to play in Donald Braun appearance, using this input field.</i>";
       hideBraunElements();
   } else if (brauninput == "D01" && donald == 1) {
       braunanswer = "I just got here, I don't want to go out.";
@@ -722,7 +777,7 @@ function braun() {
       braunanswer = "I can't get out of CEO's office. He locked me in it and he seems to want to lecture me for a long time.";
       hideBraunElements();
   } else if (brauninput == "D03" && donald == 1) {
-      braunanswer = "The door is open. The room seems to be a laboratory.<br><i>Take card <b>LOC02</b> and map part <b>MAP02</b>. Place the map part right of the entrance hall.</i>";
+      braunanswer = "The door is open. The room seems to be a laboratory.<br><i>Take card <b>LOC02</b> and map part <b>MAP02</b>. Place the map part to the right of the entrance hall.</i>";
       hideBraunElements();
   } else if (brauninput == "D03" && donald == 2) {
       braunanswer = "I can't get out of CEO's office. He locked me in it and he seems to want to lecture me for a long time.";

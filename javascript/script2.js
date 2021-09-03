@@ -45,6 +45,8 @@ function hidePtwoElements() {
   document.getElementById("02_Martin").style.display = "none";
 }
 
+var escape = 1;
+
 function bookPtwoFunction() {
 	var ylowercase = document.getElementById("bookPtwoText").value;
   var y = ylowercase.toUpperCase();
@@ -66,7 +68,7 @@ function bookPtwoFunction() {
   		answertwo = "A duct tape roll that was obviously used to silence professor Martin.";
       hidePtwoElements();
   } else if (y == "04") {
-  		answertwo = "A tall tree in front of Wild Things Shop.";
+  		answertwo = "A tall tree in front of Pretty Things Shop.";
       hidePtwoElements();
   } else if (y == "05") {
   		answertwo = "A security guard in the mayor's office. He seems a bit tired.";
@@ -87,7 +89,7 @@ function bookPtwoFunction() {
   		answertwo = "The touchscreen tablet that the mayor gave me. It requires a swipe pattern to unlock.<br><i>You can now unlock the touchscreen tablet by entering the card number <b>10</b> followed by the sequence of numbers in the order of the swipe pattern. The card number and the numbers sequence should be separated by a comma, without spaces.</i>";
       hidePtwoElements();
   } else if (y == "11" || y == "57") {
-  		answertwo = "Dr Rose Tobin was the physician of the original crew that found the planet Earth. She is working at the hospital and is a very respected member of the community. But even though she likes it here on Earth, she misses our people immensely.";
+  		answertwo = "Dr Rose Tobin was the physician of the original Nahukat crew that landed on Earth. She works at the hospital and is a very respected member of the community. But even though she likes it here on Earth, she misses our people immensely.";
       hidePtwoElements();
   } else if (y == "12") {
   		answertwo = "The hospital room is on the first floor, above the hospital's parking lot.";
@@ -99,10 +101,10 @@ function bookPtwoFunction() {
   		answertwo = "A printer in the 'Under the Radar' office.";
       hidePtwoElements();
   } else if (y == "15") {
-  		answertwo = "A patient lying in a coma. Her medical chart reads: <br><i>Patient: Jenna Kane <br>Diagnosis: Heavy metal poisoning with kidney, liver and heart damage, severe brain dysfunction <br>Illnes cause: Unknown <br>Current state: Patient entered a state of extreme unresponsiveness 22 hours after hospitalisation</i>";
+  		answertwo = "A patient lying in a coma. Her medical chart reads: <br><b>Patient: Jenna Kane <br>Diagnosis: Heavy metal poisoning with kidney, liver and heart damage, severe brain dysfunction <br>Illnes cause: Unknown <br>Current state: Patient entered a state of extreme unresponsiveness 22 hours after hospitalisation</b>";
       hidePtwoElements();
   } else if (y == "16") {
-  		answertwo = "A chemical that the people that hired professor Martin gave him to use on my mother. I wonder what does it do... I'm sure that Dr Rose could know more about it.";
+  		answertwo = "I'm sure that Dr Rose could know more about this drug.";
       hidePtwoElements();
   } else if (y == "17") {
   		answertwo = "The tablet is unlocked and has a file named 'PEI_both_sides'. Unfortunately, the file is either encrypted or corrupted. There are a bunch of unreadable signs in the file that don't make any sense.";
@@ -210,7 +212,7 @@ function bookPtwoFunction() {
   		answertwo = "The cat now does whatever I want him to.";
       hidePtwoElements();
   } else if (y == "53") {
-  		answertwo = "The door to this ward is protected by an alphanumeric lock. But even if I manage to figure out the code, nurse Barbara gives me the scary eye every time I approach it.";
+  		answertwo = "The door to this ward is protected by an alphanumeric lock. But even if I manage to find the code, nurse Barbara wouldn't let me near it.";
       hidePtwoElements();
   } else if (y == "54") {
   		answertwo = "There is a lot of cars in the parking lot. I wonder which one is Dr Turner's.";
@@ -225,16 +227,16 @@ function bookPtwoFunction() {
   		answertwo = "The hotel lobby is almost empty, with just a couple of guests and a woman <b>(38)</b> behind the reception desk. There is a pencil <b>(51)</b> on the desk just waiting for me to take it. The side tables are decorated with potpourri <b>(27)</b> and there is a newspaper <b>(21)</b> left on one of the tables.";
       hidePtwoElements();
   } else if (y == "LOC02") {
-      answertwo = "The Deep Lake metro station isn't very crowded in this time of day. I can spot a banknote <b>(19)</b> on the floor that I hope will bring me some luck in my quest. There is also a metro map <b>(SPO01)</b>on the wall, of course.";
+      answertwo = "The Deep Lake metro station isn't very crowded in this time of day. I can spot a banknote <b>(19)</b> on the floor that I hope will bring me some luck in my quest. There is also a metro map <b>(SPO01)</b> on the wall, of course.";
       hidePtwoElements();
   } else if (y == "LOC03") {
-      answertwo = "Feather Square is located in the old part of the city and it's very charming with it's old cobblestone pavement and pigeons that the square was named after. Right next to the metro station entrance there is a street mime artist <b>(31)</b> in a middle of performance. His suitcase <b>(43)</b> is lying on the floor next to him, and I can spot his makeup kit <b>06</b> inside of it. A stray cat <b>36</b> is the artist's only audience.";
+      answertwo = "Feather Square is located in the old part of the city and it's very charming with it's old cobblestone pavement and pigeons that the square was named after. Right next to the metro station entrance there is a street mime artist <b>(31)</b> in a middle of performance. His suitcase <b>(43)</b> is lying on the floor next to him, and I can spot his makeup kit <b>(06)</b> inside of it. A stray cat <b>(36)</b> is the artist's only audience.";
       hidePtwoElements();
   } else if (y == "LOC04") {
-      answertwo = "Wild Things Shop is closed. A beautiful tall tree <b>(04)</b> is right in front of the shop's window. There is a security camera <b>(32)</b> on the wall, that could have some interesting footage of the man I'm searching for.";
+      answertwo = "Pretty Things Shop is closed. A beautiful tall tree <b>(04)</b> is right in front of the shop's window. There is a security camera <b>(32)</b> on the wall, that could have some interesting footage of the man I'm searching for.";
       hidePtwoElements();
   } else if (y == "LOC05") {
-      answertwo = "I'm shocked to see professor Martin <b>(18)</b> tied up to a chair. I untie him immidiately, of course, and end up with a piece od rope <b>(24)</b> he was tied with. There is also some duct tape <b>(03)</b>, used to keep him quiet, lying on the floor.";
+      answertwo = "I'm shocked to see professor Martin <b>(18)</b> tied up to a chair. I untie him immidiately, of course, and end up with a piece od rope <b>(24)</b> he was tied with. There is also some duct tape <b>(03)</b> they used to keep him quiet lying on the floor.";
       hidePtwoElements();
   } else if (y == "LOC06") {
       answertwo = "I'm not a big fan of hospitals, but the Starchester Central Hospital is a very modern and well equipped facility. Dr Rose <b>(11)</b>, the ex member of my parents space mission crew, is in the hall checking her patients' charts. A nurse <b>(42)</b> in charge of the reception desk is sitting behind it. There is an alphanumeric lock <b>(53)</b> for a door right of the reception desk with no indication of what is behind it.";
@@ -243,10 +245,10 @@ function bookPtwoFunction() {
       answertwo = "The mayor's office is peaceful, not a lot of work seems to be taking place here. There is a security guard <b>(05)</b> in the entrance. The doors to mayor's office are closed, and it's hard to know if the mayor <b>(33)</b> is inside or not.";
       hidePtwoElements();
   } else if (y == "LOC08") {
-      answertwo = "The 'Under the Radar' office is busy, with phones ringing and people talking in the same time. I can see Alison Clarke <b>(25)</b> sitting at one of the desks. As I enter the office. I pass by a delivery guy <b>(20)</b> that just dropped a hamburger <b>(02)</b>. As soon as he leaves the food, the runs out of the office.<br><i>Remove card <b>07</b>.</i>";
+      answertwo = "The 'Under the Radar' office is busy, with phones ringing and people talking in the same time. I can see Alison Clarke <b>(25)</b> sitting at one of the desks. As I enter the office. I pass by a delivery guy <b>(20)</b> bringing a hamburger <b>(02)</b> to Alison. As soon as he leaves the food, the runs out of the office.<br><i>Remove card <b>07</b>.</i>";
       hidePtwoElements();
   } else if (y == "LOC09") {
-      answertwo = "I finally enter the secretive limited access ward. I enter the first room and find a patient <b>(15)</b> lying in one of the beds. She is either sleeping or unconscious. There is some standard medical equipment in the room, like an IV stand <b>(06)</b>. I can also spot a used rubber glove <b>(22)</b> in the trash bin next to the door.";
+      answertwo = "I finally enter the secret ward. I go to the first room and find a patient <b>(15)</b> lying in one of the beds. She is either sleeping or unconscious. There is some standard medical equipment in the room, like an IV stand <b>(50)</b>. I can also spot a used rubber glove <b>(22)</b> in the trash bin next to the door.";
       hidePtwoElements();
   } else if (y == "LOC10") {
       answertwo = "There are a lot of cars <b>(54)</b> parked in the parking lot.";
@@ -297,7 +299,7 @@ function bookPtwoFunction() {
       answertwo = "I'm so used to having this little power now that it's getting hard to imagine life without it.";
       hidePtwoElements();
   } else if (y == "01,09") {
-      answertwo = "It's obvious that this car is super expensive.";
+      answertwo = "What was it that Dr Turner said on the phone? Something about going to the PEI after his visit to the hospital? I'd like to see where this PEI base is, but I can't get into the car. It's locked.";
       hidePtwoElements();
   } else if (y == "01,10") {
       answertwo = "I sure would like to take a look inside mayor's tablet.";
@@ -354,7 +356,7 @@ function bookPtwoFunction() {
       answertwo = "This smells way too intense. Every time I open my backpack I almost suffocate. Why am I carrying it around again?";
       hidePtwoElements();
   } else if (y == "01,28" || y == "28,01") {
-      answertwo = "I have to pass the guard first to enter the PEI base.";
+      answertwo = "I have to pass the soldier first to enter the PEI base.";
       hidePtwoElements();
   } else if (y == "01,29") {
       answertwo = "I can't pretend not to care that this guy is fully armed while I don't have anything to protect me. But I can't stop now!";
@@ -488,11 +490,14 @@ function bookPtwoFunction() {
   } else if (y == "05,02" || y == "02,05") {
       answertwo = "Thank you, but I can't eat while I'm on duty. And even if I could, there is so much mayo in this burger that it's spilling out. I have to keep my cholesterol in check.";
       hidePtwoElements();
-  } else if (y == "05,03" || y == "05,06" || y == "05,14" || y == "05,27" || y == "05,34") {
-      answertwo = "I'm sorry, but I don't understand why are you talking about this.";
+  } else if (y == "05,03") {
+      answertwo = "What am I supposed to do with it?";
       hidePtwoElements();
   } else if (y == "05,05") {
       answertwo = "I've been working for the mayor for 6 months now. A nice job, paycheck comes in regularly every month.";
+      hidePtwoElements();
+  } else if (y == "05,06" || y == "05,27" || y == "05,34") {
+      answertwo = "I'm sorry, but I don't understand why are you talking about this.";
       hidePtwoElements();
   } else if (y == "05,07" || y == "05,25") {
       answertwo = "Yes, I think I did see a journalist fitting that description around here. But that's not unusual, there are always journalists here. I couldn't tell you who is she working for, though.";
@@ -509,11 +514,14 @@ function bookPtwoFunction() {
   } else if (y == "05,13") {
       answertwo = "It's possible that I saw somebody matching this description with the mayor, but it's not my job to talk about mayor's meetings.";
       hidePtwoElements();
+  } else if (y == "05,14") {
+      answertwo = "I'm not following. You've seen a printer in a magazine office? Are you sure you're OK?";
+      hidePtwoElements();
   } else if (y == "05,16") {
       answertwo = "What is it, some kind of perfume? I hope it's not drugs, young lady!";
       hidePtwoElements();
   } else if (y == "05,20") {
-      answertwo = "I don't order a lot, I to eat prefer home-cooked food.";
+      answertwo = "I don't order a lot, I prefer home-cooked meals.";
       hidePtwoElements();
   } else if (y == "05,23") {
       answertwo = "If I'm not mistaken, she did visit the mayor once. A month ago, maybe more.";
@@ -522,13 +530,19 @@ function bookPtwoFunction() {
       answertwo = "Young lady, why do you have a rope with you?";
       hidePtwoElements();
   } else if (y == "05,26") {
-      answertwo = "I think you've watched one too many superhero films.";
+      answertwo = "I think you've watched one too many supermen films.";
+      hidePtwoElements();
+  } else if (y == "05,27") {
+      answertwo = "Are you some kind of travelling potpourri salesman? we're not interested.";
       hidePtwoElements();
   } else if (y == "05,30") {
       answertwo = "Why would I know your friend?";
       hidePtwoElements();
   } else if (y == "05,33") {
       answertwo = "I'm sorry, but the mayor asked not to be disturbed. You can make a meeting for next week with his secretary if you want to.";
+      hidePtwoElements();
+  } else if (y == "05,34") {
+      answertwo = "You can find the contact of the office on the city's official website.";
       hidePtwoElements();
   } else if (y == "05,36" || y == "05,39" || y == "05,52") {
       answertwo = "That's a nice cat. Do people carry cats around with them these days?";
@@ -558,7 +572,7 @@ function bookPtwoFunction() {
       answertwo = "<i>You haven't met Alison yet. You can't talk to her, you can only talk about her.</i>";
       hidePtwoElements();
   } else if (y == "11,01") {
-      answertwo = "Ziggy, you remind me so much of your mother. You're just as brave as she is. I know it must be hard for you these last couple of days. We will find her, don't worry.";
+      answertwo = "Ziggy, you remind me so much of your mother. You're just as brave as she is. I know it must be hard for you these last couple of days.";
       hidePtwoElements();
   } else if (y == "11,02") {
       answertwo = "Thanks, I already had my lunch.";
@@ -585,7 +599,7 @@ function bookPtwoFunction() {
       answertwo = "Let me take a try...No, that wasn't it.";
       hidePtwoElements();
   } else if (y == "11,11") {
-      answertwo = "I've tried to move on, but the truth is that I'm still thinking about Nahukat people every day. Ron hasn't stopped working on the communication system, but we haven't progressed a lot in all these years.";
+      answertwo = "I've tried to move on, but the truth is that I'm still thinking about Nahukat people every day. Ron hasn't stopped working on the communication system, but we haven't progressed a lot, in all these years.";
       hidePtwoElements();
   } else if (y == "11,12") {
       answertwo = "The view is not the best. What can we do.";
@@ -633,7 +647,7 @@ function bookPtwoFunction() {
       answertwo = "Ron and I are best friends. He is amazing with techology, but without the right equipment even he can't fix the communication system of our ship. One day, maybe.";
       hidePtwoElements();
   } else if (y == "11,33" || y == "11,45") {
-      answertwo = "The mayor is corrupted, I'm sure of it. The fact that all of the big projects in the city go to the hands of contractors that happen to be his cousins can't be a coincidence. Nor is all the money that keeps stacking in his bank account.";
+      answertwo = "The mayor is corrupted, I'm sure of it. The fact that all of the big projects in the city go to the hands of contractors, that happen to be his cousins, can't be a coincidence. Nor is all the money that keeps stacking in his bank account.";
       hidePtwoElements();
   } else if (y == "11,34") {
       answertwo = "I'm glad you have this phone with you.";
@@ -651,7 +665,7 @@ function bookPtwoFunction() {
       answertwo = "So did you manage to find Alison? You should ask Ron about her, he's quite skillful when it comes to finding information on somebody.";
       hidePtwoElements();
   } else if (y == "11,42") {
-      answertwo = "That nurse is scary. I swear that she never leaves the desk. I don't know who is in charge of this restricted ward, but I've seen her entering it. Her memory must be really poor because she has the code written on her arm and she always checks it before going in. You can't see it now because of the long sleeved scrub she's wearing, but it's there. And don't try to take her form with your power to see it, we can only take form of what we see on a person.";
+      answertwo = "That nurse is scary. I swear that she never leaves the desk. I don't know who is in charge of this restricted ward, but I've seen her entering in it. Her memory must be really poor because she has the code written on her arm and she always checks it before going in. You can't see it now because of the long sleeved jacket she's wearing, but it's there. And don't try to take her form to see her arm, our power duplicates only the parts of a person we see.";
       hidePtwoElements();
   } else if (y == "11,44") {
       answertwo = "Well Ziggy, aren't you a clever girl.";
@@ -666,7 +680,7 @@ function bookPtwoFunction() {
       answertwo = "Sure, use hospital equipment. You need it more than our patients, don't you?";
       hidePtwoElements();
   } else if (y == "11,53") {
-      answertwo = "I don't know the code. They've changed it a few months ago and the whole ward became a restricted zone. To tell you the truth, I don't even know which doctor is in charge of it. I've only seen nurse Barbara entering it. I think she has the code written on her arm because she always checks it before entering the ward. I didn't get a good look at it because she's always wearing this long sleeved jacket. And don't try to take her form with your power to see it, we can only take form of what we see on a person.";
+      answertwo = "I don't know the code. They've changed it a few months ago and the whole ward became a restricted zone. To tell you the truth, I don't even know which doctor is in charge of it. I've only seen nurse Barbara entering it. I think she has the code written on her arm because she always checks it before entering the ward. I didn't get a good look at it because she's always wearing this long sleeved jacket. It's seems obvious to take her form and look at her arm, but our power doesn't work like that. We only take the appearance of those details we can see on a person.";
       hidePtwoElements();
   } else if (y == "11,54") {
       answertwo = "I can't tell you which car is Dr Turner's. I think he changed cars recently.";
@@ -710,11 +724,17 @@ function bookPtwoFunction() {
   } else if (y == "18,03") {
       answertwo = "The kidnapper used this tape to silence me. I don't even want to think about what could have happened if you hadn't come.";
       hidePtwoElements();
+  } else if (y == "18,06") {
+      answertwo = "I'm not sure that it's the right powder shade for your skin tone.";
+      hidePtwoElements();
+  } else if (y == "18,07") {
+      answertwo = "It was me who told them that Lena did some research in Strchester. Let me explain...";
+      hidePtwoElements();
   } else if (y == "18,08" || y == "18,26") {
-      answertwo = "I am aware that your gem gives you some special powers. Why do think I was so interested in getting a hold on it?";
+      answertwo = "I am aware that your gem gives you some special powers. Why do think I was so interested in getting a hold of it?";
       hidePtwoElements();
   } else if (y == "18,13" || y == "18,18" || y == "18,23") {
-      answertwo = "<i>Watch the video before reading this text.</i><br><br>So, what information do I have till now? <br>My mother was interested in mayor Bundy. Also, she was speaking to a journalist Alison Clarke in the hotel. I have a drug that takes away our powers that professor Martin gave me. I should show it to the crew's physician Dr Rose Tobin in the hospital. And I can always call Ron, the crew's tech specialist. He's a man of a lot of information. <br>Many places to go to, so I've written it down and made a little 'to do' list.<br><i>This is the point in the game where it starts to be nonlinear. Remember that you should open more locations to progress in the game.<br>Take cards <b>16</b>, <b>30</b>, <b>33</b>, <b>41</b> and <b>57</b>. Remove cards <b>18</b> and <b>LOC05</b> (but keep the other cards from the location on the table).</i>";
+      answertwo = "<i>Watch the video before reading this text.</i><br><br>So, what information do I have till now? <br>My mother was interested in mayor Bundy. Also, she was speaking to a journalist Alison Clarke in the hotel. I have a drug professor Martin gave me. I should show it to the crew's physician Dr Rose Tobin in the hospital. And I can always call Ron, the crew's tech specialist. He's a man of a lot of information. <br>Many places to go to, so I've written it down and made a little 'to do' list.<br><i>This is the point in the game where it starts to be nonlinear. Remember that you should open more locations to progress in the game.<br>Take cards <b>16</b>, <b>30</b>, <b>33</b>, <b>41</b> and <b>57</b>. Remove cards <b>18</b> and <b>LOC05</b> (but keep the other cards from the location on the table).</i>";
       hidePtwoElements();
       document.getElementById("02_Martin").style.display = "block";
   } else if (y == "18,24") {
@@ -725,6 +745,9 @@ function bookPtwoFunction() {
       hidePtwoElements();
   } else if (y == "18,34") {
       answertwo = "What do we do? Will you call for help?";
+      hidePtwoElements();
+  } else if (y == "18,36" || y == "18,52") {
+      answertwo = "Do you always carry an animal around with you?";
       hidePtwoElements();
   } else if (y == "18,LOC05") {
       answertwo = "The kidnapper brought me here yesterday. He blindsided me all the way here so I haven't a clue where we are.";
@@ -778,13 +801,13 @@ function bookPtwoFunction() {
       answertwo = "The delivery guy? What can I say about him, he brought the food and left.";
       hidePtwoElements();
   } else if (y == "25,23") {
-      answertwo = "Yes, I met with Lena in the hotel some time ago. So, your mother contacted me because she read my article on strange illnesses reports in the region. At least ten people developed severe diseases in the last few months out of nowhere, all of them coming from villages around Starchester. The hospital's official report was that these patients weren't in any way connected. I thought that this would be too much of a coincidence, so I published a story questioning if the hospital is telling the truth. When the story came out, somebody called me. They said that they work at the hospital and that something weird is going on there. What concerned this person the most is the fact that nobody knows where these patients are held and what's their current status. They suspect that they might be in a restricted ward, but they don't know who's in charge of it.";
+      answertwo = "Yes, I met with Lena in the hotel some time ago. Your mother contacted me because she read my article on strange illnesses reports in the region. At least ten people developed severe diseases in the last few months out of nowhere, all of them coming from villages around Starchester. The hospital's official report was that these patients weren't in any way connected. I thought that this would be too much of a coincidence, so I published a story about it. When it came out, somebody called me. They said they work at the hospital and that something weird is going on there. What concerned this person the most is the fact that nobody knows where these patients are held and what's their current status. They suspect that they might be in a restricted ward, but they don't know who's in charge of it.";
       hidePtwoElements();
   } else if (y == "25,24") {
       answertwo = "You're saying that this rope was used in kidnapping? If the victim wants to share their story, I'm here.";
       hidePtwoElements();
   } else if (y == "25,25") {
-      answertwo = "I've written a story about these illnesses that appeared in the county in the last few months, but I still didn't get to the bottom of it. The hospital is hiding something, I'm sure. And it's my job to find out what's happening. The public has to know the truth.";
+      answertwo = "I've written a story about illnesses that appeared in the county during the last few months, but I still didn't get to the bottom of it. The hospital is hiding something, I'm sure. And it's my job to find out what's happening. The public has to know the truth.";
       hidePtwoElements();
   } else if (y == "25,27") {
       answertwo = "Oh, please get it away from me! The smell is way to strong!";
@@ -793,7 +816,7 @@ function bookPtwoFunction() {
       answertwo = "I don't know your friend, but from what you're telling me, he seems to be a good potential connection.";
       hidePtwoElements();
   } else if (y == "25,33" || y == "25,45") {
-      answertwo = "There are a lot of stories about the mayor I could tell you, but I think that the fact your mother was investigating him is probably what you want to hear about. She had suspicions that he is collaborating with PEI, 'Petroleum Extraction Industries', a company that built a big number of oil wells in tha last few years around here and made huge money with it.";
+      answertwo = "There are a lot of stories about the mayor I could tell you, but I think that the fact your mother was investigating him is probably what you want to hear about. She had suspicions that he is collaborating with PEI, 'Petroleum Extraction Industries', a company that built a big number of oil wells in the last few years around here and made huge money with it.";
       hidePtwoElements();
   } else if (y == "25,34") {
       answertwo = "I can give you my number, but don't share it with anyone, please.";
@@ -825,10 +848,10 @@ function bookPtwoFunction() {
       answertwo = "I still don't understand what's written here.";
       hidePtwoElements();
   } else if (y == "29,01" || y == "29,08" || y == "29,11" || y == "29,13" || y == "29,23" || y == "29,26" || y == "29,28"  || y == "29,29" || y == "29,30" || y == "29,33" || y == "29,48" || y == "29,LOC11") {
-      answertwo = "<i>I can't just show my face to this soldier. I am already being followed by these people.</i>.";
+      answertwo = "I can't just show my face to this soldier. I am already being followed by these people.";
       hidePtwoElements();
   } else if (y == "30,01") {
-      answertwo = "Ziggy, it's so great to talk to you. I only wish that the circumstances were different.";
+      answertwo = "Ziggy, it's so great to talk to you. I only wish the circumstances were different.";
       hidePtwoElements();
   } else if (y == "30,02") {
       answertwo = "I don't know how could I eat the burger over the phone.";
@@ -858,7 +881,7 @@ function bookPtwoFunction() {
       answertwo = "Ziggy, try to escape through the window! Is it too high?";
       hidePtwoElements();
   } else if (y == "30,13") {
-      answertwo = "I don't know who the guy is, but I'm sure that he knows where is Lena.";
+      answertwo = "I don't know who the guy is, but I'm sure he knows what happened to Lena.";
       hidePtwoElements();
   } else if (y == "30,14") {
       answertwo = "This model is famous for it's precise both sides printing.";
@@ -900,7 +923,7 @@ function bookPtwoFunction() {
       answertwo = "I've been working on fixing our communication system since we came to Earth. But I haven't made enough progress still. The technology is so limited on this planet, it's frustrating.";
       hidePtwoElements();
   } else if (y == "30,33" || y == "30,45") {
-      answertwo = "Mayor Bundy has been accused of many things. Some of them involve spending tax money on expensive but insignificant city projects that don't help in solving real problems, like waste managment. Other imply that he's been putting his people on high, well paid and powerful positions. But one rumor could perhaps interest us the most. He significantly lowered the taxes for new companies as a part of his economy growth policy two years ago. And there was one company who profited from it the most, quickly gaining wealth and monopoly in the region. It was PEI, 'Petroleum Extraction Industries'. He should be in his office now, it's working hours.";
+      answertwo = "Mayor Bundy has been accused of many things. Some of them involve spending tax money on expensive city projects that don't help in solving real problems, like waste managment. Other imply that he's been putting his people on high, well paid and powerful positions. But one rumor could perhaps interest us the most. He significantly lowered the taxes for new businesses as a part of his economy growth policy two years ago. And there was one company who profited from it the most, quickly gaining wealth and monopoly in the region. It was PEI, 'Petroleum Extraction Industries'. He should be in his office now, it's working hours.";
       hidePtwoElements();
   } else if (y == "30,34") {
       answertwo = "You know that I've installed a tracking system so that I can always see where you are. So keep it with you and keep it turned on.";
@@ -954,7 +977,7 @@ function bookPtwoFunction() {
       answertwo = "I wonder how could we shed a light on the meaning of this document.";
       hidePtwoElements();
   } else if (y == "31,01" || y == "31,02" || y == "31,03" || y == "31,04" || y == "31,05" || y == "31,06" || y == "31,07" || y == "31,08" || y == "31,09" || y == "31,10" || y == "31,11" || y == "31,12" || y == "31,13" || y == "31,14" || y == "31,15" || y == "31,16" || y == "31,17" || y == "31,18" || y == "31,19" || y == "31,20" || y == "31,21" || y == "31,22" || y == "31,23" || y == "31,24" || y == "31,25" || y == "31,26" || y == "31,27" || y == "31,28" || y == "31,29" || y == "31,30" || y == "31,31" || y == "31,32" || y == "31,33" || y == "31,34" || y == "31,35" || y == "31,36" || y == "31,37" || y == "31,38" || y == "31,39" || y == "31,40" || y == "31,41" || y == "31,42" || y == "31,43" || y == "31,44" || y == "31,45" || y == "31,46" || y == "31,47" || y == "31,48" || y == "31,49" || y == "31,50" || y == "31,51" || y == "31,52" || y == "31,53" || y == "31,54" || y == "31,55" || y == "31,56" || y == "31,57" || y == "31,LOC01" || y == "31,LOC02" || y == "31,LOC03" || y == "31,LOC04" || y == "31,LOC05" || y == "31,LOC06" || y == "31,LOC07" || y == "31,LOC08" || y == "31,LOC09" || y == "31,LOC10" || y == "31,LOC11" || y == "31,SPO01" || y == "31,SPO02" || y == "31,SPO03" || y == "31,SPO04" || y == "31,SPO05") {
-      answertwo = "<i>The mime artist is doing his performance and completely ignoring my questions.</i>";
+      answertwo = "<i>The mime artist is doing his performance and completely ignores my questions.</i>";
       hidePtwoElements();
   } else if (y == "33,01" || y == "33,02" || y == "33,03" || y == "33,04" || y == "33,05" || y == "33,06" || y == "33,07" || y == "33,08" || y == "33,09" || y == "33,10" || y == "33,11" || y == "33,12" || y == "33,13" || y == "33,14" || y == "33,15" || y == "33,16" || y == "33,17" || y == "33,18" || y == "33,19" || y == "33,20" || y == "33,21" || y == "33,22" || y == "33,23" || y == "33,24" || y == "33,25" || y == "33,26" || y == "33,27" || y == "33,28" || y == "33,29" || y == "33,30" || y == "33,31" || y == "33,32" || y == "33,33" || y == "33,34" || y == "33,35" || y == "33,36" || y == "33,37" || y == "33,38" || y == "33,39" || y == "33,40" || y == "33,41" || y == "33,42" || y == "33,43" || y == "33,44" || y == "33,45" || y == "33,46" || y == "33,47" || y == "33,48" || y == "33,49" || y == "33,50" || y == "33,51" || y == "33,52" || y == "33,53" || y == "33,54" || y == "33,55" || y == "33,56" || y == "33,57" || y == "33,LOC01" || y == "33,LOC02" || y == "33,LOC03" || y == "33,LOC04" || y == "33,LOC05" || y == "33,LOC06" || y == "33,LOC07" || y == "33,LOC08" || y == "33,LOC09" || y == "33,LOC10" || y == "33,LOC11" || y == "33,SPO01" || y == "33,SPO02" || y == "33,SPO03" || y == "33,SPO04" || y == "33,SPO05") {
       answertwo = "<i>The mayor isn't in your reach. You can't talk to him, you can only talk about him.</i>";
@@ -993,10 +1016,11 @@ function bookPtwoFunction() {
       answertwo = "She's the nurse that have been coming to my room and doing the daily rounds.";
       hidePtwoElements();
   } else if (y == "35,48") {
-      answertwo = "I was completely healthy until recently. And when I got sick the doctors couldn't find the reason behind it. But now I know what's responsible for me losing my health! <br>Dr Turner thought that I couldn't hear anything, being in a coma, but I did. He is keeping me and the other patients hidden here, so that nobody would find out what's behind our illnesses. It's the pollution from all that PEI oil drilling in the county!<br>PEI is paying Dr Turner for this. I overheard him talking to a guy here in my room. The guy said that unless he keeps up the good work he will have bigger problems than gambling debts they covered for him...<br><i>In the middle of Jenna's sentence, we hear a car arriving in front of the building. I look at the window and see somebody approaching the hospital. It's Dr Turner himself! What do I do? When nurse Barbara tells him that she already saw him coming in here, he will know that it's somebody using the power of disguise! While I'm panicking, I hear him talking on the phone to someone in front of the hospital entrance.</i><br>I'm at the hospital now. As soon as I finish, I'm coming to the base. Of course I'm alone, I'm not planning on bringing anybody to see that I'm working with PEI!<br><i>Dr Turner will enter the room soon. What do I do?<br>Take card <b>12</b>.</i>";
+      escape = 2;
+      answertwo = "I was completely healthy until recently. And when I got sick, the doctors couldn't find the reason behind it. But now I know what's responsible for me losing my health! <br>Dr Turner thought that I couldn't hear anything, being in a coma, but I did. He is keeping me and the other patients hidden here, out of the public's sight. PEI is paying him to do this.<br>I overheard Dr Turner talking to a guy here in my room. They were saying that the pollution from all that PEI oil drilling in the county is what's making us ill. The guy told to the doctor that he will have bigger problems than gambling debts they covered for him, unless he keeps up the good work...<br><i>In the middle of Jenna's sentence, we hear a car arriving in front of the building. I look at the window and see somebody approaching the hospital. It's Dr Turner himself! What do I do? When nurse Barbara tells him that she already saw him coming in here, he will know that it's somebody using the power of disguise! While I'm panicking, I hear him talking on the phone to someone in front of the hospital entrance.</i><br>I'm at the hospital now. As soon as I finish, I'm coming to the base. Of course I'm alone, I'm not planning on bringing anybody to see that I'm working with PEI!<br><i>Dr Turner will enter the room soon. What do I do?</i>";
       hidePtwoElements();
   } else if (y == "35,50") {
-      answertwo = "Why would you need that? Use it I guess, there is another one in the corner.";
+      answertwo = "Why would you need that? Use it, I guess, there is another one in the corner.";
       hidePtwoElements();
   } else if (y == "35,LOC06" || y == "35,LOC09") {
       answertwo = "I've been here for so long.";
@@ -1020,7 +1044,7 @@ function bookPtwoFunction() {
       answertwo = "There was a man here. He asked about you, actually. Afterwards, he sat in the lounge and wrote something on the front page while he was talking on the phone. He tore the page off and took it with him.";
       hidePtwoElements();
   } else if (y == "38,23") {
-      answertwo = "I remember Mrs Wonder. She is a remarkable person, you can sense it immidiately. She stayed here in two occasions in the last few months. I remember that she had a meeting with a woman in the hotel bar. I overheard them when I was passing by, I think she said her name was Alison Clarke and that she was a journalist.<br><i>I'm just about to thank her and leave, when she stops me.</i><br>Wait! I almost forgot! There was a man here a half an hour ago asking if you were the guest of the hotel. He was bald and he was wearing sunglasses and a leather jacket.<br><i>Take cards <b>07</b> and <b>13</b></i>.";
+      answertwo = "I remember Mrs Wonder. She is a remarkable person, you can sense it immidiately. She stayed here in two occasions in the last few months. I remember that she had a meeting with a woman in the hotel bar. I overheard them when I was passing by, I think she said her name was Alison Clarke and that she was a journalist.<br><i>I'm just about to thank her and leave, when she stops me.</i><br>Wait! I almost forgot! There was a man here half an hour ago asking if you were the guest of the hotel. He was bald and he was wearing sunglasses and a leather jacket.<br><i>Take cards <b>07</b> and <b>13</b></i>.";
       hidePtwoElements();
   } else if (y == "38,27") {
       answertwo = "It really brights up the atmosphere here, doesn't it? Oh, who am I kidding? I know it's horrible but my boss loves it. I can hardly breath in here! Please take it, you'll be doing me a favor.";
@@ -1035,7 +1059,7 @@ function bookPtwoFunction() {
       answertwo = "Oh, I don't want to bore you with my personal stories.";
       hidePtwoElements();
   } else if (y == "38,46") {
-      answertwo = "The man who was reading the newspaper received a phone call and wrote something down on the front page, tore it off and left. By the way, we had a guest named Lena Wonder here recently, you two aren't related by any chance?";
+      answertwo = "The man who was reading the newspaper received a phone call, wrote something down on the front page, tore it off and left.";
       hidePtwoElements();
   } else if (y == "38,51") {
       answertwo = "Feel free to take the pencil.";
@@ -1058,7 +1082,7 @@ function bookPtwoFunction() {
   } else if (y == "42,02") {
       answertwo = "Thank you, but I ordered a salad and I'm waiting for the delivery. They are late, again. And I'm starving! I swear that it's the last time I'm ordering from this bistro.";
       hidePtwoElements();
-  } else if (y == "42,03" || y == "42,06" || y == "42,10" || y == "42,14" || y == "42,17" || y == "42,22" || y == "42,24" || y == "42,27" || y == "42,40" || y == "42,41" || y == "42,44") {
+  } else if (y == "42,03" || y == "42,06" || y == "42,10" || y == "42,14" || y == "42,17" || y == "42,22" || y == "42,24" || y == "42,27" || y == "42,40" || y == "42,44") {
       answertwo = "Miss, there are other people waiting. If you don't need anything, please step out of the line.";
       hidePtwoElements();
   } else if (y == "42,05") {
@@ -1077,7 +1101,7 @@ function bookPtwoFunction() {
       answertwo = "Oh, it's that man who came here once...Ah, actually, never mind, I think I've mistaken him for someone else.";
       hidePtwoElements();
   } else if (y == "42,20") {
-      answertwo = "Why are you asking me about a delivery guy? Are you sure you're alright?";
+      answertwo = "I ordered a salad for lunch, but the delivery is late as usual.";
       hidePtwoElements();
   } else if (y == "42,23") {
       answertwo = "Your mother isn't a patient of ours. I'm sorry, but I can't help you.";
@@ -1094,6 +1118,9 @@ function bookPtwoFunction() {
   } else if (y == "42,36" || y == "42,52") {
       answertwo = "This is not a veterinary clinic.";
       hidePtwoElements();
+  } else if (y == "42,41") {
+      answertwo = "Dr Rose is right there. Should I tell her that she's on your list?";
+      hidePtwoElements();
   } else if (y == "42,42") {
       answertwo = "I'm here for all of your questions considering the hospital. But I will not share the details of my private life with you.";
       hidePtwoElements();
@@ -1104,7 +1131,7 @@ function bookPtwoFunction() {
       answertwo = "Oh...this is just something I scribbled when I was bored during the night shift. Nothing special.";
       hidePtwoElements();
   } else if (y == "42,53") {
-      answertwo = "Don't touch this! There are no visitors allowed in this ward.";
+      answertwo = "There are no visitors allowed in this ward.";
       hidePtwoElements();
   } else if (y == "42,LOC06") {
       answertwo = "Yes, this is the Central Hospital reception desk. How can I help you?";
@@ -1127,11 +1154,14 @@ function bookPtwoFunction() {
   } else if (y == "47,06") {
       answertwo = "I can give you some makeup if you want. I have a whole case of it at home.";
       hidePtwoElements();
+  } else if (y == "47,07") {
+      answertwo = "I don't read the news anymore. My art is the only thing that interests me.";
+      hidePtwoElements();
   } else if (y == "47,08") {
       answertwo = "You're a magician of some kind, or?";
       hidePtwoElements();
   } else if (y == "47,13") {
-      answertwo = "He did pass here, maybe a half an hour ago. I remember him well because he threw his used metro ticket in my case. Can you believe some people? Anyway, he went to this shop in Carousel St. The one that's looking straight at Lady's Alley. The shop was closed so he turned and left, but I didn't see where.";
+      answertwo = "He did pass here, maybe a half an hour ago. I remember him well because he threw his used metro ticket in my case. Can you believe some people? Anyway, he went to this shop in Carousel St. The one that's looking straight at Lady's Alley. The shop was closed, so he left, but I didn't see where.";
       hidePtwoElements();
   } else if (y == "47,21") {
       answertwo = "I don't read the newspapers. It's better to not spoil your mind with everything that's written in the media.";
@@ -1143,7 +1173,7 @@ function bookPtwoFunction() {
       answertwo = "Wow, this smell is super strong and not at all that great.";
       hidePtwoElements();
   } else if (y == "47,34") {
-      answertwo = "Sure, you can take a photo. But only during my performance.";
+      answertwo = "Sure, you can make a video. But only during my performance.";
       hidePtwoElements();
   } else if (y == "47,36" || y == "47,52") {
       answertwo = "My street friend seems to like you. If you want to take him, be my guest.";
@@ -1169,20 +1199,26 @@ function bookPtwoFunction() {
   } else if (y == "57,01" || y == "57,02" || y == "57,03" || y == "57,04" || y == "57,05" || y == "57,06" || y == "57,07" || y == "57,08" || y == "57,09" || y == "57,10" || y == "57,11" || y == "57,12" || y == "57,13" || y == "57,14" || y == "57,15" || y == "57,16" || y == "57,17" || y == "57,18" || y == "57,19" || y == "57,20" || y == "57,21" || y == "57,22" || y == "57,23" || y == "57,24" || y == "57,25" || y == "57,26" || y == "57,27" || y == "57,28" || y == "57,29" || y == "57,30" || y == "57,31" || y == "57,32" || y == "57,33" || y == "57,34" || y == "57,35" || y == "57,36" || y == "57,37" || y == "57,38" || y == "57,39" || y == "57,40" || y == "57,41" || y == "57,42" || y == "57,43" || y == "57,44" || y == "57,45" || y == "57,46" || y == "57,47" || y == "57,57" || y == "57,49" || y == "57,50" || y == "57,51" || y == "57,52" || y == "57,53" || y == "57,54" || y == "57,55" || y == "57,56" || y == "57,57" || y == "57,LOC01" || y == "57,LOC02" || y == "57,LOC03" || y == "57,LOC04" || y == "57,LOC05" || y == "57,LOC06" || y == "57,LOC07" || y == "57,LOC08" || y == "57,LOC09" || y == "57,LOC10" || y == "57,LOC11" || y == "57,SPO01" || y == "57,SPO02" || y == "57,SPO03" || y == "57,SPO04" || y == "57,SPO05") {
       answertwo = "<i>Dr Rose isn't here. You can't talk to her, you can only talk about her.</i>";
       hidePtwoElements();
+  } else if (y == "02,06" || y == "06,02") {
+      answertwo = "I don't see a good reason to put makeup into the food.";
+      hidePtwoElements();
+  } else if (y == "02,10" || y == "10,02") {
+      answertwo = "Dipping the tablet in mayonnaise will not unlock it.";
+      hidePtwoElements();
+  } else if (y == "02,14" || y == "14,02") {
+      answertwo = "The printer isn't hungry. There's plenty of paper in it.";
+      hidePtwoElements();
   } else if (y == "02,16" || y == "16,02") {
       answertwo = "Is it really the best idea to drug this food with something that I don't even really know what it is? I don't think so.";
       hidePtwoElements();
   } else if (y == "02,27" || y == "27,02") {
-      answertwo = "Mixing the potpourri with the hamburger will just make it uneatable.";
+      answertwo = "I don't want to spoil a perfectly good burger.";
       hidePtwoElements();
   } else if (y == "02,34" || y == "34,02") {
       answertwo = "The food isn't photogenic enough to make me want to take a photo of it.";
       hidePtwoElements();
-  } else if (y == "02,36" || y == "02,39" || y == "02,52" || y == "36,02" || y == "39,02" || y == "52,02") {
-      answertwo = "I don't think that the cat is hungry. He doesn't seem interested in the food.";
-      hidePtwoElements();
-  } else if (y == "02,06" || y == "06,02") {
-      answertwo = "I don't see a good reason to put makeup into the food.";
+  } else if (y == "02,36" || y == "02,52" || y == "36,02" || y == "52,02") {
+      answertwo = "The cat doesn't like mayonnaise.";
       hidePtwoElements();
   } else if (y == "03,09" || y == "09,03") {
       answertwo = "It could be a good idea to tape something to the car, but what?";
@@ -1203,37 +1239,46 @@ function bookPtwoFunction() {
       answertwo = "I don't want to tie up anybody.";
       hidePtwoElements();
   } else if (y == "03,34" || y == "34,03") {
-      answertwo = "Here goes...I'll admit it's a primitive solution, but it works.<br><i>Take card <b>40</b>. Remove cards <b>03</b> nad <b>34</b>.</i>";
+      answertwo = "Here goes...A phone you can stick anywhere.<br><i>Take card <b>40</b>. Remove cards <b>03</b> nad <b>34</b>.</i>";
       hidePtwoElements();
   } else if (y == "03,36" || y == "03,39" || y == "03,52" || y == "24,36" || y == "24,39" || y == "24,52" || y == "36,03" || y == "36,24" || y == "39,03" || y == "39,24" || y == "52,03" || y == "52,24") {
       answertwo = "I'm not going to tie up my little cat!";
       hidePtwoElements();
+  } else if (y == "04,06" || y == "06,04" || y == "06,56" || y == "56,06") {
+      answertwo = "The tree doesn't need makeup, it's already very pretty.";
+      hidePtwoElements();
   } else if (y == "04,08" || y == "08,04") {
-      answertwo = "My little tree, could you do me a favor and bent a branch just a little bit?.<br><i>As I use my special power, the tree gently bends one of it's branches all the way to the floor.<br>Take card <b>56</b>. Remove card <b>04</b>.</i>";
+      answertwo = "My little tree, could you do me a favor and bent a branch just a little bit?.<br><i>As I use my special power, the tree gently lowers one of it's branches all the way to the floor.<br>Take card <b>56</b>. Remove card <b>04</b>.</i>";
       hidePtwoElements();
   } else if (y == "04,27" || y == "27,04") {
       answertwo = "I don't want to torture the tree with this smell.";
       hidePtwoElements();
   } else if (y == "04,32" || y == "32,04") {
-      answertwo = "It would be great if I could climb up the tree to get the camera, but it's to hard. The branches are too high to reach them.";
+      answertwo = "It would be great if I could climb up the tree to get the camera, but it's not so easy to do. The branches are too high to reach them.";
       hidePtwoElements();
-  } else if (y == "04,34" || y == "34,04") {
+  } else if (y == "04,34" || y == "34,04"|| y == "34,56" || y == "56,34") {
       answertwo = "I don't have the tree's phone number.";
       hidePtwoElements();
   } else if (y == "04,36" || y == "36,04") {
       answertwo = "I can't force the cat to climb on the tree.";
       hidePtwoElements();
-  } else if (y == "04,52" || y == "52,04") {
+  } else if (y == "04,52" || y == "52,04" || y == "52,56" || y == "56,52") {
       answertwo = "Sure, I can tell the cat to climb the tree, but he can't bring me the camera.";
       hidePtwoElements();
   } else if (y == "06,10" || y == "10,06") {
       answertwo = "I spread some of the powder with a brush on the tablet screen. Well well, look at this...<br><i>Take card <b>44</b>. Remove cards <b>06</b> and <b>10</b>.";
       hidePtwoElements();
-  } else if (y == "06,36" || y == "06,39" || y == "06,52" || y == "36,02" || y == "39,02" || y == "52,02") {
-      answertwo = "Putting makeup on the cat isn't going to solve anything.";
+  } else if (y == "06,34" || y == "34,06") {
+      answertwo = "I like to keep my phone nice and clean.";
+      hidePtwoElements();
+  } else if (y == "06,36" || y == "06,52" || y == "36,06" || y == "52,06") {
+      answertwo = "The cat gives me a look that says 'Don't you even think about it'.";
+      hidePtwoElements();
+  } else if (y == "06,43" || y == "43,06") {
+      answertwo = "The makeup kit is already in the suitcase.";
       hidePtwoElements();
   } else if (y == "06,53" || y == "53,06") {
-      answertwo = "I can't touch the lock in front of nurse Barbara, but even if I could, this would maybe reveal the numbers in the code, but not their order.";
+      answertwo = "I can't touch the lock in front of nurse Barbara. But even if I could, this would reveal the numbers in the code, not their order.";
       hidePtwoElements();
   } else if (y == "08,01" || y == "08,05" || y == "08,11" || y == "08,15" || y == "08,18" || y == "08,25" || y == "08,29" || y == "08,30" || y == "08,31" || y == "08,33" || y == "08,35" || y == "08,38" || y == "08,42" || y == "08,45" || y == "08,47") {
       answertwo = "It would be interesting to read people's minds and make them do stuff, but it's also a bit creepy. Anyway, my power works only on plants and animals.";
@@ -1250,11 +1295,14 @@ function bookPtwoFunction() {
   } else if (y == "08,56" || y == "56,08") {
       answertwo = "What more can I ask of this tree than what it's already done for me?";
       hidePtwoElements();
+  } else if (y == "09,01") {
+      answertwo = "I can't get into the car. It's locked, of course.";
+      hidePtwoElements();
   } else if (y == "09,34" || y == "34,09") {
       answertwo = "If I could somehow put my phone into the car, we could follow it with the tracking app. But the car is locked, of course.";
       hidePtwoElements();
   } else if (y == "09,40" || y == "40,09") {
-      answertwo = "The tracking app on the phone will show us exactly where will the car go.<br><i>I tape the phone to the car, after calling Ron to come with his van to pick me up. I just have enough time to hide behind another car parked nearby when I see Dr Turner leaving the building. Fortunately, Ron arrives only a few minutes after. Rose joins us, and the two of us jump into Ron's car. The chase for Dr Turner begins!<br>Take envelope <b>SPO06</b>. Remove cards <b>09</b>, <b>40</b> and <b>LOC10</b>.</i>";
+      answertwo = "The tracking app on the phone will show us exactly where will the car go.<br><i>I tape the phone to the car, after calling Ron to come with his van to pick me up. I just have enough time to hide behind another car parked nearby when I see Dr Turner leaving the building. Fortunately, Ron arrives shortly after. Rose joins us, and the two of us jump into Ron's van. The chase for Dr Turner begins!<br>Take envelope <b>SPO06</b>. Remove cards <b>09</b>, <b>40</b> and <b>LOC10</b>.</i>";
       hidePtwoElements();
   } else if (y == "10,14" || y == "10,44" || y == "14,10" || y == "14,44") {
       answertwo = "That could work if I actually opened the tablet. I can't connect it to the printer while it's locked.";
@@ -1271,11 +1319,17 @@ function bookPtwoFunction() {
   } else if (y == "12,34" || y == "34,12") {
       answertwo = "That's not much of a view to take a photo of it.";
       hidePtwoElements();
-  } else if (y == "12,50" || y == "50,12") {
+  } else if (y == "12,50" && escape == 1 || y == "50,12" && escape == 1) {
+      answertwo = "Should I really break the window with the IV stand top? I don't see why.";
+      hidePtwoElements();
+  } else if (y == "12,50" && escape == 2 || y == "50,12" && escape == 2) {
       answertwo = "I could hook the IV stand top on the window, but I don't know what to do from there.";
       hidePtwoElements();
-  } else if (y == "12,55" || y == "55,12") {
-      answertwo = "This may not be the safest thing to do, but I don't have a choice. Here we go!<br></i>I hook my improvised anchor on the window sill and use the rope to climb down the window. Jenna unhooks the anchor and throws it down just before Dr Turner enters the room. That was close!<br>Take card <b>LOC10</b>. Remove cards <b>12</b>, <b>35</b>, <b>55</b> and <b>LOC09</b> (but keep the other cards from the location on the table).</i>";
+  } else if (y == "12,55" && escape == 1 || y == "55,12" && escape == 1) {
+      answertwo = "I just got to the room. Why would I escape now?";
+      hidePtwoElements();
+  } else if (y == "12,55" && escape == 2 || y == "55,12" && escape == 2) {
+      answertwo = "This may not be the safest thing to do, but I don't have a choice. Here we go!<br><i>I hook my improvised anchor on the window sill and use the rope to climb down the window. Jenna unhooks the anchor and throws it down just before Dr Turner enters the room. That was close!<br>Take card <b>LOC10</b>. Remove cards <b>12</b>, <b>35</b>, <b>55</b> and <b>LOC09</b> (but keep the other cards from the location on the table).</i>";
       hidePtwoElements();
   } else if (y == "14,17" || y == "17,14") {
       answertwo = "The file is called 'PEI_both_sides'. Let's try to print it, on both sides obviously.<br>Take envelope <b>SPO05</b>. Remove cards <b>14</b> and <b>17</b>.</i>";
@@ -1289,8 +1343,14 @@ function bookPtwoFunction() {
   } else if (y == "16,36" || y == "16,39" || y == "16,52" || y == "36,16" || y == "39,16" || y == "52,16" || y == "52,46") {
       answertwo = "I don't want to drug poor little cat!";
       hidePtwoElements();
+  } else if (y == "19,36" || y == "19,52" || y == "36,19" || y == "52,19") {
+      answertwo = "What's a cat supposed to do with the money?";
+      hidePtwoElements();
   } else if (y == "19,43" || y == "43,19") {
       answertwo = "Maybe a little tip will make the mime artist a bit more communicative.<br><i>I put the banknote in artist's suitcase and I finally catch his attention. He thanks me and starts a conversation with me.<br>Take card <b>47</b>. Remove cards <b>19</b>, <b>31</b> and <b>43</b>.</i>";
+      hidePtwoElements();
+  } else if (y == "21,34" || y == "34,21") {
+      answertwo = "Taking a photo of the newspaper seems unnecesary. You can find all the news on the internet anyway.";
       hidePtwoElements();
   } else if (y == "21,51" || y == "51,21") {
       answertwo = "This is a little trick my mother taught me when I was a kid. I just have to gently shade the page with the pencil and...here it is!<br><i>The indentations on the page reveal what was written on the top page.<br>Take card <b>46</b>. Remove cards <b>21</b> and <b>51</b>.</i>";
@@ -1299,13 +1359,19 @@ function bookPtwoFunction() {
       answertwo = "I try to make the cat smell the glove, but he just turns his head away from it.";
       hidePtwoElements();
   } else if (y == "22,52" || y == "52,22") {
-      answertwo = "Let's see if what they say about cats having a super sensitive smell is true.<br><it>The cat smells the glove and confirms to me that he could now recognize the smell of the glove's owner anywhere. <br>Take card <b>39</b>. Remove cards <b>22</b> and <b>52</b>.</i>";
+      answertwo = "Let's see if what they say about cats having a super sensitive smell is true.<br><i>The cat smells the glove and confirms to me that he could now recognize the smell of the glove's owner anywhere. <br>Take card <b>39</b>. Remove cards <b>22</b> and <b>52</b>.</i>";
       hidePtwoElements();
   } else if (y == "24,50" || y == "50,24") {
       answertwo = "You can learn how to make all kinds of knots on the internet.<br><i>Take card <b>55</b>. Remove cards <b>24</b> and <b>50</b>.</i>";
       hidePtwoElements();
-  } else if (y == "26,05" || y == "26,07" || y == "26,11" || y == "26,15" || y == "26,23" || y == "26,25" || y == "26,29" || y == "26,30" || y == "26,33" || y == "26,42" || y == "26,45" || y == "26,65" || y == "26,66") {
+  } else if (y == "26,01") {
+      answertwo = "I already have my own appearance.";
+      hidePtwoElements();
+  } else if (y == "26,05" || y == "26,07" || y == "26,15" || y == "26,25" || y == "26,29" || y == "26,30" || y == "26,35" || y == "26,45") {
       answertwo = "It's fun to try it for a while, but I'm not getting anywhere with this.";
+      hidePtwoElements();
+  } else if (y == "26,11") {
+      answertwo = "It would be easier to ask the real Rose for help. But I can't think of anything for her to do.";
       hidePtwoElements();
   } else if (y == "26,13") {
       answertwo = "Who would have thought that a leather jacket could look so good on me?<br><i>Use the input field below to act while having the appearance of the unknown man. Use it in the exactly same way as you would use the original one. You can always return to your usual form by using the usual input field above.</i>";
@@ -1315,6 +1381,15 @@ function bookPtwoFunction() {
       answertwo = "It takes only a second for me to turn into the delivery guy, looking like him to the last detail. There is even a delivery box on my back.<br><i>Use the input field below to act while having the appearance of the delivery guy. Use it in the exactly same way as you would use the original one. You can always return to your usual form by using the original input field above.</i>";
       hidePtwoElements();
       document.getElementById("deliveryguyField").style.display = "block";
+  } else if (y == "26,23") {
+      answertwo = "I'm not sure that this would do any good.";
+      hidePtwoElements();
+  } else if (y == "26,33") {
+      answertwo = "It's good to do it for practise, but I don't have a reason to use this mask.";
+      hidePtwoElements();
+  } else if (y == "26,42") {
+      answertwo = "I don't think that's the right person I should be turning into.";
+      hidePtwoElements();
   } else if (y == "26,48") {
       answertwo = "It's not that I dream of being a morally questionable doctor, but I'll do whatever is necessary to bring me closer to my goal.<br><i>Use the input field below to act while having the appearance of Dr Turner. Use it in the exactly same way as you would use the original one. You can always return to your usual form by using the usual input field above.</i>";
       hidePtwoElements();
@@ -1328,14 +1403,20 @@ function bookPtwoFunction() {
   } else if (y == "32,52" || y == "52,32") {
       answertwo = "The cat could climb the tree, but he can't bring me the camera.";
       hidePtwoElements();
+  } else if (y == "34,31") {
+      answertwo = "I don't have time to film the artist doing his show.";
+      hidePtwoElements();
   } else if (y == "34,37" || y == "37,34") {
-      answertwo = "Let's see what did this camera record...<br></i>I put the microSD card into my phone and look for the footage of last half an hour.<br>Take special objects cards <b>SPO02</b>, <b>SPO03</b> and <b>SPO04</b>. Remove card <b>37</b>.";
+      answertwo = "Let's see what did this camera record...<br><i>I put the microSD card into my phone and look for the footage of last half an hour.<br>Take special objects cards <b>SPO02</b>, <b>SPO03</b> and <b>SPO04</b>. Remove card <b>37</b>.</i>";
       hidePtwoElements();
   } else if (y == "34,36" || y == "34,39" || y == "34,52" || y == "36,34" || y == "39,34" || y == "52,34") {
       answertwo = "A photo of the cat isn't very useful, but he's just so adorable!";
       hidePtwoElements();
+  } else if (y == "36,54" || y == "54,36") {
+      answertwo = "I try to make the cat search for Dr Turner's car, but he doesn't budge.";
+      hidePtwoElements();
   } else if (y == "39,54" || y == "54,39") {
-      answertwo = "Come on cat, you can do it!<br><i>The cat passes through the parking lot and after a few minutes of hesitation, he stops next to a car and meows decisively.<br>Take cars <b>09</b>. Remove cards <b>39</b> and <b>54</b>.</i>";
+      answertwo = "Come on cat, you can do it!<br><i>The cat passes through the parking lot and after a few minutes of hesitation, he stops next to a car and meows decisively.<br>Take card <b>09</b>. Remove cards <b>39</b> and <b>54</b>.</i>";
       hidePtwoElements();
   } else if (y == "53,5317" || y == "53,5,3,1,7" || y == "53,6538" || y == "53,6,5,3,8" || y == "53,LIES" || y == "53,L,I,E,S") {
       answertwo = "Even if I know the code, I can't just go right to the lock and enter it. Nurse Barbara is sitting right there.";
@@ -1353,13 +1434,13 @@ function bookPtwoFunction() {
       answertwo = "This is the shop that the man went to. Where to from here?<br><i>Take card <b>LOC04</b>. Remove cards <b>47</b> and <b>LOC03</b> (but keep the other cards from the location on the table).</i>";
       hidePtwoElements();
   } else if (y == "B33") {
-      answertwo = "Security camera footage shows that the sunglasses leather jacket guy went into this building. I go right to the door and just as I realise that I don't actually know what to do when I face the unknown man, I see the door opening. I back off and somebody comes out of the building. It's...the unknown man!<br>And a second before he turns around and sees me, something happens. I feel a new kind of energy going through me. And for a brief moment, I think about the mime artist that I spoke to earlier. And then I see my reflection on the window next to me. I AM that mime artist!<br>The unknown man passes right next to me and goes down the street. I have a new power, even more amazing than the old one. I easily return back to my normal self and enter the building.<br>Take cards <b>26</b> and <b>LOC05</b>. Remove cards <b>SPO02</b>, <b>SPO03</b>, <b>SPO04</b> and <b>LOC04</b>.</i>";
+      answertwo = "Security camera footage shows that the sunglasses leather jacket guy went into this building. I go right to the door, and just as I realise that I don't actually know what to do when I face the unknown man, I see the door opening. I back off and somebody comes out of the building. It's...the unknown man!<br>A second before he turns around and sees me, something happens. I feel a new kind of energy going through me. For a brief moment, I think about the mime artist that I spoke to earlier. And then I see my reflection on the window next to me. I AM that mime artist!<br>The unknown man passes right next to me and goes down the street. I have a new power, even more amazing than the old one. I easily return back to my normal self and enter the building.<br><i>Take cards <b>26</b> and <b>LOC05</b>. Remove cards <b>SPO02</b>, <b>SPO03</b>, <b>SPO04</b> and <b>LOC04</b>.</i>";
       hidePtwoElements();
   } else if (y == "G54") {
-      answertwo = "I should take the drug to Dr Rose.<br><i>As I arrive to the hospital, I see Dr Rose in the hallway. We move a little on the side by the coffee machine, so that we can speak in private. I pass her the drug that is supposedly capable of removing our powers. She promises that she will send it to analysis immidiately and that she will try to make an antidote. This will take a while, so I should continue with my investigation in the meantime.<br>Take card <b>LOC06</b>. Remove cards <b>16</b> and <b>57</b>.</i>";
+      answertwo = "I should take the drug to Dr Rose.<br><i>As I arrive to the hospital, I see Dr Rose in the hallway. We move to the side by the coffee machine, so that we can speak in private. I pass her the drug that is supposedly capable of removing our powers. She promises she will send it for analysis immidiately and that she will try to make an antidote. This will take a while, so I should continue with my investigation in the meantime.<br>Take card <b>LOC06</b>. Remove cards <b>16</b> and <b>57</b>.</i>";
       hidePtwoElements();
   } else if (y == "C29") {
-      answertwo = "I didn't think that the mayor could be invloved, but if that's what it takes, I'm going to bring down the mayor himself!<br><i>Take card <b>LOC07</b>.</i>";
+      answertwo = "I didn't think that the mayor could be invloved, but if that's what it takes, I'm going to bring the mayor himself down!<br><i>Take card <b>LOC07</b>.</i>";
       hidePtwoElements();
   } else if (y == "H50") {
       answertwo = "I arrive to the 'Starchester Weather Radar' but I don't find anything of interest. But wasn't the magazine address 'Under the Radar'?</i>";
@@ -1368,7 +1449,7 @@ function bookPtwoFunction() {
       answertwo = "Finally! This magazine really is under the radar, it wasn't easy to find its whereabouts.<br><i>Take card <b>LOC08</b>. Remove card <b>07</b>.</i>";
       hidePtwoElements();
   } else if (y == "C24" || y == "C30") {
-      answertwo = "We arrive to the spot the tracking app lead us to and park the car across the street on a safe distance, so that nobody would spot us. We're here just in time to see Dr Turner going to the entrance of the building. An armed soldier guarding the doors greets him there and passes him something that looks like a potion of some kind. Dr Turner drinks it, and a few moments later the soldier lets him in. Dr Rose turns to me and says:</i><br>This thing what he's drinking must be the drug that professor Martin gave you. My analysis of the drug shows that it's function is indeed to make our powers dissapear, so they must be giving it to people that enter as a precaution. Luckily, I've created an antidote.<br><i>Dr Rose gives me a pill and I swallow it, hopefully gaining immunity to this drug. <br>But then Ron, looking at the entrance with his binoculars, whispers in panic:</i><br>Guys, do you see the symbol on the doors? Rose, you know what it is. It's the symbol of Laki civilisation, the same parasite society that stole and destroyed Nahukat. My worst nightmares have come true: the Lakis are here.<br><i>I manage to articulate a question, shaking with fear:</i><br>But how are Lakis connected with everything? I thought that PEI is behind all of this.<br><i>Ron puts the binoculars down and takes his head in his hands.</i><br>Now I see what does PEI really stand for: 'Planet Earth Invasion'. They are doing it all over again!<br><i>Take card <b>LOC11</b>. Return all of the tracking app cards into the <b>SPO06</b> envelope.</i>";
+      answertwo = "<i>We arrive to the spot the tracking app lead us to, and park the car across the street on a safe distance, so that nobody would spot us. We're here just in time to see Dr Turner going to the entrance of the building. An armed soldier guarding the doors greets him there and passes him a potion of some kind. Dr Turner drinks it, and a few moments later the soldier lets him in. Dr Rose turns to me and says:</i><br>This thing what he's drinking must be the drug that professor Martin gave you. My analysis of the drug shows that it's function is indeed to make our powers dissapear, so they must be giving it to people that enter as a precaution. Luckily, I've created an antidote.<br><i>Dr Rose gives me a pill and I swallow it, hopefully gaining immunity to this drug. <br>But then Ron, looking at the entrance with his binoculars, whispers in panic:</i><br>Guys, do you see the symbol on the doors? Rose, you know what it is. It's the symbol of Laki civilisation, the same parasite society that attacked and destroyed Nahukat. My worst nightmares have come true: the Lakis are here.<br><i>I manage to articulate a question, shaking with fear:</i><br>But how are Lakis connected with everything? I thought that the PEI is behind all of this.<br><i>Ron puts the binoculars down and says:</i><br>Now I see what does PEI really stand for: 'Planet Earth Invasion'. They are doing it all over again!<br><i>Take card <b>LOC11</b>. Return all of the tracking app cards into the <b>SPO06</b> envelope.</i>";
       hidePtwoElements();
   } else if (y == "DR TURNER" || y == "DRTURNER" || y == "DR. TURNER" || y == "DR.TURNER" || y == "TURNER") {
       answertwo = "Dr Turner is in charge of the restricted ward! It took some time to figure out how to read this document, but it was worth it.<br><i>Take card <b>48</b>. Remove cards <b>25</b>, <b>LOC08</b> and <b>SPO05</b>.</i>";
@@ -1410,7 +1491,7 @@ function deliveryGuy() {
   } else if (deliveryguyinput == "10") {
   	deliveryguyanswer = "The touchscreen tablet that the mayor gave me. It requires a swipe pattern to unlock.<br><i>You can now unlock the touchscreen tablet by entering the card number <b>10</b> followed by the sequence of numbers in the order of the swipe pattern. The card number and the numbers sequence should be separated by a comma, without spaces.</i>";
   } else if (deliveryguyinput == "11" || deliveryguyinput == "57") {
-  	deliveryguyanswer = "Dr Rose Tobin was the physician of the original crew that found the planet Earth. She is working at the hospital and is a very respected member of the community. But even though she likes it here on Earth, she misses our people immensely.";
+  	deliveryguyanswer = "Dr Rose Tobin was the physician of the original Nahukat crew that landed on Earth. She works at the hospital and is a very respected member of the community. But even though she likes it here on Earth, she misses our people immensely.";
   } else if (deliveryguyinput == "12") {
   	deliveryguyanswer = "The hospital room is on the first floor, above the hospital's parking lot.";
   } else if (deliveryguyinput == "13") {
@@ -1420,7 +1501,7 @@ function deliveryGuy() {
   } else if (deliveryguyinput == "15") {
   	deliveryguyanswer = "A patient lying in a coma. Her medical chart reads: <br><i>Patient: Jenna Kane <br>Diagnosis: Heavy metal poisoning with kidney, liver and heart damage, severe brain dysfunction <br>Illnes cause: Unknown <br>Current state: Patient entered a state of extreme unresponsiveness 22 hours after hospitalisation</i>";
   } else if (deliveryguyinput == "16") {
-  	deliveryguyanswer = "A chemical that the people that hired professor Martin gave him to use on my mother. I wonder what does it do... I'm sure that Dr Rose could know more about it.";
+  	deliveryguyanswer = "I'm sure that Dr Rose could know more about this drug.";
   } else if (deliveryguyinput == "17") {
   	deliveryguyanswer = "The tablet is unlocked and has a file named 'PEI_both_sides'. Unfortunately, the file is either encrypted or corrupted. There are a bunch of unreadable signs in the file that don't make any sense.";
   } else if (deliveryguyinput == "18") {
@@ -1472,21 +1553,21 @@ function deliveryGuy() {
   } else if (deliveryguyinput == "52") {
   	deliveryguyanswer = "The cat now does whatever I want him to.";
   } else if (deliveryguyinput == "53") {
-  	deliveryguyanswer = "The door to this ward is protected by an alphanumeric lock. But even if I manage to figure out the code, nurse Barbara gives me the scary eye every time I approach it.";
+  	deliveryguyanswer = "The door to this ward is protected by an alphanumeric lock. But even if I manage to find the code, nurse Barbara wouldn't let me near it.";
   } else if (deliveryguyinput == "54") {
   	deliveryguyanswer = "There is a lot of cars in the parking lot. I wonder which one is Dr Turner's.";
   } else if (deliveryguyinput == "55") {
   	deliveryguyanswer = "The IV stand top with a piece of rope tied to it.";
   } else if (deliveryguyinput == "LOC05") {
-    deliveryguyanswer = "I'm shocked to see professor Martin <b>(18)</b> tied up to a chair. I untie him immidiately, of course, and end up with a piece od rope <b>(24)</b> he was tied with. There is also some duct tape <b>(03)</b>, used to keep him quiet, lying on the floor.";
+    deliveryguyanswer = "I'm shocked to see professor Martin <b>(18)</b> tied up to a chair. I untie him immidiately, of course, and end up with a piece od rope <b>(24)</b> he was tied with. There is also some duct tape <b>(03)</b> they used to keep him quiet lying on the floor.";
   } else if (deliveryguyinput == "LOC06") {
     deliveryguyanswer = "I'm not a big fan of hospitals, but the Starchester Central Hospital is a very modern and well equipped facility. Dr Rose <b>(11)</b>, the ex member of my parents space mission crew, is in the hall checking her patients' charts. A nurse <b>(42)</b> in charge of the reception desk is sitting behind it. There is an alphanumeric lock <b>(53)</b> for a door right of the reception desk with no indication of what is behind it.";
   } else if (deliveryguyinput == "LOC07") {
     deliveryguyanswer = "The mayor's office is peaceful, not a lot of work seems to be taking place here. There is a security guard <b>(05)</b> in the entrance. The doors to mayor's office are closed, and it's hard to know if the mayor <b>(33)</b> is inside or not.";
   } else if (deliveryguyinput == "LOC08") {
-    deliveryguyanswer = "The 'Under the Radar' office is busy, with phones ringing and people talking in the same time. I can see Alison Clarke <b>(25)</b> sitting at one of the desks. As I enter the office. I pass by a delivery guy <b>(20)</b> that just dropped a hamburger <b>(02)</b>. As soon as he leaves the food, the runs out of the office.<br><i>Remove card <b>07</b>.</i>";
+    deliveryguyanswer = "The 'Under the Radar' office is busy, with phones ringing and people talking in the same time. I can see Alison Clarke <b>(25)</b> sitting at one of the desks. As I enter the office. I pass by a delivery guy <b>(20)</b> bringing a hamburger <b>(02)</b> to Alison. As soon as he leaves the food, the runs out of the office.<br><i>Remove card <b>07</b>.</i>";
   } else if (deliveryguyinput == "LOC09") {
-    deliveryguyanswer = "I finally enter the secretive limited access ward. I enter the first room and find a patient <b>(15)</b> lying in one of the beds. She is either sleeping or unconscious. There is some standard medical equipment in the room, like an IV stand <b>(50)</b>. I can also spot a used rubber glove <b>(22)</b> in the trash bin next to the door.";
+    deliveryguyanswer = "I finally enter the secret ward. I go to the first room and find a patient <b>(15)</b> lying in one of the beds. She is either sleeping or unconscious. There is some standard medical equipment in the room, like an IV stand <b>(50)</b>. I can also spot a used rubber glove <b>(22)</b> in the trash bin next to the door.";
   } else if (deliveryguyinput == "LOC10") {
     deliveryguyanswer = "There are a lot of cars <b>(54)</b> parked in the parking lot.";
   } else if (deliveryguyinput == "LOC11") {
@@ -1510,7 +1591,7 @@ function deliveryGuy() {
   } else if (deliveryguyinput == "01,08") {
     deliveryguyanswer = "I'm so used to having this little power now that it's getting hard to imagine life without it.";
   } else if (deliveryguyinput == "01,09") {
-    deliveryguyanswer = "It's obvious that this car is super expensive.";
+    deliveryguyanswer = "What was it that Dr Turner said on the phone? Something about going to the PEI after his visit to the hospital? I'd like to see where this PEI base is, but I can't get into the car. It's locked.";
   } else if (deliveryguyinput == "01,10") {
     deliveryguyanswer = "I sure would like to take a look inside mayor's tablet.";
   } else if (deliveryguyinput == "01,11" || deliveryguyinput == "01,57") {
@@ -1544,7 +1625,7 @@ function deliveryGuy() {
   } else if (deliveryguyinput == "01,27") {
     deliveryguyanswer = "This smells way too intense. Every time I open my backpack I almost suffocate. Why am I carrying it around again?";
   } else if (deliveryguyinput == "01,28" || deliveryguyinput == "28,01") {
-    deliveryguyanswer = "I have to pass the guard first to enter the PEI base.";
+    deliveryguyanswer = "I have to pass the soldier first to enter the PEI base.";
   } else if (deliveryguyinput == "01,29") {
     deliveryguyanswer = "I can't pretend not to care that this guy is fully armed while I don't have anything to protect me. But I can't stop now!";
   } else if (deliveryguyinput == "01,30") {
@@ -1618,11 +1699,11 @@ function deliveryGuy() {
   } else if (deliveryguyinput == "11,10") {
     deliveryguyanswer = "Let me take a try...No, that wasn't it.";
   } else if (deliveryguyinput == "11,11") {
-    deliveryguyanswer = "I've tried to move on, but the truth is that I'm still thinking about Nahukat people every day. Ron hasn't stopped working on the communication system, but we haven't progressed a lot in all these years.";
+    deliveryguyanswer = "I've tried to move on, but the truth is that I'm still thinking about Nahukat people every day. Ron hasn't stopped working on the communication system, but we haven't progressed a lot, in all these years.";
   } else if (deliveryguyinput == "11,12") {
     deliveryguyanswer = "The view is not the best. What can we do.";
   } else if (deliveryguyinput == "11,13") {
-      deliveryguyanswer = "This man is asking about you? He must be working for the same people who took your mother.";
+    deliveryguyanswer = "This man is asking about you? He must be working for the same people who took your mother.";
   } else if (deliveryguyinput == "11,14") {
     deliveryguyanswer = "Why are we talking about a printer? Ziggy, we don't have time for this.";
   } else if (deliveryguyinput == "11,15") {
@@ -1650,7 +1731,7 @@ function deliveryGuy() {
   } else if (deliveryguyinput == "11,30") {
     deliveryguyanswer = "Ron and I are best friends. He is amazing with techology, but without the right equipment even he can't fix the communication system of our ship. One day, maybe.";
   } else if (deliveryguyinput == "11,33" || deliveryguyinput == "11,45") {
-    deliveryguyanswer = "The mayor is corrupted, I'm sure of it. The fact that all of the big projects in the city go to the hands of contractors that happen to be his cousins can't be a coincidence. Nor is all the money that keeps stacking in his bank account.";
+    deliveryguyanswer = "The mayor is corrupted, I'm sure of it. The fact that all of the big projects in the city go to the hands of contractors, that happen to be his cousins, can't be a coincidence. Nor is all the money that keeps stacking in his bank account.";
   } else if (deliveryguyinput == "11,34") {
     deliveryguyanswer = "I'm glad you have this phone with you.";
   } else if (deliveryguyinput == "11,35") {
@@ -1662,7 +1743,7 @@ function deliveryGuy() {
   } else if (deliveryguyinput == "11,41") {
     deliveryguyanswer = "So did you manage to find Alison? You should ask Ron about her, he's quite skillful when it comes to finding information on somebody.";
   } else if (deliveryguyinput == "11,42") {
-    deliveryguyanswer = "That nurse is scary. I swear that she never leaves the desk. I don't know who is in charge of this restricted ward, but I've seen her entering it. Her memory must be really poor because she has the code written on her arm and she always checks it before going in. You can't see it now because of the long sleeved scrub she's wearing, but it's there. And don't try to take her form with your power to see it, we can only take form of what we see on a person.";
+    deliveryguyanswer = "That nurse is scary. I swear that she never leaves the desk. I don't know who is in charge of this restricted ward, but I've seen her entering in it. Her memory must be really poor because she has the code written on her arm and she always checks it before going in. You can't see it now because of the long sleeved jacket she's wearing, but it's there. And don't try to take her form to see her arm, our power duplicates only the parts of a person we see.";
   } else if (deliveryguyinput == "11,44") {
     deliveryguyanswer = "Well Ziggy, aren't you a clever girl.";
   } else if (deliveryguyinput == "11,48") {
@@ -1672,7 +1753,7 @@ function deliveryGuy() {
   } else if (deliveryguyinput == "11,50") {
     deliveryguyanswer = "Sure, take hospital equipment. You need it more than our patients, don't you?";
   } else if (deliveryguyinput == "11,53") {
-    deliveryguyanswer = "I don't know the code. They've changed it a few months ago and the whole ward became a restricted zone. To tell you the truth, I don't even know which doctor is in charge of it. I've only seen nurse Barbara entering it. I think she has the code written on her arm because she always checks it before entering the ward. I didn't get a good look at it because she's always wearing this long sleeved jacket. And don't try to take her form with your power to see it, we can only take form of what we see on a person.";
+    deliveryguyanswer = "I don't know the code. They've changed it a few months ago and the whole ward became a restricted zone. To tell you the truth, I don't even know which doctor is in charge of it. I've only seen nurse Barbara entering it. I think she has the code written on her arm because she always checks it before entering the ward. I didn't get a good look at it because she's always wearing this long sleeved jacket. It's seems obvious to take her form and look at her arm, but our power doesn't work like that. We only take the appearance of those details we can see on a person.";
   } else if (deliveryguyinput == "11,54") {
     deliveryguyanswer = "I can't tell you which car is Dr Turner's. I think he changed cars recently.";
   } else if (deliveryguyinput == "11,55") {
@@ -1692,7 +1773,7 @@ function deliveryGuy() {
   } else if (deliveryguyinput == "11,SPO05") {
     deliveryguyanswer = "This message is encrypted somehow. If we could only find the code...";
   } else if (deliveryguyinput == "30,01") {
-    deliveryguyanswer = "Ziggy, it's so great to talk to you. I only wish that the circumstances were different.";
+    deliveryguyanswer = "Ziggy, it's so great to talk to you. I only wish the circumstances were different.";
   } else if (deliveryguyinput == "30,02") {
     deliveryguyanswer = "I don't know how could I eat the burger over the phone.";
   } else if (deliveryguyinput == "30,03") {
@@ -1712,7 +1793,7 @@ function deliveryGuy() {
   } else if (deliveryguyinput == "30,12") {
     deliveryguyanswer = "Ziggy, try to escape through the window! Is it too high?";
   } else if (deliveryguyinput == "30,13") {
-    deliveryguyanswer = "I don't know who the guy is, but I'm sure that he knows where is Lena.";
+    deliveryguyanswer = "I don't know who the guy is, but I'm sure he knows what happened to Lena.";
   } else if (deliveryguyinput == "30,14") {
     deliveryguyanswer = "This model is famous for it's precise both sides printing.";
   } else if (deliveryguyinput == "30,15" || deliveryguyinput == "30,35") {
@@ -1740,7 +1821,7 @@ function deliveryGuy() {
   } else if (deliveryguyinput == "30,30") {
     deliveryguyanswer = "I've been working on fixing our communication system since we came to Earth. But I haven't made enough progress still. The technology is so limited on this planet, it's frustrating.";
   } else if (deliveryguyinput == "30,33" || deliveryguyinput == "30,45") {
-    deliveryguyanswer = "Mayor Bundy has been accused of many things. Some of them involve spending tax money on expensive but insignificant city projects that don't help in solving real problems, like waste managment. Other imply that he's been putting his people on high, well paid and powerful positions. But one rumor could perhaps interest us the most. He significantly lowered the taxes for new companies as a part of his economy growth policy two years ago. And there was one company who profited from it the most, quickly gaining wealth and monopoly in the region. It was PEI, 'Petroleum Extraction Industries'. He should be in his office now, it's working hours.";
+    deliveryguyanswer = "Mayor Bundy has been accused of many things. Some of them involve spending tax money on expensive city projects that don't help in solving real problems, like waste managment. Other imply that he's been putting his people on high, well paid and powerful positions. But one rumor could perhaps interest us the most. He significantly lowered the taxes for new businesses as a part of his economy growth policy two years ago. And there was one company who profited from it the most, quickly gaining wealth and monopoly in the region. It was PEI, 'Petroleum Extraction Industries'. He should be in his office now, it's working hours.";
   } else if (deliveryguyinput == "30,34") {
     deliveryguyanswer = "You know that I've installed a tracking system so that I can always see where you are. So keep it with you and keep it turned on.";
   } else if (deliveryguyinput == "30,36" || deliveryguyinput == "30,39" || deliveryguyinput == "30,52") {
@@ -1775,16 +1856,20 @@ function deliveryGuy() {
     deliveryguyanswer = "Lena must be here!";
   } else if (deliveryguyinput == "30,SPO05") {
     deliveryguyanswer = "I wonder how could we shed a light on the meaning of this document.";
+  } else if (deliveryguyinput == "02,06" || deliveryguyinput == "06,02") {
+    deliveryguyanswer = "I don't see a good reason to put makeup into the food.";
+  } else if (deliveryguyinput == "02,10" || deliveryguyinput == "10,02") {
+    deliveryguyanswer = "Dipping the tablet in mayonnaise will not unlock it.";
+  } else if (deliveryguyinput == "02,14" || deliveryguyinput == "14,02") {
+    deliveryguyanswer = "The printer isn't hungry. There's plenty of paper in it.";
   } else if (deliveryguyinput == "02,16" || deliveryguyinput == "16,02") {
     deliveryguyanswer = "Is it really the best idea to drug this food with something that I don't even really know what it is? I don't think so.";
   } else if (deliveryguyinput == "02,27" || deliveryguyinput == "27,02") {
-    deliveryguyanswer = "Mixing the potpourri with the hamburger will just make it uneatable.";
+    deliveryguyanswer = "I don't want to spoil a perfectly good burger.";
   } else if (deliveryguyinput == "02,34" || deliveryguyinput == "34,02") {
     deliveryguyanswer = "The food isn't photogenic enough to make me want to take a photo of it.";
-  } else if (deliveryguyinput == "02,36" || deliveryguyinput == "02,39" || deliveryguyinput == "02,52" || deliveryguyinput == "36,02" || deliveryguyinput == "39,02" || deliveryguyinput == "52,02") {
-    deliveryguyanswer = "I don't think that the cat is hungry. He doesn't seem interested in the food.";
-  } else if (deliveryguyinput == "02,06" || deliveryguyinput == "06,02") {
-    deliveryguyanswer = "I don't see a good reason to put makeup into the food.";
+  } else if (deliveryguyinput == "02,36" || deliveryguyinput == "02,52" || deliveryguyinput == "36,02" || deliveryguyinput == "52,02") {
+    deliveryguyanswer = "The cat doesn't like mayonnaise.";
   } else if (deliveryguyinput == "03,09" || deliveryguyinput == "09,03") {
     deliveryguyanswer = "It could be a good idea to tape something to the car, but what?";
   } else if (deliveryguyinput == "03,10" || deliveryguyinput == "10,03") {
@@ -1798,15 +1883,17 @@ function deliveryGuy() {
   } else if (deliveryguyinput == "03,24" || deliveryguyinput == "24,03") {
     deliveryguyanswer = "I don't want to tie up anybody.";
   } else if (deliveryguyinput == "03,34" || deliveryguyinput == "34,03") {
-    deliveryguyanswer = "Here goes...I'll admit it's a primitive solution, but it works.<br><i>Take card <b>40</b>. Remove cards <b>03</b> nad <b>34</b>.</i>";
+    deliveryguyanswer = "Here goes...A phone you can stick anywhere.<br><i>Take card <b>40</b>. Remove cards <b>03</b> nad <b>34</b>.</i>";
   } else if (deliveryguyinput == "03,36" || deliveryguyinput == "03,39" || deliveryguyinput == "03,52" || deliveryguyinput == "24,36" || deliveryguyinput == "24,39" || deliveryguyinput == "24,52" || deliveryguyinput == "36,03" || deliveryguyinput == "36,24" || deliveryguyinput == "39,03" || deliveryguyinput == "39,24" || deliveryguyinput == "52,03" || deliveryguyinput == "52,24") {
     deliveryguyanswer = "I'm not going to tie up my little cat!";
   } else if (deliveryguyinput == "06,10" || deliveryguyinput == "10,06") {
     deliveryguyanswer = "I spread some of the powder with a brush on the tablet screen. Well well, look at this...<br><i>Take card <b>44</b>. Remove cards <b>06</b> and <b>10</b>.";
-  } else if (deliveryguyinput == "06,36" || deliveryguyinput == "06,39" || deliveryguyinput == "06,52" || deliveryguyinput == "36,02" || deliveryguyinput == "39,06" || deliveryguyinput == "52,06") {
-    deliveryguyanswer = "Putting makeup on the cat isn't going to solve anything.";
+  } else if (deliveryguyinput == "06,34" || deliveryguyinput == "34,06") {
+    deliveryguyanswer = "I like to keep my phone nice and clean.";
+  } else if (deliveryguyinput == "06,36" || deliveryguyinput == "06,52" || deliveryguyinput == "36,06" || deliveryguyinput == "52,06") {
+    deliveryguyanswer = "The cat gives me a look that says 'Don't you even think about it'.";
   } else if (deliveryguyinput == "06,53" || deliveryguyinput == "53,06") {
-    deliveryguyanswer = "I can't touch the lock in front of nurse Barbara, but even if I could, this would maybe reveal the numbers in the code, but not their order.";
+    deliveryguyanswer = "I can't touch the lock in front of nurse Barbara. But even if I could, this would reveal the numbers in the code, not their order.";
   } else if (deliveryguyinput == "08,01" || deliveryguyinput == "08,05" || deliveryguyinput == "08,11" || deliveryguyinput == "08,15" || deliveryguyinput == "08,18" || deliveryguyinput == "08,25" || deliveryguyinput == "08,29" || deliveryguyinput == "08,30" || deliveryguyinput == "08,31" || deliveryguyinput == "08,33" || deliveryguyinput == "08,35" || deliveryguyinput == "08,38" || deliveryguyinput == "08,42" || deliveryguyinput == "08,45" || deliveryguyinput == "08,47") {
     deliveryguyanswer = "It would be interesting to read people's minds and make them do stuff, but it's also a bit creepy. Anyway, my power works only on plants and animals.";
   } else if (deliveryguyinput == "08,27" || deliveryguyinput == "27,08") {
@@ -1817,10 +1904,12 @@ function deliveryGuy() {
     deliveryguyanswer = "I'm already using my power over the cat.";
   } else if (deliveryguyinput == "08,56" || deliveryguyinput == "56,08") {
     deliveryguyanswer = "What more can I ask of this tree than what it's already done for me?";
+  } else if (deliveryguyinput == "09,01") {
+    deliveryguyanswer = "I can't get into the car. It's locked, of course.";
   } else if (deliveryguyinput == "09,34" || deliveryguyinput == "34,09") {
     deliveryguyanswer = "If I could somehow put my phone into the car, we could follow it with the tracking app. But the car is locked, of course.";
   } else if (deliveryguyinput == "09,40" || deliveryguyinput == "40,09") {
-    deliveryguyanswer = "The tracking app on the phone will show us exactly where will the car go.<br><i>I tape the phone to the car, after calling Ron to come with his van to pick me up. I just have enough time to hide behind another car parked nearby when I see Dr Turner leaving the building. Fortunately, Ron arrives only a few minutes after. Rose joins us, and the two of us jump into Ron's car. The chase for Dr Turner begins!<br>Take envelope <b>SPO06</b>. Remove cards <b>09</b>, <b>40</b> and <b>LOC10</b>.</i>";
+    deliveryguyanswer = "The tracking app on the phone will show us exactly where will the car go.<br><i>I tape the phone to the car, after calling Ron to come with his van to pick me up. I just have enough time to hide behind another car parked nearby when I see Dr Turner leaving the building. Fortunately, Ron arrives shortly after. Rose joins us, and the two of us jump into Ron's van. The chase for Dr Turner begins!<br>Take envelope <b>SPO06</b>. Remove cards <b>09</b>, <b>40</b> and <b>LOC10</b>.</i>";
   } else if (deliveryguyinput == "10,14" || deliveryguyinput == "10,44" || deliveryguyinput == "14,10" || deliveryguyinput == "14,44") {
     deliveryguyanswer = "That could work if I actually opened the tablet. I can't connect it to the printer while it's locked.";
   } else if (deliveryguyinput == "10,1654852" || deliveryguyinput == "10,16482" || deliveryguyinput == "10,1,6,4,8,2" || deliveryguyinput == "10,1,6,5,4,8,5,2" || deliveryguyinput == "10,2,5,8,4,5,6,1" || deliveryguyinput == "10,2584561" || deliveryguyinput == "10,28461" || deliveryguyinput == "10,2,8,4,6,1" || deliveryguyinput == "44,1654852" || deliveryguyinput == "44,16482" || deliveryguyinput == "44,1,6,4,8,2" || deliveryguyinput == "44,2584561" || deliveryguyinput == "44,28461" || deliveryguyinput == "44,2,8,4,6,1" || deliveryguyinput == "44,1,6,5,4,8,5,2" || deliveryguyinput == "44,2,5,8,4,5,6,1") {
@@ -1831,10 +1920,14 @@ function deliveryGuy() {
     deliveryguyanswer = "The potpourri does smell really intense, but if I've been carrying it for all this time, I'm not going to throw it out of the window now.";
   } else if (deliveryguyinput == "12,34" || deliveryguyinput == "34,12") {
     deliveryguyanswer = "That's not much of a view to take a photo of it.";
-  } else if (deliveryguyinput == "12,50" || deliveryguyinput == "50,12") {
+  } else if (deliveryguyinput == "12,50" && escape == 1 || deliveryguyinput == "50,12" && escape == 1) {
+    deliveryguyanswer = "Should I really break the window with the IV stand top? I don't see why.";
+  } else if (deliveryguyinput == "12,50" && escape == 2 || deliveryguyinput == "50,12" && escape == 2) {
     deliveryguyanswer = "I could hook the IV stand top on the window, but I don't know what to do from there.";
-  } else if (deliveryguyinput == "12,55" || deliveryguyinput == "55,12") {
-    deliveryguyanswer = "This may not be the safest thing to do, but I don't have a choice. Here we go!<br></i>I hook my improvised anchor on the window sill and use the rope to climb down the window. Jenna unhooks the anchor and throws it down just before Dr Turner enters the room. That was close!<br>Take card <b>LOC10</b>. Remove cards <b>12</b>, <b>35</b>, <b>55</b> and <b>LOC09</b> (but keep the other cards from the location on the table).</i>";
+  } else if (deliveryguyinput == "12,55" && escape == 1 || deliveryguyinput == "55,12" && escape == 1) {
+    deliveryguyanswer = "I just got to the room. Why would I escape now?";
+  } else if (deliveryguyinput == "12,55" && escape == 2 || deliveryguyinput == "55,12" && escape == 2) {
+    deliveryguyanswer = "This may not be the safest thing to do, but I don't have a choice. Here we go!<br><i>I hook my improvised anchor on the window sill and use the rope to climb down the window. Jenna unhooks the anchor and throws it down just before Dr Turner enters the room. That was close!<br>Take card <b>LOC10</b>. Remove cards <b>12</b>, <b>35</b>, <b>55</b> and <b>LOC09</b> (but keep the other cards from the location on the table).</i>";
   } else if (deliveryguyinput == "14,17" || deliveryguyinput == "17,14") {
     deliveryguyanswer = "The file is called 'PEI_both_sides'. Let's try to print it, on both sides obviously.<br>Take envelope <b>SPO05</b>. Remove cards <b>14</b> and <b>17</b>.</i>";
   } else if (deliveryguyinput == "14,34" || deliveryguyinput == "34,14") {
@@ -1843,20 +1936,24 @@ function deliveryGuy() {
     deliveryguyanswer = "Why would I drug the potpourri? The smell itself is already poisonous enough.";
   } else if (deliveryguyinput == "16,36" || deliveryguyinput == "16,39" || deliveryguyinput == "16,52" || deliveryguyinput == "36,16" || deliveryguyinput == "39,16" || deliveryguyinput == "52,16" || deliveryguyinput == "52,46") {
     deliveryguyanswer = "I don't want to drug poor little cat!";
-  } else if (deliveryguyinput == "21,51" || deliveryguyinput == "51,21") {
-    deliveryguyanswer = "This is a little trick my mother taught me when I was a kid. I just have to gently shade the page with the pencil and...here it is!<br><i>The indentations on the page reveal what was written on the top page.<br>Take card <b>62</b>. Remove cards <b>21</b> and <b>51</b>.</i>";
   } else if (deliveryguyinput == "22,36" || deliveryguyinput == "36,22") {
     deliveryguyanswer = "I try to make the cat smell the glove, but he just turns his head away from it.";
   } else if (deliveryguyinput == "22,52" || deliveryguyinput == "52,22") {
-    deliveryguyanswer = "Let's see if what they say about cats having a super sensitive smell is true.<br><it>The cat smells the glove and confirms to me that he could now recognize the smell of the glove's owner anywhere. <br>Take card <b>39</b>. Remove cards <b>22</b> and <b>52</b>.</i>";
+    deliveryguyanswer = "Let's see if what they say about cats having a super sensitive smell is true.<br><i>The cat smells the glove and confirms to me that he could now recognize the smell of the glove's owner anywhere. <br>Take card <b>39</b>. Remove cards <b>22</b> and <b>52</b>.</i>";
   } else if (deliveryguyinput == "24,50" || deliveryguyinput == "50,24") {
-      answertwo = "You can learn how to make all kinds of knots on the internet.<br><i>Take card <b>55</b>. Remove cards <b>24</b> and <b>50</b>.</i>";
+    deliveryguyanswer = "You can learn how to make all kinds of knots on the internet.<br><i>Take card <b>55</b>. Remove cards <b>24</b> and <b>50</b>.</i>";
+  } else if (deliveryguyinput == "26,01" || deliveryguyinput == "26,05" || deliveryguyinput == "26,07" || deliveryguyinput == "26,11" || deliveryguyinput == "26,13" || deliveryguyinput == "26,15" || deliveryguyinput == "26,23" || deliveryguyinput == "26,25" || deliveryguyinput == "26,29" || deliveryguyinput == "26,30" || deliveryguyinput == "26,33" || deliveryguyinput == "26,35" || deliveryguyinput == "26,42" || deliveryguyinput == "26,45" || deliveryguyinput == "26,48") {
+    deliveryguyanswer = "I have to get back to my Ziggy appearance to be able to change it into someone else's.";
+  } else if (deliveryguyinput == "26,20") {
+    deliveryguyanswer = "I already have his appearance.";
   } else if (deliveryguyinput == "27,36" || deliveryguyinput == "27,39" || deliveryguyinput == "27,52" || deliveryguyinput == "36,27" || deliveryguyinput == "36,27" || deliveryguyinput == "39,27") {
     deliveryguyanswer = "I put the cat into the potpourri, but he can't stand the smell of it.";
   } else if (deliveryguyinput == "34,36" || deliveryguyinput == "34,39" || deliveryguyinput == "34,52" || deliveryguyinput == "36,34" || deliveryguyinput == "39,34" || deliveryguyinput == "52,34") {
     deliveryguyanswer = "A photo of the cat isn't very useful, but he's just so adorable!";
+  } else if (deliveryguyinput == "36,54" || deliveryguyinput == "54,36") {
+    deliveryguyanswer = "I try to make the cat search for Dr Turner's car, but he doesn't budge.";
   } else if (deliveryguyinput == "39,54" || deliveryguyinput == "54,39") {
-    deliveryguyanswer = "Come on cat, you can do it!<br><i>The cat passes through the parking lot and after a few minutes of hesitation, he stops next to a car and meows decisively.<br>Take cars <b>09</b>. Remove cards <b>39</b> and <b>54</b>.</i>";
+    deliveryguyanswer = "Come on cat, you can do it!<br><i>The cat passes through the parking lot and after a few minutes of hesitation, he stops next to a car and meows decisively.<br>Take card <b>09</b>. Remove cards <b>39</b> and <b>54</b>.</i>";
   } else if (deliveryguyinput == "53,5317" || deliveryguyinput == "53,5,3,1,7" || deliveryguyinput == "53,6538" || deliveryguyinput == "53,6,5,3,8" || deliveryguyinput == "53,LIES" || deliveryguyinput == "53,L,I,E,S") {
     deliveryguyanswer = "Even if I know the code, I can't just go right to the lock and enter it. Nurse Barbara is sitting right there.";
   } else if (deliveryguyinput == "52,54" || deliveryguyinput == "54,52") {
@@ -1868,15 +1965,15 @@ function deliveryGuy() {
   } else if (deliveryguyinput == "A57") {
     deliveryguyanswer = "This is the shop that the man went to. Where to from here?<br><i>Take card <b>LOC04</b>. Remove cards <b>47</b> and <b>LOC03</b> (but keep the other cards from the location on the table).</i>";
   } else if (deliveryguyinput == "G54") {
-    deliveryguyanswer = "I should take the drug to Dr Rose.<br><i>As I arrive to the hospital, I see Dr Rose in the hallway. We move a little on the side by the coffee machine, so that we can speak in private. I pass her the drug that is supposedly capable of removing our powers. She promises that she will send it to analysis immidiately and that she will try to make an antidote. This will take a while, so I should continue with my investigation in the meantime.<br>Take card <b>LOC06</b>. Remove cards <b>16</b> and <b>57</b>.</i>";
+    deliveryguyanswer = "I should take the drug to Dr Rose.<br><i>As I arrive to the hospital, I see Dr Rose in the hallway. We move to the side by the coffee machine, so that we can speak in private. I pass her the drug that is supposedly capable of removing our powers. She promises she will send it for analysis immidiately and that she will try to make an antidote. This will take a while, so I should continue with my investigation in the meantime.<br>Take card <b>LOC06</b>. Remove cards <b>16</b> and <b>57</b>.</i>";
   } else if (deliveryguyinput == "C29") {
-    deliveryguyanswer = "I didn't think that the mayor could be invloved, but if that's what it takes, I'm going to bring down the mayor himself!<br><i>Take card <b>LOC07</b>.</i>";
+    deliveryguyanswer = "I didn't think that the mayor could be invloved, but if that's what it takes, I'm going to bring the mayor himself down!<br><i>Take card <b>LOC07</b>.</i>";
   } else if (deliveryguyinput == "H50") {
     deliveryguyanswer = "I arrive to the 'Starchester Weather Radar' but I don't find anything of interest. But wasn't the magazine address 'Under the Radar'?</i>";
   } else if (deliveryguyinput == "H51") {
     deliveryguyanswer = "Finally! This magazine really is under the radar, it wasn't easy to find its whereabouts.<br><i>Take card <b>LOC08</b>. Remove card <b>07</b>.</i>";
   } else if (deliveryguyinput == "C24" || deliveryguyinput == "C30") {
-    deliveryguyanswer = "We arrive to the spot the tracking app lead us to and park the car across the street on a safe distance, so that nobody would spot us. We're here just in time to see Dr Turner going to the entrance of the building. An armed soldier guarding the doors greets him there and passes him something that looks like a potion of some kind. Dr Turner drinks it, and a few moments later the soldier lets him in. Dr Rose turns to me and says:</i><br>This thing what he's drinking must be the drug that professor Martin gave you. My analysis of the drug shows that it's function is indeed to make our powers dissapear, so they must be giving it to people that enter as a precaution. Luckily, I've created an antidote.<br><i>Dr Rose gives me a pill and I swallow it, hopefully gaining immunity to this drug. <br>But then Ron, looking at the entrance with his binoculars, whispers in panic:</i><br>Guys, do you see the symbol on the doors? Rose, you know what it is. It's the symbol of Laki civilisation, the same parasite society that stole and destroyed Nahukat. My worst nightmares have come true: the Lakis are here.<br><i>I manage to articulate a question, shaking with fear:</i><br>But how are Lakis connected with everything? I thought that PEI is behind all of this.<br><i>Ron puts the binoculars down and takes his head in his hands.</i><br>Now I see what does PEI really stand for: 'Planet Earth Invasion'. They are doing it all over again!<br><i>Take card <b>LOC11</b>. Return all of the tracking app cards into the <b>SPO06</b> envelope.</i>";
+    deliveryguyanswer = "<i>We arrive to the spot the tracking app lead us to, and park the car across the street on a safe distance, so that nobody would spot us. We're here just in time to see Dr Turner going to the entrance of the building. An armed soldier guarding the doors greets him there and passes him a potion of some kind. Dr Turner drinks it, and a few moments later the soldier lets him in. Dr Rose turns to me and says:</i><br>This thing what he's drinking must be the drug that professor Martin gave you. My analysis of the drug shows that it's function is indeed to make our powers dissapear, so they must be giving it to people that enter as a precaution. Luckily, I've created an antidote.<br><i>Dr Rose gives me a pill and I swallow it, hopefully gaining immunity to this drug. <br>But then Ron, looking at the entrance with his binoculars, whispers in panic:</i><br>Guys, do you see the symbol on the doors? Rose, you know what it is. It's the symbol of Laki civilisation, the same parasite society that attacked and destroyed Nahukat. My worst nightmares have come true: the Lakis are here.<br><i>I manage to articulate a question, shaking with fear:</i><br>But how are Lakis connected with everything? I thought that the PEI is behind all of this.<br><i>Ron puts the binoculars down and says:</i><br>Now I see what does PEI really stand for: 'Planet Earth Invasion'. They are doing it all over again!<br><i>Take card <b>LOC11</b>. Return all of the tracking app cards into the <b>SPO06</b> envelope.</i>";
   } else if (deliveryguyinput == "DR TURNER" || deliveryguyinput == "DRTURNER" || deliveryguyinput == "DR. TURNER" || deliveryguyinput == "DR.TURNER" || deliveryguyinput == "TURNER") {
     deliveryguyanswer = "Dr Turner is in charge of the restricted ward! It took some time to figure out how to read this document, but it was worth it.<br><i>Take card <b>48</b>. Remove cards <b>25</b>, <b>LOC08</b> and <b>SPO05</b>.</i>";
   } else if (deliveryguyinput == "05,02" || deliveryguyinput == "02,05") {
@@ -1885,8 +1982,10 @@ function deliveryGuy() {
     deliveryguyanswer = "I definitely didn't order this. Sorry!";
   } else if (deliveryguyinput == "25,02" || deliveryguyinput == "02,25") {
     deliveryguyanswer = "You've already delivered the burger I've ordered.";
+  } else if (deliveryguyinput == "42,20" || deliveryguyinput == "20,42") {
+    deliveryguyanswer = "Frankly, I'm very dissapointed with your service. I've been waiting forever to this lunch.";
   } else if (deliveryguyinput == "42,02" || deliveryguyinput == "02,42") {
-    deliveryguyanswer = "I ordered a salad, not a burger. You're late AND you got the order wrong. Actually...never mind, I'll take it, I'm starving.<br><i>Nurse Barbara takes the extra mayo hamburger and starts eating as if she's been starving for days. Just as I predected, the mayo spills all over her jacket. She doesn't even notice it until she finishes the burger, but gets quickly annoyed as soon as she realises what happened. She takes the jacket off, cleanes her hands and gets back to work.<br>Take card <b>49</b>. Remove cards <b>02</b> and <b>20</b>. Return to your Ziggy appearence and use the original Game Book input field.</i>";
+    deliveryguyanswer = "I ordered a salad, not a burger. You're late AND you got the order wrong. Actually...never mind, I'll take it, I'm hungry.<br><i>Nurse Barbara takes the extra mayo hamburger and starts eating as if she's been starving for days. Just as I predected, the mayo spills all over her jacket. She doesn't even notice it until she finishes the burger, but gets quickly annoyed as soon as she realises what happened. She takes the jacket off, cleanes her hands and gets back to work.<br>Take card <b>49</b>. Remove cards <b>02</b> and <b>20</b>. Return to your Ziggy appearence and use the original Game Book input field.</i>";
   } else if (deliveryguyinput == "45,02" || deliveryguyinput == "02,45") {
     deliveryguyanswer = "Who let you pass? I didn't order a burger, anyway!";
 	} else {
@@ -1925,7 +2024,7 @@ function unknownMan() {
   } else if (unknownmaninput == "10") {
   	unknownmananswer = "The touchscreen tablet that the mayor gave me. It requires a swipe pattern to unlock.<br><i>You can now unlock the touchscreen tablet by entering the card number <b>10</b> followed by the sequence of numbers in the order of the swipe pattern. The card number and the numbers sequence should be separated by a comma, without spaces.</i>";
   } else if (unknownmaninput == "11" || unknownmaninput == "57") {
-  	unknownmananswer = "Dr Rose Tobin was the physician of the original crew that found the planet Earth. She is working at the hospital and is a very respected member of the community. But even though she likes it here on Earth, she misses our people immensely.";
+  	unknownmananswer = "Dr Rose Tobin was the physician of the original Nahukat crew that landed on Earth. She works at the hospital and is a very respected member of the community. But even though she likes it here on Earth, she misses our people immensely.";
   } else if (unknownmaninput == "12") {
   	unknownmananswer = "The hospital room is on the first floor, above the hospital's parking lot.";
   } else if (unknownmaninput == "13") {
@@ -1935,7 +2034,7 @@ function unknownMan() {
   } else if (unknownmaninput == "15") {
   	unknownmananswer = "A patient lying in a coma. Her medical chart reads: <br><i>Patient: Jenna Kane <br>Diagnosis: Heavy metal poisoning with kidney, liver and heart damage, severe brain dysfunction <br>Illnes cause: Unknown <br>Current state: Patient entered a state of extreme unresponsiveness 22 hours after hospitalisation</i>";
   } else if (unknownmaninput == "16") {
-  	unknownmananswer = "A chemical that the people that hired professor Martin gave him to use on my mother. I wonder what does it do... I'm sure that Dr Rose could know more about it.";
+  	unknownmananswer = "I'm sure that Dr Rose could know more about this drug.";
   } else if (unknownmaninput == "17") {
   	unknownmananswer = "The tablet is unlocked and has a file named 'PEI_both_sides'. Unfortunately, the file is either encrypted or corrupted. There are a bunch of unreadable signs in the file that don't make any sense.";
   } else if (unknownmaninput == "18") {
@@ -1955,7 +2054,7 @@ function unknownMan() {
   } else if (unknownmaninput == "27") {
   	unknownmananswer = "A potpourri bowl with a smell so intense that it could bring the dead back to life.";
   } else if (unknownmaninput == "28") {
-    unknownmananswer = "<i>I go directly to the door, when the soldier stops me.</i><br>It's you, Agent 27. I'm sorry to make you do this, but you know the protocol.<br><i>The soldier gives me a small bottle with a drug, just like the one professor Martin gave me. I drink it, as I saw Dr Turner do it. I'm sweating with stress..will Dr Rose's antidote work? A few seconds pass and I still look like the ugly, leather loving, kidnapping criminal named Agent 27, as it seems.</i><br>All is good, go ahead.<br><i>The soldier opens the entrance doors, and...I'm in! Mother, here I come!<br>Chapter Two of the game is now finished. To continue Ziggy's adventure and finally save Lena, start Chapter Three. Thank you for playing!</i>";
+    unknownmananswer = "<i>I go directly to the door, when the soldier stops me.</i><br>It's you, Agent 27. I'm sorry to make you do this, but you know the protocol.<br><i>The soldier gives me a small bottle with a drug, just like the one professor Martin gave me. I drink it, as I saw Dr Turner do it. I'm sweating with stress...will Dr Rose's antidote work? A few seconds pass and I still look like the ugly, leather loving, kidnapping criminal named Agent 27, as it seems.</i><br>All is good, go ahead.<br><i>The soldier opens the entrance doors, and...I'm in! Mother, here I come!</i><br><br><b>Chapter Two of the game is now finished. To continue Ziggy's adventure and finally save Lena, start Chapter Three. Thank you for playing!</b>";
   } else if (unknownmaninput == "29") {
   	unknownmananswer = "The soldier guarding the entrence is carrying a huge rifle.";
   } else if (unknownmaninput == "30") {
@@ -1987,21 +2086,21 @@ function unknownMan() {
   } else if (unknownmaninput == "52") {
   	unknownmananswer = "The cat now does whatever I want him to.";
   } else if (unknownmaninput == "53") {
-  	unknownmananswer = "The door to this ward is protected by an alphanumeric lock. But even if I manage to figure out the code, nurse Barbara gives me the scary eye every time I approach it.";
+  	unknownmananswer = "The door to this ward is protected by an alphanumeric lock. But even if I manage to find the code, nurse Barbara wouldn't let me near it.";
   } else if (unknownmaninput == "54") {
   	unknownmananswer = "There is a lot of cars in the parking lot. I wonder which one is Dr Turner's.";
   } else if (unknownmaninput == "55") {
   	unknownmananswer = "The IV stand top with a piece of rope tied to it.";
   } else if (unknownmaninput == "LOC05") {
-    unknownmananswer = "I'm shocked to see professor Martin <b>(18)</b> tied up to a chair. I untie him immidiately, of course, and end up with a piece od rope <b>(24)</b> he was tied with. There is also some duct tape <b>(03)</b>, used to keep him quiet, lying on the floor.";
+    unknownmananswer = "I'm shocked to see professor Martin <b>(18)</b> tied up to a chair. I untie him immidiately, of course, and end up with a piece od rope <b>(24)</b> he was tied with. There is also some duct tape <b>(03)</b> they used to keep him quiet lying on the floor.";
   } else if (unknownmaninput == "LOC06") {
     unknownmananswer = "I'm not a big fan of hospitals, but the Starchester Central Hospital is a very modern and well equipped facility. Dr Rose <b>(11)</b>, the ex member of my parents space mission crew, is in the hall checking her patients' charts. A nurse <b>(42)</b> in charge of the reception desk is sitting behind it. There is an alphanumeric lock <b>(53)</b> for a door right of the reception desk with no indication of what is behind it.";
   } else if (unknownmaninput == "LOC07") {
     unknownmananswer = "The mayor's office is peaceful, not a lot of work seems to be taking place here. There is a security guard <b>(05)</b> in the entrance. The doors to mayor's office are closed, and it's hard to know if the mayor <b>(33)</b> is inside or not.";
   } else if (unknownmaninput == "LOC08") {
-    unknownmananswer = "The 'Under the Radar' office is busy, with phones ringing and people talking in the same time. I can see Alison Clarke <b>(25)</b> sitting at one of the desks. As I enter the office. I pass by a delivery guy <b>(20)</b> that just dropped a hamburger <b>(02)</b>. As soon as he leaves the food, the runs out of the office.<br><i>Remove card <b>07</b>.</i>";
+    unknownmananswer = "The 'Under the Radar' office is busy, with phones ringing and people talking in the same time. I can see Alison Clarke <b>(25)</b> sitting at one of the desks. As I enter the office. I pass by a delivery guy <b>(20)</b> bringing a hamburger <b>(02)</b> to Alison. As soon as he leaves the food, the runs out of the office.<br><i>Remove card <b>07</b>.</i>";
   } else if (unknownmaninput == "LOC09") {
-    unknownmananswer = "I finally enter the secretive limited access ward. I enter the first room and find a patient <b>(15)</b> lying in one of the beds. She is either sleeping or unconscious. There is some standard medical equipment in the room, like an IV stand <b>(50)</b>. I can also spot a used rubber glove <b>(22)</b> in the trash bin next to the door.";
+    unknownmananswer = "I finally enter the secret ward. I go to the first room and find a patient <b>(15)</b> lying in one of the beds. She is either sleeping or unconscious. There is some standard medical equipment in the room, like an IV stand <b>(50)</b>. I can also spot a used rubber glove <b>(22)</b> in the trash bin next to the door.";
   } else if (unknownmaninput == "LOC10") {
     unknownmananswer = "There are a lot of cars <b>(54)</b> parked in the parking lot.";
   } else if (unknownmaninput == "LOC11") {
@@ -2027,7 +2126,7 @@ function unknownMan() {
   } else if (unknownmaninput == "01,08") {
     unknownmananswer = "I'm so used to having this little power now that it's getting hard to imagine life without it.";
   } else if (unknownmaninput == "01,09") {
-    unknownmananswer = "It's obvious that this car is super expensive.";
+    unknownmananswer = "What was it that Dr Turner said on the phone? Something about going to the PEI after his visit to the hospital? I'd like to see where this PEI base is, but I can't get into the car. It's locked.";
   } else if (unknownmaninput == "01,10") {
     unknownmananswer = "I sure would like to take a look inside mayor's tablet.";
   } else if (unknownmaninput == "01,11" || unknownmaninput == "01,57") {
@@ -2061,7 +2160,7 @@ function unknownMan() {
   } else if (unknownmaninput == "01,27") {
     unknownmananswer = "This smells way too intense. Every time I open my backpack I almost suffocate. Why am I carrying it around again?";
   } else if (unknownmaninput == "01,28" || unknownmaninput == "28,01") {
-    unknownmananswer = "I have to pass the guard first to enter the PEI base.";
+    unknownmananswer = "I have to pass the soldier first to enter the PEI base.";
   } else if (unknownmaninput == "01,29") {
     unknownmananswer = "I can't pretend not to care that this guy is fully armed while I don't have anything to protect me. But I can't stop now!";
   } else if (unknownmaninput == "01,30") {
@@ -2135,11 +2234,11 @@ function unknownMan() {
   } else if (unknownmaninput == "11,10") {
     unknownmananswer = "Let me take a try...No, that wasn't it.";
   } else if (unknownmaninput == "11,11") {
-    unknownmananswer = "I've tried to move on, but the truth is that I'm still thinking about Nahukat people every day. Ron hasn't stopped working on the communication system, but we haven't progressed a lot in all these years.";
+    unknownmananswer = "I've tried to move on, but the truth is that I'm still thinking about Nahukat people every day. Ron hasn't stopped working on the communication system, but we haven't progressed a lot, in all these years.";
   } else if (unknownmaninput == "11,12") {
     unknownmananswer = "The view is not the best. What can we do.";
   } else if (unknownmaninput == "11,13") {
-      unknownmananswer = "You look pretty scary in this disguise.";
+    unknownmananswer = "You look pretty scary in this disguise.";
   } else if (unknownmaninput == "11,14") {
     unknownmananswer = "Why are we talking about a printer? Ziggy, we don't have time for this.";
   } else if (unknownmaninput == "11,15") {
@@ -2167,7 +2266,7 @@ function unknownMan() {
   } else if (unknownmaninput == "11,30") {
     unknownmananswer = "Ron and I are best friends. He is amazing with techology, but without the right equipment even he can't fix the communication system of our ship. One day, maybe.";
   } else if (unknownmaninput == "11,33" || unknownmaninput == "11,45") {
-    unknownmananswer = "The mayor is corrupted, I'm sure of it. The fact that all of the big projects in the city go to the hands of contractors that happen to be his cousins can't be a coincidence. Nor is all the money that keeps stacking in his bank account.";
+    unknownmananswer = "The mayor is corrupted, I'm sure of it. The fact that all of the big projects in the city go to the hands of contractors, that happen to be his cousins, can't be a coincidence. Nor is all the money that keeps stacking in his bank account.";
   } else if (unknownmaninput == "11,34") {
     unknownmananswer = "I'm glad you have this phone with you.";
   } else if (unknownmaninput == "11,35") {
@@ -2179,7 +2278,7 @@ function unknownMan() {
   } else if (unknownmaninput == "11,41") {
     unknownmananswer = "So did you manage to find Alison? You should ask Ron about her, he's quite skillful when it comes to finding information on somebody.";
   } else if (unknownmaninput == "11,42") {
-    unknownmananswer = "That nurse is scary. I swear that she never leaves the desk. I don't know who is in charge of this restricted ward, but I've seen her entering it. Her memory must be really poor because she has the code written on her arm and she always checks it before going in. You can't see it now because of the long sleeved scrub she's wearing, but it's there. And don't try to take her form with your power to see it, we can only take form of what we see on a person.";
+    unknownmananswer = "That nurse is scary. I swear that she never leaves the desk. I don't know who is in charge of this restricted ward, but I've seen her entering in it. Her memory must be really poor because she has the code written on her arm and she always checks it before going in. You can't see it now because of the long sleeved jacket she's wearing, but it's there. And don't try to take her form to see her arm, our power duplicates only the parts of a person we see.";
   } else if (unknownmaninput == "11,44") {
     unknownmananswer = "Well Ziggy, aren't you a clever girl.";
   } else if (unknownmaninput == "11,48") {
@@ -2189,7 +2288,7 @@ function unknownMan() {
   } else if (unknownmaninput == "11,50") {
     unknownmananswer = "Sure, take hospital equipment. You need it more than our patients, don't you?";
   } else if (unknownmaninput == "11,53") {
-    unknownmananswer = "I don't know the code. They've changed it a few months ago and the whole ward became a restricted zone. To tell you the truth, I don't even know which doctor is in charge of it. I've only seen nurse Barbara entering it. I think she has the code written on her arm because she always checks it before entering the ward. I didn't get a good look at it because she's always wearing this long sleeved jacket. And don't try to take her form with your power to see it, we can only take form of what we see on a person.";
+    unknownmananswer = "I don't know the code. They've changed it a few months ago and the whole ward became a restricted zone. To tell you the truth, I don't even know which doctor is in charge of it. I've only seen nurse Barbara entering it. I think she has the code written on her arm because she always checks it before entering the ward. I didn't get a good look at it because she's always wearing this long sleeved jacket. It's seems obvious to take her form and look at her arm, but our power doesn't work like that. We only take the appearance of those details we can see on a person.";
   } else if (unknownmaninput == "11,54") {
     unknownmananswer = "I can't tell you which car is Dr Turner's. I think he changed cars recently.";
   } else if (unknownmaninput == "11,55") {
@@ -2209,7 +2308,7 @@ function unknownMan() {
   } else if (unknownmaninput == "11,SPO05") {
     unknownmananswer = "This message is encrypted somehow. If we could only find the code...";
   } else if (unknownmaninput == "30,01") {
-    unknownmananswer = "Ziggy, it's so great to talk to you. I only wish that the circumstances were different.";
+    unknownmananswer = "Ziggy, it's so great to talk to you. I only wish the circumstances were different.";
   } else if (unknownmaninput == "30,02") {
     unknownmananswer = "I don't know how could I eat the burger over the phone.";
   } else if (unknownmaninput == "30,03") {
@@ -2229,7 +2328,7 @@ function unknownMan() {
   } else if (unknownmaninput == "30,12") {
     unknownmananswer = "Ziggy, try to escape through the window! Is it too high?";
   } else if (unknownmaninput == "30,13") {
-    unknownmananswer = "I don't know who the guy is, but I'm sure that he knows where is Lena.";
+    unknownmananswer = "I don't know who the guy is, but I'm sure he knows what happened to Lena.";
   } else if (unknownmaninput == "30,14") {
     unknownmananswer = "This model is famous for it's precise both sides printing.";
   } else if (unknownmaninput == "30,15" || unknownmaninput == "30,35") {
@@ -2257,7 +2356,7 @@ function unknownMan() {
   } else if (unknownmaninput == "30,30") {
     unknownmananswer = "I've been working on fixing our communication system since we came to Earth. But I haven't made enough progress still. The technology is so limited on this planet, it's frustrating.";
   } else if (unknownmaninput == "30,33" || unknownmaninput == "30,45") {
-    unknownmananswer = "Mayor Bundy has been accused of many things. Some of them involve spending tax money on expensive but insignificant city projects that don't help in solving real problems, like waste managment. Other imply that he's been putting his people on high, well paid and powerful positions. But one rumor could perhaps interest us the most. He significantly lowered the taxes for new companies as a part of his economy growth policy two years ago. And there was one company who profited from it the most, quickly gaining wealth and monopoly in the region. It was PEI, 'Petroleum Extraction Industries'. He should be in his office now, it's working hours.";
+    unknownmananswer = "Mayor Bundy has been accused of many things. Some of them involve spending tax money on expensive city projects that don't help in solving real problems, like waste managment. Other imply that he's been putting his people on high, well paid and powerful positions. But one rumor could perhaps interest us the most. He significantly lowered the taxes for new businesses as a part of his economy growth policy two years ago. And there was one company who profited from it the most, quickly gaining wealth and monopoly in the region. It was PEI, 'Petroleum Extraction Industries'. He should be in his office now, it's working hours.";
   } else if (unknownmaninput == "30,34") {
     unknownmananswer = "You know that I've installed a tracking system so that I can always see where you are. So keep it with you and keep it turned on.";
   } else if (unknownmaninput == "30,36" || unknownmaninput == "30,39" || unknownmaninput == "30,52") {
@@ -2292,16 +2391,20 @@ function unknownMan() {
     unknownmananswer = "Lena must be here!";
   } else if (unknownmaninput == "30,SPO05") {
     unknownmananswer = "I wonder how could we shed a light on the meaning of this document.";
+  } else if (unknownmaninput == "02,06" || unknownmaninput == "06,02") {
+    unknownmananswer = "I don't see a good reason to put makeup into the food.";
+  } else if (unknownmaninput == "02,10" || unknownmaninput == "10,02") {
+    unknownmananswer = "Dipping the tablet in mayonnaise will not unlock it.";
+  } else if (unknownmaninput == "02,14" || unknownmaninput == "14,02") {
+    unknownmananswer = "The printer isn't hungry. There's plenty of paper in it.";
   } else if (unknownmaninput == "02,16" || unknownmaninput == "16,02") {
     unknownmananswer = "Is it really the best idea to drug this food with something that I don't even really know what it is? I don't think so.";
   } else if (unknownmaninput == "02,27" || unknownmaninput == "27,02") {
-    unknownmananswer = "Mixing the potpourri with the hamburger will just make it uneatable.";
+    unknownmananswer = "I don't want to spoil a perfectly good burger.";
   } else if (unknownmaninput == "02,34" || unknownmaninput == "34,02") {
     unknownmananswer = "The food isn't photogenic enough to make me want to take a photo of it.";
-  } else if (unknownmaninput == "02,36" || unknownmaninput == "02,39" || unknownmaninput == "02,52" || unknownmaninput == "36,02" || unknownmaninput == "39,02" || unknownmaninput == "52,02") {
-    unknownmananswer = "I don't think that the cat is hungry. He doesn't seem interested in the food.";
-  } else if (unknownmaninput == "02,06" || unknownmaninput == "06,02") {
-    unknownmananswer = "I don't see a good reason to put makeup into the food.";
+  } else if (unknownmaninput == "02,36" || unknownmaninput == "02,52" || unknownmaninput == "36,02" || unknownmaninput == "52,02") {
+    unknownmananswer = "The cat doesn't like mayonnaise.";
   } else if (unknownmaninput == "03,09" || unknownmaninput == "09,03") {
     unknownmananswer = "It could be a good idea to tape something to the car, but what?";
   } else if (unknownmaninput == "03,10" || unknownmaninput == "10,03") {
@@ -2315,15 +2418,17 @@ function unknownMan() {
   } else if (unknownmaninput == "03,24" || unknownmaninput == "24,03") {
     unknownmananswer = "I don't want to tie up anybody.";
   } else if (unknownmaninput == "03,34" || unknownmaninput == "34,03") {
-    unknownmananswer = "Here goes...I'll admit it's a primitive solution, but it works.<br><i>Take card <b>40</b>. Remove cards <b>03</b> nad <b>34</b>.</i>";
+    unknownmananswer = "Here goes...A phone you can stick anywhere.<br><i>Take card <b>40</b>. Remove cards <b>03</b> nad <b>34</b>.</i>";
   } else if (unknownmaninput == "03,36" || unknownmaninput == "03,39" || unknownmaninput == "03,52" || unknownmaninput == "24,36" || unknownmaninput == "24,39" || unknownmaninput == "24,52" || unknownmaninput == "36,03" || unknownmaninput == "36,24" || unknownmaninput == "39,03" || unknownmaninput == "39,24" || unknownmaninput == "52,03" || unknownmaninput == "52,24") {
     unknownmananswer = "I'm not going to tie up my little cat!";
   } else if (unknownmaninput == "06,10" || unknownmaninput == "10,06") {
     unknownmananswer = "I spread some of the powder with a brush on the tablet screen. Well well, look at this...<br><i>Take card <b>44</b>. Remove cards <b>06</b> and <b>10</b>.";
-  } else if (unknownmaninput == "06,36" || unknownmaninput == "06,39" || unknownmaninput == "06,52" || unknownmaninput == "36,06" || unknownmaninput == "39,06" || unknownmaninput == "52,06") {
-    unknownmananswer = "Putting makeup on the cat isn't going to solve anything.";
+  } else if (unknownmaninput == "06,34" || unknownmaninput == "34,06") {
+    unknownmananswer = "I like to keep my phone nice and clean.";
+  } else if (unknownmaninput == "06,36" || unknownmaninput == "06,52" || unknownmaninput == "36,06" || unknownmaninput == "52,06") {
+    unknownmananswer = "The cat gives me a look that says 'Don't you even think about it'.";
   } else if (unknownmaninput == "06,53" || unknownmaninput == "53,06") {
-    unknownmananswer = "I can't touch the lock in front of nurse Barbara, but even if I could, this would maybe reveal the numbers in the code, but not their order.";
+    unknownmananswer = "I can't touch the lock in front of nurse Barbara. But even if I could, this would reveal the numbers in the code, not their order.";
   } else if (unknownmaninput == "08,01" || unknownmaninput == "08,05" || unknownmaninput == "08,11" || unknownmaninput == "08,15" || unknownmaninput == "08,18" || unknownmaninput == "08,25" || unknownmaninput == "08,29" || unknownmaninput == "08,30" || unknownmaninput == "08,31" || unknownmaninput == "08,33" || unknownmaninput == "08,35" || unknownmaninput == "08,38" || unknownmaninput == "08,42" || unknownmaninput == "08,45" || unknownmaninput == "08,47") {
     unknownmananswer = "It would be interesting to read people's minds and make them do stuff, but it's also a bit creepy. Anyway, my power works only on plants and animals.";
   } else if (unknownmaninput == "08,27" || unknownmaninput == "27,08") {
@@ -2334,10 +2439,12 @@ function unknownMan() {
     unknownmananswer = "I'm already using my power over the cat.";
   } else if (unknownmaninput == "08,56" || unknownmaninput == "56,08") {
     unknownmananswer = "What more can I ask of this tree than what it's already done for me?";
+  } else if (unknownmaninput == "09,01") {
+    unknownmananswer = "I can't get into the car. It's locked, of course.";
   } else if (unknownmaninput == "09,34" || unknownmaninput == "34,09") {
     unknownmananswer = "If I could somehow put my phone into the car, we could follow it with the tracking app. But the car is locked, of course.";
   } else if (unknownmaninput == "09,40" || unknownmaninput == "40,09") {
-    unknownmananswer = "The tracking app on the phone will show us exactly where will the car go.<br><i>I tape the phone to the car, after calling Ron to come with his van to pick me up. I just have enough time to hide behind another car parked nearby when I see Dr Turner leaving the building. Fortunately, Ron arrives only a few minutes after. Rose joins us, and the two of us jump into Ron's car. The chase for Dr Turner begins!<br>Take envelope <b>SPO06</b>. Remove cards <b>09</b>, <b>40</b> and <b>LOC10</b>.</i>";
+    unknownmananswer = "The tracking app on the phone will show us exactly where will the car go.<br><i>I tape the phone to the car, after calling Ron to come with his van to pick me up. I just have enough time to hide behind another car parked nearby when I see Dr Turner leaving the building. Fortunately, Ron arrives shortly after. Rose joins us, and the two of us jump into Ron's van. The chase for Dr Turner begins!<br>Take envelope <b>SPO06</b>. Remove cards <b>09</b>, <b>40</b> and <b>LOC10</b>.</i>";
   } else if (unknownmaninput == "10,14" || unknownmaninput == "10,44" || unknownmaninput == "14,10" || unknownmaninput == "14,44") {
     unknownmananswer = "That could work if I actually opened the tablet. I can't connect it to the printer while it's locked.";
   } else if (unknownmaninput == "10,1654852" || unknownmaninput == "10,16482" || unknownmaninput == "10,1,6,4,8,2" || unknownmaninput == "10,1,6,5,4,8,5,2" || unknownmaninput == "10,2,5,8,4,5,6,1" || unknownmaninput == "10,2584561" || unknownmaninput == "10,28461" || unknownmaninput == "10,2,8,4,6,1" || unknownmaninput == "44,1654852" || unknownmaninput == "44,16482" || unknownmaninput == "44,1,6,4,8,2" || unknownmaninput == "44,2584561" || unknownmaninput == "44,28461" || unknownmaninput == "44,2,8,4,6,1" || unknownmaninput == "44,1,6,5,4,8,5,2" || unknownmaninput == "44,2,5,8,4,5,6,1") {
@@ -2348,10 +2455,14 @@ function unknownMan() {
     unknownmananswer = "The potpourri does smell really intense, but if I've been carrying it for all this time, I'm not going to throw it out of the window now.";
   } else if (unknownmaninput == "12,34" || unknownmaninput == "34,12") {
     unknownmananswer = "That's not much of a view to take a photo of it.";
-  } else if (unknownmaninput == "12,50" || unknownmaninput == "50,12") {
+  } else if (unknownmaninput == "12,50" && escape == 1 || unknownmaninput == "50,12" && escape == 1) {
+    unknownmananswer = "Should I really break the window with the IV stand top? I don't see why.";
+  } else if (unknownmaninput == "12,50" && escape == 2 || unknownmaninput == "50,12" && escape == 2) {
     unknownmananswer = "I could hook the IV stand top on the window, but I don't know what to do from there.";
-  } else if (unknownmaninput == "12,55" || unknownmaninput == "55,12") {
-    unknownmananswer = "This may not be the safest thing to do, but I don't have a choice. Here we go!<br></i>I hook my improvised anchor on the window sill and use the rope to climb down the window. Jenna unhooks the anchor and throws it down just before Dr Turner enters the room. That was close!<br>Take card <b>LOC10</b>. Remove cards <b>12</b>, <b>35</b>, <b>55</b> and <b>LOC09</b> (but keep the other cards from the location on the table).</i>";
+  } else if (unknownmaninput == "12,55" && escape == 1 || unknownmaninput == "55,12" && escape == 1) {
+    unknownmananswer = "I just got to the room. Why would I escape now?";
+  } else if (unknownmaninput == "12,55" && escape == 2 || unknownmaninput == "55,12" && escape == 2) {
+    unknownmananswer = "This may not be the safest thing to do, but I don't have a choice. Here we go!<br><i>I hook my improvised anchor on the window sill and use the rope to climb down the window. Jenna unhooks the anchor and throws it down just before Dr Turner enters the room. That was close!<br>Take card <b>LOC10</b>. Remove cards <b>12</b>, <b>35</b>, <b>55</b> and <b>LOC09</b> (but keep the other cards from the location on the table).</i>";
   } else if (unknownmaninput == "14,17" || unknownmaninput == "17,14") {
     unknownmananswer = "The file is called 'PEI_both_sides'. Let's try to print it, on both sides obviously.<br>Take envelope <b>SPO05</b>. Remove cards <b>14</b> and <b>17</b>.</i>";
   } else if (unknownmaninput == "14,34" || unknownmaninput == "34,14") {
@@ -2360,20 +2471,24 @@ function unknownMan() {
     unknownmananswer = "Why would I drug the potpourri? The smell itself is already poisonous enough.";
   } else if (unknownmaninput == "16,36" || unknownmaninput == "16,39" || unknownmaninput == "16,52" || unknownmaninput == "36,16" || unknownmaninput == "39,16" || unknownmaninput == "52,16" || unknownmaninput == "52,46") {
     unknownmananswer = "I don't want to drug poor little cat!";
-  } else if (unknownmaninput == "21,51" || unknownmaninput == "51,21") {
-    unknownmananswer = "This is a little trick my mother taught me when I was a kid. I just have to gently shade the page with the pencil and...here it is!<br><i>The indentations on the page reveal what was written on the top page.<br>Take card <b>62</b>. Remove cards <b>21</b> and <b>51</b>.</i>";
   } else if (unknownmaninput == "22,36" || unknownmaninput == "36,22") {
     unknownmananswer = "I try to make the cat smell the glove, but he just turns his head away from it.";
   } else if (unknownmaninput == "22,52" || unknownmaninput == "52,22") {
-    unknownmananswer = "Let's see if what they say about cats having a super sensitive smell is true.<br><it>The cat smells the glove and confirms to me that he could now recognize the smell of the glove's owner anywhere. <br>Take card <b>39</b>. Remove cards <b>22</b> and <b>52</b>.</i>";
+    unknownmananswer = "Let's see if what they say about cats having a super sensitive smell is true.<br><i>The cat smells the glove and confirms to me that he could now recognize the smell of the glove's owner anywhere. <br>Take card <b>39</b>. Remove cards <b>22</b> and <b>52</b>.</i>";
   } else if (unknownmaninput == "24,50" || unknownmaninput == "50,24") {
-      answertwo = "You can learn how to make all kinds of knots on the internet.<br><i>Take card <b>55</b>. Remove cards <b>24</b> and <b>50</b>.</i>";
+    unknownmananswer = "You can learn how to make all kinds of knots on the internet.<br><i>Take card <b>55</b>. Remove cards <b>24</b> and <b>50</b>.</i>";
+  } else if (unknownmaninput == "26,01" || unknownmaninput == "26,05" || unknownmaninput == "26,07" || unknownmaninput == "26,11" || unknownmaninput == "26,15" || unknownmaninput == "26,20" || unknownmaninput == "26,23" || unknownmaninput == "26,25" || unknownmaninput == "26,29" || unknownmaninput == "26,30" || unknownmaninput == "26,33" || unknownmaninput == "26,35" || unknownmaninput == "26,42" || unknownmaninput == "26,45" || unknownmaninput == "26,48") {
+    unknownmananswer = "I have to get back to my Ziggy appearance to be able to change it into someone else's.";
+  } else if (unknownmaninput == "26,13") {
+    unknownmananswer = "I already have his appearance.";
   } else if (unknownmaninput == "27,36" || unknownmaninput == "27,39" || unknownmaninput == "27,52" || unknownmaninput == "36,27" || unknownmaninput == "36,27" || unknownmaninput == "39,27") {
     unknownmananswer = "I put the cat into the potpourri, but he can't stand the smell of it.";
   } else if (unknownmaninput == "34,36" || unknownmaninput == "34,39" || unknownmaninput == "34,52" || unknownmaninput == "36,34" || unknownmaninput == "39,34" || unknownmaninput == "52,34") {
     unknownmananswer = "A photo of the cat isn't very useful, but he's just so adorable!";
+  } else if (unknownmaninput == "36,54" || unknownmaninput == "54,36") {
+    unknownmananswer = "I try to make the cat search for Dr Turner's car, but he doesn't budge.";
   } else if (unknownmaninput == "39,54" || unknownmaninput == "54,39") {
-    unknownmananswer = "Come on cat, you can do it!<br><i>The cat passes through the parking lot and after a few minutes of hesitation, he stops next to a car and meows decisively.<br>Take cars <b>09</b>. Remove cards <b>39</b> and <b>54</b>.</i>";
+    unknownmananswer = "Come on cat, you can do it!<br><i>The cat passes through the parking lot and after a few minutes of hesitation, he stops next to a car and meows decisively.<br>Take card <b>09</b>. Remove cards <b>39</b> and <b>54</b>.</i>";
   } else if (unknownmaninput == "53,5317" || unknownmaninput == "53,5,3,1,7" || unknownmaninput == "53,6538" || unknownmaninput == "53,6,5,3,8" || unknownmaninput == "53,LIES" || unknownmaninput == "53,L,I,E,S") {
     unknownmananswer = "Even if I know the code, I can't just go right to the lock and enter it. Nurse Barbara is sitting right there.";
   } else if (unknownmaninput == "52,54" || unknownmaninput == "54,52") {
@@ -2385,15 +2500,15 @@ function unknownMan() {
   } else if (unknownmaninput == "A57") {
     unknownmananswer = "This is the shop that the man went to. Where to from here?<br><i>Take card <b>LOC04</b>. Remove cards <b>47</b> and <b>LOC03</b> (but keep the other cards from the location on the table).</i>";
   } else if (unknownmaninput == "G54") {
-    unknownmananswer = "I should take the drug to Dr Rose.<br><i>As I arrive to the hospital, I see Dr Rose in the hallway. We move a little on the side by the coffee machine, so that we can speak in private. I pass her the drug that is supposedly capable of removing our powers. She promises that she will send it to analysis immidiately and that she will try to make an antidote. This will take a while, so I should continue with my investigation in the meantime.<br>Take card <b>LOC06</b>. Remove cards <b>16</b> and <b>57</b>.</i>";
+    unknownmananswer = "I should take the drug to Dr Rose.<br><i>As I arrive to the hospital, I see Dr Rose in the hallway. We move to the side by the coffee machine, so that we can speak in private. I pass her the drug that is supposedly capable of removing our powers. She promises she will send it for analysis immidiately and that she will try to make an antidote. This will take a while, so I should continue with my investigation in the meantime.<br>Take card <b>LOC06</b>. Remove cards <b>16</b> and <b>57</b>.</i>";
   } else if (unknownmaninput == "C29") {
-    unknownmananswer = "I didn't think that the mayor could be invloved, but if that's what it takes, I'm going to bring down the mayor himself!<br><i>Take card <b>LOC07</b>.</i>";
+    unknownmananswer = "I didn't think that the mayor could be invloved, but if that's what it takes, I'm going to bring the mayor himself down!<br><i>Take card <b>LOC07</b>.</i>";
   } else if (unknownmaninput == "H50") {
     unknownmananswer = "I arrive to the 'Starchester Weather Radar' but I don't find anything of interest. But wasn't the magazine address 'Under the Radar'?</i>";
   } else if (unknownmaninput == "H51") {
     unknownmananswer = "Finally! This magazine really is under the radar, it wasn't easy to find its whereabouts.<br><i>Take card <b>LOC08</b>. Remove card <b>07</b>.</i>";
   } else if (unknownmaninput == "C24" || unknownmaninput == "C30") {
-    unknownmananswer = "We arrive to the spot the tracking app lead us to and park the car across the street on a safe distance, so that nobody would spot us. We're here just in time to see Dr Turner going to the entrance of the building. An armed soldier guarding the doors greets him there and passes him something that looks like a potion of some kind. Dr Turner drinks it, and a few moments later the soldier lets him in. Dr Rose turns to me and says:</i><br>This thing what he's drinking must be the drug that professor Martin gave you. My analysis of the drug shows that it's function is indeed to make our powers dissapear, so they must be giving it to people that enter as a precaution. Luckily, I've created an antidote.<br><i>Dr Rose gives me a pill and I swallow it, hopefully gaining immunity to this drug. <br>But then Ron, looking at the entrance with his binoculars, whispers in panic:</i><br>Guys, do you see the symbol on the doors? Rose, you know what it is. It's the symbol of Laki civilisation, the same parasite society that stole and destroyed Nahukat. My worst nightmares have come true: the Lakis are here.<br><i>I manage to articulate a question, shaking with fear:</i><br>But how are Lakis connected with everything? I thought that PEI is behind all of this.<br><i>Ron puts the binoculars down and takes his head in his hands.</i><br>Now I see what does PEI really stand for: 'Planet Earth Invasion'. They are doing it all over again!<br><i>Take card <b>LOC11</b>. Return all of the tracking app cards into the <b>SPO06</b> envelope.</i>";
+    unknownmananswer = "<i>We arrive to the spot the tracking app lead us to, and park the car across the street on a safe distance, so that nobody would spot us. We're here just in time to see Dr Turner going to the entrance of the building. An armed soldier guarding the doors greets him there and passes him a potion of some kind. Dr Turner drinks it, and a few moments later the soldier lets him in. Dr Rose turns to me and says:</i><br>This thing what he's drinking must be the drug that professor Martin gave you. My analysis of the drug shows that it's function is indeed to make our powers dissapear, so they must be giving it to people that enter as a precaution. Luckily, I've created an antidote.<br><i>Dr Rose gives me a pill and I swallow it, hopefully gaining immunity to this drug. <br>But then Ron, looking at the entrance with his binoculars, whispers in panic:</i><br>Guys, do you see the symbol on the doors? Rose, you know what it is. It's the symbol of Laki civilisation, the same parasite society that attacked and destroyed Nahukat. My worst nightmares have come true: the Lakis are here.<br><i>I manage to articulate a question, shaking with fear:</i><br>But how are Lakis connected with everything? I thought that the PEI is behind all of this.<br><i>Ron puts the binoculars down and says:</i><br>Now I see what does PEI really stand for: 'Planet Earth Invasion'. They are doing it all over again!<br><i>Take card <b>LOC11</b>. Return all of the tracking app cards into the <b>SPO06</b> envelope.</i>";
   } else if (unknownmaninput == "DR TURNER" || unknownmaninput == "DRTURNER" || unknownmaninput == "DR. TURNER" || unknownmaninput == "DR.TURNER" || unknownmaninput == "TURNER") {
     unknownmananswer = "Dr Turner is in charge of the restricted ward! It took some time to figure out how to read this document, but it was worth it.<br><i>Take card <b>48</b>. Remove cards <b>25</b>, <b>LOC08</b> and <b>SPO05</b>.</i>";
   } else if (unknownmaninput == "29,01") {
@@ -2405,7 +2520,7 @@ function unknownMan() {
   } else if (unknownmaninput == "29,23") {
     unknownmananswer = "She's still not talking, no matter what we do to her.";
   } else if (unknownmaninput == "29,28") {
-    unknownmananswer = "Oh, it's you, Agent 27. I'm sorry to make you do this, but you know the protocol.<br><i>The soldier gives me a small bottle with a drug, just like the one professor Martin gave me. I drink it, as I saw Dr Turner do it. I'm sweating with stress..will Dr Rose's antidote work? A few seconds pass and I still look like the ugly, leather loving, kidnapping criminal named Agent 27, as it seems.</i><br>All is good, go ahead.<br><i>The soldier opens the entrance doors, and...I'm in! Mother, here I come!<br>Chapter Two of the game is now finished. To continue Ziggy's adventure and finally save Lena, start Chapter Three. Thank you for playing!</i>";
+    unknownmananswer = "Oh, it's you, Agent 27. I'm sorry to make you do this, but you know the protocol.<br><i>The soldier gives me a small bottle with a drug, just like the one professor Martin gave me. I drink it, as I saw Dr Turner do it. I'm sweating with stress..will Dr Rose's antidote work? A few seconds pass and I still look like the ugly, leather loving, kidnapping criminal named Agent 27, as it seems.</i><br>All is good, go ahead.<br><i>The soldier opens the entrance doors, and...I'm in! Mother, here I come!</i><br><br><b>Chapter Two of the game is now finished. To continue Ziggy's adventure and finally save Lena, start Chapter Three. Thank you for playing!</b>";
   } else if (unknownmaninput == "29,29") {
     unknownmananswer = "Nobody will get past me without me checking them out first. No exceptions, rules are rules.";
   } else if (unknownmaninput == "29,48") {
@@ -2414,8 +2529,12 @@ function unknownMan() {
     unknownmananswer = "She was here, looking for the mayor. I told her that he's busy.";
   } else if (unknownmaninput == "05,02") {
     unknownmananswer = "No, thank you, sir.";
-  } else if (unknownmaninput == "05,03" || unknownmaninput == "05,06" || unknownmaninput == "05,08" || unknownmaninput == "05,14" || unknownmaninput == "05,24" || unknownmaninput == "05,26" || unknownmaninput == "05,27" || unknownmaninput == "05,34" || unknownmaninput == "05,36" || unknownmaninput == "05,39" || unknownmaninput == "05,40" || unknownmaninput == "05,41" || unknownmaninput == "05,52" || unknownmaninput == "05,53") {
+  } else if (unknownmaninput == "05,03" || unknownmaninput == "05,26" || unknownmaninput == "05,36" || unknownmaninput == "05,52") {
     unknownmananswer = "I'm sorry, I'm not following you. Are you here to speak to the mayor?";
+  } else if (unknownmaninput == "05,06" || unknownmaninput == "05,08" || unknownmaninput == "05,27" || unknownmaninput == "05,34" || unknownmaninput == "05,41") {
+    unknownmananswer = "I have to say that I'm not sure what are you talking about.";
+  } else if (unknownmaninput == "05,14" || unknownmaninput == "05,24" || unknownmaninput == "05,39" || unknownmaninput == "05,40" || unknownmaninput == "05,53") {
+    unknownmananswer = "I feel like I'm on a quiz! Why are you asking me this?";
   } else if (unknownmaninput == "05,05") {
     unknownmananswer = "I am well, thank you for asking.";
   } else if (unknownmaninput == "05,07" || unknownmaninput == "05,25") {
@@ -2437,15 +2556,23 @@ function unknownMan() {
   } else if (unknownmaninput == "42,01" || unknownmaninput == "42,07" || unknownmaninput == "42,25") {
     unknownmananswer = "I'm sorry, but I can't discuss patients or visitors with you.";
   } else if (unknownmaninput == "42,02") {
-    unknownmananswer = "Thank you, but I ordered a salad and I'm waiting for the delivery. They are late, again. And I'm starving! I swear that it's the last time I'm ordering from this bistro.";
-  } else if (unknownmaninput == "42,03" || unknownmaninput == "42,06" || unknownmaninput == "42,08" || unknownmaninput == "42,10" || unknownmaninput == "42,14" || unknownmaninput == "42,17" || unknownmaninput == "42,24" || unknownmaninput == "42,26" || unknownmaninput == "42,34" || unknownmaninput == "42,36" || unknownmaninput == "42,39" || unknownmaninput == "42,40" || unknownmaninput == "42,41" || unknownmaninput == "42,44" || unknownmaninput == "42,52") {
+    unknownmananswer = "Thank you sir, I'm waiting for my salad to be delivered.";
+  } else if (unknownmaninput == "42,03" || unknownmaninput == "42,34" || unknownmaninput == "42,40" || unknownmaninput == "42,44") {
     unknownmananswer = "Sir, I'm not sure I understand what you're asking me. Are you here for an appointment, or are you looking for the doctor?";
-  } else if (unknownmaninput == "42,05" || unknownmaninput == "42,20" || unknownmaninput == "42,23" || unknownmaninput == "42,30") {
+  } else if (unknownmaninput == "42,05" || unknownmaninput == "42,23" || unknownmaninput == "42,30") {
     unknownmananswer = "I really don't know who are you talking about.";
+  } else if (unknownmaninput == "42,06" || unknownmaninput == "42,14" || unknownmaninput == "42,26") {
+    unknownmananswer = "I must say that I don't understand what are talking about. The doctor should come in half an hour, you can wait for him in the waiting room if you need him.";
+  } else if (unknownmaninput == "42,08" || unknownmaninput == "42,17" || unknownmaninput == "42,36" || unknownmaninput == "42,41") {
+    unknownmananswer = "I can't help you with that. Actually, I don't really know what's the point of these questions.";
+  } else if (unknownmaninput == "42,10" || unknownmaninput == "42,24" || unknownmaninput == "42,39" || unknownmaninput == "42,52") {
+    unknownmananswer = "Answering silly questions is not really in my job description. Is there anything related to the hospital I can help you with?";
   } else if (unknownmaninput == "42,11") {
     unknownmananswer = "Dr Rose is right over there. Do you have an appointment?";
   } else if (unknownmaninput == "42,13" || unknownmaninput == "42,53") {
     unknownmananswer = "Yes sir, I know you've been here before. Unfortunately, I can't let you inside the ward without doctor's presence.";
+  } else if (unknownmaninput == "42,20") {
+    unknownmananswer = "I ordered a salad, but it still hasn't arrived.";
   } else if (unknownmaninput == "42,33" || unknownmaninput == "42,45") {
     unknownmananswer = "I don't care if you work with the mayor, I can't let you inside the ward without doctor's presence.";
   } else if (unknownmaninput == "42,42") {
@@ -2458,8 +2585,14 @@ function unknownMan() {
     unknownmananswer = "I don't know if the girl you're talking about was here. I told the security guard not to bother me with visitors. Unless you came, of course.";
   } else if (unknownmaninput == "45,01") {
     unknownmananswer = "I don't know if the girl you're talking about was here. I told the security guard not to bother me with visitors. Unless you came, of course.";
-  } else if (unknownmaninput == "45,02" || unknownmaninput == "45,03" || unknownmaninput == "45,06" || unknownmaninput == "45,08" || unknownmaninput == "45,11" || unknownmaninput == "45,14" || unknownmaninput == "45,20" || unknownmaninput == "45,24" || unknownmaninput == "45,26" || unknownmaninput == "45,27" || unknownmaninput == "45,30" || unknownmaninput == "45,34" || unknownmaninput == "45,36" || unknownmaninput == "45,39" || unknownmaninput == "45,40" || unknownmaninput == "45,41" || unknownmaninput == "45,42" || unknownmaninput == "45,52") {
+  } else if (unknownmaninput == "45,02" || unknownmaninput == "45,11" || unknownmaninput == "45,24" || unknownmaninput == "45,30" || unknownmaninput == "45,39") {
     unknownmananswer = "Listen, I'm sure you're as busy as I am. So let's cut to the chase. There are more important things to speak about.";
+  } else if (unknownmaninput == "45,03" || unknownmaninput == "45,14" || unknownmaninput == "45,27" || unknownmaninput == "45,34" || unknownmaninput == "45,36") {
+    unknownmananswer = "I hope that these questions are not the real reason you came here.";
+  } else if (unknownmaninput == "45,06" || unknownmaninput == "45,20" || unknownmaninput == "45,24" || unknownmaninput == "45,40" || unknownmaninput == "45,52") {
+    unknownmananswer = "I trust you're here to speak of other things than that.";
+  } else if (unknownmaninput == "45,08" || unknownmaninput == "45,20" || unknownmaninput == "45,26" || unknownmaninput == "45,42") {
+    unknownmananswer = "Agent, if this is your idea of humour I assure you that I don't find it funny. Can we please get to business?";
   } else if (unknownmaninput == "45,07" || unknownmaninput == "45,25") {
     unknownmananswer = "She's been here, asking questions. But don't worry, she doesn't have a clue. And we better keep it that way. Here is the copy of the document for your boss. He already knows the code.<br><i>The mayor says he has work to do and politely asks me to leave. I can feel that he's quite intimidated by my unknown man presence, but he doesn't want me to notice.<br>Take card <b>10</b>. Remove cards <b>45</b> and <b>LOC07</b>.<br>Return to your Ziggy appearence and use the original Game Book input field.</i>";
   } else if (unknownmaninput == "45,13" || unknownmaninput == "45,45") {
@@ -2502,7 +2635,7 @@ function turner() {
   } else if (turnerinput == "10") {
   	turneranswer = "The touchscreen tablet that the mayor gave me. It requires a swipe pattern to unlock.<br><i>You can now unlock the touchscreen tablet by entering the card number <b>10</b> followed by the sequence of numbers in the order of the swipe pattern. The card number and the numbers sequence should be separated by a comma, without spaces.</i>";
   } else if (turnerinput == "11" || turnerinput == "57") {
-  	turneranswer = "Dr Rose Tobin was the physician of the original crew that found the planet Earth. She is working at the hospital and is a very respected member of the community. But even though she likes it here on Earth, she misses our people immensely.";
+  	turneranswer = "Dr Rose Tobin was the physician of the original Nahukat crew that landed on Earth. She works at the hospital and is a very respected member of the community. But even though she likes it here on Earth, she misses our people immensely.";
   } else if (turnerinput == "12") {
   	turneranswer = "The hospital room is on the first floor, above the hospital's parking lot.";
   } else if (turnerinput == "13") {
@@ -2512,7 +2645,7 @@ function turner() {
   } else if (turnerinput == "15") {
   	turneranswer = "A patient lying in a coma. Her medical chart reads: <br><i>Patient: Jenna Kane <br>Diagnosis: Heavy metal poisoning with kidney, liver and heart damage, severe brain dysfunction <br>Illnes cause: Unknown <br>Current state: Patient entered a state of extreme unresponsiveness 22 hours after hospitalisation</i>";
   } else if (turnerinput == "16") {
-  	turneranswer = "A chemical that the people that hired professor Martin gave him to use on my mother. I wonder what does it do... I'm sure that Dr Rose could know more about it.";
+  	turneranswer = "I'm sure that Dr Rose could know more about this drug.";
   } else if (turnerinput == "17") {
   	turneranswer = "The tablet is unlocked and has a file named 'PEI_both_sides'. Unfortunately, the file is either encrypted or corrupted. There are a bunch of unreadable signs in the file that don't make any sense.";
   } else if (turnerinput == "18") {
@@ -2532,7 +2665,7 @@ function turner() {
   } else if (turnerinput == "27") {
   	turneranswer = "A potpourri bowl with a smell so intense that it could bring the dead back to life.";
   } else if (turnerinput == "28") {
-  	turneranswer = "To enter the PEI base, it's necessary to pass the heavily armed soldier.";
+  	turneranswer = "It wouldn't be the best idea to disguise into Dr Turner. The soldier just saw him entering the building.";
   } else if (turnerinput == "29") {
   	turneranswer = "The soldier guarding the entrence is carrying a huge rifle.";
   } else if (turnerinput == "30") {
@@ -2568,15 +2701,15 @@ function turner() {
   } else if (turnerinput == "55") {
   	turneranswer = "The IV stand top with a piece of rope tied to it.";
   } else if (turnerinput == "LOC05") {
-    turneranswer = "I'm shocked to see professor Martin <b>(18)</b> tied up to a chair. I untie him immidiately, of course, and end up with a piece od rope <b>(24)</b> he was tied with. There is also some duct tape <b>(03)</b>, used to keep him quiet, lying on the floor.";
+    turneranswer = "I'm shocked to see professor Martin <b>(18)</b> tied up to a chair. I untie him immidiately, of course, and end up with a piece od rope <b>(24)</b> he was tied with. There is also some duct tape <b>(03)</b> they used to keep him quiet lying on the floor.";
   } else if (turnerinput == "LOC06") {
     turneranswer = "I'm not a big fan of hospitals, but the Starchester Central Hospital is a very modern and well equipped facility. Dr Rose <b>(11)</b>, the ex member of my parents space mission crew, is in the hall checking her patients' charts. A nurse <b>(42)</b> in charge of the reception desk is sitting behind it. There is an alphanumeric lock <b>(53)</b> for a door right of the reception desk with no indication of what is behind it.";
   } else if (turnerinput == "LOC07") {
     turneranswer = "The mayor's office is peaceful, not a lot of work seems to be taking place here. There is a security guard <b>(05)</b> in the entrance. The doors to mayor's office are closed, and it's hard to know if the mayor <b>(33)</b> is inside or not.";
   } else if (turnerinput == "LOC08") {
-    turneranswer = "The 'Under the Radar' office is busy, with phones ringing and people talking in the same time. I can see Alison Clarke <b>(25)</b> sitting at one of the desks. As I enter the office. I pass by a delivery guy <b>(20)</b> that just dropped a hamburger <b>(02)</b>. As soon as he leaves the food, the runs out of the office.<br><i>Remove card <b>07</b>.</i>";
+    turneranswer = "The 'Under the Radar' office is busy, with phones ringing and people talking in the same time. I can see Alison Clarke <b>(25)</b> sitting at one of the desks. As I enter the office. I pass by a delivery guy <b>(20)</b> bringing a hamburger <b>(02)</b> to Alison. As soon as he leaves the food, the runs out of the office.<br><i>Remove card <b>07</b>.</i>";
   } else if (turnerinput == "LOC09") {
-    turneranswer = "I finally enter the secretive limited access ward. I enter the first room and find a patient <b>(15)</b> lying in one of the beds. She is either sleeping or unconscious. There is some standard medical equipment in the room, like an IV stand <b>(50)</b>. I can also spot a used rubber glove <b>(22)</b> in the trash bin next to the door.";
+    turneranswer = "I finally enter the secret ward. I go to the first room and find a patient <b>(15)</b> lying in one of the beds. She is either sleeping or unconscious. There is some standard medical equipment in the room, like an IV stand <b>(50)</b>. I can also spot a used rubber glove <b>(22)</b> in the trash bin next to the door.";
   } else if (turnerinput == "LOC10") {
     turneranswer = "There are a lot of cars <b>(54)</b> parked in the parking lot.";
   } else if (turnerinput == "LOC11") {
@@ -2600,7 +2733,7 @@ function turner() {
   } else if (turnerinput == "01,08") {
     turneranswer = "I'm so used to having this little power now that it's getting hard to imagine life without it.";
   } else if (turnerinput == "01,09") {
-    turneranswer = "It's obvious that this car is super expensive.";
+    turneranswer = "What was it that Dr Turner said on the phone? Something about going to the PEI after his visit to the hospital? I'd like to see where this PEI base is, but I can't get into the car. It's locked.";
   } else if (turnerinput == "01,10") {
     turneranswer = "I sure would like to take a look inside mayor's tablet.";
   } else if (turnerinput == "01,11" || turnerinput == "01,57") {
@@ -2634,7 +2767,7 @@ function turner() {
   } else if (turnerinput == "01,27") {
     turneranswer = "This smells way too intense. Every time I open my backpack I almost suffocate. Why am I carrying it around again?";
   } else if (turnerinput == "01,28" || turnerinput == "28,01") {
-    turneranswer = "I have to pass the guard first to enter the PEI base.";
+    turneranswer = "I have to pass the soldier first to enter the PEI base.";
   } else if (turnerinput == "01,29") {
     turneranswer = "I can't pretend not to care that this guy is fully armed while I don't have anything to protect me. But I can't stop now!";
   } else if (turnerinput == "01,30") {
@@ -2708,11 +2841,11 @@ function turner() {
   } else if (turnerinput == "11,10") {
     turneranswer = "Let me take a try...No, that wasn't it.";
   } else if (turnerinput == "11,11") {
-    turneranswer = "I've tried to move on, but the truth is that I'm still thinking about Nahukat people every day. Ron hasn't stopped working on the communication system, but we haven't progressed a lot in all these years.";
+    turneranswer = "I've tried to move on, but the truth is that I'm still thinking about Nahukat people every day. Ron hasn't stopped working on the communication system, but we haven't progressed a lot, in all these years.";
   } else if (turnerinput == "11,12") {
     turneranswer = "The view is not the best. What can we do.";
   } else if (turnerinput == "11,13") {
-      turneranswer = "This man is asking about you? He must be working for the same people who took your mother.";
+    turneranswer = "This man is asking about you? He must be working for the same people who took your mother.";
   } else if (turnerinput == "11,14") {
     turneranswer = "Why are we talking about a printer? Ziggy, we don't have time for this.";
   } else if (turnerinput == "11,15") {
@@ -2740,7 +2873,7 @@ function turner() {
   } else if (turnerinput == "11,30") {
     turneranswer = "Ron and I are best friends. He is amazing with techology, but without the right equipment even he can't fix the communication system of our ship. One day, maybe.";
   } else if (turnerinput == "11,33" || turnerinput == "11,45") {
-    turneranswer = "The mayor is corrupted, I'm sure of it. The fact that all of the big projects in the city go to the hands of contractors that happen to be his cousins can't be a coincidence. Nor is all the money that keeps stacking in his bank account.";
+    turneranswer = "The mayor is corrupted, I'm sure of it. The fact that all of the big projects in the city go to the hands of contractors, that happen to be his cousins, can't be a coincidence. Nor is all the money that keeps stacking in his bank account.";
   } else if (turnerinput == "11,34") {
     turneranswer = "I'm glad you have this phone with you.";
   } else if (turnerinput == "11,35") {
@@ -2752,7 +2885,7 @@ function turner() {
   } else if (turnerinput == "11,41") {
     turneranswer = "So did you manage to find Alison? You should ask Ron about her, he's quite skillful when it comes to finding information on somebody.";
   } else if (turnerinput == "11,42") {
-    turneranswer = "That nurse is scary. I swear that she never leaves the desk. I don't know who is in charge of this restricted ward, but I've seen her entering it. Her memory must be really poor because she has the code written on her arm and she always checks it before going in. You can't see it now because of the long sleeved scrub she's wearing, but it's there. And don't try to take her form with your power to see it, we can only take form of what we see on a person.";
+    turneranswer = "That nurse is scary. I swear that she never leaves the desk. I don't know who is in charge of this restricted ward, but I've seen her entering in it. Her memory must be really poor because she has the code written on her arm and she always checks it before going in. You can't see it now because of the long sleeved jacket she's wearing, but it's there. And don't try to take her form to see her arm, our power duplicates only the parts of a person we see.";
   } else if (turnerinput == "11,44") {
     turneranswer = "Well Ziggy, aren't you a clever girl.";
   } else if (turnerinput == "11,48") {
@@ -2762,7 +2895,7 @@ function turner() {
   } else if (turnerinput == "11,50") {
     turneranswer = "Sure, take hospital equipment. You need it more than our patients, don't you?";
   } else if (turnerinput == "11,53") {
-    turneranswer = "I don't know the code. They've changed it a few months ago and the whole ward became a restricted zone. To tell you the truth, I don't even know which doctor is in charge of it. I've only seen nurse Barbara entering it. I think she has the code written on her arm because she always checks it before entering the ward. I didn't get a good look at it because she's always wearing this long sleeved jacket. And don't try to take her form with your power to see it, we can only take form of what we see on a person.";
+    turneranswer = "I don't know the code. They've changed it a few months ago and the whole ward became a restricted zone. To tell you the truth, I don't even know which doctor is in charge of it. I've only seen nurse Barbara entering it. I think she has the code written on her arm because she always checks it before entering the ward. I didn't get a good look at it because she's always wearing this long sleeved jacket. It's seems obvious to take her form and look at her arm, but our power doesn't work like that. We only take the appearance of those details we can see on a person.";
   } else if (turnerinput == "11,54") {
     turneranswer = "I can't tell you which car is Dr Turner's. I think he changed cars recently.";
   } else if (turnerinput == "11,55") {
@@ -2782,7 +2915,7 @@ function turner() {
   } else if (turnerinput == "11,SPO05") {
     turneranswer = "This message is encrypted somehow. If we could only find the code...";
   } else if (turnerinput == "30,01") {
-    turneranswer = "Ziggy, it's so great to talk to you. I only wish that the circumstances were different.";
+    turneranswer = "Ziggy, it's so great to talk to you. I only wish the circumstances were different.";
   } else if (turnerinput == "30,02") {
     turneranswer = "I don't know how could I eat the burger over the phone.";
   } else if (turnerinput == "30,03") {
@@ -2802,7 +2935,7 @@ function turner() {
   } else if (turnerinput == "30,12") {
     turneranswer = "Ziggy, try to escape through the window! Is it too high?";
   } else if (turnerinput == "30,13") {
-    turneranswer = "I don't know who the guy is, but I'm sure that he knows where is Lena.";
+    turneranswer = "I don't know who the guy is, but I'm sure he knows what happened to Lena.";
   } else if (turnerinput == "30,14") {
     turneranswer = "This model is famous for it's precise both sides printing.";
   } else if (turnerinput == "30,15" || turnerinput == "30,35") {
@@ -2830,7 +2963,7 @@ function turner() {
   } else if (turnerinput == "30,30") {
     turneranswer = "I've been working on fixing our communication system since we came to Earth. But I haven't made enough progress still. The technology is so limited on this planet, it's frustrating.";
   } else if (turnerinput == "30,33" || turnerinput == "30,45") {
-    turneranswer = "Mayor Bundy has been accused of many things. Some of them involve spending tax money on expensive but insignificant city projects that don't help in solving real problems, like waste managment. Other imply that he's been putting his people on high, well paid and powerful positions. But one rumor could perhaps interest us the most. He significantly lowered the taxes for new companies as a part of his economy growth policy two years ago. And there was one company who profited from it the most, quickly gaining wealth and monopoly in the region. It was PEI, 'Petroleum Extraction Industries'. He should be in his office now, it's working hours.";
+    turneranswer = "Mayor Bundy has been accused of many things. Some of them involve spending tax money on expensive city projects that don't help in solving real problems, like waste managment. Other imply that he's been putting his people on high, well paid and powerful positions. But one rumor could perhaps interest us the most. He significantly lowered the taxes for new businesses as a part of his economy growth policy two years ago. And there was one company who profited from it the most, quickly gaining wealth and monopoly in the region. It was PEI, 'Petroleum Extraction Industries'. He should be in his office now, it's working hours.";
   } else if (turnerinput == "30,34") {
     turneranswer = "You know that I've installed a tracking system so that I can always see where you are. So keep it with you and keep it turned on.";
   } else if (turnerinput == "30,36" || turnerinput == "30,39" || turnerinput == "30,52") {
@@ -2865,16 +2998,20 @@ function turner() {
     turneranswer = "Lena must be here!";
   } else if (turnerinput == "30,SPO05") {
     turneranswer = "I wonder how could we shed a light on the meaning of this document.";
+  } else if (turnerinput == "02,06" || turnerinput == "06,02") {
+    turneranswer = "I don't see a good reason to put makeup into the food.";
+  } else if (turnerinput == "02,10" || turnerinput == "10,02") {
+    turneranswer = "Dipping the tablet in mayonnaise will not unlock it.";
+  } else if (turnerinput == "02,14" || turnerinput == "14,02") {
+    turneranswer = "The printer isn't hungry. There's plenty of paper in it.";
   } else if (turnerinput == "02,16" || turnerinput == "16,02") {
     turneranswer = "Is it really the best idea to drug this food with something that I don't even really know what it is? I don't think so.";
   } else if (turnerinput == "02,27" || turnerinput == "27,02") {
-    turneranswer = "Mixing the potpourri with the hamburger will just make it uneatable.";
+    turneranswer = "I don't want to spoil a perfectly good burger.";
   } else if (turnerinput == "02,34" || turnerinput == "34,02") {
     turneranswer = "The food isn't photogenic enough to make me want to take a photo of it.";
-  } else if (turnerinput == "02,36" || turnerinput == "02,39" || turnerinput == "02,52" || turnerinput == "36,02" || turnerinput == "39,02" || turnerinput == "52,02") {
-    turneranswer = "I don't think that the cat is hungry. He doesn't seem interested in the food.";
-  } else if (turnerinput == "02,06" || turnerinput == "06,02") {
-    turneranswer = "I don't see a good reason to put makeup into the food.";
+  } else if (turnerinput == "02,36" || turnerinput == "02,52" || turnerinput == "36,02" || turnerinput == "52,02") {
+    turneranswer = "The cat doesn't like mayonnaise.";
   } else if (turnerinput == "03,09" || turnerinput == "09,03") {
     turneranswer = "It could be a good idea to tape something to the car, but what?";
   } else if (turnerinput == "03,10" || turnerinput == "10,03") {
@@ -2888,15 +3025,17 @@ function turner() {
   } else if (turnerinput == "03,24" || turnerinput == "24,03") {
     turneranswer = "I don't want to tie up anybody.";
   } else if (turnerinput == "03,34" || turnerinput == "34,03") {
-    turneranswer = "Here goes...I'll admit it's a primitive solution, but it works.<br><i>Take card <b>40</b>. Remove cards <b>03</b> nad <b>34</b>.</i>";
+    turneranswer = "Here goes...A phone you can stick anywhere.<br><i>Take card <b>40</b>. Remove cards <b>03</b> nad <b>34</b>.</i>";
   } else if (turnerinput == "03,36" || turnerinput == "03,39" || turnerinput == "03,52" || turnerinput == "24,36" || turnerinput == "24,39" || turnerinput == "24,52" || turnerinput == "36,03" || turnerinput == "36,24" || turnerinput == "39,03" || turnerinput == "39,24" || turnerinput == "52,03" || turnerinput == "52,24") {
     turneranswer = "I'm not going to tie up my little cat!";
   } else if (turnerinput == "06,10" || turnerinput == "10,06") {
     turneranswer = "I spread some of the powder with a brush on the tablet screen. Well well, look at this...<br><i>Take card <b>44</b>. Remove cards <b>06</b> and <b>10</b>.";
-  } else if (turnerinput == "06,36" || turnerinput == "06,39" || turnerinput == "06,52" || turnerinput == "36,06" || turnerinput == "39,06" || turnerinput == "52,06") {
-    turneranswer = "Putting makeup on the cat isn't going to solve anything.";
+  } else if (turnerinput == "06,34" || turnerinput == "34,06") {
+    turnerinput = "I like to keep my phone nice and clean.";
+  } else if (turnerinput == "06,36" || turnerinput == "06,52" || turnerinput == "36,06" || turnerinput == "52,06") {
+    turneranswer = "The cat gives me a look that says 'Don't you even think about it'.";
   } else if (turnerinput == "06,53" || turnerinput == "53,06") {
-    turneranswer = "This would maybe reveal the numbers in the code, but not their order.";
+    turneranswer = "This would reveal the numbers in the code, not their order.";
   } else if (turnerinput == "08,01" || turnerinput == "08,05" || turnerinput == "08,11" || turnerinput == "08,15" || turnerinput == "08,18" || turnerinput == "08,25" || turnerinput == "08,29" || turnerinput == "08,30" || turnerinput == "08,31" || turnerinput == "08,33" || turnerinput == "08,35" || turnerinput == "08,38" || turnerinput == "08,42" || turnerinput == "08,45" || turnerinput == "08,47") {
     turneranswer = "It would be interesting to read people's minds and make them do stuff, but it's also a bit creepy. Anyway, my power works only on plants and animals.";
   } else if (turnerinput == "08,27" || turnerinput == "27,08") {
@@ -2907,10 +3046,12 @@ function turner() {
     turneranswer = "I'm already using my power over the cat.";
   } else if (turnerinput == "08,56" || turnerinput == "56,08") {
     turneranswer = "What more can I ask of this tree than what it's already done for me?";
+  } else if (turnerinput == "09,01") {
+    turneranswer = "I can't get into the car. It's locked, of course.";
   } else if (turnerinput == "09,34" || turnerinput == "34,09") {
     turneranswer = "If I could somehow put my phone into the car, we could follow it with the tracking app. But the car is locked, of course.";
   } else if (turnerinput == "09,40" || turnerinput == "40,09") {
-    turneranswer = "The tracking app on the phone will show us exactly where will the car go.<br><i>I tape the phone to the car, after calling Ron to come with his van to pick me up. I just have enough time to hide behind another car parked nearby when I see Dr Turner leaving the building. Fortunately, Ron arrives only a few minutes after. Rose joins us, and the two of us jump into Ron's car. The chase for Dr Turner begins!<br>Take envelope <b>SPO06</b>. Remove cards <b>09</b>, <b>40</b> and <b>LOC10</b>.</i>";
+    turneranswer = "The tracking app on the phone will show us exactly where will the car go.<br><i>I tape the phone to the car, after calling Ron to come with his van to pick me up. I just have enough time to hide behind another car parked nearby when I see Dr Turner leaving the building. Fortunately, Ron arrives shortly after. Rose joins us, and the two of us jump into Ron's van. The chase for Dr Turner begins!<br>Take envelope <b>SPO06</b>. Remove cards <b>09</b>, <b>40</b> and <b>LOC10</b>.</i>";
   } else if (turnerinput == "10,14" || turnerinput == "10,44" || turnerinput == "14,10" || turnerinput == "14,44") {
     turneranswer = "That could work if I actually opened the tablet. I can't connect it to the printer while it's locked.";
   } else if (turnerinput == "10,1654852" || turnerinput == "10,16482" || turnerinput == "10,1,6,4,8,2" || turnerinput == "10,1,6,5,4,8,5,2" || turnerinput == "10,2,5,8,4,5,6,1" || turnerinput == "10,2584561" || turnerinput == "10,28461" || turnerinput == "10,2,8,4,6,1" || turnerinput == "44,1654852" || turnerinput == "44,16482" || turnerinput == "44,1,6,4,8,2" || turnerinput == "44,2584561" || turnerinput == "44,28461" || turnerinput == "44,2,8,4,6,1" || turnerinput == "44,1,6,5,4,8,5,2" || turnerinput == "44,2,5,8,4,5,6,1") {
@@ -2921,10 +3062,14 @@ function turner() {
     turneranswer = "The potpourri does smell really intense, but if I've been carrying it for all this time, I'm not going to throw it out of the window now.";
   } else if (turnerinput == "12,34" || turnerinput == "34,12") {
     turneranswer = "That's not much of a view to take a photo of it.";
-  } else if (turnerinput == "12,50" || turnerinput == "50,12") {
+  } else if (turnerinput == "12,50" && escape == 1 || turnerinput == "50,12" && escape == 1) {
+    turneranswer = "turneranswer";
+  } else if (turnerinput == "12,50" && escape == 2 || turnerinput == "50,12" && escape == 2) {
     turneranswer = "I could hook the IV stand top on the window, but I don't know what to do from there.";
-  } else if (turnerinput == "12,55" || turnerinput == "55,12") {
-    turneranswer = "This may not be the safest thing to do, but I don't have a choice. Here we go!<br></i>I hook my improvised anchor on the window sill and use the rope to climb down the window. Jenna unhooks the anchor and throws it down just before Dr Turner enters the room. That was close!<br>Take card <b>LOC10</b>. Remove cards <b>12</b>, <b>35</b>, <b>55</b> and <b>LOC09</b> (but keep the other cards from the location on the table).</i>";
+  } else if (turnerinput == "12,55" && escape == 1 || turnerinput == "55,12" && escape == 1) {
+    turneranswer = "I just got to the room. Why would I escape now?";
+  } else if (turnerinput == "12,55" && escape == 2 || turnerinput == "55,12" && escape == 2) {
+    turneranswer = "This may not be the safest thing to do, but I don't have a choice. Here we go!<br><i>I hook my improvised anchor on the window sill and use the rope to climb down the window. Jenna unhooks the anchor and throws it down just before Dr Turner enters the room. That was close!<br>Take card <b>LOC10</b>. Remove cards <b>12</b>, <b>35</b>, <b>55</b> and <b>LOC09</b> (but keep the other cards from the location on the table).</i>";
   } else if (turnerinput == "14,17" || turnerinput == "17,14") {
     turneranswer = "The file is called 'PEI_both_sides'. Let's try to print it, on both sides obviously.<br>Take envelope <b>SPO05</b>. Remove cards <b>14</b> and <b>17</b>.</i>";
   } else if (turnerinput == "14,34" || turnerinput == "34,14") {
@@ -2933,20 +3078,24 @@ function turner() {
     turneranswer = "Why would I drug the potpourri? The smell itself is already poisonous enough.";
   } else if (turnerinput == "16,36" || turnerinput == "16,39" || turnerinput == "16,52" || turnerinput == "36,16" || turnerinput == "39,16" || turnerinput == "52,16" || turnerinput == "52,46") {
     turneranswer = "I don't want to drug poor little cat!";
-  } else if (turnerinput == "21,51" || turnerinput == "51,21") {
-    turneranswer = "This is a little trick my mother taught me when I was a kid. I just have to gently shade the page with the pencil and...here it is!<br><i>The indentations on the page reveal what was written on the top page.<br>Take card <b>62</b>. Remove cards <b>21</b> and <b>51</b>.</i>";
   } else if (turnerinput == "22,36" || turnerinput == "36,22") {
     turneranswer = "I try to make the cat smell the glove, but he just turns his head away from it.";
   } else if (turnerinput == "22,52" || turnerinput == "52,22") {
-    turneranswer = "Let's see if what they say about cats having a super sensitive smell is true.<br><it>The cat smells the glove and confirms to me that he could now recognize the smell of the glove's owner anywhere. <br>Take card <b>39</b>. Remove cards <b>22</b> and <b>52</b>.</i>";
+    turneranswer = "Let's see if what they say about cats having a super sensitive smell is true.<br><i>The cat smells the glove and confirms to me that he could now recognize the smell of the glove's owner anywhere. <br>Take card <b>39</b>. Remove cards <b>22</b> and <b>52</b>.</i>";
   } else if (turnerinput == "24,50" || turnerinput == "50,24") {
-      answertwo = "You can learn how to make all kinds of knots on the internet.<br><i>Take card <b>55</b>. Remove cards <b>24</b> and <b>50</b>.</i>";
+    turneranswer = "You can learn how to make all kinds of knots on the internet.<br><i>Take card <b>55</b>. Remove cards <b>24</b> and <b>50</b>.</i>";
+  } else if (turnerinput == "26,01" || turnerinput == "26,05" || turnerinput == "26,07" || turnerinput == "26,11" || turnerinput == "26,13" || turnerinput == "26,15" || turnerinput == "26,20" || turnerinput == "26,23" || turnerinput == "26,25" || turnerinput == "26,29" || turnerinput == "26,30" || turnerinput == "26,33" || turnerinput == "26,35" || turnerinput == "26,42" || turnerinput == "26,45") {
+    turneranswer = "I have to get back to my Ziggy appearance to be able to change it into someone else's.";
+  } else if (turnerinput == "26,48") {
+    turneranswer = "I already have his appearance.";
   } else if (turnerinput == "27,36" || turnerinput == "27,39" || turnerinput == "27,52" || turnerinput == "36,27" || turnerinput == "36,27" || turnerinput == "39,27") {
     turneranswer = "I put the cat into the potpourri, but he can't stand the smell of it.";
   } else if (turnerinput == "34,36" || turnerinput == "34,39" || turnerinput == "34,52" || turnerinput == "36,34" || turnerinput == "39,34" || turnerinput == "52,34") {
     turneranswer = "A photo of the cat isn't very useful, but he's just so adorable!";
+  } else if (turnerinput == "36,54" || turnerinput == "54,36") {
+    turneranswer = "I try to make the cat search for Dr Turner's car, but he doesn't budge.";
   } else if (turnerinput == "39,54" || turnerinput == "54,39") {
-    turneranswer = "Come on cat, you can do it!<br><i>The cat passes through the parking lot and after a few minutes of hesitation, he stops next to a car and meows decisively.<br>Take cars <b>09</b>. Remove cards <b>39</b> and <b>54</b>.</i>";
+    turneranswer = "Come on cat, you can do it!<br><i>The cat passes through the parking lot and after a few minutes of hesitation, he stops next to a car and meows decisively.<br>Take card <b>09</b>. Remove cards <b>39</b> and <b>54</b>.</i>";
   } else if (turnerinput == "52,54" || turnerinput == "54,52") {
     turneranswer = "If my obedient cat could smell the doctor, I'm sure he could find his car.";
   } else if (turnerinput == "M20") {
@@ -2956,19 +3105,19 @@ function turner() {
   } else if (turnerinput == "A57") {
     turneranswer = "This is the shop that the man went to. Where to from here?<br><i>Take card <b>LOC04</b>. Remove cards <b>47</b> and <b>LOC03</b> (but keep the other cards from the location on the table).</i>";
   } else if (turnerinput == "G54") {
-    turneranswer = "I should take the drug to Dr Rose.<br><i>As I arrive to the hospital, I see Dr Rose in the hallway. We move a little on the side by the coffee machine, so that we can speak in private. I pass her the drug that is supposedly capable of removing our powers. She promises that she will send it to analysis immidiately and that she will try to make an antidote. This will take a while, so I should continue with my investigation in the meantime.<br>Take card <b>LOC06</b>. Remove cards <b>16</b> and <b>57</b>.</i>";
+    turneranswer = "I should take the drug to Dr Rose.<br><i>As I arrive to the hospital, I see Dr Rose in the hallway. We move to the side by the coffee machine, so that we can speak in private. I pass her the drug that is supposedly capable of removing our powers. She promises she will send it for analysis immidiately and that she will try to make an antidote. This will take a while, so I should continue with my investigation in the meantime.<br>Take card <b>LOC06</b>. Remove cards <b>16</b> and <b>57</b>.</i>";
   } else if (turnerinput == "C29") {
-    turneranswer = "I didn't think that the mayor could be invloved, but if that's what it takes, I'm going to bring down the mayor himself!<br><i>Take card <b>LOC07</b>.</i>";
+    turneranswer = "I didn't think that the mayor could be invloved, but if that's what it takes, I'm going to bring the mayor himself down!<br><i>Take card <b>LOC07</b>.</i>";
   } else if (turnerinput == "H50") {
     turneranswer = "I arrive to the 'Starchester Weather Radar' but I don't find anything of interest. But wasn't the magazine address 'Under the Radar'?</i>";
   } else if (turnerinput == "H51") {
     turneranswer = "Finally! This magazine really is under the radar, it wasn't easy to find its whereabouts.<br><i>Take card <b>LOC08</b>. Remove card <b>07</b>.</i>";
   } else if (turnerinput == "C24" || turnerinput == "C30") {
-    turneranswer = "We arrive to the spot the tracking app lead us to and park the car across the street on a safe distance, so that nobody would spot us. We're here just in time to see Dr Turner going to the entrance of the building. An armed soldier guarding the doors greets him there and passes him something that looks like a potion of some kind. Dr Turner drinks it, and a few moments later the soldier lets him in. Dr Rose turns to me and says:</i><br>This thing what he's drinking must be the drug that professor Martin gave you. My analysis of the drug shows that it's function is indeed to make our powers dissapear, so they must be giving it to people that enter as a precaution. Luckily, I've created an antidote.<br><i>Dr Rose gives me a pill and I swallow it, hopefully gaining immunity to this drug. <br>But then Ron, looking at the entrance with his binoculars, whispers in panic:</i><br>Guys, do you see the symbol on the doors? Rose, you know what it is. It's the symbol of Laki civilisation, the same parasite society that stole and destroyed Nahukat. My worst nightmares have come true: the Lakis are here.<br><i>I manage to articulate a question, shaking with fear:</i><br>But how are Lakis connected with everything? I thought that PEI is behind all of this.<br><i>Ron puts the binoculars down and takes his head in his hands.</i><br>Now I see what does PEI really stand for: 'Planet Earth Invasion'. They are doing it all over again!<br><i>Take card <b>LOC11</b>. Return all of the tracking app cards into the <b>SPO06</b> envelope.</i>";
+    turneranswer = "<i>We arrive to the spot the tracking app lead us to, and park the car across the street on a safe distance, so that nobody would spot us. We're here just in time to see Dr Turner going to the entrance of the building. An armed soldier guarding the doors greets him there and passes him a potion of some kind. Dr Turner drinks it, and a few moments later the soldier lets him in. Dr Rose turns to me and says:</i><br>This thing what he's drinking must be the drug that professor Martin gave you. My analysis of the drug shows that it's function is indeed to make our powers dissapear, so they must be giving it to people that enter as a precaution. Luckily, I've created an antidote.<br><i>Dr Rose gives me a pill and I swallow it, hopefully gaining immunity to this drug. <br>But then Ron, looking at the entrance with his binoculars, whispers in panic:</i><br>Guys, do you see the symbol on the doors? Rose, you know what it is. It's the symbol of Laki civilisation, the same parasite society that attacked and destroyed Nahukat. My worst nightmares have come true: the Lakis are here.<br><i>I manage to articulate a question, shaking with fear:</i><br>But how are Lakis connected with everything? I thought that the PEI is behind all of this.<br><i>Ron puts the binoculars down and says:</i><br>Now I see what does PEI really stand for: 'Planet Earth Invasion'. They are doing it all over again!<br><i>Take card <b>LOC11</b>. Return all of the tracking app cards into the <b>SPO06</b> envelope.</i>";
   } else if (turnerinput == "DR TURNER" || turnerinput == "DRTURNER" || turnerinput == "DR. TURNER" || turnerinput == "DR.TURNER" || turnerinput == "TURNER") {
     turneranswer = "Dr Turner is in charge of the restricted ward! It took some time to figure out how to read this document, but it was worth it.<br><i>Take card <b>48</b>. Remove cards <b>25</b>, <b>LOC08</b> and <b>SPO05</b>.</i>";
   } else if (turnerinput == "53") {
-    turneranswer = "I go straight to the lock, nodding to nurse Barbara. She lets me pass without a word. This power is really cool.<i>You can now unlock the ward alphanumeric lock by entering the card number <b>53</b> followed by a number code, separated by a comma, without spaces.</i>";
+    turneranswer = "I go straight to the lock, nodding to nurse Barbara. She lets me pass without a word. This power is really cool.<br><i>You can now unlock the ward alphanumeric lock by entering the card number <b>53</b> followed by a number code, separated by a comma, without spaces.</i>";
   } else if (turnerinput == "53,5317" || turnerinput == "53,5,3,1,7") {
     turneranswer = "I enter the code and nothing happens. Did I read the code on nurse Barbara's arm how I was supposed to?";
   } else if (turnerinput == "53,6538" || turnerinput == "53,6,5,3,8" || turnerinput == "53,LIES" || turnerinput == "53,L,I,E,S") {
@@ -2977,9 +3126,9 @@ function turner() {
   	turneranswer = "There was a girl asking about the ward here earlier. But I didn't let her near it, of course.";
   } else if (turnerinput == "42,02") {
   	turneranswer = "Doctor, that's very kind of you. But I alredy ordered a salad. The delivery is late, and it's the fourth time this month.";
-  } else if (turnerinput == "42,03" || turnerinput == "42,06" || turnerinput == "42,08" || turnerinput == "42,10" || turnerinput == "42,14" || turnerinput == "42,17" || turnerinput == "42,24" || turnerinput == "42,26" || turnerinput == "42,28" || turnerinput == "42,34" || turnerinput == "42,36" || turnerinput == "42,39" || turnerinput == "42,40" || turnerinput == "42,41" || turnerinput == "42,44" || turnerinput == "42,52") {
+  } else if (turnerinput == "42,03" || turnerinput == "42,06" || turnerinput == "42,08" || turnerinput == "42,10" || turnerinput == "42,14" || turnerinput == "42,17" || turnerinput == "42,24" || turnerinput == "42,26" || turnerinput == "42,34" || turnerinput == "42,39" || turnerinput == "42,40" || turnerinput == "42,41" || turnerinput == "42,44") {
     turneranswer = "Doctor, I'm not sure I understand what you're asking me. Are you here for your round of the ward?";
-  } else if (turnerinput == "42,05" || turnerinput == "42,20" || turnerinput == "42,23" || turnerinput == "42,30") {
+  } else if (turnerinput == "42,05" || turnerinput == "42,23" || turnerinput == "42,30") {
     turneranswer = "I'm sorry doctor, I don't know this person.";
   } else if (turnerinput == "42,07" || turnerinput == "42,25") {
   	turneranswer = "There was a journalist here some time ago. But I can assure you that I'm not sharing any information with the press.";
@@ -2987,14 +3136,22 @@ function turner() {
   	turneranswer = "Dr Rose doesn't know anything about the ward. I am a professional and I follow the orders.";
   } else if (turnerinput == "42,13") {
   	turneranswer = "I didn't even notice that there was a man with you the other day. That's none of my business.";
+  } else if (turnerinput == "42,20") {
+  	turneranswer = "I'm waiting for my lunch to be delivered. I ordered a salad ages ago.";
+  } else if (turnerinput == "42,27") {
+  	turneranswer = "Doctor, It's not that I question your skills, but are you sure wes should have this horrid smell around the patients?";
+  } else if (turnerinput == "42,36" || turnerinput == "42,52") {
+  	turneranswer = "I konw that you're my superior, but I'm obligated to remind you that it's forbidden to bring animals in the hospital.";
   } else if (turnerinput == "42,53") {
   	turneranswer = "You're here to do your round? You're a little early today.";
   } else if (turnerinput == "42,42") {
   	turneranswer = "I've been here all morning. There was only one girl asking about the ward, nothing unusual other than that.";
   } else if (turnerinput == "42,48") {
   	turneranswer = "Hello Doctor, you came a bit earlier for your round today.";
+  } else if (turnerinput == "42,49") {
+  	turneranswer = "Oh, you must think I'm very indiscreet. I assure you, I let nobody get close to the ward.";
   } else if (turnerinput == "29,01" || turnerinput == "29,08" || turnerinput == "29,13" || turnerinput == "29,23" || turnerinput == "29,26" || turnerinput == "29,28" || turnerinput == "29,29" || turnerinput == "29,48") {
-    turneranswer = "<i>It wouldn't be the best idea to disguise into Dr Turner. The soldier just saw him entering the building.</b>";
+    turneranswer = "It wouldn't be the best idea to disguise into Dr Turner. The soldier just saw him entering the building.";
 	} else {
 	  turneranswer = turnerrandom[Math.floor(Math.random()*turnerrandom.length)];
   }

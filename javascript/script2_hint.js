@@ -240,6 +240,8 @@ function hidePtwoHints() {
   document.getElementById("hintSPO04_1_1_container").style.display = "none";
   document.getElementById("hintSPO05_container").style.display = "none";
   document.getElementById("hintSPO05_1_1_container").style.display = "none";
+  document.getElementById("hintSPO05_1_2_container").style.display = "none";
+  document.getElementById("hintSPO05_1_3_container").style.display = "none";
   document.getElementById("hintSPO06_container").style.display = "none";
   document.getElementById("hintSPO06_1_1_container").style.display = "none";
 }
@@ -1505,8 +1507,18 @@ function hintPtwoSPO04_1show() {
 };
 
 function hintPtwoSPO05_1show() {
-  document.getElementById("hintPtwoSPO05_1Answer").innerHTML = "Put the document in front of a light source and read it. You will find the name of the doctor in charge of the restricted ward in the hospital: Dr Turner. Enter his name in the Digital Game Book input field.";
+  document.getElementById("hintPtwoSPO05_1Answer").innerHTML = "Put the document in front of a light source and read it. Is there anything you find unusual in the text?";
   document.getElementById("hintSPO05_1_1_container").style.display = "block";
+};
+
+function hintPtwoSPO05_1_1show() {
+  document.getElementById("hintPtwoSPO05_1_1Answer").innerHTML = "Some of the letters are covered with black rectangles. Can you identify which letters are missing?";
+  document.getElementById("hintSPO05_1_2_container").style.display = "block";
+};
+
+function hintPtwoSPO05_1_2show() {
+  document.getElementById("hintPtwoSPO05_1_2Answer").innerHTML = "The doctor's name is Turner.";
+  document.getElementById("hintSPO05_1_3_container").style.display = "block";
 };
 
 function hintPtwoSPO06_1show() {

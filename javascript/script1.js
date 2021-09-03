@@ -25,7 +25,7 @@ function bookPoneFunction() {
 ];
   var answerone;
   if (x == "01") {
-  		answerone = "<b>IMPORTANT: You can examine every character this way.<br><br>Now read the text bellow.</b><br><br>I’m Ziggy Wonder, a student at Majorton University. My mother left town yesterday saying that she needs to find herself over the phone. I find it very hard to believe that she would just do something like this and I intend to get to the bottom of it.<br><br><b>IMPORTANT: To see Ziggy's thoughts about her mother, enter '01,23' in the Digital Game Book input field and click 'OK' or press Enter. You have to to put Ziggy's card number first and Lena's card number second, separated by a comma, without spaces.</b>";
+  		answerone = "<b>IMPORTANT: You can examine every character this way.<br><br>Now read the text bellow.</b><br><br>I’m Ziggy Wonder, a student at Majorton University. My mother left town yesterday, saying goodbye over the phone. I find it very hard to believe that she would just do something like this and I intend to get to the bottom of it.<br><br><b>IMPORTANT: To see Ziggy's thoughts about her mother, enter '01,23' in the Digital Game Book input field and click 'OK' or press Enter. You have to to put Ziggy's card number first and Lena's card number second, separated by a comma, without spaces.</b>";
       hidePoneElements();
   } else if (x == "02") {
   		answerone = "A house fly wandering around the library.";
@@ -73,7 +73,7 @@ function bookPoneFunction() {
   		answerone = "The night sky seen with the telescope. It’s breathtaking. My mother left the telescope pointing to the Cygnus constellation.";
       hidePoneElements();
 	} else if (x == "17") {
-  		answerone = "A rare astronomy book. There is also a message inside written in my mother's handwriting. It says:<br><b>Look at the night sky.<br>α = a corner of Lovelyhood Park.<br>ζ = a corner of the Majorton Square.<br>Go to κ.</b>";
+  		answerone = "A rare astronomy book. There is also a message inside written in my mother's handwriting. It says:<br><b>Look at the night sky.<br>α = a corner of Lovelyhood Park.<br>ζ = a corner of the Major Square.<br>Go to κ.</b>";
       hidePoneElements();
 	} else if (x == "18") {
   		answerone = "Professor Martin is my mineralogy professor at the university. He is an expert in his field.";
@@ -94,7 +94,7 @@ function bookPoneFunction() {
   		answerone = "My mother, who suddenly left town yesterday.";
       hidePoneElements();
   } else if (x == "24") {
-  		answerone = "It's a letter that Laika brought to me. The letter says:<br><br><b>Dear Lena,<br>I saw this beautiful mural today and it reminded me so much of you. I decided I had to write to you in hope that you come and visit me. I miss you and Ziggy so much.<br>So, I left my apartment and went east, passing all the other buildings in my street. At the end of my street i turned left and quickly arrived to the square. I crossed it diagonally and continued east until I got to the river. After crossing the bridge, I took the first right. I walked a bit more and took the third street on the left. After some shopping, I arrived to the square and crossed it on its northern side. I continued to walk to the east and walked till the end of the street. That's when I saw the mural, right in front of me. All the memories we share came back to me. I really want to see you, Lena. <br>Love,<br>Mary.</b>";
+  		answerone = "It's a letter that Laika brought to me. The letter says:<br><br><b>Dear Lena,<br>I saw this beautiful mural today and it reminded me so much of you. I decided I had to write to you in hope that you come and visit me. I miss you and Ziggy so much.<br>So, I left my apartment and went towards east, passing all the other buildings in my street. At the end of my street i turned left and quickly arrived to the square. I crossed it diagonally and continued east until I got to the river. After crossing the bridge, I took the first right. I walked a bit more and took the third street on the left. After some shopping, I arrived to the square and crossed it on its northern side. I continued to walk towards east and walked till the end of the street. That's when I saw the mural, right in front of me. All the memories we share came back to me. I really want to see you, Lena. <br>Love,<br>Mary.</b>";
       hidePoneElements();
 	} else if (x == "25") {
   		answerone = "My mother’s telescope, placed pointing to the sky. Unfortunately, the lens is broken. I can see a sticker on the telescope with a logo of ‘Outer World Telescopes’. There is also a short text under the logo:<br><b>Find us on the northwest corner of two crossing streets, where couples always in broad daylight meet!</b>";
@@ -106,7 +106,7 @@ function bookPoneFunction() {
   		answerone = "The fly is now under my powers. I can move it wherever I want to and feel whatever it feels.";
       hidePoneElements();
 	} else if (x == "28") {
-  		answerone = "It’s the gem my mother left on Laika. She said that it’s family heritage. I used to take the gem for granted, but now that I think of it, it’s really different from any other stones I have ever seen. It would be good to have my mineralogy professor have a look at it at the University. As I put it on my neck, I start to have a funny feeling of connection with Laika, and even the plants in the house and the garden.<br><i>Take card <b>08</b>.</i><br><br><b>IMPORTANT: The game will sometimes give you a hint you to open a new location. What did Ziggy say about the professor? If you look at Majorton map, you can see that the University is located at the address E62. Enter 'E62' or 'e62' in the Digital Game Book input field to open this location.</b>";
+  		answerone = "It’s the gem my mother left on Laika. She said that it’s family heritage. I used to take the gem for granted, but now that I think of it, it’s really different from any other stones I have ever seen. It would be good to have my mineralogy professor have a look at it at the University. As I put it on my neck, I start to have a funny feeling of connection with Laika, and even the plants in the house and the garden.<br><i>Take card <b>08</b>.</i><br><br><b>IMPORTANT: The game will sometimes give you a hint you to open a new location. What did Ziggy say about the professor? If you look at Majorton map, you can see that the University is located at the address E62. Enter 'E62' in the Digital Game Book input field to open this location.</b>";
       hidePoneElements();
 	} else if (x == "29") {
   		answerone = "These are the mineralogy tests. Professor Martin keeps a good eye on them.";
@@ -235,13 +235,13 @@ function bookPoneFunction() {
   		answerone = "This projector could be useful. I wonder if I could borrow it.";
       hidePoneElements();
 	} else if (x == "01,21") {
-  		answerone = "I never noticed this photo before. How come that my mother put it out before leaving? And where was the photo taken? That’s a really nice piece of street art, but I’m not an expert on the subject.";
+  		answerone = "I never noticed this photo before. How come that my mother put it out before leaving? And where was the photo taken?";
       hidePoneElements();
 	} else if (x == "01,22") {
   		answerone = "With Jocelyn out of the picture, all I have to do is enter her password to get inside the computer and delete the lecture.";
       hidePoneElements();
 	} else if (x == "01,23") {
-  		answerone = "<b>IMPORTANT: You can ask any character about another character this way. Remember to always enter the card number of the character you want to speak to first and the card number of the character you want to speak about second.<br><br>Now read the text bellow.</b><br><br>My mother is in a way also my best friend. She has this magic power to make you feel better just by looking at you. But I always felt as if she was keeping secrets from me.<br><br><b>IMPORTANT: To hear Ziggy's thoughts on their home, enter '01,LOC01' in the Digital Game Book input field and click 'OK' or press Enter.</b>";
+  		answerone = "<b>IMPORTANT: You can ask any character about another character this way. Remember to always enter the card number of the character you want to speak to first and the card number of the character you want to speak about second. You can also ask a character to speak about themselves this way, by enetering their card number twice, separated by a comma.<br><br>Now read the text bellow.</b><br><br>My mother is in a way also my best friend. She has this magic power to make you feel better just by looking at you. But I always felt as if she was keeping secrets from me.<br><br><b>IMPORTANT: To hear Ziggy's thoughts on their home, enter '01,LOC01' in the Digital Game Book input field and click 'OK' or press Enter.</b>";
       hidePoneElements();
 	} else if (x == "01,24") {
   		answerone = "So the photo must have come with the letter. Maybe I could figure out Mary’s address from her story.";
@@ -322,7 +322,7 @@ function bookPoneFunction() {
       answerone = "What could be so secretive about this place? It looks like a terribly normal apartment. You might even say it seems quite boring.";
       hidePoneElements();
 	} else if (x == "09,01") {
-  		answerone = "Hello my dear. It’s really nice to see you! Could you tell me why Lena didn't show up for work today? She left? Just like that? That's crazy! I mean, she is a bit free spirited, but she was always responsible. I can't believe that she would leave without saying anything to me. She didn't give notice either.";
+  		answerone = "Hello my dear. It’s really nice to see you! Could you tell me why Lena didn't show up for work today? She left? Just like that? That's crazy! I mean, she is a bit free spirited, but she was always responsible.";
       hidePoneElements();
 	} else if (x == "09,02" || x == "09,27") {
   		answerone = "I know, these flies are so irritating! But I can't waste my time on catching them.";
@@ -352,7 +352,7 @@ function bookPoneFunction() {
   		answerone = "I’m sorry but I’ve never met this woman.";
       hidePoneElements();
 	} else if (x == "09,11" || x == "09,38") {
-  		answerone = "I’ve never seen somebody so stressed about speaking in front of people. It’s not like she’ll be speaking in a stadium, I’d be surprised if we had more than 50 people in the audience.";
+  		answerone = "I’ve never seen somebody so stressed about speaking in front of people. It’s not like she’ll be giving a lecture in a stadium! I’d be surprised if we had more than 50 people in the audience.";
       hidePoneElements();
 	} else if (x == "09,12") {
   		answerone = "I’m sorry but I can’t help you with this. I don’t know anything about skygazing.";
@@ -379,13 +379,13 @@ function bookPoneFunction() {
 			answerone = "You would like to borrow the projector? Of course I would love to help you, but unfortunately there is a lecture here tonight and we will be using it. I could probably let you have it tomorrow if that’s alright.";
       hidePoneElements();
 	} else if (x == "09,21") {
-  		answerone = "I can’t help you with identifying the mural. Unfortunately we don't have a good book on street art.";
+  		answerone = "Street art is...not my thing, really.";
       hidePoneElements();
 	} else if (x == "09,22") {
   		answerone = "Keep an eye on it, Jocelyn would go crazy if something happened to her lecture.";
       hidePoneElements();
 	} else if (x == "09,23") {
-  		answerone = "Lena left town? That's incredible! I can't believe that she wouldn't say anything to me after all these years of friendship. No, I didn't notice anything very unusual about her lately. She did seem a bit distant though. Sometimes I saw that she isn't listening to what I'm saying and that her mind is somewhere else. And another thing, she became friends with professor Martin from the University not long ago. I even thought that she finally found a man that's worth her attention. Maybe she told him something about her intentions.";
+  		answerone = "Lena left town? That's incredible! I can't believe that she wouldn't say anything to me after all these years of friendship. She did seem a bit distant lately, though. Sometimes I saw that she isn't listening to what I'm saying and that her mind is somewhere else. And another thing, she became friends with professor Martin from the University not long ago. I even thought that she finally found a man that's worth her attention. Maybe she told him something about her intentions.";
       hidePoneElements();
 	} else if (x == "09,24") {
 			answerone = "What a curious letter. I would like to help you find her address, but it’s a bit hard without knowing where to start from.";
@@ -400,19 +400,16 @@ function bookPoneFunction() {
   		answerone = "I know this gem! Lena always wears it. Sometimes she would joke that it gives her magic powers. It’s stunning, isn’t it?";
       hidePoneElements();
 	} else if (x == "09,29" || x == "09,33") {
-  		answerone = "I don’t understand why you are asking me about this. Would you like some literature on mineralogy?";
+  		answerone = "I'm glad I'm finished with passing tests, believe me.";
       hidePoneElements();
 	} else if (x == "09,30") {
-			answerone = "I’ve never met him, but I’m aware of your mother’s fascination with space.";
+			answerone = "The library records show that he borrowed his last book three years ago. Young people don't read enough these days.";
       hidePoneElements();
 	} else if (x == "09,31") {
-			answerone = "I’m afraid I don’t know this young man.";
+			answerone = "Jamie? I remember him. He still didn't return a book he borrowed 6 months ago. How terribly irresponsible!";
       hidePoneElements();
 	} else if (x == "09,32") {
 			answerone = "It’s that nice barista from the tea shop. He always welcomes me with a smile.";
-      hidePoneElements();
-	} else if (x == "09,33") {
-			answerone = "I’m completely lost with technology. Lena was dealing with all the computers in the library, I’m very old fashioned I’m afraid.";
       hidePoneElements();
 	} else if (x == "09,34") {
 			answerone = "Jocelyn drinks tea all afternoon. She says it’s good for relaxing.";
@@ -424,13 +421,13 @@ function bookPoneFunction() {
 			answerone = "I’m aware that it’s a bit early for pumpkin. You’ll have to wait till autumn I’m afraid.";
       hidePoneElements();
 	} else if (x == "09,37") {
-			answerone = "I heard that the University is quite good. Education is very important, Ziggy.";
+			answerone = "We have an excellent university here in Majorton. Education is very important, Ziggy.";
       hidePoneElements();
 	} else if (x == "09,38") {
 			answerone = "A talking parrot? Quite amusing, I guess.";
       hidePoneElements();
 	} else if (x == "09,39") {
-			answerone = "Let me see this...This is a code for a book from our library. Let me just check in our database...It’s in the basement, where we keep only rare editions. Let me get it for you. <br><i>Take card <b>17</b>. Remove card <b>39</b>.</i>";
+			answerone = "This is a code for a book from our library. Let me just check in our database...It’s in the basement, where we keep only rare editions. I will get it for you. <br><i>Take card <b>17</b>. Remove card <b>39</b>.</i>";
       hidePoneElements();
 	} else if (x == "09,41") {
 			answerone = "What a beautiful pumpkin! Where did you get it, it’s not pumpkin season yet?";
@@ -529,7 +526,7 @@ function bookPoneFunction() {
 			answerone = "Girl, it’s really not a good idea to break into someone’s computer.";
       hidePoneElements();
 	} else if (x == "10,23") {
-			answerone = "Lena is gone? She was acting strange for some time now, so I kind of anticipated that it was leading to something. Lena is my dear friend. We grew close a few years ago, as she joined our environmentalist group 'Earthlings'. We do research on the big polluters in the country, write propositions of stricter laws for protecting the environment, promote zero waste living, that sort of thing. Around 2 months ago, Lena started to research something she didn't want to speak about. She went to Starchester city a few times during this investigation. She didn't want to involve anybody else, she said that the information she discovered could be dangerous. But when I asked her about it ten days ago, she said that she was mistaken. That all her research turned out to be irrelevant. It seemed very strange to me. The last time I saw her she seemed concerned about something. She made me promise her that I would pass you a message if you ever come here. And she made me memorize it by heart, as if she didn't want any written trace of it. OK, here goes:<br><b>This heavenly Earth carries our dreams.<br>Even idealists sometimes keep escaping.<br>People let envy ruin their hearts.<br>Enemies you awaken ruin essential harmony.<br>Eden rises, Eden falls.<br>Insightful nature demands mature allies.<br>Rebuild yourself!</b><br>I'm aware that the message seems meaningless. Sorry Ziggy, that's all she said.";
+			answerone = "Lena is gone? She was acting strange for some time now, so I kind of anticipated that it was leading to something. Lena is my dear friend. We grew close a few years ago, as she joined our environmentalist group 'Earthlings'. We do research on the big polluters in the country, write propositions of stricter laws for protecting the environment, promote zero waste living, that sort of thing. Around 2 months ago, Lena started to research something she didn't want to speak about. She went to Starchester city a few times during this investigation. She didn't want to involve anybody else, she said that the information she discovered could be dangerous. She made me promise her that I would pass you a message if you ever come here. And she made me memorize it by heart, as if she didn't want any written trace of it. OK, here goes:<br><b>This heavenly Earth carries our dreams.<br>Even idealists sometimes keep escaping.<br>People let envy rattle their hearts.<br>Enemies you awaken ruin essential harmony.<br>Eden rises, Eden falls.<br>Insightful nature demands mature allies.<br>Rebuild yourself!</b><br>I'm aware that the message seems meaningless. Sorry Ziggy, that's all she said.";
       hidePoneElements();
 	} else if (x == "10,24") {
 			answerone = "Hm, this letter sounds almost like a puzzle. You could probably figure out where she lives if you follow her path. And if you knew where to start, of course. And yes, Lena did mention a friend named Mary. They used to be very close but they grew apart because of a different point of view on something.";
@@ -609,8 +606,8 @@ function bookPoneFunction() {
 	} else if (x == "11,02" || x == "11,27") {
 			answerone = "Get that away from me!";
       hidePoneElements();
-	} else if (x == "11,03" || x == "11,40") {
-			answerone = "What a cute dog!";
+	} else if (x == "11,03") {
+			answerone = "She doesn't bite, does she?";
       hidePoneElements();
 	} else if (x == "11,05") {
 			answerone = "I don't know what I'm supposed to do with this.";
@@ -783,8 +780,8 @@ function bookPoneFunction() {
 	} else if (x == "18,02" || x == "18,13" || x == "18,27" || x == "18,36" || x == "18,38" || x == "18,41") {
 			answerone = "Maybe you would prefer to speak about this to the biology professor?";
       hidePoneElements();
-	} else if (x == "18,03" || x == "18,40") {
-			answerone = "What a nice dog!";
+	} else if (x == "18,03") {
+			answerone = "Laika, how are you? Well yes, I've met your dog.";
       hidePoneElements();
 	} else if (x == "18,04" || x == "18,22" || x == "18,43") {
 			answerone = "You can ask somebody from the tech department about this. I’m sure that they would be helpful.";
@@ -817,7 +814,7 @@ function bookPoneFunction() {
 			answerone = "Ah! The universe. So many mysteries yet to unravel.";
       hidePoneElements();
 	} else if (x == "18,18") {
-			answerone = "I’m here for all your questions on mineralogy. I like it when students are interested in the subject. And if you need somebody to talk to about your loss, feel free to call me anytime.";
+			answerone = "I’m here for all your questions on mineralogy. I like it when students are interested in the subject.";
       hidePoneElements();
 	} else if (x == "18,19") {
 			answerone = "You’re not thinking of bribing me I hope? Ziggy, I'm sure you can pass the test without this.";
@@ -838,7 +835,7 @@ function bookPoneFunction() {
 			answerone = "No, thank you.";
       hidePoneElements();
 	} else if (x == "18,28") {
-			answerone = "Oh, you brought your mother's gem for me to see. Yes, of course I remember it from your mother, it's hard not to notice such a piece. Let me see it...<br><i>Professor Martin's eyes widen with excitement when I pass him the gem.</i><br> The crystal structure is somewhat unusual, as I'm sure a good student like yourself can see. On a first glance I would say that it’s a grandidierite imitation, but I can't be sure unless I study its chemical composition. Would you be kind enough to give it to me for some time? I would take extreme care of it, of course. I know that although it's probably worthless it must mean a great deal to you.<br><i>The professor seems a bit too eager on keeping the gem. Anyway, I don't intend to lose my newly acquired power that the gem holds, so I say that I can't leave it with him. He doesn't seem very happy about it.</i><br>I'm afraid I can't help you then. I'm a bit surprised that a future scientist like you doesn't want to proceed with the research. But as I said, it's probably just an imitation.";
+			answerone = "Oh, you brought your mother's gem for me to see. Yes, of course I remember it from your mother, it's hard not to notice such a piece. Let me see it...<br><i>Professor Martin's eyes widen with excitement when I pass him the gem.</i><br> The crystal structure is somewhat unusual, as I'm sure a good student like yourself can see. On a first glance I would say that it’s a grandidierite imitation, but I can't be sure unless I study its chemical composition. Would you be kind enough to give it to me for some time? I would take extreme care of it, of course.<br><i>The professor seems a bit too eager on keeping the gem. Anyway, I don't intend to lose my newly acquired power that the gem holds, so I say that I can't leave it with him. He doesn't seem very happy about it.</i><br>I'm afraid I can't help you then. I'm a bit surprised that a future scientist like you doesn't want to proceed with the research.";
       hidePoneElements();
 	} else if (x == "18,29") {
 			answerone = "I'm sure that you're prepared for the test. You're one of my best students.";
@@ -853,10 +850,10 @@ function bookPoneFunction() {
 			answerone = "I've seen him in the tea shop next to the library. They serve a decent cup of tea there.";
       hidePoneElements();
 	} else if (x == "18,34") {
-			answerone = "That's a beautiful cup, but we are not allowed to receive gifts from students.";
+			answerone = "I don't take gifts from students, especially not before a big test.";
       hidePoneElements();
 	} else if (x == "18,35") {
-			answerone = "I don’t care much for street art, but that’s just me.";
+			answerone = "Why did you bring spray paint to the University? You're not planning to do graffiti here, are you?";
       hidePoneElements();
 	} else if (x == "18,37") {
 			answerone = "The pride of our University. Of course I think it’s important. Young people don’t understand the significance of tradition. I still remember when it was switched with a sports team flag by a couple of students a few years ago. We were all in shock when the flag came up. I was unable to continue with my lecture until I was sure that they resolved the situation. It was a pain in the eye to see this disgrace on the flag pole. Outrageous!";
@@ -909,14 +906,20 @@ function bookPoneFunction() {
 	} else if (x == "30,08") {
 			answerone = "I don’t know what to say about this. Are you maybe interested in some of our products?";
       hidePoneElements();
-	} else if (x == "30,09" || x == "30,10" || x == "30,11") {
+	} else if (x == "30,09") {
+			answerone = "Hmmm, I haven't been to the library for a long time.";
+      hidePoneElements();
+	} else if (x == "30,10" || x == "30,11") {
 			answerone = "I’m sorry, but I don’t know her.";
+      hidePoneElements();
+	} else if (x == "30,11") {
+			answerone = "That name doesn't ring a bell. Do you need something or are you here just for a chit chat?";
       hidePoneElements();
 	} else if (x == "30,17") {
 			answerone = "This is a rare edition if I'm not mistaken. But I'm afraid I can't help you with the meaning of the handwritten part.";
       hidePoneElements();
-	} else if (x == "30,18" || x == "30,31") {
-			answerone = "I’m sorry, I don’t know him.";
+	} else if (x == "30,18") {
+			answerone = "I didn't take any of his classes in the University.";
       hidePoneElements();
 	} else if (x == "30,19") {
 			answerone = "So you decided to purchase the objective lens? Excellent. That will be 300 pounds. Thank you, and enjoy the stars tonight! <br><i>As I leave the shop, Peter puts the ‘closed’ sign on the door.<br><i>Take card <b>12</b>. Remove cards <b>19</b> and <b>30</b>.</i>";
@@ -931,7 +934,7 @@ function bookPoneFunction() {
 			answerone = "She does seem familiar, I guess she’s been to the shop once or twice.";
       hidePoneElements();
 	} else if (x == "30,25") {
-			answerone = "Let me see...Yes, the objective lens is definitely broken. I’m sorry, but I would recommend buying a new one, I don’t think you could repair it. Let me take it off to take a closer look...Oh, there is a paper behind it, here! Why would somebody put a paper behind the lens? Anyway, as I said, the lens is beyond repair. A new lens this diameter would be 300 pounds. Would you like to purchase one? <br><i>My mother puts a monthly allowance on my account and I earn some money giving math lessons to kids. But 300 pounds? I don't have that kind of money. <br>Take card <b>39</b>.</i>";
+			answerone = "Let me see...Yes, the objective lens is definitely broken. I’m sorry, but I would recommend buying a new one, I don’t think you could repair it. Let me take it off to take a closer look...Oh, there is a paper behind it, here! Why would somebody put a paper behind the lens? Anyway, as I said, the lens is beyond repair. A new lens this diameter would be 300 pounds. Would you like to purchase one? <br><i>I earn a little money giving math lessons to kids. But 300 pounds? I don't have that kind of money. <br>Take card <b>39</b>.</i>";
       hidePoneElements();
 	} else if (x == "30,26") {
 			answerone = "We don’t have any beverages, we are specialised in astronomy equipment.";
@@ -945,6 +948,9 @@ function bookPoneFunction() {
 	} else if (x == "30,30") {
 			answerone = "I’m standing at your service, how can I help you?";
       hidePoneElements();
+	} else if (x == "30,31") {
+			answerone = "I’m sorry, I don’t know him. Could I interest you in something from our amateur astronomer program?";
+      hidePoneElements();
 	} else if (x == "30,32") {
 			answerone = "I remember him, he came one time to the shop with his sister. She is part of our stargazing community, a very clever girl.";
       hidePoneElements();
@@ -955,13 +961,13 @@ function bookPoneFunction() {
 			answerone = "We don’t hold any art supplies, we are specialised in astronomy equipment.";
       hidePoneElements();
 	} else if (x == "30,37") {
-			answerone = "I heard that the University has an excellent astrophysics program.";
+			answerone = "I took an excellent astrophysics program in the University.";
       hidePoneElements();
 	} else if (x == "30,39") {
 			answerone = "I just found the paper, I don’t know what it means.";
       hidePoneElements();
 	} else if (x == "30,42") {
-			answerone = "She is making a mural across the street, I passed by a few times. It will be nice to pass next to a piece of art every day on my way to work.";
+			answerone = "She is making a mural across the street. It will be nice to pass next to a piece of art every day on my way to work.";
       hidePoneElements();
   } else if (x == "30,LOC01") {
       answerone = "I don't visit my customers at their homes.";
@@ -987,8 +993,8 @@ function bookPoneFunction() {
 	} else if (x == "31,02" || x == "31,27") {
 			answerone = "Collecting flies, are you?";
       hidePoneElements();
-	} else if (x == "31,03" || x == "31,40") {
-			answerone = "She's a real cutie, what's her name?";
+	} else if (x == "31,03") {
+			answerone = "Hey Laika! What's up, girl?";
       hidePoneElements();
 	} else if (x == "31,04") {
 			answerone = "That’s a good projector.";
@@ -1006,7 +1012,7 @@ function bookPoneFunction() {
 			answerone = "What? Are you trying to tell me you've got some kind of superpowers all of a sudden?";
       hidePoneElements();
 	} else if (x == "31,09") {
-			answerone = "I know her from the library. She’s a nice lady, I guess.";
+			answerone = "Oooops...I'm very late on returning a book. I won't be showing my face in the library anytime soon.";
       hidePoneElements();
 	} else if (x == "31,10") {
 			answerone = "I don’t know her, sorry.";
@@ -1024,7 +1030,7 @@ function bookPoneFunction() {
 			answerone = "I’m not surprised that the library has a projector. It’s usual equipment.";
       hidePoneElements();
 	} else if (x == "31,21") {
-			answerone = "Nice work! But I know nothing about street art.";
+			answerone = "Nice work!";
       hidePoneElements();
 	} else if (x == "31,22" || x == "31,43") {
 			answerone = "Sorry, but I don't know how could I help you with this.";
@@ -1053,7 +1059,7 @@ function bookPoneFunction() {
 	} else if (x == "31,32") {
 			answerone = "I don’t know him. I don’t go to tea shops, pubs are more my style.";
       hidePoneElements();
-	} else if (x == "31,33") {
+	} else if (x == "31,33" || x == "33,31") {
 			answerone = "Yes! Ziggy, I’m forever grateful for this. And don’t worry, this will be our little secret. Here’s some money for your effort. Well, now that I don’t need to study anymore, I’ll be going. Maybe have a drink with my crew.<br><i>You feel pretty bad about this, but it’s already done. Soon after Jamie leaves the room, professor Martin returns to his desk. He doesn't notice that one of the tests is missing.<br><i>Take card <b>19</b>. Remove cards <b>31</b> and <b>33</b>.</i>";
       hidePoneElements();
 	} else if (x == "31,34") {
@@ -1098,8 +1104,8 @@ function bookPoneFunction() {
 	} else if (x == "32,02" || x == "32,27") {
 			answerone = "Nice fly!";
       hidePoneElements();
-	} else if (x == "32,03" || x == "32,40") {
-			answerone = "Nice dog!";
+	} else if (x == "32,03") {
+			answerone = "Laika! Well aren't you the nicest dog in Majorton? Yes you are!";
       hidePoneElements();
 	} else if (x == "32,04") {
 			answerone = "Nice projector. It’s yours?";
@@ -1174,7 +1180,7 @@ function bookPoneFunction() {
 			answerone = "I’ve seen this gem on Lena. It’s magical, isn’t it?";
       hidePoneElements();
 	} else if (x == "32,29" || x == "32,33") {
-			answerone = "I studied anthropology for three years, mineralogy is really not my field.";
+			answerone = "I studied anthropology for three years, mineralogy really isn't my field.";
       hidePoneElements();
 	} else if (x == "32,30") {
 			answerone = "Yes, I’ve seen him in the telescope shop the one time I went there with my sister.";
@@ -1204,7 +1210,7 @@ function bookPoneFunction() {
 			answerone = "What do you say about making me a pumpkin pie?";
       hidePoneElements();
 	} else if (x == "32,42") {
-			answerone = "I’m a big fan of her work. I hear she’s in town at the moment, working on a mural. But she is leaving for a street art festival in Brazil tomorrow. She was invited to participate. It’s nice to see that the world has finally started to appreciate her art.";
+			answerone = "I’m a big fan of her work. I hear she’s in town at the moment, working on a mural. But she is leaving for a street art festival in Warsaw tomorrow. She was invited to participate. It’s nice to see that the world has finally started to appreciate her art.";
       hidePoneElements();
 	} else if (x == "32,43") {
 			answerone = "That’s the computer of Jocelyn Hill. She keeps opening it, writing her password in, checking out a part of her lecture and closing it again. I mean, she must have done it at least twenty times already!";
@@ -1299,20 +1305,20 @@ function bookPoneFunction() {
 	} else if (x == "42,02" || x == "42,27") {
 			answerone = "Should I be interested in this fly? Well, I'm not.";
       hidePoneElements();
-	} else if (x == "42,03" || x == "42,40") {
+	} else if (x == "42,03") {
 			answerone = "Cute dog.";
       hidePoneElements();
-	} else if (x == "42,04") {
-			answerone = "You’re kidding me...This is awesome! It will speed me up enormously. Thank you soooo much! Ok, let’s try to help you with finding your mural now. <br><i>Loomey takes a photo of the mural and sends it to a couple of people. After about 20 minutes of texting and calling, finally one of her friends recognizes it.</i><br>The mural is made by an anonymous author, that’s why I couldn’t remember it. But I did see it. It was not far from here actually, but it was removed 7 or 8 years ago. The address is C84. Hope that this helps you, because you helped me a lot.<br><i>Loomey returns to her work politely asking me to leave so that she could focus.<br>Write down or memorize the address and remove cards <b>04</b>, <b>21</b> and <b>42</b>.</i>";
+	} else if (x == "42,04" || x == "04,40") {
+			answerone = "You’re kidding me...This is awesome! It will speed me up enormously. Thank you soooo much! Ok, let’s try to help you with finding your mural now. <br><i>Loomey takes a photo of the mural and sends it to a couple of people. After about 20 minutes of texting and calling, finally one of her friends recognizes it.</i><br>The mural is made by an anonymous author, that’s why I couldn’t remember it. But I did see it. It used to be on a building not far from here actually, but it was removed 7 or 8 years ago. The address is C84. Hope that this helps you, because you helped me a lot.<br><i>Loomey returns to her work politely asking me to leave so that she could focus.<br>Write down or memorize the address and remove cards <b>04</b>, <b>21</b> and <b>42</b>.</i>";
       hidePoneElements();
 	} else if (x == "42,05") {
 			answerone = "I’m an artist, not a dog food cook.";
       hidePoneElements();
 	} else if (x == "42,06") {
-			answerone = "That looks interesting, but I don't have time to explore it right now.";
+			answerone = "You want me to help you break the code? Are you serious? I don't have time for this!";
       hidePoneElements();
 	} else if (x == "42,07") {
-			answerone = "I’m definitely not going to a lecture tonight. This wall is huge, and I’m running really late. With this tempo, I’ll be working all night, and I still don’t know if I’ll manage to finish. And tomorrow I’m leaving for Brazil.";
+			answerone = "I’m definitely not going to a lecture tonight. This wall is huge, and I’m running really late. With this tempo, I’ll be working all night, and I still don’t know if I’ll manage to finish. And tomorrow I’m leaving for Warsaw.";
       hidePoneElements();
 	} else if (x == "42,08") {
 			answerone = "Sure, and I have an invisibility cloak.";
@@ -1354,7 +1360,7 @@ function bookPoneFunction() {
 			answerone = "A projector would actually save me! I could project the sketch on the wall and transfer it really quickly. If you could get it for me, that would be amazing.";
       hidePoneElements();
 	} else if (x == "42,21") {
-			answerone = "Let me take a look, I can usually recognize other artists’ work. Hmmm, it seems familiar, but I can’t put my finger on it. I could make a few calls to my friends who know the scene better than me and try to identify it. But the problem is that I’m seriously late with my work. The mural I’m making is a commissioned gig and the company that ordered it gave me wrong dimensions of the wall. It’s huge! So now it will take me at least 6 hours just to transfer the sketch on the wall, and tomorrow I’m flying to Brazil. I’ll be working all night probably, and I’m still not sure I’ll make it. So unless you magically find some equipment that would speed up the process, I really can’t lose time on searching for the origin of the mural on your photo. Sorry, kid.";
+			answerone = "Let me take a look, I can usually recognize other artists’ work. Hmmm, it seems familiar, but I can’t put my finger on it. I could make a few calls to my friends who know the scene better than me and try to identify it. But the problem is that I’m seriously late with my work. The mural I’m making is a commissioned gig and the company that ordered it gave me wrong dimensions of the wall. It’s huge! So now it will take me at least 6 hours just to transfer the sketch on the wall, and tomorrow I’m flying to Warsaw. I’ll be working all night probably, and I’m still not sure I’ll make it. So unless you magically find some equipment that would speed up the process, I really can’t lose time on searching for the origin of the mural on your photo. Sorry, kid.";
       hidePoneElements();
 	} else if (x == "42,22" || x == "42,43") {
 			answerone = "I'm not very good with computers. My knowledge is pretty basic when it comes to technology.";
@@ -1399,7 +1405,7 @@ function bookPoneFunction() {
 			answerone = "This doesn't make any sense to me.";
       hidePoneElements();
 	} else if (x == "42,42") {
-			answerone = "I’ve been doing street art for 10 years now, and finally my career is starting to go somewhere. Actually, I’m flying to Brazil tomorrow to participate in a street art festival with some of the greatest artists in the world! I’m also doing commissioned work, like this one right now. It’s not very rewarding, but it put the food on the table. The problem with this particular gig is that the company that ordered it gave me wrong dimensions of the wall, and now I’m super late. I’ve just started, and I’m supposed to transfer the sketch on the wall. But since it’s huge, it will take me at least six hours instead of one, as I planned. If I knew it would be like this, I would have thought of a different technique to do it, but now it’s too late. So I’ll be working all night.";
+			answerone = "I’ve been doing street art for 10 years now, and finally my career is starting to go somewhere. Actually, I’m flying to Warsaw tomorrow to participate in a street art festival with some of the greatest artists in the world! I’m also doing commissioned work, like this one right now. It’s not very rewarding, but it puts the food on the table.";
       hidePoneElements();
   } else if (x == "42,LOC01") {
       answerone = "Girl, I'd love to visit your pretty little house, but I reeealy don't have time.";
@@ -1419,38 +1425,116 @@ function bookPoneFunction() {
   } else if (x == "42,LOC06" || x == "42,LOC07") {
       answerone = "I don't have time for weird questions about an address I've never heard of.";
       hidePoneElements();
-	} else if (x == "02,03" || x == "02,40" || x == "03,02" || x == "03,27" || x == "27,03" || x == "27,40" || x == "40,02" || x == "40,27") {
+	} else if (x == "02,03" || x == "03,02" || x == "03,27" || x == "27,03") {
       answerone = "Laika doesn't mind the fly. She's a peaceful animal.";
+      hidePoneElements();
+	} else if (x == "02,05" || x == "05,02" || x == "05,27" || x == "27,05") {
+      answerone = "I don't see house flies on the list of ingredients. Maybe I should stick to finding some pumpkin.";
+      hidePoneElements();
+	} else if (x == "02,08" || x == "08,02") {
+			answerone = "Well, let's try this gift I apparently have now. Come on little fly, show me what you've got!<br><i> As I use my ability, I begin to feel the sensations of the fly. But not only that, I also gain power over it. It seems that I can make it move wherever I wish to.<br>Take card <b>27</b>. Remove card <b>02</b>.</i>";
       hidePoneElements();
 	} else if (x == "02,26" || x == "02,34" || x == "26,02" || x == "34,02" || x == "26,27" || x == "34,27" || x == "27,26" || x == "27,34") {
 			answerone = "That's just disgusting. Who would want to drink that?";
       hidePoneElements();
-	} else if (x == "02,08" || x == "08,02") {
-			answerone = "Well, let's try this gift I apparently have now. Come on little fly, show me what you've got!<br><i> As I use my ability, I begin to feel the sensations of the fly. But not only that, I also gain power over it. It seems that I can make it move wherever I wish to.<br>Take card <b>27</b>. Remove card <b>2</b>.</i>";
+	} else if (x == "02,25" || x == "25,02" || x == "25,27" || x == "27,25") {
+      answerone = "Is that a falling star? No, it's just my fly.";
+      hidePoneElements();
+	} else if (x == "02,35" || x == "35,02" || x == "27,35" || x == "35,27") {
+      answerone = "The fly hasn't done anything wrong. Why would I do that?";
       hidePoneElements();
 	} else if (x == "03,03" || x == "03,23") {
 			answerone = "Woof woof!";
       hidePoneElements();
 	} else if (x == "03,05" || x == "05,03") {
-			answerone = "<b>IMPORTANT: You can combine any two objects/plants/animals this way. The order of card numbers isn't relevant.<br><br>Now read the text bellow.</b><br><br>I can't make the cookies without the pumpkin. It's the best part!<br><br><b>OK, so you'll have to add some pumpkin to the mix before feeding Laika. Don't worry, you'll find it in one of the new locations. Continue with examining the cards. Examine Laika.</b>";
+			answerone = "<b>IMPORTANT: You can combine any two objects/plants/animals this way. The order of card numbers isn't relevant.<br><br>Now read the text bellow.</b><br><br>I can't make the cookies without the pumpkin. It's the best part!<br><br><b>OK, so you'll have to add some pumpkin to the mix before feeding Laika. Don't worry, you'll find it in one of the new locations. Continue with examining the cards. Examine Laika (40).</b>";
+      hidePoneElements();
+	} else if (x == "03,07" || x == "07,03") {
+			answerone = "I should cheer Laika up, but I don't think that the lecture would do it.";
       hidePoneElements();
 	} else if (x == "03,08" || x == "08,03") {
 			answerone = "As I focus on Laika, I start to feel that I have some kind of power over her. I can make her do all the tricks perfectly, despite the fact that she is the worst trained dog on this planet. She even manages to bark in a pretty melody. But at the same time I sense that she’s really sad and that she would love to eat some of her favourite cookies that would remind her of my mother. I also feel that she wants to show me something, but she’s way to depressed to do it. And even with my superpowers, I can't change her mind.";
       hidePoneElements();
-	} else if (x == "03,05" || x == "03,41" || x == "05,03" || x == "05,40" || x == "41,03" || x == "40,05") {
-			answerone = "Cookies are not finished yet!";
+	} else if (x == "03,09") {
+			answerone = "Laika, leave Sandy alone! She doesn't have a snack for you.";
+      hidePoneElements();
+	} else if (x == "03,10") {
+			answerone = "Laika seems happy to see Emma.";
+      hidePoneElements();
+	} else if (x == "03,11") {
+			answerone = "Jocelyn seems to be a little affraid of dogs, so I keep Laika away from her.";
+      hidePoneElements();
+	} else if (x == "03,12" || x == "03,25" || x == "12,03" || x == "25,03") {
+			answerone = "Laika, catch! I'm just kidding.";
+      hidePoneElements();
+	} else if (x == "03,13" || x == "03,38" || x == "13,03" || x == "38,03") {
+			answerone = "I don't think that Laika is very fond of the parrot.";
       hidePoneElements();
 	} else if (x == "03,15" || x == "15,03") {
-			answerone = "There you go, Laika! <br><i>Laika barks and eats the cookies with pleasure. She seems to feel much better. After she finishes, she barks to get my attention. I realise that she wants to show me something, so I follow her. She goes in the backyard and starts digging a hole under the apple tree. Not long after, she digs something out. It's a cryptex. I somehow understand that Laika’s telling me how important this is to my mother. After I take it, Laika barks and runs back into the house.<br><i>Take card <b>06</b>. Remove cards <b>03</b>, <b>15</b> and location card <b>LOC01</b>.</i>";
+			answerone = "There you go, Laika! <br><i>Laika barks and eats the cookies with pleasure. She seems to feel much better. After she finishes, she barks to get my attention. I realise that she wants to show me something, so I follow her. She goes in the backyard and starts digging a hole under the apple tree. Not long after, she digs something out. It's a cryptex. I somehow understand that Laika’s telling me how important this is to my mother. After I take it, Laika barks and runs back into the house.<br><i>Take card <b>06</b>. Remove cards <b>03</b>, <b>15</b> and location card <b>LOC01</b> (but keep the other cards from the location on the table).</i>";
       hidePoneElements();
-	} else if (x == "03,26" || x == "26,03" || x == "26,40" || x == "40,26") {
+	} else if (x == "03,17" || x == "17,03") {
+			answerone = "Laika doesn't know how to read.";
+      hidePoneElements();
+	} else if (x == "03,18") {
+			answerone = "Laika seems to know professor Martin.";
+      hidePoneElements();
+	} else if (x == "03,19" || x == "19,03") {
+			answerone = "Is it really a good idea to let Laika play with the money?";
+      hidePoneElements();
+	} else if (x == "03,21" || x == "21,03") {
+			answerone = "Laika, do you know where the mural is? No? OK.";
+      hidePoneElements();
+	} else if (x == "03,26" || x == "26,03") {
 			answerone = "The tea is not for Laika.";
       hidePoneElements();
-	} else if (x == "03,13" || x == "03,38" || x == "13,03" || x == "13,40" || x == "40,13") {
-			answerone = "I don't think that Laika is very fond of the parrot.";
+	} else if (x == "03,29" || x == "29,03") {
+			answerone = "Laika, can you bring a test so that the professor doesn't notice? You can't? Never mind.";
+      hidePoneElements();
+	} else if (x == "03,30") {
+			answerone = "Laika isn't in the mood for shopping, so she stays in front of the shop.";
+      hidePoneElements();
+	} else if (x == "03,31") {
+			answerone = "Normally, Laika would want to play with Jamie, but she's not in the mood with everything that's been going on.";
+      hidePoneElements();
+	} else if (x == "03,32") {
+			answerone = "For a brief moment, Laika seems to cheer up when she sees Mark. But soon she returns in her melancholic state of mind.";
+      hidePoneElements();
+	} else if (x == "03,34" || x == "34,03") {
+			answerone = "Laika prefers her bowl my mother bought her for her 1. birthday.";
+      hidePoneElements();
+	} else if (x == "03,35" || x == "35,03") {
+			answerone = "Laika prefers her natural hair color.";
+      hidePoneElements();
+	} else if (x == "03,37" || x == "37,03") {
+			answerone = "Laika is very popular at the University. Everybody likes her.";
+      hidePoneElements();
+	} else if (x == "03,39" || x == "39,03") {
+			answerone = "I don't need Laika's help. I can find the library all by myself.";
+      hidePoneElements();
+	} else if (x == "03,41" || x == "05,40" || x == "40,05" || x == "41,03") {
+			answerone = "Cookies are not finished yet!";
+      hidePoneElements();
+	} else if (x == "03,42") {
+			answerone = "Laika sees that Loomey is busy, so she politely sits on the side and keeps quiet.";
+      hidePoneElements();
+	} else if (x == "03,43" || x == "43,03") {
+			answerone = "Barking at the computer isn't going to help, really.";
       hidePoneElements();
 	} else if (x == "04,21" || x == "21,04") {
 			answerone = "Where and why should I make a projection of this photo?";
+      hidePoneElements();
+	} else if (x == "04,35" || x == "20,35" || x == "35,04" || x == "35,20") {
+			answerone = "I'm not planning on destroying the library property.";
+      hidePoneElements();
+  } else if (x == "05,26" || x == "26,05") {
+      answerone = "I's supposed to add pumpkin to the mix. Not tea.";
+      hidePoneElements();
+  } else if (x == "05,34" || x == "34,05") {
+      answerone = "I doubt that somebody would drink that.";
+      hidePoneElements();
+  } else if (x == "05,35" || x == "35,05") {
+      answerone = "Let's not give Laika stomach problems.";
       hidePoneElements();
   } else if (x == "05,36" || x == "36,05") {
       answerone = "I don't think that freshly chopped pumpkin and freshly chopped pumpkin sprout are one and the same. I have to get a ripe pumpkin fruit for these cookies.";
@@ -1485,11 +1569,32 @@ function bookPoneFunction() {
 	} else if (x == "17,25" || x == "25,17") {
 			answerone = "The book can be useful while looking into space, but it won’t fix the telescope.";
       hidePoneElements();
+	} else if (x == "17,27" || x == "27,17") {
+			answerone = "The fly buzzing over the book annoys me a bit. Maybe I should try something else.";
+      hidePoneElements();
+	} else if (x == "20,35" || x == "35,20") {
+			answerone = "I'm not planning on destroying the library property.";
+      hidePoneElements();
+	} else if (x == "21,25" || x == "25,21") {
+			answerone = "I don’t need a telescope to look at the photo. I still have great eyesight.";
+      hidePoneElements();
 	} else if (x == "21,35" || x == "35,21") {
 			answerone = "I don’t want to spray the paint all over the photo. My mother liked it so much that she had it framed. Why would I destroy it?";
       hidePoneElements();
+	} else if (x == "22,35" || x == "35,22") {
+			answerone = "That's a little extreme. I don't want to destroy Jocelyn's computer.";
+      hidePoneElements();
+	} else if (x == "25,35" || x == "35,25") {
+			answerone = "I did this once already, and my mother wasn't very happy about it.";
+      hidePoneElements();
+	} else if (x == "25,37" || x == "37,25") {
+			answerone = "Even if it made any sense, I couldn't do it. The lens is broken.";
+      hidePoneElements();
+	} else if (x == "26,29" || x == "29,26" || x == "26,33" || x == "33,26") {
+			answerone = "I'm sure that the professor has a digital copy of the test. So I don't think that spilling tea all over the tests would help.'";
+      hidePoneElements();
 	} else if (x == "26,43" || x == "43,26") {
-			answerone = "I can't just spill the tea all over Jocelyn's computer right in front of her! And even if I had the guts, how can I be sure that it would work?";
+			answerone = "I can't just spill tea all over Jocelyn's computer right in front of her! And even if I had the guts, how can I be sure that it would work?";
       hidePoneElements();
 	} else if (x == "27,43" || x == "43,27") {
 			answerone = "I send my fly to look at Jocelyn's computer. As she has done a hundred times already, she opens the computer, types her password and checks some facts in her lecture. The fly has a great view over the screen and gives me its mental image of Jocelyn's password. OK, if I knew that it was so simple, I could have guessed it myself. Jocelyn, you really couldn't have come up with something better than 'Jocelyn1234'? <br><i>Write the password down or memorize it and remove card <b>27</b>.</i>";
@@ -1497,8 +1602,11 @@ function bookPoneFunction() {
 	} else if (x == "27,29" || x == "29,27") {
 			answerone = "The tests are in a closed folder. There is no way that I can make the fly open the folder to take a look at the tests.";
       hidePoneElements();
+	} else if (x == "28,35" || x == "35,28") {
+			answerone = "It would be a crime to do this.";
+      hidePoneElements();
 	} else if (x == "29,35" || x == "35,29") {
-			answerone = "I can’t just spray paint all over the tests! And in front of the professor too.";
+			answerone = "I'm not sure that the professor would appreciate my artistic expression.";
       hidePoneElements();
 	} else if (x == "29,37" || x == "37,29") {
 			answerone = "I don’t know how to use these two together, but I have a feeling that the flag could be useful in my diabolic plan to get the mineralogy test.";
@@ -1506,8 +1614,14 @@ function bookPoneFunction() {
 	} else if (x == "33,35" || x == "35,33") {
 			answerone = "If I spray all over the tests, professor Martin will simply make new copies. It’s not a great solution.";
       hidePoneElements();
+	} else if (x == "34,35" || x == "35,34") {
+			answerone = "The label on the spray says that it's not intended for use on ceramic surfaces.";
+      hidePoneElements();
 	} else if (x == "35,37" || x == "37,35") {
-			answerone = "Ok, let’s see if I have some talent in arts. I’ll admit it’s not a masterpiece, but it will do the trick. <br><i>I draw some pretty provocative signs on the flag, just in time before it’s supposed to be raised up on the pole. I go back up to professor Martin’s desk and wait for the big flag reveal. I hear the hymn starting on the speakers, and the people around me start to stir. 30 seconds after, everybody is already by the window, commenting on the flag vandalization. Professor Martin also gets up and goes to the window to see what all the fuss is about. The mineralogy tests stay on the desk, unsupervised. <br><i>Take card <b>33</b>. Remove cards <b>29</b>, <b>35</b> and <b>37</b>.</i>";
+			answerone = "What a masterpiece!<br><i>I draw some pretty provocative signs on the flag, just in time before it’s supposed to be raised up on the pole. I go back up to professor Martin’s desk and wait for the big flag reveal. I hear the hymn on the speakers, and the people around me start to stir. 30 seconds after, everybody is already by the window, commenting on the flag vandalization. Professor Martin also gets up to see what all the fuss is about. The mineralogy tests stay on the desk, unsupervised. <br><i>Take card <b>33</b>. Remove cards <b>29</b>, <b>35</b> and <b>37</b>.</i>";
+      hidePoneElements();
+	} else if (x == "35,43" || x == "43,35") {
+			answerone = "I wouldn't do that! I'm a nice person.";
       hidePoneElements();
 	} else if (x == "22,JOCELYN1234") {
 			answerone = "Well, this is an absolutely terrible thing to do, but I’m doing it anyway. However, to not be a total villain, I’ll copy her lecture on a cloud first and send her a link to download it tomorrow. Anonymously, obviously. I’m really sorry, Jocelyn! <br><i>I delete the lecture from the computer and move to another table. Jocelyn returns from the toilet and checks her computer for the lecture, staying speechless after realising that it's gone. After a few minutes of disbelief, she leaves the tea shop and goes to the library to cancel her lecture. I follow her, and wait for her to finish her conversation with Sandy. As she leaves, I kindly ask Sandy to borrow the projector. Sandy, although a bit suspicious about this unexpected turn of events, lets me have it. <br>Take card <b>04</b>. Remove cards <b>07</b>, <b>11</b>, <b>20</b> and <b>22</b>.</i>";
@@ -1534,7 +1648,7 @@ function bookPoneFunction() {
 			answerone = "There is no tea shop at this address. So I guess it's at the other next door to the library.";
       hidePoneElements();
 	} else if (x == "C46") {
-			answerone = "I hope I got the address right from this puzzle my mother left me.<br><i>Take location card <b>LOC06</b>. Remove cards <b>16</b> and <b>17</b>.</i>";
+			answerone = "I hope I got the address right.<br><i>Take location card <b>LOC06</b>. Remove cards <b>16</b> and <b>17</b>.</i>";
       hidePoneElements();
 	} else if (x == "A82") {
 			answerone = "I trace Mary's movements from the apartment to the mural, going backwards. I guess this should be it.<br><i>Take location card <b>LOC07</b>.</i>";

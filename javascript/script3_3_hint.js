@@ -90,7 +90,7 @@ function hintPthreeFunction() {
       hidePthreeHints();
       document.getElementById("hint31_container").style.display = "block";
   } else if (zhint == "33") {
-  		hintanswerthree = "Now that you've finally found your mother, we can't have a hint, but rather a big applause!";
+  		hintanswerthree = "Now that you've finally found your mother, we can't give a hint, but rather a big applause!";
       hidePthreeHints();
   } else if (zhint == "34") {
   		hintanswerthree = "You have to get to the bridge to meet your mother. But you can't walk out of the CEO's office looking your usual self. Is there a way to find out where everybody is so that you can know whose appearance to take?";
@@ -224,6 +224,6 @@ function hintPthreeSPO07_1_2show() {
 };
 
 function hintPthreeSPO07_1_3show() {
-  document.getElementById("hintPthreeSPO07_1_3Answer").innerHTML = "The coordinates to go from Lorentz to Ellis are 2783. The coordinates to go from Ellis to Visser are 1370. The coordinates to go from Visser to Unicorn black hole are 4163.";
+  document.getElementById("hintPthreeSPO07_1_3Answer").innerHTML = "The coordinates to go from Lorentz to Ellis are 2783. The coordinates to go from Ellis to Visser are 1370. The coordinates to go from Visser to Lazarus black hole are 4163.";
   document.getElementById("hintSPO07_1_4_container").style.display = "block";
 };
