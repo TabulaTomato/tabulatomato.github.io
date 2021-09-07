@@ -259,7 +259,7 @@ function hintPthree15_2show() {
 };
 
 function hintPthree18_1show() {
-  document.getElementById("hintPthree18_1Answer").innerHTML = "Use your ability to look through someone's eyes on CEO Timothy Pear. This way you can take a better look on the floor map behind you.";
+  document.getElementById("hintPthree18_1Answer").innerHTML = "Use your ability to look through someone's eyes on CEO Timothy Pear. This way. you can take a better look on the floor map behind you.";
   document.getElementById("hint18_1_1_container").style.display = "block";
 };
 
@@ -308,7 +308,7 @@ function hintPthree21_2_1show() {
 };
 
 function hintPthree22_1show() {
-  document.getElementById("hintPthree22_1Answer").innerHTML = "Use your ability to look through someone's eyes on CEO Timothy Pear. This way you can take a better look on the floor map behind you.";
+  document.getElementById("hintPthree22_1Answer").innerHTML = "Use your ability to look through someone's eyes on CEO Timothy Pear. This way, you can take a better look on the floor map behind you.";
   document.getElementById("hint22_1_1_container").style.display = "block";
 };
 
@@ -361,7 +361,7 @@ function hintPthree29_1_2show() {
 };
 
 function hintPthree29_1_3show() {
-  document.getElementById("hintPthree29_1_3Answer").innerHTML = "The fourth compartment has a drawing of an insect so it belongs to Laurie Haage. The third compartment is colored in the darkest color, so it must belong to Celia Gibbs. Fred Murphy asked for a compartment next to the one of Kate Carner, so the first two compartments have to belong to the two of them. The fifth compartment belongs to Donald Braun.";
+  document.getElementById("hintPthree29_1_3Answer").innerHTML = "The fourth compartment has a drawing of an insect, so it belongs to Laurie Haage. The third compartment is colored in the darkest color, so it must belong to Celia Gibbs. Fred Murphy asked for a compartment next to the one of Kate Carner, so the first two compartments have to belong to the two of them. The fifth compartment belongs to Donald Braun.";
   document.getElementById("hint29_1_4_container").style.display = "block";
 };
 
@@ -376,12 +376,12 @@ function hintPthree29_1_5show() {
 };
 
 function hintPthree29_1_6show() {
-  document.getElementById("hintPthree29_1_6Answer").innerHTML = "20 is the atomic number of Ca, 86 is the atomic number of Rn, and 68 it the atomic number of Er. What could Donald Braun's locker combination be?";
+  document.getElementById("hintPthree29_1_6Answer").innerHTML = "20 is the atomic number of Ca, 86 is the atomic number of Rn, and 68 is the atomic number of Er. What could Donald Braun's locker combination be?";
   document.getElementById("hint29_1_7_container").style.display = "block";
 };
 
 function hintPthree29_1_7show() {
-  document.getElementById("hintPthree29_1_7Answer").innerHTML = "The combination for Donald Braun's locker compartment is 35797, made of atomic numbers of Br, Au and N.";
+  document.getElementById("hintPthree29_1_7Answer").innerHTML = "The combination for Donald Braun's locker compartment is 35797, made of atomic numbers of Br, Au, and N.";
   document.getElementById("hint29_1_8_container").style.display = "block";
 };
 
@@ -466,12 +466,12 @@ function hintPthreeSPO02_1_1show() {
 };
 
 function hintPthreeSPO02_1_2show() {
-  document.getElementById("hintPthreeSPO02_1_2Answer").innerHTML = "20 is the atomic number of Ca, 86 is the atomic number of Rn, and 68 it the atomic number of Er. What could Donald Braun's locker combination be?";
+  document.getElementById("hintPthreeSPO02_1_2Answer").innerHTML = "20 is the atomic number of Ca, 86 is the atomic number of Rn, and 68 is the atomic number of Er. What could Donald Braun's locker combination be?";
   document.getElementById("hintSPO02_1_3_container").style.display = "block";
 };
 
 function hintPthreeSPO02_1_3show() {
-  document.getElementById("hintPthreeSPO02_1_3Answer").innerHTML = "The combination for Donald Braun's locker compartment is 35797, made of atomic numbers of Br, Au and N.";
+  document.getElementById("hintPthreeSPO02_1_3Answer").innerHTML = "The combination for Donald Braun's locker compartment is 35797, made of atomic numbers of Br, Au, and N.";
   document.getElementById("hintSPO02_1_4_container").style.display = "block";
 };
 
@@ -492,7 +492,7 @@ function hintPthreeSPO03_1_1show() {
 };
 
 function hintPthreeSPO03_1_2show() {
-  document.getElementById("hintPthreeSPO03_1_2Answer").innerHTML = "The fourth compartment has a drawing of an insect so it belongs to Laurie Haage. The third compartment is colored in the darkest color, so it must belong to Celia Gibbs. Fred Murphy asked for a compartment next to the one of Kate Carner, so the first two compartments have to belong to the two of them. The fifth compartment belongs to Donald Braun.";
+  document.getElementById("hintPthreeSPO03_1_2Answer").innerHTML = "The fourth compartment has a drawing of an insect, so it belongs to Laurie Haage. The third compartment is colored in the darkest color, so it must belong to Celia Gibbs. Fred Murphy asked for a compartment next to the one of Kate Carner, so the first two compartments have to belong to the two of them. The fifth compartment belongs to Donald Braun.";
   document.getElementById("hintSPO03_1_3_container").style.display = "block";
 };
 
@@ -507,12 +507,12 @@ function hintPthreeSPO03_1_4show() {
 };
 
 function hintPthreeSPO03_1_5show() {
-  document.getElementById("hintPthreeSPO03_1_5Answer").innerHTML = "20 is the atomic number of Ca, 86 is the atomic number of Rn, and 68 it the atomic number of Er. What could Donald Braun's locker combination be?";
+  document.getElementById("hintPthreeSPO03_1_5Answer").innerHTML = "20 is the atomic number of Ca, 86 is the atomic number of Rn, and 68 is the atomic number of Er. What could Donald Braun's locker combination be?";
   document.getElementById("hintSPO03_1_6_container").style.display = "block";
 };
 
 function hintPthreeSPO03_1_6show() {
-  document.getElementById("hintPthreeSPO03_1_6Answer").innerHTML = "The combination for Donald Braun's locker compartment is 35797, made of atomic numbers of Br, Au and N.";
+  document.getElementById("hintPthreeSPO03_1_6Answer").innerHTML = "The combination for Donald Braun's locker compartment is 35797, made of atomic numbers of Br, Au, and N.";
   document.getElementById("hintSPO03_1_7_container").style.display = "block";
 };
 

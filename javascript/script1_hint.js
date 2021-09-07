@@ -205,7 +205,7 @@ function hintPoneFunction() {
       document.getElementById("hintPone05_1").style.display = "block";
       document.getElementById("hintPone05_2").style.display = "block";
   } else if (xhint == "06") {
-  		hintanswerone = "Your mother left you clues for opening this cryptex. Have you talked to everbody?";
+  		hintanswerone = "Your mother left you clues for opening this cryptex. Have you talked to everybody?";
       hidePoneHints();
       document.getElementById("hint06_container").style.display = "block";
   } else if (xhint == "07") {
@@ -463,7 +463,7 @@ function hintPone06_1_2show() {
 };
 
 function hintPone06_1_3show() {
-  document.getElementById("hintPone06_1_3Answer").innerHTML = "Your mother left a bizzare message with Emma. If you ask the talkative parrot about this, it tells you to read only the first letters of the message. The message says: <br><i>The code is KEPLER. They are coming. Find Mary. Enter KEPLER in the cryptex to open it.</i>";
+  document.getElementById("hintPone06_1_3Answer").innerHTML = "Your mother left a bizarre message with Emma. If you ask the talkative parrot about this, it tells you to read only the first letters of the message. The message says: <br><i>The code is KEPLER. They are coming. Find Mary. Enter KEPLER in the cryptex to open it.</i>";
   document.getElementById("hint06_1_4_container").style.display = "block";
 };
 
@@ -503,7 +503,7 @@ function hintPone11_1_1show() {
 };
 
 function hintPone11_1_2show() {
-  document.getElementById("hintPone11_1_2Answer").innerHTML = "Barista has a good look on what's going on in the the shop. Have you talked to him?";
+  document.getElementById("hintPone11_1_2Answer").innerHTML = "Barista has a good look at what's going on in the shop. Have you talked to him?";
   document.getElementById("hint11_1_3_container").style.display = "block";
 };
 
@@ -513,12 +513,12 @@ function hintPone11_1_3show() {
 };
 
 function hintPone11_1_4show() {
-  document.getElementById("hintPone11_1_4Answer").innerHTML = "Use your ability to connect to plants and animals on the fly. You can then make it fly over the keybord and observe Jocelyn write in the password.";
+  document.getElementById("hintPone11_1_4Answer").innerHTML = "Use your ability to connect to plants and animals on the fly. You can then make it fly over the keyboard and observe Jocelyn write in the password.";
   document.getElementById("hint11_1_5_container").style.display = "block";
 };
 
 function hintPone11_1_5show() {
-  document.getElementById("hintPone11_1_5Answer").innerHTML = "Jocelyn's tea cup is empty at the moment. Maybe she would like some more?";
+  document.getElementById("hintPone11_1_5Answer").innerHTML = "Jocelyn's teacup is empty at the moment. Maybe she would like some more?";
   document.getElementById("hint11_1_6_container").style.display = "block";
 };
 
@@ -638,7 +638,7 @@ function hintPone20_1_2show() {
 };
 
 function hintPone20_1_3show() {
-  document.getElementById("hintPone20_1_3Answer").innerHTML = "Barista has a good look on what's going on in the the shop. Have you talked to him?";
+  document.getElementById("hintPone20_1_3Answer").innerHTML = "Barista has a good look at what's going on in the shop. Have you talked to him?";
   document.getElementById("hint20_1_4_container").style.display = "block";
 };
 
@@ -648,12 +648,12 @@ function hintPone20_1_4show() {
 };
 
 function hintPone20_1_5show() {
-  document.getElementById("hintPone20_1_5Answer").innerHTML = "Use your ability to connect to plants and animals on the fly. You can then make it fly over the keybord and observe Jocelyn write in the password.";
+  document.getElementById("hintPone20_1_5Answer").innerHTML = "Use your ability to connect to plants and animals on the fly. You can then make it fly over the keyboard and observe Jocelyn write in the password.";
   document.getElementById("hint20_1_6_container").style.display = "block";
 };
 
 function hintPone20_1_6show() {
-  document.getElementById("hintPone20_1_6Answer").innerHTML = "Jocelyn's tea cup is empty at the moment. Maybe she would like some more?";
+  document.getElementById("hintPone20_1_6Answer").innerHTML = "Jocelyn's teacup is empty at the moment. Maybe she would like some more?";
   document.getElementById("hint20_1_7_container").style.display = "block";
 };
 
@@ -727,7 +727,7 @@ function hintPone22_1show() {
 };
 
 function hintPone22_2show() {
-  document.getElementById("hintPone22_2Answer").innerHTML = "Barista has a good look on what's going on in the the shop. Have you talked to him?";
+  document.getElementById("hintPone22_2Answer").innerHTML = "Barista has a good look at what's going on in the shop. Have you talked to him?";
   document.getElementById("hintPone22_1").style.display = "none";
   document.getElementById("hint22_2_1_container").style.display = "block";
 };
@@ -738,7 +738,7 @@ function hintPone22_2_1show() {
 };
 
 function hintPone22_2_2show() {
-  document.getElementById("hintPone22_2_2Answer").innerHTML = "Use your ability to connect to plants and animals on the fly. You can then make it fly over the keybord and observe Jocelyn write in the password.";
+  document.getElementById("hintPone22_2_2Answer").innerHTML = "Use your ability to connect to plants and animals on the fly. You can then make it fly over the keyboard and observe Jocelyn write in the password.";
   document.getElementById("hint22_2_3_container").style.display = "block";
 };
 
@@ -774,7 +774,7 @@ function hintPone23_3_1show() {
 };
 
 function hintPone24_1show() {
-  document.getElementById("hintPone24_1Answer").innerHTML = "Mary writes in her letter how she left home and describes the way she took to the mural. So how can you get her address?";
+  document.getElementById("hintPone24_1Answer").innerHTML = "Mary writes in her letter how she left home and which way she took to the mural. So how can you get her address?";
   document.getElementById("hintPone24_2").style.display = "none";
   document.getElementById("hint24_1_1_container").style.display = "block";
 };
@@ -803,12 +803,12 @@ function hintPone25_1show() {
 };
 
 function hintPone25_1_1show() {
-  document.getElementById("hintPone25_1_1Answer").innerHTML = "Look at the map. Are there streets that fit to the description given in the shop add?";
+  document.getElementById("hintPone25_1_1Answer").innerHTML = "Look at the map. Can you find streets that fit the description given in the shop ad?";
   document.getElementById("hint25_1_2_container").style.display = "block";
 };
 
 function hintPone25_1_2show() {
-  document.getElementById("hintPone25_1_2Answer").innerHTML = "The shop add says: <br><i>Find us on the northwest corner of two crossing streets, where couples always in broad daylight meet!</i><br>There is a junction of streets Lovers Lane and Sunny Road on the Majorton map. The address of the northwest corner of this junction is D43.";
+  document.getElementById("hintPone25_1_2Answer").innerHTML = "The shop ad says: <br><i>Find us on the northwest corner of two crossing streets, where couples always in broad daylight meet!</i><br>There is a junction of streets Lovers Lane and Sunny Road on the Majorton map. The address of the northwest corner of this junction is D43.";
   document.getElementById("hint25_1_3_container").style.display = "block";
 };
 
@@ -832,7 +832,7 @@ function hintPone25_3_1show() {
 };
 
 function hintPone25_3_2show() {
-  document.getElementById("hintPone25_3_2Answer").innerHTML = "Use the spray paint on the University flag. Jamie will pay you for your efforts and then you can buy a new lens.";
+  document.getElementById("hintPone25_3_2Answer").innerHTML = "Use the spray paint on the University flag. Jamie will pay you for your efforts, and then you can buy a new lens.";
   document.getElementById("hint25_3_3_container").style.display = "block";
 };
 
@@ -842,7 +842,7 @@ function hintPone26_1show() {
 };
 
 function hintPone27_1show() {
-  document.getElementById("hintPone27_1Answer").innerHTML = "Barista has a good look on what's going on in the the shop. Have you talked to him?";
+  document.getElementById("hintPone27_1Answer").innerHTML = "Barista has a good look at what's going on in the shop. Have you talked to him?";
   document.getElementById("hintPone27_2").style.display = "none";
   document.getElementById("hint27_1_1_container").style.display = "block";
 };
@@ -853,7 +853,7 @@ function hintPone27_1_1show() {
 };
 
 function hintPone27_1_2show() {
-  document.getElementById("hintPone27_1_2Answer").innerHTML = "You can make the fly hover over the keybord and observe Jocelyn write in the password.";
+  document.getElementById("hintPone27_1_2Answer").innerHTML = "You can make the fly hover over the keyboard and observe Jocelyn write in the password.";
   document.getElementById("hint27_1_3_container").style.display = "block";
 };
 
@@ -921,7 +921,7 @@ function hintPone31_1_1show() {
 };
 
 function hintPone32_1show() {
-  document.getElementById("hintPone32_1Answer").innerHTML = "Ask Mark about Jocelyn. And order her some tea, her cup is empty.";
+  document.getElementById("hintPone32_1Answer").innerHTML = "Ask Mark about Jocelyn. And order her some tea. Her cup is empty.";
   document.getElementById("hint32_1_1_container").style.display = "block";
 };
 
@@ -1016,45 +1016,6 @@ function hintPone41_1show() {
   document.getElementById("hint41_1_1_container").style.display = "block";
 };
 
-function hintPone41_1_1show() {
-  document.getElementById("hintPone41_1_1Answer").innerHTML = "Enter address G54 into the Digital Game Book input field.";
-  document.getElementById("hint41_1_2_container").style.display = "block";
-};
-
-function hintPone41_2show() {
-  document.getElementById("hintPone41_2Answer").innerHTML = "Take a look on the Starchester map.";
-  document.getElementById("hintPone41_1").style.display = "none";
-  document.getElementById("hintPone41_3").style.display = "none";
-  document.getElementById("hint41_2_1_container").style.display = "block";
-};
-
-function hintPone41_2_1show() {
-  document.getElementById("hintPone41_2_1Answer").innerHTML = "Enter address C29 into the Digital Game Book input field.";
-  document.getElementById("hint41_2_2_container").style.display = "block";
-};
-
-function hintPone41_3show() {
-  document.getElementById("hintPone41_3Answer").innerHTML = "Somebody you know has approach to information about people. Maybe they could help find Alison.";
-  document.getElementById("hintPone41_1").style.display = "none";
-  document.getElementById("hintPone41_2").style.display = "none";
-  document.getElementById("hint41_3_1_container").style.display = "block";
-};
-
-function hintPone41_3_1show() {
-  document.getElementById("hintPone41_3_1Answer").innerHTML = "Ask Ron about Alison.";
-  document.getElementById("hint41_3_2_container").style.display = "block";
-};
-
-function hintPone41_3_2show() {
-  document.getElementById("hintPone41_3_2Answer").innerHTML = "What does 'Under the Radar' mean? Take a look on Starchester map.";
-  document.getElementById("hint41_3_3_container").style.display = "block";
-};
-
-function hintPone41_3_3show() {
-  document.getElementById("hintPone41_3_3Answer").innerHTML = "The magazine's address is H51, right under Starchester Weather Radar.";
-  document.getElementById("hint41_3_4_container").style.display = "block";
-};
-
 function hintPone42_1show() {
   document.getElementById("hintPone42_1Answer").innerHTML = "Loomey is a street artist. Is there something you could talk to her about?";
   document.getElementById("hintPone42_2").style.display = "none";
@@ -1088,7 +1049,7 @@ function hintPone43_1_1show() {
 };
 
 function hintPone43_1_2show() {
-  document.getElementById("hintPone43_1_2Answer").innerHTML = "Barista has a good look on what's going on in the the shop. Have you talked to him?";
+  document.getElementById("hintPone43_1_2Answer").innerHTML = "Barista has a good look at what's going on in the shop. Have you talked to him?";
   document.getElementById("hint43_1_3_container").style.display = "block";
 };
 
@@ -1098,12 +1059,12 @@ function hintPone43_1_3show() {
 };
 
 function hintPone43_1_4show() {
-  document.getElementById("hintPone43_1_4Answer").innerHTML = "Use your ability to connect to plants and animals on the fly. You can then make it fly over the keybord and observe Jocelyn write in the password.";
+  document.getElementById("hintPone43_1_4Answer").innerHTML = "Use your ability to connect to plants and animals on the fly. You can then make it fly over the keyboard and observe Jocelyn write in the password.";
   document.getElementById("hint43_1_5_container").style.display = "block";
 };
 
 function hintPone43_1_5show() {
-  document.getElementById("hintPone43_1_5Answer").innerHTML = "Jocelyn's tea cup is empty at the moment. Maybe she would like some more?";
+  document.getElementById("hintPone43_1_5Answer").innerHTML = "Jocelyn's teacup is empty at the moment. Maybe she would like some more?";
   document.getElementById("hint43_1_6_container").style.display = "block";
 };
 

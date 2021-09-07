@@ -114,7 +114,7 @@ function hintPthreeFunction() {
   		hintanswerthree = "We can't give you a hint on how to make yourself comfortable in the box. Try to endure it for a little longer.";
       hidePthreeHints();
   } else if (zhint == "31") {
-  		hintanswerthree = "Just don't make any noise and you'll be fine.";
+  		hintanswerthree = "Just don't make any noise, and you'll be fine.";
       hidePthreeHints();
   } else if (zhint == "32") {
   		hintanswerthree = "This could keep somebody occupied for a long time.";
@@ -164,7 +164,7 @@ function hintPthree03_2show() {
 };
 
 function hintPthree09_1show() {
-  document.getElementById("hintPthree09_1Answer").innerHTML = "Is there a way to mix the Rubik's cube so well that Marina will never be albe to solve it? Look at what do you have to help you in this task.";
+  document.getElementById("hintPthree09_1Answer").innerHTML = "Is there a way to mix the Rubik's cube so well that Marina will never be able to solve it? Look at what do you have to help you in this task.";
   document.getElementById("hintPthree09_2").style.display = "none";
   document.getElementById("hint09_1_1_container").style.display = "block";
 };
@@ -188,7 +188,7 @@ function hintPthree11_1show() {
 };
 
 function hintPthree11_1_1show() {
-  document.getElementById("hintPthree11_1_1Answer").innerHTML = "Marina will give you her Rubik's cube to mix it if you ask her to speak about herself. Is there a way to mix the Rubik's cube so well that Marina will never be albe to solve it?";
+  document.getElementById("hintPthree11_1_1Answer").innerHTML = "Marina will give you her Rubik's cube to mix it if you ask her to speak about herself. Is there a way to mix the Rubik's cube so well that Marina will never be able to solve it?";
   document.getElementById("hint11_1_2_container").style.display = "block";
 };
 
@@ -289,7 +289,7 @@ function hintPthree39_1show() {
 };
 
 function hintPthreeSPO05_1show() {
-  document.getElementById("hintPthreeSPO05_1Answer").innerHTML = "How may symbols of the Laki alphabet each button has? Does it correspond to something?";
+  document.getElementById("hintPthreeSPO05_1Answer").innerHTML = "How many symbols of the Laki alphabet each button has? Does it correspond to something?";
   document.getElementById("hintSPO05_1_1_container").style.display = "block";
 };
 
@@ -309,7 +309,7 @@ function hintPthreeSPO05_1_3show() {
 };
 
 function hintPthreeSPO06_1show() {
-  document.getElementById("hintPthreeSPO06_1Answer").innerHTML = "How may symbols of the Laki alphabet each button has? Does it correspond to something?";
+  document.getElementById("hintPthreeSPO06_1Answer").innerHTML = "How many symbols of the Laki alphabet each button has? Does it correspond to something?";
   document.getElementById("hintSPO06_1_1_container").style.display = "block";
 };
 

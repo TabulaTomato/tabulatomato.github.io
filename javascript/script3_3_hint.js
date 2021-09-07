@@ -128,7 +128,7 @@ function hintPthree02_1show() {
 };
 
 function hintPthree02_1_1show() {
-  document.getElementById("hintPthree02_1_1Answer").innerHTML = "Use your ability to see through someone's eyes on the Lakis. That way you can position all of them on the map, see whose appearance to take and find a safe path to the bridge.";
+  document.getElementById("hintPthree02_1_1Answer").innerHTML = "Use your ability to see through someone's eyes on the Lakis. That way, you can position all of them on the map, see whose appearance to take, and find a safe path to the bridge.";
   document.getElementById("hint02_1_2_container").style.display = "block";
 };
 
@@ -149,12 +149,12 @@ function hintPthree04_1show() {
 };
 
 function hintPthree13_1show() {
-  document.getElementById("hintPthree13_1Answer").innerHTML = "Use your ability to see through someone's eyes on the Lakis. That way you can position all of them on the map, see whose appearance to take and find a safe path to the bridge.";
+  document.getElementById("hintPthree13_1Answer").innerHTML = "Use your ability to see through someone's eyes on the Lakis. That way, you can position all of them on the map, see whose appearance to take, and find a safe path to the bridge.";
   document.getElementById("hint13_1_1_container").style.display = "block";
 };
 
 function hintPthree21_1show() {
-  document.getElementById("hintPthree21_1Answer").innerHTML = "Use your ability to see through someone's eyes on the Lakis. That way you can position all of them on the map, see whose appearance to take and find a safe path to the bridge.";
+  document.getElementById("hintPthree21_1Answer").innerHTML = "Use your ability to see through someone's eyes on the Lakis. That way, you can position all of them on the map, see whose appearance to take, and find a safe path to the bridge.";
   document.getElementById("hint21_1_1_container").style.display = "block";
 };
 
@@ -164,27 +164,27 @@ function hintPthree21_1_1show() {
 };
 
 function hintPthree21_1_2show() {
-  document.getElementById("hintPthree21_1_2Answer").innerHTML = "Take the path through the corridor right from the security control room. This way you will not pass next to Celia Gibbs on your way to the bridge.";
+  document.getElementById("hintPthree21_1_2Answer").innerHTML = "Take the path through the corridor right from the security control room. This way, you will not pass next to Celia Gibbs on your way to the bridge.";
   document.getElementById("hint21_1_3_container").style.display = "block";
 };
 
 function hintPthree25_1show() {
-  document.getElementById("hintPthree25_1Answer").innerHTML = "Use your ability to see through someone's eyes on the Lakis. That way you can position all of them on the map, see whose appearance to take and find a safe path to the bridge.";
+  document.getElementById("hintPthree25_1Answer").innerHTML = "Use your ability to see through someone's eyes on the Lakis. That way, you can position all of them on the map, see whose appearance to take, and find a safe path to the bridge.";
   document.getElementById("hint25_1_1_container").style.display = "block";
 };
 
 function hintPthree29_1show() {
-  document.getElementById("hintPthree29_1Answer").innerHTML = "Use your ability to see through someone's eyes on the Lakis. That way you can position all of them on the map, see whose appearance to take and find a safe path to the bridge.";
+  document.getElementById("hintPthree29_1Answer").innerHTML = "Use your ability to see through someone's eyes on the Lakis. That way, you can position all of them on the map, see whose appearance to take, and find a safe path to the bridge.";
   document.getElementById("hint29_1_1_container").style.display = "block";
 };
 
 function hintPthree31_1show() {
-  document.getElementById("hintPthree31_1Answer").innerHTML = "Use your ability to see through someone's eyes on the Lakis. That way you can position all of them on the map, see whose appearance to take and find a safe path to the bridge.";
+  document.getElementById("hintPthree31_1Answer").innerHTML = "Use your ability to see through someone's eyes on the Lakis. That way, you can position all of them on the map, see whose appearance to take, and find a safe path to the bridge.";
   document.getElementById("hint31_1_1_container").style.display = "block";
 };
 
 function hintPthree34_1show() {
-  document.getElementById("hintPthree34_1Answer").innerHTML = "Use your ability to see through someone's eyes on the Lakis. That way you can position all of them on the map, see whose appearance to take and find a safe path to the bridge.";
+  document.getElementById("hintPthree34_1Answer").innerHTML = "Use your ability to see through someone's eyes on the Lakis. That way, you can position all of them on the map, see whose appearance to take, and find a safe path to the bridge.";
   document.getElementById("hint34_1_1_container").style.display = "block";
 };
 
@@ -194,7 +194,7 @@ function hintPthree34_1_1show() {
 };
 
 function hintPthree34_1_2show() {
-  document.getElementById("hintPthree34_1_2Answer").innerHTML = "Take the path through the corridor right from the security control room. This way you will not pass next to Kate Carner on your way to the bridge.";
+  document.getElementById("hintPthree34_1_2Answer").innerHTML = "Take the path through the corridor right from the security control room. This way, you will not pass next to Kate Carner on your way to the bridge.";
   document.getElementById("hint34_1_3_container").style.display = "block";
 };
 
@@ -204,7 +204,7 @@ function hintPthree35_1show() {
 };
 
 function hintPthree38_1show() {
-  document.getElementById("hintPthree38_1Answer").innerHTML = "Use your ability to see through someone's eyes on the Lakis. That way you can position all of them on the map, see whose appearance to take and find a safe path to the bridge.";
+  document.getElementById("hintPthree38_1Answer").innerHTML = "Use your ability to see through someone's eyes on the Lakis. That way, you can position all of them on the map, see whose appearance to take, and find a safe path to the bridge.";
   document.getElementById("hint38_1_1_container").style.display = "block";
 };
 
@@ -219,7 +219,7 @@ function hintPthreeSPO07_1_1show() {
 };
 
 function hintPthreeSPO07_1_2show() {
-  document.getElementById("hintPthreeSPO07_1_2Answer").innerHTML = "If you put Lorentz mouth on top of Ellis mouth and fold the map, you should see the blue lines on the map form coordinates. Repeat this for the other two travels.";
+  document.getElementById("hintPthreeSPO07_1_2Answer").innerHTML = "If you put the Lorentz Wormhoke mouth on top of the Ellis Wormhole mouth and fold the map, you should see the blue lines on the map form coordinates. Repeat this for the other two travels.";
   document.getElementById("hintSPO07_1_3_container").style.display = "block";
 };
 

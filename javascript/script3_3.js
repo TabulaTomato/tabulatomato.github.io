@@ -121,7 +121,7 @@ function bookPthreeFunction() {
   		answerthree = "The scary CEO Pear has finally left me alone.";
       hidePthreeElements();
   } else if (z == "04") {
-  		answerthree = "The bridge console has a face recognition software. When I try to manipulate it, i get the message <b>'Access denied'</b>.";
+  		answerthree = "The bridge console has a facial recognition software. When I try to manipulate it, I get the message <b>'Access denied'</b>.";
       hidePthreeElements();
   } else if (z == "08") {
   		answerthree = "My ability to connect to animals and plants. I'm completely used to it by now.<br><i>To use this ability, enter ability card number <b>08</b> followed by the card number of the plant or animal you want to have an effect on in the Digital Game Book input field, separated by a comma.</i>";
@@ -136,7 +136,7 @@ function bookPthreeFunction() {
   		answerthree = "I saw that my mother went somewhere that resembles a lot to a bridge of a spaceship.";
       hidePthreeElements();
   } else if (z == "26") {
-  		answerthree = "This ability is incredibly useful right now.<br><i>To use this ability, enter ability card number <b>26</b> followed by the card number of the person you want to take appearance of in the Digital Game Book input field, separated by a comma.</i>";
+  		answerthree = "This ability is incredibly useful right now.<br><i>To use this ability, enter ability card number <b>26</b> followed by the card number of the person you want to take the appearance of in the Digital Game Book input field, separated by a comma.</i>";
     hidePthreeElements();
   } else if (z == "31") {
   		answerthree = "The security guard that was in charge of keeping an eye on my mother.";
@@ -148,19 +148,19 @@ function bookPthreeFunction() {
   		answerthree = "This man looks so much like me...I don't dare to believe it, but could he be my father? Or am I hallucinating?";
       hidePthreeElements();
   } else if (z == "37") {
-  		answerthree = "I guess this is my new ability. I have to only think of somebody and I immediately see what this person is seeing. I promise to only use it in emergencies like this one.<br><i>To use this ability, enter ability card number <b>37</b> followed by the card number of the person whose eyes you want to see through in the Digital Game Book input field, separated by a comma.</i>";
+  		answerthree = "I guess this is my new ability. I have to only think of somebody, and I immediately see what this person is seeing. I promise to only use it in emergencies like this one.<br><i>To use this ability, enter ability card number <b>37</b> followed by the card number of the person whose eyes you want to see through in the Digital Game Book input field, separated by a comma.</i>";
       hidePthreeElements();
   } else if (z == "LOC03") {
   		answerthree = "Timothy Pear finally left the office. I have to figure out how to get to my mother now.<br><i>To exit the office, enter 'D02' into the Digital Game Book input field.</i>";
       hidePthreeElements();
   } else if (z == "LOC07") {
-  		answerthree = "There is no doubt anymore that the PEI base is actually a spaceship. There is a lot of equipment that I wouldn't know how to handle, but fortunately my mother <b>(33)</b>, who is an experienced astronaut, is here to help. The ship is operated with the main bridge console <b>(04)</b>.";
+  		answerthree = "There is no doubt anymore that the PEI base is actually a spaceship. There is a lot of equipment that I wouldn't know how to handle, but fortunately, my mother <b>(33)</b>, who is an experienced astronaut, is here to help. The ship is operated with the main bridge console <b>(04)</b>.";
       hidePthreeElements();
   } else if (z == "LOC08") {
-      answerthree = "It's hard to describe the space I found myself in. It looks fluid, interconnected with my mind and thoughts, changing the moment I focus my eye on a detail. Besides me, there is nobody. Except, what is that in the distance? Could it be a living person <b>(35)</b>?";
+      answerthree = "It's hard to describe the space I found myself in. It looks fluid, interconnected with my mind and thoughts, changing the moment I focus my eye on something. Besides me, there is nobody. Except, what is that in the distance? Could it be a living person <b>(35)</b>?";
       hidePthreeElements();
   } else if (z == "SPO07") {
-      answerthree = "The space map that the Nahukat mothership sent to me along with the instructions on how to travel to Lazarus Black Hole. They said that wormholes make the space-time bend. So, if we imagined the 3D space as a 2D surface, and two wormhole mouths on two distant parts of this surface, travelling through it would be as if we bended the surface and put the mouths right on top of each other. Lorentz Wormhole Mouth is the nearest to me, so I should start there. Apparently, most wormholes have multiple tunnels, contrary to what I thought. So, I should choose the one that leads to Ellis Wormhole entrance. I should enter the corresponding coordinates in the console to do so.<br><i>To travel from Lorentz to Ellis, enter bridge console's card number <b>04</b>, followed by a 4 number sequence, in the input field, separated by a comma. For example, if the coordinates to go to Ellis from Lorentz are 1111, enter '04,1111' in the input field and press enter.";
+      answerthree = "The space map that the Nahukat mothership sent to me along with the instructions on how to travel to Lazarus Black Hole. They said that wormholes make space-time bend. So, if we imagined the 3D space as a 2D surface, and two wormhole mouths on two distant parts of this surface, travelling through it would be as if we bent the surface and put the mouths right on top of each other. Lorentz Wormhole Mouth is the nearest to me, so I should start there. Apparently, most wormholes have multiple tunnels, contrary to what I thought. So, I should choose the one that leads to the Ellis Wormhole entrance. I should enter the corresponding coordinates in the console to do so.<br><i>To travel from Lorentz to Ellis, enter bridge console's card number <b>04</b>, followed by a 4 number sequence, in the input field, separated by a comma. For example, if the coordinates to go to Ellis from Lorentz are 1111, enter '04,1111' in the input field and press enter.";
       hidePthreeElements();
   } else if (z == "01,01") {
       answerthree = "This is by far the most dangerous part of my quest of saving my mother. But I have to go through with it!";
@@ -169,10 +169,10 @@ function bookPthreeFunction() {
       answerthree = "This guy is obviously the absolute boss around here.";
       hidePthreeElements();
   } else if (z == "01,04") {
-      answerthree = "Luckily my mother is here, otherwise I wouldn't know what to do with this!";
+      answerthree = "Luckily, my mother is here. Otherwise I wouldn't know what to do with this!";
       hidePthreeElements();
   } else if (z == "01,08") {
-      answerthree = "I don't think that there are may plants or animals in this place, but you never know when the power could come in handy.";
+      answerthree = "I don't think that there are many plants or animals in this place, but you never know when the power could come in handy.";
       hidePthreeElements();
   } else if (z == "01,10") {
       answerthree = "The rat is so bored that he seems to be eager for a little excitement.";
@@ -196,7 +196,7 @@ function bookPthreeFunction() {
       answerthree = "I wonder did he already notice that his keycard is missing.";
       hidePthreeElements();
   } else if (z == "01,31") {
-      answerthree = "Now that she's discovered that my mother has escaped, we have to move quickly.";
+      answerthree = "Now that she knows my mother escaped, we have to move quickly.";
       hidePthreeElements();
   } else if (z == "01,33") {
       answerthree = "Mother, you're finally here!";
@@ -223,7 +223,7 @@ function bookPthreeFunction() {
       answerthree = "What is this place? I haven't still visited many places from my bucket list, but I can say that I've been inside of a black hole.";
       hidePthreeElements();
   } else if (z == "01,SPO07") {
-      answerthree = "If only my mother was here, she is the astronaut in the family, not me! How am I going to figure out the coordinates? I think that space-time isn't the only thing that will be bending, my mind feels rather bent too.";
+      answerthree = "If only my mother were here! She is the astronaut in the family, not me! How am I going to figure out the coordinates? I think that space-time isn't the only thing that will be bending, my mind feels rather bent too.";
       hidePthreeElements();
   } else if (z == "02,01" || z == "02,02" || z == "02,04" || z == "02,08" || z == "02,13" || z == "02,21" || z == "02,25" || z == "02,26" || z == "02,28" || z == "02,29" || z == "02,31" || z == "02,33" || z == "02,34" || z == "02,37" || z == "02,38" || z == "02,LOC03" || z == "02,LOC07" || z == "02,SPO07") {
       answerthree = "<i>Timothy Pear isn't here. You can't speak to him, only about him.</i>";
@@ -244,7 +244,7 @@ function bookPthreeFunction() {
       answerthree = "<i>Marina isn't here. You can't speak to her, only about her.</i>";
       hidePthreeElements();
   } else if (z == "33,01") {
-      answerthree = "Ziggy, I'm so proud of you, you managed to find me! When I figured out that the PEI I was investigating were, in fact, the Lakis themselves, it was already to late. They were following my every movement, with Martin's help, and they've poisoned me with their drug so that I would lose my powers. I couldn't risk saying anything to you and put you in danger. They had to be sure that you don't know anything, otherwise they would take you immediately too.<br>We have to find a way to stop Lakis' invasion of Earth, and to finally contact our mothership. I don't want to see history repeating!";
+      answerthree = "Ziggy, I'm so proud of you. You managed to find me! When I figured out that the PEI I was investigating were, in fact, the Lakis themselves, it was already too late. They were following my every movement, with Martin's help, and they've poisoned me with their drug so that I would lose my powers. I couldn't risk saying anything to you and put you in danger. They had to be sure that you don't know anything. Otherwise, they would take you immediately too.<br>We have to find a way to stop Lakis' invasion of Earth, and to finally contact our mothership. I don't want to see history repeating!";
       hidePthreeElements();
   } else if (z == "33,02") {
       answerthree = "He came to see me once in my room. He is in charge of everything here, if I understood well.";
@@ -253,7 +253,7 @@ function bookPthreeFunction() {
       answerthree = "It seems that they've given access to the console only to a specific individual. The captain of the ship, probably.";
       hidePthreeElements();
   } else if (z == "33,08" || z == "33,26" || z == "33,37") {
-      answerthree = "I'm sorry I've never shared this with you before. I was wrong to have kapt it a secret, I see that now.";
+      answerthree = "I'm sorry I've never shared this with you before. I was wrong to have kept it a secret, I see that now.";
       hidePthreeElements();
   } else if (z == "33,21") {
       answerthree = "I know she seems nice, but she is just as creepy as the rest of them.";
@@ -268,7 +268,7 @@ function bookPthreeFunction() {
       answerthree = "Poor Marina, I've tricked her with her Rubik's cube. The CEO will be giving her a hard time, I'm sure.";
       hidePthreeElements();
   } else if (z == "33,33") {
-      answerthree = "It's been hard to stay closed in that room, with nothing but a hope that you will be able to read my clues and find me. When I figured out that the PEI I was investigating were, in fact, the Lakis themselves, it was already to late. They were following my every movement, with Martin's help, and they've poisoned me with their drug so that I would lose my powers. I couldn't risk saying anything to you and put you in danger. They had to be sure that you don't know anything, otherwise they would take you immediately too.<br>We have to find a way to stop Lakis' invasion of Earth, and to finally contact our mothership. I don't want to see history repeating!";
+      answerthree = "It's been hard to stay closed in that room, with nothing but a hope that you will be able to read my clues and find me. When I figured out that the PEI I was investigating were, in fact, the Lakis themselves, it was already too late. They were following my every movement, with Martin's help, and they've poisoned me with their drug so that I would lose my powers. I couldn't risk saying anything to you and put you in danger. They had to be sure that you don't know anything. Otherwise, they would take you immediately too.<br>We have to find a way to stop Lakis' invasion of Earth, and to finally contact our mothership. I don't want to see history repeating!";
       hidePthreeElements();
   } else if (z == "33,34") {
       answerthree = "Kate isn't very fond of me. Well, I guess none of them are.";
@@ -280,7 +280,7 @@ function bookPthreeFunction() {
       answerthree = "I see that you're also carrying some stuff around. You think that this could be useful?";
       hidePthreeElements();
   } else if (z == "33,LOC07") {
-      answerthree = "This is a typical, well equipped spaceship bridge. It reminds me of the old days. We should try to open the console and contact the Nahukat mothership.";
+      answerthree = "This is a typical, well-equipped spaceship bridge. It reminds me of the old days. We should try to open the console and contact the Nahukat mothership.";
       hidePthreeElements();
   } else if (z == "34,01" || z == "34,02" || z == "34,04" || z == "34,08" || z == "34,13" || z == "34,21" || z == "34,25" || z == "34,26" || z == "34,28" || z == "34,29" || z == "34,31" || z == "34,33" || z == "34,37" || z == "34,38" || z == "34,34" || z == "34,LOC03" || z == "34,LOC07" || z == "34,SPO07") {
       answerthree = "<i>Kate Carner isn't here. You can't speak to her, only about her.</i>";
@@ -299,45 +299,45 @@ function bookPthreeFunction() {
       answerthree = "I already have my appearance.";
       hidePthreeElements();
   } else if (z == "26,02" && celia == 1 && kate == 1 || z == "26,02" && celia == 3 && kate == 1 || z == "26,02" && celia == 1 && kate == 3) {
-      answerthree = "I hope that this is the last time I'll be wearing this face as a mask.<br><i>Use the input field bellow to act while having the appearance of Timothy Pear. You can always return to your usual form by using the usual input field above.</i>";
+      answerthree = "I hope that this is the last time I'll be wearing this face as a mask.<br><i>Use the input field below to act while having the appearance of Timothy Pear. You can always return to your usual form by using the usual input field above.</i>";
       hidePthreeElements();
       document.getElementById("pearField").style.display = "block";
   } else if (z == "26,13" && celia == 1 && kate == 1 || z == "26,13" && celia == 3 && kate == 1 || z == "26,13" && celia == 1 && kate == 3) {
-      answerthree = "I've been wearing this face way too much these last few days.<br><i>Use the input field bellow to act while having the appearance of Agent 27. You can always return to your usual form by using the usual input field above.</i>";
+      answerthree = "I've been wearing this face way too much these last few days.<br><i>Use the input field below to act while having the appearance of Agent 27. You can always return to your usual form by using the usual input field above.</i>";
       hidePthreeElements();
       document.getElementById("agent27Field").style.display = "block";
   } else if (z == "26,21" && celia == 1 && kate == 1 || z == "26,21" && celia == 3 && kate == 1 || z == "26,21" && celia == 1 && kate == 3) {
-      answerthree = "Let's try with this disguise.<br><i>Use the input field bellow to act while having the appearance of Laurie Haage. You can always return to your usual form by using the usual input field above.</i>";
+      answerthree = "Let's try with this disguise.<br><i>Use the input field below to act while having the appearance of Laurie Haage. You can always return to your usual form by using the usual input field above.</i>";
       hidePthreeElements();
       document.getElementById("haageField").style.display = "block";
   } else if (z == "26,23" && celia == 1 && kate == 1) {
-      answerthree = "If somebody sees me in my mother's costume, they will capture me. I prefer the a solution that keeps both of us safe.";
+      answerthree = "If somebody sees me in my mother's costume, they will capture me. I prefer a solution that keeps both of us safe.";
       hidePthreeElements();
   } else if (z == "26,23" && celia == 3 && kate == 1 || z == "26,23" && celia == 1 && kate == 3) {
       answerthree = "There is really no reason for me to take my mother's appearance. She is not the captain of this ship.";
       hidePthreeElements();
   } else if (z == "26,25" && celia == 1 && kate == 1 || z == "26,25" && celia == 3 && kate == 1 || z == "26,25" && celia == 1 && kate == 3) {
-      answerthree = "I just have to keep that smile on my face and everybody will believe it's Celia.<br><i>Use the input field bellow to act while having the appearance of Celia Gibbs. You can always return to your usual form by using the usual input field above.</i>";
+      answerthree = "I just have to keep that smile on my face, and everybody will believe it's Celia.<br><i>Use the input field below to act while having the appearance of Celia Gibbs. You can always return to your usual form by using the usual input field above.</i>";
       hidePthreeElements();
       document.getElementById("gibbsField").style.display = "block";
   } else if (z == "26,29" && celia == 1 && kate == 1 || z == "26,34" && celia == 3 && kate == 1 || z == "26,34" && celia == 1 && kate == 3) {
-      answerthree = "I can always take the form of dear old Donald again.<br><i>Use the input field bellow to act while having the appearance of Donald Braun. You can always return to your usual form by using the usual input field above.</i>";
+      answerthree = "I can always take the form of dear old Donald again.<br><i>Use the input field below to act while having the appearance of Donald Braun. You can always return to your usual form by using the usual input field above.</i>";
       hidePthreeElements();
       document.getElementById("braunField").style.display = "block";
   } else if (z == "26,31" && celia == 1 && kate == 1 || z == "26,31" && celia == 3 && kate == 1 || z == "26,31" && celia == 1 && kate == 3) {
-      answerthree = "Marina, I'll be borrowing your face for a moment.<br><i>Use the input field bellow to act while having the appearance of Marina. You can always return to your usual form by using the usual input field above.</i>";
+      answerthree = "Marina, I'll be borrowing your face for a moment.<br><i>Use the input field below to act while having the appearance of Marina. You can always return to your usual form by using the usual input field above.</i>";
       hidePthreeElements();
       document.getElementById("marinaField").style.display = "block";
   } else if (z == "26,34" && celia == 1 && kate == 1 || z == "26,34" && celia == 3 && kate == 1 || z == "26,34" && celia == 1 && kate == 3) {
-      answerthree = "I'm sure that I can pull off this Kate costume.<br><i>Use the input field bellow to act while having the appearance of Kate Carner. You can always return to your usual form by using the usual input field above.</i>";
+      answerthree = "I'm sure that I can pull off this Kate costume.<br><i>Use the input field below to act while having the appearance of Kate Carner. You can always return to your usual form by using the usual input field above.</i>";
       hidePthreeElements();
       document.getElementById("carnerField").style.display = "block";
   } else if (z == "26,38" && celia == 1 && kate == 1 || z == "26,38" && celia == 3 && kate == 1 || z == "26,38" && celia == 1 && kate == 3) {
-      answerthree = "I guess that Fred won't mind me taking his appearance for a little bit.<br><i>Use the input field bellow to act while having the appearance of Fred Murphy. You can always return to your usual form by using the usual input field above.</i>";
+      answerthree = "I guess that Fred won't mind me taking his appearance for a little bit.<br><i>Use the input field below to act while having the appearance of Fred Murphy. You can always return to your usual form by using the usual input field above.</i>";
       hidePthreeElements();
       document.getElementById("murphyField").style.display = "block";
   } else if (z == "26,01" && celia == 2 && kate == 1 || z == "26,02" && celia == 2 && kate == 1 || z == "26,13" && celia == 2 && kate == 1 || z == "26,21" && celia == 2 && kate == 1 || z == "26,23" && celia == 2 && kate == 1 || z == "26,29" && celia == 2 && kate == 1 || z == "26,31" && celia == 2 && kate == 1 || z == "26,34" && celia == 2 && kate == 1 || z == "26,38" && celia == 2 && kate == 1) {
-      answerthree = "<i>You can't change you're appearance now, somebody could see you. Return to Celia Gibbs input field below using Celia Gibbs appearance.</i>";
+      answerthree = "<i>You can't change your appearance now, somebody could see you. Return to Celia Gibbs input field below using Celia Gibbs appearance.</i>";
       hidePthreeElements();
       document.getElementById("gibbsField").style.display = "block";
   } else if (z == "26,25" && celia == 2 && kate == 1) {
@@ -345,7 +345,7 @@ function bookPthreeFunction() {
       hidePthreeElements();
       document.getElementById("gibbsField").style.display = "block";
   } else if (z == "26,01" && celia == 1 && kate == 2 || z == "26,02" && celia == 1 && kate == 2 || z == "26,13" && celia == 1 && kate == 2 || z == "26,21" && celia == 1 && kate == 2 || z == "26,23" && celia == 1 && kate == 2 || z == "26,25" && celia == 1 && kate == 2 || z == "26,29" && celia == 1 && kate == 2 || z == "26,31" && celia == 1 && kate == 2 || z == "26,38" && celia == 1 && kate == 2) {
-      answerthree = "<i>You can't change you're appearance now, somebody could see you. Return to Kate Carner input field below using Kate Carner appearance.</i>";
+      answerthree = "<i>You can't change your appearance now, somebody could see you. Return to Kate Carner input field below using Kate Carner appearance.</i>";
       hidePthreeElements();
       document.getElementById("carnerField").style.display = "block";
   } else if (z == "26,34" && celia == 1 && kate == 2) {
@@ -353,7 +353,7 @@ function bookPthreeFunction() {
       hidePthreeElements();
       document.getElementById("carnerField").style.display = "block";
   } else if (z == "04,2783" || z == "04,2,7,8,3") {
-      answerthree = "The bridge console has a face recognition software. When I try to manipulate it, i get the message <i>'Access denied'</i>.";
+      answerthree = "The bridge console has a facial recognition software. When I try to manipulate it, i get the message <i>'Access denied'</i>.";
       hidePthreeElements();
   } else if (z == "37,02") {
       answerthree = "The CEO is in the room my mother used to be in, yelling at Marina and figuring out how did she escape.";
@@ -383,7 +383,7 @@ function bookPthreeFunction() {
       answerthree = "Fred Murphy is still in the common area, speaking to Agent 27, while the latter completely ignores him.";
       hidePthreeElements();
   } else if (z == "D01" || z == "D03" || z == "D04" || z == "D05" || z == "D06" || z == "D07" || z == "D08" || z == "D09" || z == "D10" || z == "D11" || z == "D12" || z == "D13" || z == "D14" || z == "D15" || z == "D16" || z == "D17" || z == "D18" || z == "D19" || z == "D20" || z == "D21" || z == "D22" || z == "D23" || z == "D24" || z == "D25") {
-      answerthree = "I can't skip doors, I have to get out of the CEO's office first.";
+      answerthree = "I can't skip doors. I have to get out of the CEO's office first.";
       hidePthreeElements();
   } else if (z == "D02") {
       answerthree = "I should get to my mother, but I can't really show my face in the entrance hall. Somebody might be there.";
@@ -400,11 +400,11 @@ function agent27() {
   var agent27input = agent27lowercase.toUpperCase();
   var agent27answer;
   if (agent27input == "D01" || agent27input == "D03" || agent27input == "D04" || agent27input == "D05" || agent27input == "D06" || agent27input == "D07" || agent27input == "D08" || agent27input == "D09" || agent27input == "D10" || agent27input == "D11" || agent27input == "D12" || agent27input == "D13" || agent27input == "D14" || agent27input == "D15" || agent27input == "D16" || agent27input == "D17" || agent27input == "D18" || agent27input == "D19" || agent27input == "D20" || agent27input == "D21" || agent27input == "D22" || agent27input == "D23" || agent27input == "D24" || agent27input == "D25" || agent27input == "D26" || agent27input == "D27") {
-      agent27answer = "I can't skip doors, I have to get out of the CEO's office first.";
+      agent27answer = "I can't skip doors. I have to get out of the CEO's office first.";
   } else if (agent27input == "04") {
       agent27answer = "I'm getting a message <b>'Access denied'</b>. I guess that my favourite Agent isn't the captain of the ship.";
   } else if (agent27input == "D02") {
-      agent27answer = "Am I really sure that Agent 27 isn't somewhere just around the corner? I can't risk it, I have to check before, so that I don't run into him on my way to the bridge.";
+      agent27answer = "Am I really sure that Agent 27 isn't somewhere just around the corner? I can't risk it. I have to check before so that I don't run into him on my way to the bridge.";
   } else if (agent27input == "26,01" || agent27input == "26,02" || agent27input == "26,21" || agent27input == "26,23" || agent27input == "26,25" || agent27input == "26,29" || agent27input == "26,31" || agent27input == "26,34" || agent27input == "26,38") {
       agent27answer = "I have to get back to my Ziggy appearance to be able to change it into someone else's.";
   } else if (agent27input == "26,13") {
@@ -440,11 +440,11 @@ function haage() {
   var haageinput = haagelowercase.toUpperCase();
   var haageanswer;
   if (haageinput == "D01" || haageinput == "D03" || haageinput == "D04" || haageinput == "D05" || haageinput == "D06" || haageinput == "D07" || haageinput == "D08" || haageinput == "D09" || haageinput == "D10" || haageinput == "D11" || haageinput == "D12" || haageinput == "D13" || haageinput == "D14" || haageinput == "D15" || haageinput == "D16" || haageinput == "D17" || haageinput == "D18" || haageinput == "D19" || haageinput == "D20" || haageinput == "D21" || haageinput == "D22" || haageinput == "D23" || haageinput == "D24" || haageinput == "D25" || haageinput == "D26" || haageinput == "D27") {
-      haageanswer = "I can't skip doors, I have to get out of the CEO's office first.";
+      haageanswer = "I can't skip doors. I have to get out of the CEO's office first.";
   } else if (haageinput == "04") {
       haageanswer = "The console gives a message <b>'Access denied'</b>. Dear old Laurie isn't the captain, obviously.";
   } else if (haageinput == "D02") {
-      haageanswer = "Am I really sure that Laurie Haage isn't somewhere just around the corner? I can't risk it, I have to check before, so that I don't run into her on my way to the bridge.";
+      haageanswer = "Am I really sure that Laurie Haage isn't somewhere just around the corner? I can't risk it. I have to check before so that I don't run into her on my way to the bridge.";
   } else if (haageinput == "26,01" || haageinput == "26,02" || haageinput == "26,13" || haageinput == "26,23" || haageinput == "26,25" || haageinput == "26,29" || haageinput == "26,31" || haageinput == "26,34" || haageinput == "26,38") {
       haageanswer = "I have to get back to my Ziggy appearance to be able to change it into someone else's.";
   } else if (haageinput == "26,21") {
@@ -480,11 +480,11 @@ function braun() {
   var brauninput = braunlowercase.toUpperCase();
   var braunanswer;
   if (brauninput == "D01" || brauninput == "D03" || brauninput == "D04" || brauninput == "D05" || brauninput == "D06" || brauninput == "D07" || brauninput == "D08" || brauninput == "D09" || brauninput == "D10" || brauninput == "D11" || brauninput == "D12" || brauninput == "D13" || brauninput == "D14" || brauninput == "D15" || brauninput == "D16" || brauninput == "D17" || brauninput == "D18" || brauninput == "D19" || brauninput == "D20" || brauninput == "D21" || brauninput == "D22" || brauninput == "D23" || brauninput == "D24" || brauninput == "D25" || brauninput == "D26" || brauninput == "D27") {
-      braunanswer = "I can't skip doors, I have to get out of the CEO's office first.";
+      braunanswer = "I can't skip doors. I have to get out of the CEO's office first.";
   } else if (brauninput == "04") {
       braunanswer = "The console gives a message <b>'Access denied'</b>. I have to say, it would be hard to imagine Donald as the captain after the lecture he received from the CEO half an hour ago.";
   } else if (brauninput == "D02") {
-      braunanswer = "Am I really sure that Donald Braun isn't somewhere just around the corner? I can't risk it, I have to check before, so that I don't run into him on my way to the bridge.";
+      braunanswer = "Am I really sure that Donald Braun isn't somewhere just around the corner? I can't risk it. I have to check before so that I don't run into him on my way to the bridge.";
   } else if (brauninput == "26,01" || brauninput == "26,02" || brauninput == "26,13" || brauninput == "26,21" || brauninput == "26,23" || brauninput == "26,25" || brauninput == "26,31" || brauninput == "26,34" || brauninput == "26,38") {
       braunanswer = "I have to get back to my Ziggy appearance to be able to change it into someone else's.";
   } else if (brauninput == "26,29") {
@@ -520,7 +520,7 @@ function marina() {
   var marinainput = marinalowercase.toUpperCase();
   var marinanswer;
   if (marinainput == "D01" || marinainput == "D03" || marinainput == "D04" || marinainput == "D05" || marinainput == "D06" || marinainput == "D07" || marinainput == "D08" || marinainput == "D09" || marinainput == "D10" || marinainput == "D11" || marinainput == "D12" || marinainput == "D13" || marinainput == "D14" || marinainput == "D15" || marinainput == "D16" || marinainput == "D17" || marinainput == "D18" || marinainput == "D19" || marinainput == "D20" || marinainput == "D21" || marinainput == "D22" || marinainput == "D23" || marinainput == "D24" || marinainput == "D25" || marinainput == "D26" || marinainput == "D27") {
-      marinanswer = "I can't skip doors, I have to get out of the CEO's office first.";
+      marinanswer = "I can't skip doors. I have to get out of the CEO's office first.";
   } else if (marinainput == "04") {
       marinanswer = "I'm getting a message <b>'Access denied'</b>. Marina must be head of security, nothing more.";
   } else if (marinainput == "D02") {
@@ -560,11 +560,11 @@ function murphy() {
   var murphyinput = murphylowercase.toUpperCase();
   var murphyanswer;
   if (murphyinput == "D01" || murphyinput == "D03" || murphyinput == "D04" || murphyinput == "D05" || murphyinput == "D06" || murphyinput == "D07" || murphyinput == "D08" || murphyinput == "D09" || murphyinput == "D10" || murphyinput == "D11" || murphyinput == "D12" || murphyinput == "D13" || murphyinput == "D14" || murphyinput == "D15" || murphyinput == "D16" || murphyinput == "D17" || murphyinput == "D18" || murphyinput == "D19" || murphyinput == "D20" || murphyinput == "D21" || murphyinput == "D22" || murphyinput == "D23" || murphyinput == "D24" || murphyinput == "D25" || murphyinput == "D26" || murphyinput == "D27") {
-      murphyanswer = "I can't skip doors, I have to get out of the CEO's office first.";
+      murphyanswer = "I can't skip doors. I have to get out of the CEO's office first.";
   } else if (murphyinput == "04") {
       murphyanswer = "I'm getting a message <b>'Access denied'</b>. It would be hard to imagine Fred as the ship's captain. I'm under the impression that his colleagues don't have a lot of respect for him.";
   } else if (murphyinput == "D02") {
-      murphyanswer = "Am I really sure that Fred Murphy isn't somewhere just around the corner? I can't risk it, I have to check before, so that I don't run into him on my way to the bridge.";
+      murphyanswer = "Am I really sure that Fred Murphy isn't somewhere just around the corner? I can't risk it. I have to check before so that I don't run into him on my way to the bridge.";
   } else if (murphyinput == "26,01" || murphyinput == "26,02" || murphyinput == "26,13" || murphyinput == "26,21" || murphyinput == "26,23" || murphyinput == "26,25" || murphyinput == "26,29" || murphyinput == "26,31" || murphyinput == "26,34") {
       murphyanswer = "I have to get back to my Ziggy appearance to be able to change it into someone else's.";
   } else if (murphyinput == "26,38") {
@@ -610,7 +610,7 @@ function pear() {
   } else if (pearinput == "02") {
   		pearanswer = "The scary CEO Pear that I borrowed the face from.";
   } else if (pearinput == "04") {
-  		pearanswer = "The bridge console scans my face, and gives he a message: <b>Welcome captain Pear.</b><br>We manage to make contact with Nahukat mothership. My mother is out of herself, explaining to the person on the other side who she is and what's happened during all this time since they've left. The man on the other side seems to be in disbelief at first, but quickly gets ecstatic just like my mother.<br>After establishing where the call is coming from, the Nahukat mothership informs us that it will take them 3 years to get to Earth. But both my mother and I know that Lakis could do a lot of damage by then.<br>We explain the situation to the mothership and they suggest a radical plan - we should take the Laki spaceship away from Earth, with all of the Lakis on board. There is a black hole within our reach, and sending the Lakis there will make it impossible for them to invade another planet ever again.<br>My mother insists that she goes alone, but we soon realise that she can't navigate the ship. With all that drug in her system that the Lakis have been giving her, she will need some time to get her powers back. She can't take the form of captain Timothy Pear, so she won't be ablet to operate the console. I convince her that the only solution is that I go. We agree that there is no point in both of us taking that risk, in case that something goes wrong and somebody has to think of a plan B.<br>My mother leaves in tears through the escape pod exit, wishing me luck.<br>OK, now for the plan. I'm supposed to take the ship to the event horizon of Lazarus black hole, and leave with the escape pod to avoid being sucked in together with the Laki spaceship. Timing will be crucial for the success of the operation. The Nahukat mothership sends me a space map along with the instructions on how to fly the ship. I should be able to figure out how to do all of that in five minutes, right?<br><i>Take envelope <b>SPO07</b>. Remove cards <b>13</b>, <b>21</b>, <b>25</b>, <b>29</b>, <b>31</b>, <b>33</b>, <b>34</b> and <b>38</b>.<br>Remove all of the map parts.</i>";
+  		pearanswer = "The bridge console scans my face and gives me a message: <b>Welcome captain Pear.</b><br>We manage to make contact with Nahukat mothership. My mother is out of herself, explaining to the person on the other side who she is, and what's happened during all this time since they've left. The man on the other side seems to be in disbelief at first, but quickly gets ecstatic, just like my mother.<br>After establishing where the call is coming from, the Nahukat mothership informs us that it will take them three years to get to Earth. But both my mother and I know that Lakis could do a lot of damage by then.<br>We explain the situation to the mothership, and they suggest a radical plan - we should take the Laki spaceship away from Earth, with all of the Lakis on board. There is a black hole within our reach, and sending the Lakis there will make it impossible for them to invade another planet ever again.<br>My mother insists that she goes alone, but we soon realise that she can't navigate the ship. With all that drug in her system that the Lakis had been giving her, she will need some time to get her powers back. She can't take the form of captain Timothy Pear, so she won't be able to operate the console. I convince her that the only solution is that I go. We agree that there is no point in both of us taking that risk, in case that something goes wrong and somebody has to think of a plan B.<br>My mother leaves in tears through the escape pod exit, wishing me luck.<br>OK, now for the plan. I'm supposed to take the ship to the event horizon of Lazarus Black Hole, and leave with the escape pod to avoid being sucked in together with the Laki spaceship. Timing will be crucial for the success of the operation. The Nahukat mothership sends me a space map along with the instructions on how to fly the ship. I should be able to figure out how to do all of that in five minutes, right?<br><i>Take envelope <b>SPO07</b>. Remove cards <b>13</b>, <b>21</b>, <b>25</b>, <b>29</b>, <b>31</b>, <b>33</b>, <b>34</b> and <b>38</b>.<br>Remove all of the map parts.</i>";
   } else if (pearinput == "08") {
   		pearanswer = "My ability to connect to animals and plants. I'm completely used to it by now.<br><i>To use this ability, enter ability card number <b>08</b> followed by the card number of the plant or animal you want to have an effect on in the input field, separated by a comma.</i>";
   } else if (pearinput == "13") {
@@ -620,7 +620,7 @@ function pear() {
   } else if (pearinput == "23") {
   		pearanswer = "I saw that my mother went somewhere that resembles a lot to a bridge of a spaceship.";
   } else if (pearinput == "26") {
-  		pearanswer = "This ability is incredibly useful right now.<br><i>To use this ability, enter ability card number <b>26</b> followed by the card number of the person you want to take appearance of in the input field, separated by a comma.</i>";
+  		pearanswer = "This ability is incredibly useful right now.<br><i>To use this ability, enter ability card number <b>26</b> followed by the card number of the person you want to take the appearance of in the input field, separated by a comma.</i>";
   } else if (pearinput == "28") {
   		pearanswer = "My mother's super useful gem. It's a stone from our home planet that connects us, the Nahukat people, to our true - in lack of a better term - supernatural selves.";
   } else if (pearinput == "31") {
@@ -628,21 +628,21 @@ function pear() {
   } else if (pearinput == "33") {
   		pearanswer = "My mother right next to me, finally! She seems well and in good shape, thankfully.";
   } else if (pearinput == "37") {
-  		pearanswer = "I guess this is my new ability. I have to only think of somebody and I immediately see what this person is seeing. I promise to only use it in emergencies like this one.<br><i>To use this ability, enter ability card number <b>37</b> followed by the card number of the person whose eyes you want to see through in the input field, separated by a comma.</i>";
+  		pearanswer = "I guess this is my new ability. I have to only think of somebody, and I immediately see what this person is seeing. I promise to only use it in emergencies like this one.<br><i>To use this ability, enter ability card number <b>37</b> followed by the card number of the person whose eyes you want to see through in the input field, separated by a comma.</i>";
   } else if (pearinput == "01,LOC03") {
       pearanswer = "I have to figure out how to get to my mother now.<br><i>To exit the office, enter 'D02' into the Digital Game Book input field.</i>";
   } else if (pearinput == "LOC07") {
-  		pearanswer = "There is no doubt anymore that the PEI base is actually a spaceship. There is a lot of equipment that I wouldn't know how to handle, but fortunately my mother <b>(33)</b>, who is an experienced astronaut, is here to help. The ship is operated with the main bridge console. <b>(04)</b>.";
+  		pearanswer = "There is no doubt anymore that the PEI base is actually a spaceship. There is a lot of equipment that I wouldn't know how to handle, but fortunately, my mother <b>(33)</b>, who is an experienced astronaut, is here to help. The ship is operated with the main bridge console. <b>(04)</b>.";
   } else if (pearinput == "SPO07") {
-      pearanswer = "The space map that the Nahukat mothership sent to me along with the instructions on how to travel to Lazarus Black Hole. They said that wormholes make the space-time bend. So, if we imagined the 3D space as a 2D surface, and two wormhole mouths on two distant parts of this surface, travelling through it would be as if we bended the surface and put the mouths right on top of each other. Lorentz Wormhole Mouth is the nearest to me, so I should start there. Apparently, most wormholes have multiple tunnels, contrary to what I thought. So, I should choose the one that leads to Ellis Wormhole entrance. I should enter the corresponding coordinates in the console to do so.<br><i>To travel from Lorentz to Ellis, enter bridge console's card number <b>04</b>, followed by a 4 number sequence, in the input field, separated by a comma. For example, if the coordinates to go to Ellis from Lorentz are 1111, enter '04,1111' in the input field and press enter.";
+      pearanswer = "The space map that the Nahukat mothership sent to me along with the instructions on how to travel to Lazarus Black Hole. They said that wormholes make space-time bend. So, if we imagined the 3D space as a 2D surface, and two wormhole mouths on two distant parts of this surface, travelling through it would be as if we bent the surface and put the mouths right on top of each other. Lorentz Wormhole Mouth is the nearest to me, so I should start there. Apparently, most wormholes have multiple tunnels, contrary to what I thought. So, I should choose the one that leads to the Ellis Wormhole entrance. I should enter the corresponding coordinates in the console to do so.<br><i>To travel from Lorentz to Ellis, enter bridge console's card number <b>04</b>, followed by a 4 number sequence, in the input field, separated by a comma. For example, if the coordinates to go to Ellis from Lorentz are 1111, enter '04,1111' in the input field and press enter.";
   } else if (pearinput == "01,01") {
       pearanswer = "This is by far the most dangerous part of my quest of saving my mother. But I have to go through with it!";
   } else if (pearinput == "01,02") {
       pearanswer = "This guy is obviously the absolute boss around here.";
   } else if (pearinput == "01,04") {
-      pearanswer = "Luckily my mother is here, otherwise I wouldn't know what to do with this!"
+      pearanswer = "Luckily, my mother is here. Otherwise I wouldn't know what to do with this!"
   } else if (pearinput == "01,08") {
-      pearanswer = "I don't think that there are may plants or animals in this place, but you never know when the power could come in handy.";
+      pearanswer = "I don't think that there are many plants or animals in this place, but you never know when the power could come in handy.";
   } else if (pearinput == "01,13") {
       pearanswer = "I've got a feeling that even the Lakis are afraid of this guy.";
   } else if (pearinput == "01,21") {
@@ -656,7 +656,7 @@ function pear() {
   } else if (pearinput == "01,29") {
       pearanswer = "I wonder did he already notice that his keycard is missing.";
   } else if (pearinput == "01,31") {
-      pearanswer = "Now that she's discovered that my mother has escaped, we have to move quickly.";
+      pearanswer = "Now that she knows my mother escaped, we have to move quickly.";
   } else if (pearinput == "01,33") {
       pearanswer = "Mother, you're finally here!";
   } else if (pearinput == "01,34") {
@@ -672,7 +672,7 @@ function pear() {
   } else if (pearinput == "01,LOC07") {
       pearanswer = "A spaceship hidden in plain sight, in the middle of Starchester? Unbelievable.";
   } else if (pearinput == "01,SPO07") {
-      pearanswer = "If only my mother was here, she is the astronaut in the family, not me! How am I going to figure out the coordinates? I think that space-time isn't the only thing that will be bending, my mind feels rather bent too.";
+      pearanswer = "If only my mother were here! She is the astronaut in the family, not me! How am I going to figure out the coordinates? I think that space-time isn't the only thing that will be bending, my mind feels rather bent too.";
   } else if (pearinput == "02,01" || pearinput == "02,02" || pearinput == "02,04" || pearinput == "02,08" || pearinput == "02,13" || pearinput == "02,21" || pearinput == "02,25" || pearinput == "02,26" || pearinput == "02,28" || pearinput == "02,29" || pearinput == "02,31" || pearinput == "02,33" || pearinput == "02,34" || pearinput == "02,37" || pearinput == "02,38" || pearinput == "02,LOC03" || pearinput == "02,LOC07" || pearinput == "02,SPO07") {
       pearanswer = "<i>Timothy Pear isn't here. You can't speak to him, only about him.</i>";
   } else if (pearinput == "13,01" || pearinput == "13,02" || pearinput == "13,04" || pearinput == "13,08" || pearinput == "13,13" || pearinput == "13,21" || pearinput == "13,25" || pearinput == "13,26" || pearinput == "13,28" || pearinput == "13,29" || pearinput == "13,31" || pearinput == "13,33" || pearinput == "13,34" || pearinput == "13,37" || pearinput == "13,38" || pearinput == "13,LOC03" || pearinput == "13,LOC07" || pearinput == "13,SPO07") {
@@ -686,13 +686,13 @@ function pear() {
   } else if (pearinput == "31,01" || pearinput == "31,02" || pearinput == "31,04" || pearinput == "31,08" || pearinput == "31,13" || pearinput == "31,21" || pearinput == "31,25" || pearinput == "31,26" || pearinput == "31,28" || pearinput == "31,29" || pearinput == "31,31" || pearinput == "31,33" || pearinput == "31,34" || pearinput == "31,37" || pearinput == "31,38" || pearinput == "31,LOC03" || pearinput == "31,LOC07" || pearinput == "31,SPO07") {
       pearanswer = "<i>Marina isn't here. You can't speak to her, only about her.</i>";
   } else if (pearinput == "33,01") {
-      pearanswer = "Ziggy, I'm so proud of you, you managed to find me! When I figured out that the PEI I was investigating were, in fact, the Lakis themselves, it was already to late. They were following my every movement, with Martin's help, and they've poisoned me with their drug so that I would lose my powers. I couldn't risk saying anything to you and put you in danger. They had to be sure that you don't know anything, otherwise they would take you immediately too.<br>We have to find a way to stop Lakis' invasion of Earth, and to finally contact our mothership. I don't want to see history repeating!";
+      pearanswer = "Ziggy, I'm so proud of you. You managed to find me! When I figured out that the PEI I was investigating were, in fact, the Lakis themselves, it was already too late. They were following my every movement, with Martin's help, and they've poisoned me with their drug so that I would lose my powers. I couldn't risk saying anything to you and put you in danger. They had to be sure that you don't know anything. Otherwise, they would take you immediately too.<br>We have to find a way to stop Lakis' invasion of Earth, and to finally contact our mothership. I don't want to see history repeating!";
   } else if (pearinput == "33,02") {
       pearanswer = "He came to see me once in my room. He is in charge of everything here, if I understood well.";
   } else if (pearinput == "33,04") {
       pearanswer = "It seems that they've given access to the console only to a specific individual. The captain of the ship, probably.";
   } else if (pearinput == "33,08" || pearinput == "33,26" || pearinput == "33,37") {
-      pearanswer = "I'm sorry I've never shared this with you before. I was wrong to have kapt it a secret, I see that now.";
+      pearanswer = "I'm sorry I've never shared this with you before. I was wrong to have kept it a secret, I see that now.";
   } else if (pearinput == "33,21") {
       pearanswer = "I know she seems nice, but she is just as creepy as the rest of them.";
   } else if (pearinput == "33,25") {
@@ -702,23 +702,23 @@ function pear() {
   } else if (pearinput == "33,31") {
       pearanswer = "Poor Marina, I've tricked her with her Rubik's cube. The CEO will be giving her a hard time, I'm sure.";
   } else if (pearinput == "33,33") {
-      pearanswer = "It's been hard to stay closed in that room, with nothing but a hope that you will be able to read my clues and find me. When I figured out that the PEI I was investigating were, in fact, the Lakis themselves, it was already to late. They were following my every movement, with Martin's help, and they've poisoned me with their drug so that I would lose my powers. I couldn't risk saying anything to you and put you in danger. They had to be sure that you don't know anything, otherwise they would take you immediately too.<br>We have to find a way to stop Lakis' invasion of Earth, and to finally contact our mothership. I don't want to see history repeating!";
+      pearanswer = "It's been hard to stay closed in that room, with nothing but a hope that you will be able to read my clues and find me. When I figured out that the PEI I was investigating were, in fact, the Lakis themselves, it was already too late. They were following my every movement, with Martin's help, and they've poisoned me with their drug so that I would lose my powers. I couldn't risk saying anything to you and put you in danger. They had to be sure that you don't know anything. Otherwise, they would take you immediately too.<br>We have to find a way to stop Lakis' invasion of Earth, and to finally contact our mothership. I don't want to see history repeating!";
   } else if (pearinput == "33,34") {
       pearanswer = "Kate isn't very fond of me. Well, I guess none of them are.";
   } else if (pearinput == "33,38") {
       pearanswer = "I've gotten an impression that he is the least competent member of the lab team.";
   } else if (pearinput == "33,LOC07") {
-      pearanswer = "This is a typical, well equipped spaceship bridge. It reminds me of the old days. We should try to open the console and contact the Nhukat mothership.";
+      pearanswer = "This is a typical, well-equipped spaceship bridge. It reminds me of the old days. We should try to open the console and contact the Nhukat mothership.";
   } else if (pearinput == "34,01" || pearinput == "34,02" || pearinput == "34,04" || pearinput == "34,08" || pearinput == "34,13" || pearinput == "34,21" || pearinput == "34,25" || pearinput == "34,26" || pearinput == "34,28" || pearinput == "34,29" || pearinput == "34,31" || pearinput == "34,33" || pearinput == "34,37" || pearinput == "34,38" || pearinput == "34,34" || pearinput == "34,LOC03" || pearinput == "34,LOC07" || pearinput == "34,SPO07") {
       pearanswer = "<i>Kate Carner isn't here. You can't speak to her, only about her.</i>";
   } else if (pearinput == "38,01" || pearinput == "38,02" || pearinput == "38,04" || pearinput == "38,08" || pearinput == "38,13" || pearinput == "38,21" || pearinput == "38,25" || pearinput == "38,26" || pearinput == "38,28" || pearinput == "38,29" || pearinput == "38,38" || pearinput == "38,33" || pearinput == "38,34" || pearinput == "38,37" || pearinput == "38,38" || pearinput == "38,LOC03" || pearinput == "38,LOC07" || pearinput == "38,SPO07") {
       pearanswer = "<i>Fred Murphy isn't here. You can't speak to him, only about him.</i>";
   } else if (pearinput == "04,2783" || pearinput == "04,2,7,8,3") {
-      pearanswer = "As I reach the Lorentz wormhole entrance, I see four different tunnels. I enter the coordinates into the console, and the ship goes right into one of them.<br>AAAAAAAA! This is super fast and super scary!<br>The ship exits the tunnel and there are five new choices ahead of me. Nahukat mothership sends me a message to continue from Ellis to Visser wormhole entrance.<br><i>To go to Visser from Ellis, enter bridge console card number followed by the corresponding coordinates in the input field, separated by a comma.</i>";
+      pearanswer = "As I reach the Lorentz wormhole entrance, I see four different tunnels. I enter the coordinates into the console, and the ship goes right into one of them.<br>AAAAAAAA! This is super fast and super scary!<br>The ship exits the tunnel, and there are five new choices ahead of me. Nahukat mothership sends me a message to continue from Ellis to the Visser Wormhole entrance.<br><i>To go to Visser from Ellis, enter bridge console card number followed by the corresponding coordinates in the input field, separated by a comma.</i>";
   } else if (pearinput == "04,1370" || pearinput == "04,1,3,7,0") {
-      pearanswer = "I enter the coordinates into the console, and the ship goes to one of the tunnels. I go through this next passage feeling less scared, after I've already done this once before. At the end of the tunnel, there are three new tunnels I can choose from. Nahukat mothership tells me to go directy to Lazarus Black Hole, the exit of the tunnel is right next to it.<br><i>To go to Lazarus Black Hole from Visser, enter bridge console card number followed by the corresponding coordinates in the input field, separated by a comma.</i>";
+      pearanswer = "I enter the coordinates into the console, and the ship goes to one of the tunnels. I go through this next passage feeling less scared after I've already done this once before. At the end of the tunnel, there are three new tunnels I can choose from. Nahukat mothership tells me to go directly to Lazarus Black Hole, the exit of the tunnel is right next to it.<br><i>To go to Lazarus Black Hole from Visser, enter bridge console card number followed by the corresponding coordinates in the input field, separated by a comma.</i>";
   } else if (pearinput == "04,4163" || pearinput == "04,4,1,6,3") {
-      pearanswer = "Here goes nothing!<br>I enter the final coordinates into the console, and after a disturbing but quick ride, I find myself right in front of the black hole. It's breathtaking! I find myself gazing into it, when I hear the Lakis forcing their way into the bridge. I hurry to the escape pod, prepared to take off as soon as we get near to the event horizon.<br>3...2...1...and go! What's happening? Have I left the ship too late? I can't...fight...the gravity...<br><i>Take card <b>LOC08</b>. Remove cards <b>02</b>, <b>04</b>, <b>LOC07</b> and special object <b>SPO07</b>. Return to your Ziggy appearance and use the usual input field above.</i>";
+      pearanswer = "Here goes nothing!<br>I enter the final coordinates into the console, and after a disturbing but quick ride, I find myself right in front of the black hole. It's breathtaking! I find myself gazing into it when I hear the Lakis forcing their way into the bridge. I hurry to the escape pod, prepared to take off as soon as we get near to the event horizon.<br>3...2...1...and go! What's happening? Have I left the ship too late? I can't...fight...the gravity...<br><i>Take card <b>LOC08</b>. Remove cards <b>02</b>, <b>04</b>, <b>LOC07</b> and special object <b>SPO07</b>. Return to your Ziggy appearance and use the usual input field above.</i>";
   } else if (pearinput == "26,01" || pearinput == "26,13" || pearinput == "26,21" || pearinput == "26,23" || pearinput == "26,25" || pearinput == "26,29" || pearinput == "26,31" || pearinput == "26,34" || pearinput == "26,38") {
       pearanswer = "I have to get back to my Ziggy appearance to be able to change it into someone else's.";
   } else if (pearinput == "26,02") {
@@ -742,7 +742,7 @@ function pear() {
   } else if (pearinput == "37,38") {
       pearanswer = "Fred Murphy is still in the common area, speaking to Agent 27, while the latter completely ignores him.";
   } else if (pearinput == "D01" || pearinput == "D03" || pearinput == "D04" || pearinput == "D05" || pearinput == "D06" || pearinput == "D07" || pearinput == "D08" || pearinput == "D09" || pearinput == "D10" || pearinput == "D11" || pearinput == "D12" || pearinput == "D13" || pearinput == "D14" || pearinput == "D15" || pearinput == "D16" || pearinput == "D17" || pearinput == "D18" || pearinput == "D19" || pearinput == "D20" || pearinput == "D21" || pearinput == "D22" || pearinput == "D23" || pearinput == "D24" || pearinput == "D25" || pearinput == "D26" || pearinput == "D27") {
-      pearanswer = "I can't skip doors, I have to get out of the CEO's office first.";
+      pearanswer = "I can't skip doors. I have to get out of the CEO's office first.";
   } else if (pearinput == "D02") {
       pearanswer = "The CEO just left the room, and there is a great chance that somebody saw him do it. I can't risk pretending I was the CEO, they would immediately know that something's wrong.";
 	} else {
@@ -756,15 +756,15 @@ function gibbs() {
   var gibbsinput = gibbslowercase.toUpperCase();
   var gibbsanswer;
   if (gibbsinput == "D01" || gibbsinput == "D03" || gibbsinput == "D06" || gibbsinput == "D07" || gibbsinput == "D08" || gibbsinput == "D09" || gibbsinput == "D10" || gibbsinput == "D12" || gibbsinput == "D13" || gibbsinput == "D14" || gibbsinput == "D15" || gibbsinput == "D16" || gibbsinput == "D17" || gibbsinput == "D18" || gibbsinput == "D19" || gibbsinput == "D20" || gibbsinput == "D21" || gibbsinput == "D26" || gibbsinput == "D27") {
-      gibbsanswer = "I should go to meet my mother in the bridge.";
+      gibbsanswer = "I should go meet my mother on the bridge.";
   } else if (gibbsinput == "04") {
       gibbsanswer = "I'm getting a message <b>'Access denied'</b>. Well, I guess she is a big young to be in charge of the ship.";
   } else if (gibbsinput == "D02" && door == 1) {
       door = 2;
       celia = 2;
-      gibbsanswer = "I open the door and go to the entrance hall. Laurie Haage is there, and she nods in my direction. I can also see Agent 27, Donald Braun and Fred Murphy in the common area.<br><i>You can't use your power to take someone's appearance right now, in front of the Lakis. Turn over card <b>26</b> for the time being, face down. Remove card <b>LOC03</b>.</i>";
+      gibbsanswer = "I open the door and go to the entrance hall. Laurie Haage is there, and she nods in my direction. I can also see Agent 27, Donald Braun, and Fred Murphy in the common area.<br><i>You can't use your power to take someone's appearance right now, in front of the Lakis. Turn over card <b>26</b> for the time being, face down. Remove card <b>LOC03</b>.</i>";
   } else if (gibbsinput == "D02" && door == 2 || gibbsinput == "D02" && door == 3 || gibbsinput == "D02" && door == 4) {
-      gibbsanswer = "I should go to meet my mother in the bridge.";
+      gibbsanswer = "I should go meet my mother on the bridge.";
   } else if (gibbsinput == "D04" && door == 1) {
       gibbsanswer = "I can't skip doors.";
   } else if (gibbsinput == "D04" && door == 2) {
@@ -775,14 +775,14 @@ function gibbs() {
       door = 3;
       gibbsanswer = "I pass the common area, trying not to make eye contact with anybody. I open the door and find myself in the corridor right to the security control room. I hear the CEO yelling from one of the rooms in the right staff quarters wing.";
   } else if (gibbsinput == "D05" && door == 3 || gibbsinput == "D05" && door == 4) {
-      gibbsanswer = "I should go to meet my mother in the bridge.";
+      gibbsanswer = "I should go meet my mother on the bridge.";
   } else if (gibbsinput == "D11" && door == 1 || gibbsinput == "D11" && door == 2) {
       gibbsanswer = "I can't skip doors.";
   } else if (gibbsinput == "D11" && door == 3) {
       door = 4;
       gibbsanswer = "I pass the doors and enter a corridor that should lead me to the bridge.";
   } else if (gibbsinput == "D11" && door == 4) {
-      gibbsanswer = "I should go to meet my mother in the bridge.";
+      gibbsanswer = "I should go meet my mother on the bridge.";
   } else if (gibbsinput == "D22" && door == 1 || gibbsinput == "D22" && door == 2 || gibbsinput == "D22" && door == 3) {
       gibbsanswer = "I can't skip doors.";
   } else if (gibbsinput == "D22" && door == 4) {
@@ -791,7 +791,7 @@ function gibbs() {
       gibbsanswer = "I can't skip doors.";
   } else if (gibbsinput == "D23" && door == 4) {
       celia = 3;
-      gibbsanswer = "I finally get to the bridge. My mother is there, and I quickly change my appearance back to Ziggy. This brings a smile of relief to her face and we jump into each other's arms.<br>Take card <b>LOC07</b>.<br><i>Remove card <b>23</b>.<br>Turn over card <b>26</b>, face up. You can use your power again. <br>Return to your Ziggy appearance and use the usual input field above.</i>";
+      gibbsanswer = "I finally get to the bridge. My mother is there, and I quickly change my appearance back to Ziggy. This brings a smile of relief to her face, and we jump into each other's arms.<br>Take card <b>LOC07</b>.<br><i>Remove card <b>23</b>.<br>Turn over card <b>26</b>, face up. You can use your power again. <br>Return to your Ziggy appearance and use the usual input field above.</i>";
   } else if (gibbsinput == "D24" && door == 1 || gibbsinput == "D24" && door == 2 || gibbsinput == "D24" && door == 3) {
       gibbsanswer = "I can't skip doors.";
   } else if (gibbsinput == "D24" && door == 4) {
@@ -839,15 +839,15 @@ function carner() {
   var carnerinput = carnerlowercase.toUpperCase();
   var carneranswer;
   if (carnerinput == "D01" || carnerinput == "D03" || carnerinput == "D06" || carnerinput == "D07" || carnerinput == "D08" || carnerinput == "D09" || carnerinput == "D10" || carnerinput == "D12" || carnerinput == "D13" || carnerinput == "D14" || carnerinput == "D15" || carnerinput == "D16" || carnerinput == "D17" || carnerinput == "D18" || carnerinput == "D19" || carnerinput == "D20" || carnerinput == "D21" || carnerinput == "D26" || carnerinput == "D27") {
-      carneranswer = "I should go to meet my mother in the bridge.";
+      carneranswer = "I should go meet my mother on the bridge.";
   } else if (carnerinput == "04") {
       carneranswer = "I'm getting a message <b>'Access denied'</b>. Kate doesn't seem to be the captain of the ship. She is more of a lab geek.";
   } else if (carnerinput == "D02" && door == 1) {
       door = 2;
       kate = 2;
-      carneranswer = "I open the door and go to the entrance hall. Laurie Haage is there, and she nods in my direction. I can also see Agent 27, Donald Braun and Fred Murphy in the common area.<br><i>You can't use your power to take someone's appearance right now, in front of the Lakis. Turn over card <b>26</b> for the time being, face down. Remove card <b>LOC03</b>.</i>";
+      carneranswer = "I open the door and go to the entrance hall. Laurie Haage is there, and she nods in my direction. I can also see Agent 27, Donald Braun, and Fred Murphy in the common area.<br><i>You can't use your power to take someone's appearance right now, in front of the Lakis. Turn over card <b>26</b> for the time being, face down. Remove card <b>LOC03</b>.</i>";
   } else if (carnerinput == "D02" && door == 2 || carnerinput == "D02" && door == 3 || carnerinput == "D02" && door == 4) {
-      carneranswer = "I should go to meet my mother in the bridge.";
+      carneranswer = "I should go meet my mother on the bridge.";
   } else if (carnerinput == "D04" && door == 1) {
       carneranswer = "I can't skip doors.";
   } else if (carnerinput == "D04" && door == 2) {
@@ -858,14 +858,14 @@ function carner() {
       door = 3;
       carneranswer = "I pass the common area, trying not to make eye contact with anybody. I open the door and find myself in the corridor right to the security control room. I hear the CEO yelling from one of the rooms in the right staff quarters wing.";
   } else if (carnerinput == "D05" && door == 3 || carnerinput == "D05" && door == 4) {
-      carneranswer = "I should go to meet my mother in the bridge.";
+      carneranswer = "I should go meet my mother on the bridge.";
   } else if (carnerinput == "D11" && door == 1 || carnerinput == "D11" && door == 2) {
       carneranswer = "I can't skip doors.";
   } else if (carnerinput == "D11" && door == 3) {
       door = 4;
       carneranswer = "I pass the doors and enter a corridor that should lead me to the bridge.";
   } else if (carnerinput == "D11" && door == 4) {
-      carneranswer = "I should go to meet my mother in the bridge.";
+      carneranswer = "I should go meet my mother on the bridge.";
   } else if (carnerinput == "D22" && door == 1 || carnerinput == "D22" && door == 2 || carnerinput == "D22" && door == 3) {
       carneranswer = "I can't skip doors.";
   } else if (carnerinput == "D22" && door == 4) {
@@ -874,7 +874,7 @@ function carner() {
       carneranswer = "I can't skip doors.";
   } else if (carnerinput == "D23" && door == 4) {
       kate = 3;
-      carneranswer = "I finally get to the bridge. My mother is there, and I quickly change my appearance back to Ziggy. This brings a smile of relief to her face and we jump into each other's arms.<br>Take card <b>LOC07</b>.<br><i>Remove card <b>23</b>.<br>Turn over card <b>26</b>, face up. You can use your power again. <br>Return to your Ziggy appearance and use the usual input field above.</i>";
+      carneranswer = "I finally get to the bridge. My mother is there, and I quickly change my appearance back to Ziggy. This brings a smile of relief to her face, and we jump into each other's arms.<br>Take card <b>LOC07</b>.<br><i>Remove card <b>23</b>.<br>Turn over card <b>26</b>, face up. You can use your power again. <br>Return to your Ziggy appearance and use the usual input field above.</i>";
   } else if (carnerinput == "D24" && door == 1 || carnerinput == "D24" && door == 2 || carnerinput == "D24" && door == 3) {
       carneranswer = "I can't skip doors.";
   } else if (carnerinput == "D24" && door == 4) {

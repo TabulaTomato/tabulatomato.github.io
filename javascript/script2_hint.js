@@ -266,7 +266,7 @@ function hintPtwoFunction() {
       document.getElementById("hintPtwo03_1").style.display = "block";
       document.getElementById("hintPtwo03_2").style.display = "block";
   } else if (yhint == "04") {
-  		hintanswertwo = "The camera is to high for you to reach it. Is there a way you could make the tree help you in your task?";
+  		hintanswertwo = "The camera is too high for you to reach it. Is there a way you could make the tree help you in your task?";
       hidePtwoHints();
       document.getElementById("hint04_container").style.display = "block";
   } else if (yhint == "05") {
@@ -289,7 +289,7 @@ function hintPtwoFunction() {
   		hintanswertwo = "To use this power, enter card number <b>08</b> followed by the card number of the plant or animal you want to use it on, separated by a comma.";
       hidePtwoHints();
   } else if (yhint == "09") {
-  		hintanswertwo = "Dr Turner said that he will go to the PEI base after he finished his visit to the hospital. Maybe there is a way to follow his car.";
+  		hintanswertwo = "Dr Turner said that he would go to the PEI base after he finished his visit to the hospital. Maybe there is a way to follow his car.";
       hidePtwoHints();
       document.getElementById("hint09_container").style.display = "block";
   } else if (yhint == "10") {
@@ -600,7 +600,7 @@ function hintPtwo02_2_2show() {
 };
 
 function hintPtwo03_1show() {
-  document.getElementById("hintPtwo03_1Answer").innerHTML = "Dr Turner said that he will go to the PEI base after he finished his visit to the hospital. Maybe there is a way to follow his car.";
+  document.getElementById("hintPtwo03_1Answer").innerHTML = "Dr Turner said that he would go to the PEI base after he finished his visit to the hospital. Maybe there is a way to follow his car.";
   document.getElementById("hintPtwo03_2").style.display = "none";
   document.getElementById("hint03_1_1_container").style.display = "block";
 };
@@ -882,7 +882,7 @@ function hintPtwo22_1_1show() {
 };
 
 function hintPtwo22_1_2show() {
-  document.getElementById("hintPtwo22_1_2Answer").innerHTML = "Use your power to connect to plants and animals on the cat. Cat can then smell the glove and find the car based on Dr Turner's scent.";
+  document.getElementById("hintPtwo22_1_2Answer").innerHTML = "Use your power to connect to plants and animals on the cat. The cat can then smell the glove and find the car based on Dr Turner's scent.";
   document.getElementById("hint22_1_3_container").style.display = "block";
 };
 
@@ -1046,7 +1046,7 @@ function hintPtwo34_1_1show() {
 };
 
 function hintPtwo34_2show() {
-  document.getElementById("hintPtwo34_2Answer").innerHTML = "Dr Turner said that he will go to the PEI base after he finished his visit to the hospital. Maybe there is a way to follow his car.";
+  document.getElementById("hintPtwo34_2Answer").innerHTML = "Dr Turner said that he would go to the PEI base after he finished his visit to the hospital. Maybe there is a way to follow his car.";
   document.getElementById("hintPtwo34_1").style.display = "none";
   document.getElementById("hint34_2_1_container").style.display = "block";
 };
@@ -1077,7 +1077,7 @@ function hintPtwo37_1show() {
 };
 
 function hintPtwo38_1show() {
-  document.getElementById("hintPtwo38_1Answer").innerHTML = "Receptionst Nina seems talkative. You could ask her about people she has seen in the hotel.";
+  document.getElementById("hintPtwo38_1Answer").innerHTML = "Receptionist Nina seems talkative. You could ask her about people she has seen in the hotel.";
   document.getElementById("hintPtwo38_2").style.display = "none";
   document.getElementById("hint38_1_1_container").style.display = "block";
 };
@@ -1093,7 +1093,7 @@ function hintPtwo38_1_2show() {
 };
 
 function hintPtwo38_2show() {
-  document.getElementById("hintPtwo38_2Answer").innerHTML = "Receptionst Nina seems talkative. You could ask her about people she has seen in the hotel.";
+  document.getElementById("hintPtwo38_2Answer").innerHTML = "Receptionist Nina seems talkative. You could ask her about people she has seen in the hotel.";
   document.getElementById("hintPtwo38_1").style.display = "none";
   document.getElementById("hint38_2_1_container").style.display = "block";
 };
@@ -1127,7 +1127,7 @@ function hintPtwo40_1show() {
 };
 
 function hintPtwo40_1_1show() {
-  document.getElementById("hintPtwo40_1_1Answer").innerHTML = "Attach the phone to Dr Turner's car. He is going to the PEI base afterwards. This way you can discretly follow him.";
+  document.getElementById("hintPtwo40_1_1Answer").innerHTML = "Attach the phone to Dr Turner's car. He is going to the PEI base afterwards. This way you can discreetly follow him.";
   document.getElementById("hint40_1_2_container").style.display = "block";
 };
 
@@ -1162,7 +1162,7 @@ function hintPtwo41_2_1show() {
 };
 
 function hintPtwo41_3show() {
-  document.getElementById("hintPtwo41_3Answer").innerHTML = "Somebody you know has approach to information about people. Maybe they could help find Alison.";
+  document.getElementById("hintPtwo41_3Answer").innerHTML = "Somebody you know has the approach to information about people. Maybe they could help find Alison.";
   document.getElementById("hintPtwo41_1").style.display = "none";
   document.getElementById("hintPtwo41_2").style.display = "none";
   document.getElementById("hint41_3_1_container").style.display = "block";
@@ -1208,7 +1208,7 @@ function hintPtwo42_2_2show() {
 };
 
 function hintPtwo42_2_3show() {
-  document.getElementById("hintPtwo42_2_3Answer").innerHTML = "Take the appearance od the delivery guy and deliver the burger to nurse Barbara. She will spill the mayo on her jacket and take it off.";
+  document.getElementById("hintPtwo42_2_3Answer").innerHTML = "Take the appearance of the delivery guy and deliver the burger to nurse Barbara. She will spill the mayo on her jacket and take it off.";
   document.getElementById("hint42_2_4_container").style.display = "block";
 };
 
@@ -1245,7 +1245,7 @@ function hintPtwo44_1show() {
 };
 
 function hintPtwo45_1show() {
-  document.getElementById("hintPtwo45_1Answer").innerHTML = "Ask mayor Bundy about himself, or about the unknown man.";
+  document.getElementById("hintPtwo45_1Answer").innerHTML = "Ask mayor Bundy about himself or the unknown man.";
   document.getElementById("hint45_1_1_container").style.display = "block";
 };
 
@@ -1261,7 +1261,7 @@ function hintPtwo46_1_1show() {
 };
 
 function hintPtwo46_1_1show() {
-  document.getElementById("hintPtwo46_1_1Answer").innerHTML = "<i>G</i> means 'Green Line', <i>P</i> means 'Pink Line', and <i>B</i> means 'Blue Line'. Small <i>s</i> means 'station', and small <i>d</i> means 'direction'. You should take Green Line and go for 2 stations in the direction Bard St. Then take Pink Line and go for 2 stations in the direction Sewenth Dwarf St. Finally, take Blue Line and go for 1 station in the direction Water Road. You should get off the train at Feather Square, station M03.";
+  document.getElementById("hintPtwo46_1_1Answer").innerHTML = "<i>G</i> means 'Green Line', <i>P</i> means 'Pink Line', and <i>B</i> means 'Blue Line'. Small <i>s</i> means 'station', and small <i>d</i> means 'direction'. You should take Green Line and go for 2 stations in the direction Bard St. Then take Pink Line and go for 2 stations in the direction Seventh Dwarf St. Finally, take Blue Line and go for 1 station in the direction Water Road. You should get off the train at Feather Square, station M03.";
   document.getElementById("hint46_1_2_container").style.display = "block";
 };
 
@@ -1315,7 +1315,7 @@ function hintPtwo50_1_1show() {
 };
 
 function hintPtwo50_1_2show() {
-  document.getElementById("hintPtwo50_1_2Answer").innerHTML = "Attach the rope to the IV stand top and use it to ascape through the window.";
+  document.getElementById("hintPtwo50_1_2Answer").innerHTML = "Attach the rope to the IV stand top and use it to escape through the window.";
   document.getElementById("hint50_1_3_container").style.display = "block";
 };
 
@@ -1377,7 +1377,7 @@ function hintPtwo53_2_2show() {
 };
 
 function hintPtwo53_2_3show() {
-  document.getElementById("hintPtwo53_2_3Answer").innerHTML = "Take the appearance od the delivery guy and deliver the burger to nurse Barbara. She will spill the mayo on her jacket and take it off.";
+  document.getElementById("hintPtwo53_2_3Answer").innerHTML = "Take the appearance of the delivery guy and deliver the burger to nurse Barbara. She will spill the mayo on her jacket and take it off.";
   document.getElementById("hint53_2_4_container").style.display = "block";
 };
 
@@ -1461,7 +1461,7 @@ function hintPtwo55_1show() {
 };
 
 function hintPtwo55_1_1show() {
-  document.getElementById("hintPtwo55_1_1Answer").innerHTML = "Use the IV stand top with rope attached as an anchor to climb down the window.";
+  document.getElementById("hintPtwo55_1_1Answer").innerHTML = "Use the IV stand top with the rope attached as an anchor to climb down the window.";
   document.getElementById("hint55_1_2_container").style.display = "block";
 };
 
@@ -1487,17 +1487,17 @@ function hintPtwoSPO01_1show() {
 };
 
 function hintPtwoSPO01_1_1show() {
-  document.getElementById("hintPtwoSPO01_1_1Answer").innerHTML = "<i>G</i> means 'Green Line', <i>P</i> means 'Pink Line', and <i>B</i> means 'Blue Line'. Small <i>s</i> means 'station', and small <i>d</i> means 'direction'. You should take Green Line and go for 2 stations in the direction Bard St. Then take Pink Line and go for 2 stations in the direction Sewenth Dwarf St. Finally, take Blue Line and go for 1 station in the direction Water Road. You should get off the train at Feather Square, station M03.";
+  document.getElementById("hintPtwoSPO01_1_1Answer").innerHTML = "<i>G</i> means 'Green Line', <i>P</i> means 'Pink Line', and <i>B</i> means 'Blue Line'. Small <i>s</i> means 'station', and small <i>d</i> means 'direction'. You should take Green Line and go for 2 stations in the direction Bard St. Then take Pink Line and go for 2 stations in the direction Seventh Dwarf St. Finally, take Blue Line and go for 1 station in the direction Water Road. You should get off the train at Feather Square, station M03.";
   document.getElementById("hintSPO01_1_2_container").style.display = "block";
 };
 
 function hintPtwoSPO02_1show() {
-  document.getElementById("hintPtwoSPO02_1Answer").innerHTML = "The unknown man is visible on security camera footage on SPO03. When you look at the Starchester map, you can see that the buliding he is entering in is in the address B33. Enter this address in the Digital Game Book input field.";
+  document.getElementById("hintPtwoSPO02_1Answer").innerHTML = "The unknown man is visible on security camera footage on SPO03. When you look at the Starchester map, you can see that the building he is entering is in the address B33. Enter this address in the Digital Game Book input field.";
   document.getElementById("hintSPO02_1_1_container").style.display = "block";
 };
 
 function hintPtwoSPO03_1show() {
-  document.getElementById("hintPtwoSPO03_1Answer").innerHTML = "The unknown man is visible on security camera footage on SPO03. When you look at the Starchester map, you can see that the buliding he is entering in is in the address B33. Enter this address in the Digital Game Book input field.";
+  document.getElementById("hintPtwoSPO03_1Answer").innerHTML = "The unknown man is visible on security camera footage on SPO03. When you look at the Starchester map, you can see that the building he is entering is in the address B33. Enter this address in the Digital Game Book input field.";
   document.getElementById("hintSPO03_1_1_container").style.display = "block";
 };
 
