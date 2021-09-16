@@ -21,6 +21,17 @@ function braunKeyPress(e) {
 function hidePthreeElements() {
   document.getElementById("braunField").style.display = "none";
   document.getElementById("clickToVent1").style.display = "none";
+  document.getElementById("bookPthreeTake").style.display = "none";
+  document.getElementById("takeCard1").style.display = "none";
+  document.getElementById("takeCard2").style.display = "none";
+  document.getElementById("takeCard3").style.display = "none";
+  document.getElementById("takeCard4").style.display = "none";
+  document.getElementById("bookPthreeMap").style.display = "none";
+  document.getElementById("bookPthreeRemove").style.display = "none";
+  document.getElementById("removeCard1").style.display = "none";
+  document.getElementById("removeCard2").style.display = "none";
+  document.getElementById("bookPthreeReturn").style.display = "none";
+  document.getElementById("returnCard1").style.display = "none";
 }
 
 var donald = 1;
@@ -35,6 +46,17 @@ function bookPthreeFunction() {
   "Hmmm...no, I don't think that's it."
 ];
   var answerthree;
+  var takethree;
+  var takecard1;
+  var takecard2;
+  var takecard3;
+  var takecard4;
+  var mapthree;
+  var removethree;
+  var removecard1;
+  var removecard2;
+  var returnthree;
+  var returncard1;
   var ceoaudio = document.getElementById("ceo");
   if (z == "01") {
   		answerthree = "I'm not sure I'm completely prepared for all of this, but I guess that there's no turning back now.";
@@ -46,7 +68,7 @@ function bookPthreeFunction() {
   		answerthree = "The keycard that opens the doors in the staff quarters.";
       hidePthreeElements();
   } else if (z == "08") {
-  		answerthree = "My ability to connect to animals and plants. I'm completely used to it by now.<br><i>To use this ability, enter ability card number <b>08</b> followed by the card number of the plant or animal you want to have an effect on in the Digital Game Book input field, separated by a comma.</i>";
+  		answerthree = "My ability to connect to animals and plants. I'm completely used to it by now.<br><br><i>To use this ability, enter ability card number <b>08</b> followed by the card number of the plant or animal you want to have an effect on in the Digital Game Book input field, separated by a comma.</i>";
       hidePthreeElements();
   } else if (z == "10") {
   		answerthree = "A very cute white lab rat.";
@@ -73,7 +95,7 @@ function bookPthreeFunction() {
   		answerthree = "My mother must be somewhere in this building.";
       hidePthreeElements();
   } else if (z == "26") {
-  		answerthree = "This ability is incredibly useful right now.<br><i>To use this ability, enter ability card number <b>26</b> followed by the card number of the person you want to take the appearance of in the Digital Game Book input field, separated by a comma.</i>";
+  		answerthree = "This ability is incredibly useful right now.<br><br><i>To use this ability, enter ability card number <b>26</b> followed by the card number of the person you want to take the appearance of in the Digital Game Book input field, separated by a comma.</i>";
     hidePthreeElements();
   } else if (z == "27") {
   		answerthree = "The air vent in the CEO's room is half-open.";
@@ -82,7 +104,7 @@ function bookPthreeFunction() {
   		answerthree = "As usual, when I use this power, the little creature becomes my worthy partner.";
       hidePthreeElements();
   } else if (z == "37") {
-  		answerthree = "I guess this is my new ability. I have to only think of somebody, and I immediately see what this person is seeing. I promise to only use it in emergencies like this one.<br><i>To use this ability, enter ability card number <b>37</b> followed by the card number of the person whose eyes you want to see through in the Digital Game Book input field, separated by a comma.</i>";
+  		answerthree = "I guess this is my new ability. I have to only think of somebody, and I immediately see what this person is seeing. I promise to only use it in emergencies like this one.<br><br><i>To use this ability, enter ability card number <b>37</b> followed by the card number of the person whose eyes you want to see through in the Digital Game Book input field, separated by a comma.</i>";
       hidePthreeElements();
   } else if (z == "LOC01") {
   		answerthree = "There is nobody in the entrance hall. The only interesting thing I spot in there is a group photo <b>(SPO01)</b> on the wall. I move along to the common area, and I see a scientist <b>(20)</b> sitting at one of the tables, eating his lunch.";
@@ -94,13 +116,23 @@ function bookPthreeFunction() {
       answerthree = "CEO's office isn't as fancy as I would have imagined. The CEO <b>(18)</b> doesn't look very happy. There is a floor plan <b>22<b> on the wall that I noticed when I entered the office, but it's behind my back now.";
       hidePthreeElements();
   } else if (z == "SPO01") {
-      answerthree = "What a happy collective! The lab team photo shows five people. <br><i>Take cards <b>21</b>, <b>25</b> and <b>29</b>. The other two scientists you see on the photo are somewhere in the building.";
+      answerthree = "What a happy collective! The lab team photo shows five people.";
       hidePthreeElements();
+      document.getElementById("bookPthreeTake").style.display = "block";
+      document.getElementById("takeCard1").style.display = "inline";
+      document.getElementById("takeCard2").style.display = "inline";
+      document.getElementById("takeCard3").style.display = "inline";
+      document.getElementById("bookPthreeRemove").style.display = "block";
+      takethree = "<i>Take cards:</i>";
+      takecard1 = "21";
+      takecard2 = "25";
+      takecard3 = "29";
+      removethree = "<i>The other two scientists you see on the photo are somewhere in the building.</i>";
   } else if (z == "SPO02") {
       answerthree = "A periodic table of elements, showing elements symbols with their atomic numbers above.";
       hidePthreeElements();
   } else if (z == "SPO03") {
-      answerthree = "The scientists' locker with five compartments. Each compartment has a 5 number combination lock.<br><i>You can open any of the compartments by entering the compartment's number in the Digital Game Book input field, followed by a 5 number combination, separated by a comma. For example, if you want to open compartment COM01 with the combination 11111, enter 'COM01,11111' in the Digital Game Book input field and press enter.</i>";
+      answerthree = "The scientists' locker with five compartments. Each compartment has a 5 number combination lock.<br><br><i>You can open any of the compartments by entering the compartment's number in the Digital Game Book input field, followed by a 5 number combination, separated by a comma. For example, if you want to open compartment COM01 with the combination 11111, enter 'COM01,11111' in the Digital Game Book input field and press enter.</i>";
       hidePthreeElements();
   } else if (z == "SPO04") {
       answerthree = "I believe that this is what my mother sees at the moment. Maybe I could recognize the room?";
@@ -305,11 +337,31 @@ function bookPthreeFunction() {
       answerthree = "Even if I could manage to throw the keycard right into the air vent, I don't think that that would do any good.";
       hidePthreeElements();
   } else if (z == "07,30" || z == "30,07") {
-      answerthree = "Take it, my secret partner!<br><i>I carefully give the keycard to the rat, taking care that the CEO doesn't notice anything. Luckily, he is so into his criticizing mode that he doesn't pay much attention to what I'm doing.<br>Take card <b>15</b>. Return card <b>07</b> in the characters/objects deck, you will need it later. Remove card <b>30</b>.";
+      answerthree = "Take it, my secret partner!<br><br><i>I carefully give the keycard to the rat, taking care that the CEO doesn't notice anything. Luckily, he is so into his criticizing mode that he doesn't pay much attention to what I'm doing.";
       hidePthreeElements();
+      document.getElementById("bookPthreeTake").style.display = "block";
+      document.getElementById("takeCard1").style.display = "inline";
+      document.getElementById("bookPthreeRemove").style.display = "block";
+      document.getElementById("removeCard1").style.display = "inline";
+      document.getElementById("bookPthreeReturn").style.display = "block";
+      document.getElementById("returnCard1").style.display = "inline";
+      takethree = "<i>Take card:</i>";
+      takecard1 = "15";
+      removethree = "<i>Remove card:</i>";
+      removecard1 = "30";
+      returnthree = "<i>Return the following card in the characters/objects deck, you will need it later.</i>";
+      returncard1 = "07";
   } else if (z == "08,10" || z == "10,08") {
-      answerthree = "I hope you don't mind helping me for a bit, my little friend!<br><i>The rat is actually happy to communicate with somebody else other than the lab team that's been doing experiments on him for weeks.<br>Take card <b>30</b>. Remove card <b>10</b>.";
+      answerthree = "I hope you don't mind helping me for a bit, my little friend!<br><i>The rat is actually happy to communicate with somebody else other than the lab team that's been doing experiments on him for weeks.";
       hidePthreeElements();
+      document.getElementById("bookPthreeTake").style.display = "block";
+      document.getElementById("takeCard1").style.display = "inline";
+      document.getElementById("bookPthreeRemove").style.display = "block";
+      document.getElementById("removeCard1").style.display = "inline";
+      takethree = "<i>Take card:</i>";
+      takecard1 = "30";
+      removethree = "<i>Remove card:</i>";
+      removecard1 = "10";
   } else if (z == "08,30" || z == "30,08") {
       answerthree = "The rat is alredy helping me. I don't have to use my power again on him.";
       hidePthreeElements();
@@ -323,8 +375,16 @@ function bookPthreeFunction() {
       answerthree = "It seems like a good idea to make the rat take the keycard somewhere, but in the actual building, not on its plan drawing.";
       hidePthreeElements();
   } else if (z == "15,27" || z == "27,15") {
-      answerthree = "Come on, rat, it's adventure time!<br><i>While the CEO is still talking to no end, the rat discretely goes to the air vent, carrying the keycard.<br><i>Remove cards <b>15</b> and <b>27</b>.<br>You can now guide the rat through the ventilation ducts.</i>";
+      answerthree = "Come on, rat, it's adventure time!<br><i>While the CEO is still talking to no end, the rat discretely goes to the air vent, carrying the keycard.";
       hidePthreeElements();
+      document.getElementById("bookPthreeRemove").style.display = "block";
+      document.getElementById("removeCard1").style.display = "inline";
+      document.getElementById("removeCard2").style.display = "inline";
+      document.getElementById("bookPthreeReturn").style.display = "block";
+      removethree = "<i>Remove cards:</i>";
+      removecard1 = "15";
+      removecard2 = "27";
+      returnthree = "<b>You can now guide the rat through the ventilation ducts.</b>";
       document.getElementById("clickToVent1").style.display = "block";
   } else if (z == "22,27" || z == "27,22") {
       answerthree = "Taking the plan from the wall, and throwing it into the air vent with CEO in front of me, seems not only very difficult but also pointless.";
@@ -381,8 +441,24 @@ function bookPthreeFunction() {
       answerthree = "I see the road in front of Agent 27's eyes, and his hands on the wheel. He is driving.";
       hidePthreeElements();
   } else if (z == "37,18") {
-      answerthree = "I see myself as the CEO sees me. A strange feeling, really. But I also get to take a good look at the floor plan right behind my back. And there is something else that catches my eye, in CEO's peripheral vision. A half-opened air vent.<br><i>Take card <b>27</b> and map parts <b>MAP04</b>, <b>MAP05</b> and <b>MAP06</b> and put them on the right places next to the map parts already on the table. Remove card <b>22</b>.</b>";
+      answerthree = "I see myself as the CEO sees me. A strange feeling, really. But I also get to take a good look at the floor plan right behind my back. And there is something else that catches my eye, in CEO's peripheral vision. A half-opened air vent.";
       hidePthreeElements();
+      document.getElementById("bookPthreeTake").style.display = "block";
+      document.getElementById("takeCard1").style.display = "inline";
+      document.getElementById("takeCard2").style.display = "inline";
+      document.getElementById("takeCard3").style.display = "inline";
+      document.getElementById("takeCard4").style.display = "inline";
+      document.getElementById("bookPthreeMap").style.display = "block";
+      document.getElementById("bookPthreeRemove").style.display = "block";
+      document.getElementById("removeCard1").style.display = "inline";
+      takethree = "<i>Take cards:</i>";
+      takecard1 = "27";
+      takecard2 = "MAP04";
+      takecard3 = "MAP05";
+      takecard4 = "MAP06";
+      mapthree = "<i>Put the map parts on their places above the parts that are already on the table, with <b>MAP04</b> on the left, <b>MAP05</b> in the middle, and <b>MAP06</b> on the right.</i>";
+      removethree = "<i>Remove card:</i>";
+      removecard1 = "22";
   } else if (z == "37,20") {
       answerthree = "He is still in the common area, eating his lunch. Looking through his eyes while he's eating isn't an especially enjoyable feeling.";
       hidePthreeElements();
@@ -390,7 +466,7 @@ function bookPthreeFunction() {
       answerthree = "She is in a restaurant, having Tibetan momo dumplings.";
       hidePthreeElements();
   } else if (z == "37,23") {
-      answerthree = "My mother is in a room.<br><i>You can see what does Lena see through her eyes depicted on card <b>SPO04</b>.</i>";
+      answerthree = "My mother is in a room.<br><br><i>You can see what does Lena see through her eyes depicted on card <b>SPO04</b>.</i>";
       hidePthreeElements();
   } else if (z == "37,25") {
       answerthree = "She is eating with two of her team members. She's having boeuf bourguignon.";
@@ -405,8 +481,16 @@ function bookPthreeFunction() {
       answerthree = "This door is locked. I can't get in.";
       hidePthreeElements();
   } else if (z == "D03") {
-      answerthree = "The door is open. The room seems to be a laboratory.<br><i>Take card <b>LOC02</b> and map part <b>MAP02</b>. Place the map part to the right of the entrance hall.</i>";
+      answerthree = "The door is open. The room seems to be a laboratory.";
       hidePthreeElements();
+      document.getElementById("bookPthreeTake").style.display = "block";
+      document.getElementById("takeCard1").style.display = "inline";
+      document.getElementById("takeCard2").style.display = "inline";
+      document.getElementById("bookPthreeMap").style.display = "block";
+      takethree = "<i>Take cards:</i>";
+      takecard1 = "LOC02";
+      takecard2 = "MAP02";
+      mapthree = "<i>Place the map part <b>MAP02</b> to the right of the entrance hall.</i>";
   } else if (z == "D04" || z == "D05") {
       answerthree = "This door is locked. There is a card lock on it, but where do I get a keycard?";
       hidePthreeElements();
@@ -418,10 +502,42 @@ function bookPthreeFunction() {
       hidePthreeElements();
   	}
   	document.getElementById("bookPthreeAnswer").innerHTML = answerthree;
+  	document.getElementById("bookPthreeTake").innerHTML = takethree;
+  	document.getElementById("takeCard1").innerHTML = takecard1;
+  	document.getElementById("takeCard2").innerHTML = takecard2;
+  	document.getElementById("takeCard3").innerHTML = takecard3;
+  	document.getElementById("takeCard4").innerHTML = takecard4;
+  	document.getElementById("bookPthreeMap").innerHTML = mapthree;
+  	document.getElementById("bookPthreeRemove").innerHTML = removethree;
+  	document.getElementById("removeCard1").innerHTML = removecard1;
+  	document.getElementById("removeCard2").innerHTML = removecard2;
+  	document.getElementById("bookPthreeReturn").innerHTML = returnthree;
+  	document.getElementById("returnCard1").innerHTML = returncard1;
 };
 
 function hideBraunElements() {
   document.getElementById("clickToVent2").style.display = "none";
+  document.getElementById("braunTake").style.display = "none";
+  document.getElementById("braunTCard1").style.display = "none";
+  document.getElementById("braunTCard2").style.display = "none";
+  document.getElementById("braunTCard3").style.display = "none";
+  document.getElementById("braunTCard4").style.display = "none";
+  document.getElementById("braunTCard5").style.display = "none";
+  document.getElementById("braunTCard6").style.display = "none";
+  document.getElementById("braunTCard7").style.display = "none";
+  document.getElementById("braunMap").style.display = "none";
+  document.getElementById("braunRemove").style.display = "none";
+  document.getElementById("braunRCard1").style.display = "none";
+  document.getElementById("braunRCard2").style.display = "none";
+  document.getElementById("braunRCard3").style.display = "none";
+  document.getElementById("braunRCard4").style.display = "none";
+  document.getElementById("braunRCard5").style.display = "none";
+  document.getElementById("braunRCard6").style.display = "none";
+  document.getElementById("braunRCard7").style.display = "none";
+  document.getElementById("braunKeep").style.display = "none";
+  document.getElementById("braunReturn").style.display = "none";
+  document.getElementById("braunNCard1").style.display = "none";
+  document.getElementById("braunContinue").style.display = "none";
 }
 
 function braun() {
@@ -435,6 +551,27 @@ function braun() {
     "There has to be a better thing to do than this."
   ];
   var braunanswer;
+  var brauntake;
+  var brauntcard1;
+  var brauntcard2;
+  var brauntcard3;
+  var brauntcard4;
+  var brauntcard5;
+  var brauntcard6;
+  var brauntcard7;
+  var braunmap;
+  var braunremove;
+  var braunrcard1;
+  var braunrcard2;
+  var braunrcard3;
+  var braunrcard4;
+  var braunrcard5;
+  var braunrcard6;
+  var braunrcard7;
+  var braunkeep;
+  var braunreturn;
+  var braunncard1;
+  var brauncontinue;
   var ceoaudio = document.getElementById("ceo");
   if (brauninput == "01") {
     	braunanswer = "I'm not sure I'm completely prepared for all of this, but I guess that there's no turning back now.";
@@ -446,7 +583,7 @@ function braun() {
   		braunanswer = "The keycard that opens the doors in the staff quarters.";
       hideBraunElements();
   } else if (brauninput == "08") {
-  		braunanswer = "My ability to connect to animals and plants. I'm completely used to it by now.<br><i>To use this ability, enter ability card number <b>08</b> followed by the card number of the plant or animal you want to have an effect on in the Digital Game Book input field, separated by a comma.</i>";
+  		braunanswer = "My ability to connect to animals and plants. I'm completely used to it by now.<br><br><i>To use this ability, enter ability card number <b>08</b> followed by the card number of the plant or animal you want to have an effect on in the Digital Game Book input field, separated by a comma.</i>";
       hideBraunElements();
   } else if (brauninput == "10") {
   		braunanswer = "A very cute white lab rat.";
@@ -473,7 +610,7 @@ function braun() {
   		braunanswer = "My mother must be somewhere in this building.";
       hideBraunElements();
   } else if (brauninput == "26") {
-  		braunanswer = "This ability is incredibly useful right now.<br><i>To use this ability, enter ability card number <b>26</b> followed by the card number of the person you want to take the appearance of in the Digital Game Book input field, separated by a comma.</i>";
+  		braunanswer = "This ability is incredibly useful right now.<br><br><i>You can only change your appearance by using your original Digital Game Book input field above. To use this ability, enter ability card number <b>26</b> followed by the card number of the person you want to take the appearance of in the Digital Game Book input field, separated by a comma.</i>";
       hideBraunElements();
   } else if (brauninput == "27") {
   		braunanswer = "The air vent in the CEO's room is half-open.";
@@ -485,7 +622,7 @@ function braun() {
   		braunanswer = "As usual, when I use this power, the little creature becomes my worthy partner.";
       hideBraunElements();
   } else if (brauninput == "37") {
-  		braunanswer = "I guess this is my new ability. I have to only think of somebody, and I immediately see what this person is seeing. I promise to only use it in emergencies like this one.<br><i>To use this ability, enter ability card number <b>37</b> followed by the card number of the person whose eyes you want to see through in the Digital Game Book input field, separated by a comma.</i>";
+  		braunanswer = "I guess this is my new ability. I have to only think of somebody, and I immediately see what this person is seeing. I promise to only use it in emergencies like this one.<br><br><i>To use this ability, enter ability card number <b>37</b> followed by the card number of the person whose eyes you want to see through in the Digital Game Book input field, separated by a comma.</i>";
       hideBraunElements();
   } else if (brauninput == "LOC01") {
   		braunanswer = "There is nobody in the entrance hall. The only interesting thing I spot in there is a group photo <b>(SPO01)</b> on the wall. I move along to the common area, and I see a scientist <b>(20)</b> sitting at one of the tables, eating his lunch.";
@@ -497,13 +634,13 @@ function braun() {
       braunanswer = "CEO's office isn't as fancy as I would have imagined. The CEO <b>(18)</b> doesn't look very happy. There is a floor plan <b>(22)</b> on the wall that I noticed when I entered the office, but it's behind my back now.";
       hideBraunElements();
   } else if (brauninput == "SPO01") {
-      braunanswer = "What a happy collective! The lab team photo shows five people. <br><i>Take cards <b>21</b>, <b>25<b> and <b>29</b>. You will find the other two scientists in the photo somewhere in the building.";
+      braunanswer = "What a happy collective! The lab team photo shows five people.";
       hideBraunElements();
   } else if (brauninput == "SPO02") {
       braunanswer = "A periodic table of elements, showing elements symbols with their atomic numbers above.";
       hideBraunElements();
   } else if (brauninput == "SPO03") {
-      braunanswer = "The scientists' locker with five compartments. Each compartment has a 5 number combination lock.<br><i>You can open any of the compartments by entering the compartment's number in the Digital Game Book input field, followed by a 5 number combination, separated by a comma. For example, if you want to open compartment COM01 with the combination 11111, enter 'COM01,11111' in the Digital Game Book input field and press enter.</i>";
+      braunanswer = "The scientists' locker with five compartments. Each compartment has a 5 number combination lock.<br><br><i>You can open any of the compartments by entering the compartment's number in the Digital Game Book input field, followed by a 5 number combination, separated by a comma. For example, if you want to open compartment COM01 with the combination 11111, enter 'COM01,11111' in the Digital Game Book input field and press enter.</i>";
       hideBraunElements();
   } else if (brauninput == "SPO04") {
       braunanswer = "I believe that this is what my mother sees at the moment. Maybe I could recognize the room?";
@@ -696,14 +833,34 @@ function braun() {
       braunanswer = "I try to give the card to the rat, but he doesn't react to my efforts.";
       hideBraunElements();
   } else if (brauninput == "07,30" || brauninput == "30,07") {
-      braunanswer = "Take it, my secret partner!<br><i>I carefully give the keycard to the rat, taking care that the CEO doesn't notice anything. Luckily, he is so into his criticizing mode that he doesn't pay much attention to what I'm doing.<br>Take card <b>15</b>. Return card <b>07</b> in the characters/objects deck. Remove card <b>30</b>.";
+      braunanswer = "Take it, my secret partner!<br><i>I carefully give the keycard to the rat, taking care that the CEO doesn't notice anything. Luckily, he is so into his criticizing mode that he doesn't pay much attention to what I'm doing.";
       hideBraunElements();
+      document.getElementById("braunTake").style.display = "block";
+      document.getElementById("braunTCard1").style.display = "inline";
+      document.getElementById("braunRemove").style.display = "block";
+      document.getElementById("braunRCard1").style.display = "inline";
+      document.getElementById("braunReturn").style.display = "block";
+      document.getElementById("braunNCard1").style.display = "inline";
+      brauntake = "<i>Take card:</i>";
+      brauntcard1 = "15";
+      braunremove = "<i>Remove card:</i>";
+      braunrcard1 = "30";
+      braunreturn = "<i>Return the following card in the characters/objects deck, you will need it later.</i>";
+      braunncard1 = "07";
   } else if (brauninput == "07,27" || brauninput == "27,07") {
       braunanswer = "Even if I could manage to throw the keycard right into the air vent, I don't think that that would do any good.";
       hideBraunElements();
   } else if (brauninput == "08,10" || brauninput == "10,08") {
-      braunanswer = "I hope you don't mind helping me for a bit, my little friend!<br><i>The rat is actually happy to communicate with somebody else other than the lab team that's been doing experiments on him for weeks.<br>Take card <b>30</b>. Remove card <b>10</b>.";
+      braunanswer = "I hope you don't mind helping me for a bit, my little friend!<br><i>The rat is actually happy to communicate with somebody else other than the lab team that's been doing experiments on him for weeks.";
       hideBraunElements();
+      document.getElementById("braunTake").style.display = "block";
+      document.getElementById("braunTCard1").style.display = "inline";
+      document.getElementById("braunRemove").style.display = "block";
+      document.getElementById("braunRCard1").style.display = "inline";
+      brauntake = "<i>Take card:</i>";
+      brauntcard1 = "30";
+      braunremove = "<i>Remove card:</i>";
+      braunrcard1 = "10";
   } else if (brauninput == "08,15" || brauninput == "08,30" || brauninput == "15,08" || brauninput == "30,08") {
       braunanswer = "The rat is alredy helping me. I don't have to use my power again on him.";
       hideBraunElements();
@@ -717,7 +874,16 @@ function braun() {
       braunanswer = "It seems like a good idea to make the rat take the keycard somewhere, but in the actual building, not on its plan drawing.";
       hideBraunElements();
   } else if (brauninput == "15,27" || brauninput == "27,15") {
-      braunanswer = "Come on, rat, it's adventure time!<br><i>While the CEO is still talking to no end, the rat discretely goes to the air vent, carrying the keycard.<br><i>Remove cards <b>15</b> and <b>27</b>.<br>You can now guide the rat through the ventilation ducts.</i>";
+      braunanswer = "Come on, rat, it's adventure time!<br><i>While the CEO is still talking to no end, the rat discretely goes to the air vent, carrying the keycard.";
+      hideBraunElements();
+      document.getElementById("braunRemove").style.display = "block";
+      document.getElementById("braunRCard1").style.display = "inline";
+      document.getElementById("braunRCard2").style.display = "inline";
+      document.getElementById("braunReturn").style.display = "block";
+      braunremove = "<i>Remove cards:</i>";
+      braunrcard1 = "15";
+      braunrcard2 = "27";
+      braunreturn = "<b>You can now guide the rat through the ventilation ducts.</b>";
       document.getElementById("clickToVent2").style.display = "block";
   } else if (brauninput == "22,30" || brauninput == "30,22") {
       braunanswer = "I think that I can read the plan much better than the rat. I am a student of the university, after all.";
@@ -744,8 +910,24 @@ function braun() {
       braunanswer = "I see the road in front of Agent 27's eyes, and his hands on the wheel. He is driving.";
       hideBraunElements();
   } else if (brauninput == "37,18") {
-      braunanswer = "I see myself as the CEO sees me. A strange feeling, really. But I also get to take a good look at the floor plan right behind my back. And there is something else that catches my eye, in CEO's peripheral vision. A half-opened air vent.<br><i>Take card <b>27</b> and map parts <b>MAP04</b>, <b>MAP05</b> and <b>MAP06</b> and place them above the map parts already on the table, with part <b>MAP04</b> on the left, part <b>MAP05</b> in the middle, and part <b>MAP06</b> on the right. Remove card <b>22</b>.</b>";
+      braunanswer = "I see myself as the CEO sees me. A strange feeling, really. But I also get to take a good look at the floor plan right behind my back. And there is something else that catches my eye, in CEO's peripheral vision. A half-opened air vent.";
       hideBraunElements();
+      document.getElementById("braunTake").style.display = "block";
+      document.getElementById("braunTCard1").style.display = "inline";
+      document.getElementById("braunTCard2").style.display = "inline";
+      document.getElementById("braunTCard3").style.display = "inline";
+      document.getElementById("braunTCard4").style.display = "inline";
+      document.getElementById("braunMap").style.display = "block";
+      document.getElementById("braunRemove").style.display = "block";
+      document.getElementById("braunRCard1").style.display = "inline";
+      brauntake = "<i>Take cards:</i>";
+      brauntcard1 = "27";
+      brauntcard2 = "MAP04";
+      brauntcard3 = "MAP05";
+      brauntcard4 = "MAP06";
+      braunmap = "<i>Put the map parts on their places above the parts that are already on the table, with <b>MAP04</b> on the left, <b>MAP05</b> in the middle, and <b>MAP06</b> on the right.</i>";
+      braunremove = "<i>Remove card:</i>";
+      braunrcard1 = "22";
   } else if (brauninput == "37,20" || brauninput == "37,38") {
       braunanswer = "He is still in the common area, eating his lunch. Looking through his eyes while he's eating isn't an especially enjoyable feeling.";
       hideBraunElements();
@@ -763,8 +945,50 @@ function braun() {
       hideBraunElements();
   } else if (brauninput == "COM05,35797" || brauninput == "COM05,3,5,7,9,7") {
       donald = 2;
-      braunanswer = "Aha!<br><i>The combination lock opens, and I take the keycard. Now I can finally pass the door in the common area.<br>But just as I'm about to leave, a man enters the lab and starts yelling at me. It seems to be the boss. He orders me to follow him into his office, locks the office door, tells me to sit, and starts to lecture me. I get pretty bored soon enough, and I start to think about my mother. Suddenly, an image appears in front of my face. An image of a room.</i> <br>Could it be that I'm seeing what she is seeing?<br><i>Take cards <b>07</b>, <b>34</b>, <b>37</b>, <b>38</b>, <b>LOC03</b>, <b>SPO04</b>, and map part <b>MAP03</b>. Place the map part to the left of the entrance hall.<br>Remove cards <b>05</b> and <b>20</b>. <br>Remove cards <b>SPO01</b>, <b>SPO02</b> and <b>SPO03</b>. <br>Remove cards <b>LOC01</b> and <b>LOC02</b> (but keep the other cards from the location on the table).<br>You can't use your ability to take someone's appearance while the CEO is watching you. Turn the card <b>26</b> upside down for the time being. Continue to play in Donald Braun appearance, using this input field.</i>";
+      braunanswer = "Aha!<br><i>The combination lock opens, and I take the keycard. Now I can finally pass the door in the common area.<br>But just as I'm about to leave, a man enters the lab and starts yelling at me. It seems to be the boss. He orders me to follow him into his office, locks the office door, tells me to sit, and starts to lecture me. I get pretty bored soon enough, and I start to think about my mother. Suddenly, an image appears in front of my face. An image of a room.</i><br>Could it be that I'm seeing what she is seeing?";
       hideBraunElements();
+      document.getElementById("braunTake").style.display = "block";
+      document.getElementById("braunTCard1").style.display = "inline";
+      document.getElementById("braunTCard2").style.display = "inline";
+      document.getElementById("braunTCard3").style.display = "inline";
+      document.getElementById("braunTCard4").style.display = "inline";
+      document.getElementById("braunTCard5").style.display = "inline";
+      document.getElementById("braunTCard6").style.display = "inline";
+      document.getElementById("braunTCard7").style.display = "inline";
+      document.getElementById("braunMap").style.display = "block";
+      document.getElementById("braunRemove").style.display = "block";
+      document.getElementById("braunRCard1").style.display = "inline";
+      document.getElementById("braunRCard2").style.display = "inline";
+      document.getElementById("braunRCard3").style.display = "inline";
+      document.getElementById("braunRCard4").style.display = "inline";
+      document.getElementById("braunRCard5").style.display = "inline";
+      document.getElementById("braunRCard6").style.display = "inline";
+      document.getElementById("braunRCard7").style.display = "inline";
+      document.getElementById("braunKeep").style.display = "block";
+      document.getElementById("braunReturn").style.display = "block";
+      document.getElementById("braunNCard1").style.display = "inline";
+      document.getElementById("braunContinue").style.display = "block";
+      brauntake = "<i>Take cards:</i>";
+      brauntcard1 = "07";
+      brauntcard2 = "34";
+      brauntcard3 = "37";
+      brauntcard4 = "38";
+      brauntcard5 = "SPO04";
+      brauntcard6 = "LOC03";
+      brauntcard7 = "MAP03";
+      braunmap = "<i>Place the map part <b>MAP03</b> to the left of the entrance hall.</i>";
+      braunremove = "<i>Remove cards:</i>";
+      braunrcard1 = "05";
+      braunrcard2 = "20";
+      braunrcard3 = "SPO01";
+      braunrcard4 = "SPO02";
+      braunrcard5 = "SPO03";
+      braunrcard6 = "LOC01";
+      braunrcard7 = "LOC02";
+      braunkeep = "<i>but keep the other cards from the location <b>LOC02</b> on the table.</i>";
+      braunreturn = "<i>You can't use your ability to take someone's appearance while the CEO is watching you. Turn the following card over, face down, for the time being:</i>";
+      braunncard1 = "26";
+      brauncontinue = "<b>Continue to play in Donald Braun appearance, using this input field.</b>";
   } else if (brauninput == "D01" && donald == 1) {
       braunanswer = "I just got here, I don't want to go out.";
       hideBraunElements();
@@ -778,8 +1002,16 @@ function braun() {
       braunanswer = "I can't get out of CEO's office. He locked me in it, and he seems to want to lecture me for a long time.";
       hideBraunElements();
   } else if (brauninput == "D03" && donald == 1) {
-      braunanswer = "The door is open. The room seems to be a laboratory.<br><i>Take card <b>LOC02</b> and map part <b>MAP02</b>. Place the map part to the right of the entrance hall.</i>";
+      braunanswer = "The door is open. The room seems to be a laboratory.";
       hideBraunElements();
+      document.getElementById("braunTake").style.display = "block";
+      document.getElementById("braunTCard1").style.display = "inline";
+      document.getElementById("braunTCard2").style.display = "inline";
+      document.getElementById("braunMap").style.display = "block";
+      brauntake = "<i>Take cards:</i>";
+      brauntcard1 = "LOC02";
+      brauntcard2 = "MAP02";
+      braunmap = "<i>Place the map part <b>MAP02</b> to the right of the entrance hall.</i>";
   } else if (brauninput == "D03" && donald == 2) {
       braunanswer = "I can't get out of CEO's office. He locked me in it, and he seems to want to lecture me for a long time.";
       hideBraunElements();
@@ -797,4 +1029,25 @@ function braun() {
       hideBraunElements();
   }
     document.getElementById("braunAnswer").innerHTML = braunanswer;
+  	document.getElementById("braunTake").innerHTML = brauntake;
+  	document.getElementById("braunTCard1").innerHTML = brauntcard1;
+  	document.getElementById("braunTCard2").innerHTML = brauntcard2;
+  	document.getElementById("braunTCard3").innerHTML = brauntcard3;
+  	document.getElementById("braunTCard4").innerHTML = brauntcard4;
+  	document.getElementById("braunTCard5").innerHTML = brauntcard5;
+  	document.getElementById("braunTCard6").innerHTML = brauntcard6;
+  	document.getElementById("braunTCard7").innerHTML = brauntcard7;
+  	document.getElementById("braunMap").innerHTML = braunmap;
+  	document.getElementById("braunRemove").innerHTML = braunremove;
+  	document.getElementById("braunRCard1").innerHTML = braunrcard1;
+  	document.getElementById("braunRCard2").innerHTML = braunrcard2;
+  	document.getElementById("braunRCard3").innerHTML = braunrcard3;
+  	document.getElementById("braunRCard4").innerHTML = braunrcard4;
+  	document.getElementById("braunRCard5").innerHTML = braunrcard5;
+  	document.getElementById("braunRCard6").innerHTML = braunrcard6;
+  	document.getElementById("braunRCard7").innerHTML = braunrcard7;
+  	document.getElementById("braunKeep").innerHTML = braunkeep;
+  	document.getElementById("braunReturn").innerHTML = braunreturn;
+  	document.getElementById("braunNCard1").innerHTML = braunncard1;
+  	document.getElementById("braunContinue").innerHTML = brauncontinue;
 }
