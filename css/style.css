@@ -198,8 +198,91 @@ p.hint-text {
 	font-size: 110%;
 }
 
+.take-remove-cards {
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.take-remove-cards-visible {
+	text-align: center;
+	margin-top: -45px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+p.take {
+	display: none;
+	color: #262626;
+	border: 3px solid #2394B2;
+  border-radius: 4px;
+	padding: 5px 8px 5px 9px;
+	line-height: 1.5;
+	letter-spacing: 0.2px;
+	font-family: 'Fredoka One', cursive;
+	font-size: 180%;
+}
+
+p.take-visible {
+	display: inline;
+	color: #262626;
+	border: 3px solid #2394B2;
+  border-radius: 4px;
+	padding: 5px 8px 5px 9px;
+	line-height: 1.5;
+	letter-spacing: 0.2px;
+	font-family: 'Fredoka One', cursive;
+	font-size: 180%;
+}
+
+p.remove {
+	display: none;
+	color: #262626;
+	border: 3px solid #dc640c;
+  border-radius: 4px;
+	padding: 5px 8px 5px 9px;
+	line-height: 1.5;
+	letter-spacing: 0.2px;
+	font-family: 'Fredoka One', cursive;
+	font-size: 180%;
+}
+
+p.remove-visible {
+	display: inline;
+	color: #262626;
+	border: 3px solid #dc640c;
+  border-radius: 4px;
+	padding: 5px 8px 5px 9px;
+	line-height: 1.5;
+	letter-spacing: 0.2px;
+	font-family: 'Fredoka One', cursive;
+	font-size: 180%;
+}
+
+p.take-remove-intro {
+	display: none;
+	text-align: center;
+	color: #262626;
+	line-height: 1.5;
+	letter-spacing: 0.2px;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 115%;
+}
+
+p.take-remove-rules {
+	display: none;
+  text-align: justify;
+  text-justify: inter-word;
+	color: #262626;
+	line-height: 1.5;
+	letter-spacing: 0.2px;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 110%;
+}
+
 p {
-	text-align: left;
+  text-align: justify;
+  text-justify: inter-word;
 	color: #262626;
 	padding-top: 10px;
 	padding-bottom: 10px;
@@ -689,6 +772,10 @@ html::-webkit-scrollbar {
 	top: calc(100% - 180px);
 	max-width: calc(100% - 30px);
   right: 0px;
+}
+
+.take-remove-cards-visible {
+	margin-top: 0px;
 }
 
 h1 {
