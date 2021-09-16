@@ -10,6 +10,24 @@ function bookPoneKeyPress(e) {
 
 function hidePoneElements() {
   document.getElementById("01_Mary").style.display = "none";
+  document.getElementById("bookPone1Rules").style.display = "none";
+  document.getElementById("takeCard1Rules").style.display = "none";
+  document.getElementById("takeCard2Rules").style.display = "none";
+  document.getElementById("takeCard3Rules").style.display = "none";
+  document.getElementById("takeCard4Rules").style.display = "none";
+  document.getElementById("bookPone2Rules").style.display = "none";
+  document.getElementById("bookPoneTake").style.display = "none";
+  document.getElementById("takeCard1").style.display = "none";
+  document.getElementById("takeCard2").style.display = "none";
+  document.getElementById("bookPoneRemove").style.display = "none";
+  document.getElementById("removeCard1").style.display = "none";
+  document.getElementById("removeCard2").style.display = "none";
+  document.getElementById("removeCard3").style.display = "none";
+  document.getElementById("removeCard4").style.display = "none";
+  document.getElementById("bookPoneKeep").style.display = "none";
+  document.getElementById("bookPoneReturn").style.display = "none";
+  document.getElementById("returnCard1").style.display = "none";
+  document.getElementById("bookPone3Rules").style.display = "none";
 }
 
 console.log = function (param) {return;}
@@ -24,9 +42,31 @@ function bookPoneFunction() {
   "Hmmm...no, I don't think that's it."
 ];
   var answerone;
+  var rules1one;
+  var takecard1rules;
+  var takecard2rules;
+  var takecard3rules;
+  var takecard4rules;
+  var rules2one;
+  var takeone;
+  var takecard1;
+  var takecard2;
+  var removeone;
+  var removecard1;
+  var removecard2;
+  var removecard3;
+  var removecard4;
+  var keepone;
+  var returnone;
+  var returncard1;
+  var rules3one;
   if (x == "01") {
-  		answerone = "<b>IMPORTANT: You can examine every character this way.<br><br>Now read the text below.</b><br><br>I'm Ziggy Wonder, a student at Majorton University. My mother left town yesterday, saying goodbye over the phone. I find it very hard to believe that she would do something like this, and I intend to get to the bottom of it.<br><br><b>IMPORTANT: To see Ziggy's thoughts about her mother, enter '01,23' in the Digital Game Book input field and click 'OK' or press Enter. You must put Ziggy's card number first and Lena's card number second, separated by a comma, without spaces.</b>";
       hidePoneElements();
+      document.getElementById("bookPone1Rules").style.display = "block";
+      rules1one = "<b>IMPORTANT: You can examine every character this way.<br><br>Now read the text below.</b>";
+  		answerone = "I'm Ziggy Wonder, a student at Majorton University. My mother left town yesterday, saying goodbye over the phone. I find it very hard to believe that she would do something like this, and I intend to get to the bottom of it.";
+      document.getElementById("bookPone3Rules").style.display = "block";
+      rules3one = "<b>IMPORTANT: To see Ziggy's thoughts about her mother, enter '01,23' in the Digital Game Book input field and click 'OK' or press Enter. You must put Ziggy's card number first and Lena's card number second, separated by a comma, without spaces.</b>";
   } else if (x == "02") {
   		answerone = "A housefly is wandering around the library.";
       hidePoneElements();
@@ -37,8 +77,12 @@ function bookPoneFunction() {
   		answerone = "The projector I borrowed from the library.";
       hidePoneElements();
 	} else if (x == "05") {
-  		answerone = "<b>IMPORTANT: You can examine any card you want, but you have to examine the cards with the magnifying glass symbol.<br><br>Now read the text below.</b><br><br>Cookie mix for Laika's favourite cookies. The recipe on the box says to add some freshly chopped pumpkin to the mix before baking.<br><br><b>IMPORTANT: Try to feed Laika with the cookie mix. Enter '03,05' or '05,03' in the Digital Game Book input field and click 'OK' or press Enter.</b>";
       hidePoneElements();
+      document.getElementById("bookPone1Rules").style.display = "block";
+      rules1one = "<b>IMPORTANT: You can examine any card you want, but you have to examine the cards with the magnifying glass symbol.<br><br>Now read the text below.</b>";
+  		answerone = "Cookie mix for Laika's favourite cookies. The recipe on the box says to add some freshly chopped pumpkin to the mix before baking.";
+      document.getElementById("bookPone3Rules").style.display = "block";
+      rules3one = "<b>IMPORTANT: Try to feed Laika with the cookie mix. Enter '03,05' or '05,03' in the Digital Game Book input field and click 'OK' or press Enter.</b>";
 	} else if (x == "06") {
   		answerone = "A cryptex with a six-letter opening combination. It's still wet from Laika's saliva.<br><i>You can now open the cryptex by entering the card number <b>06</b> followed by the code in the input field separated by a comma, without spaces.</i>";
       hidePoneElements();
@@ -46,7 +90,7 @@ function bookPoneFunction() {
   		answerone = "A poster is announcing a lecture on Bavaria by Jocelyn Hill in the library tonight.";
       hidePoneElements();
 	} else if (x == "08") {
-  		answerone = "My new ability to connect with animals and plants around me is hard to define. It's still unclear why I got this ability and what exactly I can do with it. Does it only give me a way to sense their feelings, or does it go beyond that to the point of actually affecting them?<br><i>To use this ability, enter ability card number <b>08</b> followed by the card number of the plant or animal you want to have an effect on in the input field, separated by a comma.</i>";
+  		answerone = "My new ability to connect with animals and plants around me is hard to define. It's still unclear why I got this ability and what exactly I can do with it. Does it only give me a way to sense their feelings, or does it go beyond that to the point of actually affecting them?<br><br><i>To use this ability, enter ability card number <b>08</b> followed by the card number of the plant or animal you want to have an effect on in the input field, separated by a comma.</i>";
       hidePoneElements();
 	} else if (x == "09") {
   		answerone = "Sandy is my mother's colleague. They worked together for about ten years, and they became friends in the meantime.";
@@ -88,8 +132,18 @@ function bookPoneFunction() {
   		answerone = "It's a photo of a mural on a wall. I can't recognize where the photo was taken.";
       hidePoneElements();
 	} else if (x == "22") {
-  		answerone = "Jocelyn's computer is left all alone. It's password protected.<br><i>You can now enter the password by entering the card number <b>22</b> followed by the password in the input field separated by a comma, without spaces. <br><br>If you still don't have the password, the following happens:<br>Jocelyn returns from the toilet, and I quickly move from the computer. I have to get this password somehow!<br>Return cards <b>26</b> and <b>43</b> from the rejected cards pile and put them on the table. Return card <b>22</b> into the characters/objects deck.</i>";
+  		answerone = "Jocelyn's computer is left all alone. It's password protected.<br><br><i>You can now enter the password by entering the card number <b>22</b> followed by the password in the input field separated by a comma, without spaces.</i><br><br><b>IMPORTANT:</b> <i>If you still don't have the password, the following happens:</i><br>Jocelyn returns from the toilet, and I quickly move from the computer. I have to get this password somehow!";
       hidePoneElements();
+      document.getElementById("bookPoneTake").style.display = "block";
+      document.getElementById("takeCard1").style.display = "inline";
+      document.getElementById("takeCard2").style.display = "inline";
+      document.getElementById("bookPoneReturn").style.display = "block";
+      document.getElementById("returnCard1").style.display = "inline";
+      takeone = "<i>Return the following cards from the rejected cards pile and put them on the table:</i>";
+      takecard1 = "26";
+      takecard2 = "43";
+      returnone = "<i>Return the following card in the character/object deck:</i>";
+      returncard1 = "22";
 	} else if (x == "23") {
   		answerone = "That's my mother, who suddenly left town yesterday.";
       hidePoneElements();
@@ -106,8 +160,14 @@ function bookPoneFunction() {
   		answerone = "The fly is now under my powers. I can move it wherever I want to and feel whatever it feels.";
       hidePoneElements();
 	} else if (x == "28") {
-  		answerone = "It's the gem my mother left on Laika. She said that it has been in our family for generations. I used to take the gem for granted, but now that I think of it, it's different from any other stones I have ever seen. It would be good to have my mineralogy professor have a look at it at the University. As I put it on my neck, I start to have a funny feeling of connection with Laika and even the plants in the garden.<br><i>Take card <b>08</b>.</i><br><br><b>IMPORTANT: The game will sometimes give you a hint you to open a new location. What did Ziggy say about the professor? If you look at the map of Majorton, you can see that the University is located at the address E62. Enter 'E62' in the Digital Game Book input field to open this location.</b>";
+  		answerone = "It's the gem my mother left on Laika. She said that it has been in our family for generations. I used to take the gem for granted, but now that I think of it, it's different from any other stones I have ever seen. It would be good to have my mineralogy professor have a look at it at the University. As I put it on my neck, I start to have a funny feeling of connection with Laika and even the plants in the garden.";
       hidePoneElements();
+      document.getElementById("bookPoneTake").style.display = "block";
+      document.getElementById("takeCard1").style.display = "inline";
+      document.getElementById("bookPone3Rules").style.display = "block";
+      takeone = "<i>Take card:</i>";
+      takecard1 = "08";
+      rules3one = "<b><br>IMPORTANT: The game will sometimes give you a hint you to open a new location. What did Ziggy say about the professor? If you look at the map of Majorton, you can see that the University is located at the address E62. Enter 'E62' in the Digital Game Book input field to open this location.</b>";
 	} else if (x == "29") {
   		answerone = "These are the mineralogy tests. Professor Martin keeps an eye on them.";
       hidePoneElements();
@@ -136,14 +196,26 @@ function bookPoneFunction() {
   		answerone = "The flag of the University, still not up on the pole. They raise it every day at the same time, followed by the University hymn on the speakers.";
       hidePoneElements();
 	} else if (x == "38") {
-  		answerone = "I can suddenly make the parrot talk about anything I want. All I have to do is ask.<br><i>You can now treat the parrot as a character and ask it about another character or an object by writing their numbers in the input field separated by a comma, without spaces. Enter the card number of the parrot <b>38</b> first, and the character/object you want to speak about second.</i>";
+  		answerone = "I can suddenly make the parrot talk about anything I want. All I have to do is ask.<br><br><i>You can now treat the parrot as a character and ask it about another character or an object by writing their numbers in the input field separated by a comma, without spaces. Enter the card number of the parrot <b>38</b> first, and the character/object you want to speak about second.</i>";
       hidePoneElements();
 	} else if (x == "39") {
   		answerone = "A note with some numbers written in my mother's handwriting, next to a logo of the library she used to work in. It was found hidden behind the broken lens in my mother's telescope.";
       hidePoneElements();
 	} else if (x == "40") {
-  		answerone = "Our dog Laika seems unhappy. She must be missing my mother. I notice something hanging on her collar. It's the gem my mother used to carry on her neckless. Why would she leave it with Laika? <br><i>Take cards <b>03</b> and <b>28</b>. Remove card <b>40</b> from the game.</i>.<br><br><b>IMPORTANT: When you get new cards that don't have their provided slots on a location, put them in empty slots or somewhere on the side of the location.<br><br>All the cards with the hand symbol can be used right now. The objects/plants/animals that don't have this symbol are out of your reach for some reason. You can't use them, but you can talk about them.<br><br><b>Continue with examining the cards you were given. Examine the gem you found on Laika's collar.</b>";
+  		answerone = "Our dog Laika seems unhappy. She must be missing my mother. I notice something hanging on her collar. It's the gem my mother used to carry on her neckless. Why would she leave it with Laika?";
       hidePoneElements();
+      document.getElementById("bookPoneTake").style.display = "block";
+      document.getElementById("takeCard1").style.display = "inline";
+      document.getElementById("takeCard2").style.display = "inline";
+      document.getElementById("bookPoneRemove").style.display = "block";
+      document.getElementById("removeCard1").style.display = "inline";
+      document.getElementById("bookPone3Rules").style.display = "block";
+      takeone = "<i>Take cards:</i>";
+      takecard1 = "03";
+      takecard2 = "28";
+      removeone = "<i>Remove the following card from the table and put it on the rejected cards pile:</i>";
+      removecard1 = "40";
+      rules3one = "<b><br>IMPORTANT: When you get new cards that don't have their provided slots on a location, put them in empty slots or somewhere next to the location.<br><br>All the cards with the hand symbol can be used right now. The objects/plants/animals that don't have this symbol are out of your reach for some reason. You can't use them, but you can talk about them.<br><br><b>Continue with examining the cards you were given. Examine the gem (28) you found on Laika's collar.</b>";
 	} else if (x == "41") {
   		answerone = "A ripe pumpkin fruit.";
       hidePoneElements();
@@ -154,8 +226,22 @@ function bookPoneFunction() {
   		answerone = "The computer of Jocelyn Hill, where she keeps her lecture on Bavaria.";
       hidePoneElements();
 	} else if (x == "LOC01") {
-  		answerone = "<b>IMPORTANT: Take cards 05, 21, 25 and 40 from the deck and put them face up on their provided slots on the location LOC01 card. <br><br>Every new location will have slots with card numbers written on them. Put these cards facing up on their provided slots each time you get a new location.<br><br>Now read the text below.</b><br><br>Our house looks so empty without my mother. Her telescope <b>(25)</b> is placed by the window, pointing at the sky. Our dog Laika <b>(40)</b> is here, not as cheerful as usual. I can see the mix for Laika's favourite cookies <b>(05)</b> on the kitchen counter. There is also a framed photo <b>(21)</b> on the bar that I've never seen before.<br><br><b>IMPORTANT: Now you can examine your character Ziggy <b>01</b>. Enter '<b>01</b>' in the Digital Game Book input field and click 'OK' or press Enter.</b>";
       hidePoneElements();
+      document.getElementById("bookPone1Rules").style.display = "block";
+      document.getElementById("takeCard1Rules").style.display = "inline";
+      document.getElementById("takeCard2Rules").style.display = "inline";
+      document.getElementById("takeCard3Rules").style.display = "inline";
+      document.getElementById("takeCard4Rules").style.display = "inline";
+      document.getElementById("bookPone2Rules").style.display = "block";
+      rules1one = "<b>IMPORTANT: Take cards:</b>";
+      takecard1rules = "05";
+      takecard2rules = "21";
+      takecard3rules = "25";
+      takecard4rules = "40";
+      rules2one = "<b>from the character/object deck and put them face up on their provided slots on the location LOC01 card. <br><br>Every new location will have slots with card numbers written on them. Put these cards facing up on their provided slots each time you get a new location.<br><br>Now read the text below.</b>";
+  		answerone = "Our house looks so empty without my mother. Her telescope <b>(25)</b> is placed by the window, pointing at the sky. Our dog Laika <b>(40)</b> is here, not as cheerful as usual. I can see the mix for Laika's favourite cookies <b>(05)</b> on the kitchen counter. There is also a framed photo <b>(21)</b> on the bar that I've never seen before.";
+      document.getElementById("bookPone3Rules").style.display = "block";
+      rules3one = "<b>IMPORTANT: Now you can examine your character Ziggy <b>01</b>. Enter '<b>01</b>' in the Digital Game Book input field and click 'OK' or press Enter.</b>";
 	} else if (x == "LOC02") {
   		answerone = "'Outer Space Telescopes' shop is open, and a salesman <b>(30)</b> greets me when I walk in. On the other side of the street there is a street artist <b>(42)</b> working on a mural, with some spray paint <b>(35)</b> sitting next to her on the ground.";
       hidePoneElements();
@@ -180,8 +266,8 @@ function bookPoneFunction() {
 	} else if (x == "01,02") {
   		answerone = "I'm not a big fan of house flies.";
       hidePoneElements();
-	} else if (x == "01,03" || x == "01,40") {
-  		answerone = "<b>IMPORTANT: You can ask any character about any object/plant/animal this way. Remember to enter the card number of the character you want to speak to first, and the card number of the object/plant/animal you want to speak about second.<br><br>You can communicate to all of the characters marked with the mouth symbol, ask them about other characters, locations and objects/plants/animals. You can also give them an object this way. The characters that aren't marked with the mouth symbol are not here, or can't communicate, so you won't be able to speak to them, but only about them.<br><br>Now read the text below.</b><br><br>Laika is quiet. I think she misses my mother and I'd like to do something to cheer her up.<br><br><b>IMPORTANT: To examine the cookie mix, enter '05' in the Digital Game Book input field and click 'OK' or press Enter.</b>";
+	} else if (x == "01,03") {
+  		answerone = "Laika is quiet. I think she misses my mother and I'd like to do something to cheer her up.";
       hidePoneElements();
 	} else if (x == "01,04") {
   		answerone = "This could be useful, maybe not to me but somebody else.";
@@ -241,8 +327,12 @@ function bookPoneFunction() {
   		answerone = "With Jocelyn out of the picture, all I have to do is enter her password to get inside the computer and delete the lecture.";
       hidePoneElements();
 	} else if (x == "01,23") {
-  		answerone = "<b>IMPORTANT: You can ask any character about another character this way. Remember always to enter the card number of the character you want to speak to first and the card number of the character you want to speak about second. You can also ask a character to speak about themselves this way by entering their card number twice, separated by a comma.<br><br>Now read the text below.</b><br><br>My mother is in a way also my best friend. She has this magic power to make you feel better just by looking at you. But I always felt as if she was keeping secrets from me.<br><br><b>IMPORTANT: To hear Ziggy's thoughts on their home, enter '01,LOC01' in the Digital Game Book input field and click 'OK' or press Enter.</b>";
       hidePoneElements();
+      document.getElementById("bookPone1Rules").style.display = "block";
+      rules1one = "<b>IMPORTANT: You can ask any character about another character this way. Remember always to enter the card number of the character you want to speak to first and the card number of the character you want to speak about second. You can also ask a character to speak about themselves this way by entering their card number twice, separated by a comma.<br><br>Now read the text below.</b>";
+  		answerone = "My mother is also my best friend, in a way. She has this magic power to make you feel better just by looking at you. But I always felt as if she was keeping secrets from me.";
+      document.getElementById("bookPone3Rules").style.display = "block";
+      rules3one = "<b>IMPORTANT: To hear Ziggy's thoughts on their home, enter '01,LOC01' in the Digital Game Book input field and click 'OK' or press Enter.</b>";
 	} else if (x == "01,24") {
   		answerone = "So the photo must have come with the letter. Maybe I could figure out Mary's address from her story.";
       hidePoneElements();
@@ -291,6 +381,13 @@ function bookPoneFunction() {
 	} else if (x == "01,39") {
   		answerone = "I don't know what this number could mean, but maybe somebody at the library could have an idea about it.";
       hidePoneElements();
+	} else if (x == "01,40") {
+      hidePoneElements();
+      document.getElementById("bookPone1Rules").style.display = "block";
+      rules1one = "<b>IMPORTANT: You can ask any character about any object/plant/animal this way. Remember to enter the card number of the character you want to speak to first, and the card number of the object/plant/animal you want to speak about second.<br><br>You can communicate to all of the characters marked with the mouth symbol, ask them about other characters, locations and objects/plants/animals. You can also give them an object this way. The characters that aren't marked with the mouth symbol are not here, or can't communicate, so you won't be able to speak to them, but only about them.<br><br>Now read the text below.</b>";
+  		answerone = "Laika is quiet. I think she misses my mother and I'd like to do something to cheer her up.";
+      document.getElementById("bookPone3Rules").style.display = "block";
+      rules3one = "<b>IMPORTANT: To examine the cookie mix, enter '05' in the Digital Game Book input field and click 'OK' or press Enter.</b>";
 	} else if (x == "01,41") {
   		answerone = "Now that's a full-grown pumpkin ready to be picked!";
       hidePoneElements();
@@ -301,8 +398,12 @@ function bookPoneFunction() {
   		answerone = "If I could get Jocelyn to leave the table, I could get into her computer.";
       hidePoneElements();
   } else if (x == "01,LOC01") {
-      answerone = "<b>IMPORTANT: You can ask any character about a location this way. Remember always to enter the card number of the character you want to speak to first and the card number of the location you want to speak about second.<br><br>Now read the text below.</b><br><br>It's so strange to be here without my mother. It doesn't feel like home, not as it should, at least.<br><br><b>IMPORTANT: To hear Ziggy's thoughts on Laika, enter '01,40' in the Digital Game Book input field and click 'OK' or press Enter.</b>";
       hidePoneElements();
+      document.getElementById("bookPone1Rules").style.display = "block";
+      rules1one = "<b>IMPORTANT: You can ask any character about a location this way. Remember always to enter the card number of the character you want to speak to first and the card number of the location you want to speak about second.<br><br>Now read the text below.</b>";
+      answerone = "It's so strange to be here without my mother. It doesn't feel like home, not as it should, at least.";
+      document.getElementById("bookPone3Rules").style.display = "block";
+      rules3one = "<b>IMPORTANT: To hear Ziggy's thoughts on Laika, enter '01,40' in the Digital Game Book input field and click 'OK' or press Enter.</b>";
   } else if (x == "01,LOC02") {
       answerone = "My mother was always passionate about astronomy. This was probably one of her favourite shops in town.";
       hidePoneElements();
@@ -427,8 +528,16 @@ function bookPoneFunction() {
 			answerone = "A talking parrot? Quite amusing, I guess.";
       hidePoneElements();
 	} else if (x == "09,39") {
-			answerone = "This is a code for a book from our library. Let me just check in our database...It's in the basement, where we keep only rare editions. I will get it for you. <br><i>Take card <b>17</b>. Remove card <b>39</b>.</i>";
+			answerone = "This is a code for a book from our library. Let me just check in our database...It's in the basement, where we keep only rare editions. I will get it for you.";
       hidePoneElements();
+      document.getElementById("bookPoneTake").style.display = "block";
+      document.getElementById("takeCard1").style.display = "inline";
+      document.getElementById("bookPoneRemove").style.display = "block";
+      document.getElementById("removeCard1").style.display = "inline";
+      takeone = "<i>Take card:</i>";
+      takecard1 = "17";
+      removeone = "<i>Remove card:</i>";
+      removecard1 = "39";
 	} else if (x == "09,41") {
 			answerone = "What a beautiful pumpkin! Where did you get it? It's not pumpkin season yet.";
       hidePoneElements();
@@ -667,8 +776,18 @@ function bookPoneFunction() {
 			answerone = "I'm sorry, but I have no experience with telescopes.";
       hidePoneElements();
 	} else if (x == "11,26") {
-			answerone = "Thank you so much, that's nice of you. Sluuuurp! <br><i>Jocelyn excuses herself and runs to the toilet. I have a few minutes of alone time with her computer before she comes back.<br><i>Take card <b>22</b>. Remove cards <b>26</b> and <b>43</b>.</i>";
+			answerone = "Thank you so much, that's nice of you. Sluuuurp! <br><i>Jocelyn excuses herself and runs to the toilet. I have a few minutes of alone time with her computer before she comes back.";
       hidePoneElements();
+      document.getElementById("bookPoneTake").style.display = "block";
+      document.getElementById("takeCard1").style.display = "inline";
+      document.getElementById("bookPoneRemove").style.display = "block";
+      document.getElementById("removeCard1").style.display = "inline";
+      document.getElementById("removeCard2").style.display = "inline";
+      takeone = "<i>Take card:</i>";
+      takecard1 = "22";
+      removeone = "<i>Remove cards:</i>";
+      removecard1 = "26";
+      removecard2 = "43";
 	} else if (x == "11,28") {
 			answerone = "That's absolutely stunning! I've never seen anything like it. Where did you get it from?";
       hidePoneElements();
@@ -731,6 +850,7 @@ function bookPoneFunction() {
       hidePoneElements();
 	} else if (x == "14,01" || x == "14,14" || x == "14,23") {
 			answerone = "";
+      hidePoneElements();
       document.getElementById("01_Mary").style.display = "block";
 	} else if (x == "14,08") {
 			answerone = "Yes, I know exactly what you're talking about. And it's just the beginning. The gem you've been wearing is connecting you with your true nature, one with many talents you've yet to discover. Take good care of it.";
@@ -919,8 +1039,18 @@ function bookPoneFunction() {
 			answerone = "I didn't take any of his classes in the University.";
       hidePoneElements();
 	} else if (x == "30,19") {
-			answerone = "So you decided to purchase the objective lens? Excellent. That will be 300 pounds. Thank you, and enjoy the stars tonight! <br><i>As I leave the shop, Peter puts the ‘closed' sign on the door.<br><i>Take card <b>12</b>. Remove cards <b>19</b> and <b>30</b>.</i>";
+			answerone = "So you decided to purchase the objective lens? Excellent. That will be 300 pounds. Thank you, and enjoy the stars tonight! <br><i>As I leave the shop, Peter puts the ‘Closed' sign on the door.</i>";
       hidePoneElements();
+      document.getElementById("bookPoneTake").style.display = "block";
+      document.getElementById("takeCard1").style.display = "inline";
+      document.getElementById("bookPoneRemove").style.display = "block";
+      document.getElementById("removeCard1").style.display = "inline";
+      document.getElementById("removeCard2").style.display = "inline";
+      takeone = "<i>Take card:</i>";
+      takecard1 = "12";
+      removeone = "<i>Remove cards:</i>";
+      removecard1 = "19";
+      removecard2 = "30";
 	} else if (x == "30,21") {
 			answerone = "I'm sorry, but I really can't help you with this. You could ask the street artist across the street. Maybe she knows something about it.";
       hidePoneElements();
@@ -931,8 +1061,12 @@ function bookPoneFunction() {
 			answerone = "She does seem familiar, I guess she's been to the shop once or twice.";
       hidePoneElements();
 	} else if (x == "30,25") {
-			answerone = "Let me see...Yes, the objective lens is definitely broken. I recommend buying a new one, I don't think you could repair it. Let me take it off to take a closer look...Oh, there is a paper behind it, here! Why would somebody put a paper behind the lens? Anyway, as I said, the lens is beyond repair. A new lens with this diameter would be 300 pounds. Would you like to purchase one? <br><i>I earn a little money giving math lessons to kids. But 300 pounds? I don't have that kind of money. <br>Take card <b>39</b>.</i>";
+			answerone = "Let me see...Yes, the objective lens is definitely broken. I recommend buying a new one, I don't think you could repair it. Let me take it off to take a closer look...Oh, there is a paper behind it, here! Why would somebody put a paper behind the lens? Anyway, as I said, the lens is beyond repair. A new lens with this diameter would be 300 pounds. Would you like to purchase one? <br><i>I earn a little money giving math lessons to kids. But 300 pounds? I don't have that kind of money.";
       hidePoneElements();
+      document.getElementById("bookPoneTake").style.display = "block";
+      document.getElementById("takeCard1").style.display = "inline";
+      takeone = "<i>Take card:</i>";
+      takecard1 = "39";
 	} else if (x == "30,26") {
 			answerone = "We don't have any beverages. We are specialised in astronomy equipment.";
       hidePoneElements();
@@ -1057,8 +1191,18 @@ function bookPoneFunction() {
 			answerone = "I don't know him. I don't go to tea shops. Pubs are more my style.";
       hidePoneElements();
 	} else if (x == "31,33" || x == "33,31") {
-			answerone = "Yes! Ziggy, I'm forever grateful for this. And don't worry, this will be our little secret. Here's some money for your effort. Well, now that I don't need to study anymore, I'll be going. Maybe have a drink with my crew.<br><i>You feel pretty bad about this, but it's already done. Soon after Jamie leaves the room, professor Martin returns to his desk. He doesn't notice that one of the tests is missing.<br><i>Take card <b>19</b>. Remove cards <b>31</b> and <b>33</b>.</i>";
+			answerone = "Yes! Ziggy, I'm forever grateful for this. And don't worry, this will be our little secret. Here's some money for your effort. Well, now that I don't need to study anymore, I'll be going. Maybe have a drink with my crew.<br><i>You feel pretty bad about this, but it's already done. Soon after Jamie leaves the room, professor Martin returns to his desk. He doesn't notice that one of the tests is missing.";
       hidePoneElements();
+      document.getElementById("bookPoneTake").style.display = "block";
+      document.getElementById("takeCard1").style.display = "inline";
+      document.getElementById("bookPoneRemove").style.display = "block";
+      document.getElementById("removeCard1").style.display = "inline";
+      document.getElementById("removeCard2").style.display = "inline";
+      takeone = "<i>Take card:</i>";
+      takecard1 = "19";
+      removeone = "<i>Remove cards:</i>";
+      removecard1 = "31";
+      removecard2 = "33";
 	} else if (x == "31,34") {
 			answerone = "An empty cup will not help me with my problem.";
       hidePoneElements();
@@ -1189,8 +1333,16 @@ function bookPoneFunction() {
 			answerone = "I'm just a simple guy. I spend most of my free time in nature or with a good book.";
       hidePoneElements();
 	} else if (x == "32,34") {
-			answerone = "Another cup of tea? Coming right up!<br><i>Take card <b>26</b>. Remove card <b>34</b>.</i>";
+			answerone = "Another cup of tea? Coming right up!";
       hidePoneElements();
+      document.getElementById("bookPoneTake").style.display = "block";
+      document.getElementById("takeCard1").style.display = "inline";
+      document.getElementById("bookPoneRemove").style.display = "block";
+      document.getElementById("removeCard1").style.display = "inline";
+      takeone = "<i>Take card:</i>";
+      takecard1 = "26";
+      removeone = "<i>Remove card:</i>";
+      removecard1 = "34";
 	} else if (x == "32,35") {
 			answerone = "You're thinking of making street art? Nice.";
       hidePoneElements();
@@ -1306,8 +1458,18 @@ function bookPoneFunction() {
 			answerone = "Cute dog.";
       hidePoneElements();
 	} else if (x == "42,04" || x == "04,40") {
-			answerone = "You're kidding me...This is awesome! It will speed me up enormously. Thank you soooo much! Ok, let's try to help you with finding your mural now. <br><i>Loomey takes a photo of the mural and sends it to a couple of people. After about 20 minutes of texting and calling, finally one of her friends recognizes it.</i><br>The mural is made by an anonymous author, that's why I couldn't remember it. But I did see it. It used to be on a building not far from here, actually. It was removed 7 or 8 years ago. The address is C84. Hope that this helps you. You sure helped me a lot!<br><i>Loomey returns to her work politely asking me to leave so that she could focus.<br>Write down or memorize the address and remove cards <b>04</b>, <b>21</b> and <b>42</b>.</i>";
+			answerone = "You're kidding me...This is awesome! It will speed me up enormously. Thank you soooo much! Ok, let's try to help you with finding your mural now. <br><i>Loomey takes a photo of the mural and sends it to a couple of people. After about 20 minutes of texting and calling, finally one of her friends recognizes it.</i><br>The mural is made by an anonymous author, that's why I couldn't remember it. But I did see it. It used to be on a building not far from here, actually. It was removed 7 or 8 years ago. The address is C84. Hope that this helps you. You sure helped me a lot!<br><i>Loomey returns to her work politely asking me to leave so that she could focus.";
       hidePoneElements();
+      document.getElementById("bookPoneTake").style.display = "block";
+      document.getElementById("bookPoneRemove").style.display = "block";
+      document.getElementById("removeCard1").style.display = "inline";
+      document.getElementById("removeCard2").style.display = "inline";
+      document.getElementById("removeCard3").style.display = "inline";
+      takeone = "<i>Write down the address Loomey gave you on a piece of paper.</i>";
+      removeone = "<i>Remove cards:</i>";
+      removecard1 = "04";
+      removecard2 = "21";
+      removecard3 = "42";
 	} else if (x == "42,05") {
 			answerone = "I'm an artist, not a dog food cook.";
       hidePoneElements();
@@ -1429,8 +1591,16 @@ function bookPoneFunction() {
       answerone = "I don't see houseflies on the list of ingredients. Maybe I should stick to finding some pumpkin.";
       hidePoneElements();
 	} else if (x == "02,08" || x == "08,02") {
-			answerone = "Well, let's try this gift I apparently have now. Come on, little fly, show me what you've got!<br><i> As I use my ability, I begin to feel the sensations of the fly. And not only that, but I also gain power over it. It seems that I can make it move wherever I wish to.<br>Take card <b>27</b>. Remove card <b>02</b>.</i>";
+			answerone = "Well, let's try this gift I apparently have now. Come on, little fly, show me what you've got!<br><i> As I use my ability, I begin to feel the sensations of the fly. And not only that, but I also gain power over it. It seems that I can make it move wherever I wish to.";
       hidePoneElements();
+      document.getElementById("bookPoneTake").style.display = "block";
+      document.getElementById("takeCard1").style.display = "inline";
+      document.getElementById("bookPoneRemove").style.display = "block";
+      document.getElementById("removeCard1").style.display = "inline";
+      takeone = "<i>Take card:</i>";
+      takecard1 = "27";
+      removeone = "<i>Remove card:</i>";
+      removecard1 = "02";
 	} else if (x == "02,26" || x == "02,34" || x == "26,02" || x == "34,02" || x == "26,27" || x == "34,27" || x == "27,26" || x == "27,34") {
 			answerone = "That's just disgusting. Who would want to drink that?";
       hidePoneElements();
@@ -1444,8 +1614,12 @@ function bookPoneFunction() {
 			answerone = "Woof woof!";
       hidePoneElements();
 	} else if (x == "03,05" || x == "05,03") {
-			answerone = "<b>IMPORTANT: You can combine any two objects/plants/animals this way. The order of card numbers isn't relevant.<br><br>Now read the text below.</b><br><br>I can't make the cookies without the pumpkin. It's the best part!<br><br><b>OK, so you'll have to add some pumpkin to the mix before feeding Laika. Don't worry, you'll find it in one of the new locations. Continue with examining the cards. Examine Laika (40).</b>";
       hidePoneElements();
+      document.getElementById("bookPone1Rules").style.display = "block";
+      rules1one = "<b>IMPORTANT: You can combine any two objects/plants/animals this way. The order of card numbers isn't relevant.<br><br>Now read the text below.</b>";
+			answerone = "I can't make the cookies without the pumpkin. It's the best part!";
+      document.getElementById("bookPone3Rules").style.display = "block";
+      rules3one = "<b>OK, so you'll have to add some pumpkin to the mix before feeding Laika. Don't worry, you'll find it in one of the new locations. Continue with examining the cards. Examine Laika (40).</b>";
 	} else if (x == "03,07" || x == "07,03") {
 			answerone = "I should cheer Laika up, but I don't think that the lecture would do it.";
       hidePoneElements();
@@ -1468,8 +1642,22 @@ function bookPoneFunction() {
 			answerone = "I don't think that Laika is very fond of the parrot.";
       hidePoneElements();
 	} else if (x == "03,15" || x == "15,03") {
-			answerone = "There you go, Laika! <br><i>Laika barks and eats the cookies with pleasure. She seems to feel much better. After she finishes, she barks to get my attention. I realise that she wants to show me something, so I follow her. She goes in the backyard and starts digging a hole under the apple tree. Not long after, she digs something out. It's a cryptex. I somehow understand that Laika's telling me how important this is to my mother. After I take it, Laika barks and runs back into the house.<br><i>Take card <b>06</b>. Remove cards <b>03</b>, <b>15</b> and location card <b>LOC01</b> (but keep the other cards from the location on the table).</i>";
+			answerone = "There you go, Laika! <br><i>Laika barks and eats the cookies with pleasure. She seems to feel much better. After she finishes, she barks to get my attention. I realise that she wants to show me something, so I follow her. She goes in the backyard and starts digging a hole under the apple tree. Not long after, she digs something out. It's a cryptex. I somehow understand that Laika's telling me how important this is to my mother. After I take it, Laika barks and runs back into the house.";
       hidePoneElements();
+      document.getElementById("bookPoneTake").style.display = "block";
+      document.getElementById("takeCard1").style.display = "inline";
+      document.getElementById("bookPoneRemove").style.display = "block";
+      document.getElementById("removeCard1").style.display = "inline";
+      document.getElementById("removeCard2").style.display = "inline";
+      document.getElementById("removeCard3").style.display = "inline";
+      document.getElementById("bookPoneKeep").style.display = "block";
+      takeone = "<i>Take card:</i>";
+      takecard1 = "06";
+      removeone = "<i>Remove cards:</i>";
+      removecard1 = "03";
+      removecard2 = "15";
+      removecard3 = "LOC01";
+      keepone = "<i>but keep the other cards from the location <b>LOC01</b> on the table.</i>";
 	} else if (x == "03,17" || x == "17,03") {
 			answerone = "Laika doesn't know how to read.";
       hidePoneElements();
@@ -1498,7 +1686,7 @@ function bookPoneFunction() {
 			answerone = "For a brief moment, Laika seems to cheer up when she sees Mark. But soon she returns in her melancholic state of mind.";
       hidePoneElements();
 	} else if (x == "03,34" || x == "34,03") {
-			answerone = "Laika prefers her bowl my mother bought her for her 1. birthday.";
+			answerone = "Laika prefers her bowl my mother bought her for her first birthday.";
       hidePoneElements();
 	} else if (x == "03,35" || x == "35,03") {
 			answerone = "Laika prefers her natural hair color.";
@@ -1537,8 +1725,18 @@ function bookPoneFunction() {
       answerone = "I don't think that freshly chopped pumpkin and freshly chopped pumpkin sprout are the same thing. I have to get a ripe pumpkin fruit for these cookies.";
       hidePoneElements();
   } else if (x == "05,41" || x == "41,05") {
-      answerone = "Finally, let's put this pumpkin in the mix. 30 minutes in the oven and here come the best dog cookies Laika could wish for.<br><i>Take card <b>15</b>. Remove cards <b>05</b> and <b>41</b>.</i>";
+      answerone = "Finally, let's put this pumpkin in the mix. 30 minutes in the oven and here come the best dog cookies Laika could wish for.";
       hidePoneElements();
+      document.getElementById("bookPoneTake").style.display = "block";
+      document.getElementById("takeCard1").style.display = "inline";
+      document.getElementById("bookPoneRemove").style.display = "block";
+      document.getElementById("removeCard1").style.display = "inline";
+      document.getElementById("removeCard2").style.display = "inline";
+      takeone = "<i>Take card:</i>";
+      takecard1 = "15";
+      removeone = "<i>Remove cards:</i>";
+      removecard1 = "05";
+      removecard2 = "41";
 	} else if (x == "07,35" || x == "35,07") {
 			answerone = "It wouldn't do any good if I paint over the lecture poster. The lecture would have still been held.";
       hidePoneElements();
@@ -1546,11 +1744,27 @@ function bookPoneFunction() {
 			answerone = "Unfortunately, it seems to work only on plants and animals. It would be both amazing and terrifying to be able to feel other person's feelings.";
       hidePoneElements();
 	} else if (x == "08,13" || x == "13,08") {
-			answerone = "I focus on the parrot, and I feel that I start to connect with its mind. At the same time, I start to feel a connection with my mother. I realise that she used to do this too. And then suddenly, the parrot starts talking. <br><i>Take card <b>38</b>. Remove card <b>13</b>.</i>";
+			answerone = "I focus on the parrot, and I feel that I start to connect with its mind. At the same time, I start to feel a connection with my mother. I realise that she used to do this too. And then suddenly, the parrot starts talking.";
       hidePoneElements();
+      document.getElementById("bookPoneTake").style.display = "block";
+      document.getElementById("takeCard1").style.display = "inline";
+      document.getElementById("bookPoneRemove").style.display = "block";
+      document.getElementById("removeCard1").style.display = "inline";
+      takeone = "<i>Take card:</i>";
+      takecard1 = "38";
+      removeone = "<i>Remove card:</i>";
+      removecard1 = "13";
 	} else if (x == "08,36" || x == "36,08") {
-			answerone = "I focus hard on the sprout, trying to give all the energy I have into it. Even though I'm not sure what I'm doing, the plant starts to rapidly grow in front of me. In about a minute of my hard work, a flower appears, and in two minutes, there is already a small green fruit. In three minutes, I've created a fully grown, completely ripe pumpkin. <br><i>Take card <b>41</b>. Remove card <b>36</b>.</i>";
+			answerone = "I focus hard on the sprout, trying to give all the energy I have into it. Even though I'm not sure what I'm doing, the plant starts to rapidly grow in front of me. In about a minute of my hard work, a flower appears, and in two minutes, there is already a small green fruit. In three minutes, I've created a fully grown, completely ripe pumpkin.";
       hidePoneElements();
+      document.getElementById("bookPoneTake").style.display = "block";
+      document.getElementById("takeCard1").style.display = "inline";
+      document.getElementById("bookPoneRemove").style.display = "block";
+      document.getElementById("removeCard1").style.display = "inline";
+      takeone = "<i>Take card:</i>";
+      takecard1 = "41";
+      removeone = "<i>Remove card:</i>";
+      removecard1 = "36";
 	} else if (x == "08,41" || x == "41,08") {
 			answerone = "I think this works only when the plant is still planted.";
       hidePoneElements();
@@ -1558,8 +1772,18 @@ function bookPoneFunction() {
 			answerone = "Sure, a book on astronomy can be useful while looking into space, but I can't directly use it with the telescope lens.";
       hidePoneElements();
 	} else if (x == "12,25" || x == "25,12") {
-			answerone = "All right! This should work now. Let's take a look at the sky tonight.<br><i>Take card <b>16</b>. Remove cards <b>12</b> and <b>25</b>.</i>";
+			answerone = "All right! This should work now. Let's take a look at the sky tonight.";
       hidePoneElements();
+      document.getElementById("bookPoneTake").style.display = "block";
+      document.getElementById("takeCard1").style.display = "inline";
+      document.getElementById("bookPoneRemove").style.display = "block";
+      document.getElementById("removeCard1").style.display = "inline";
+      document.getElementById("removeCard2").style.display = "inline";
+      takeone = "<i>Take card:</i>";
+      takecard1 = "16";
+      removeone = "<i>Remove cards:</i>";
+      removecard1 = "12";
+      removecard2 = "25";
 	} else if (x == "15,26" || x == "26,15") {
 			answerone = "Cookies and tea are a great combination, but dog cookies and tea maybe less so.";
       hidePoneElements();
@@ -1594,8 +1818,14 @@ function bookPoneFunction() {
 			answerone = "I can't just spill tea all over Jocelyn's computer right in front of her! And even if I had the guts, how can I be sure that it would work?";
       hidePoneElements();
 	} else if (x == "27,43" || x == "43,27") {
-			answerone = "I send my fly to look at Jocelyn's computer. As she has done a hundred times already, she opens the computer, types her password, and checks some facts in her lecture. The fly has a great view over the screen and gives me its mental image of Jocelyn's password. OK, if I knew that it was so simple, I could have guessed it myself. Jocelyn, you really couldn't have come up with something better than 'Jocelyn1234'? <br><i>Write the password down or memorize it and remove card <b>27</b>.</i>";
+			answerone = "I send my fly to look at Jocelyn's computer. As she has done a hundred times already, she opens the computer, types her password, and checks some facts in her lecture. The fly has a great view over the screen and gives me its mental image of Jocelyn's password. OK, if I knew that it was so simple, I could have guessed it myself. Jocelyn, you really couldn't have come up with something better than 'Jocelyn1234'?";
       hidePoneElements();
+      document.getElementById("bookPoneTake").style.display = "block";
+      document.getElementById("bookPoneRemove").style.display = "block";
+      document.getElementById("removeCard1").style.display = "inline";
+      takeone = "<i>Write down the password on a piece of paper.</i>";
+      removeone = "<i>Remove card:</i>";
+      removecard1 = "27";
 	} else if (x == "27,29" || x == "29,27") {
 			answerone = "The tests are in a closed folder. There is no way that I can make the fly open the folder to take a look at the tests.";
       hidePoneElements();
@@ -1615,47 +1845,135 @@ function bookPoneFunction() {
 			answerone = "The label on the spray says that it's not intended for use on ceramic surfaces.";
       hidePoneElements();
 	} else if (x == "35,37" || x == "37,35") {
-			answerone = "What a masterpiece!<br><i>I draw some pretty provocative signs on the flag, just in time before it's supposed to be raised up on the pole. I go back up to professor Martin's desk and wait for the big flag reveal. I hear the hymn on the speakers, and the people around me start to stir. Thirty seconds later, everybody is already by the window, commenting on the flag vandalization. Professor Martin also gets up to see what all the fuss is about. The mineralogy tests stay on the desk, unsupervised. <br><i>Take card <b>33</b>. Remove cards <b>29</b>, <b>35</b> and <b>37</b>.</i>";
+			answerone = "What a masterpiece!<br><i>I draw some pretty provocative signs on the flag, just in time before it's supposed to be raised up on the pole. I go back up to professor Martin's desk and wait for the big flag reveal. I hear the hymn on the speakers, and the people around me start to stir. Thirty seconds later, everybody is already by the window, commenting on the flag vandalization. Professor Martin also gets up to see what all the fuss is about. The mineralogy tests stay on the desk, unsupervised.";
       hidePoneElements();
+      document.getElementById("bookPoneTake").style.display = "block";
+      document.getElementById("takeCard1").style.display = "inline";
+      document.getElementById("bookPoneRemove").style.display = "block";
+      document.getElementById("removeCard1").style.display = "inline";
+      document.getElementById("removeCard2").style.display = "inline";
+      document.getElementById("removeCard3").style.display = "inline";
+      takeone = "<i>Take card:</i>";
+      takecard1 = "33";
+      removeone = "<i>Remove cards:</i>";
+      removecard1 = "29";
+      removecard2 = "35";
+      removecard3 = "37";
 	} else if (x == "35,43" || x == "43,35") {
 			answerone = "I wouldn't do that! I'm a nice person.";
       hidePoneElements();
 	} else if (x == "22,JOCELYN1234") {
-			answerone = "Well, this is an absolutely terrible thing to do, but I'm doing it anyway. However, to not be a total villain, I'll copy her lecture on a cloud, and send her a link to download it tomorrow. Anonymously, obviously. I'm really sorry, Jocelyn! <br><i>I delete the lecture from the computer and move to another table. Jocelyn returns from the toilet and checks her computer for the lecture, staying speechless after realising it's gone. After a few minutes of disbelief, she leaves the tea shop and goes to the library to cancel her lecture. I follow her and wait for her to finish her conversation with Sandy. As she leaves, I kindly ask Sandy to borrow the projector. Sandy, although a bit suspicious about this unexpected turn of events, lets me have it. <br>Take card <b>04</b>. Remove cards <b>07</b>, <b>11</b>, <b>20</b> and <b>22</b>.</i>";
+			answerone = "Well, this is an absolutely terrible thing to do, but I'm doing it anyway. However, to not be a total villain, I'll copy her lecture on a cloud, and send her a link to download it tomorrow. Anonymously, obviously. I'm really sorry, Jocelyn! <br><i>I delete the lecture from the computer and move to another table. Jocelyn returns from the toilet and checks her computer for the lecture, staying speechless after realising it's gone. After a few minutes of disbelief, she leaves the tea shop and goes to the library to cancel her lecture. I follow her and wait for her to finish her conversation with Sandy. As she leaves, I kindly ask Sandy to borrow the projector. Sandy, although a bit suspicious about this unexpected turn of events, lets me have it.";
       hidePoneElements();
+      document.getElementById("bookPoneTake").style.display = "block";
+      document.getElementById("takeCard1").style.display = "inline";
+      document.getElementById("bookPoneRemove").style.display = "block";
+      document.getElementById("removeCard1").style.display = "inline";
+      document.getElementById("removeCard2").style.display = "inline";
+      document.getElementById("removeCard3").style.display = "inline";
+      document.getElementById("removeCard4").style.display = "inline";
+      takeone = "<i>Take card:</i>";
+      takecard1 = "04";
+      removeone = "<i>Remove cards:</i>";
+      removecard1 = "07";
+      removecard2 = "11";
+      removecard3 = "20";
+      removecard4 = "22";
 	} else if (x == "06,KEPLER") {
-			answerone = "It works! There is a rolled piece of paper in the cryptex. It looks like a letter. <br>Take card <b>24</b>. Remove cards <b>06</b> and <b>38</b>.</i>";
+			answerone = "It works! There is a rolled piece of paper in the cryptex. It looks like a letter.";
       hidePoneElements();
+      document.getElementById("bookPoneTake").style.display = "block";
+      document.getElementById("takeCard1").style.display = "inline";
+      document.getElementById("bookPoneRemove").style.display = "block";
+      document.getElementById("removeCard1").style.display = "inline";
+      document.getElementById("removeCard2").style.display = "inline";
+      takeone = "<i>Take card:</i>";
+      takecard1 = "24";
+      removeone = "<i>Remove cards:</i>";
+      removecard1 = "06";
+      removecard2 = "38";
 	} else if (x == "E75") {
 			answerone = "This location is already opened.";
       hidePoneElements();
 	} else if (x == "D43") {
-			answerone = "Let's check out this telescope shop.<br><i>Take location card <b>LOC02</b>.</i>";
+			answerone = "Let's check out this telescope shop.";
       hidePoneElements();
+      document.getElementById("bookPoneTake").style.display = "block";
+      document.getElementById("takeCard1").style.display = "inline";
+      takeone = "<i>Take location card:</i>";
+      takecard1 = "LOC02";
 	} else if (x == "E62") {
-			answerone = "<b>IMPORTANT: You can open new locations this way. Sometimes you can find the address by looking at the map, and sometimes the address will be a solution to a puzzle. Don't forget to open new locations.<br><br>Now read the text below.</b><br><br>I'm not really in the mood to return to the University yet, but I could get some information there.<br><i>Take location card <b>LOC03</b></i>.<br><br><b>We're leaving you on your own now. Examine cards, talk to characters, combine objects and open new locations to make progress in the game. If you get stuck, use the hint system on this website. Good luck!</b>";
       hidePoneElements();
+      document.getElementById("bookPone1Rules").style.display = "block";
+      rules1one = "<b>IMPORTANT: You can open new locations this way. Sometimes you can find the address by looking at the map, and sometimes the address will be a solution to a puzzle. Don't forget to open new locations.<br><br>Now read the text below.</b>";
+			answerone = "I'm not really in the mood to return to the University yet, but I could get some information there.";
+      document.getElementById("bookPoneTake").style.display = "block";
+      document.getElementById("takeCard1").style.display = "inline";
+      document.getElementById("bookPone3Rules").style.display = "block";
+      takeone = "<i>Take location card:</i>";
+      takecard1 = "LOC03";
+      rules3one = "<b><br>We're leaving you on your own now. Examine cards, talk to characters, combine objects and open new locations to make progress in the game. If you get stuck, use the hint system on this website. Good luck!</b>";
 	} else if (x == "B40") {
-			answerone = "Maybe there is something in the library worth looking at.<br><i>Take location card <b>LOC04</b>.</i>";
+			answerone = "Maybe there is something in the library worth looking at.";
       hidePoneElements();
+      document.getElementById("bookPoneTake").style.display = "block";
+      document.getElementById("takeCard1").style.display = "inline";
+      takeone = "<i>Take location card:</i>";
+      takecard1 = "LOC04";
 	} else if (x == "B38") {
-			answerone = "So let's meet this Jocelyn Hill.<br><i>Take location card <b>LOC05</b>.</i>";
+			answerone = "So let's meet this Jocelyn Hill.";
       hidePoneElements();
+      document.getElementById("bookPoneTake").style.display = "block";
+      document.getElementById("takeCard1").style.display = "inline";
+      takeone = "<i>Take location card:</i>";
+      takecard1 = "LOC05";
 	} else if (x == "B41") {
 			answerone = "There is no tea shop at this address. So I guess it's at the other next door to the library.";
       hidePoneElements();
 	} else if (x == "C46") {
-			answerone = "I hope I got the address right.<br><i>Take location card <b>LOC06</b>. Remove cards <b>16</b> and <b>17</b>.</i>";
+			answerone = "I hope I got the address right.";
       hidePoneElements();
+      document.getElementById("bookPoneTake").style.display = "block";
+      document.getElementById("takeCard1").style.display = "inline";
+      document.getElementById("bookPoneRemove").style.display = "block";
+      document.getElementById("removeCard1").style.display = "inline";
+      document.getElementById("removeCard2").style.display = "inline";
+      takeone = "<i>Take location card:</i>";
+      takecard1 = "LOC06";
+      removeone = "<i>Remove cards:</i>";
+      removecard1 = "16";
+      removecard2 = "17";
 	} else if (x == "A82") {
-			answerone = "I trace Mary's movements from the apartment to the mural, going backwards. I guess this should be it.<br><i>Take location card <b>LOC07</b>.</i>";
+			answerone = "I trace Mary's movements from the apartment to the mural, going backwards. I guess this should be it.";
       hidePoneElements();
+      document.getElementById("bookPoneTake").style.display = "block";
+      document.getElementById("takeCard1").style.display = "inline";
+      takeone = "<i>Take location card:</i>";
+      takecard1 = "LOC07";
 	} else if (x == "C84") {
-			answerone = "The mural used to be here, but now it's painted over. I'm not sure what should I be looking for here.</i>";
+			answerone = "The mural used to be here, but now it's painted over. I'm not sure what should I be looking for here.";
       hidePoneElements();
 	} else {
   		answerone = randomanswerone[Math.floor(Math.random()*randomanswerone.length)];
       hidePoneElements();
   	}
   	document.getElementById("bookPoneAnswer").innerHTML = answerone;
+  	document.getElementById("bookPone1Rules").innerHTML = rules1one;
+  	document.getElementById("takeCard1Rules").innerHTML = takecard1rules;
+  	document.getElementById("takeCard2Rules").innerHTML = takecard2rules;
+  	document.getElementById("takeCard3Rules").innerHTML = takecard3rules;
+  	document.getElementById("takeCard4Rules").innerHTML = takecard4rules;
+  	document.getElementById("bookPone2Rules").innerHTML = rules2one;
+  	document.getElementById("bookPoneTake").innerHTML = takeone;
+  	document.getElementById("takeCard1").innerHTML = takecard1;
+  	document.getElementById("takeCard2").innerHTML = takecard2;
+  	document.getElementById("bookPoneRemove").innerHTML = removeone;
+  	document.getElementById("removeCard1").innerHTML = removecard1;
+  	document.getElementById("removeCard2").innerHTML = removecard2;
+  	document.getElementById("removeCard3").innerHTML = removecard3;
+  	document.getElementById("removeCard4").innerHTML = removecard4;
+  	document.getElementById("bookPoneKeep").innerHTML = keepone;
+  	document.getElementById("bookPoneReturn").innerHTML = returnone;
+  	document.getElementById("returnCard1").innerHTML = returncard1;
+  	document.getElementById("bookPone3Rules").innerHTML = rules3one;
 };
