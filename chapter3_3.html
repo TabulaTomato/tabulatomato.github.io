@@ -33,7 +33,32 @@
       <h3>chapter 3, part 3</h3>
     </div>
     <div class="main-text">
-      <p><i>In the last part of the chapter, you return to your original role as Ziggy Wonder.<br>Take the cards you put on the side from the first part of the chapter <b>LOC03</b>, <b>01</b>, <b>08</b>, <b>13</b>, <b>18</b>, <b>21</b>, <b>23</b>, <b>25</b>, <b>26</b>, <b>29</b>, <b>34</b>, <b>37</b> and <b>38</b>. <br>Continue reading.</i><br><br>My mother did it! She escaped and opened the doors to the rest of the floor. And from what I can see through her eyes, the room she's in looks a lot like a bridge of a spaceship!<br>The Lakis didn't even bother to hide their ship somewhere, they just made it resemble a typical Starcherster building. How clever and wicked in the same time.<br><i>As I'm starting to be very impatient with the CEO, who obviously plans to keep me in his office forever, Marina, the security guard comes in and whispers something in his ear. He jumps, and they both run off, leaving me alone in the office.<br></i>I'm coming, mother!<br><br><i>Remove card <b>18</b>. Take cards <b>02</b> and <b>31</b>.</i></p>
+      <p><i>In the last part of the chapter, you return to your original role as Ziggy Wonder.<br>Take the cards you put on the side from the first part of the chapter:</i></p>
+      <div class="take-remove-cards">
+        <p class="take-visible">LOC03</p>
+        <p class="take-visible">01</p>
+        <p class="take-visible">08</p>
+        <p class="take-visible">13</p>
+        <p class="take-visible">18</p>
+        <p class="take-visible">21</p>
+        <p class="take-visible">23</p>
+        <p class="take-visible">25</p>
+        <p class="take-visible">26</p>
+        <p class="take-visible">29</p>
+        <p class="take-visible">34</p>
+        <p class="take-visible">37</p>
+        <p class="take-visible">38</p>
+      </div>
+      <p><i>Continue reading.</i><br><br>My mother did it! She escaped and opened the doors to the rest of the floor. And from what I can see through her eyes, the room she's in looks a lot like a bridge of a spaceship! The Lakis didn't even bother to hide their ship somewhere, they just made it resemble a typical Starcherster building. How clever and wicked in the same time.<br><br>As I'm starting to be very impatient with the CEO, who obviously plans to keep me in his office forever, Marina, the security guard comes in and whispers something in his ear. He jumps, and they both run off, leaving me alone in the office.<br><br>I'm coming, mother!<br><br><i>Take cards:</i></p>
+      <div class="take-remove-cards-visible">
+        <p class="take-visible">02</p>
+        <p class="take-visible">31</p>
+      </div>
+      <br>
+      <p><i>Remove card:</i></p>
+      <div class="take-remove-cards-visible">
+        <p class="remove-visible">18</p>
+      </div>
     </div>
       <div class="main-box">
       <h3>digital game book</h3>
@@ -56,6 +81,25 @@
         <input type="text" id="pear" onkeypress="return pearKeyPress(event);" placeholder="input here">
         <button class="ok-button" id="pearButton" onclick="pear()">OK</button>
         <p id="pearAnswer"></p>
+        <p class="take-remove-intro" id="pearTake"></p>
+        <div class="take-remove-cards">
+          <p class="take" id="pearTCard1"></p>
+          <p class="take" id="pearTCard2"></p>
+          <p class="take" id="pearTCard3"></p>
+          <p class="take" id="pearTCard4"></p>
+        </div>
+        <p class="take-remove-intro" id="pearRemove"></p>
+        <div class="take-remove-cards">
+          <p class="remove" id="pearRCard1"></p>
+          <p class="remove" id="pearRCard2"></p>
+          <p class="remove" id="pearRCard3"></p>
+          <p class="remove" id="pearRCard4"></p>
+          <p class="remove" id="pearRCard5"></p>
+          <p class="remove" id="pearRCard6"></p>
+          <p class="remove" id="pearRCard7"></p>
+          <p class="remove" id="pearRCard8"></p>
+        </div>
+        <p class="take-remove-intro" id="pearReturn"></p>
       </div>
       <div class="ability-input" id="haageField">
         <h5>While being Laurie Haage</h5>
@@ -74,6 +118,19 @@
         <input type="text" id="gibbs" onkeypress="return gibbsKeyPress(event);" placeholder="input here">
         <button class="ok-button" id="gibbsButton" onclick="gibbs()">OK</button>
         <p id="gibbsAnswer"></p>
+        <p class="take-remove-intro" id="gibbsTake"></p>
+        <div class="take-remove-cards">
+          <p class="take" id="gibbsTCard1"></p>
+        </div>
+        <p class="take-remove-intro" id="gibbsRemove"></p>
+        <div class="take-remove-cards">
+          <p class="remove" id="gibbsRCard1"></p>
+        </div>
+        <p class="take-remove-intro" id="gibbsReturn"></p>
+        <div class="take-remove-cards">
+          <p class="take" id="gibbsNCard1"></p>
+        </div>
+        <p class="take-remove-intro" id="gibbsContinue"></p>
       </div>
       <div class="ability-input" id="marinaField">
         <h5>While being security guard Marina</h5>
@@ -92,6 +149,19 @@
         <input type="text" id="carner" onkeypress="return carnerKeyPress(event);" placeholder="input here">
         <button class="ok-button" id="carnerButton" onclick="carner()">OK</button>
         <p id="carnerAnswer"></p>
+        <p class="take-remove-intro" id="carnerTake"></p>
+        <div class="take-remove-cards">
+          <p class="take" id="carnerTCard1"></p>
+        </div>
+        <p class="take-remove-intro" id="carnerRemove"></p>
+        <div class="take-remove-cards">
+          <p class="remove" id="carnerRCard1"></p>
+        </div>
+        <p class="take-remove-intro" id="carnerReturn"></p>
+        <div class="take-remove-cards">
+          <p class="take" id="carnerNCard1"></p>
+        </div>
+        <p class="take-remove-intro" id="carnerContinue"></p>
       </div>
     </div>
     <div class="main-box">
@@ -99,7 +169,7 @@
     </div>
     <div class="main-text">
       <h4>Enter the character/object card number, or special object number you want a hint for.</h4>
-      <p><i>For example, if you want a hint for a character card <b>01</b>, enter <b>01</b> in the input field and click OK or press enter.<br>Or if you want a hint for a special object <b>SPO01</b>, enter <b>SPO01</b> in the input field and click OK or press enter.</i></p>
+      <p><i>For example, if you want a hint for the character card <b>01</b>, enter <b>01</b> in the input field and click OK or press enter.<br>Or if you want a hint for the special object <b>SPO01</b>, enter <b>SPO01</b> in the input field and click OK or press enter.</i></p>
     </div>
     <div class="main-input">
       <input type="text" id="hintPthreeText" onkeypress="return hintPthreeKeyPress(event);" placeholder="input here">

@@ -33,7 +33,15 @@
       <h3>chapter 3, part 2</h3>
     </div>
     <div class="main-text">
-      <p><i>In this part of the chapter, you take the role of Lena, Ziggy's mother. This means that you don't have any abilities anymore.<br>Remove special object <b>SPO04</b>.<br>Put the cards you have from the first part of the chapter on the side of the table, except for the map parts. You cannot use these cards in this part of the chapter, but you will use them later. Leave the map parts in their places and continue reading.</i><br><br>I don't know how long have the Lakis kept me here. It's probably only been a few days, but without a window, I don't see the days and nights changing, and it seems as if it's been forever. Marina, the security guard that is in charge of keeping an eye on me, likes to chat, so at least I have somebody to talk to. She is standing in front of my door most of the time, turning her Rubik's cube that she seems to enjoy more than anything.<br>I don't know if Ziggy understood any of the clues I left her, and without my powers, I'm hopeless.<br>What's that sound? It seems to be coming from the air vent. Is there something there?<br><br><i>Take cards <b>33</b> and <b>LOC04</b>.</i></p>
+      <p><i>In this part of the chapter, you take the role of Lena, Ziggy's mother. This means that you don't have any abilities anymore.<br><br>Remove special object card:</i></p>
+      <div class="take-remove-cards-visible">
+        <p class="remove-visible">SPO04</p>
+      </div>
+      <p><i>Put the cards you have from the first part of the chapter on the side of the table, except for the map parts. You cannot use these cards in this part of the chapter, but you will use them later. Leave the map parts in their places and continue reading.</i><br><br>I don't know how long have the Lakis kept me here. It's probably only been a few days, but without a window, I don't see the days and nights changing, and it seems as if it's been forever. Marina, the security guard that is in charge of keeping an eye on me, likes to chat, so at least I have somebody to talk to. She is standing in front of my door most of the time, turning her Rubik's cube that she seems to enjoy more than anything.<br>I don't know if Ziggy understood any of the clues I left her, and without my powers, I'm hopeless.<br>What's that sound? It seems to be coming from the air vent. Is there something there?<br><br><i>Take cards:</i></p>
+      <div class="take-remove-cards-visible">
+        <p class="take-visible">33</p>
+        <p class="take-visible">LOC04</p>
+      </div>
     </div>
     <div class="main-box">
       <h3>digital game book</h3>
@@ -44,6 +52,27 @@
     </div>
     <div class="main-text">
       <p id="bookPthreeAnswer"></p>
+      <p class="take-remove-intro" id="bookPthreeTake"></p>
+      <div class="take-remove-cards">
+        <p class="take" id="takeCard1"></p>
+        <p class="take" id="takeCard2"></p>
+        <p class="take" id="takeCard3"></p>
+      </div>
+      <p class="take-remove-intro" id="bookPthreeMap"></p>
+      <p class="take-remove-intro" id="bookPthreeRemove"></p>
+      <div class="take-remove-cards">
+        <p class="remove" id="removeCard1"></p>
+        <p class="remove" id="removeCard2"></p>
+        <p class="remove" id="removeCard3"></p>
+        <p class="remove" id="removeCard4"></p>
+        <p class="remove" id="removeCard5"></p>
+      </div>
+      <p class="take-remove-intro" id="bookPthreeKeep"></p>
+      <p class="take-remove-intro" id="bookPthreeReturn"></p>
+      <div class="take-remove-cards">
+        <p class="take" id="returnCard1"></p>
+        <p class="take" id="returnCard2"></p>
+      </div>
       <button class="continue-button" id="clickToBridge" onclick="document.location='chapter3_3.html'">Click to continue</button>
     </div>
     <div class="main-box">
@@ -51,7 +80,7 @@
     </div>
     <div class="main-text">
       <h4>Enter the character/object card number, or special object number you want a hint for.</h4>
-      <p><i>For example, if you want a hint for a character card <b>01</b>, enter <b>01</b> in the input field and click OK or press enter.<br>Or if you want a hint for a special object <b>SPO01</b>, enter <b>SPO01</b> in the input field and click OK or press enter.</i></p>
+      <p><i>For example, if you want a hint for the character card <b>01</b>, enter <b>01</b> in the input field and click OK or press enter.<br>Or if you want a hint for the special object <b>SPO01</b>, enter <b>SPO01</b> in the input field and click OK or press enter.</i></p>
     </div>
     <div class="main-input">
       <input type="text" id="hintPthreeText" onkeypress="return hintPthreeKeyPress(event);" placeholder="input here">
