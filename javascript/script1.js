@@ -84,7 +84,7 @@ function bookPoneFunction() {
       document.getElementById("bookPone3Rules").style.display = "block";
       rules3one = "<b>IMPORTANT: Try to feed Laika with the cookie mix. Enter '03,05' or '05,03' in the Digital Game Book input field and click 'OK' or press Enter.</b>";
 	} else if (x == "06") {
-  		answerone = "A cryptex with a six-letter opening combination. It's still wet from Laika's saliva.<br><i>You can now open the cryptex by entering the card number <b>06</b> followed by the code in the input field separated by a comma, without spaces.</i>";
+  		answerone = "A cryptex with a six-letter opening combination. It's still wet from Laika's saliva.<br><br><i>You can now open the cryptex by entering the card number <b>06</b> followed by the code in the input field separated by a comma, without spaces.</i>";
       hidePoneElements();
 	} else if (x == "07") {
   		answerone = "A poster is announcing a lecture on Bavaria by Jocelyn Hill in the library tonight.";

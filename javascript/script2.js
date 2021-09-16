@@ -42,6 +42,7 @@ function hidePtwoElements() {
   document.getElementById("unknownmanField").style.display = "none";
   document.getElementById("deliveryguyField").style.display = "none";
   document.getElementById("turnerField").style.display = "none";
+  document.getElementById("02_Martin").style.display = "none";
   document.getElementById("bookPtwoTake").style.display = "none";
   document.getElementById("takeCard1").style.display = "none";
   document.getElementById("takeCard2").style.display = "none";
