@@ -217,7 +217,7 @@ p.take {
 	border: 3px solid #2394B2;
   border-radius: 4px;
 	padding: 5px 8px 5px 9px;
-	line-height: 1.5;
+	line-height: 1.9;
 	letter-spacing: 0.2px;
 	font-family: 'Fredoka One', cursive;
 	font-size: 180%;
@@ -229,7 +229,7 @@ p.take-visible {
 	border: 3px solid #2394B2;
   border-radius: 4px;
 	padding: 5px 8px 5px 9px;
-	line-height: 1.5;
+	line-height: 1.9;
 	letter-spacing: 0.2px;
 	font-family: 'Fredoka One', cursive;
 	font-size: 180%;
@@ -241,7 +241,7 @@ p.remove {
 	border: 3px solid #dc640c;
   border-radius: 4px;
 	padding: 5px 8px 5px 9px;
-	line-height: 1.5;
+	line-height: 1.9;
 	letter-spacing: 0.2px;
 	font-family: 'Fredoka One', cursive;
 	font-size: 180%;
@@ -253,7 +253,7 @@ p.remove-visible {
 	border: 3px solid #dc640c;
   border-radius: 4px;
 	padding: 5px 8px 5px 9px;
-	line-height: 1.5;
+	line-height: 1.9;
 	letter-spacing: 0.2px;
 	font-family: 'Fredoka One', cursive;
 	font-size: 180%;
