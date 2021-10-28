@@ -215,7 +215,7 @@ function bookPoneFunction() {
       takecard2 = "28";
       removeone = "<i>Remove the following card from the table and put it on the rejected cards pile:</i>";
       removecard1 = "40";
-      rules3one = "<b><br>IMPORTANT: When you get new cards that don't have their provided slots on a location, put them in empty slots or somewhere next to the location.<br><br>All the cards with the hand symbol can be used right now. The objects/plants/animals that don't have this symbol are out of your reach for some reason. You can't use them, but you can talk about them.<br><br><b>Continue with examining the cards you were given. Examine the gem (28) you found on Laika's collar.</b>";
+      rules3one = "<b><br>IMPORTANT: When you get new cards that don't have their provided slots on a location, put them in empty slots or somewhere next to the location.<br><br>All the cards with the hand symbol immediately became a part of your 'inventory' and can be used right now or later in the game. The objects/plants/animals that don't have this symbol are out of your reach for some reason. You can't use them, but you can talk about them.<br><br><b>Continue with examining the cards you were given. Examine the gem (28) you found on Laika's collar.</b>";
 	} else if (x == "41") {
   		answerone = "A ripe pumpkin fruit.";
       hidePoneElements();

@@ -142,6 +142,9 @@ function hidePtwoHints() {
   document.getElementById("hint38_1_3_container").style.display = "none";
   document.getElementById("hint38_2_1_container").style.display = "none";
   document.getElementById("hint38_2_2_container").style.display = "none";
+  document.getElementById("hint38_3_1_container").style.display = "none";
+  document.getElementById("hint38_4_1_container").style.display = "none";
+  document.getElementById("hint38_4_2_container").style.display = "none";
   document.getElementById("hint39_container").style.display = "none";
   document.getElementById("hint39_1_1_container").style.display = "none";
   document.getElementById("hint39_1_2_container").style.display = "none";
@@ -429,11 +432,13 @@ function hintPtwoFunction() {
       hidePtwoHints();
       document.getElementById("hint37_container").style.display = "block";
   } else if (yhint == "38") {
-  		hintanswertwo = "Do you have character/object card 46?";
+  		hintanswertwo = "Do you have character/object cards 13 and 46?";
       hidePtwoHints();
       document.getElementById("hint38_container").style.display = "block";
       document.getElementById("hintPtwo38_1").style.display = "block";
       document.getElementById("hintPtwo38_2").style.display = "block";
+      document.getElementById("hintPtwo38_3").style.display = "block";
+      document.getElementById("hintPtwo38_4").style.display = "block";
   } else if (yhint == "39") {
   		hintanswertwo = "Have you opened LOC10?";
       hidePtwoHints();
@@ -1079,6 +1084,8 @@ function hintPtwo37_1show() {
 function hintPtwo38_1show() {
   document.getElementById("hintPtwo38_1Answer").innerHTML = "Receptionist Nina seems talkative. You could ask her about people she has seen in the hotel.";
   document.getElementById("hintPtwo38_2").style.display = "none";
+  document.getElementById("hintPtwo38_3").style.display = "none";
+  document.getElementById("hintPtwo38_4").style.display = "none";
   document.getElementById("hint38_1_1_container").style.display = "block";
 };
 
@@ -1095,12 +1102,35 @@ function hintPtwo38_1_2show() {
 function hintPtwo38_2show() {
   document.getElementById("hintPtwo38_2Answer").innerHTML = "Receptionist Nina seems talkative. You could ask her about people she has seen in the hotel.";
   document.getElementById("hintPtwo38_1").style.display = "none";
+  document.getElementById("hintPtwo38_3").style.display = "none";
+  document.getElementById("hintPtwo38_4").style.display = "none";
   document.getElementById("hint38_2_1_container").style.display = "block";
 };
 
 function hintPtwo38_2_1show() {
   document.getElementById("hintPtwo38_2_1Answer").innerHTML = "Ask receptionist Nina about Lena. She stayed in this hotel the last two times she was in Starchester.";
   document.getElementById("hint38_2_2_container").style.display = "block";
+};
+
+function hintPtwo38_3show() {
+  document.getElementById("hintPtwo38_3Answer").innerHTML = "Focus on solving another puzzle at the moment and come back here when you have card 46.";
+  document.getElementById("hintPtwo38_1").style.display = "none";
+  document.getElementById("hintPtwo38_2").style.display = "none";
+  document.getElementById("hintPtwo38_4").style.display = "none";
+  document.getElementById("hint38_3_1_container").style.display = "block";
+};
+
+function hintPtwo38_4show() {
+  document.getElementById("hintPtwo38_4Answer").innerHTML = "Receptionist Nina seems talkative. You could ask her about people she has seen in the hotel.";
+  document.getElementById("hintPtwo38_1").style.display = "none";
+  document.getElementById("hintPtwo38_2").style.display = "none";
+  document.getElementById("hintPtwo38_3").style.display = "none";
+  document.getElementById("hint38_4_1_container").style.display = "block";
+};
+
+function hintPtwo38_4_1show() {
+  document.getElementById("hintPtwo38_4_1Answer").innerHTML = "Ask receptionist Nina about Lena. She stayed in this hotel the last two times she was in Starchester.";
+  document.getElementById("hint38_4_2_container").style.display = "block";
 };
 
 function hintPtwo39_1show() {
