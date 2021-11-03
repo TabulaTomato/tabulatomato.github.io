@@ -82,7 +82,7 @@ function bookPoneFunction() {
       rules1one = "<b>IMPORTANT: You can examine any card you want, but you have to examine the cards with the magnifying glass symbol.<br><br>Now read the text below.</b>";
   		answerone = "Cookie mix for Laika's favourite cookies. The recipe on the box says to add some freshly chopped pumpkin to the mix before baking.";
       document.getElementById("bookPone3Rules").style.display = "block";
-      rules3one = "<b>IMPORTANT: Try to feed Laika with the cookie mix. Enter '03,05' or '05,03' in the Digital Game Book input field and click 'OK' or press Enter.</b>";
+      rules3one = "<b>IMPORTANT: Try to feed Laika with the cookie mix. Enter '05,40' or '40,05' in the Digital Game Book input field and click 'OK' or press Enter.</b>";
 	} else if (x == "06") {
   		answerone = "A cryptex with a six-letter opening combination. It's still wet from Laika's saliva.<br><br><i>You can now open the cryptex by entering the card number <b>06</b> followed by the code in the input field separated by a comma, without spaces.</i>";
       hidePoneElements();
@@ -1614,12 +1614,8 @@ function bookPoneFunction() {
 			answerone = "Woof woof!";
       hidePoneElements();
 	} else if (x == "03,05" || x == "05,03") {
-      hidePoneElements();
-      document.getElementById("bookPone1Rules").style.display = "block";
-      rules1one = "<b>IMPORTANT: You can combine any two objects/plants/animals this way. The order of card numbers isn't relevant.<br><br>Now read the text below.</b>";
 			answerone = "I can't make the cookies without the pumpkin. It's the best part!";
-      document.getElementById("bookPone3Rules").style.display = "block";
-      rules3one = "<b>OK, so you'll have to add some pumpkin to the mix before feeding Laika. Don't worry, you'll find it in one of the new locations. Continue with examining the cards. Examine Laika (40).</b>";
+      hidePoneElements();
 	} else if (x == "03,07" || x == "07,03") {
 			answerone = "I should cheer Laika up, but I don't think that the lecture would do it.";
       hidePoneElements();
@@ -1697,8 +1693,9 @@ function bookPoneFunction() {
 	} else if (x == "03,39" || x == "39,03") {
 			answerone = "I don't need Laika's help. I can find the library all by myself.";
       hidePoneElements();
-	} else if (x == "03,41" || x == "05,40" || x == "40,05" || x == "41,03") {
-			answerone = "Cookies are not finished yet!";
+	} else if (x == "03,41" || x == "41,03") {
+      hidePoneElements();
+			answerone = "The cookies are not finished yet!";
       hidePoneElements();
 	} else if (x == "03,42") {
 			answerone = "Laika sees that Loomey is busy, so she politely sits on the side and keeps quiet.";
@@ -1724,6 +1721,13 @@ function bookPoneFunction() {
   } else if (x == "05,36" || x == "36,05") {
       answerone = "I don't think that freshly chopped pumpkin and freshly chopped pumpkin sprout are the same thing. I have to get a ripe pumpkin fruit for these cookies.";
       hidePoneElements();
+	} else if (x == "05,40" || x == "40,05") {
+      hidePoneElements();
+      document.getElementById("bookPone1Rules").style.display = "block";
+      rules1one = "<b>IMPORTANT: You can combine any two objects/plants/animals this way. The order of card numbers isn't relevant.<br><br>Now read the text below.</b>";
+			answerone = "I can't make the cookies without the pumpkin. It's the best part!";
+      document.getElementById("bookPone3Rules").style.display = "block";
+      rules3one = "<b>OK, so you'll have to add some pumpkin to the mix before feeding Laika. Don't worry, you'll find it in one of the new locations. Continue with examining the cards. Examine Laika (40).</b>";
   } else if (x == "05,41" || x == "41,05") {
       answerone = "Finally, let's put this pumpkin in the mix. 30 minutes in the oven and here come the best dog cookies Laika could wish for.";
       hidePoneElements();
