@@ -227,18 +227,6 @@ function bookPoneFunction() {
       hidePoneElements();
 	} else if (x == "LOC01") {
       hidePoneElements();
-      document.getElementById("bookPone1Rules").style.display = "block";
-      document.getElementById("takeCard1Rules").style.display = "inline";
-      document.getElementById("takeCard2Rules").style.display = "inline";
-      document.getElementById("takeCard3Rules").style.display = "inline";
-      document.getElementById("takeCard4Rules").style.display = "inline";
-      document.getElementById("bookPone2Rules").style.display = "block";
-      rules1one = "<b>IMPORTANT: Take cards:</b>";
-      takecard1rules = "05";
-      takecard2rules = "21";
-      takecard3rules = "25";
-      takecard4rules = "40";
-      rules2one = "<b>from the character/object deck and put them face up on their provided slots on the location LOC01 card. <br><br>Every new location will have slots with card numbers written on them. Put these cards facing up on their provided slots each time you get a new location.<br><br>Now read the text below.</b>";
   		answerone = "Our house looks so empty without my mother. Her telescope <b>(25)</b> is placed by the window, pointing at the sky. Our dog Laika <b>(40)</b> is here, not as cheerful as usual. I can see the mix for Laika's favourite cookies <b>(05)</b> on the kitchen counter. There is also a framed photo <b>(21)</b> on the bar that I've never seen before.";
       document.getElementById("bookPone3Rules").style.display = "block";
       rules3one = "<b>IMPORTANT: Now you can examine your character Ziggy <b>01</b>. Enter '<b>01</b>' in the Digital Game Book input field and click 'OK' or press Enter.</b>";
